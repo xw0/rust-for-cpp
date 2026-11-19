@@ -56,12 +56,11 @@ Rust borrows an idea from modern C++, this book explains the idea from scratch.
 
 ## Status
 
-This book is a work in progress. Chapters marked *planned* show what they will
-cover. The sample chapters are complete:
-
-- [Ownership and moves](foundations/ownership.md)
-- [Borrowing and references](foundations/borrowing.md)
-- [Handles and arenas instead of pointers](engine/handles-and-arenas.md)
+All chapters are written in English, and every runnable example is compiled
+and tested on each build. The Chinese translation is in progress: chapter
+titles and the interface are translated, and the chapter text follows.
+Corrections and suggestions are welcome; see
+[Contributing](appendix/contributing.md).
 
 ## License
 
