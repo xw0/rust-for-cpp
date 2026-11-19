@@ -1,0 +1,206 @@
+/* The book's visual design ("Folio"): editorial, serif headings on warm paper.
+ * It has a light variant (mdBook themes "light", "rust") and a dark variant
+ * ("coal", "navy", "ayu"); the theme menu only offers Light and Dark. Fonts are self-hosted (no Google Fonts), so the site
+ * also loads quickly where Google services are blocked. Chinese text falls back
+ * to the reader's system CJK fonts. */
+
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 100 900; font-display: swap; src: url(../../assets/fonts/inter-latin-wght-normal.woff2) format("woff2"); }
+@font-face { font-family: "Inter"; font-style: italic; font-weight: 100 900; font-display: swap; src: url(../../assets/fonts/inter-latin-wght-italic.woff2) format("woff2"); }
+@font-face { font-family: "Source Serif 4"; font-style: normal; font-weight: 200 900; font-display: swap; src: url(../../assets/fonts/source-serif-4-latin-opsz-normal.woff2) format("woff2"); }
+@font-face { font-family: "Source Serif 4"; font-style: italic; font-weight: 200 900; font-display: swap; src: url(../../assets/fonts/source-serif-4-latin-opsz-italic.woff2) format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-style: normal; font-weight: 100 800; font-display: swap; src: url(../../assets/fonts/jetbrains-mono-latin-wght-normal.woff2) format("woff2"); }
+
+/* ======================================================================
+ * Shared structure for all designs
+ * ====================================================================== */
+html:root {
+  --d-cjk-sans: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
+  --d-cjk-serif: "Songti SC", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
+  --content-max-width: 760px;
+}
+html:root body {
+  font-family: var(--d-body-font);
+  font-size: var(--d-body-size, 1.6rem);
+  line-height: var(--d-line-height, 1.7);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+html:root .content main { font-feature-settings: "kern", "liga", "calt"; }
+html:root .content h1, html:root .content h2,
+html:root .content h3, html:root .content h4 {
+  font-family: var(--d-heading-font);
+  font-weight: var(--d-heading-weight, 650);
+  letter-spacing: var(--d-heading-tracking, -0.01em);
+  color: var(--d-heading-color, var(--fg));
+  line-height: 1.2;
+}
+html:root .content h1 { font-size: var(--d-h1-size, 2.6em); margin: 0.6em 0 0.5em; }
+html:root .content h2 { font-size: 1.6em; margin-top: 2.2em; }
+html:root .content h3 { font-size: 1.25em; margin-top: 1.8em; }
+html:root .content a:not(.header) { color: var(--links); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, var(--links) 35%, transparent); }
+html:root .content a:not(.header):hover { text-decoration-color: var(--links); }
+html:root .content .header:link, html:root .content .header:visited { color: inherit; }
+html:root code, html:root pre, html:root .hljs { font-family: var(--d-mono-font); font-variant-ligatures: none; font-feature-settings: "liga" 0, "calt" 0; }
+html:root { --mono-font: var(--d-mono-font); }
+html:root :not(pre) > code {
+  font-size: 0.86em;
+  padding: 0.12em 0.36em;
+  border-radius: 5px;
+  background: var(--d-inline-code-bg);
+  color: var(--inline-code-color);
+  border: 1px solid var(--d-inline-code-border, transparent);
+}
+html:root pre { border-radius: var(--d-radius, 10px); }
+html:root pre > code.hljs, html:root pre > .hljs {
+  font-size: 0.84em;
+  line-height: 1.65;
+  padding: 1.1em 1.3em;
+  border-radius: var(--d-radius, 10px);
+  background: var(--d-code-bg);
+  color: var(--d-code-fg);
+  border: 1px solid var(--d-code-border, transparent);
+}
+html:root pre > .buttons { top: 8px; right: 8px; }
+html:root pre > .buttons button { color: var(--d-code-muted); }
+html:root .hljs-keyword, html:root .hljs-selector-tag, html:root .hljs-meta .hljs-keyword { color: var(--d-syn-keyword); font-weight: 500; }
+html:root .hljs-string, html:root .hljs-char, html:root .hljs-addition { color: var(--d-syn-string); }
+html:root .hljs-comment, html:root .hljs-quote { color: var(--d-syn-comment); font-style: italic; }
+html:root .hljs-type, html:root .hljs-built_in, html:root .hljs-class .hljs-title, html:root .hljs-title.class_ { color: var(--d-syn-type); }
+html:root .hljs-number, html:root .hljs-literal { color: var(--d-syn-number); }
+html:root .hljs-title, html:root .hljs-title.function_, html:root .hljs-function .hljs-title { color: var(--d-syn-fn); }
+html:root .hljs-meta, html:root .hljs-attr, html:root .hljs-attribute, html:root .hljs-symbol { color: var(--d-syn-meta); }
+html:root .hljs-variable, html:root .hljs-params, html:root .hljs-punctuation { color: inherit; }
+html:root .boring { opacity: 0.45; }
+
+/* Tables */
+html:root table { border-collapse: collapse; width: 100%; font-size: 0.92em; margin: 1.4em 0; }
+html:root table thead { background: transparent; }
+html:root table thead th { text-align: left; font-weight: 600; border-bottom: 1.5px solid var(--d-rule-strong); padding: 0.55em 0.8em; }
+html:root table td { border: none; border-bottom: 1px solid var(--d-rule); padding: 0.55em 0.8em; vertical-align: top; }
+html:root table tbody tr:nth-child(2n) { background: transparent; }
+html:root table tbody tr:hover { background: var(--d-hover); }
+
+/* Sidebar */
+html:root .sidebar { background: var(--sidebar-bg); border-right: 1px solid var(--d-rule); font-size: 0.93em; }
+html:root .sidebar .sidebar-scrollbox { padding: 18px 14px 40px; }
+html:root .chapter li.chapter-item { line-height: 1.45; margin-top: 0.15em; }
+html:root .chapter li a { padding: 5px 10px; border-radius: 7px; color: var(--sidebar-fg); }
+html:root .chapter li a:hover { color: var(--sidebar-fg); background: var(--d-hover); }
+html:root .chapter li a.active { color: var(--sidebar-active); background: var(--d-sidebar-active-bg); font-weight: 600; }
+html:root .chapter li a strong { font-weight: 500; opacity: 0.55; margin-right: 0.35em; font-variant-numeric: tabular-nums; }
+html:root .chapter li.part-title {
+  font-family: var(--d-label-font, inherit);
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--d-muted);
+  margin: 1.8em 0 0.4em 10px;
+}
+html:root .chapter li a:not([href]), html:root .chapter .chapter-item.draft { opacity: 0.6; }
+
+/* Top bar */
+html:root #menu-bar {
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: saturate(1.4) blur(10px);
+  -webkit-backdrop-filter: saturate(1.4) blur(10px);
+  border-bottom: 1px solid var(--d-rule);
+}
+html:root #menu-bar.bordered { border-bottom-color: var(--d-rule); }
+html:root .menu-title { font-family: var(--d-heading-font); font-weight: 600; font-size: 1.05em; letter-spacing: var(--d-heading-tracking, 0); }
+html:root .icon-button i, html:root .icon-button { color: var(--icons); }
+
+/* Prev/next */
+html:root .nav-chapters { color: var(--d-muted); }
+html:root .nav-chapters:hover { color: var(--links); background: transparent; }
+
+/* Blockquote */
+html:root blockquote { background: var(--d-panel); border: none; border-left: 3px solid var(--d-rule-strong); border-radius: 0 8px 8px 0; margin: 1.5em 0; padding: 0.6em 1.2em; }
+
+/* Widgets and callouts pick up the design's palette */
+html:root {
+  --rfc-panel: var(--d-panel);
+  --rfc-panel-strong: var(--d-panel-strong);
+  --rfc-border: var(--d-rule-strong);
+}
+html:root .rfc-memviz, html:root .rfc-widget {
+  background: var(--d-card);
+  border: 1px solid var(--d-rule);
+  border-radius: calc(var(--d-radius, 10px) + 4px);
+  padding: 18px;
+  box-shadow: var(--d-card-shadow, none);
+}
+html:root .mv-title, html:root .rw-title { font-family: var(--d-heading-font); font-size: 1.05em; letter-spacing: var(--d-heading-tracking, 0); }
+html:root .mv-code, html:root .bt-code, html:root .rw-log { background: var(--d-code-bg); color: var(--d-code-fg); border: 1px solid var(--d-code-border, transparent); }
+html:root .mv-lineno { color: var(--d-code-muted); opacity: 0.8; }
+html:root .mv-tab, html:root .mv-controls button, html:root .rw-btn {
+  border-radius: 999px;
+  border-color: var(--d-rule-strong);
+  background: transparent;
+  padding: 5px 14px;
+  font-family: var(--d-body-font);
+}
+html:root .mv-tab-active { background: var(--d-accent); color: var(--d-on-accent); border-color: var(--d-accent); }
+html:root .mv-controls input[type=range] { accent-color: var(--d-accent); }
+html:root .rfc-callout { background: var(--d-panel); border-left-width: 3px; border-radius: 0 10px 10px 0; padding: 0.8em 1.2em; }
+html:root .rfc-callout .rfc-callout-title { font-family: var(--d-label-font, inherit); font-size: 0.72em; letter-spacing: 0.1em; color: var(--d-muted); }
+html:root .rfc-planned { background: var(--d-panel); border-color: var(--d-rule-strong); border-radius: 12px; }
+html:root .rfc-compare > div > p:first-child { font-family: var(--d-label-font, inherit); }
+
+/* ======================================================================
+ * Folio palette and details
+ * ====================================================================== */
+html:root {
+  --d-body-font: "Inter", var(--d-cjk-sans);
+  --d-heading-font: "Source Serif 4", var(--d-cjk-serif);
+  --d-label-font: "Inter", var(--d-cjk-sans);
+  --d-mono-font: "JetBrains Mono", ui-monospace, monospace;
+  --d-heading-weight: 600;
+  --d-heading-tracking: -0.015em;
+  --d-h1-size: 2.9em;
+  --d-body-size: 1.65rem;
+  --d-line-height: 1.75;
+  --d-radius: 8px;
+  --content-max-width: 720px;
+}
+html:root.light, html:root.rust {
+  --bg: #fbfaf7; --fg: #24211d; --d-muted: #7a7368; --d-heading-color: #171512;
+  --sidebar-bg: #f4f1eb; --sidebar-fg: #4a453e; --sidebar-active: #a8401a; --sidebar-non-existant: #a39d93;
+  --links: #a8401a; --icons: #8a8378; --icons-hover: #24211d;
+  --inline-code-color: #7a3214; --d-inline-code-bg: #f1ece4;
+  --d-code-bg: #f4f0e9; --d-code-fg: #2b2723; --d-code-muted: #9b9488; --d-code-border: #e7e1d6;
+  --d-rule: #e8e3da; --d-rule-strong: #d3ccbf; --d-hover: rgba(120, 100, 70, 0.07);
+  --d-panel: #f4f0e9; --d-panel-strong: #ebe5da; --d-card: #fffefb; --d-card-shadow: 0 1px 2px rgba(60, 45, 20, 0.05), 0 8px 24px rgba(60, 45, 20, 0.05);
+  --d-sidebar-active-bg: rgba(168, 64, 26, 0.08);
+  --d-accent: #a8401a; --d-on-accent: #fff;
+  --d-syn-keyword: #a8401a; --d-syn-string: #4f6b25; --d-syn-comment: #9b9488; --d-syn-type: #2a5d8a; --d-syn-number: #8a4fb0; --d-syn-fn: #6b4a12; --d-syn-meta: #8a6d3b;
+  --quote-bg: #f4f0e9; --table-border-color: #e8e3da; --theme-popup-bg: #fbfaf7; --theme-popup-border: #d3ccbf; --theme-hover: #efeae1;
+  --searchbar-bg: #fff; --searchbar-border-color: #d3ccbf; --searchresults-header-fg: #7a7368; --search-mark-bg: #f6d7a3;
+  --rfc-own: #2a5d8a; --rfc-shared: #3f7d4e; --rfc-mut: #c46a14; --rfc-dangling: #b8322a; --rfc-cpp: #5b4bb0; --rfc-rust: #a8401a;
+  --rfc-hl: rgba(214, 160, 40, 0.18);
+}
+html:root.coal, html:root.navy, html:root.ayu {
+  --bg: #171513; --fg: #e6e0d6; --d-muted: #9a9286; --d-heading-color: #f4efe6;
+  --sidebar-bg: #1c1a17; --sidebar-fg: #c9c2b6; --sidebar-active: #f0895a; --sidebar-non-existant: #6d665c;
+  --links: #f0895a; --icons: #8f877b; --icons-hover: #f4efe6;
+  --inline-code-color: #f3b08c; --d-inline-code-bg: #262320;
+  --d-code-bg: #1f1d1a; --d-code-fg: #e6e0d6; --d-code-muted: #7d766b; --d-code-border: #2c2925;
+  --d-rule: #2c2925; --d-rule-strong: #3d3933; --d-hover: rgba(255, 240, 220, 0.05);
+  --d-panel: #1f1d1a; --d-panel-strong: #2a2723; --d-card: #1c1a17; --d-card-shadow: none;
+  --d-sidebar-active-bg: rgba(240, 137, 90, 0.1);
+  --d-accent: #f0895a; --d-on-accent: #1b120c;
+  --d-syn-keyword: #f0895a; --d-syn-string: #b5c97a; --d-syn-comment: #7d766b; --d-syn-type: #8cb7e0; --d-syn-number: #d1a3f0; --d-syn-fn: #e8c37a; --d-syn-meta: #c9a774;
+  --quote-bg: #1f1d1a; --table-border-color: #2c2925; --theme-popup-bg: #1f1d1a; --theme-popup-border: #3d3933; --theme-hover: #2a2723;
+  --searchbar-bg: #1f1d1a; --searchbar-border-color: #3d3933; --searchresults-header-fg: #9a9286; --search-mark-bg: #7a4a22;
+  --rfc-own: #8cb7e0; --rfc-shared: #8fca8a; --rfc-mut: #f0a45a; --rfc-dangling: #f07a6e; --rfc-cpp: #b4a8ff; --rfc-rust: #f0895a;
+  --rfc-hl: rgba(240, 180, 60, 0.13);
+}
+html:root .content h1 { font-weight: 600; }
+html:root .content h2 { padding-top: 0.9em; border-top: 1px solid var(--d-rule); }
+html:root .content main > p:first-of-type { font-size: 1.12em; color: var(--d-muted); }
+html:root .menu-title { font-style: italic; }
+
+
+/* Offer only one light and one dark theme in the theme menu. */
+#rust, #navy, #ayu { display: none; }

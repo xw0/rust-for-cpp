@@ -18,6 +18,9 @@ RFC.registerStrings("zh-CN", {
   "borrow ended": "借用已结束",
   "valid but unspecified": "有效但未指定",
   "freed": "已释放",
+  "theme-auto": "自动",
+  "theme-light": "浅色",
+  "theme-dark": "深色",
   // timeline UI
   "owner alive": "所有者存活",
   "shared borrow alive": "共享借用存活",
