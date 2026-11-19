@@ -1,0 +1,2770 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Rust for C++ Programmers\n"
+"POT-Creation-Date: 2026-11-19T03:23:47Z\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: src/SUMMARY.md:1 src/foundations/ownership.md:359
+#: src/foundations/borrowing.md:332
+msgid "Summary"
+msgstr "小结"
+
+#: src/SUMMARY.md:3
+msgid "Introduction"
+msgstr "简介"
+
+#: src/SUMMARY.md:6
+msgid "Getting started"
+msgstr "入门"
+
+#: src/SUMMARY.md:8 src/intro/how-to-read.md:1
+msgid "How to read this book"
+msgstr "如何阅读本书"
+
+#: src/SUMMARY.md:9 src/intro/setup.md:1
+msgid "Toolchain setup"
+msgstr "工具链安装"
+
+#: src/SUMMARY.md:11
+msgid "Part I: The language, from C++"
+msgstr "第一部分：从 C++ 出发学习语言"
+
+#: src/SUMMARY.md:13 src/foundations/cargo.md:1
+msgid "Cargo, crates and the build"
+msgstr "Cargo、crate 与构建"
+
+#: src/SUMMARY.md:14 src/foundations/values-and-types.md:1
+msgid "Values, types and layout"
+msgstr "值、类型与内存布局"
+
+#: src/SUMMARY.md:15 src/foundations/ownership.md:1
+msgid "Ownership and moves"
+msgstr "所有权与移动"
+
+#: src/SUMMARY.md:16 src/foundations/borrowing.md:1
+msgid "Borrowing and references"
+msgstr "借用与引用"
+
+#: src/SUMMARY.md:17 src/foundations/lifetimes.md:1
+msgid "Lifetimes"
+msgstr "生命周期"
+
+#: src/SUMMARY.md:18 src/foundations/enums-and-match.md:1
+msgid "Enums and pattern matching"
+msgstr "枚举与模式匹配"
+
+#: src/SUMMARY.md:19 src/foundations/errors.md:1
+msgid "Error handling"
+msgstr "错误处理"
+
+#: src/SUMMARY.md:20 src/foundations/traits-and-generics.md:1
+msgid "Traits and generics"
+msgstr "Trait 与泛型"
+
+#: src/SUMMARY.md:21 src/foundations/operators-and-conversions.md:1
+msgid "Operator overloading and conversions"
+msgstr "运算符重载与类型转换"
+
+#: src/SUMMARY.md:22 src/foundations/collections.md:1
+msgid "Collections and strings"
+msgstr "集合与字符串"
+
+#: src/SUMMARY.md:23 src/foundations/closures-and-iterators.md:1
+msgid "Closures and iterators"
+msgstr "闭包与迭代器"
+
+#: src/SUMMARY.md:24 src/foundations/smart-pointers.md:1
+msgid "Smart pointers and interior mutability"
+msgstr "智能指针与内部可变性"
+
+#: src/SUMMARY.md:25 src/foundations/modules.md:1
+msgid "Modules and project organization"
+msgstr "模块与项目组织"
+
+#: src/SUMMARY.md:27
+msgid "Part II: Systems programming"
+msgstr "第二部分：系统编程"
+
+#: src/SUMMARY.md:29 src/systems/concurrency.md:1
+msgid "Threads, locks and Send/Sync"
+msgstr "线程、锁与 Send/Sync"
+
+#: src/SUMMARY.md:30 src/systems/memory-and-performance.md:1
+msgid "Memory layout and performance"
+msgstr "内存布局与性能"
+
+#: src/SUMMARY.md:31 src/systems/unsafe.md:1
+msgid "Unsafe Rust"
+msgstr "Unsafe Rust"
+
+#: src/SUMMARY.md:32 src/systems/ffi.md:1
+msgid "FFI with C and C++"
+msgstr "与 C 和 C++ 的 FFI"
+
+#: src/SUMMARY.md:33 src/systems/macros.md:1
+msgid "Macros"
+msgstr "宏"
+
+#: src/SUMMARY.md:34 src/systems/testing-and-tooling.md:1
+msgid "Testing, benchmarks and tooling"
+msgstr "测试、基准测试与工具"
+
+#: src/SUMMARY.md:36
+msgid "Part III: Graphics and engine programming"
+msgstr "第三部分：图形与引擎编程"
+
+#: src/SUMMARY.md:38 src/engine/handles-and-arenas.md:1
+msgid "Handles and arenas instead of pointers"
+msgstr "用句柄和 Arena 代替指针"
+
+#: src/SUMMARY.md:39 src/engine/ecs.md:1
+msgid "ECS and the borrow checker"
+msgstr "ECS 与借用检查器"
+
+#: src/SUMMARY.md:40 src/engine/math-and-simd.md:1
+msgid "Math and SIMD"
+msgstr "数学库与 SIMD"
+
+#: src/SUMMARY.md:41 src/engine/opengl.md:1
+msgid "OpenGL from Rust"
+msgstr "在 Rust 中使用 OpenGL"
+
+#: src/SUMMARY.md:42 src/engine/vulkan.md:1
+msgid "Vulkan with ash"
+msgstr "使用 ash 调用 Vulkan"
+
+#: src/SUMMARY.md:43 src/engine/wgpu.md:1
+msgid "Portable graphics with wgpu"
+msgstr "使用 wgpu 实现跨平台图形"
+
+#: src/SUMMARY.md:44 src/engine/game-loop.md:1
+msgid "Windows, input and the game loop"
+msgstr "窗口、输入与游戏循环"
+
+#: src/SUMMARY.md:45 src/engine/assets-and-build.md:1
+msgid "Assets, shaders and build scripts"
+msgstr "资源、着色器与构建脚本"
+
+#: src/SUMMARY.md:46 src/engine/hot-reload-and-plugins.md:1
+msgid "Hot reloading and plugins"
+msgstr "热重载与插件"
+
+#: src/SUMMARY.md:47 src/engine/case-study.md:1
+msgid "Case study: a small renderer"
+msgstr "案例：一个小型渲染器"
+
+#: src/SUMMARY.md:49
+msgid "Appendices"
+msgstr "附录"
+
+#: src/SUMMARY.md:51 src/appendix/cheat-sheet.md:1
+msgid "C++ to Rust cheat sheet"
+msgstr "C++ 到 Rust 速查表"
+
+#: src/SUMMARY.md:52 src/appendix/further-reading.md:1
+msgid "Further reading"
+msgstr "延伸阅读"
+
+#: src/SUMMARY.md:53 src/appendix/contributing.md:1
+msgid "Contributing and translating"
+msgstr "参与贡献与翻译"
+
+#: src/index.md:1
+msgid "Rust for C++ Programmers"
+msgstr "写给 C++ 程序员的 Rust"
+
+#: src/index.md:3
+msgid ""
+"You have written C and C++ for years. You know what lives on the stack and "
+"what lives on the heap, you have chased a dangling pointer through a "
+"debugger at 2 AM, you have called OpenGL or Vulkan through a C API, and you "
+"know how a large project is compiled, linked and held together with CMake. "
+"You do not need another tutorial that explains what a pointer is."
+msgstr ""
+
+#: src/index.md:9
+msgid ""
+"This book teaches Rust **starting from what you already know**. Every "
+"chapter begins with the C++ you would write, shows the Rust equivalent, and "
+"spends its time on the places where your C++ intuition helps and, more "
+"importantly, where it misleads you."
+msgstr ""
+
+#: src/index.md:14
+msgid "What makes this book different"
+msgstr ""
+
+#: src/index.md:16
+msgid ""
+"**C++ first.** RAII vs `Drop`, `std::move` vs Rust moves, `std::mutex` vs "
+"`Mutex<T>`, CMake vs Cargo, templates vs generics, `shared_ptr` vs `Arc`."
+msgstr ""
+
+#: src/index.md:18
+msgid ""
+"**Interactive memory diagrams.** Ownership, borrowing and lifetimes are "
+"explained with step-through diagrams of the stack and the heap, so you can "
+"watch exactly what a move or a borrow does."
+msgstr ""
+
+#: src/index.md:21
+msgid ""
+"**Code you can run in the page.** Every Rust example has a ▶ button that "
+"compiles and runs it on the official [Rust Playground](https://play.rust-"
+"lang.org), and a link that opens it there so you can inspect the assembly."
+msgstr ""
+
+#: src/index.md:24
+msgid ""
+"**Graphics and engine programming.** After the general chapters, Part III "
+"applies everything to the problems you actually have: handles and arenas, "
+"ECS and the borrow checker, SIMD, OpenGL and Vulkan FFI, wgpu, and a small "
+"renderer."
+msgstr ""
+
+#: src/index.md:29
+msgid "Who this is for"
+msgstr ""
+
+#: src/index.md:31
+msgid "You should be comfortable with:"
+msgstr ""
+
+#: src/index.md:33
+msgid ""
+"C: the stack and the heap, pointers, manual memory management, file I/O, C "
+"APIs such as OpenGL and Vulkan, and basic computer architecture (caches, "
+"alignment, what a cache line is);"
+msgstr ""
+
+#: src/index.md:36
+msgid ""
+"C++: classes, constructors and destructors, operator overloading, templates "
+"as a user, and the STL (containers, `std::thread`, `std::mutex`, streams);"
+msgstr ""
+
+#: src/index.md:38
+msgid ""
+"building large projects: compilers, linkers, static and dynamic libraries, "
+"CMake."
+msgstr ""
+
+#: src/index.md:41
+msgid ""
+"You do **not** need modern C++ expertise. If you are not sure what an rvalue"
+" reference is or have never written a template metaprogram, that is fine: "
+"where Rust borrows an idea from modern C++, this book explains the idea from"
+" scratch."
+msgstr ""
+
+#: src/index.md:45
+msgid "How the book is organized"
+msgstr ""
+
+#: src/index.md:47
+msgid ""
+"**Getting started**: how to read the book and how to set up the toolchain."
+msgstr ""
+
+#: src/index.md:48
+msgid ""
+"**Part I: The language, from C++**: Cargo, types, ownership, borrowing, "
+"lifetimes, enums, errors, traits, collections, closures, smart pointers and "
+"modules."
+msgstr ""
+
+#: src/index.md:51
+msgid ""
+"**Part II: Systems programming**: concurrency, memory layout and "
+"performance, `unsafe`, FFI with C and C++, macros, testing and tooling."
+msgstr ""
+
+#: src/index.md:53
+msgid ""
+"**Part III: Graphics and engine programming**: handles and arenas, ECS, math"
+" and SIMD, OpenGL, Vulkan, wgpu, the game loop, assets and build scripts, "
+"hot reloading, and a case study."
+msgstr ""
+
+#: src/index.md:57
+msgid "Status"
+msgstr "状态"
+
+#: src/index.md:59
+msgid ""
+"This book is a work in progress. Chapters marked _planned_ show what they "
+"will cover. The sample chapters are complete:"
+msgstr ""
+
+#: src/index.md:62
+msgid "[Ownership and moves](foundations/ownership.md)"
+msgstr ""
+
+#: src/index.md:63
+msgid "[Borrowing and references](foundations/borrowing.md)"
+msgstr ""
+
+#: src/index.md:64
+msgid "[Handles and arenas instead of pointers](engine/handles-and-arenas.md)"
+msgstr ""
+
+#: src/index.md:66 src/appendix/contributing.md:7
+msgid "License"
+msgstr "许可证"
+
+#: src/index.md:68
+msgid ""
+"The text and diagrams are licensed under [CC BY "
+"4.0](https://creativecommons.org/licenses/by/4.0/): you may copy, translate,"
+" adapt and redistribute them, including commercially, as long as you credit "
+"this book and link to it. Code (examples and the site's scripts) is under "
+"the [MIT license](https://opensource.org/license/mit). See [Contributing and"
+" translating](appendix/contributing.md)."
+msgstr ""
+
+#: src/intro/how-to-read.md:3
+msgid ""
+"Read Part I in order. Ownership, borrowing and lifetimes build on each "
+"other, and most of Rust's surprises for a C++ programmer are in those three "
+"chapters. After that, Part II and Part III can be read in any order; each "
+"chapter links back to what it relies on."
+msgstr ""
+
+#: src/intro/how-to-read.md:8
+msgid "Conventions"
+msgstr ""
+
+#: src/intro/how-to-read.md:10
+msgid ""
+"Side-by-side code shows the C++ you would write next to the Rust equivalent:"
+msgstr ""
+
+#: src/intro/how-to-read.md:15 src/foundations/ownership.md:40
+#: src/foundations/ownership.md:166 src/foundations/ownership.md:361
+#: src/foundations/borrowing.md:24 src/foundations/borrowing.md:192
+#: src/foundations/borrowing.md:334 src/engine/handles-and-arenas.md:235
+#: src/appendix/cheat-sheet.md:10
+msgid "C++"
+msgstr ""
+
+#: src/intro/how-to-read.md:24 src/foundations/ownership.md:40
+#: src/foundations/ownership.md:166 src/foundations/ownership.md:361
+#: src/foundations/borrowing.md:38 src/foundations/borrowing.md:205
+#: src/foundations/borrowing.md:334 src/engine/handles-and-arenas.md:235
+#: src/appendix/cheat-sheet.md:10
+msgid "Rust"
+msgstr ""
+
+#: src/intro/how-to-read.md:34
+msgid ""
+"Rust examples are live. Press ▶ to compile and run them on the Rust "
+"Playground; edit them first if you like. The link under each example opens "
+"it on the Playground, where the **⋯** menu next to _Run_ shows the generated"
+" assembly, LLVM IR or MIR. Some examples hide setup lines; click the eye "
+"icon to show them."
+msgstr ""
+
+#: src/intro/how-to-read.md:40
+msgid ""
+"Interactive diagrams have **Back** and **Next** buttons, a slider, and "
+"respond to the ← and → keys when focused. Where a diagram has tabs, the C++ "
+"tab and the Rust tab show the same program in both languages."
+msgstr ""
+
+#: src/intro/how-to-read.md:44
+msgid "Callouts mark three kinds of aside:"
+msgstr ""
+
+#: src/intro/how-to-read.md:49
+msgid "Places where doing what you would do in C++ leads you astray."
+msgstr ""
+
+#: src/intro/how-to-read.md:56
+msgid "What the compiler generates and what it costs."
+msgstr ""
+
+#: src/intro/how-to-read.md:63
+msgid "How the topic plays out in graphics and engine code."
+msgstr ""
+
+#: src/intro/setup.md:5 src/foundations/cargo.md:5
+#: src/foundations/values-and-types.md:5 src/foundations/lifetimes.md:5
+#: src/foundations/enums-and-match.md:5 src/foundations/errors.md:5
+#: src/foundations/traits-and-generics.md:5
+#: src/foundations/operators-and-conversions.md:5
+#: src/foundations/collections.md:5
+#: src/foundations/closures-and-iterators.md:5
+#: src/foundations/smart-pointers.md:5 src/foundations/modules.md:5
+#: src/systems/concurrency.md:5 src/systems/memory-and-performance.md:5
+#: src/systems/unsafe.md:5 src/systems/ffi.md:5 src/systems/macros.md:5
+#: src/systems/testing-and-tooling.md:5 src/engine/ecs.md:5
+#: src/engine/math-and-simd.md:5 src/engine/opengl.md:5 src/engine/vulkan.md:5
+#: src/engine/wgpu.md:5 src/engine/game-loop.md:5
+#: src/engine/assets-and-build.md:5 src/engine/hot-reload-and-plugins.md:5
+#: src/engine/case-study.md:5
+msgid "**This chapter is planned.** It will cover:"
+msgstr "**本章尚在计划中。** 将涵盖："
+
+#: src/intro/setup.md:7
+msgid ""
+"rustup, toolchains and targets (vs installing GCC/Clang/MSVC side by side)"
+msgstr ""
+
+#: src/intro/setup.md:8
+msgid "rust-analyzer in VS Code, CLion or Visual Studio"
+msgstr ""
+
+#: src/intro/setup.md:9
+msgid ""
+"Debugging with LLDB, GDB or Visual Studio; RenderDoc, Nsight and PIX still "
+"work"
+msgstr ""
+
+#: src/intro/setup.md:10
+msgid "`cargo new`, `cargo run`, `cargo build --release`: what each step does"
+msgstr ""
+
+#: src/intro/setup.md:14
+msgid ""
+"Until it is written, the short version: install Rust with "
+"[rustup](https://rustup.rs), then"
+msgstr ""
+
+#: src/foundations/cargo.md:7
+msgid "One tool for build, dependencies, tests, benchmarks and docs"
+msgstr ""
+
+#: src/foundations/cargo.md:8
+msgid ""
+"Crates as the unit of compilation (vs translation units); why there are no "
+"headers"
+msgstr ""
+
+#: src/foundations/cargo.md:9
+msgid "Cargo.toml vs CMakeLists.txt, features vs #ifdef / CMake options"
+msgstr ""
+
+#: src/foundations/cargo.md:10
+msgid ""
+"Debug and release profiles, LTO, codegen-units, opt-level per dependency"
+msgstr ""
+
+#: src/foundations/cargo.md:11
+msgid ""
+"Static and dynamic linking, cdylib/staticlib, what ends up in the binary"
+msgstr ""
+
+#: src/foundations/cargo.md:12
+msgid "Workspaces for large codebases (vs add_subdirectory)"
+msgstr ""
+
+#: src/foundations/cargo.md:16
+msgid "_C++ starting point: CMake, the linker, package managers._"
+msgstr ""
+
+#: src/foundations/values-and-types.md:7
+msgid ""
+"Integer types, overflow (debug panics, release wraps), explicit `as` casts"
+msgstr ""
+
+#: src/foundations/values-and-types.md:8
+msgid "No implicit conversions, no integer promotion"
+msgstr ""
+
+#: src/foundations/values-and-types.md:9
+msgid "Structs, tuples, arrays, slices and their memory layout"
+msgstr ""
+
+#: src/foundations/values-and-types.md:10
+msgid "Default field reordering and `#[repr(C)]` for GPU buffers"
+msgstr ""
+
+#: src/foundations/values-and-types.md:11
+msgid "`let`, mutability by default off, shadowing"
+msgstr ""
+
+#: src/foundations/values-and-types.md:12
+msgid "Expressions everywhere: blocks, `if` and `match` return values"
+msgstr ""
+
+#: src/foundations/values-and-types.md:16
+msgid "_C++ starting point: Primitive types, structs, arrays._"
+msgstr ""
+
+#: src/foundations/ownership.md:3
+msgid ""
+"You already know the core idea of this chapter. In C++ you write a class "
+"whose constructor acquires a resource and whose destructor releases it, and "
+"you rely on scope to run that destructor at the right time. That is RAII, "
+"and it is the best idea C++ has."
+msgstr ""
+
+#: src/foundations/ownership.md:8
+msgid ""
+"Rust takes RAII and makes it the **only** way resources are managed, then "
+"adds one thing C++ never had: the compiler tracks, for every value, which "
+"variable currently owns it. That one addition removes use-after-move, double"
+" free and most of the rule of five."
+msgstr ""
+
+#: src/foundations/ownership.md:13 src/foundations/borrowing.md:10
+msgid "This chapter covers:"
+msgstr ""
+
+#: src/foundations/ownership.md:15
+msgid "the three ownership rules, and how they map onto RAII,"
+msgstr ""
+
+#: src/foundations/ownership.md:16
+msgid ""
+"what a move actually does in each language (they are surprisingly "
+"different),"
+msgstr ""
+
+#: src/foundations/ownership.md:17
+msgid "`Copy` and `Clone`, the replacements for copy constructors,"
+msgstr ""
+
+#: src/foundations/ownership.md:18
+msgid "`Drop`, the replacement for destructors, and drop order,"
+msgstr ""
+
+#: src/foundations/ownership.md:19
+msgid "wrapping a GPU resource so it cannot leak or be freed twice."
+msgstr ""
+
+#: src/foundations/ownership.md:21
+msgid "The rules"
+msgstr ""
+
+#: src/foundations/ownership.md:23
+msgid "Every value has exactly one **owner**, a variable or a field."
+msgstr ""
+
+#: src/foundations/ownership.md:24
+msgid ""
+"When the owner goes out of scope, the value is **dropped** (its destructor "
+"runs)."
+msgstr ""
+
+#: src/foundations/ownership.md:25
+msgid ""
+"Ownership can be **moved** to another variable, and then the old one can no "
+"longer be used."
+msgstr ""
+
+#: src/foundations/ownership.md:28
+msgid ""
+"Rules 1 and 2 are RAII exactly as you know it. Rule 3 is where Rust and C++ "
+"part ways."
+msgstr ""
+
+#: src/foundations/ownership.md:31
+msgid "What a move does"
+msgstr ""
+
+#: src/foundations/ownership.md:33
+msgid ""
+"Here is the same function in both languages. Step through each tab, and pay "
+"attention to what happens to `a`."
+msgstr ""
+
+#: src/foundations/ownership.md:38
+msgid "Two differences matter:"
+msgstr ""
+
+#: src/foundations/ownership.md:42
+msgid "Who performs the move"
+msgstr ""
+
+#: src/foundations/ownership.md:42
+msgid "The move constructor, user code that can do anything"
+msgstr ""
+
+#: src/foundations/ownership.md:42
+msgid "The compiler: a bitwise copy of the value's bytes"
+msgstr ""
+
+#: src/foundations/ownership.md:43
+msgid "State of the source"
+msgstr ""
+
+#: src/foundations/ownership.md:43
+msgid "A live object in a \"valid but unspecified\" state"
+msgstr ""
+
+#: src/foundations/ownership.md:43
+msgid "Statically inaccessible; using it is a compile error"
+msgstr ""
+
+#: src/foundations/ownership.md:44
+msgid "Destructor of the source"
+msgstr ""
+
+#: src/foundations/ownership.md:44
+msgid "Still runs, so the move constructor must neutralize it"
+msgstr ""
+
+#: src/foundations/ownership.md:44
+msgid "Does not run"
+msgstr ""
+
+#: src/foundations/ownership.md:45
+msgid "Can a move throw / fail?"
+msgstr ""
+
+#: src/foundations/ownership.md:45
+msgid "Yes, unless marked `noexcept`"
+msgstr ""
+
+#: src/foundations/ownership.md:45
+msgid "No, it is a `memcpy`"
+msgstr ""
+
+#: src/foundations/ownership.md:47
+msgid ""
+"Because a Rust move is always a shallow byte copy, every type is movable and"
+" no type can customize how it moves. You never write a move constructor, and"
+" `std::vector`'s old dilemma (copy elements on reallocation unless the move "
+"constructor is `noexcept`) does not exist: `Vec` always moves elements with "
+"`memcpy`."
+msgstr ""
+
+#: src/foundations/ownership.md:56
+msgid ""
+"\"Bitwise copy\" describes the semantics, not necessarily the machine code. "
+"The optimizer removes most moves entirely, just as C++ elides copies. If a "
+"move does show up in a profile, it is a `memcpy` of `size_of::<T>()` bytes. "
+"A `Vec<T>` is 24 bytes on a 64-bit target no matter how many elements it "
+"holds, so moving one is cheap. A `[f32; 4096]` is 16 KiB, so move it into a "
+"`Box` first if you pass it around by value."
+msgstr ""
+
+#: src/foundations/ownership.md:65
+msgid ""
+"Try it yourself. This program does not compile. Run it to see the error, "
+"then fix it by removing the bad line, or by using `let b = a.clone();` to "
+"make an explicit deep copy."
+msgstr ""
+
+#: src/foundations/ownership.md:73
+msgid "\"a has {} elements\""
+msgstr ""
+
+#: src/foundations/ownership.md:74
+msgid "\"b has {} elements\""
+msgstr ""
+
+#: src/foundations/ownership.md:78
+msgid "Moves into and out of functions"
+msgstr ""
+
+#: src/foundations/ownership.md:80
+msgid ""
+"Passing an argument by value moves it, exactly like passing a "
+"`std::unique_ptr<T>` by value. There is no `std::move` to write, because the"
+" move is the default, and there is no null left behind."
+msgstr ""
+
+#: src/foundations/ownership.md:86
+msgid ""
+"Returning a value moves it out to the caller, which is how a function hands "
+"ownership back:"
+msgstr ""
+
+#: src/foundations/ownership.md:93
+msgid "// moved out to the caller; nothing is freed here\n"
+msgstr ""
+
+#: src/foundations/ownership.md:100
+msgid "// ownership comes back\n"
+msgstr ""
+
+#: src/foundations/ownership.md:105
+msgid "// move in, move out\n"
+msgstr ""
+
+#: src/foundations/ownership.md:106
+msgid "\"{buf:?}\""
+msgstr ""
+
+#: src/foundations/ownership.md:110
+msgid ""
+"Taking and giving back ownership works, but it is clumsy when a function "
+"only needs to look at or modify a value. That is what borrowing is for, and "
+"it is the subject of the [next chapter](borrowing.md). In practice most "
+"functions take references, and you move only when ownership really changes "
+"hands: pushing into a container, sending to another thread, storing in a "
+"struct."
+msgstr ""
+
+#: src/foundations/ownership.md:119
+msgid ""
+"In C++, `void f(std::string s)` followed by `f(name)` silently copies the "
+"string, and you add `std::move` to avoid it. In Rust, `f(name)` moves, and "
+"you write `f(name.clone())` when you really want a copy. Expensive "
+"operations are always visible in the source."
+msgstr ""
+
+#: src/foundations/ownership.md:126
+msgid "Copy types"
+msgstr ""
+
+#: src/foundations/ownership.md:128
+msgid ""
+"Moving an `i32` and then using the original would be silly: there is nothing"
+" to \"own\". Types whose bytes can be duplicated safely implement the `Copy`"
+" trait, and assignment copies them instead of moving them. The source stays "
+"usable."
+msgstr ""
+
+#: src/foundations/ownership.md:146
+msgid "// a copy, not a move\n"
+msgstr ""
+
+#: src/foundations/ownership.md:147 src/foundations/borrowing.md:143
+#: src/foundations/borrowing.md:172 src/foundations/borrowing.md:173
+#: src/foundations/borrowing.md:174
+msgid "\"{}\""
+msgstr ""
+
+#: src/foundations/ownership.md:147
+msgid "// `up` is still usable\n"
+msgstr ""
+
+#: src/foundations/ownership.md:148
+msgid "\"{also_up:?}\""
+msgstr ""
+
+#: src/foundations/ownership.md:152
+msgid ""
+"Integers, floats, `bool`, `char`, shared references, and arrays and tuples "
+"of `Copy` types are all `Copy`. A type can only be `Copy` if all its fields "
+"are, and if it has no `Drop` implementation. `String`, `Vec` and `Box` are "
+"never `Copy`, because duplicating their bytes would create two owners of one"
+" heap allocation."
+msgstr ""
+
+#: src/foundations/ownership.md:158
+msgid ""
+"The rule of thumb for engine code: small plain-data types such as vectors, "
+"matrices, colors, handles and IDs should derive `Copy`. Anything that owns a"
+" resource should not."
+msgstr ""
+
+#: src/foundations/ownership.md:162
+msgid ""
+"`Clone` is the explicit deep copy, the equivalent of a copy constructor that"
+" you must call by name. `#[derive(Clone)]` generates a member-wise clone, "
+"like a defaulted copy constructor."
+msgstr ""
+
+#: src/foundations/ownership.md:168
+msgid "Trivially copyable type"
+msgstr ""
+
+#: src/foundations/ownership.md:168
+msgid "`#[derive(Clone, Copy)]`"
+msgstr ""
+
+#: src/foundations/ownership.md:169 src/appendix/cheat-sheet.md:14
+msgid "Copy constructor"
+msgstr ""
+
+#: src/foundations/ownership.md:169
+msgid "`impl Clone` (called explicitly with `.clone()`)"
+msgstr ""
+
+#: src/foundations/ownership.md:170
+msgid "`= delete` copy constructor"
+msgstr ""
+
+#: src/foundations/ownership.md:170
+msgid "Do nothing: types are not copyable unless you opt in"
+msgstr ""
+
+#: src/foundations/ownership.md:171
+msgid "Move constructor / move assignment"
+msgstr ""
+
+#: src/foundations/ownership.md:171
+msgid "Nothing to write: every move is a `memcpy`"
+msgstr ""
+
+#: src/foundations/ownership.md:172
+msgid "Destructor"
+msgstr ""
+
+#: src/foundations/ownership.md:172
+msgid "`impl Drop`"
+msgstr ""
+
+#: src/foundations/ownership.md:174
+msgid "Drop: destructors"
+msgstr ""
+
+#: src/foundations/ownership.md:176
+msgid ""
+"`Drop` is the destructor. It runs when the owner goes out of scope, and it "
+"runs at most once per value, because the compiler tracks moves."
+msgstr ""
+
+#: src/foundations/ownership.md:184
+msgid "\"drop {}\""
+msgstr ""
+
+#: src/foundations/ownership.md:194
+msgid "\"a\""
+msgstr ""
+
+#: src/foundations/ownership.md:195
+msgid "\"b\""
+msgstr ""
+
+#: src/foundations/ownership.md:196
+msgid "\"p.first\""
+msgstr ""
+
+#: src/foundations/ownership.md:196
+msgid "\"p.second\""
+msgstr ""
+
+#: src/foundations/ownership.md:197
+msgid "\"c\""
+msgstr ""
+
+#: src/foundations/ownership.md:198
+msgid "// explicit early drop: `c` is moved into `drop` and dies there\n"
+msgstr ""
+
+#: src/foundations/ownership.md:199
+msgid "\"end of main\""
+msgstr ""
+
+#: src/foundations/ownership.md:203
+msgid "Run it and read the output carefully:"
+msgstr ""
+
+#: src/foundations/ownership.md:205
+msgid "Local variables are dropped in reverse order of declaration, like C++."
+msgstr ""
+
+#: src/foundations/ownership.md:206
+msgid ""
+"Struct fields are dropped in **declaration order**, which is the opposite of"
+" C++ (members are destroyed in reverse). This rarely matters, but it does "
+"when one field must outlive another, for example a Vulkan device and the "
+"objects created from it. Put the dependent objects first, or wrap the order-"
+"sensitive part in an explicit `Drop` for the parent struct."
+msgstr ""
+
+#: src/foundations/ownership.md:211
+msgid ""
+"`drop(x)` is not special. It is an ordinary function that takes its argument"
+" by value and does nothing, so the value is dropped when it returns."
+msgstr ""
+
+#: src/foundations/ownership.md:217
+msgid "What if a value is moved on only one branch?"
+msgstr ""
+
+#: src/foundations/ownership.md:224
+msgid "// is `v` dropped here?\n"
+msgstr ""
+
+#: src/foundations/ownership.md:229
+msgid ""
+"The compiler adds a hidden boolean \"drop flag\" on the stack, sets it when "
+"`v` is moved, and checks it at the end of scope. This is the only runtime "
+"cost of ownership tracking, and it only appears when moves are conditional."
+msgstr ""
+
+#: src/foundations/ownership.md:235
+msgid "Wrapping a GPU resource"
+msgstr ""
+
+#: src/foundations/ownership.md:237
+msgid ""
+"Here is where ownership pays off for graphics code. In C++, a class that "
+"owns an OpenGL buffer name needs the full rule of five to be correct:"
+msgstr ""
+
+#: src/foundations/ownership.md:243
+msgid "/* ... */"
+msgstr ""
+
+#: src/foundations/ownership.md:246
+msgid "// no copies: double delete\n"
+msgstr ""
+
+#: src/foundations/ownership.md:249
+msgid "// steal, null out\n"
+msgstr ""
+
+#: src/foundations/ownership.md:259
+msgid "// 0 doubles as the \"moved-from\" marker\n"
+msgstr ""
+
+#: src/foundations/ownership.md:263
+msgid ""
+"Every line of that is there to manage the moved-from state. In Rust there is"
+" no moved-from state, so the type is:"
+msgstr ""
+
+#: src/foundations/ownership.md:271
+msgid "\"glDeleteBuffers({})\""
+msgstr ""
+
+#: src/foundations/ownership.md:275
+msgid "// never 0 while the struct exists\n"
+msgstr ""
+
+#: src/foundations/ownership.md:294
+msgid "// move: `a` is gone, `b` owns the buffer\n"
+msgstr ""
+
+#: src/foundations/ownership.md:295
+msgid "// move into a container\n"
+msgstr ""
+
+#: src/foundations/ownership.md:296
+msgid "// glDeleteBuffers runs exactly once\n"
+msgstr ""
+
+#: src/foundations/ownership.md:300
+msgid ""
+"It is not `Copy` and not `Clone`, so it cannot be duplicated. Moves need no "
+"code. `Drop` runs exactly once. The `0` sentinel is gone, so the destructor "
+"has no `if`. (The `gl` module is stubbed out in a hidden part of the example"
+" so it runs in the browser. Click the eye icon to see it. The [OpenGL "
+"chapter](../engine/opengl.md) uses the real bindings.)"
+msgstr ""
+
+#: src/foundations/ownership.md:309
+msgid ""
+"Ownership is a tree: each value has one owner. Engines are full of things "
+"that are _not_ trees: a mesh used by many entities, a texture referenced by "
+"many materials, a parent and child that point at each other. Rust has three "
+"answers, and you will meet all of them:"
+msgstr ""
+
+#: src/foundations/ownership.md:314
+msgid "**Borrowing** for short-lived access ([next chapter](borrowing.md))."
+msgstr ""
+
+#: src/foundations/ownership.md:315
+msgid ""
+"**Shared ownership** with `Rc`/`Arc`, the equivalents of `shared_ptr` "
+"([Smart pointers](smart-pointers.md))."
+msgstr ""
+
+#: src/foundations/ownership.md:317
+msgid ""
+"**Handles** into an arena that owns everything, which is usually the best "
+"fit for engines ([Handles and arenas](../engine/handles-and-arenas.md))."
+msgstr ""
+
+#: src/foundations/ownership.md:322
+msgid "Leaving a value behind: `take` and `replace`"
+msgstr ""
+
+#: src/foundations/ownership.md:324
+msgid ""
+"Sometimes you really do want the C++ behavior: move a value out of a struct "
+"field and leave something valid in its place. You cannot move out of a field"
+" you only borrowed, because that would leave a hole. Instead you swap "
+"something in explicitly:"
+msgstr ""
+
+#: src/foundations/ownership.md:337
+msgid "/// Hand the recorded commands to the renderer and start a fresh list.\n"
+msgstr ""
+
+#: src/foundations/ownership.md:339
+msgid "// leaves Vec::new() behind\n"
+msgstr ""
+
+#: src/foundations/ownership.md:344
+msgid "\"draw\""
+msgstr ""
+
+#: src/foundations/ownership.md:344
+msgid "\"dispatch\""
+msgstr ""
+
+#: src/foundations/ownership.md:346
+msgid "\"{submitted:?}, left: {:?}\""
+msgstr ""
+
+#: src/foundations/ownership.md:348
+msgid "\"old\""
+msgstr ""
+
+#: src/foundations/ownership.md:349
+msgid "\"new\""
+msgstr ""
+
+#: src/foundations/ownership.md:350
+msgid "\"{previous} -> {current}\""
+msgstr ""
+
+#: src/foundations/ownership.md:354
+msgid ""
+"`mem::take` (for types with a `Default`), `mem::replace` and `mem::swap` are"
+" the explicit versions of the moved-from state. For optional fields, "
+"`Option::take()` does the same and leaves `None` behind. The difference from"
+" C++ is that the leftover value is one _you_ chose, written in the source."
+msgstr ""
+
+#: src/foundations/ownership.md:363
+msgid "RAII is a convention"
+msgstr ""
+
+#: src/foundations/ownership.md:363
+msgid "RAII is the only model; the compiler enforces it"
+msgstr ""
+
+#: src/foundations/ownership.md:364
+msgid "`std::move(x)` casts; the move constructor moves"
+msgstr ""
+
+#: src/foundations/ownership.md:364
+msgid "`let y = x;` moves, always a byte copy"
+msgstr ""
+
+#: src/foundations/ownership.md:365
+msgid "Moved-from object is alive and must be valid"
+msgstr ""
+
+#: src/foundations/ownership.md:365
+msgid "Moved-from variable cannot be used at all"
+msgstr ""
+
+#: src/foundations/ownership.md:366
+msgid "Copy is implicit unless deleted"
+msgstr ""
+
+#: src/foundations/ownership.md:366
+msgid "Copy only for `Copy` types; otherwise `.clone()`"
+msgstr ""
+
+#: src/foundations/ownership.md:367
+msgid "Rule of five"
+msgstr ""
+
+#: src/foundations/ownership.md:367
+msgid "Implement `Drop` if needed, derive `Clone` if wanted"
+msgstr ""
+
+#: src/foundations/ownership.md:368
+msgid "Members destroyed in reverse order"
+msgstr ""
+
+#: src/foundations/ownership.md:368
+msgid "Fields dropped in declaration order"
+msgstr ""
+
+#: src/foundations/ownership.md:370 src/foundations/borrowing.md:344
+#: src/engine/handles-and-arenas.md:304
+msgid "Exercises"
+msgstr ""
+
+#: src/foundations/ownership.md:372
+msgid ""
+"Change `Vec3` above to remove `Copy` (keep `Clone`). What error do you get, "
+"and what are two ways to fix `main`?"
+msgstr ""
+
+#: src/foundations/ownership.md:374
+msgid ""
+"In the `Noisy` example, add a third field to `Pair` and predict the output "
+"before running it."
+msgstr ""
+
+#: src/foundations/ownership.md:376
+msgid ""
+"Add a `GlBuffer::into_raw(self) -> GLuint` method that gives up ownership "
+"without deleting the buffer. Hint: look up `std::mem::forget`, and think "
+"about why it takes `self` by value."
+msgstr ""
+
+#: src/foundations/borrowing.md:3
+msgid ""
+"Moving ownership every time a function needs to look at a value would be "
+"unworkable. Most of the time you want what C++ gives you with `const T&` and"
+" `T&`: access without ownership. Rust calls this **borrowing**, and its "
+"references look like C++ references with one big addition: the compiler "
+"checks that a reference can never outlive what it points to, and that nobody"
+" modifies data while someone else is reading it."
+msgstr ""
+
+#: src/foundations/borrowing.md:12
+msgid "the two kinds of reference and the one rule that governs them,"
+msgstr ""
+
+#: src/foundations/borrowing.md:13
+msgid "why that rule rules out iterator and reference invalidation,"
+msgstr ""
+
+#: src/foundations/borrowing.md:14
+msgid "how long a borrow lasts,"
+msgstr ""
+
+#: src/foundations/borrowing.md:15
+msgid "slices, the safe `std::span`,"
+msgstr ""
+
+#: src/foundations/borrowing.md:16
+msgid "what the rule buys the optimizer,"
+msgstr ""
+
+#: src/foundations/borrowing.md:17
+msgid ""
+"the borrow-checker fights you will have in engine code, and their fixes."
+msgstr ""
+
+#: src/foundations/borrowing.md:19
+msgid "Two kinds of reference"
+msgstr ""
+
+#: src/foundations/borrowing.md:32
+msgid "// nothing at the call site says it mutates\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:51
+msgid "// mutation is visible here\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:52
+msgid "\"{a} {samples:?}\""
+msgstr ""
+
+#: src/foundations/borrowing.md:59
+msgid ""
+"`&T` is a **shared reference**: read-only access, like `const T&`. You can "
+"have as many as you like at the same time."
+msgstr ""
+
+#: src/foundations/borrowing.md:61
+msgid ""
+"`&mut T` is a **mutable reference**: read-write access, like `T&`. While it "
+"exists, it is the _only_ way to reach the value."
+msgstr ""
+
+#: src/foundations/borrowing.md:64
+msgid ""
+"Both are plain pointers at run time, never null, and always point to a "
+"valid, initialized value. Unlike C++ references they are first-class values:"
+" you can reassign a `let` binding holding a reference, store references in "
+"structs, and put them in containers."
+msgstr ""
+
+#: src/foundations/borrowing.md:69
+msgid ""
+"You also borrow explicitly at the call site: `average(&samples)`, "
+"`normalize(&mut samples)`. Reading a call tells you whether it can modify "
+"its argument, which C++ hides behind the function signature."
+msgstr ""
+
+#: src/foundations/borrowing.md:73
+msgid "The rule: shared XOR mutable"
+msgstr ""
+
+#: src/foundations/borrowing.md:75
+msgid ""
+"At any point in the program, a value can have **either** any number of `&T` "
+"**or** exactly one `&mut T`, never both. Step through it:"
+msgstr ""
+
+#: src/foundations/borrowing.md:80
+msgid ""
+"While a shared borrow is in use, the owner is also frozen against writes: "
+"`scores` itself cannot be modified until `a` and `b` are done. While a "
+"mutable borrow is in use, the owner cannot even be _read_ except through it."
+msgstr ""
+
+#: src/foundations/borrowing.md:84
+msgid ""
+"This is a reader-writer lock, enforced at compile time, with zero runtime "
+"cost."
+msgstr ""
+
+#: src/foundations/borrowing.md:86
+msgid "The bug this rule removes"
+msgstr ""
+
+#: src/foundations/borrowing.md:88
+msgid ""
+"Every C++ engineer has hit this, usually with `std::vector<Entity>` and a "
+"cached `Entity*` or iterator. Compare the two tabs:"
+msgstr ""
+
+#: src/foundations/borrowing.md:93
+msgid ""
+"The C++ program is undefined behavior that usually _appears_ to work. The "
+"Rust program does not compile, and the error points at all three lines "
+"involved: where the borrow starts, where the conflicting mutation is, and "
+"where the borrow is used later."
+msgstr ""
+
+#: src/foundations/borrowing.md:98
+msgid ""
+"The same rule covers modifying a container while iterating over it, holding "
+"a `string_view` into a `std::string` that gets reassigned, and a `std::span`"
+" over a vector that grows. These are all the same mistake: a reader holds a "
+"pointer into memory that a writer is about to move or free."
+msgstr ""
+
+#: src/foundations/borrowing.md:103
+msgid "How long does a borrow last?"
+msgstr ""
+
+#: src/foundations/borrowing.md:105
+msgid ""
+"A borrow is alive from where it is created to its **last use**, not to the "
+"end of the enclosing block. The compiler computes this (\"non-lexical "
+"lifetimes\"), and most of the time you never think about it. When you do get"
+" an error, picture the live range of each reference. Hover the bars below to"
+" see which lines each borrow covers, and switch between the rejected program"
+" and two fixes:"
+msgstr ""
+
+#: src/foundations/borrowing.md:114
+msgid "Borrowing in methods"
+msgstr ""
+
+#: src/foundations/borrowing.md:116
+msgid ""
+"Methods choose how they access `self`, which is how the standard library "
+"encodes \"this method mutates\" or \"this method consumes\":"
+msgstr ""
+
+#: src/foundations/borrowing.md:125
+msgid "// like a const member function\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:128
+msgid "// non-const member function\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:135
+msgid "// consumes the mesh\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:142
+msgid "// auto-borrows: (&mut m).translate(...)\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:144
+msgid "// `m` is moved; it cannot be used after this\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:145
+msgid "\"{raw:?}\""
+msgstr ""
+
+#: src/foundations/borrowing.md:149
+msgid ""
+"The `.` operator borrows and dereferences automatically, so you write "
+"`m.translate(...)` rather than `(&mut m).translate(...)`. Method calls are "
+"one of the very few places where Rust inserts a borrow for you."
+msgstr ""
+
+#: src/foundations/borrowing.md:153
+msgid "Slices: the safe span"
+msgstr ""
+
+#: src/foundations/borrowing.md:155
+msgid ""
+"A **slice** `&[T]` is a pointer plus a length, a borrowed view of contiguous"
+" elements. It is `std::span<const T>`, and `&mut [T]` is `std::span<T>`, "
+"except that the borrow checker guarantees the underlying storage outlives "
+"the view and does not reallocate under it. `&str` is the same for UTF-8 "
+"text, the safe `std::string_view`."
+msgstr ""
+
+#: src/foundations/borrowing.md:161
+msgid ""
+"Write functions that take slices rather than `&Vec<T>`. They then accept "
+"vectors, arrays, and sub-ranges:"
+msgstr ""
+
+#: src/foundations/borrowing.md:172
+msgid "// &Vec<f32> coerces to &[f32]\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:173
+msgid "// so does &[f32; 2]\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:174
+msgid "// a sub-range: bounds-checked once\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:178
+msgid ""
+"Indexing a slice is bounds-checked. An out-of-range index panics instead of "
+"reading past the end. In hot loops, iterating (`for x in xs`) avoids the "
+"checks entirely, and the [iterators chapter](closures-and-iterators.md) "
+"shows how to confirm that in the assembly."
+msgstr ""
+
+#: src/foundations/borrowing.md:183
+msgid "What the rule buys the optimizer"
+msgstr ""
+
+#: src/foundations/borrowing.md:185
+msgid ""
+"Because a `&mut T` is guaranteed to be the only path to its target, the "
+"compiler can assume it does not alias anything else. In C++ terms, every "
+"`&mut` is `__restrict`, and the compiler checks it for you."
+msgstr ""
+
+#: src/foundations/borrowing.md:197
+msgid ""
+"// must reload b: a and b\n"
+"              // might be the same int\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:210
+msgid ""
+"// b cannot alias a: the\n"
+"              // compiler folds this to\n"
+"              // *a += 2 * *b\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:220
+msgid ""
+"Open the Rust version in the Playground (link under the example), choose "
+"**Show Assembly** in release mode, and compare with the C++ version in "
+"Compiler Explorer. The Rust version loads `b` once. In SIMD-heavy code such "
+"as skinning, particle updates or audio mixing, this is the difference "
+"between vectorizing and not, without sprinkling `__restrict` around and "
+"hoping it is true."
+msgstr ""
+
+#: src/foundations/borrowing.md:226
+msgid "Fights you will have, and the fixes"
+msgstr ""
+
+#: src/foundations/borrowing.md:228
+msgid ""
+"The borrow checker reasons about whole values, plus individual fields of a "
+"struct when it can see them directly. Most surprises in engine code come "
+"from that boundary."
+msgstr ""
+
+#: src/foundations/borrowing.md:232
+msgid "Two mutable elements of one array"
+msgstr ""
+
+#: src/foundations/borrowing.md:238
+msgid "// error: `bodies` already borrowed mutably\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:243
+msgid ""
+"The checker does not know that indices 0 and 1 differ. The standard library "
+"does the reasoning for you with `split_at_mut`, which hands out two non-"
+"overlapping `&mut` slices:"
+msgstr ""
+
+#: src/foundations/borrowing.md:251
+msgid "// bodies[0], bodies[1]\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:253
+msgid "// Or, for any two distinct indices (Rust 1.86+):\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:257
+msgid "\"{bodies:?}\""
+msgstr ""
+
+#: src/foundations/borrowing.md:261
+msgid "Borrowing two fields through a method"
+msgstr ""
+
+#: src/foundations/borrowing.md:263
+msgid ""
+"Borrowing two different fields directly is fine. Borrowing them through "
+"methods is not, because a method signature `&mut self` claims the whole "
+"struct:"
+msgstr ""
+
+#: src/foundations/borrowing.md:274
+msgid "// Fine: two disjoint fields, borrowed directly.\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:280
+msgid ""
+"// Would NOT compile: each call borrows all of `self`.\n"
+"        // let t = self.transforms_mut();\n"
+"        // let v = self.velocities();\n"
+msgstr ""
+
+#: src/foundations/borrowing.md:289
+msgid "\"{:?}\""
+msgstr ""
+
+#: src/foundations/borrowing.md:293
+msgid ""
+"The fixes, in order of preference: access the fields directly inside the "
+"`impl`; write one method that returns both borrows at once (`fn "
+"parts_mut(&mut self) -> (&mut A, &B)`); or split the struct so the parts "
+"that change together live together. The last one is the road to an ECS, "
+"which has [its own chapter](../engine/ecs.md)."
+msgstr ""
+
+#: src/foundations/borrowing.md:299
+msgid "Long-lived pointers between objects"
+msgstr ""
+
+#: src/foundations/borrowing.md:301
+msgid ""
+"Storing `&Enemy` inside `Missile` to remember its target works for a few "
+"lines of code and then fails, because the borrow would freeze the whole "
+"enemy list for as long as the missile exists. References are for _temporary_"
+" access. For long-lived relationships between objects, use [handles into an "
+"arena](../engine/handles-and-arenas.md), or shared ownership with "
+"[`Rc`/`Arc`](smart-pointers.md)."
+msgstr ""
+
+#: src/foundations/borrowing.md:311
+msgid ""
+"In C++ it is normal to keep a raw pointer to \"the thing I'm working with\" "
+"as a member. In Rust, a struct that holds a reference needs a lifetime "
+"parameter and borrows its target for its whole life. That is occasionally "
+"right (parsers, views, iterators), but for game objects it almost never is. "
+"If you find yourself adding `<'a>` to a struct to make the borrow checker "
+"happy, step back and ask who should own the data."
+msgstr ""
+
+#: src/foundations/borrowing.md:320
+msgid "No null, no dangling"
+msgstr ""
+
+#: src/foundations/borrowing.md:322
+msgid "Two guarantees fall out of everything above:"
+msgstr ""
+
+#: src/foundations/borrowing.md:324
+msgid ""
+"References are never null. \"Maybe a reference\" is `Option<&T>`, which the "
+"compiler stores as a plain nullable pointer, so it costs nothing, and "
+"`match`/`if let` forces you to handle the `None` case."
+msgstr ""
+
+#: src/foundations/borrowing.md:327
+msgid ""
+"References never dangle. Returning a reference to a local is rejected, and "
+"so is keeping one past the lifetime of its owner. The [next "
+"chapter](lifetimes.md) explains how the compiler proves this across function"
+" boundaries."
+msgstr ""
+
+#: src/foundations/borrowing.md:336
+msgid "`const T&`"
+msgstr ""
+
+#: src/foundations/borrowing.md:336
+msgid "`&T`, many at once"
+msgstr ""
+
+#: src/foundations/borrowing.md:337
+msgid "`T&`"
+msgstr ""
+
+#: src/foundations/borrowing.md:337
+msgid "`&mut T`, exclusive"
+msgstr ""
+
+#: src/foundations/borrowing.md:338
+msgid "`const T*` / `T*` that may be null"
+msgstr ""
+
+#: src/foundations/borrowing.md:338
+msgid "`Option<&T>` / `Option<&mut T>`"
+msgstr ""
+
+#: src/foundations/borrowing.md:339
+msgid "`std::span<const T>`, `std::string_view`"
+msgstr ""
+
+#: src/foundations/borrowing.md:339 src/appendix/cheat-sheet.md:16
+msgid "`&[T]`, `&str`"
+msgstr ""
+
+#: src/foundations/borrowing.md:340
+msgid "`__restrict` (unchecked promise)"
+msgstr ""
+
+#: src/foundations/borrowing.md:340
+msgid "every `&mut T` (checked)"
+msgstr ""
+
+#: src/foundations/borrowing.md:341
+msgid "Invalidation is UB at run time"
+msgstr ""
+
+#: src/foundations/borrowing.md:341
+msgid "Invalidation is a compile error"
+msgstr ""
+
+#: src/foundations/borrowing.md:342
+msgid "`const` member function"
+msgstr ""
+
+#: src/foundations/borrowing.md:342
+msgid "`&self` method"
+msgstr ""
+
+#: src/foundations/borrowing.md:346
+msgid ""
+"In the `invalidation` example above, make the Rust version compile in three "
+"different ways. Which one corresponds to what you would do in C++?"
+msgstr ""
+
+#: src/foundations/borrowing.md:348
+msgid ""
+"Write `fn largest<'a>(a: &'a [f32], b: &'a [f32]) -> &'a [f32]` that returns"
+" the slice with the larger sum. Then try removing the `'a` annotations and "
+"read the error. (The [lifetimes chapter](lifetimes.md) explains it.)"
+msgstr ""
+
+#: src/foundations/borrowing.md:351
+msgid ""
+"Implement `fn swap_ends(xs: &mut [i32])` that swaps the first and last "
+"element, using `split_at_mut` rather than `xs.swap`. Handle empty slices."
+msgstr ""
+
+#: src/foundations/lifetimes.md:7
+msgid "Lifetimes are a compile-time proof, not a runtime thing"
+msgstr ""
+
+#: src/foundations/lifetimes.md:8
+msgid "Elision rules: why most functions need no annotations"
+msgstr ""
+
+#: src/foundations/lifetimes.md:9
+msgid "Structs that hold references (views, spans, parsers)"
+msgstr ""
+
+#: src/foundations/lifetimes.md:10
+msgid "`'static`, string literals and leaked allocations"
+msgstr ""
+
+#: src/foundations/lifetimes.md:11
+msgid "Interactive: watching a borrow outlive its owner, step by step"
+msgstr ""
+
+#: src/foundations/lifetimes.md:12
+msgid "Common error messages decoded (E0499, E0502, E0505, E0597, E0716)"
+msgstr ""
+
+#: src/foundations/lifetimes.md:16
+msgid "_C++ starting point: Dangling pointers, iterator invalidation._"
+msgstr ""
+
+#: src/foundations/enums-and-match.md:7
+msgid ""
+"Enums with data as safe tagged unions; memory layout and niche optimization"
+msgstr ""
+
+#: src/foundations/enums-and-match.md:8
+msgid "`match` exhaustiveness vs `switch` fall-through"
+msgstr ""
+
+#: src/foundations/enums-and-match.md:9
+msgid "`Option<T>` instead of nullptr; `Option<&T>` is pointer-sized"
+msgstr ""
+
+#: src/foundations/enums-and-match.md:10
+msgid "Destructuring structs, tuples and slices"
+msgstr ""
+
+#: src/foundations/enums-and-match.md:11
+msgid "Example: a render command list as an enum"
+msgstr ""
+
+#: src/foundations/enums-and-match.md:15
+msgid "_C++ starting point: Tagged unions, std::variant, switch._"
+msgstr ""
+
+#: src/foundations/errors.md:7
+msgid "`Result<T, E>` and the `?` operator vs exceptions and HRESULT/VkResult"
+msgstr ""
+
+#: src/foundations/errors.md:8
+msgid "`panic!` is not an exception: when it is the right tool"
+msgstr ""
+
+#: src/foundations/errors.md:9
+msgid "Library errors (thiserror) vs application errors (anyhow)"
+msgstr ""
+
+#: src/foundations/errors.md:10
+msgid "Wrapping C error codes from Vulkan/OpenGL into Result"
+msgstr ""
+
+#: src/foundations/errors.md:14
+msgid "_C++ starting point: Exceptions, error codes, assert._"
+msgstr ""
+
+#: src/foundations/traits-and-generics.md:7
+msgid ""
+"Traits as interfaces and as constraints (like concepts, checked at "
+"definition)"
+msgstr ""
+
+#: src/foundations/traits-and-generics.md:8
+msgid ""
+"Static dispatch (monomorphization, like templates) vs `dyn Trait` (vtable)"
+msgstr ""
+
+#: src/foundations/traits-and-generics.md:9
+msgid ""
+"Interactive: where the vtable pointer lives in a fat pointer vs in the "
+"object"
+msgstr ""
+
+#: src/foundations/traits-and-generics.md:10
+msgid "Associated types and constants"
+msgstr ""
+
+#: src/foundations/traits-and-generics.md:11
+msgid "No inheritance: composition and trait default methods instead"
+msgstr ""
+
+#: src/foundations/traits-and-generics.md:12
+msgid ""
+"Orphan rule and coherence: why you can't specialize anything for anything"
+msgstr ""
+
+#: src/foundations/traits-and-generics.md:16
+msgid "_C++ starting point: Virtual functions, templates, concepts._"
+msgstr ""
+
+#: src/foundations/operators-and-conversions.md:7
+msgid "`std::ops` traits: Add, Mul, Index, Neg… for vector math types"
+msgstr ""
+
+#: src/foundations/operators-and-conversions.md:8
+msgid "`Copy` vs `Clone` (vs copy constructors)"
+msgstr ""
+
+#: src/foundations/operators-and-conversions.md:9
+msgid "`From`/`Into`/`TryFrom` instead of converting constructors"
+msgstr ""
+
+#: src/foundations/operators-and-conversions.md:10
+msgid "`Deref` and why it is not a general conversion operator"
+msgstr ""
+
+#: src/foundations/operators-and-conversions.md:11
+msgid "`Display`/`Debug` instead of operator\\<\\<"
+msgstr ""
+
+#: src/foundations/operators-and-conversions.md:12
+msgid "`PartialEq`, `Eq`, `PartialOrd`, `Ord`, `Hash` and floats"
+msgstr ""
+
+#: src/foundations/operators-and-conversions.md:16
+msgid ""
+"_C++ starting point: operator+, conversion operators, copy constructors._"
+msgstr ""
+
+#: src/foundations/collections.md:7
+msgid ""
+"`Vec<T>` vs `std::vector`: growth, capacity, and why push can't invalidate "
+"your references"
+msgstr ""
+
+#: src/foundations/collections.md:8
+msgid ""
+"`HashMap`, `BTreeMap`, `VecDeque`, `BinaryHeap` mapped to STL equivalents"
+msgstr ""
+
+#: src/foundations/collections.md:9
+msgid "`String` and `&str` are UTF-8; `OsString`, `CString`, `Path`"
+msgstr ""
+
+#: src/foundations/collections.md:10
+msgid "Slices `&[T]` as the universal span type"
+msgstr ""
+
+#: src/foundations/collections.md:11
+msgid "Choosing containers for engine workloads; smallvec and arrayvec"
+msgstr ""
+
+#: src/foundations/collections.md:15
+msgid "_C++ starting point: STL containers, std::string._"
+msgstr ""
+
+#: src/foundations/closures-and-iterators.md:7
+msgid "Closures and their captures: `Fn`, `FnMut`, `FnOnce`, `move`"
+msgstr ""
+
+#: src/foundations/closures-and-iterators.md:8
+msgid ""
+"Iterator adapters compile to the same loop you would write by hand (check "
+"the assembly)"
+msgstr ""
+
+#: src/foundations/closures-and-iterators.md:9
+msgid "Bounds-check elimination with iterators"
+msgstr ""
+
+#: src/foundations/closures-and-iterators.md:10
+msgid "Writing your own iterator"
+msgstr ""
+
+#: src/foundations/closures-and-iterators.md:14
+msgid "_C++ starting point: Lambdas, <algorithm>, ranges._"
+msgstr ""
+
+#: src/foundations/smart-pointers.md:7
+msgid "`Box<T>` vs `std::unique_ptr`"
+msgstr ""
+
+#: src/foundations/smart-pointers.md:8
+msgid "`Rc`/`Arc` vs `shared_ptr` (and why Rc is cheaper)"
+msgstr ""
+
+#: src/foundations/smart-pointers.md:9
+msgid "`Weak` and reference cycles"
+msgstr ""
+
+#: src/foundations/smart-pointers.md:10
+msgid "`Cell`, `RefCell`: moving the borrow check to run time"
+msgstr ""
+
+#: src/foundations/smart-pointers.md:11
+msgid "Interactive: reference counts and the heap"
+msgstr ""
+
+#: src/foundations/smart-pointers.md:15
+msgid "_C++ starting point: unique_ptr, shared_ptr, weak_ptr, mutable._"
+msgstr ""
+
+#: src/foundations/modules.md:7
+msgid "Modules, `pub`, `use` vs namespaces and #include"
+msgstr ""
+
+#: src/foundations/modules.md:8
+msgid "No ODR violations, no include guards, no forward declarations"
+msgstr ""
+
+#: src/foundations/modules.md:9
+msgid "Laying out a large project as a workspace of crates"
+msgstr ""
+
+#: src/foundations/modules.md:10
+msgid "Compile times: crate graph, incremental builds, sccache"
+msgstr ""
+
+#: src/foundations/modules.md:14
+msgid "_C++ starting point: Headers, namespaces, translation units, ODR._"
+msgstr ""
+
+#: src/systems/concurrency.md:7
+msgid "`std::thread::spawn` and scoped threads"
+msgstr ""
+
+#: src/systems/concurrency.md:8
+msgid "`Send` and `Sync`: data races as compile errors"
+msgstr ""
+
+#: src/systems/concurrency.md:9
+msgid "`Mutex<T>` owns the data it protects (vs std::mutex next to the data)"
+msgstr ""
+
+#: src/systems/concurrency.md:10
+msgid "Atomics and memory ordering (same model as C++11)"
+msgstr ""
+
+#: src/systems/concurrency.md:11
+msgid "Channels, and data parallelism with rayon (job systems)"
+msgstr ""
+
+#: src/systems/concurrency.md:15
+msgid "_C++ starting point: std::thread, std::mutex, std::atomic._"
+msgstr ""
+
+#: src/systems/memory-and-performance.md:7
+msgid "`size_of`, `align_of`, `#[repr(C)]`, `#[repr(align(64))]`"
+msgstr ""
+
+#: src/systems/memory-and-performance.md:8
+msgid "AoS vs SoA in Rust"
+msgstr ""
+
+#: src/systems/memory-and-performance.md:9
+msgid "Custom global allocators and arena/bump allocation"
+msgstr ""
+
+#: src/systems/memory-and-performance.md:10
+msgid "Profiling with perf, Tracy, Superluminal, cargo-flamegraph"
+msgstr ""
+
+#: src/systems/memory-and-performance.md:11
+msgid "Reading the assembly: Compiler Explorer and the Playground"
+msgstr ""
+
+#: src/systems/memory-and-performance.md:15
+msgid "_C++ starting point: Cache lines, alignment, allocators._"
+msgstr ""
+
+#: src/systems/unsafe.md:7
+msgid "What `unsafe` unlocks, and what it does not turn off"
+msgstr ""
+
+#: src/systems/unsafe.md:8
+msgid ""
+"Raw pointers, aliasing rules, and why they differ from C++ strict aliasing"
+msgstr ""
+
+#: src/systems/unsafe.md:9
+msgid "Writing safe abstractions over unsafe code"
+msgstr ""
+
+#: src/systems/unsafe.md:10
+msgid "Miri: an interpreter that catches UB in tests"
+msgstr ""
+
+#: src/systems/unsafe.md:14
+msgid "_C++ starting point: Raw pointers, undefined behavior._"
+msgstr ""
+
+#: src/systems/ffi.md:7
+msgid "Calling C: `extern \"C\"`, bindgen, `build.rs` and linking"
+msgstr ""
+
+#: src/systems/ffi.md:8
+msgid "Exposing Rust to C/C++: cbindgen, cdylib/staticlib"
+msgstr ""
+
+#: src/systems/ffi.md:9
+msgid ""
+"C++ interop with cxx; mixing Rust into an existing CMake project (corrosion)"
+msgstr ""
+
+#: src/systems/ffi.md:10
+msgid "Strings, callbacks, ownership across the boundary"
+msgstr ""
+
+#: src/systems/ffi.md:14
+msgid "_C++ starting point: extern \"C\", headers, linking._"
+msgstr ""
+
+#: src/systems/macros.md:7
+msgid "`macro_rules!` is hygienic and structural, not textual"
+msgstr ""
+
+#: src/systems/macros.md:8
+msgid "Derive and procedural macros (vs code generators and reflection hacks)"
+msgstr ""
+
+#: src/systems/macros.md:9
+msgid "When to use a macro and when to use a generic"
+msgstr ""
+
+#: src/systems/macros.md:13
+msgid "_C++ starting point: The preprocessor, templates, code generation._"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:7
+msgid "Unit tests, integration tests, doc tests"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:8
+msgid "Benchmarks with criterion"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:9
+msgid "clippy and rustfmt"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:10
+msgid "Documentation with rustdoc"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:14
+msgid "_C++ starting point: GoogleTest, Catch2, clang-tidy, clang-format._"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:3
+msgid ""
+"Game objects point at each other. A missile tracks its target, a light "
+"belongs to a room, a UI widget knows its parent, an animation references a "
+"skeleton. In C++ these links are usually raw pointers or "
+"`shared_ptr`/`weak_ptr`, and the classic bug is a pointer that outlives its "
+"object: the enemy dies, its memory is reused for a bullet, and the missile "
+"now steers toward the bullet."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:9
+msgid ""
+"The [borrowing chapter](../foundations/borrowing.md) showed that Rust "
+"references are for short-lived access. A `&Enemy` stored inside a `Missile` "
+"would freeze the whole enemy list for as long as the missile exists. This "
+"chapter introduces the pattern most Rust engines use instead, which many C++"
+" engines also use for the same reasons: **objects live in an arena, and "
+"other objects refer to them by handle.**"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:16
+msgid "You will:"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:18
+msgid ""
+"see why indices alone are not enough, and how a generation counter fixes "
+"them,"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:19
+msgid "build a small, typed generational arena (about 80 lines),"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:20
+msgid "compare it with `Rc`/`Weak` and with what C++ engines do,"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:21
+msgid "learn which crates to use in real projects."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:23
+msgid "Handles in one picture"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:25
+msgid ""
+"An **arena** is a `Vec` of slots that owns every object of one type. A "
+"**handle** is a small `Copy` value (a slot index plus a generation number) "
+"that identifies one object. Every time a slot is freed, its generation goes "
+"up, so any handle created before that no longer matches."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:30
+msgid ""
+"Play with it. Start in C++ style, spawn two entities, despawn the first, "
+"spawn another (it reuses the free slot), then read through the old pointer. "
+"Then switch to handles and do the same."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:36
+msgid ""
+"With plain pointers or indices, reading through a stale reference gives you "
+"_a_ valid-looking object, just the wrong one. No sanitizer catches it, "
+"because the memory is not freed: it was reused, legitimately. A generation "
+"check turns that into an `Option` you are forced to handle."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:44
+msgid ""
+"This is the same design as handles in many C++ engines and libraries: Andre "
+"Weissflog's \"Handles are the better pointers\" (the Sokol libraries), "
+"versioned entity IDs in EnTT, and `VkBuffer` itself, which is a handle and "
+"not a pointer. Rust did not invent it. What Rust adds is that the "
+"alternative, long-lived raw pointers, simply does not compile, so the whole "
+"codebase converges on handles."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:53
+msgid "Building a generational arena"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:55
+msgid ""
+"A handle should be typed, so a `Handle<Texture>` cannot be passed where a "
+"`Handle<Mesh>` is expected, even though both are just two integers. "
+"`PhantomData` adds the type parameter without storing anything:"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:62
+msgid "/// A copyable reference to a `T` stored in an `Arena<T>`. 8 bytes.\n"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:67
+msgid ""
+"// `fn() -> T` instead of `T`: the handle does not own a T, so it stays\n"
+"    // Copy, Send and Sync whatever T is.\n"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:71
+msgid ""
+"// `#[derive(Clone, Copy)]` would require `T: Copy`, so implement them by "
+"hand.\n"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:85
+msgid "\"#{}g{}\""
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:96
+msgid "// indices of empty slots, reused LIFO\n"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:121
+msgid "/// Removes and returns the value, or `None` if the handle is stale.\n"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:128
+msgid "// invalidate old handles\n"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:148
+msgid "/// Iterate over live values together with their handles.\n"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:156
+msgid "// ---- a tiny game using it ----\n"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:172
+msgid "\"orc\""
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:173
+msgid "\"bat\""
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:180
+msgid ""
+"// The orc dies before the missiles land, and a goblin spawns in its slot.\n"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:182
+msgid "\"goblin\""
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:183
+msgid "\"orc was {orc:?}, goblin is {goblin:?}: same slot, new generation\""
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:189
+msgid "\"hit {} -> hp {}\""
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:191
+msgid "\"missile aimed at {:?} lost its target\""
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:196
+msgid "\"{h:?}: {e:?}\""
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:198
+msgid "\"{} alive\""
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:202
+msgid ""
+"Run it. The missile aimed at the orc reports a lost target instead of "
+"hitting the goblin that took the orc's memory."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:205
+msgid ""
+"Notice what the borrow checker is doing here, and what it is not doing:"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:207
+msgid ""
+"`missiles` holds handles, not references, so `enemies` is never frozen. You "
+"can insert and remove enemies while missiles exist."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:209
+msgid ""
+"`get_mut` returns a short-lived `&mut Enemy`. _That_ reference is checked as"
+" usual: you cannot keep it across a call to `enemies.insert`, which might "
+"reallocate the `Vec`. The borrow checker still protects you from the C++ "
+"invalidation bug, at the moment of access."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:213
+msgid ""
+"The arena is the single owner of every enemy. Dropping the arena drops them "
+"all, in one place."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:219
+msgid ""
+"A `Handle<T>` is 8 bytes and `Copy`. Compared with a 64-bit pointer it is "
+"the same size, survives reallocation, and can be serialized, saved to disk, "
+"or sent over the network, because it contains no address."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:222
+msgid ""
+"Access costs one bounds check, one compare, and one load, all on the same "
+"cache line as the value. `Rc<RefCell<T>>` costs a separate heap allocation "
+"per object plus a runtime borrow flag."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:225
+msgid ""
+"All enemies sit in one contiguous `Vec`, which is what you want for "
+"iteration in a system update."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:227
+msgid ""
+"`Option<Handle<T>>` is 12 bytes here. If the generation starts at 1 and is "
+"stored as `NonZeroU32`, the compiler uses 0 as the `None` niche and "
+"`Option<Handle<T>>` becomes 8 bytes too. (That is exercise 2.)"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:233
+msgid "Comparing the options"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:235
+msgid "Need"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:237
+msgid "Temporary access during a call"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:237
+msgid "`T&`, `T*`"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:237
+msgid "`&T`, `&mut T`"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:238
+msgid "Single owner, heap allocated"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:238 src/appendix/cheat-sheet.md:18
+msgid "`std::unique_ptr<T>`"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:238 src/appendix/cheat-sheet.md:18
+msgid "`Box<T>`"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:239
+msgid "Shared ownership, object lives while anyone holds it"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:239
+msgid "`std::shared_ptr<T>`"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:239
+msgid "`Rc<T>` / `Arc<T>`"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:240
+msgid "Observe without keeping alive"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:240
+msgid "`std::weak_ptr<T>`"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:240
+msgid "`rc::Weak<T>`"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:241
+msgid ""
+"Many objects of one type, referenced from many places, lifetime decided by "
+"game logic"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:241
+msgid "object pool + handles, or raw pointers and care"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:241 src/appendix/cheat-sheet.md:20
+msgid "`Arena<T>` + `Handle<T>`"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:243
+msgid ""
+"`Rc`/`Weak` work, and are the right answer for some structures (a shared "
+"immutable asset, a UI tree). But for game objects whose lifetime is decided "
+"by the game (\"the enemy dies when its HP hits zero\"), shared ownership is "
+"the wrong model: nobody holding a reference should keep a dead enemy alive. "
+"The arena makes the owner explicit, and handles make \"it might be gone\" "
+"explicit."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:249
+msgid "Arenas of a different kind: bump allocation"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:251
+msgid ""
+"\"Arena\" also names a second pattern you may know from C++ frame "
+"allocators: allocate many small objects from one big block, then free the "
+"whole block at once. In Rust this is the `bumpalo` crate. It hands out real "
+"references whose lifetime is tied to the arena, so the borrow checker proves"
+" nothing outlives the frame:"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:266
+msgid ""
+"// Both allocations live in the arena. The references cannot escape it:\n"
+"    // their lifetime is tied to `frame_alloc`.\n"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:277
+msgid "// free everything from this frame, O(1)\n"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:283
+msgid ""
+"Generational arenas are for long-lived objects with individual lifetimes. "
+"Bump arenas are for short-lived scratch data with a shared lifetime. Engines"
+" use both."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:287
+msgid "Crates for real projects"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:289
+msgid ""
+"Writing your own arena is a good exercise and fine for small projects. For "
+"production, use a maintained crate:"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:292
+msgid ""
+"[`slotmap`](https://docs.rs/slotmap): the most widely used. `SlotMap` is the"
+" design above; `DenseSlotMap` keeps values packed for faster iteration; "
+"`SecondaryMap` attaches extra per-object data to existing keys, which is a "
+"small step toward ECS components."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:296
+msgid ""
+"[`thunderdome`](https://docs.rs/thunderdome): a compact generational arena "
+"with 8-byte `Option<Index>`."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:298
+msgid "[`bumpalo`](https://docs.rs/bumpalo): bump allocation, as above."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:300
+msgid ""
+"The next step from \"an arena per object type, plus handles\" is an entity-"
+"component system, where the handle is the entity and each component type has"
+" its own storage. That is the [next chapter](ecs.md)."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:306
+msgid ""
+"Add `fn get2_mut(&mut self, a: Handle<T>, b: Handle<T>) -> Option<(&mut T, "
+"&mut T)>` that returns two distinct objects mutably (for a collision "
+"response, say). Hint: `split_at_mut` or `get_disjoint_mut` from the "
+"[borrowing chapter](../foundations/borrowing.md), and decide what to do when"
+" `a == b`."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:310
+msgid ""
+"Change `generation` to `NonZeroU32` starting at 1 and confirm with "
+"`std::mem::size_of::<Option<Handle<Enemy>>>()` that it shrinks to 8 bytes."
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:312
+msgid ""
+"`remove` uses `wrapping_add`. After 2³² reuses of one slot, a very old "
+"handle could match again. Make a slot retire permanently (never return to "
+"the free list) when its generation would wrap. What does that cost?"
+msgstr ""
+
+#: src/engine/handles-and-arenas.md:315
+msgid ""
+"Make `Arena::iter_mut` that yields `(Handle<T>, &mut T)`. Why can't it be "
+"written by calling `get_mut` in a loop?"
+msgstr ""
+
+#: src/engine/ecs.md:7
+msgid "Why scene graphs of mutually-pointing objects fight the borrow checker"
+msgstr ""
+
+#: src/engine/ecs.md:8
+msgid "Archetype ECS: hecs, bevy_ecs, and writing a tiny one"
+msgstr ""
+
+#: src/engine/ecs.md:9
+msgid "Split borrows and disjoint queries"
+msgstr ""
+
+#: src/engine/ecs.md:10
+msgid "Systems scheduling and parallelism"
+msgstr ""
+
+#: src/engine/ecs.md:14
+msgid "_C++ starting point: Entity-component systems._"
+msgstr ""
+
+#: src/engine/math-and-simd.md:7
+msgid "glam and nalgebra, `#[repr(C)]` vectors for GPU upload"
+msgstr ""
+
+#: src/engine/math-and-simd.md:8
+msgid "Auto-vectorization and how to check it"
+msgstr ""
+
+#: src/engine/math-and-simd.md:9
+msgid "`core::arch` intrinsics and runtime feature detection"
+msgstr ""
+
+#: src/engine/math-and-simd.md:10
+msgid "Portable SIMD (`std::simd`)"
+msgstr ""
+
+#: src/engine/math-and-simd.md:14
+msgid "_C++ starting point: GLM, DirectXMath, SSE/NEON intrinsics._"
+msgstr ""
+
+#: src/engine/opengl.md:7
+msgid "Loading GL functions (gl, glow) and the context with winit/glutin"
+msgstr ""
+
+#: src/engine/opengl.md:8
+msgid "Buffers, shaders and uploads with `bytemuck`"
+msgstr ""
+
+#: src/engine/opengl.md:9
+msgid "Wrapping GL object names in types with Drop"
+msgstr ""
+
+#: src/engine/opengl.md:13
+msgid "_C++ starting point: OpenGL C API, function loaders._"
+msgstr ""
+
+#: src/engine/vulkan.md:7
+msgid "ash: thin, unsafe, 1:1 with the C API"
+msgstr ""
+
+#: src/engine/vulkan.md:8
+msgid "Builders, p_next chains and lifetimes"
+msgstr ""
+
+#: src/engine/vulkan.md:9
+msgid "Designing safe wrappers: what to make safe and what to leave unsafe"
+msgstr ""
+
+#: src/engine/vulkan.md:10
+msgid "Synchronization and resource lifetime with frames in flight"
+msgstr ""
+
+#: src/engine/vulkan.md:14
+msgid "_C++ starting point: Vulkan C API, vk.xml._"
+msgstr ""
+
+#: src/engine/wgpu.md:7
+msgid "The WebGPU model, and running on desktop and the web"
+msgstr ""
+
+#: src/engine/wgpu.md:8
+msgid "How wgpu uses ownership to make GPU resource lifetimes safe"
+msgstr ""
+
+#: src/engine/wgpu.md:9
+msgid "Shaders in WGSL; naga and SPIR-V"
+msgstr ""
+
+#: src/engine/wgpu.md:13
+msgid "_C++ starting point: Vulkan/D3D12/Metal abstraction layers._"
+msgstr ""
+
+#: src/engine/game-loop.md:7
+msgid "winit and event loops"
+msgstr ""
+
+#: src/engine/game-loop.md:8
+msgid "Fixed timestep and frame pacing"
+msgstr ""
+
+#: src/engine/game-loop.md:9
+msgid "Where global state goes when there are no singletons"
+msgstr ""
+
+#: src/engine/game-loop.md:13
+msgid "_C++ starting point: SDL, GLFW, the main loop._"
+msgstr ""
+
+#: src/engine/assets-and-build.md:7
+msgid "`build.rs` for shader compilation and code generation"
+msgstr ""
+
+#: src/engine/assets-and-build.md:8
+msgid "Embedding and hot-reloading assets"
+msgstr ""
+
+#: src/engine/assets-and-build.md:9
+msgid "Serialization with serde"
+msgstr ""
+
+#: src/engine/assets-and-build.md:13
+msgid "_C++ starting point: Custom CMake steps, asset cookers._"
+msgstr ""
+
+#: src/engine/hot-reload-and-plugins.md:7
+msgid "Rust has no stable ABI: what that means for plugins"
+msgstr ""
+
+#: src/engine/hot-reload-and-plugins.md:8
+msgid "Hot-reload of game code with dynamic libraries"
+msgstr ""
+
+#: src/engine/hot-reload-and-plugins.md:9
+msgid "Scripting integration (Lua, WASM)"
+msgstr ""
+
+#: src/engine/hot-reload-and-plugins.md:13
+msgid "_C++ starting point: DLLs, plugin ABIs._"
+msgstr ""
+
+#: src/engine/case-study.md:7
+msgid ""
+"A complete small renderer tying the book together: window, device, "
+"resources, ECS, frame loop"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:5
+msgid ""
+"**This page is planned.** It will collect the summary tables from every "
+"chapter into one quick reference."
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:10
+msgid "Chapter"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:12
+msgid "RAII, destructor"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:12
+msgid "`Drop`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:12 src/appendix/cheat-sheet.md:13
+#: src/appendix/cheat-sheet.md:14
+msgid "[Ownership](../foundations/ownership.md)"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:13
+msgid "`std::move(x)`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:13
+msgid "`let y = x;`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:14
+msgid "`Clone` / `Copy`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:15
+msgid "`const T&` / `T&`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:15
+msgid "`&T` / `&mut T`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:15 src/appendix/cheat-sheet.md:16
+#: src/appendix/cheat-sheet.md:17
+msgid "[Borrowing](../foundations/borrowing.md)"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:16
+msgid "`std::span`, `std::string_view`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:17
+msgid "`T*` that may be null"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:17
+msgid "`Option<&T>`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:18 src/appendix/cheat-sheet.md:19
+msgid "[Smart pointers](../foundations/smart-pointers.md)"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:19
+msgid "`std::shared_ptr<T>` / `std::weak_ptr<T>`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:19
+msgid "`Rc<T>`/`Arc<T>`, `Weak<T>`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:20
+msgid "Object pool + raw pointers"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:20
+msgid "[Handles and arenas](../engine/handles-and-arenas.md)"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:21
+msgid "`std::vector<T>`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:21
+msgid "`Vec<T>`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:21 src/appendix/cheat-sheet.md:22
+msgid "[Collections](../foundations/collections.md)"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:22
+msgid "`std::unordered_map<K, V>`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:22
+msgid "`HashMap<K, V>`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:23
+msgid "`std::variant`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:23
+msgid "`enum`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:23
+msgid "[Enums](../foundations/enums-and-match.md)"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:24
+msgid "exceptions"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:24
+msgid "`Result<T, E>` and `?`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:24
+msgid "[Errors](../foundations/errors.md)"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:25
+msgid "virtual functions"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:25
+msgid "`dyn Trait`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:25 src/appendix/cheat-sheet.md:26
+msgid "[Traits](../foundations/traits-and-generics.md)"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:26
+msgid "templates"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:26
+msgid "generics with trait bounds"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:27
+msgid "`std::mutex` + data"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:27
+msgid "`Mutex<T>`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:27
+msgid "[Concurrency](../systems/concurrency.md)"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:28
+msgid "CMake + vcpkg/Conan"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:28
+msgid "Cargo"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:28
+msgid "[Cargo](../foundations/cargo.md)"
+msgstr ""
+
+#: src/appendix/further-reading.md:3
+msgid ""
+"[The Rust Programming Language](https://doc.rust-lang.org/book/) (\"the "
+"Book\"): the official introduction. Slower paced, assumes no C++."
+msgstr ""
+
+#: src/appendix/further-reading.md:5
+msgid ""
+"[Comprehensive Rust](https://google.github.io/comprehensive-rust/): Google's"
+" multi-day course, with a C++ interop section."
+msgstr ""
+
+#: src/appendix/further-reading.md:7
+msgid ""
+"[Rust by Example](https://doc.rust-lang.org/rust-by-example/): short "
+"runnable examples by topic."
+msgstr ""
+
+#: src/appendix/further-reading.md:9
+msgid ""
+"[Learn Rust With Entirely Too Many Linked Lists](https://rust-"
+"unofficial.github.io/too-many-lists/): ownership, `Box`, `Rc` and `unsafe` "
+"through one data structure."
+msgstr ""
+
+#: src/appendix/further-reading.md:11
+msgid ""
+"[The Rustonomicon](https://doc.rust-lang.org/nomicon/): the guide to "
+"`unsafe` Rust."
+msgstr ""
+
+#: src/appendix/further-reading.md:13
+msgid ""
+"[Rust Atomics and Locks](https://marabos.nl/atomics/) by Mara Bos: low-level"
+" concurrency, for readers who know the C++ memory model."
+msgstr ""
+
+#: src/appendix/further-reading.md:15
+msgid ""
+"[Learn wgpu](https://sotrh.github.io/learn-wgpu/): a graphics tutorial using"
+" wgpu."
+msgstr ""
+
+#: src/appendix/further-reading.md:17
+msgid ""
+"[Are we game yet?](https://arewegameyet.rs/): the Rust game development "
+"ecosystem."
+msgstr ""
+
+#: src/appendix/contributing.md:3
+msgid ""
+"The source of this book lives at [github.com/xw0/rust-for-"
+"cpp](https://github.com/xw0/rust-for-cpp). Fixes, new examples and "
+"translations are welcome as pull requests."
+msgstr ""
+
+#: src/appendix/contributing.md:9
+msgid ""
+"Text and diagrams: [CC BY "
+"4.0](https://creativecommons.org/licenses/by/4.0/)."
+msgstr ""
+
+#: src/appendix/contributing.md:10
+msgid ""
+"Code (examples, scripts, styles): [MIT](https://opensource.org/license/mit)."
+msgstr ""
+
+#: src/appendix/contributing.md:12
+msgid "If you reuse or adapt material, credit it as:"
+msgstr ""
+
+#: src/appendix/contributing.md:14
+msgid ""
+"_Rust for C++ Programmers_ (https://xw0.github.io/rust-for-cpp/), licensed "
+"under CC BY 4.0."
+msgstr ""
+
+#: src/appendix/contributing.md:17
+msgid "and say whether you changed it."
+msgstr ""
+
+#: src/appendix/contributing.md:19
+msgid "How translations work"
+msgstr ""
+
+#: src/appendix/contributing.md:21
+msgid ""
+"English Markdown under `src/` is the single source of truth. Each "
+"translation is a [gettext](https://www.gnu.org/software/gettext/) catalog, "
+"`po/<lang>.po`, that maps every English paragraph, heading, list item and "
+"table cell to its translation. At build time the "
+"[`mdbook-i18n-helpers`](https://github.com/google/mdbook-i18n-helpers) "
+"preprocessor swaps the translated text in. Code blocks are shared, so "
+"examples never drift between languages."
+msgstr ""
+
+#: src/appendix/contributing.md:29
+msgid ""
+"When an English paragraph changes, the old translation is marked _fuzzy_ and"
+" the English text is shown until a translator updates it. A translation can "
+"therefore lag behind without ever breaking the build or showing outdated "
+"content as if it were current."
+msgstr ""
+
+#: src/appendix/contributing.md:34
+msgid ""
+"Interactive diagrams are written in English in `theme/js/diagrams.js`. Their"
+" strings are translated in `theme/js/i18n-<lang>.js`, a plain table from the"
+" English string to the translation; missing entries fall back to English."
+msgstr ""
+
+#: src/appendix/contributing.md:38
+msgid "Translating a chapter"
+msgstr ""
+
+#: src/appendix/contributing.md:41
+msgid "# 1. Extract all English messages into po/messages.pot\n"
+msgstr ""
+
+#: src/appendix/contributing.md:42
+msgid "'{\"xgettext\": {\"pot-file\": \"messages.pot\"}}'"
+msgstr ""
+
+#: src/appendix/contributing.md:43
+msgid "# 2. Create or update the catalog for your language\n"
+msgstr ""
+
+#: src/appendix/contributing.md:45
+msgid "# first time only\n"
+msgstr ""
+
+#: src/appendix/contributing.md:46
+msgid "# afterwards\n"
+msgstr ""
+
+#: src/appendix/contributing.md:47
+msgid ""
+"# 3. Edit po/zh-CN.po (Poedit, Lokalize, or any text editor), then preview\n"
+msgstr ""
+
+#: src/appendix/contributing.md:52
+msgid "Building locally"
+msgstr ""
+
+#: src/appendix/contributing.md:55
+msgid "\"^0.4\""
+msgstr ""
+
+#: src/appendix/contributing.md:57
+msgid "# English\n"
+msgstr ""
+
+#: src/appendix/contributing.md:58
+msgid "# compile and run every Rust example\n"
+msgstr ""

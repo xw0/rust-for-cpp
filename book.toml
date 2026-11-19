@@ -1,0 +1,46 @@
+[book]
+title = "Rust for C++ Programmers"
+description = "A Rust tutorial for experienced C and C++ engineers, with interactive memory diagrams and graphics/engine case studies."
+authors = ["Contributors"]
+language = "en"
+src = "src"
+
+[rust]
+edition = "2024"
+
+[build]
+extra-watch-dirs = ["po", "theme"]
+
+# Translation: English Markdown in src/ is the single source of truth.
+# Other languages are gettext catalogs in po/<lang>.po, applied at build time.
+[preprocessor.gettext]
+after = ["links"]
+
+[output.html]
+site-url = "/rust-for-cpp/"
+git-repository-url = "https://github.com/xw0/rust-for-cpp"
+edit-url-template = "https://github.com/xw0/rust-for-cpp/edit/main/{path}"
+additional-css = ["theme/css/rfc.css"]
+additional-js = [
+  "theme/js/i18n.js",
+  "theme/js/lang-switcher.js",
+  "theme/js/playground-extra.js",
+  "theme/js/memviz.js",
+  "theme/js/widgets.js",
+  "theme/js/diagrams.js",
+  "theme/js/i18n-zh-CN.js",
+]
+mathjax-support = false
+
+[output.html.playground]
+runnable = true
+editable = true
+copyable = true
+line-numbers = false
+
+[output.html.fold]
+enable = true
+level = 1
+
+[output.html.search]
+enable = true
