@@ -55,8 +55,39 @@ channel = "1.91"
 components = ["rustfmt", "clippy"]
 ```
 
-Cross-compilation is built in. A **target triple** names the platform, like
-the triples you pass to Clang:
+Cross-compilation is built in. A **target triple** is the name of the
+platform you compile *for*. It is the same naming scheme Clang and GCC use
+(`clang --target=aarch64-linux-android`), inherited from LLVM and GNU
+autoconf. The general form is:
+
+```text
+<architecture>-<vendor>-<operating system>-<environment/ABI>
+```
+
+Despite the name, it often has four parts, and a part that does not apply is
+either written as `unknown`/`none` or left out:
+
+| Triple | Architecture | Vendor | OS | Environment / ABI |
+|---|---|---|---|---|
+| `x86_64-pc-windows-msvc` | x86_64 | pc | windows | msvc (links with MSVC, MSVC C++ ABI) |
+| `x86_64-pc-windows-gnu` | x86_64 | pc | windows | gnu (MinGW) |
+| `x86_64-unknown-linux-gnu` | x86_64 | unknown | linux | gnu (glibc) |
+| `aarch64-apple-darwin` | aarch64 (ARM64) | apple | darwin (macOS) | |
+| `aarch64-apple-ios` | aarch64 | apple | ios | |
+| `aarch64-linux-android` | aarch64 | (omitted) | linux | android (Bionic libc, Android ABI) |
+| `wasm32-unknown-unknown` | wasm32 | unknown | unknown (no OS: the browser) | |
+| `thumbv7em-none-eabihf` | Thumb-2 (Cortex-M4/M7) | | none (bare metal) | eabihf (hardware float) |
+
+So `aarch64-linux-android` reads "64-bit ARM, Linux kernel, Android
+environment": the vendor field is simply dropped, as Android's own toolchain
+does. The last part matters more than it looks: `windows-msvc` and
+`windows-gnu` produce binaries that cannot link against each other's C++
+libraries, exactly as with MSVC and MinGW builds in C++.
+
+`rustc -vV` prints your host triple (the `host:` line), and
+`rustc --print target-list` lists every triple the compiler knows. To build
+for another one, install its standard library with `rustup` and pass
+`--target`:
 
 ```sh
 rustup target add aarch64-linux-android wasm32-unknown-unknown x86_64-pc-windows-msvc
