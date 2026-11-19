@@ -20,8 +20,11 @@ after = ["links"]
 site-url = "/rust-for-cpp/"
 git-repository-url = "https://github.com/xw0/rust-for-cpp"
 edit-url-template = "https://github.com/xw0/rust-for-cpp/edit/main/{path}"
-additional-css = ["theme/css/rfc.css"]
+additional-css = ["theme/css/rfc.css", "theme/css/designs.css"]
+default-theme = "light"
+preferred-dark-theme = "coal"
 additional-js = [
+  "theme/js/design-preview.js",
   "theme/js/i18n.js",
   "theme/js/lang-switcher.js",
   "theme/js/playground-extra.js",
