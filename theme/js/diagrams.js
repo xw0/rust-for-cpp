@@ -256,6 +256,59 @@
     ]
   });
 
+  // ------------------------------------------------------------------
+  // Chapter: Lifetimes
+  // ------------------------------------------------------------------
+  M.define("lifetime-dangling", {
+    title: "A borrow that outlives its owner",
+    code: [
+      "let r;",
+      "{",
+      "    let s = String::from(\"frame\");",
+      "    r = &s;",
+      "}   // s is dropped here",
+      "println!(\"{r}\");"
+    ],
+    steps: [
+      {
+        line: 0,
+        frames: [frame("main()", [ref("r", "r", "&String", "uninit")])],
+        heap: [],
+        arrows: [],
+        note: "`r` is declared but not initialized. Rust allows this, and refuses any read of `r` until it has been assigned on every path."
+      },
+      {
+        line: 2,
+        frames: [frame("main()", [ref("r", "r", "&String", "uninit")]), frame("inner block", [vec("s", "s", "String", 5, 5)])],
+        heap: [block("h", ["f", "r", "a", "m", "e"], "[u8; 5]")],
+        arrows: [own("s", "h")],
+        note: "`s` lives in the inner block."
+      },
+      {
+        line: 3,
+        frames: [frame("main()", [ref("r", "r", "&String")]), frame("inner block", [vec("s", "s", "String", 5, 5, "borrowed")])],
+        heap: [block("h", ["f", "r", "a", "m", "e"], "[u8; 5]")],
+        arrows: [own("s", "h"), shr("r", "s")],
+        note: "`r` borrows `s`. Because `r` is used later, on the last line, this borrow must stay valid until then."
+      },
+      {
+        line: 4,
+        frames: [frame("main()", [ref("r", "r", "&String")]), frame("inner block", [vec("s", "s", "String", 5, 5, "dropped")])],
+        heap: [block("h", ["f", "r", "a", "m", "e"], "[u8; 5]", "freed")],
+        arrows: [dang("r", "s")],
+        note: "At the closing brace `s` is dropped and its buffer freed. `r` would now point at a dead stack slot. In C++ this compiles."
+      },
+      {
+        line: [3, 5],
+        error: "error[E0597]: `s` does not live long enough\n  |     let s = String::from(\"frame\");\n  |         - binding `s` declared here\n  |     r = &s;\n  |         ^^ borrowed value does not live long enough\n  | }\n  | - `s` dropped here while still borrowed\n  | println!(\"{r}\");\n  |           --- borrow later used here",
+        frames: [frame("main()", [ref("r", "r", "&String")]), frame("inner block", [vec("s", "s", "String", 5, 5, "dropped")])],
+        heap: [block("h", ["f", "r", "a", "m", "e"], "[u8; 5]", "freed")],
+        arrows: [dang("r", "s")],
+        note: "Rust rejects the program. The error names the three places that matter: where the borrow starts, where the owner dies, and where the borrow is used afterwards. Move the `println!` inside the block, or move `s` out of it, and it compiles."
+      }
+    ]
+  });
+
   M.define("invalidation", {
     title: "Reference invalidation: the bug and the error",
     variants: [
