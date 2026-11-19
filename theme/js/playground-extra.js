@@ -8,7 +8,7 @@
     document.querySelectorAll("pre.playground").forEach(function (pre) {
       var code = pre.querySelector("code");
       if (!code) return;
-      var src = code.textContent.replace(/^# ?/gm, function (m) { return ""; });
+      var src = code.textContent;
       var edition = (code.className.match(/edition(\d{4})/) || [0, "2024"])[1];
       var a = document.createElement("a");
       a.className = "rfc-asm-link";

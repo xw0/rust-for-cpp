@@ -34,7 +34,7 @@
 
   var W = 560;
   var STACK_X = 40, STACK_W = 232;
-  var HEAP_X = 330, HEAP_W = 226;
+  var HEAP_X = 330, HEAP_W = 200;
   var SLOT_H = 50, FRAME_HEAD = 24, FRAME_GAP = 12, HEAP_GAP = 14, TOP = 34;
   var CELL_W = 26, CELL_H = 30;
 
@@ -64,7 +64,7 @@
   }
 
   function blockHeight(b) {
-    var rows = Math.max(1, Math.ceil((b.cells || []).length / 8));
+    var rows = Math.max(1, Math.ceil((b.cells || []).length / 7));
     return 22 + rows * CELL_H + 8;
   }
 
@@ -135,11 +135,11 @@
       text(g, HEAP_X + 8, hy + 15, b.label ? RFC.t(b.label) : "", "mv-block-label");
       if (state === "freed") text(g, HEAP_X + HEAP_W - 8, hy + 15, RFC.t("freed"), "mv-state-tag", "end");
       (b.cells || []).forEach(function (c, i) {
-        var cx = HEAP_X + 8 + (i % 8) * CELL_W, cy = hy + 22 + Math.floor(i / 8) * CELL_H;
+        var cx = HEAP_X + 8 + (i % 7) * CELL_W, cy = hy + 22 + Math.floor(i / 7) * CELL_H;
         el("rect", { x: cx, y: cy, width: CELL_W - 2, height: CELL_H - 4, rx: 2, class: "mv-cell" + (c === "" ? " mv-cell-spare" : "") }, g);
         text(g, cx + (CELL_W - 2) / 2, cy + 18, c, "mv-cell-text", "middle");
       });
-      anchors[b.id] = { x: HEAP_X, y: hy + bh / 2 };
+      anchors[b.id] = { x: HEAP_X, y: hy + bh / 2, right: HEAP_X + HEAP_W, heap: true };
       hy += bh + HEAP_GAP;
     });
 
@@ -148,7 +148,11 @@
       if (!f || !t) return;
       var kind = a.kind || "own";
       var d;
-      if (t.x > f.x) {
+      if (f.heap && t.heap) {
+        // heap -> heap (e.g. an object's vptr to its vtable): loop around the right edge
+        var rx = f.right + 22;
+        d = "M" + f.right + "," + f.y + " C" + rx + "," + f.y + " " + rx + "," + t.y + " " + (t.right + 2) + "," + t.y;
+      } else if (t.x > f.x) {
         var mx = (f.x + t.x) / 2;
         d = "M" + f.x + "," + f.y + " C" + mx + "," + f.y + " " + mx + "," + t.y + " " + (t.x - 2) + "," + t.y;
       } else {

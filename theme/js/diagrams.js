@@ -257,6 +257,103 @@
   });
 
   // ------------------------------------------------------------------
+  // Chapter: Traits and generics
+  // ------------------------------------------------------------------
+  M.define("vtable", {
+    title: "Where the vtable pointer lives",
+    variants: [
+      {
+        label: "C++",
+        language: "cpp",
+        code: [
+          "struct Shape { virtual float area() const = 0; };",
+          "struct Circle : Shape { float r; /* ... */ };",
+          "",
+          "std::unique_ptr<Shape> s = std::make_unique<Circle>(1.0f);",
+          "float a = s->area();"
+        ],
+        steps: [
+          {
+            line: 3,
+            frames: [frame("main()", [{ id: "s", name: "s", type: "unique_ptr<Shape>", fields: ["ptr"] }])],
+            heap: [block("obj", ["vptr", "", "r"], "Circle object (16 bytes)"), block("vt", ["dtor", "area"], "Circle vtable (static)")],
+            arrows: [own("s", "obj"), { from: "obj", to: "vt", kind: "shared" }],
+            note: "The pointer is one word. The **object** carries a hidden `vptr` as its first member, so every `Circle` is 16 bytes instead of 4, and it pays that cost even when it is never used polymorphically."
+          },
+          {
+            line: 4,
+            frames: [frame("main()", [{ id: "s", name: "s", type: "unique_ptr<Shape>", fields: ["ptr"] }])],
+            heap: [block("obj", ["vptr", "", "r"], "Circle object (16 bytes)"), block("vt", ["dtor", "area"], "Circle vtable (static)")],
+            arrows: [own("s", "obj"), { from: "obj", to: "vt", kind: "shared" }],
+            note: "A virtual call loads the object's `vptr`, then the function pointer from the vtable, then calls it: two dependent loads, the first of them from the object itself."
+          }
+        ]
+      },
+      {
+        label: "Rust",
+        language: "rust",
+        code: [
+          "trait Shape { fn area(&self) -> f32; }",
+          "struct Circle { r: f32 }",
+          "",
+          "let s: Box<dyn Shape> = Box::new(Circle { r: 1.0 });",
+          "let a = s.area();"
+        ],
+        steps: [
+          {
+            line: 3,
+            frames: [frame("main()", [{ id: "s", name: "s", type: "Box<dyn Shape>", fields: ["data", "vtable"] }])],
+            heap: [block("obj", ["r"], "Circle (4 bytes)"), block("vt", ["drop", "size", "align", "area"], "vtable for Circle as Shape (static)")],
+            arrows: [own("s", "obj"), { from: "s", to: "vt", kind: "shared" }],
+            note: "`Box<dyn Shape>` is a **fat pointer**: one word points to the data, one to the vtable. The `Circle` itself is just its `f32`, with no hidden member, and is laid out exactly as it would be without any traits."
+          },
+          {
+            line: 4,
+            frames: [frame("main()", [{ id: "s", name: "s", type: "Box<dyn Shape>", fields: ["data", "vtable"] }])],
+            heap: [block("obj", ["r"], "Circle (4 bytes)"), block("vt", ["drop", "size", "align", "area"], "vtable for Circle as Shape (static)")],
+            arrows: [own("s", "obj"), { from: "s", to: "vt", kind: "shared" }],
+            note: "A call loads the function pointer from the vtable (the pointer to which is already in a register) and passes the data pointer as `self`. The vtable also records size, alignment and the drop function, which is how `Box<dyn Shape>` can free an object whose type it does not know."
+          }
+        ]
+      }
+    ]
+  });
+
+  // ------------------------------------------------------------------
+  // Chapter: Smart pointers
+  // ------------------------------------------------------------------
+  (function () {
+    function rc(id, state) { return { id: id, name: id, type: "Rc<Mesh>", fields: ["ptr"], state: state || "live" }; }
+    function box(n, state) { return block("h", ["s:" + n, "w:1", "mesh", "", ""], "RcBox<Mesh>: counts + value", state); }
+    function arrows(ids) { return ids.map(function (i) { return own(i, "h"); }); }
+    M.define("rc-count", {
+      title: "Reference counting with Rc",
+      code: [
+        "let mesh = Rc::new(Mesh::load(\"rock\"));",
+        "let a = Rc::clone(&mesh);",
+        "let b = Rc::clone(&mesh);",
+        "drop(a);",
+        "drop(mesh);",
+        "drop(b);   // last owner: Mesh is dropped"
+      ],
+      steps: [
+        { line: 0, frames: [frame("main()", [rc("mesh")])], heap: [box(1)], arrows: arrows(["mesh"]),
+          note: "`Rc::new` makes **one** allocation holding the strong count, the weak count and the value, like `std::make_shared`." },
+        { line: 1, frames: [frame("main()", [rc("mesh"), rc("a")])], heap: [box(2)], arrows: arrows(["mesh", "a"]),
+          note: "`Rc::clone` copies the pointer and increments the strong count. The `Mesh` is not copied. With `Rc` the increment is a plain add; `Arc` uses an atomic add." },
+        { line: 2, frames: [frame("main()", [rc("mesh"), rc("a"), rc("b")])], heap: [box(3)], arrows: arrows(["mesh", "a", "b"]),
+          note: "Three owners. Each can read the mesh through `&Mesh`, but none can get a `&mut Mesh`, because the others might be reading it." },
+        { line: 3, frames: [frame("main()", [rc("mesh"), rc("a", "dropped"), rc("b")])], heap: [box(2)], arrows: arrows(["mesh", "b"]),
+          note: "Dropping an `Rc` decrements the count." },
+        { line: 4, frames: [frame("main()", [rc("mesh", "dropped"), rc("a", "dropped"), rc("b")])], heap: [box(1)], arrows: arrows(["b"]),
+          note: "The original `mesh` handle is not special. Any owner can be the last one." },
+        { line: 5, frames: [frame("main()", [rc("mesh", "dropped"), rc("a", "dropped"), rc("b", "dropped")])], heap: [box(0, "freed")], arrows: [],
+          note: "The count reaches zero: `Mesh` is dropped and, since there are no `Weak` pointers left either, the allocation is freed." }
+      ]
+    });
+  })();
+
+  // ------------------------------------------------------------------
   // Chapter: Lifetimes
   // ------------------------------------------------------------------
   M.define("lifetime-dangling", {
