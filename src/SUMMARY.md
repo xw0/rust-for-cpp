@@ -7,6 +7,7 @@
 
 - [How to read this book](intro/how-to-read.md)
 - [Toolchain setup](intro/setup.md)
+- [Reading Rust syntax](intro/syntax.md)
 
 # Part I: The language, from C++
 

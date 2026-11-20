@@ -47,151 +47,155 @@ msgstr "如何阅读本书"
 msgid "Toolchain setup"
 msgstr "工具链安装"
 
-#: src/SUMMARY.md:11
+#: src/SUMMARY.md:10 src/intro/syntax.md:1
+msgid "Reading Rust syntax"
+msgstr "读懂 Rust 语法"
+
+#: src/SUMMARY.md:12
 msgid "Part I: The language, from C++"
 msgstr "第一部分：从 C++ 出发学习语言"
 
-#: src/SUMMARY.md:13 src/foundations/cargo.md:1
+#: src/SUMMARY.md:14 src/foundations/cargo.md:1
 msgid "Cargo, crates and the build"
 msgstr "Cargo、crate 与构建"
 
-#: src/SUMMARY.md:14 src/foundations/values-and-types.md:1
+#: src/SUMMARY.md:15 src/foundations/values-and-types.md:1
 msgid "Values, types and layout"
 msgstr "值、类型与内存布局"
 
-#: src/SUMMARY.md:15 src/foundations/ownership.md:1
+#: src/SUMMARY.md:16 src/foundations/ownership.md:1
 msgid "Ownership and moves"
 msgstr "所有权与移动"
 
-#: src/SUMMARY.md:16 src/foundations/borrowing.md:1
+#: src/SUMMARY.md:17 src/foundations/borrowing.md:1
 msgid "Borrowing and references"
 msgstr "借用与引用"
 
-#: src/SUMMARY.md:17 src/foundations/lifetimes.md:1
+#: src/SUMMARY.md:18 src/intro/syntax.md:130 src/foundations/lifetimes.md:1
 msgid "Lifetimes"
 msgstr "生命周期"
 
-#: src/SUMMARY.md:18 src/foundations/enums-and-match.md:1
+#: src/SUMMARY.md:19 src/foundations/enums-and-match.md:1
 msgid "Enums and pattern matching"
 msgstr "枚举与模式匹配"
 
-#: src/SUMMARY.md:19 src/foundations/errors.md:1
+#: src/SUMMARY.md:20 src/foundations/errors.md:1
 msgid "Error handling"
 msgstr "错误处理"
 
-#: src/SUMMARY.md:20 src/foundations/traits-and-generics.md:1
+#: src/SUMMARY.md:21 src/foundations/traits-and-generics.md:1
 msgid "Traits and generics"
 msgstr "Trait 与泛型"
 
-#: src/SUMMARY.md:21 src/foundations/operators-and-conversions.md:1
+#: src/SUMMARY.md:22 src/foundations/operators-and-conversions.md:1
 msgid "Operator overloading and conversions"
 msgstr "运算符重载与类型转换"
 
-#: src/SUMMARY.md:22 src/foundations/collections.md:1
+#: src/SUMMARY.md:23 src/foundations/collections.md:1
 msgid "Collections and strings"
 msgstr "集合与字符串"
 
-#: src/SUMMARY.md:23 src/foundations/closures-and-iterators.md:1
+#: src/SUMMARY.md:24 src/foundations/closures-and-iterators.md:1
 msgid "Closures and iterators"
 msgstr "闭包与迭代器"
 
-#: src/SUMMARY.md:24 src/foundations/smart-pointers.md:1
+#: src/SUMMARY.md:25 src/foundations/smart-pointers.md:1
 msgid "Smart pointers and interior mutability"
 msgstr "智能指针与内部可变性"
 
-#: src/SUMMARY.md:25 src/foundations/modules.md:1
+#: src/SUMMARY.md:26 src/foundations/modules.md:1
 msgid "Modules and project organization"
 msgstr "模块与项目组织"
 
-#: src/SUMMARY.md:27
+#: src/SUMMARY.md:28
 msgid "Part II: Systems programming"
 msgstr "第二部分：系统编程"
 
-#: src/SUMMARY.md:29 src/systems/concurrency.md:1
+#: src/SUMMARY.md:30 src/systems/concurrency.md:1
 msgid "Threads, locks and Send/Sync"
 msgstr "线程、锁与 Send/Sync"
 
-#: src/SUMMARY.md:30 src/systems/memory-and-performance.md:1
+#: src/SUMMARY.md:31 src/systems/memory-and-performance.md:1
 msgid "Memory layout and performance"
 msgstr "内存布局与性能"
 
-#: src/SUMMARY.md:31 src/systems/unsafe.md:1
+#: src/SUMMARY.md:32 src/systems/unsafe.md:1
 msgid "Unsafe Rust"
 msgstr "Unsafe Rust"
 
-#: src/SUMMARY.md:32 src/systems/ffi.md:1
+#: src/SUMMARY.md:33 src/systems/ffi.md:1
 msgid "FFI with C and C++"
 msgstr "与 C 和 C++ 的 FFI"
 
-#: src/SUMMARY.md:33 src/systems/macros.md:1
+#: src/SUMMARY.md:34 src/systems/macros.md:1
 msgid "Macros"
 msgstr "宏"
 
-#: src/SUMMARY.md:34 src/systems/testing-and-tooling.md:1
+#: src/SUMMARY.md:35 src/systems/testing-and-tooling.md:1
 msgid "Testing, benchmarks and tooling"
 msgstr "测试、基准测试与工具"
 
-#: src/SUMMARY.md:36
+#: src/SUMMARY.md:37
 msgid "Part III: Graphics and engine programming"
 msgstr "第三部分：图形与引擎编程"
 
-#: src/SUMMARY.md:38 src/engine/handles-and-arenas.md:1
+#: src/SUMMARY.md:39 src/engine/handles-and-arenas.md:1
 msgid "Handles and arenas instead of pointers"
 msgstr "用句柄和 Arena 代替指针"
 
-#: src/SUMMARY.md:39 src/engine/ecs.md:1
+#: src/SUMMARY.md:40 src/engine/ecs.md:1
 msgid "ECS and the borrow checker"
 msgstr "ECS 与借用检查器"
 
-#: src/SUMMARY.md:40
+#: src/SUMMARY.md:41
 msgid "Math and SIMD"
 msgstr "数学库与 SIMD"
 
-#: src/SUMMARY.md:41 src/engine/opengl.md:1
+#: src/SUMMARY.md:42 src/engine/opengl.md:1
 msgid "OpenGL from Rust"
 msgstr "在 Rust 中使用 OpenGL"
 
-#: src/SUMMARY.md:42 src/engine/vulkan.md:1
+#: src/SUMMARY.md:43 src/engine/vulkan.md:1
 msgid "Vulkan with ash"
 msgstr "使用 ash 调用 Vulkan"
 
-#: src/SUMMARY.md:43
+#: src/SUMMARY.md:44
 msgid "Portable graphics with wgpu"
 msgstr "使用 wgpu 实现跨平台图形"
 
-#: src/SUMMARY.md:44 src/engine/openxr.md:1
+#: src/SUMMARY.md:45 src/engine/openxr.md:1
 msgid "VR and AR with OpenXR"
 msgstr "使用 OpenXR 开发 VR 与 AR"
 
-#: src/SUMMARY.md:45
+#: src/SUMMARY.md:46
 msgid "Windows, input and the game loop"
 msgstr "窗口、输入与游戏循环"
 
-#: src/SUMMARY.md:46
+#: src/SUMMARY.md:47
 msgid "Assets, shaders and build scripts"
 msgstr "资源、着色器与构建脚本"
 
-#: src/SUMMARY.md:47 src/engine/hot-reload-and-plugins.md:1
+#: src/SUMMARY.md:48 src/engine/hot-reload-and-plugins.md:1
 msgid "Hot reloading and plugins"
 msgstr "热重载与插件"
 
-#: src/SUMMARY.md:48 src/engine/case-study.md:1
+#: src/SUMMARY.md:49 src/engine/case-study.md:1
 msgid "Case study: a small renderer"
 msgstr "案例：一个小型渲染器"
 
-#: src/SUMMARY.md:50
+#: src/SUMMARY.md:51
 msgid "Appendices"
 msgstr "附录"
 
-#: src/SUMMARY.md:52 src/appendix/cheat-sheet.md:1
+#: src/SUMMARY.md:53 src/appendix/cheat-sheet.md:1
 msgid "C++ to Rust cheat sheet"
 msgstr "C++ 到 Rust 速查表"
 
-#: src/SUMMARY.md:53 src/appendix/further-reading.md:1
+#: src/SUMMARY.md:54 src/appendix/further-reading.md:1
 msgid "Further reading"
 msgstr "延伸阅读"
 
-#: src/SUMMARY.md:54 src/appendix/contributing.md:1
+#: src/SUMMARY.md:55 src/appendix/contributing.md:1
 msgid "Contributing and translating"
 msgstr "参与贡献与翻译"
 
@@ -400,10 +404,10 @@ msgstr "并排的代码会把你会写的 C++ 和对应的 Rust 放在一起："
 #: src/engine/math-and-simd.md:341 src/engine/opengl.md:282
 #: src/engine/vulkan.md:396 src/engine/game-loop.md:333
 #: src/engine/assets-and-build.md:400 src/engine/hot-reload-and-plugins.md:250
-#: src/appendix/cheat-sheet.md:9 src/appendix/cheat-sheet.md:29
-#: src/appendix/cheat-sheet.md:50 src/appendix/cheat-sheet.md:70
-#: src/appendix/cheat-sheet.md:82 src/appendix/cheat-sheet.md:101
-#: src/appendix/cheat-sheet.md:120 src/appendix/cheat-sheet.md:140
+#: src/appendix/cheat-sheet.md:11 src/appendix/cheat-sheet.md:31
+#: src/appendix/cheat-sheet.md:52 src/appendix/cheat-sheet.md:72
+#: src/appendix/cheat-sheet.md:84 src/appendix/cheat-sheet.md:103
+#: src/appendix/cheat-sheet.md:122 src/appendix/cheat-sheet.md:142
 msgid "C++"
 msgstr ""
 
@@ -428,11 +432,11 @@ msgstr ""
 #: src/engine/math-and-simd.md:341 src/engine/opengl.md:20
 #: src/engine/opengl.md:282 src/engine/vulkan.md:396 src/engine/openxr.md:521
 #: src/engine/game-loop.md:333 src/engine/assets-and-build.md:400
-#: src/engine/hot-reload-and-plugins.md:250 src/appendix/cheat-sheet.md:9
-#: src/appendix/cheat-sheet.md:29 src/appendix/cheat-sheet.md:50
-#: src/appendix/cheat-sheet.md:70 src/appendix/cheat-sheet.md:82
-#: src/appendix/cheat-sheet.md:101 src/appendix/cheat-sheet.md:120
-#: src/appendix/cheat-sheet.md:140
+#: src/engine/hot-reload-and-plugins.md:250 src/appendix/cheat-sheet.md:11
+#: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:52
+#: src/appendix/cheat-sheet.md:72 src/appendix/cheat-sheet.md:84
+#: src/appendix/cheat-sheet.md:103 src/appendix/cheat-sheet.md:122
+#: src/appendix/cheat-sheet.md:142
 msgid "Rust"
 msgstr "Rust"
 
@@ -522,7 +526,8 @@ msgstr "工具"
 msgid "What it is"
 msgstr "用途"
 
-#: src/intro/setup.md:26 src/engine/assets-and-build.md:93
+#: src/intro/setup.md:26 src/intro/syntax.md:141
+#: src/engine/assets-and-build.md:93
 msgid "C++ equivalent"
 msgstr "C++ 中的对应物"
 
@@ -595,7 +600,7 @@ msgid "Documentation generator"
 msgstr "文档生成器"
 
 #: src/intro/setup.md:33 src/systems/testing-and-tooling.md:176
-#: src/systems/testing-and-tooling.md:228 src/appendix/cheat-sheet.md:116
+#: src/systems/testing-and-tooling.md:228 src/appendix/cheat-sheet.md:118
 msgid "Doxygen"
 msgstr "Doxygen"
 
@@ -1024,7 +1029,7 @@ msgstr ""
 "做快速实验时根本不需要建项目。[Rust Playground](https://play.rust-lang.org) "
 "可以在浏览器中编译并运行代码，能显示汇编、LLVM IR 和 MIR，并且提供最流行的 100 个 crate。本书所有可运行的示例都使用它。"
 
-#: src/intro/setup.md:195 src/foundations/cargo.md:371
+#: src/intro/setup.md:195 src/intro/syntax.md:177 src/foundations/cargo.md:371
 #: src/foundations/values-and-types.md:395 src/foundations/ownership.md:370
 #: src/foundations/borrowing.md:344 src/foundations/lifetimes.md:259
 #: src/foundations/enums-and-match.md:345 src/foundations/errors.md:304
@@ -1063,23 +1068,22 @@ msgid ""
 msgstr ""
 "运行 `cargo build -v`，阅读 Cargo 执行的 `rustc` 命令行。把它和 CMake 传给 C++ 编译器的参数做比较。"
 
-#: src/foundations/cargo.md:3
+#: src/intro/syntax.md:3
 msgid ""
-"In C++, the language standard says nothing about how code is built. Every "
-"project chooses a build system, a package manager, a directory layout and a "
-"way to find headers and libraries, and connecting two projects means "
-"reconciling their choices. Rust settled all of this from the start. One "
-"tool, Cargo, builds every Rust project, and every library is published the "
-"same way. This is the biggest day-to-day productivity difference you will "
-"notice."
+"Rust borrows most of its punctuation from C and C++, but many symbols mean "
+"something slightly different, and a few are new. `vec![1, 2]` is not a "
+"function call, `&mut x` is not a C++ reference, `'a` is not a character and "
+"`x?` is not half a ternary. This chapter is a decoder: read it once before "
+"Part I, then come back whenever a symbol stops you. Each entry links to the "
+"chapter that explains the idea properly."
 msgstr ""
-"在 C++ "
-"中，语言标准对代码如何构建只字未提。每个项目都要自己选择构建系统、包管理器、目录结构以及查找头文件和库的方式；要把两个项目连接起来，就得协调双方的选择。Rust"
-" 从一开始就把这些都定了下来：一个工具 Cargo 构建所有 Rust 项目，所有库都以同样的方式发布。这是你在日常工作中会感受到的最大的效率差别。"
+"Rust 的大部分标点符号借自 C 和 C++，但许多符号的含义略有不同，还有几个是新的。`vec![1, 2]` 不是函数调用，`&mut x` 不是"
+" C++ 引用，`'a` 不是字符，`x?` "
+"也不是三元运算符的一半。本章是一本解码手册：在第一部分之前读一遍，之后每当某个符号让你卡住时再回来查。每个条目都链接到详细讲解该概念的章节。"
 
-#: src/foundations/cargo.md:10 src/foundations/ownership.md:13
-#: src/foundations/borrowing.md:10 src/foundations/lifetimes.md:16
-#: src/foundations/enums-and-match.md:10
+#: src/intro/syntax.md:10 src/foundations/cargo.md:10
+#: src/foundations/ownership.md:13 src/foundations/borrowing.md:10
+#: src/foundations/lifetimes.md:16 src/foundations/enums-and-match.md:10
 #: src/foundations/traits-and-generics.md:11
 #: src/foundations/operators-and-conversions.md:9
 #: src/foundations/collections.md:8 src/foundations/smart-pointers.md:9
@@ -1093,6 +1097,918 @@ msgstr ""
 #: src/engine/hot-reload-and-plugins.md:11 src/engine/case-study.md:11
 msgid "This chapter covers:"
 msgstr "本章内容："
+
+#: src/intro/syntax.md:12
+msgid "one short program that uses most of the symbols, annotated,"
+msgstr "一个使用了大部分符号的简短程序，附带注释；"
+
+#: src/intro/syntax.md:13
+msgid ""
+"the symbols grouped by job: references, paths and generics, macros and "
+"attributes, expressions, patterns, lifetimes and literals,"
+msgstr "按用途分组的符号：引用、路径与泛型、宏与属性、表达式、模式、生命周期和字面量；"
+
+#: src/intro/syntax.md:15
+msgid "the \"false friends\": symbols that look like C++ but behave differently."
+msgstr "\"假朋友\"：看起来像 C++、行为却不同的符号。"
+
+#: src/intro/syntax.md:17
+msgid "One program, most of the symbols"
+msgstr "一个程序，涵盖大部分符号"
+
+#: src/intro/syntax.md:19
+msgid ""
+"Read the comments from top to bottom. Every line runs; press **Run** to "
+"check."
+msgstr "从上到下阅读注释。每一行都能运行；点击 **Run** 验证。"
+
+#: src/intro/syntax.md:22
+msgid "// #[...]: an attribute, here generating trait impls\n"
+msgstr "// #[...]：属性，这里用于生成 trait 实现\n"
+
+#: src/intro/syntax.md:24
+msgid ""
+"// 'a: a lifetime. The returned reference lives as long as the input "
+"slice.\n"
+msgstr "// 'a：生命周期。返回的引用与输入切片活得一样久。\n"
+
+#: src/intro/syntax.md:27
+msgid "// |s| ...: a closure (lambda)\n"
+msgstr "// |s| ...：闭包（lambda）\n"
+
+#: src/intro/syntax.md:31
+msgid ""
+"// ::<u32>: explicit type argument\n"
+"                                           // ?: return the error early if parsing failed\n"
+msgstr ""
+"// ::<u32>：显式类型参数\n"
+"                                           // ?：如果解析失败，提前返回错误\n"
+
+#: src/intro/syntax.md:37
+msgid "// vec!: a macro (the ! marks every macro call)\n"
+msgstr "// vec!：宏（每个宏调用都带有 !）\n"
+
+#: src/intro/syntax.md:38
+msgid "// &: a shared borrow, read-only\n"
+msgstr "// &：共享借用，只读\n"
+
+#: src/intro/syntax.md:39
+msgid "\"first = {first}\""
+msgstr ""
+
+#: src/intro/syntax.md:39
+msgid "// println!: also a macro\n"
+msgstr "// println!：也是宏\n"
+
+#: src/intro/syntax.md:41
+msgid "// &mut: an exclusive borrow, read-write\n"
+msgstr "// &mut：独占借用，可读写\n"
+
+#: src/intro/syntax.md:42
+msgid "// method call auto-dereferences: no -> in Rust\n"
+msgstr "// 方法调用会自动解引用：Rust 中没有 ->\n"
+
+#: src/intro/syntax.md:43
+msgid "// *: explicit dereference\n"
+msgstr "// *：显式解引用\n"
+
+#: src/intro/syntax.md:45
+msgid "// 0..n: a range, n excluded (0..=n includes n)\n"
+msgstr "// 0..n：范围，不包含 n（0..=n 包含 n）\n"
+
+#: src/intro/syntax.md:46
+msgid "\"{} \""
+msgstr ""
+
+#: src/intro/syntax.md:50
+msgid "// ..base: copy the remaining fields\n"
+msgstr "// ..base：复制其余字段\n"
+
+#: src/intro/syntax.md:51
+msgid "// destructuring; .. ignores the other fields\n"
+msgstr "// 解构；.. 忽略其他字段\n"
+
+#: src/intro/syntax.md:52
+msgid "\"{v:?} x={x} y={}\""
+msgstr ""
+
+#: src/intro/syntax.md:52
+msgid "// {:?}: Debug formatting\n"
+msgstr "// {:?}：Debug 格式化\n"
+
+#: src/intro/syntax.md:54
+msgid "\"ann\""
+msgstr ""
+
+#: src/intro/syntax.md:54
+msgid "\"bartholomew\""
+msgstr ""
+
+#: src/intro/syntax.md:56
+msgid "\"long name: {n}\""
+msgstr ""
+
+#: src/intro/syntax.md:56
+msgid "// =>: match arm, `if` is a guard\n"
+msgstr "// =>：match 分支，`if` 是守卫\n"
+
+#: src/intro/syntax.md:57
+msgid "\"name: {n}\""
+msgstr ""
+
+#: src/intro/syntax.md:58
+msgid "\"no names\""
+msgstr ""
+
+#: src/intro/syntax.md:61
+msgid "\" 7 \""
+msgstr ""
+
+#: src/intro/syntax.md:61
+msgid "// _name: a deliberately unused binding\n"
+msgstr "// _name：有意不使用的绑定\n"
+
+#: src/intro/syntax.md:62
+msgid "\"x\""
+msgstr ""
+
+#: src/intro/syntax.md:63
+msgid "\"level {level}\""
+msgstr ""
+
+#: src/intro/syntax.md:64 src/foundations/errors.md:174
+#: src/foundations/errors.md:177
+msgid "\"error: {e}\""
+msgstr ""
+
+#: src/intro/syntax.md:69
+msgid "References and pointers"
+msgstr "引用与指针"
+
+#: src/intro/syntax.md:71 src/intro/syntax.md:83 src/intro/syntax.md:97
+#: src/intro/syntax.md:108 src/intro/syntax.md:122 src/intro/syntax.md:132
+msgid "Symbol"
+msgstr "符号"
+
+#: src/intro/syntax.md:71 src/intro/syntax.md:83 src/intro/syntax.md:97
+#: src/intro/syntax.md:108
+msgid "C++ meaning"
+msgstr "C++ 中的含义"
+
+#: src/intro/syntax.md:71 src/intro/syntax.md:83 src/intro/syntax.md:97
+#: src/intro/syntax.md:108
+msgid "Rust meaning"
+msgstr "Rust 中的含义"
+
+#: src/intro/syntax.md:71 src/intro/syntax.md:83 src/intro/syntax.md:97
+#: src/intro/syntax.md:108 src/intro/syntax.md:122 src/intro/syntax.md:132
+#: src/engine/case-study.md:184 src/appendix/cheat-sheet.md:11
+#: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:52
+#: src/appendix/cheat-sheet.md:72 src/appendix/cheat-sheet.md:84
+#: src/appendix/cheat-sheet.md:103 src/appendix/cheat-sheet.md:122
+#: src/appendix/cheat-sheet.md:142 src/appendix/cheat-sheet.md:160
+msgid "Chapter"
+msgstr "章节"
+
+#: src/intro/syntax.md:73
+msgid "`&x`"
+msgstr ""
+
+#: src/intro/syntax.md:73
+msgid "Address of `x`"
+msgstr "取 `x` 的地址"
+
+#: src/intro/syntax.md:73
+msgid ""
+"A shared borrow of `x`: a non-null, read-only reference. Written at the call"
+" site, `f(&x)`, so borrowing is always visible"
+msgstr "对 `x` 的共享借用：非空、只读的引用。写在调用处，`f(&x)`，所以借用总是可见的"
+
+#: src/intro/syntax.md:73 src/intro/syntax.md:74 src/intro/syntax.md:75
+#: src/appendix/cheat-sheet.md:37 src/appendix/cheat-sheet.md:38
+#: src/appendix/cheat-sheet.md:39 src/appendix/cheat-sheet.md:40
+#: src/appendix/cheat-sheet.md:41 src/appendix/cheat-sheet.md:54
+#: src/appendix/cheat-sheet.md:162 src/appendix/cheat-sheet.md:163
+msgid "[Borrowing](../foundations/borrowing.md)"
+msgstr "[借用](../foundations/borrowing.md)"
+
+#: src/intro/syntax.md:74
+msgid "`&mut x`"
+msgstr ""
+
+#: src/intro/syntax.md:74 src/intro/syntax.md:78 src/intro/syntax.md:90
+#: src/intro/syntax.md:102 src/intro/syntax.md:103 src/intro/syntax.md:112
+#: src/intro/syntax.md:113 src/foundations/operators-and-conversions.md:147
+#: src/foundations/operators-and-conversions.md:149
+#: src/foundations/operators-and-conversions.md:150
+msgid "(none)"
+msgstr "（无）"
+
+#: src/intro/syntax.md:74
+msgid ""
+"An exclusive borrow: read-write, and no other reference to `x` may be used "
+"while it lives"
+msgstr "独占借用：可读写，并且在它存活期间，不能使用指向 `x` 的任何其他引用"
+
+#: src/intro/syntax.md:75 src/engine/handles-and-arenas.md:237
+msgid "`&T`, `&mut T`"
+msgstr ""
+
+#: src/intro/syntax.md:75
+msgid "`const T&`, `T&`"
+msgstr ""
+
+#: src/intro/syntax.md:75
+msgid ""
+"Reference types. Unlike C++ references they are values: they can be "
+"reassigned, stored and compared as pointers are"
+msgstr "引用类型。与 C++ 引用不同，它们是值：可以像指针一样被重新赋值、存储和比较"
+
+#: src/intro/syntax.md:76
+msgid "`*r`"
+msgstr ""
+
+#: src/intro/syntax.md:76
+msgid "Dereference"
+msgstr "解引用"
+
+#: src/intro/syntax.md:76
+msgid ""
+"Dereference. Often implicit: method calls and comparisons auto-dereference, "
+"so you write `r.len()`, never `r->len()`"
+msgstr "解引用。通常是隐式的：方法调用和比较会自动解引用，所以你写 `r.len()`，从不写 `r->len()`"
+
+#: src/intro/syntax.md:76 src/appendix/cheat-sheet.md:44
+#: src/appendix/cheat-sheet.md:45 src/appendix/cheat-sheet.md:46
+#: src/appendix/cheat-sheet.md:47
+msgid "[Smart pointers](../foundations/smart-pointers.md)"
+msgstr "[智能指针](../foundations/smart-pointers.md)"
+
+#: src/intro/syntax.md:77
+msgid "`*const T`, `*mut T`"
+msgstr ""
+
+#: src/intro/syntax.md:77
+msgid "`const T*`, `T*`"
+msgstr ""
+
+#: src/intro/syntax.md:77
+msgid "Raw pointers, only dereferenced in `unsafe`"
+msgstr "裸指针，只能在 `unsafe` 中解引用"
+
+#: src/intro/syntax.md:77 src/appendix/cheat-sheet.md:129
+#: src/appendix/cheat-sheet.md:130 src/appendix/cheat-sheet.md:131
+#: src/appendix/cheat-sheet.md:132
+msgid "[Unsafe](../systems/unsafe.md)"
+msgstr "[Unsafe](../systems/unsafe.md)"
+
+#: src/intro/syntax.md:78
+msgid "`ref x`"
+msgstr ""
+
+#: src/intro/syntax.md:78
+msgid "In a pattern: bind by reference instead of moving"
+msgstr "在模式中：按引用绑定而不是移动"
+
+#: src/intro/syntax.md:78 src/intro/syntax.md:113 src/intro/syntax.md:124
+#: src/intro/syntax.md:125 src/intro/syntax.md:126 src/intro/syntax.md:127
+#: src/intro/syntax.md:128 src/engine/case-study.md:194
+#: src/appendix/cheat-sheet.md:23 src/appendix/cheat-sheet.md:24
+#: src/appendix/cheat-sheet.md:25 src/appendix/cheat-sheet.md:26
+#: src/appendix/cheat-sheet.md:27
+msgid "[Enums and match](../foundations/enums-and-match.md)"
+msgstr "[枚举与 match](../foundations/enums-and-match.md)"
+
+#: src/intro/syntax.md:79
+msgid "`&&` / `\\|\\|`"
+msgstr ""
+
+#: src/intro/syntax.md:79
+msgid "Logical and / or"
+msgstr "逻辑与 / 或"
+
+#: src/intro/syntax.md:79
+msgid "The same. (`&&x` can also be a reference to a reference)"
+msgstr "相同。（`&&x` 也可以是引用的引用）"
+
+#: src/intro/syntax.md:81
+msgid "Paths and generics"
+msgstr "路径与泛型"
+
+#: src/intro/syntax.md:85
+msgid "`a::b`"
+msgstr ""
+
+#: src/intro/syntax.md:85
+msgid "Scope resolution"
+msgstr "作用域解析"
+
+#: src/intro/syntax.md:85
+msgid ""
+"The same, for modules, types and associated functions: `Vec::new()`, "
+"`std::mem::swap`"
+msgstr "相同，用于模块、类型和关联函数：`Vec::new()`、`std::mem::swap`"
+
+#: src/intro/syntax.md:85 src/intro/syntax.md:102
+#: src/appendix/cheat-sheet.md:109 src/appendix/cheat-sheet.md:110
+#: src/appendix/cheat-sheet.md:111
+msgid "[Modules](../foundations/modules.md)"
+msgstr "[模块](../foundations/modules.md)"
+
+#: src/intro/syntax.md:86
+msgid "`a.b()`"
+msgstr ""
+
+#: src/intro/syntax.md:86
+msgid "Member call"
+msgstr "成员调用"
+
+#: src/intro/syntax.md:86
+msgid "Method call; works through references and smart pointers too"
+msgstr "方法调用；也能透过引用和智能指针使用"
+
+#: src/intro/syntax.md:86 src/intro/syntax.md:87 src/intro/syntax.md:88
+#: src/intro/syntax.md:89 src/intro/syntax.md:90 src/intro/syntax.md:91
+#: src/intro/syntax.md:92 src/engine/case-study.md:191
+#: src/appendix/cheat-sheet.md:55 src/appendix/cheat-sheet.md:56
+#: src/appendix/cheat-sheet.md:57 src/appendix/cheat-sheet.md:58
+#: src/appendix/cheat-sheet.md:59
+msgid "[Traits and generics](../foundations/traits-and-generics.md)"
+msgstr "[trait 与泛型](../foundations/traits-and-generics.md)"
+
+#: src/intro/syntax.md:87
+msgid "`<T>`"
+msgstr ""
+
+#: src/intro/syntax.md:87
+msgid "Template parameters"
+msgstr "模板参数"
+
+#: src/intro/syntax.md:87
+msgid ""
+"Generic parameters, checked against trait bounds when the generic is defined"
+msgstr "泛型参数，在定义泛型时就根据 trait 约束进行检查"
+
+#: src/intro/syntax.md:88
+msgid "`f::<T>()`"
+msgstr ""
+
+#: src/intro/syntax.md:88
+msgid "`f<T>()`"
+msgstr ""
+
+#: src/intro/syntax.md:88
+msgid ""
+"The \"turbofish\": explicit type arguments in an expression, needed because "
+"`<` alone would parse as less-than"
+msgstr "\"turbofish\"：在表达式中显式给出类型参数，之所以需要它，是因为单独的 `<` 会被解析为小于号"
+
+#: src/intro/syntax.md:89
+msgid "`T: Trait`"
+msgstr ""
+
+#: src/intro/syntax.md:89
+msgid "`requires Concept<T>`"
+msgstr ""
+
+#: src/intro/syntax.md:89
+msgid "A trait bound"
+msgstr "trait 约束"
+
+#: src/intro/syntax.md:90
+msgid "`impl Trait`"
+msgstr ""
+
+#: src/intro/syntax.md:90
+msgid ""
+"\"Some type implementing `Trait`\": static dispatch without naming the type"
+msgstr "\"某个实现了 `Trait` 的类型\"：无需写出类型名的静态分发"
+
+#: src/intro/syntax.md:91
+msgid "`dyn Trait`"
+msgstr ""
+
+#: src/intro/syntax.md:91
+msgid "Pointer to abstract base"
+msgstr "指向抽象基类的指针"
+
+#: src/intro/syntax.md:91
+msgid "A trait object: dynamic dispatch through a fat pointer"
+msgstr "trait 对象：通过胖指针进行动态分发"
+
+#: src/intro/syntax.md:92
+msgid "`Self`, `self`"
+msgstr ""
+
+#: src/intro/syntax.md:92
+msgid "(none), `*this`"
+msgstr "（无）、`*this`"
+
+#: src/intro/syntax.md:92
+msgid "The implementing type; the receiver"
+msgstr "实现该 trait 的类型；方法的接收者"
+
+#: src/intro/syntax.md:93
+msgid "`->`"
+msgstr ""
+
+#: src/intro/syntax.md:93
+msgid "Member access through pointer; trailing return type"
+msgstr "通过指针访问成员；尾置返回类型"
+
+#: src/intro/syntax.md:93
+msgid "Only the return type: `fn f() -> i32`"
+msgstr "只表示返回类型：`fn f() -> i32`"
+
+#: src/intro/syntax.md:93 src/intro/syntax.md:104 src/intro/syntax.md:115
+#: src/appendix/cheat-sheet.md:13 src/appendix/cheat-sheet.md:14
+#: src/appendix/cheat-sheet.md:15 src/appendix/cheat-sheet.md:16
+#: src/appendix/cheat-sheet.md:17 src/appendix/cheat-sheet.md:18
+#: src/appendix/cheat-sheet.md:19 src/appendix/cheat-sheet.md:20
+#: src/appendix/cheat-sheet.md:22
+msgid "[Values and types](../foundations/values-and-types.md)"
+msgstr "[值与类型](../foundations/values-and-types.md)"
+
+#: src/intro/syntax.md:95
+msgid "Macros and attributes"
+msgstr "宏与属性"
+
+#: src/intro/syntax.md:99
+msgid "`name!(...)`"
+msgstr ""
+
+#: src/intro/syntax.md:99
+msgid "`!` is logical not"
+msgstr "`!` 是逻辑非"
+
+#: src/intro/syntax.md:99
+msgid ""
+"A macro call. The `!` is part of the call syntax, so a macro is never "
+"mistaken for a function. `vec![...]`, `println!(...)`, `assert_eq!(...)`"
+msgstr ""
+"宏调用。`!` "
+"是调用语法的一部分，所以宏永远不会被误认为函数。`vec![...]`、`println!(...)`、`assert_eq!(...)`"
+
+#: src/intro/syntax.md:99 src/intro/syntax.md:101 src/intro/syntax.md:103
+#: src/appendix/cheat-sheet.md:21 src/appendix/cheat-sheet.md:112
+#: src/appendix/cheat-sheet.md:113 src/appendix/cheat-sheet.md:114
+msgid "[Macros](../systems/macros.md)"
+msgstr "[宏](../systems/macros.md)"
+
+#: src/intro/syntax.md:100
+msgid "`!x`"
+msgstr ""
+
+#: src/intro/syntax.md:100
+msgid "Logical not"
+msgstr "逻辑非"
+
+#: src/intro/syntax.md:100
+msgid "Logical not for `bool`, bitwise not for integers (C++'s `~`)"
+msgstr "对 `bool` 是逻辑非，对整数是按位取反（C++ 的 `~`）"
+
+#: src/intro/syntax.md:100 src/intro/syntax.md:114
+#: src/appendix/cheat-sheet.md:60 src/appendix/cheat-sheet.md:61
+#: src/appendix/cheat-sheet.md:62 src/appendix/cheat-sheet.md:63
+#: src/appendix/cheat-sheet.md:64 src/appendix/cheat-sheet.md:65
+msgid "[Operators](../foundations/operators-and-conversions.md)"
+msgstr "[运算符](../foundations/operators-and-conversions.md)"
+
+#: src/intro/syntax.md:101
+msgid "`#[attr]`"
+msgstr ""
+
+#: src/intro/syntax.md:101
+msgid "`[[attr]]`"
+msgstr ""
+
+#: src/intro/syntax.md:101
+msgid ""
+"An attribute on the next item: `#[derive(...)]`, `#[test]`, `#[inline]`, "
+"`#[repr(C)]`"
+msgstr "作用于下一个条目的属性：`#[derive(...)]`、`#[test]`、`#[inline]`、`#[repr(C)]`"
+
+#: src/intro/syntax.md:102
+msgid "`#![attr]`"
+msgstr ""
+
+#: src/intro/syntax.md:102
+msgid "An attribute on the enclosing item, usually the whole crate"
+msgstr "作用于外层条目的属性，通常是整个 crate"
+
+#: src/intro/syntax.md:103
+msgid "`$x`"
+msgstr ""
+
+#: src/intro/syntax.md:103
+msgid "A variable inside a `macro_rules!` definition"
+msgstr "`macro_rules!` 定义中的变量"
+
+#: src/intro/syntax.md:104
+msgid "`{x}`, `{:?}` in strings"
+msgstr "字符串中的 `{x}`、`{:?}`"
+
+#: src/intro/syntax.md:104
+msgid "`std::format` placeholders"
+msgstr "`std::format` 占位符"
+
+#: src/intro/syntax.md:104
+msgid "The same idea, checked at compile time. `{:?}` uses `Debug` formatting"
+msgstr "思路相同，但在编译期检查。`{:?}` 使用 `Debug` 格式化"
+
+#: src/intro/syntax.md:106
+msgid "Expressions and control flow"
+msgstr "表达式与控制流"
+
+#: src/intro/syntax.md:110
+msgid "`x?`"
+msgstr ""
+
+#: src/intro/syntax.md:110
+msgid "(half of `a ? b : c`)"
+msgstr "（`a ? b : c` 的一半）"
+
+#: src/intro/syntax.md:110
+msgid ""
+"Early return: unwrap an `Ok`/`Some`, or return the `Err`/`None` from the "
+"current function. Rust has no ternary; use `if a { b } else { c }`"
+msgstr ""
+"提前返回：解开 `Ok`/`Some`，或者从当前函数返回 `Err`/`None`。Rust 没有三元运算符；请使用 `if a { b } else"
+" { c }`"
+
+#: src/intro/syntax.md:110 src/appendix/cheat-sheet.md:74
+#: src/appendix/cheat-sheet.md:75 src/appendix/cheat-sheet.md:76
+#: src/appendix/cheat-sheet.md:77 src/appendix/cheat-sheet.md:78
+#: src/appendix/cheat-sheet.md:79 src/appendix/cheat-sheet.md:80
+msgid "[Errors](../foundations/errors.md)"
+msgstr "[错误](../foundations/errors.md)"
+
+#: src/intro/syntax.md:111
+msgid "`\\|a, b\\| a + b`"
+msgstr ""
+
+#: src/intro/syntax.md:111
+msgid "`[](auto a, auto b) { return a + b; }`"
+msgstr ""
+
+#: src/intro/syntax.md:111
+msgid "A closure. `move \\|\\| ...` captures by value"
+msgstr "闭包。`move || ...` 按值捕获"
+
+#: src/intro/syntax.md:111 src/engine/case-study.md:192
+#: src/appendix/cheat-sheet.md:66 src/appendix/cheat-sheet.md:67
+#: src/appendix/cheat-sheet.md:68 src/appendix/cheat-sheet.md:93
+msgid "[Closures and iterators](../foundations/closures-and-iterators.md)"
+msgstr "[闭包与迭代器](../foundations/closures-and-iterators.md)"
+
+#: src/intro/syntax.md:112
+msgid "`a..b`, `a..=b`"
+msgstr ""
+
+#: src/intro/syntax.md:112
+msgid ""
+"Ranges: half-open and inclusive. Used in `for`, slicing (`&v[1..3]`) and "
+"`match`"
+msgstr "范围：半开区间和闭区间。用于 `for`、切片（`&v[1..3]`）和 `match`"
+
+#: src/intro/syntax.md:112 src/appendix/cheat-sheet.md:86
+#: src/appendix/cheat-sheet.md:87 src/appendix/cheat-sheet.md:88
+#: src/appendix/cheat-sheet.md:89 src/appendix/cheat-sheet.md:90
+#: src/appendix/cheat-sheet.md:91 src/appendix/cheat-sheet.md:92
+#: src/appendix/cheat-sheet.md:165
+msgid "[Collections](../foundations/collections.md)"
+msgstr "[集合](../foundations/collections.md)"
+
+#: src/intro/syntax.md:113
+msgid "`=>`"
+msgstr ""
+
+#: src/intro/syntax.md:113
+msgid "Separates a `match` pattern from its result"
+msgstr "分隔 `match` 的模式和结果"
+
+#: src/intro/syntax.md:114
+msgid "`as`"
+msgstr ""
+
+#: src/intro/syntax.md:114
+msgid "`static_cast`"
+msgstr ""
+
+#: src/intro/syntax.md:114
+msgid "Primitive casts only, never fails, may truncate"
+msgstr "只用于基本类型转换，永不失败，可能截断"
+
+#: src/intro/syntax.md:115
+msgid "`;`"
+msgstr ""
+
+#: src/intro/syntax.md:115
+msgid "Ends a statement"
+msgstr "结束一条语句"
+
+#: src/intro/syntax.md:115
+msgid ""
+"Also turns an expression into a statement. A block's last expression without"
+" `;` is its value, which is how functions usually return"
+msgstr "还会把表达式变成语句。块中最后一个不带 `;` 的表达式就是块的值，函数通常就是这样返回的"
+
+#: src/intro/syntax.md:116
+msgid "`'label: loop`"
+msgstr ""
+
+#: src/intro/syntax.md:116
+msgid "`goto` label"
+msgstr "`goto` 标签"
+
+#: src/intro/syntax.md:116
+msgid "A loop label for `break 'label` / `continue 'label`"
+msgstr "用于 `break 'label` / `continue 'label` 的循环标签"
+
+#: src/intro/syntax.md:118
+msgid "Patterns"
+msgstr "模式"
+
+#: src/intro/syntax.md:120
+msgid ""
+"Patterns appear in `let`, `match`, `if let`, function parameters and `for`."
+msgstr "模式出现在 `let`、`match`、`if let`、函数参数和 `for` 中。"
+
+#: src/intro/syntax.md:122 src/intro/syntax.md:132
+#: src/foundations/lifetimes.md:237
+#: src/foundations/operators-and-conversions.md:144
+#: src/foundations/smart-pointers.md:222 src/foundations/modules.md:112
+msgid "Meaning"
+msgstr "含义"
+
+#: src/intro/syntax.md:124 src/foundations/enums-and-match.md:125
+msgid "`_`"
+msgstr ""
+
+#: src/intro/syntax.md:124
+msgid ""
+"Match anything, bind nothing. `_name` binds but silences the unused warning"
+msgstr "匹配任何东西，不绑定任何东西。`_name` 会绑定，但不会产生未使用警告"
+
+#: src/intro/syntax.md:125
+msgid "`..`"
+msgstr ""
+
+#: src/intro/syntax.md:125
+msgid ""
+"Ignore the remaining fields or elements: `Point { x, .. }`, `[first, ..]`"
+msgstr "忽略其余的字段或元素：`Point { x, .. }`、`[first, ..]`"
+
+#: src/intro/syntax.md:126
+msgid "`a \\| b`"
+msgstr ""
+
+#: src/intro/syntax.md:126 src/foundations/enums-and-match.md:123
+msgid "Either pattern"
+msgstr "两个模式之一"
+
+#: src/intro/syntax.md:127 src/foundations/enums-and-match.md:124
+msgid "`x @ 1..=9`"
+msgstr ""
+
+#: src/intro/syntax.md:127
+msgid "Bind `x` and also test it against a pattern"
+msgstr "绑定 `x`，同时用一个模式检验它"
+
+#: src/intro/syntax.md:128
+msgid "`if cond` after a pattern"
+msgstr "模式后面的 `if cond`"
+
+#: src/intro/syntax.md:128
+msgid "A match guard"
+msgstr "match 守卫"
+
+#: src/intro/syntax.md:134
+msgid "`'a`"
+msgstr ""
+
+#: src/intro/syntax.md:134
+msgid ""
+"A lifetime parameter: a name for \"how long this borrow is valid\". Not a "
+"character literal (those are `'x'`, with a closing quote)"
+msgstr "生命周期参数：给\"这个借用在多长时间内有效\"起的名字。它不是字符字面量（字符字面量是 `'x'`，带有闭合的引号）"
+
+#: src/intro/syntax.md:134 src/intro/syntax.md:135 src/intro/syntax.md:136
+#: src/intro/syntax.md:137 src/appendix/cheat-sheet.md:42
+#: src/appendix/cheat-sheet.md:43 src/appendix/cheat-sheet.md:168
+msgid "[Lifetimes](../foundations/lifetimes.md)"
+msgstr "[生命周期](../foundations/lifetimes.md)"
+
+#: src/intro/syntax.md:135
+msgid "`&'a T`"
+msgstr ""
+
+#: src/intro/syntax.md:135
+msgid "A reference valid for `'a`"
+msgstr "在 `'a` 期间有效的引用"
+
+#: src/intro/syntax.md:136 src/foundations/lifetimes.md:190
+msgid "`'static`"
+msgstr ""
+
+#: src/intro/syntax.md:136
+msgid ""
+"Valid for the whole program: string literals, or owned data with no borrows "
+"inside"
+msgstr "在整个程序运行期间有效：字符串字面量，或者内部不含借用的拥有型数据"
+
+#: src/intro/syntax.md:137
+msgid "`'_`"
+msgstr ""
+
+#: src/intro/syntax.md:137
+msgid "\"Some lifetime, inferred\": `Foo<'_>`"
+msgstr "\"某个由编译器推断的生命周期\"：`Foo<'_>`"
+
+#: src/intro/syntax.md:139
+msgid "Literals"
+msgstr "字面量"
+
+#: src/intro/syntax.md:141
+msgid "Literal"
+msgstr "字面量"
+
+#: src/intro/syntax.md:141 src/foundations/collections.md:240
+#: src/foundations/smart-pointers.md:171 src/foundations/smart-pointers.md:222
+#: src/systems/concurrency.md:91
+msgid "Type"
+msgstr "类型"
+
+#: src/intro/syntax.md:143
+msgid "`\"text\"`"
+msgstr ""
+
+#: src/intro/syntax.md:143
+msgid "`&'static str` (UTF-8)"
+msgstr "`&'static str`（UTF-8）"
+
+#: src/intro/syntax.md:143
+msgid "`u8\"text\"` as a `std::string_view`"
+msgstr "作为 `std::string_view` 的 `u8\"text\"`"
+
+#: src/intro/syntax.md:144
+msgid "`'c'`"
+msgstr ""
+
+#: src/intro/syntax.md:144
+msgid "`char`, a 4-byte Unicode scalar"
+msgstr "`char`，4 字节的 Unicode 标量值"
+
+#: src/intro/syntax.md:144 src/foundations/values-and-types.md:55
+msgid "`char32_t`"
+msgstr ""
+
+#: src/intro/syntax.md:145
+msgid "`b\"bytes\"`, `b'a'`"
+msgstr ""
+
+#: src/intro/syntax.md:145
+msgid "`&[u8; N]`, `u8`"
+msgstr ""
+
+#: src/intro/syntax.md:145
+msgid "`\"bytes\"` as raw bytes"
+msgstr "作为原始字节的 `\"bytes\"`"
+
+#: src/intro/syntax.md:146
+msgid "`c\"text\"`"
+msgstr ""
+
+#: src/intro/syntax.md:146
+msgid "`&CStr`, null-terminated"
+msgstr "`&CStr`，以 null 结尾"
+
+#: src/intro/syntax.md:146
+msgid "`\"text\"` passed to a C API"
+msgstr "传给 C API 的 `\"text\"`"
+
+#: src/intro/syntax.md:147
+msgid "`r\"C:\\path\"`, `r#\"say \"hi\"\"#`"
+msgstr ""
+
+#: src/intro/syntax.md:147
+msgid "Raw string, no escapes"
+msgstr "原始字符串，不处理转义"
+
+#: src/intro/syntax.md:147
+msgid "`R\"(...)\"`"
+msgstr ""
+
+#: src/intro/syntax.md:148
+msgid "`1_000_000`, `0xFF_u8`, `2.5f32`"
+msgstr ""
+
+#: src/intro/syntax.md:148
+msgid "Underscores for readability; type suffixes"
+msgstr "用下划线提高可读性；类型后缀"
+
+#: src/intro/syntax.md:148
+msgid "`1'000'000`, `uint8_t(0xFF)`, `2.5f`"
+msgstr ""
+
+#: src/intro/syntax.md:150
+msgid "False friends"
+msgstr "假朋友"
+
+#: src/intro/syntax.md:152
+msgid ""
+"The symbols most likely to trip a C++ programmer, because they look "
+"familiar:"
+msgstr "最容易绊倒 C++ 程序员的符号，正因为它们看起来眼熟："
+
+#: src/intro/syntax.md:154
+msgid ""
+"**`&` is visible at the call site.** C++ hides pass-by-reference in the "
+"callee's signature. In Rust, `update(&mut player)` tells the reader at the "
+"call that `player` may change."
+msgstr ""
+"**`&` 在调用处可见。** C++ 把按引用传参藏在被调用函数的签名里。在 Rust 中，`update(&mut player)` "
+"在调用处就告诉读者 `player` 可能会被修改；"
+
+#: src/intro/syntax.md:157
+msgid ""
+"**There is no `->`** for member access. `.` works on values, references and "
+"smart pointers alike."
+msgstr "**没有用于成员访问的 `->`。** `.` 对值、引用和智能指针都一样适用；"
+
+#: src/intro/syntax.md:159
+msgid ""
+"**`!` after a name is a macro**, not negation. Macros can take any syntax "
+"inside their brackets, which is how `vec![0; 100]` and `println!(\"{x}\")` "
+"work."
+msgstr ""
+"**名字后面的 `!` 表示宏**，而不是取反。宏的括号内可以接受任意语法，`vec![0; 100]` 和 `println!(\"{x}\")` "
+"就是这样工作的；"
+
+#: src/intro/syntax.md:161
+msgid "**`?` is error propagation**, not a conditional."
+msgstr "**`?` 是错误传播**，而不是条件运算；"
+
+#: src/intro/syntax.md:162
+msgid "**`'` starts a lifetime** unless it closes again one character later."
+msgstr "**`'` 开始一个生命周期**，除非它在一个字符之后再次闭合；"
+
+#: src/intro/syntax.md:163
+msgid ""
+"**`|` starts a closure** at the beginning of an expression, and means \"or\""
+" in patterns and between two values."
+msgstr "**`|` 在表达式开头时开始一个闭包**，在模式中以及两个值之间表示\"或\"；"
+
+#: src/intro/syntax.md:165
+msgid ""
+"**`::<>` is only needed in expressions.** In a type position you write "
+"`Vec<u32>`, as in C++."
+msgstr "**`::<>` 只在表达式中需要。** 在类型位置上，你像 C++ 一样写 `Vec<u32>`。"
+
+#: src/intro/syntax.md:171
+msgid ""
+"Your editor can fill in a lot of this for you. rust-analyzer shows inferred "
+"types, parameter names and the lifetimes the compiler elided as inline "
+"hints, and hovering a macro shows its expansion. While you learn, turn the "
+"hints on."
+msgstr ""
+"你的编辑器可以替你补上很多信息。rust-analyzer "
+"会以内联提示的形式显示推断出的类型、参数名以及编译器省略的生命周期，把鼠标悬停在宏上还能看到它的展开结果。学习期间，请打开这些提示。"
+
+#: src/intro/syntax.md:179
+msgid ""
+"In the program at the top, remove the `?` from `parse_level` and read the "
+"compiler error. What type does `parse` return?"
+msgstr "在开头的程序中，去掉 `parse_level` 里的 `?`，阅读编译器错误。`parse` 返回的是什么类型？"
+
+#: src/intro/syntax.md:181
+msgid ""
+"Change `0..scores.len()` to `0..=scores.len()`. What happens when you run "
+"it, and why does Rust stop instead of reading past the end?"
+msgstr ""
+"把 `0..scores.len()` 改为 `0..=scores.len()`。运行时会发生什么？为什么 Rust 会停下来，而不是读到末尾之外？"
+
+#: src/intro/syntax.md:183
+msgid ""
+"Write `let n = \"42\".parse().unwrap();` without a type anywhere. Fix the "
+"error twice: once with a type on `n`, once with the turbofish."
+msgstr ""
+"写出 `let n = \"42\".parse().unwrap();`，不在任何地方标注类型。用两种方式修复这个错误：一次在 `n` "
+"上标注类型，一次使用 turbofish。"
+
+#: src/foundations/cargo.md:3
+msgid ""
+"In C++, the language standard says nothing about how code is built. Every "
+"project chooses a build system, a package manager, a directory layout and a "
+"way to find headers and libraries, and connecting two projects means "
+"reconciling their choices. Rust settled all of this from the start. One "
+"tool, Cargo, builds every Rust project, and every library is published the "
+"same way. This is the biggest day-to-day productivity difference you will "
+"notice."
+msgstr ""
+"在 C++ "
+"中，语言标准对代码如何构建只字未提。每个项目都要自己选择构建系统、包管理器、目录结构以及查找头文件和库的方式；要把两个项目连接起来，就得协调双方的选择。Rust"
+" 从一开始就把这些都定了下来：一个工具 Cargo 构建所有 Rust 项目，所有库都以同样的方式发布。这是你在日常工作中会感受到的最大的效率差别。"
 
 #: src/foundations/cargo.md:12
 msgid "crates, the unit of compilation, and why there are no headers,"
@@ -1508,7 +2424,7 @@ msgid "`debug-assertions = false` (the default in release)"
 msgstr "`debug-assertions = false`（release 中的默认值）"
 
 #: src/foundations/cargo.md:233 src/foundations/errors.md:300
-#: src/appendix/cheat-sheet.md:78
+#: src/appendix/cheat-sheet.md:80
 msgid "`-fno-exceptions`"
 msgstr ""
 
@@ -1822,11 +2738,11 @@ msgstr "构建配置，可针对单个依赖调整"
 msgid "Custom commands"
 msgstr "自定义命令"
 
-#: src/foundations/cargo.md:368 src/appendix/cheat-sheet.md:106
+#: src/foundations/cargo.md:368 src/appendix/cheat-sheet.md:108
 msgid "`build.rs`"
 msgstr ""
 
-#: src/foundations/cargo.md:369 src/appendix/cheat-sheet.md:105
+#: src/foundations/cargo.md:369 src/appendix/cheat-sheet.md:107
 msgid "`add_subdirectory`"
 msgstr ""
 
@@ -2009,10 +2925,6 @@ msgstr "1 字节，总是 0 或 1"
 
 #: src/foundations/values-and-types.md:55
 msgid "`char`"
-msgstr ""
-
-#: src/foundations/values-and-types.md:55
-msgid "`char32_t`"
 msgstr ""
 
 #: src/foundations/values-and-types.md:55
@@ -2572,7 +3484,7 @@ msgstr "隐式转换与类型提升"
 msgid "None; use `as`, `From`, `TryFrom`"
 msgstr "没有；使用 `as`、`From`、`TryFrom`"
 
-#: src/foundations/values-and-types.md:386 src/appendix/cheat-sheet.md:14
+#: src/foundations/values-and-types.md:386 src/appendix/cheat-sheet.md:16
 msgid "Signed overflow is UB"
 msgstr "有符号溢出是 UB"
 
@@ -2581,20 +3493,20 @@ msgid "Panics in debug, wraps in release; `wrapping_*`, `checked_*`"
 msgstr "调试构建中 panic，发布构建中回绕；`wrapping_*`、`checked_*`"
 
 #: src/foundations/values-and-types.md:387 src/foundations/collections.md:22
-#: src/appendix/cheat-sheet.md:15
+#: src/appendix/cheat-sheet.md:17
 msgid "`std::array<T, N>`"
 msgstr ""
 
 #: src/foundations/values-and-types.md:387 src/foundations/collections.md:22
-#: src/appendix/cheat-sheet.md:15
+#: src/appendix/cheat-sheet.md:17
 msgid "`[T; N]`"
 msgstr ""
 
-#: src/foundations/values-and-types.md:388 src/appendix/cheat-sheet.md:16
+#: src/foundations/values-and-types.md:388 src/appendix/cheat-sheet.md:18
 msgid "`std::pair`, `std::tuple`"
 msgstr ""
 
-#: src/foundations/values-and-types.md:388 src/appendix/cheat-sheet.md:16
+#: src/foundations/values-and-types.md:388 src/appendix/cheat-sheet.md:18
 msgid "`(A, B)`"
 msgstr ""
 
@@ -2614,11 +3526,11 @@ msgstr "默认 C 布局"
 msgid "Compiler-chosen layout; `#[repr(C)]` for C layout"
 msgstr "由编译器选择布局；需要 C 布局时用 `#[repr(C)]`"
 
-#: src/foundations/values-and-types.md:391 src/appendix/cheat-sheet.md:124
+#: src/foundations/values-and-types.md:391 src/appendix/cheat-sheet.md:126
 msgid "`alignas(64)`"
 msgstr ""
 
-#: src/foundations/values-and-types.md:391 src/appendix/cheat-sheet.md:124
+#: src/foundations/values-and-types.md:391 src/appendix/cheat-sheet.md:126
 msgid "`#[repr(align(64))]`"
 msgstr ""
 
@@ -2630,11 +3542,11 @@ msgstr ""
 msgid "`const`, `const fn`"
 msgstr ""
 
-#: src/foundations/values-and-types.md:393 src/appendix/cheat-sheet.md:20
+#: src/foundations/values-and-types.md:393 src/appendix/cheat-sheet.md:22
 msgid "`cond ? a : b`"
 msgstr ""
 
-#: src/foundations/values-and-types.md:393 src/appendix/cheat-sheet.md:20
+#: src/foundations/values-and-types.md:393 src/appendix/cheat-sheet.md:22
 msgid "`if cond { a } else { b }`"
 msgstr ""
 
@@ -2949,7 +3861,7 @@ msgstr ""
 
 #: src/foundations/ownership.md:169
 #: src/foundations/operators-and-conversions.md:329
-#: src/appendix/cheat-sheet.md:33
+#: src/appendix/cheat-sheet.md:35
 msgid "Copy constructor"
 msgstr "拷贝构造函数"
 
@@ -3250,7 +4162,7 @@ msgstr "除非被删除，拷贝都是隐式的"
 msgid "Copy only for `Copy` types; otherwise `.clone()`"
 msgstr "只有 `Copy` 类型会复制；其他类型用 `.clone()`"
 
-#: src/foundations/ownership.md:367 src/appendix/cheat-sheet.md:34
+#: src/foundations/ownership.md:367 src/appendix/cheat-sheet.md:36
 msgid "Rule of five"
 msgstr "五法则"
 
@@ -3706,7 +4618,7 @@ msgid ""
 msgstr ""
 "引用永远不会悬垂。返回指向局部变量的引用会被拒绝，在所有者的生命期结束后继续持有引用也会被拒绝。[下一章](lifetimes.md)解释了编译器如何跨函数边界证明这一点。"
 
-#: src/foundations/borrowing.md:336 src/appendix/cheat-sheet.md:35
+#: src/foundations/borrowing.md:336 src/appendix/cheat-sheet.md:37
 msgid "`const T&`"
 msgstr ""
 
@@ -3714,7 +4626,7 @@ msgstr ""
 msgid "`&T`, many at once"
 msgstr "`&T`，可以同时有多个"
 
-#: src/foundations/borrowing.md:337 src/appendix/cheat-sheet.md:36
+#: src/foundations/borrowing.md:337 src/appendix/cheat-sheet.md:38
 msgid "`T&`"
 msgstr ""
 
@@ -3734,7 +4646,7 @@ msgstr ""
 msgid "`std::span<const T>`, `std::string_view`"
 msgstr ""
 
-#: src/foundations/borrowing.md:339 src/appendix/cheat-sheet.md:37
+#: src/foundations/borrowing.md:339 src/appendix/cheat-sheet.md:39
 msgid "`&[T]`, `&str`"
 msgstr ""
 
@@ -4059,10 +4971,6 @@ msgstr ""
 "arena](../engine/handles-and-"
 "arenas.md)）。生命周期参数会扩散到包含它的每个类型，这是一个明显的信号，说明你借用得太久了。"
 
-#: src/foundations/lifetimes.md:190
-msgid "`'static`"
-msgstr ""
-
 #: src/foundations/lifetimes.md:192
 msgid ""
 "`'static` is the lifetime of the whole program. Two different things carry "
@@ -4144,13 +5052,7 @@ msgstr "解读常见错误"
 msgid "Error"
 msgstr "错误"
 
-#: src/foundations/lifetimes.md:237
-#: src/foundations/operators-and-conversions.md:144
-#: src/foundations/smart-pointers.md:222 src/foundations/modules.md:112
-msgid "Meaning"
-msgstr "含义"
-
-#: src/foundations/lifetimes.md:237 src/appendix/cheat-sheet.md:158
+#: src/foundations/lifetimes.md:237 src/appendix/cheat-sheet.md:160
 msgid "Usual fix"
 msgstr "常见修复"
 
@@ -4485,21 +5387,9 @@ msgstr "一个闭区间"
 msgid "`A \\| B`"
 msgstr ""
 
-#: src/foundations/enums-and-match.md:123
-msgid "Either pattern"
-msgstr "两个模式之一"
-
-#: src/foundations/enums-and-match.md:124
-msgid "`x @ 1..=9`"
-msgstr ""
-
 #: src/foundations/enums-and-match.md:124
 msgid "A range, binding the value to `x`"
 msgstr "一个区间，并把值绑定到 `x`"
-
-#: src/foundations/enums-and-match.md:125
-msgid "`_`"
-msgstr ""
 
 #: src/foundations/enums-and-match.md:125
 msgid "Anything, without binding"
@@ -4817,7 +5707,7 @@ msgstr ""
 msgid "C / C++"
 msgstr ""
 
-#: src/foundations/enums-and-match.md:338 src/appendix/cheat-sheet.md:21
+#: src/foundations/enums-and-match.md:338 src/appendix/cheat-sheet.md:23
 msgid "`enum class`"
 msgstr ""
 
@@ -4857,7 +5747,7 @@ msgstr ""
 msgid "`Option<T>`, free for pointers"
 msgstr "`Option<T>`，对指针没有额外开销"
 
-#: src/foundations/enums-and-match.md:343 src/appendix/cheat-sheet.md:25
+#: src/foundations/enums-and-match.md:343 src/appendix/cheat-sheet.md:27
 msgid "Structured bindings"
 msgstr "结构化绑定"
 
@@ -4920,7 +5810,7 @@ msgid ""
 msgstr "本章介绍这两种机制、让 `Result` 用起来很顺手的 `?` 运算符、如何定义错误类型，以及如何包装 C 的错误码。"
 
 #: src/foundations/errors.md:18 src/foundations/errors.md:296
-#: src/foundations/errors.md:298 src/appendix/cheat-sheet.md:73
+#: src/foundations/errors.md:298 src/appendix/cheat-sheet.md:75
 msgid "`Result<T, E>`"
 msgstr ""
 
@@ -5054,10 +5944,6 @@ msgstr ""
 
 #: src/foundations/errors.md:173
 msgid "\"{n} faces\""
-msgstr ""
-
-#: src/foundations/errors.md:174 src/foundations/errors.md:177
-msgid "\"error: {e}\""
 msgstr ""
 
 #: src/foundations/errors.md:176
@@ -5208,7 +6094,7 @@ msgstr ""
 msgid "Exceptions for recoverable errors"
 msgstr "用异常处理可恢复的错误"
 
-#: src/foundations/errors.md:295 src/appendix/cheat-sheet.md:72
+#: src/foundations/errors.md:295 src/appendix/cheat-sheet.md:74
 msgid "`Result<T, E>` and `?`"
 msgstr "`Result<T, E>` 与 `?`"
 
@@ -5216,7 +6102,7 @@ msgstr "`Result<T, E>` 与 `?`"
 msgid "Error codes + out parameters"
 msgstr "错误码 + 输出参数"
 
-#: src/foundations/errors.md:297 src/appendix/cheat-sheet.md:74
+#: src/foundations/errors.md:297 src/appendix/cheat-sheet.md:76
 msgid "`[[nodiscard]]`"
 msgstr ""
 
@@ -5228,7 +6114,7 @@ msgstr "`#[must_use]`（`Result` 默认带有）"
 msgid "`std::expected<T, E>` (C++23)"
 msgstr ""
 
-#: src/foundations/errors.md:299 src/appendix/cheat-sheet.md:75
+#: src/foundations/errors.md:299 src/appendix/cheat-sheet.md:77
 msgid "`assert`, `std::terminate`"
 msgstr ""
 
@@ -5236,7 +6122,7 @@ msgstr ""
 msgid "`assert!`, `panic!`, `unwrap()`, `expect()`"
 msgstr ""
 
-#: src/foundations/errors.md:300 src/appendix/cheat-sheet.md:78
+#: src/foundations/errors.md:300 src/appendix/cheat-sheet.md:80
 msgid "`panic = \"abort\"`"
 msgstr ""
 
@@ -5777,7 +6663,7 @@ msgstr "胖指针内部的虚表指针"
 msgid "Template"
 msgstr "模板"
 
-#: src/foundations/traits-and-generics.md:367 src/appendix/cheat-sheet.md:54
+#: src/foundations/traits-and-generics.md:367 src/appendix/cheat-sheet.md:56
 msgid "Generic with trait bounds"
 msgstr "带 trait 约束的泛型"
 
@@ -5789,11 +6675,11 @@ msgstr "Concept"
 msgid "Trait bound, checked at definition and use"
 msgstr "trait 约束，在定义处和使用处都检查"
 
-#: src/foundations/traits-and-generics.md:369 src/appendix/cheat-sheet.md:55
+#: src/foundations/traits-and-generics.md:369 src/appendix/cheat-sheet.md:57
 msgid "`auto f()` returning a hidden type"
 msgstr "返回隐藏类型的 `auto f()`"
 
-#: src/foundations/traits-and-generics.md:369 src/appendix/cheat-sheet.md:55
+#: src/foundations/traits-and-generics.md:369 src/appendix/cheat-sheet.md:57
 msgid "`fn f() -> impl Trait`"
 msgstr ""
 
@@ -5805,7 +6691,7 @@ msgstr "traits 类 / 嵌套 typedef"
 msgid "Associated type / constant"
 msgstr "关联类型 / 关联常量"
 
-#: src/foundations/traits-and-generics.md:371 src/appendix/cheat-sheet.md:57
+#: src/foundations/traits-and-generics.md:371 src/appendix/cheat-sheet.md:59
 msgid "Inheritance of data"
 msgstr "数据继承"
 
@@ -6011,12 +6897,6 @@ msgstr "可能不满足自反性的相等（`NaN != NaN`）"
 #: src/foundations/operators-and-conversions.md:147
 msgid "`Eq`"
 msgstr ""
-
-#: src/foundations/operators-and-conversions.md:147
-#: src/foundations/operators-and-conversions.md:149
-#: src/foundations/operators-and-conversions.md:150
-msgid "(none)"
-msgstr "（无）"
 
 #: src/foundations/operators-and-conversions.md:147
 msgid "Marker: equality is a true equivalence relation"
@@ -6339,7 +7219,7 @@ msgid "`impl AddAssign for T`"
 msgstr ""
 
 #: src/foundations/operators-and-conversions.md:328
-#: src/appendix/cheat-sheet.md:59
+#: src/appendix/cheat-sheet.md:61
 msgid "`operator[]`"
 msgstr ""
 
@@ -6352,7 +7232,7 @@ msgid "`Clone` (explicit); `Copy` (bitwise, implicit)"
 msgstr "`Clone`（显式）；`Copy`（逐位、隐式）"
 
 #: src/foundations/operators-and-conversions.md:330
-#: src/appendix/cheat-sheet.md:60
+#: src/appendix/cheat-sheet.md:62
 msgid "`operator==`, `operator<=>`"
 msgstr ""
 
@@ -6361,7 +7241,7 @@ msgid "`PartialEq`/`Eq`, `PartialOrd`/`Ord`, usually derived"
 msgstr "`PartialEq`/`Eq`、`PartialOrd`/`Ord`，通常派生"
 
 #: src/foundations/operators-and-conversions.md:331
-#: src/appendix/cheat-sheet.md:61
+#: src/appendix/cheat-sheet.md:63
 msgid "Converting constructor"
 msgstr "转换构造函数"
 
@@ -6466,12 +7346,12 @@ msgstr "对应关系"
 msgid "STL"
 msgstr "STL"
 
-#: src/foundations/collections.md:21 src/appendix/cheat-sheet.md:84
+#: src/foundations/collections.md:21 src/appendix/cheat-sheet.md:86
 msgid "`std::vector<T>`"
 msgstr ""
 
 #: src/foundations/collections.md:21 src/foundations/collections.md:37
-#: src/appendix/cheat-sheet.md:84
+#: src/appendix/cheat-sheet.md:86
 msgid "`Vec<T>`"
 msgstr ""
 
@@ -6572,7 +7452,7 @@ msgstr ""
 msgid "Max-heap"
 msgstr "最大堆"
 
-#: src/foundations/collections.md:31 src/appendix/cheat-sheet.md:89
+#: src/foundations/collections.md:31 src/appendix/cheat-sheet.md:91
 msgid "`std::string`"
 msgstr ""
 
@@ -6919,11 +7799,6 @@ msgid ""
 "has its own types:"
 msgstr "来自操作系统或 C API 的文本不一定是 UTF-8，所以它们有自己的类型："
 
-#: src/foundations/collections.md:240 src/foundations/smart-pointers.md:171
-#: src/foundations/smart-pointers.md:222 src/systems/concurrency.md:91
-msgid "Type"
-msgstr "类型"
-
 #: src/foundations/collections.md:240
 msgid "Owned"
 msgstr "拥有所有权的版本"
@@ -7077,7 +7952,7 @@ msgstr ""
 msgid "`Vec::with_capacity(n)` / `v.reserve(n)`"
 msgstr ""
 
-#: src/foundations/collections.md:284 src/appendix/cheat-sheet.md:86
+#: src/foundations/collections.md:284 src/appendix/cheat-sheet.md:88
 msgid "Erase-remove idiom"
 msgstr "erase-remove 惯用法"
 
@@ -7117,7 +7992,7 @@ msgstr ""
 msgid "`s.as_bytes()[i]` or `s.chars().nth(i)`"
 msgstr "`s.as_bytes()[i]` 或 `s.chars().nth(i)`"
 
-#: src/foundations/collections.md:289 src/appendix/cheat-sheet.md:90
+#: src/foundations/collections.md:289 src/appendix/cheat-sheet.md:92
 msgid "`std::filesystem::path`"
 msgstr ""
 
@@ -7520,12 +8395,12 @@ msgid "Closure; captures inferred, `move` for by-value"
 msgstr "闭包；捕获方式自动推断，按值捕获用 `move`"
 
 #: src/foundations/closures-and-iterators.md:306
-#: src/appendix/cheat-sheet.md:65
+#: src/appendix/cheat-sheet.md:67
 msgid "`std::function<R(A)>`"
 msgstr ""
 
 #: src/foundations/closures-and-iterators.md:306
-#: src/appendix/cheat-sheet.md:65
+#: src/appendix/cheat-sheet.md:67
 msgid "`Box<dyn Fn(A) -> R>`"
 msgstr ""
 
@@ -7546,7 +8421,7 @@ msgid "One iterator object with `next()`"
 msgstr "一个带有 `next()` 的迭代器对象"
 
 #: src/foundations/closures-and-iterators.md:309
-#: src/appendix/cheat-sheet.md:91
+#: src/appendix/cheat-sheet.md:93
 msgid "`<algorithm>`, ranges"
 msgstr "`<algorithm>`、ranges"
 
@@ -7872,7 +8747,7 @@ msgstr "加锁；线程安全"
 msgid "A lock"
 msgstr "一把锁"
 
-#: src/foundations/smart-pointers.md:175 src/appendix/cheat-sheet.md:93
+#: src/foundations/smart-pointers.md:175 src/appendix/cheat-sheet.md:95
 msgid "`std::mutex` next to the data"
 msgstr "放在数据旁边的 `std::mutex`"
 
@@ -7889,7 +8764,7 @@ msgid "Atomic ops"
 msgstr "原子操作"
 
 #: src/foundations/smart-pointers.md:176 src/systems/concurrency.md:349
-#: src/appendix/cheat-sheet.md:94
+#: src/appendix/cheat-sheet.md:96
 msgid "`std::atomic<T>`"
 msgstr ""
 
@@ -7936,7 +8811,7 @@ msgid "Common combinations"
 msgstr "常见组合"
 
 #: src/foundations/smart-pointers.md:224 src/foundations/smart-pointers.md:247
-#: src/engine/handles-and-arenas.md:238 src/appendix/cheat-sheet.md:42
+#: src/engine/handles-and-arenas.md:238 src/appendix/cheat-sheet.md:44
 msgid "`Box<T>`"
 msgstr ""
 
@@ -8000,7 +8875,7 @@ msgstr ""
 "arena），其他地方都用句柄。"
 
 #: src/foundations/smart-pointers.md:247 src/engine/handles-and-arenas.md:238
-#: src/appendix/cheat-sheet.md:42
+#: src/appendix/cheat-sheet.md:44
 msgid "`std::unique_ptr<T>`"
 msgstr ""
 
@@ -8036,7 +8911,7 @@ msgstr ""
 msgid "`Weak<T>`, `upgrade()`"
 msgstr ""
 
-#: src/foundations/smart-pointers.md:252 src/appendix/cheat-sheet.md:45
+#: src/foundations/smart-pointers.md:252 src/appendix/cheat-sheet.md:47
 msgid "`mutable` member"
 msgstr "`mutable` 成员"
 
@@ -8433,11 +9308,11 @@ msgid ""
 msgstr ""
 "用 `cargo build --timings` 来测量，它会生成一份 HTML 报告，显示每个 crate 花了多长时间、哪些是并行运行的。"
 
-#: src/foundations/modules.md:203 src/appendix/cheat-sheet.md:107
+#: src/foundations/modules.md:203 src/appendix/cheat-sheet.md:109
 msgid "`namespace`"
 msgstr ""
 
-#: src/foundations/modules.md:203 src/appendix/cheat-sheet.md:107
+#: src/foundations/modules.md:203 src/appendix/cheat-sheet.md:109
 msgid "`mod`"
 msgstr ""
 
@@ -8665,7 +9540,7 @@ msgstr "是\\*"
 msgid "Atomic count (\\*if `T` is `Send + Sync`)"
 msgstr "原子计数（\\*当 `T` 是 `Send + Sync` 时）"
 
-#: src/systems/concurrency.md:95 src/appendix/cheat-sheet.md:45
+#: src/systems/concurrency.md:95 src/appendix/cheat-sheet.md:47
 msgid "`Cell<T>`, `RefCell<T>`"
 msgstr ""
 
@@ -8976,7 +9851,7 @@ msgstr ""
 "借用规则保证了这一切是安全的：`par_iter_mut` 交给每个工作线程一个互不相交的 `&mut` "
 "元素，而试图在没有同步的情况下写入共享状态的闭包根本无法编译。这正是 C++ 引擎要花几个月构建和调试的任务系统，现在是一个库。"
 
-#: src/systems/concurrency.md:343 src/appendix/cheat-sheet.md:92
+#: src/systems/concurrency.md:343 src/appendix/cheat-sheet.md:94
 msgid "`std::thread`"
 msgstr ""
 
@@ -8996,7 +9871,7 @@ msgstr ""
 msgid "Data race (UB, found by TSan)"
 msgstr "数据竞争（UB，靠 TSan 发现）"
 
-#: src/systems/concurrency.md:345 src/appendix/cheat-sheet.md:39
+#: src/systems/concurrency.md:345 src/appendix/cheat-sheet.md:41
 msgid "Compile error"
 msgstr "编译错误"
 
@@ -9004,7 +9879,7 @@ msgstr "编译错误"
 msgid "`std::mutex` beside the data"
 msgstr "放在数据旁边的 `std::mutex`"
 
-#: src/systems/concurrency.md:346 src/appendix/cheat-sheet.md:93
+#: src/systems/concurrency.md:346 src/appendix/cheat-sheet.md:95
 msgid "`Mutex<T>` containing the data"
 msgstr "包含数据的 `Mutex<T>`"
 
@@ -9123,7 +9998,7 @@ msgstr "（默认）"
 msgid "Compiler may reorder fields to reduce padding; layout unspecified"
 msgstr "编译器可以重排字段以减少填充；布局未指定"
 
-#: src/systems/memory-and-performance.md:28 src/appendix/cheat-sheet.md:123
+#: src/systems/memory-and-performance.md:28 src/appendix/cheat-sheet.md:125
 msgid "`#[repr(C)]`"
 msgstr ""
 
@@ -9513,7 +10388,7 @@ msgid ""
 "([Testing](testing-and-tooling.md))."
 msgstr "**基准测试**：用 `criterion` 做统计上可靠的微基准测试（[测试](testing-and-tooling.md)）。"
 
-#: src/systems/memory-and-performance.md:253 src/appendix/cheat-sheet.md:122
+#: src/systems/memory-and-performance.md:253 src/appendix/cheat-sheet.md:124
 msgid "`sizeof`, `alignof`, `offsetof`"
 msgstr ""
 
@@ -9521,7 +10396,7 @@ msgstr ""
 msgid "`size_of`, `align_of`, `offset_of!`"
 msgstr ""
 
-#: src/systems/memory-and-performance.md:254 src/appendix/cheat-sheet.md:123
+#: src/systems/memory-and-performance.md:254 src/appendix/cheat-sheet.md:125
 msgid "Declaration-order layout"
 msgstr "按声明顺序布局"
 
@@ -9533,7 +10408,7 @@ msgstr "默认重排；需要按声明顺序时用 `#[repr(C)]`"
 msgid "`alignas`"
 msgstr ""
 
-#: src/systems/memory-and-performance.md:256 src/appendix/cheat-sheet.md:38
+#: src/systems/memory-and-performance.md:256 src/appendix/cheat-sheet.md:40
 msgid "`__restrict`"
 msgstr ""
 
@@ -9541,11 +10416,11 @@ msgstr ""
 msgid "Implied by `&mut`"
 msgstr "由 `&mut` 隐含"
 
-#: src/systems/memory-and-performance.md:257 src/appendix/cheat-sheet.md:125
+#: src/systems/memory-and-performance.md:257 src/appendix/cheat-sheet.md:127
 msgid "Replace `operator new`"
 msgstr "替换 `operator new`"
 
-#: src/systems/memory-and-performance.md:257 src/appendix/cheat-sheet.md:125
+#: src/systems/memory-and-performance.md:257 src/appendix/cheat-sheet.md:127
 msgid "`#[global_allocator]`"
 msgstr ""
 
@@ -9946,7 +10821,7 @@ msgstr "每一行都可能有 UB"
 msgid "UB only possible inside `unsafe` (and the code it relies on)"
 msgstr "UB 只可能出现在 `unsafe` 内部（以及它所依赖的代码中）"
 
-#: src/systems/unsafe.md:236 src/appendix/cheat-sheet.md:127
+#: src/systems/unsafe.md:236 src/appendix/cheat-sheet.md:129
 msgid "`T*`"
 msgstr ""
 
@@ -9966,11 +10841,11 @@ msgstr "没有基于类型的规则；`&mut` 是独占的，`&` 是只读的"
 msgid "`std::launder`, placement new, uninitialized storage"
 msgstr "`std::launder`、placement new、未初始化存储"
 
-#: src/systems/unsafe.md:238 src/appendix/cheat-sheet.md:128
+#: src/systems/unsafe.md:238 src/appendix/cheat-sheet.md:130
 msgid "`MaybeUninit<T>`"
 msgstr ""
 
-#: src/systems/unsafe.md:239 src/appendix/cheat-sheet.md:129
+#: src/systems/unsafe.md:239 src/appendix/cheat-sheet.md:131
 msgid "`reinterpret_cast`"
 msgstr ""
 
@@ -10204,7 +11079,7 @@ msgstr ""
 msgid "`#[repr(C)] struct`"
 msgstr ""
 
-#: src/systems/ffi.md:82 src/appendix/cheat-sheet.md:21
+#: src/systems/ffi.md:82 src/appendix/cheat-sheet.md:23
 msgid "`enum`"
 msgstr ""
 
@@ -10587,7 +11462,7 @@ msgstr ""
 msgid "`extern \"C\"` + `__declspec(dllexport)`"
 msgstr ""
 
-#: src/systems/ffi.md:323 src/appendix/cheat-sheet.md:132
+#: src/systems/ffi.md:323 src/appendix/cheat-sheet.md:134
 msgid "`#[unsafe(no_mangle)] pub extern \"C\" fn`"
 msgstr ""
 
@@ -10607,7 +11482,7 @@ msgstr "C++ 类的互操作"
 msgid "cxx, autocxx"
 msgstr "cxx、autocxx"
 
-#: src/systems/ffi.md:326 src/appendix/cheat-sheet.md:133
+#: src/systems/ffi.md:326 src/appendix/cheat-sheet.md:135
 msgid "`char*` strings"
 msgstr "`char*` 字符串"
 
@@ -10688,7 +11563,7 @@ msgstr "derive 宏、属性宏和函数式过程宏；"
 msgid "when to write a macro, and when a generic or `const fn` is better."
 msgstr "什么时候该写宏，什么时候用泛型或 `const fn` 更好。"
 
-#: src/systems/macros.md:18 src/appendix/cheat-sheet.md:111
+#: src/systems/macros.md:18 src/appendix/cheat-sheet.md:113
 msgid "`macro_rules!`"
 msgstr ""
 
@@ -10950,7 +11825,7 @@ msgstr ""
 msgid "`mod` / `use` (no textual inclusion)"
 msgstr "`mod` / `use`（没有文本包含）"
 
-#: src/systems/macros.md:191 src/appendix/cheat-sheet.md:110
+#: src/systems/macros.md:191 src/appendix/cheat-sheet.md:112
 msgid "`#ifdef`"
 msgstr ""
 
@@ -11376,7 +12251,7 @@ msgstr ""
 msgid "cargo test --all-targets"
 msgstr ""
 
-#: src/systems/testing-and-tooling.md:221 src/appendix/cheat-sheet.md:113
+#: src/systems/testing-and-tooling.md:221 src/appendix/cheat-sheet.md:115
 msgid "GoogleTest / Catch2"
 msgstr "GoogleTest / Catch2"
 
@@ -11408,11 +12283,11 @@ msgstr "在 CMake 中注册的测试可执行文件"
 msgid "`tests/` directory, discovered automatically"
 msgstr "`tests/` 目录，自动发现"
 
-#: src/systems/testing-and-tooling.md:225 src/appendix/cheat-sheet.md:114
+#: src/systems/testing-and-tooling.md:225 src/appendix/cheat-sheet.md:116
 msgid "Google Benchmark"
 msgstr "Google Benchmark"
 
-#: src/systems/testing-and-tooling.md:225 src/appendix/cheat-sheet.md:114
+#: src/systems/testing-and-tooling.md:225 src/appendix/cheat-sheet.md:116
 msgid "criterion"
 msgstr "criterion"
 
@@ -11424,7 +12299,7 @@ msgstr "libFuzzer"
 msgid "cargo-fuzz"
 msgstr "cargo-fuzz"
 
-#: src/systems/testing-and-tooling.md:227 src/appendix/cheat-sheet.md:115
+#: src/systems/testing-and-tooling.md:227 src/appendix/cheat-sheet.md:117
 msgid "clang-format / clang-tidy"
 msgstr "clang-format / clang-tidy"
 
@@ -11723,10 +12598,6 @@ msgstr "在一次调用期间临时访问"
 msgid "`T&`, `T*`"
 msgstr ""
 
-#: src/engine/handles-and-arenas.md:237
-msgid "`&T`, `&mut T`"
-msgstr ""
-
 #: src/engine/handles-and-arenas.md:238
 msgid "Single owner, heap allocated"
 msgstr "单一所有者，在堆上分配"
@@ -11735,7 +12606,7 @@ msgstr "单一所有者，在堆上分配"
 msgid "Shared ownership, object lives while anyone holds it"
 msgstr "共享所有权，只要有人持有对象就存活"
 
-#: src/engine/handles-and-arenas.md:239 src/appendix/cheat-sheet.md:43
+#: src/engine/handles-and-arenas.md:239 src/appendix/cheat-sheet.md:45
 msgid "`std::shared_ptr<T>`"
 msgstr ""
 
@@ -11747,7 +12618,7 @@ msgstr ""
 msgid "Observe without keeping alive"
 msgstr "观察但不让它保持存活"
 
-#: src/engine/handles-and-arenas.md:240 src/appendix/cheat-sheet.md:44
+#: src/engine/handles-and-arenas.md:240 src/appendix/cheat-sheet.md:46
 msgid "`std::weak_ptr<T>`"
 msgstr ""
 
@@ -12355,7 +13226,7 @@ msgstr "`std::shared_ptr` + `weak_ptr` 场景图"
 msgid "`Parent(Entity)` component and a propagation system"
 msgstr "`Parent(Entity)` 组件加一个传播系统"
 
-#: src/engine/ecs.md:479 src/appendix/cheat-sheet.md:151
+#: src/engine/ecs.md:479 src/appendix/cheat-sheet.md:153
 msgid "EnTT, flecs"
 msgstr "EnTT、flecs"
 
@@ -12866,7 +13737,7 @@ msgstr ""
 "用 `as` 把浮点数转换为整数会**饱和**：`300.7f32 as u8 == 255`，`f32::NAN as i32 == 0`。在 C++"
 " 中，超出范围的转换是未定义行为。"
 
-#: src/engine/math-and-simd.md:343 src/appendix/cheat-sheet.md:142
+#: src/engine/math-and-simd.md:343 src/appendix/cheat-sheet.md:144
 msgid "glam"
 msgstr "glam"
 
@@ -12878,7 +13749,7 @@ msgstr "nalgebra"
 msgid "`memcpy` struct into a buffer"
 msgstr "把结构体 `memcpy` 到缓冲区"
 
-#: src/engine/math-and-simd.md:345 src/appendix/cheat-sheet.md:143
+#: src/engine/math-and-simd.md:345 src/appendix/cheat-sheet.md:145
 msgid "`bytemuck::cast_slice` on `#[derive(Pod)]` types"
 msgstr "对 `#[derive(Pod)]` 类型使用 `bytemuck::cast_slice`"
 
@@ -13365,7 +14236,7 @@ msgstr "GLFW / WGL / GLX / EGL 上下文"
 msgid "glutin"
 msgstr "glutin"
 
-#: src/engine/opengl.md:286 src/appendix/cheat-sheet.md:145
+#: src/engine/opengl.md:286 src/appendix/cheat-sheet.md:147
 msgid "glad / GLEW"
 msgstr "glad / GLEW"
 
@@ -13482,7 +14353,7 @@ msgid ""
 msgstr "ash 由 `vk.xml` 生成，也就是生成 `vulkan.h` 的同一份注册表。每个函数和结构体都在其中，名字可以预测："
 
 #: src/engine/vulkan.md:23 src/engine/vulkan.md:387
-#: src/appendix/cheat-sheet.md:146
+#: src/appendix/cheat-sheet.md:148
 msgid "ash"
 msgstr "ash"
 
@@ -14013,7 +14884,7 @@ msgid "You want Vulkan concepts but checked, and can accept some overhead"
 msgstr "你想要 Vulkan 的概念但需要检查，并且能接受一些开销"
 
 #: src/engine/vulkan.md:389 src/engine/wgpu.md:29 src/engine/wgpu.md:322
-#: src/appendix/cheat-sheet.md:148
+#: src/appendix/cheat-sheet.md:150
 msgid "wgpu"
 msgstr "wgpu"
 
@@ -14088,11 +14959,11 @@ msgstr "删除队列"
 msgid "Same pattern; `Drop` enqueues"
 msgstr "相同模式；`Drop` 负责入队"
 
-#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:147
+#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:149
 msgid "VMA"
 msgstr "VMA"
 
-#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:147
+#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:149
 msgid "gpu-allocator, vk-mem"
 msgstr "gpu-allocator、vk-mem"
 
@@ -14982,7 +15853,7 @@ msgstr "用 `?` 取代 `XR_FAILED(...)` 检查"
 msgid "`xrDestroy*`"
 msgstr ""
 
-#: src/engine/openxr.md:53 src/appendix/cheat-sheet.md:31
+#: src/engine/openxr.md:53 src/appendix/cheat-sheet.md:33
 msgid "`Drop`"
 msgstr ""
 
@@ -16113,11 +16984,11 @@ msgstr ""
 msgid "`RedrawRequested` + `request_redraw()`, `ControlFlow::Poll`"
 msgstr ""
 
-#: src/engine/game-loop.md:337 src/appendix/cheat-sheet.md:96
+#: src/engine/game-loop.md:337 src/appendix/cheat-sheet.md:98
 msgid "`std::chrono::steady_clock`"
 msgstr ""
 
-#: src/engine/game-loop.md:337 src/appendix/cheat-sheet.md:96
+#: src/engine/game-loop.md:337 src/appendix/cheat-sheet.md:98
 msgid "`std::time::Instant`, `Duration`"
 msgstr ""
 
@@ -16125,15 +16996,15 @@ msgstr ""
 msgid "Singleton `Get()`"
 msgstr "单例 `Get()`"
 
-#: src/engine/game-loop.md:338 src/appendix/cheat-sheet.md:152
+#: src/engine/game-loop.md:338 src/appendix/cheat-sheet.md:154
 msgid "Context passed as a parameter; ECS resources"
 msgstr "以参数传递的上下文；ECS 资源"
 
-#: src/engine/game-loop.md:339 src/appendix/cheat-sheet.md:97
+#: src/engine/game-loop.md:339 src/appendix/cheat-sheet.md:99
 msgid "Function-local `static`"
 msgstr "函数内的 `static`"
 
-#: src/engine/game-loop.md:339 src/appendix/cheat-sheet.md:97
+#: src/engine/game-loop.md:339 src/appendix/cheat-sheet.md:99
 msgid "`OnceLock`, `LazyLock`"
 msgstr ""
 
@@ -17340,7 +18211,7 @@ msgstr ""
 msgid "`#[unsafe(no_mangle)] pub extern \"C\" fn` in a `cdylib`"
 msgstr "`cdylib` 中的 `#[unsafe(no_mangle)] pub extern \"C\" fn`"
 
-#: src/engine/hot-reload-and-plugins.md:254 src/appendix/cheat-sheet.md:136
+#: src/engine/hot-reload-and-plugins.md:254 src/appendix/cheat-sheet.md:138
 msgid "`LoadLibrary` / `dlopen`"
 msgstr ""
 
@@ -17376,7 +18247,7 @@ msgstr "subsecond"
 msgid "sol2 / LuaBridge"
 msgstr "sol2 / LuaBridge"
 
-#: src/engine/hot-reload-and-plugins.md:258 src/appendix/cheat-sheet.md:154
+#: src/engine/hot-reload-and-plugins.md:258 src/appendix/cheat-sheet.md:156
 msgid "mlua"
 msgstr "mlua"
 
@@ -17540,14 +18411,6 @@ msgstr "程序中的部分"
 msgid "Idea"
 msgstr "思想"
 
-#: src/engine/case-study.md:184 src/appendix/cheat-sheet.md:9
-#: src/appendix/cheat-sheet.md:29 src/appendix/cheat-sheet.md:50
-#: src/appendix/cheat-sheet.md:70 src/appendix/cheat-sheet.md:82
-#: src/appendix/cheat-sheet.md:101 src/appendix/cheat-sheet.md:120
-#: src/appendix/cheat-sheet.md:140 src/appendix/cheat-sheet.md:158
-msgid "Chapter"
-msgstr "章节"
-
 #: src/engine/case-study.md:186
 msgid "`Vec2` with `Add`, `Sub`, `Mul<f32>`"
 msgstr "带 `Add`、`Sub`、`Mul<f32>` 的 `Vec2`"
@@ -17622,12 +18485,6 @@ msgstr ""
 msgid "Dynamic dispatch where it is cheap (once per draw)"
 msgstr "在开销低的地方使用动态分发（每次绘制一次）"
 
-#: src/engine/case-study.md:191 src/appendix/cheat-sheet.md:53
-#: src/appendix/cheat-sheet.md:54 src/appendix/cheat-sheet.md:55
-#: src/appendix/cheat-sheet.md:56 src/appendix/cheat-sheet.md:57
-msgid "[Traits and generics](../foundations/traits-and-generics.md)"
-msgstr "[trait 与泛型](../foundations/traits-and-generics.md)"
-
 #: src/engine/case-study.md:192
 msgid "`tri.map(...)`, `zip`, `chunks`"
 msgstr ""
@@ -17635,12 +18492,6 @@ msgstr ""
 #: src/engine/case-study.md:192
 msgid "Iterators with no bounds checks in the hot loop"
 msgstr "热循环中没有边界检查的迭代器"
-
-#: src/engine/case-study.md:192 src/appendix/cheat-sheet.md:64
-#: src/appendix/cheat-sheet.md:65 src/appendix/cheat-sheet.md:66
-#: src/appendix/cheat-sheet.md:91
-msgid "[Closures and iterators](../foundations/closures-and-iterators.md)"
-msgstr "[闭包与迭代器](../foundations/closures-and-iterators.md)"
 
 #: src/engine/case-study.md:193
 msgid "Clamped bounding box before indexing"
@@ -17650,9 +18501,9 @@ msgstr "索引前先限制包围盒"
 msgid "Safe indexing that cannot panic"
 msgstr "不会 panic 的安全索引"
 
-#: src/engine/case-study.md:193 src/appendix/cheat-sheet.md:122
-#: src/appendix/cheat-sheet.md:123 src/appendix/cheat-sheet.md:124
-#: src/appendix/cheat-sheet.md:125
+#: src/engine/case-study.md:193 src/appendix/cheat-sheet.md:124
+#: src/appendix/cheat-sheet.md:125 src/appendix/cheat-sheet.md:126
+#: src/appendix/cheat-sheet.md:127
 msgid "[Memory and performance](../systems/memory-and-performance.md)"
 msgstr "[内存与性能](../systems/memory-and-performance.md)"
 
@@ -17663,12 +18514,6 @@ msgstr ""
 #: src/engine/case-study.md:194
 msgid "Absence is a type, not a null pointer"
 msgstr "\"不存在\"是一个类型，而不是空指针"
-
-#: src/engine/case-study.md:194 src/appendix/cheat-sheet.md:21
-#: src/appendix/cheat-sheet.md:22 src/appendix/cheat-sheet.md:23
-#: src/appendix/cheat-sheet.md:24 src/appendix/cheat-sheet.md:25
-msgid "[Enums and match](../foundations/enums-and-match.md)"
-msgstr "[枚举与 match](../foundations/enums-and-match.md)"
 
 #: src/engine/case-study.md:195
 msgid "Fixed `step`, update before render"
@@ -17855,785 +18700,729 @@ msgstr ""
 msgid ""
 "A quick reference: the C++ thing you reach for, its usual Rust spelling, and"
 " the chapter that explains it. When the translation is not one-to-one, the "
-"chapter is worth reading before you rely on the table."
+"chapter is worth reading before you rely on the table. For what a single "
+"symbol such as `!`, `&mut`, `'a` or `?` means, see [Reading Rust "
+"syntax](../intro/syntax.md)."
 msgstr ""
-"一份快速参考：你习惯使用的 C++ 写法、它在 Rust 中通常的写法，以及讲解它的章节。当翻译不是一对一时，在依赖这张表之前，值得先读一读对应章节。"
+"一份快速参考：你习惯使用的 C++ 写法、它在 Rust "
+"中通常的写法，以及讲解它的章节。当翻译不是一对一时，在依赖这张表之前，值得先读一读对应章节。想知道 `!`、`&mut`、`'a` 或 `?` "
+"这样的单个符号是什么意思，请看[读懂 Rust 语法](../intro/syntax.md)。"
 
-#: src/appendix/cheat-sheet.md:7
+#: src/appendix/cheat-sheet.md:9
 msgid "Values and types"
 msgstr "值与类型"
 
-#: src/appendix/cheat-sheet.md:11
+#: src/appendix/cheat-sheet.md:13
 msgid "`const auto x = 1;` / `auto x = 1;`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:11
+#: src/appendix/cheat-sheet.md:13
 msgid "`let x = 1;` / `let mut x = 1;`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:11 src/appendix/cheat-sheet.md:12
-#: src/appendix/cheat-sheet.md:13 src/appendix/cheat-sheet.md:14
-#: src/appendix/cheat-sheet.md:15 src/appendix/cheat-sheet.md:16
-#: src/appendix/cheat-sheet.md:17 src/appendix/cheat-sheet.md:18
-#: src/appendix/cheat-sheet.md:20
-msgid "[Values and types](../foundations/values-and-types.md)"
-msgstr "[值与类型](../foundations/values-and-types.md)"
-
-#: src/appendix/cheat-sheet.md:12
+#: src/appendix/cheat-sheet.md:14
 msgid "`int`, `int64_t`, `size_t`, `uint8_t`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:12
+#: src/appendix/cheat-sheet.md:14
 msgid "`i32`, `i64`, `usize`, `u8`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:13
+#: src/appendix/cheat-sheet.md:15
 msgid "Implicit numeric conversions"
 msgstr "隐式数值转换"
 
-#: src/appendix/cheat-sheet.md:13
+#: src/appendix/cheat-sheet.md:15
 msgid "None: `as`, `From`, `TryFrom`"
 msgstr "没有：使用 `as`、`From`、`TryFrom`"
 
-#: src/appendix/cheat-sheet.md:14
+#: src/appendix/cheat-sheet.md:16
 msgid ""
 "Panic in debug, wrap in release; `wrapping_*`, `checked_*`, `saturating_*`"
 msgstr "调试模式下 panic，发布模式下回绕；`wrapping_*`、`checked_*`、`saturating_*`"
 
-#: src/appendix/cheat-sheet.md:17
+#: src/appendix/cheat-sheet.md:19
 msgid "`struct` with constructor"
 msgstr "带构造函数的 `struct`"
 
-#: src/appendix/cheat-sheet.md:17
+#: src/appendix/cheat-sheet.md:19
 msgid "`struct` + `fn new(...) -> Self`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:18
+#: src/appendix/cheat-sheet.md:20
 msgid "`constexpr` value / function"
 msgstr "`constexpr` 值 / 函数"
 
-#: src/appendix/cheat-sheet.md:18
+#: src/appendix/cheat-sheet.md:20
 msgid "`const` / `const fn`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:19
+#: src/appendix/cheat-sheet.md:21
 msgid "`static_assert(cond)`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:19
+#: src/appendix/cheat-sheet.md:21
 msgid "`const _: () = assert!(cond);`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:19 src/appendix/cheat-sheet.md:110
-#: src/appendix/cheat-sheet.md:111 src/appendix/cheat-sheet.md:112
-msgid "[Macros](../systems/macros.md)"
-msgstr "[宏](../systems/macros.md)"
-
-#: src/appendix/cheat-sheet.md:22
+#: src/appendix/cheat-sheet.md:24
 msgid "`std::variant` + `std::visit`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:22
+#: src/appendix/cheat-sheet.md:24
 msgid "`enum` with data + `match`"
 msgstr "带数据的 `enum` + `match`"
 
-#: src/appendix/cheat-sheet.md:23
+#: src/appendix/cheat-sheet.md:25
 msgid "`std::optional<T>`, nullable `T*`"
 msgstr "`std::optional<T>`，可为空的 `T*`"
 
-#: src/appendix/cheat-sheet.md:23
+#: src/appendix/cheat-sheet.md:25
 msgid "`Option<T>`, `Option<&T>`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:24
+#: src/appendix/cheat-sheet.md:26
 msgid "`switch`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:24
+#: src/appendix/cheat-sheet.md:26
 msgid "`match` (exhaustive, no fall-through)"
 msgstr "`match`（穷尽检查，无贯穿）"
 
-#: src/appendix/cheat-sheet.md:25
+#: src/appendix/cheat-sheet.md:27
 msgid "Patterns: `let (a, b) = ...;`, `if let`, `let ... else`"
 msgstr "模式：`let (a, b) = ...;`、`if let`、`let ... else`"
 
-#: src/appendix/cheat-sheet.md:27
+#: src/appendix/cheat-sheet.md:29
 msgid "Ownership and references"
 msgstr "所有权与引用"
 
-#: src/appendix/cheat-sheet.md:31
+#: src/appendix/cheat-sheet.md:33
 msgid "RAII, destructor"
 msgstr "RAII，析构函数"
 
-#: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:32
 #: src/appendix/cheat-sheet.md:33 src/appendix/cheat-sheet.md:34
+#: src/appendix/cheat-sheet.md:35 src/appendix/cheat-sheet.md:36
 msgid "[Ownership](../foundations/ownership.md)"
 msgstr "[所有权](../foundations/ownership.md)"
 
-#: src/appendix/cheat-sheet.md:32
+#: src/appendix/cheat-sheet.md:34
 msgid "`auto y = std::move(x);`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:32
+#: src/appendix/cheat-sheet.md:34
 msgid "`let y = x;` (and `x` is unusable)"
 msgstr "`let y = x;`（之后 `x` 不可用）"
 
-#: src/appendix/cheat-sheet.md:33
+#: src/appendix/cheat-sheet.md:35
 msgid "`.clone()` (`Clone`); implicit only for `Copy` types"
 msgstr "`.clone()`（`Clone`）；只有 `Copy` 类型才隐式复制"
 
-#: src/appendix/cheat-sheet.md:34
+#: src/appendix/cheat-sheet.md:36
 msgid "Nothing to write; add `Drop` if needed"
 msgstr "什么都不用写；需要时添加 `Drop`"
 
-#: src/appendix/cheat-sheet.md:35
+#: src/appendix/cheat-sheet.md:37
 msgid "`&T` (many at once)"
 msgstr "`&T`（可同时存在多个）"
 
-#: src/appendix/cheat-sheet.md:35 src/appendix/cheat-sheet.md:36
-#: src/appendix/cheat-sheet.md:37 src/appendix/cheat-sheet.md:38
-#: src/appendix/cheat-sheet.md:39 src/appendix/cheat-sheet.md:52
-#: src/appendix/cheat-sheet.md:160 src/appendix/cheat-sheet.md:161
-msgid "[Borrowing](../foundations/borrowing.md)"
-msgstr "[借用](../foundations/borrowing.md)"
-
-#: src/appendix/cheat-sheet.md:36
+#: src/appendix/cheat-sheet.md:38
 msgid "`&mut T` (exclusive)"
 msgstr "`&mut T`（独占）"
 
-#: src/appendix/cheat-sheet.md:37
+#: src/appendix/cheat-sheet.md:39
 msgid "`std::span<T>`, `std::string_view`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:38
+#: src/appendix/cheat-sheet.md:40
 msgid "Every `&mut T`"
 msgstr "每个 `&mut T`"
 
-#: src/appendix/cheat-sheet.md:39
+#: src/appendix/cheat-sheet.md:41
 msgid "Iterator invalidation (UB)"
 msgstr "迭代器失效（未定义行为）"
 
-#: src/appendix/cheat-sheet.md:40
+#: src/appendix/cheat-sheet.md:42
 msgid "Dangling reference (UB)"
 msgstr "悬垂引用（未定义行为）"
 
-#: src/appendix/cheat-sheet.md:40
+#: src/appendix/cheat-sheet.md:42
 msgid "Compile error; lifetimes"
 msgstr "编译错误；生命周期"
 
-#: src/appendix/cheat-sheet.md:40 src/appendix/cheat-sheet.md:41
-#: src/appendix/cheat-sheet.md:166
-msgid "[Lifetimes](../foundations/lifetimes.md)"
-msgstr "[生命周期](../foundations/lifetimes.md)"
-
-#: src/appendix/cheat-sheet.md:41
+#: src/appendix/cheat-sheet.md:43
 msgid "Class holding a `string_view`"
 msgstr "持有 `string_view` 的类"
 
-#: src/appendix/cheat-sheet.md:41
+#: src/appendix/cheat-sheet.md:43
 msgid "`struct View<'a> { s: &'a str }`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:42 src/appendix/cheat-sheet.md:43
-#: src/appendix/cheat-sheet.md:44 src/appendix/cheat-sheet.md:45
-msgid "[Smart pointers](../foundations/smart-pointers.md)"
-msgstr "[智能指针](../foundations/smart-pointers.md)"
-
-#: src/appendix/cheat-sheet.md:43
+#: src/appendix/cheat-sheet.md:45
 msgid "`Rc<T>` (one thread), `Arc<T>` (atomic)"
 msgstr "`Rc<T>`（单线程）、`Arc<T>`（原子）"
 
-#: src/appendix/cheat-sheet.md:44
+#: src/appendix/cheat-sheet.md:46
 msgid "`Weak<T>`, `.upgrade()`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:46
+#: src/appendix/cheat-sheet.md:48
 msgid "Object pool + raw pointers"
 msgstr "对象池 + 裸指针"
 
-#: src/appendix/cheat-sheet.md:46
+#: src/appendix/cheat-sheet.md:48
 msgid "Arena + generational `Handle<T>`"
 msgstr "arena + 带代数的 `Handle<T>`"
 
-#: src/appendix/cheat-sheet.md:46 src/appendix/cheat-sheet.md:126
-#: src/appendix/cheat-sheet.md:164
+#: src/appendix/cheat-sheet.md:48 src/appendix/cheat-sheet.md:128
+#: src/appendix/cheat-sheet.md:166
 msgid "[Handles and arenas](../engine/handles-and-arenas.md)"
 msgstr "[句柄与 arena](../engine/handles-and-arenas.md)"
 
-#: src/appendix/cheat-sheet.md:48
+#: src/appendix/cheat-sheet.md:50
 msgid "Classes, templates and operators"
 msgstr "类、模板与运算符"
 
-#: src/appendix/cheat-sheet.md:52
+#: src/appendix/cheat-sheet.md:54
 msgid "Member function / `const` member function"
 msgstr "成员函数 / `const` 成员函数"
 
-#: src/appendix/cheat-sheet.md:52
+#: src/appendix/cheat-sheet.md:54
 msgid "`fn f(&mut self)` / `fn f(&self)`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:53
+#: src/appendix/cheat-sheet.md:55
 msgid "Abstract base class, virtual functions"
 msgstr "抽象基类、虚函数"
 
-#: src/appendix/cheat-sheet.md:53
+#: src/appendix/cheat-sheet.md:55
 msgid "Trait, `dyn Trait`"
 msgstr "trait、`dyn Trait`"
 
-#: src/appendix/cheat-sheet.md:54
+#: src/appendix/cheat-sheet.md:56
 msgid "Template + concept"
 msgstr "模板 + concept"
 
-#: src/appendix/cheat-sheet.md:56
+#: src/appendix/cheat-sheet.md:58
 msgid "Nested `typedef` in a traits class"
 msgstr "traits 类中的嵌套 `typedef`"
 
-#: src/appendix/cheat-sheet.md:56
+#: src/appendix/cheat-sheet.md:58
 msgid "Associated type"
 msgstr "关联类型"
 
-#: src/appendix/cheat-sheet.md:57
+#: src/appendix/cheat-sheet.md:59
 msgid "Composition (+ traits for behavior)"
 msgstr "组合（+ 用 trait 表达行为）"
 
-#: src/appendix/cheat-sheet.md:58
+#: src/appendix/cheat-sheet.md:60
 msgid "`operator+`, `operator+=`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:58
+#: src/appendix/cheat-sheet.md:60
 msgid "`impl Add`, `impl AddAssign`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:58 src/appendix/cheat-sheet.md:59
-#: src/appendix/cheat-sheet.md:60 src/appendix/cheat-sheet.md:61
-#: src/appendix/cheat-sheet.md:62 src/appendix/cheat-sheet.md:63
-msgid "[Operators](../foundations/operators-and-conversions.md)"
-msgstr "[运算符](../foundations/operators-and-conversions.md)"
-
-#: src/appendix/cheat-sheet.md:59
+#: src/appendix/cheat-sheet.md:61
 msgid "`Index`, `IndexMut`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:60
+#: src/appendix/cheat-sheet.md:62
 msgid "`#[derive(PartialEq, Eq, PartialOrd, Ord)]`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:61
+#: src/appendix/cheat-sheet.md:63
 msgid "`From` / `Into`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:62
+#: src/appendix/cheat-sheet.md:64
 msgid "`operator<<(ostream&, T)`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:62
+#: src/appendix/cheat-sheet.md:64
 msgid "`impl Display`, `#[derive(Debug)]`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:63
+#: src/appendix/cheat-sheet.md:65
 msgid "`operator->` on a smart pointer"
 msgstr "智能指针上的 `operator->`"
 
-#: src/appendix/cheat-sheet.md:63
+#: src/appendix/cheat-sheet.md:65
 msgid "`Deref`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:64
+#: src/appendix/cheat-sheet.md:66
 msgid "Lambda"
 msgstr "lambda"
 
-#: src/appendix/cheat-sheet.md:64
+#: src/appendix/cheat-sheet.md:66
 msgid "Closure (`move` for by-value capture)"
 msgstr "闭包（`move` 表示按值捕获）"
 
-#: src/appendix/cheat-sheet.md:66
+#: src/appendix/cheat-sheet.md:68
 msgid "Callable template parameter"
 msgstr "可调用对象模板参数"
 
-#: src/appendix/cheat-sheet.md:66
+#: src/appendix/cheat-sheet.md:68
 msgid "`impl Fn(A) -> R`, `F: FnMut(A) -> R`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:68
+#: src/appendix/cheat-sheet.md:70
 msgid "Errors"
 msgstr "错误"
 
-#: src/appendix/cheat-sheet.md:72
+#: src/appendix/cheat-sheet.md:74
 msgid "Exceptions"
 msgstr "异常"
 
-#: src/appendix/cheat-sheet.md:72 src/appendix/cheat-sheet.md:73
-#: src/appendix/cheat-sheet.md:74 src/appendix/cheat-sheet.md:75
-#: src/appendix/cheat-sheet.md:76 src/appendix/cheat-sheet.md:77
-#: src/appendix/cheat-sheet.md:78
-msgid "[Errors](../foundations/errors.md)"
-msgstr "[错误](../foundations/errors.md)"
-
-#: src/appendix/cheat-sheet.md:73
+#: src/appendix/cheat-sheet.md:75
 msgid "`std::expected<T, E>`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:74
+#: src/appendix/cheat-sheet.md:76
 msgid "`#[must_use]` (default on `Result`)"
 msgstr "`#[must_use]`（`Result` 默认带有）"
 
-#: src/appendix/cheat-sheet.md:75
+#: src/appendix/cheat-sheet.md:77
 msgid "`assert!`, `panic!`, `.expect(\"why\")`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:76
+#: src/appendix/cheat-sheet.md:78
 msgid "Exception class hierarchy"
 msgstr "异常类层次"
 
-#: src/appendix/cheat-sheet.md:76
+#: src/appendix/cheat-sheet.md:78
 msgid "Error `enum` with `thiserror`"
 msgstr "用 `thiserror` 定义的错误 `enum`"
 
-#: src/appendix/cheat-sheet.md:77
+#: src/appendix/cheat-sheet.md:79
 msgid "Catch-all handler at the top"
 msgstr "顶层的兜底处理器"
 
-#: src/appendix/cheat-sheet.md:77
+#: src/appendix/cheat-sheet.md:79
 msgid "`anyhow::Result` with `.context(...)`"
 msgstr "带 `.context(...)` 的 `anyhow::Result`"
 
-#: src/appendix/cheat-sheet.md:80
+#: src/appendix/cheat-sheet.md:82
 msgid "Standard library"
 msgstr "标准库"
 
-#: src/appendix/cheat-sheet.md:84 src/appendix/cheat-sheet.md:85
-#: src/appendix/cheat-sheet.md:86 src/appendix/cheat-sheet.md:87
-#: src/appendix/cheat-sheet.md:88 src/appendix/cheat-sheet.md:89
-#: src/appendix/cheat-sheet.md:90 src/appendix/cheat-sheet.md:163
-msgid "[Collections](../foundations/collections.md)"
-msgstr "[集合](../foundations/collections.md)"
-
-#: src/appendix/cheat-sheet.md:85
+#: src/appendix/cheat-sheet.md:87
 msgid "`v.at(i)` / `v[i]`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:85
+#: src/appendix/cheat-sheet.md:87
 msgid "`v.get(i)` (`Option`) / `v[i]` (checked)"
 msgstr "`v.get(i)`（`Option`）/ `v[i]`（有检查）"
 
-#: src/appendix/cheat-sheet.md:86
+#: src/appendix/cheat-sheet.md:88
 msgid "`v.retain(keep)` (keep is a closure)"
 msgstr "`v.retain(keep)`（keep 是一个闭包）"
 
-#: src/appendix/cheat-sheet.md:87
+#: src/appendix/cheat-sheet.md:89
 msgid "`std::unordered_map`, `std::map`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:87
+#: src/appendix/cheat-sheet.md:89
 msgid "`HashMap`, `BTreeMap`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:88
+#: src/appendix/cheat-sheet.md:90
 msgid "`map[key]` (inserting)"
 msgstr "`map[key]`（会插入）"
 
-#: src/appendix/cheat-sheet.md:88
+#: src/appendix/cheat-sheet.md:90
 msgid "`map.entry(key).or_default()`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:89
+#: src/appendix/cheat-sheet.md:91
 msgid "`String` (always UTF-8)"
 msgstr "`String`（始终是 UTF-8）"
 
-#: src/appendix/cheat-sheet.md:90
+#: src/appendix/cheat-sheet.md:92
 msgid "`PathBuf`, `&Path`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:91
+#: src/appendix/cheat-sheet.md:93
 msgid "Iterator adapters: `map`, `filter`, `zip`, `fold`, `collect`"
 msgstr "迭代器适配器：`map`、`filter`、`zip`、`fold`、`collect`"
 
-#: src/appendix/cheat-sheet.md:92
+#: src/appendix/cheat-sheet.md:94
 msgid "`std::thread::spawn`, `std::thread::scope`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:92 src/appendix/cheat-sheet.md:93
 #: src/appendix/cheat-sheet.md:94 src/appendix/cheat-sheet.md:95
-#: src/appendix/cheat-sheet.md:167 src/appendix/cheat-sheet.md:168
+#: src/appendix/cheat-sheet.md:96 src/appendix/cheat-sheet.md:97
+#: src/appendix/cheat-sheet.md:169 src/appendix/cheat-sheet.md:170
 msgid "[Concurrency](../systems/concurrency.md)"
 msgstr "[并发](../systems/concurrency.md)"
 
-#: src/appendix/cheat-sheet.md:94
+#: src/appendix/cheat-sheet.md:96
 msgid "`AtomicU32` etc. with `Ordering`"
 msgstr "`AtomicU32` 等，配合 `Ordering`"
 
-#: src/appendix/cheat-sheet.md:95
+#: src/appendix/cheat-sheet.md:97
 msgid "Thread pool / TBB `parallel_for`"
 msgstr "线程池 / TBB `parallel_for`"
 
-#: src/appendix/cheat-sheet.md:95
+#: src/appendix/cheat-sheet.md:97
 msgid "`rayon`: `par_iter()`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:96 src/appendix/cheat-sheet.md:97
-#: src/appendix/cheat-sheet.md:144 src/appendix/cheat-sheet.md:152
-#: src/appendix/cheat-sheet.md:169
+#: src/appendix/cheat-sheet.md:98 src/appendix/cheat-sheet.md:99
+#: src/appendix/cheat-sheet.md:146 src/appendix/cheat-sheet.md:154
+#: src/appendix/cheat-sheet.md:171
 msgid "[Game loop](../engine/game-loop.md)"
 msgstr "[游戏循环](../engine/game-loop.md)"
 
-#: src/appendix/cheat-sheet.md:99
+#: src/appendix/cheat-sheet.md:101
 msgid "Build, modules and tooling"
 msgstr "构建、模块与工具"
 
-#: src/appendix/cheat-sheet.md:103
+#: src/appendix/cheat-sheet.md:105
 msgid "CMake + vcpkg/Conan"
 msgstr "CMake + vcpkg/Conan"
 
-#: src/appendix/cheat-sheet.md:103
+#: src/appendix/cheat-sheet.md:105
 msgid "Cargo + crates.io"
 msgstr "Cargo + crates.io"
 
-#: src/appendix/cheat-sheet.md:103 src/appendix/cheat-sheet.md:104
+#: src/appendix/cheat-sheet.md:105 src/appendix/cheat-sheet.md:106
 msgid "[Cargo](../foundations/cargo.md)"
 msgstr "[Cargo](../foundations/cargo.md)"
 
-#: src/appendix/cheat-sheet.md:104
+#: src/appendix/cheat-sheet.md:106
 msgid "Debug / Release"
 msgstr "Debug / Release"
 
-#: src/appendix/cheat-sheet.md:104
+#: src/appendix/cheat-sheet.md:106
 msgid "`cargo build` / `cargo build --release` (profiles)"
 msgstr "`cargo build` / `cargo build --release`（profile）"
 
-#: src/appendix/cheat-sheet.md:105
+#: src/appendix/cheat-sheet.md:107
 msgid "Workspace members"
 msgstr "工作空间成员"
 
-#: src/appendix/cheat-sheet.md:105 src/appendix/cheat-sheet.md:106
-#: src/appendix/cheat-sheet.md:153
+#: src/appendix/cheat-sheet.md:107 src/appendix/cheat-sheet.md:108
+#: src/appendix/cheat-sheet.md:155
 msgid "[Assets and build](../engine/assets-and-build.md)"
 msgstr "[资源与构建](../engine/assets-and-build.md)"
 
-#: src/appendix/cheat-sheet.md:106
+#: src/appendix/cheat-sheet.md:108
 msgid "`add_custom_command`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:107 src/appendix/cheat-sheet.md:108
-#: src/appendix/cheat-sheet.md:109
-msgid "[Modules](../foundations/modules.md)"
-msgstr "[模块](../foundations/modules.md)"
-
-#: src/appendix/cheat-sheet.md:108
+#: src/appendix/cheat-sheet.md:110
 msgid "`#include \"x.h\"`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:108
+#: src/appendix/cheat-sheet.md:110
 msgid "`mod x;` + `use`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:109
+#: src/appendix/cheat-sheet.md:111
 msgid "`public` / `private`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:109
+#: src/appendix/cheat-sheet.md:111
 msgid "`pub` / private by default"
 msgstr "`pub` / 默认私有"
 
-#: src/appendix/cheat-sheet.md:110
+#: src/appendix/cheat-sheet.md:112
 msgid "`#[cfg(...)]`, Cargo features"
 msgstr "`#[cfg(...)]`、Cargo 特性"
 
-#: src/appendix/cheat-sheet.md:111
+#: src/appendix/cheat-sheet.md:113
 msgid "`#define` macros"
 msgstr "`#define` 宏"
 
-#: src/appendix/cheat-sheet.md:112
+#: src/appendix/cheat-sheet.md:114
 msgid "Reflection macros, code generators"
 msgstr "反射宏、代码生成器"
 
-#: src/appendix/cheat-sheet.md:112
+#: src/appendix/cheat-sheet.md:114
 msgid "`#[derive(...)]`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:113
+#: src/appendix/cheat-sheet.md:115
 msgid "`#[test]`, `cargo test`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:113 src/appendix/cheat-sheet.md:114
 #: src/appendix/cheat-sheet.md:115 src/appendix/cheat-sheet.md:116
+#: src/appendix/cheat-sheet.md:117 src/appendix/cheat-sheet.md:118
 msgid "[Testing](../systems/testing-and-tooling.md)"
 msgstr "[测试](../systems/testing-and-tooling.md)"
 
-#: src/appendix/cheat-sheet.md:115
+#: src/appendix/cheat-sheet.md:117
 msgid "`cargo fmt` / `cargo clippy`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:116
+#: src/appendix/cheat-sheet.md:118
 msgid "`cargo doc` (examples are tested)"
 msgstr "`cargo doc`（示例会被测试）"
 
-#: src/appendix/cheat-sheet.md:118
+#: src/appendix/cheat-sheet.md:120
 msgid "Low level"
 msgstr "底层"
 
-#: src/appendix/cheat-sheet.md:122
+#: src/appendix/cheat-sheet.md:124
 msgid "`size_of::<T>()`, `align_of::<T>()`, `offset_of!`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:126
+#: src/appendix/cheat-sheet.md:128
 msgid "Arena / linear allocator"
 msgstr "arena / 线性分配器"
 
-#: src/appendix/cheat-sheet.md:126
+#: src/appendix/cheat-sheet.md:128
 msgid "`bumpalo`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:127
+#: src/appendix/cheat-sheet.md:129
 msgid "`*const T`, `*mut T` (deref in `unsafe`)"
 msgstr "`*const T`、`*mut T`（在 `unsafe` 中解引用）"
 
-#: src/appendix/cheat-sheet.md:127 src/appendix/cheat-sheet.md:128
-#: src/appendix/cheat-sheet.md:129 src/appendix/cheat-sheet.md:130
-msgid "[Unsafe](../systems/unsafe.md)"
-msgstr "[Unsafe](../systems/unsafe.md)"
-
-#: src/appendix/cheat-sheet.md:128
+#: src/appendix/cheat-sheet.md:130
 msgid "Uninitialized storage"
 msgstr "未初始化的存储"
 
-#: src/appendix/cheat-sheet.md:129
+#: src/appendix/cheat-sheet.md:131
 msgid "Pointer `as` casts; `bytemuck` for safe byte views"
 msgstr "指针 `as` 转换；用 `bytemuck` 获得安全的字节视图"
 
-#: src/appendix/cheat-sheet.md:130
+#: src/appendix/cheat-sheet.md:132
 msgid "ASan / UBSan"
 msgstr "ASan / UBSan"
 
-#: src/appendix/cheat-sheet.md:130
+#: src/appendix/cheat-sheet.md:132
 msgid "Miri"
 msgstr "Miri"
 
-#: src/appendix/cheat-sheet.md:131
+#: src/appendix/cheat-sheet.md:133
 msgid "`extern \"C\"` declarations"
 msgstr "`extern \"C\"` 声明"
 
-#: src/appendix/cheat-sheet.md:131
+#: src/appendix/cheat-sheet.md:133
 msgid "`unsafe extern \"C\" { ... }`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:131 src/appendix/cheat-sheet.md:132
 #: src/appendix/cheat-sheet.md:133 src/appendix/cheat-sheet.md:134
+#: src/appendix/cheat-sheet.md:135 src/appendix/cheat-sheet.md:136
 msgid "[FFI](../systems/ffi.md)"
 msgstr "[FFI](../systems/ffi.md)"
 
-#: src/appendix/cheat-sheet.md:132
+#: src/appendix/cheat-sheet.md:134
 msgid "Exporting a C API"
 msgstr "导出 C API"
 
-#: src/appendix/cheat-sheet.md:133
+#: src/appendix/cheat-sheet.md:135
 msgid "`CStr`, `CString`, `c\"...\"`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:134
+#: src/appendix/cheat-sheet.md:136
 msgid "Headers → bindings"
 msgstr "头文件 → 绑定"
 
-#: src/appendix/cheat-sheet.md:134
+#: src/appendix/cheat-sheet.md:136
 msgid "bindgen; cbindgen for the reverse"
 msgstr "bindgen；反方向用 cbindgen"
 
-#: src/appendix/cheat-sheet.md:135
+#: src/appendix/cheat-sheet.md:137
 msgid "`<immintrin.h>`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:135
+#: src/appendix/cheat-sheet.md:137
 msgid "`std::arch` + `#[target_feature]`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:135 src/appendix/cheat-sheet.md:142
-#: src/appendix/cheat-sheet.md:143
+#: src/appendix/cheat-sheet.md:137 src/appendix/cheat-sheet.md:144
+#: src/appendix/cheat-sheet.md:145
 msgid "[Math and SIMD](../engine/math-and-simd.md)"
 msgstr "[数学与 SIMD](../engine/math-and-simd.md)"
 
-#: src/appendix/cheat-sheet.md:136
+#: src/appendix/cheat-sheet.md:138
 msgid "`libloading`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:136 src/appendix/cheat-sheet.md:154
+#: src/appendix/cheat-sheet.md:138 src/appendix/cheat-sheet.md:156
 msgid "[Hot reloading](../engine/hot-reload-and-plugins.md)"
 msgstr "[热重载](../engine/hot-reload-and-plugins.md)"
 
-#: src/appendix/cheat-sheet.md:138
+#: src/appendix/cheat-sheet.md:140
 msgid "Graphics and engine"
 msgstr "图形与引擎"
 
-#: src/appendix/cheat-sheet.md:142
+#: src/appendix/cheat-sheet.md:144
 msgid "GLM / DirectXMath"
 msgstr "GLM / DirectXMath"
 
-#: src/appendix/cheat-sheet.md:143
+#: src/appendix/cheat-sheet.md:145
 msgid "`memcpy` a struct into a GPU buffer"
 msgstr "用 `memcpy` 把结构体复制到 GPU 缓冲区"
 
-#: src/appendix/cheat-sheet.md:144
+#: src/appendix/cheat-sheet.md:146
 msgid "GLFW / SDL"
 msgstr "GLFW / SDL"
 
-#: src/appendix/cheat-sheet.md:144
+#: src/appendix/cheat-sheet.md:146
 msgid "winit (`ApplicationHandler`)"
 msgstr "winit（`ApplicationHandler`）"
 
-#: src/appendix/cheat-sheet.md:145
+#: src/appendix/cheat-sheet.md:147
 msgid "`gl`, `glow`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:145
+#: src/appendix/cheat-sheet.md:147
 msgid "[OpenGL](../engine/opengl.md)"
 msgstr "[OpenGL](../engine/opengl.md)"
 
-#: src/appendix/cheat-sheet.md:146
+#: src/appendix/cheat-sheet.md:148
 msgid "`vulkan.h` / volk"
 msgstr "`vulkan.h` / volk"
 
-#: src/appendix/cheat-sheet.md:146 src/appendix/cheat-sheet.md:147
+#: src/appendix/cheat-sheet.md:148 src/appendix/cheat-sheet.md:149
 msgid "[Vulkan](../engine/vulkan.md)"
 msgstr "[Vulkan](../engine/vulkan.md)"
 
-#: src/appendix/cheat-sheet.md:148
+#: src/appendix/cheat-sheet.md:150
 msgid "Dawn, bgfx, sokol_gfx"
 msgstr "Dawn、bgfx、sokol_gfx"
 
-#: src/appendix/cheat-sheet.md:148 src/appendix/cheat-sheet.md:150
+#: src/appendix/cheat-sheet.md:150 src/appendix/cheat-sheet.md:152
 msgid "[wgpu](../engine/wgpu.md)"
 msgstr "[wgpu](../engine/wgpu.md)"
 
-#: src/appendix/cheat-sheet.md:149
+#: src/appendix/cheat-sheet.md:151
 msgid "`openxr.h`, OpenXR-Hpp"
 msgstr "`openxr.h`、OpenXR-Hpp"
 
-#: src/appendix/cheat-sheet.md:149
+#: src/appendix/cheat-sheet.md:151
 msgid "`openxr-sys`, `openxr`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:149
+#: src/appendix/cheat-sheet.md:151
 msgid "[OpenXR](../engine/openxr.md)"
 msgstr "[OpenXR](../engine/openxr.md)"
 
-#: src/appendix/cheat-sheet.md:150
+#: src/appendix/cheat-sheet.md:152
 msgid "glslc / dxc"
 msgstr "glslc / dxc"
 
-#: src/appendix/cheat-sheet.md:150
+#: src/appendix/cheat-sheet.md:152
 msgid "naga, shaderc, from `build.rs`"
 msgstr "naga、shaderc，在 `build.rs` 中调用"
 
-#: src/appendix/cheat-sheet.md:151
+#: src/appendix/cheat-sheet.md:153
 msgid "hecs, bevy_ecs"
 msgstr "hecs、bevy_ecs"
 
-#: src/appendix/cheat-sheet.md:151 src/appendix/cheat-sheet.md:162
-#: src/appendix/cheat-sheet.md:165
+#: src/appendix/cheat-sheet.md:153 src/appendix/cheat-sheet.md:164
+#: src/appendix/cheat-sheet.md:167
 msgid "[ECS](../engine/ecs.md)"
 msgstr "[ECS](../engine/ecs.md)"
 
-#: src/appendix/cheat-sheet.md:152
+#: src/appendix/cheat-sheet.md:154
 msgid "Singletons"
 msgstr "单例"
 
-#: src/appendix/cheat-sheet.md:153
+#: src/appendix/cheat-sheet.md:155
 msgid "Custom serialization / reflection"
 msgstr "自定义序列化 / 反射"
 
-#: src/appendix/cheat-sheet.md:153
+#: src/appendix/cheat-sheet.md:155
 msgid "serde"
 msgstr "serde"
 
-#: src/appendix/cheat-sheet.md:154
+#: src/appendix/cheat-sheet.md:156
 msgid "sol2 (Lua)"
 msgstr "sol2（Lua）"
 
-#: src/appendix/cheat-sheet.md:156
+#: src/appendix/cheat-sheet.md:158
 msgid "When the borrow checker says no"
 msgstr "当借用检查器说不行时"
 
-#: src/appendix/cheat-sheet.md:158
+#: src/appendix/cheat-sheet.md:160
 msgid "Symptom"
 msgstr "症状"
 
-#: src/appendix/cheat-sheet.md:160
+#: src/appendix/cheat-sheet.md:162
 msgid "\"cannot borrow as mutable because it is also borrowed as immutable\""
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:160
+#: src/appendix/cheat-sheet.md:162
 msgid "Shorten the first borrow: copy the value out, or finish using it first"
 msgstr "缩短第一个借用：把值复制出来，或者先用完它"
 
-#: src/appendix/cheat-sheet.md:161
+#: src/appendix/cheat-sheet.md:163
 msgid "Pushing to a `Vec` while holding a reference into it"
 msgstr "持有 `Vec` 内部引用的同时向它 push"
 
-#: src/appendix/cheat-sheet.md:161
+#: src/appendix/cheat-sheet.md:163
 msgid "Hold an index instead of a reference"
 msgstr "持有索引而不是引用"
 
-#: src/appendix/cheat-sheet.md:162
+#: src/appendix/cheat-sheet.md:164
 msgid "Two `&mut` into the same struct"
 msgstr "对同一个结构体取两个 `&mut`"
 
-#: src/appendix/cheat-sheet.md:162
+#: src/appendix/cheat-sheet.md:164
 msgid ""
 "Borrow separate fields (split borrows); destructure `let S { a, b } = &mut "
 "s;`"
 msgstr "借用不同的字段（拆分借用）；解构 `let S { a, b } = &mut s;`"
 
-#: src/appendix/cheat-sheet.md:163
+#: src/appendix/cheat-sheet.md:165
 msgid "Two `&mut` into the same slice"
 msgstr "对同一个切片取两个 `&mut`"
 
-#: src/appendix/cheat-sheet.md:163
+#: src/appendix/cheat-sheet.md:165
 msgid "`split_at_mut`, `chunks_mut`, `iter_mut`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:164
+#: src/appendix/cheat-sheet.md:166
 msgid "A struct wants to store a reference to another object"
 msgstr "结构体想存储对另一个对象的引用"
 
-#: src/appendix/cheat-sheet.md:164
+#: src/appendix/cheat-sheet.md:166
 msgid "Store a handle or index; or own the data"
 msgstr "存储句柄或索引；或者拥有数据"
 
-#: src/appendix/cheat-sheet.md:165
+#: src/appendix/cheat-sheet.md:167
 msgid "Objects pointing at each other (graph, parent links)"
 msgstr "互相指向的对象（图、父链接）"
 
-#: src/appendix/cheat-sheet.md:165
+#: src/appendix/cheat-sheet.md:167
 msgid "Arena + handles; `Rc` + `Weak` only if ownership is truly shared"
 msgstr "arena + 句柄；只有在所有权确实共享时才用 `Rc` + `Weak`"
 
-#: src/appendix/cheat-sheet.md:166
+#: src/appendix/cheat-sheet.md:168
 msgid "\"borrowed value does not live long enough\""
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:166
+#: src/appendix/cheat-sheet.md:168
 msgid "Move the owner to an outer scope, or return an owned value"
 msgstr "把所有者移到外层作用域，或者返回一个拥有所有权的值"
 
-#: src/appendix/cheat-sheet.md:167
+#: src/appendix/cheat-sheet.md:169
 msgid "\"`Rc<...>` cannot be sent between threads safely\""
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:167
+#: src/appendix/cheat-sheet.md:169
 msgid "`Arc` (and `Mutex` for mutation)"
 msgstr "`Arc`（需要修改时加 `Mutex`）"
 
-#: src/appendix/cheat-sheet.md:168
+#: src/appendix/cheat-sheet.md:170
 msgid "A closure passed to `thread::spawn` borrows a local"
 msgstr "传给 `thread::spawn` 的闭包借用了局部变量"
 
-#: src/appendix/cheat-sheet.md:168
+#: src/appendix/cheat-sheet.md:170
 msgid "`move` the data in, or use `thread::scope`"
 msgstr "用 `move` 把数据移进去，或者使用 `thread::scope`"
 
-#: src/appendix/cheat-sheet.md:169
+#: src/appendix/cheat-sheet.md:171
 msgid "Global mutable state"
 msgstr "可变全局状态"
 
-#: src/appendix/cheat-sheet.md:169
+#: src/appendix/cheat-sheet.md:171
 msgid "Pass a context; or `Mutex`, atomics, `OnceLock`"
 msgstr "传递上下文；或者使用 `Mutex`、原子类型、`OnceLock`"
 

@@ -2,7 +2,9 @@
 
 A quick reference: the C++ thing you reach for, its usual Rust spelling, and
 the chapter that explains it. When the translation is not one-to-one, the
-chapter is worth reading before you rely on the table.
+chapter is worth reading before you rely on the table. For what a single
+symbol such as `!`, `&mut`, `'a` or `?` means, see [Reading Rust
+syntax](../intro/syntax.md).
 
 ## Values and types
 
