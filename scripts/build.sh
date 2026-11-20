@@ -6,7 +6,7 @@ cd "$(dirname "$0")/.."
 
 # Language code -> translated book title.
 declare -A TITLES=(
-  [zh-CN]="写给 C++ 程序员的 Rust"
+  [zh-CN]="写给 C++ 程序员的 Rust 入门手册"
 )
 
 rm -rf book

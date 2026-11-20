@@ -201,7 +201,7 @@ msgstr "参与贡献与翻译"
 
 #: src/index.md:1
 msgid "Rust for C++ Programmers"
-msgstr "写给 C++ 程序员的 Rust"
+msgstr "写给 C++ 程序员的 Rust 入门手册"
 
 #: src/index.md:3
 msgid ""
