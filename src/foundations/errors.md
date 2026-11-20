@@ -47,6 +47,59 @@ fn main() {
 }
 ```
 
+### How `Ok(...)` and `Err(...)` work
+
+Nothing here is special syntax. `Ok` and `Err` are the two **variants** of the
+`Result` enum ([Enums and pattern matching](enums-and-match.md)), and the same
+name plays three roles depending on where it appears:
+
+- **As an expression, it builds a value.** A variant that carries data can be
+  called like a function: `Ok(42)` is a `Result<i32, _>` meaning "success,
+  holding 42", and `Err(e)` means "failure, holding `e`". That is why a
+  fallible function ends with `Ok(value)`: it returns the success case.
+- **In a pattern, it takes the value apart.** In `match`, `if let` or `let ...
+  else`, `Ok(src)` means "if this is the success case, bind what is inside to
+  `src`". The compiler checks that every variant is handled, so forgetting the
+  `Err` arm is a compile error.
+- **It needs no prefix.** The full names are `Result::Ok` and `Result::Err`,
+  but the standard prelude imports `Ok`, `Err`, `Some` and `None` into every
+  file, so you write them bare.
+
+`T` and `E` are generic parameters, filled in from the function's signature or
+inferred from use. In C++ terms, `Result<T, E>` is `std::expected<T, E>`, or a
+two-alternative `std::variant<T, E>` whose alternatives have names:
+
+| C++ (`std::expected`) | Rust (`Result`) |
+|---|---|
+| `return value;` | `return Ok(value);` (or `Ok(value)` as the last expression) |
+| `return std::unexpected(err);` | `return Err(err);` |
+| `if (r) use(*r); else log(r.error());` | `match r { Ok(v) => use_it(v), Err(e) => log(e) }` |
+| `r.value()` (throws if empty) | `r.unwrap()` (panics on `Err`) |
+| `r.value_or(fallback)` | `r.unwrap_or(fallback)` |
+
+```rust
+fn parse_hp(text: &str) -> Result<u32, String> {
+    match text.parse::<u32>() {
+        Ok(n) if n <= 100 => Ok(n),                         // pattern, then construct
+        Ok(n) => Err(format!("{n} is above the maximum of 100")),
+        Err(e) => Err(format!("not a number: {e}")),
+    }
+}
+
+fn main() {
+    for input in ["75", "250", "abc"] {
+        let result = parse_hp(input);                       // a plain value of type Result
+        match result {
+            Ok(hp) => println!("{input}: hp = {hp}"),
+            Err(msg) => println!("{input}: error: {msg}"),
+        }
+    }
+    // Results are values: you can store them, compare them, put them in a Vec.
+    let all: Vec<Result<u32, String>> = vec![Ok(1), Err("bad".to_string())];
+    println!("{all:?}");
+}
+```
+
 The compiler also warns if you call a function returning `Result` and drop the
 result on the floor (`Result` is marked `#[must_use]`, the equivalent of
 `[[nodiscard]]`).

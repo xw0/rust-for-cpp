@@ -15,7 +15,7 @@ msgstr ""
 #: src/SUMMARY.md:1 src/foundations/cargo.md:359
 #: src/foundations/values-and-types.md:379 src/foundations/ownership.md:359
 #: src/foundations/borrowing.md:332 src/foundations/lifetimes.md:249
-#: src/foundations/enums-and-match.md:334 src/foundations/errors.md:291
+#: src/foundations/enums-and-match.md:334 src/foundations/errors.md:344
 #: src/foundations/traits-and-generics.md:360
 #: src/foundations/operators-and-conversions.md:322
 #: src/foundations/collections.md:278
@@ -390,7 +390,7 @@ msgstr "并排的代码会把你会写的 C++ 和对应的 Rust 放在一起："
 #: src/foundations/ownership.md:40 src/foundations/ownership.md:166
 #: src/foundations/ownership.md:361 src/foundations/borrowing.md:24
 #: src/foundations/borrowing.md:192 src/foundations/borrowing.md:334
-#: src/foundations/lifetimes.md:251 src/foundations/errors.md:293
+#: src/foundations/lifetimes.md:251 src/foundations/errors.md:346
 #: src/foundations/traits-and-generics.md:362
 #: src/foundations/operators-and-conversions.md:324
 #: src/foundations/collections.md:280
@@ -417,7 +417,7 @@ msgstr ""
 #: src/foundations/ownership.md:166 src/foundations/ownership.md:361
 #: src/foundations/borrowing.md:38 src/foundations/borrowing.md:205
 #: src/foundations/borrowing.md:334 src/foundations/lifetimes.md:251
-#: src/foundations/enums-and-match.md:336 src/foundations/errors.md:293
+#: src/foundations/enums-and-match.md:336 src/foundations/errors.md:346
 #: src/foundations/traits-and-generics.md:362
 #: src/foundations/operators-and-conversions.md:324
 #: src/foundations/collections.md:19 src/foundations/collections.md:280
@@ -1032,7 +1032,7 @@ msgstr ""
 #: src/intro/setup.md:195 src/intro/syntax.md:177 src/foundations/cargo.md:371
 #: src/foundations/values-and-types.md:395 src/foundations/ownership.md:370
 #: src/foundations/borrowing.md:344 src/foundations/lifetimes.md:259
-#: src/foundations/enums-and-match.md:345 src/foundations/errors.md:304
+#: src/foundations/enums-and-match.md:345 src/foundations/errors.md:357
 #: src/foundations/traits-and-generics.md:374
 #: src/foundations/operators-and-conversions.md:337
 #: src/foundations/collections.md:292
@@ -1236,8 +1236,8 @@ msgstr ""
 msgid "\"level {level}\""
 msgstr ""
 
-#: src/intro/syntax.md:64 src/foundations/errors.md:174
-#: src/foundations/errors.md:177
+#: src/intro/syntax.md:64 src/foundations/errors.md:227
+#: src/foundations/errors.md:230
 msgid "\"error: {e}\""
 msgstr ""
 
@@ -2423,7 +2423,7 @@ msgstr ""
 msgid "`debug-assertions = false` (the default in release)"
 msgstr "`debug-assertions = false`（release 中的默认值）"
 
-#: src/foundations/cargo.md:233 src/foundations/errors.md:300
+#: src/foundations/cargo.md:233 src/foundations/errors.md:353
 #: src/appendix/cheat-sheet.md:80
 msgid "`-fno-exceptions`"
 msgstr ""
@@ -3076,8 +3076,8 @@ msgstr ""
 
 #: src/foundations/values-and-types.md:136
 #: src/foundations/values-and-types.md:137 src/foundations/borrowing.md:289
-#: src/foundations/enums-and-match.md:316 src/foundations/errors.md:171
-#: src/foundations/errors.md:282 src/foundations/errors.md:283
+#: src/foundations/enums-and-match.md:316 src/foundations/errors.md:224
+#: src/foundations/errors.md:335 src/foundations/errors.md:336
 #: src/foundations/traits-and-generics.md:142
 #: src/foundations/collections.md:96 src/foundations/collections.md:200
 #: src/systems/memory-and-performance.md:115 src/systems/unsafe.md:182
@@ -4868,7 +4868,7 @@ msgstr "// 还是规则 3。\n"
 msgid "// Rule 2: one input reference, so the output borrows from it.\n"
 msgstr "// 规则 2：只有一个输入引用，所以输出借用自它。\n"
 
-#: src/foundations/lifetimes.md:113 src/foundations/errors.md:156
+#: src/foundations/lifetimes.md:113 src/foundations/errors.md:209
 #: src/foundations/collections.md:209
 msgid "'/'"
 msgstr ""
@@ -5005,7 +5005,7 @@ msgstr ""
 "第二种含义在 API 中很常见。`std::thread::spawn` 要求 `F: "
 "'static`，因为新线程可能比调用者活得更久，所以闭包不能借用调用者的局部变量："
 
-#: src/foundations/lifetimes.md:209 src/foundations/errors.md:208
+#: src/foundations/lifetimes.md:209 src/foundations/errors.md:261
 msgid "\"e1m1\""
 msgstr ""
 
@@ -5809,8 +5809,8 @@ msgid ""
 " to define error types, and wrapping C error codes."
 msgstr "本章介绍这两种机制、让 `Result` 用起来很顺手的 `?` 运算符、如何定义错误类型，以及如何包装 C 的错误码。"
 
-#: src/foundations/errors.md:18 src/foundations/errors.md:296
-#: src/foundations/errors.md:298 src/appendix/cheat-sheet.md:75
+#: src/foundations/errors.md:18 src/foundations/errors.md:349
+#: src/foundations/errors.md:351 src/appendix/cheat-sheet.md:75
 msgid "`Result<T, E>`"
 msgstr ""
 
@@ -5838,6 +5838,155 @@ msgid "\"could not load shader: {e}\""
 msgstr ""
 
 #: src/foundations/errors.md:50
+msgid "How `Ok(...)` and `Err(...)` work"
+msgstr "`Ok(...)` 和 `Err(...)` 是怎么工作的"
+
+#: src/foundations/errors.md:52
+msgid ""
+"Nothing here is special syntax. `Ok` and `Err` are the two **variants** of "
+"the `Result` enum ([Enums and pattern matching](enums-and-match.md)), and "
+"the same name plays three roles depending on where it appears:"
+msgstr ""
+"这里没有任何特殊语法。`Ok` 和 `Err` 是 `Result` 枚举的两个**变体**（[枚举与模式匹配](enums-and-"
+"match.md)），同一个名字根据出现的位置扮演三种角色："
+
+#: src/foundations/errors.md:56
+msgid ""
+"**As an expression, it builds a value.** A variant that carries data can be "
+"called like a function: `Ok(42)` is a `Result<i32, _>` meaning \"success, "
+"holding 42\", and `Err(e)` means \"failure, holding `e`\". That is why a "
+"fallible function ends with `Ok(value)`: it returns the success case."
+msgstr ""
+"**在表达式中，它构造一个值。** 携带数据的变体可以像函数一样调用：`Ok(42)` 是一个 `Result<i32, _>`，表示\"成功，值为 "
+"42\"；`Err(e)` 表示\"失败，错误为 `e`\"。这就是可能失败的函数以 `Ok(value)` 结尾的原因：它返回的是成功的情况；"
+
+#: src/foundations/errors.md:60
+msgid ""
+"**In a pattern, it takes the value apart.** In `match`, `if let` or `let ..."
+" else`, `Ok(src)` means \"if this is the success case, bind what is inside "
+"to `src`\". The compiler checks that every variant is handled, so forgetting"
+" the `Err` arm is a compile error."
+msgstr ""
+"**在模式中，它把值拆开。** 在 `match`、`if let` 或 `let ... else` 中，`Ok(src)` "
+"的意思是\"如果这是成功的情况，就把里面的值绑定到 `src`\"。编译器会检查每个变体都被处理了，所以漏掉 `Err` 分支是编译错误；"
+
+#: src/foundations/errors.md:64
+msgid ""
+"**It needs no prefix.** The full names are `Result::Ok` and `Result::Err`, "
+"but the standard prelude imports `Ok`, `Err`, `Some` and `None` into every "
+"file, so you write them bare."
+msgstr ""
+"**它不需要前缀。** 完整的名字是 `Result::Ok` 和 `Result::Err`，但标准 prelude 会把 "
+"`Ok`、`Err`、`Some` 和 `None` 导入每个文件，所以你可以直接写。"
+
+#: src/foundations/errors.md:68
+msgid ""
+"`T` and `E` are generic parameters, filled in from the function's signature "
+"or inferred from use. In C++ terms, `Result<T, E>` is `std::expected<T, E>`,"
+" or a two-alternative `std::variant<T, E>` whose alternatives have names:"
+msgstr ""
+"`T` 和 `E` 是泛型参数，由函数签名确定，或者根据使用方式推断。用 C++ 的话说，`Result<T, E>` 就是 "
+"`std::expected<T, E>`，或者一个只有两种可能、并且每种可能都有名字的 `std::variant<T, E>`："
+
+#: src/foundations/errors.md:72
+msgid "C++ (`std::expected`)"
+msgstr ""
+
+#: src/foundations/errors.md:72
+msgid "Rust (`Result`)"
+msgstr "Rust（`Result`）"
+
+#: src/foundations/errors.md:74
+msgid "`return value;`"
+msgstr ""
+
+#: src/foundations/errors.md:74
+msgid "`return Ok(value);` (or `Ok(value)` as the last expression)"
+msgstr "`return Ok(value);`（或者把 `Ok(value)` 作为最后一个表达式）"
+
+#: src/foundations/errors.md:75
+msgid "`return std::unexpected(err);`"
+msgstr ""
+
+#: src/foundations/errors.md:75
+msgid "`return Err(err);`"
+msgstr ""
+
+#: src/foundations/errors.md:76
+msgid "`if (r) use(*r); else log(r.error());`"
+msgstr ""
+
+#: src/foundations/errors.md:76
+msgid "`match r { Ok(v) => use_it(v), Err(e) => log(e) }`"
+msgstr ""
+
+#: src/foundations/errors.md:77
+msgid "`r.value()` (throws if empty)"
+msgstr "`r.value()`（为空时抛出异常）"
+
+#: src/foundations/errors.md:77
+msgid "`r.unwrap()` (panics on `Err`)"
+msgstr "`r.unwrap()`（遇到 `Err` 时 panic）"
+
+#: src/foundations/errors.md:78
+msgid "`r.value_or(fallback)`"
+msgstr ""
+
+#: src/foundations/errors.md:78
+msgid "`r.unwrap_or(fallback)`"
+msgstr ""
+
+#: src/foundations/errors.md:83
+msgid "// pattern, then construct\n"
+msgstr "// 先匹配模式，再构造新值\n"
+
+#: src/foundations/errors.md:84
+msgid "\"{n} is above the maximum of 100\""
+msgstr ""
+
+#: src/foundations/errors.md:85
+msgid "\"not a number: {e}\""
+msgstr ""
+
+#: src/foundations/errors.md:90
+msgid "\"75\""
+msgstr ""
+
+#: src/foundations/errors.md:90
+msgid "\"250\""
+msgstr ""
+
+#: src/foundations/errors.md:90
+msgid "\"abc\""
+msgstr ""
+
+#: src/foundations/errors.md:91
+msgid "// a plain value of type Result\n"
+msgstr "// 一个类型为 Result 的普通值\n"
+
+#: src/foundations/errors.md:93
+msgid "\"{input}: hp = {hp}\""
+msgstr ""
+
+#: src/foundations/errors.md:94
+msgid "\"{input}: error: {msg}\""
+msgstr ""
+
+#: src/foundations/errors.md:97
+msgid ""
+"// Results are values: you can store them, compare them, put them in a "
+"Vec.\n"
+msgstr "// Result 是普通的值：可以存储、比较，也可以放进 Vec。\n"
+
+#: src/foundations/errors.md:98
+msgid "\"bad\""
+msgstr ""
+
+#: src/foundations/errors.md:99
+msgid "\"{all:?}\""
+msgstr ""
+
+#: src/foundations/errors.md:103
 msgid ""
 "The compiler also warns if you call a function returning `Result` and drop "
 "the result on the floor (`Result` is marked `#[must_use]`, the equivalent of"
@@ -5846,11 +5995,11 @@ msgstr ""
 "如果你调用一个返回 `Result` 的函数却把结果丢掉，编译器还会发出警告（`Result` 标记了 `#[must_use]`，相当于 "
 "`[[nodiscard]]`）。"
 
-#: src/foundations/errors.md:54
+#: src/foundations/errors.md:107
 msgid "The `?` operator"
 msgstr "`?` 运算符"
 
-#: src/foundations/errors.md:56
+#: src/foundations/errors.md:109
 msgid ""
 "Checking every call by hand would be as tedious as checking every "
 "`VkResult`. The `?` operator does it for you: on `Ok(v)` it evaluates to "
@@ -5860,15 +6009,15 @@ msgstr ""
 "手动检查每次调用就像检查每个 `VkResult` 一样乏味。`?` 运算符替你完成这件事：遇到 `Ok(v)` 时它求值为 `v`；遇到 "
 "`Err(e)` 时它带着这个错误**提前返回**当前函数，必要时把错误转换成函数的错误类型。"
 
-#: src/foundations/errors.md:64
+#: src/foundations/errors.md:117
 msgid "C++ with error codes"
 msgstr "使用错误码的 C++"
 
-#: src/foundations/errors.md:82
+#: src/foundations/errors.md:135
 msgid "Rust with `?`"
 msgstr "使用 `?` 的 Rust"
 
-#: src/foundations/errors.md:103
+#: src/foundations/errors.md:156
 msgid ""
 "The control flow is identical to the C++ version: every `?` is an early "
 "return. It is just visible as one character instead of three lines. Unlike "
@@ -5878,17 +6027,17 @@ msgstr ""
 "控制流与 C++ 版本完全相同：每个 `?` "
 "都是一次提前返回。只不过它显示为一个字符而不是三行代码。与异常不同，函数没有隐藏的出口；每个可能返回错误的地方都用 `?` 标了出来。"
 
-#: src/foundations/errors.md:108
+#: src/foundations/errors.md:161
 msgid ""
 "`?` also works on `Option` in functions that return `Option`, returning "
 "`None` early."
 msgstr "在返回 `Option` 的函数中，`?` 同样适用于 `Option`，会提前返回 `None`。"
 
-#: src/foundations/errors.md:111
+#: src/foundations/errors.md:164
 msgid "Defining error types"
 msgstr "定义错误类型"
 
-#: src/foundations/errors.md:113
+#: src/foundations/errors.md:166
 msgid ""
 "For a library, define an enum of the things that can go wrong, implement "
 "`Display` for messages and `std::error::Error` so it composes with other "
@@ -5898,63 +6047,63 @@ msgstr ""
 "对于库，定义一个列出各种可能出错情况的枚举，为它实现 `Display` 以提供消息，实现 `std::error::Error` "
 "以便与其他错误组合。为底层错误实现 `From`，`?` 就会自动转换它们："
 
-#: src/foundations/errors.md:132
+#: src/foundations/errors.md:185
 msgid "\"I/O error: {e}\""
 msgstr ""
 
-#: src/foundations/errors.md:133
+#: src/foundations/errors.md:186
 msgid "\"line {line}: {source}\""
 msgstr ""
 
-#: src/foundations/errors.md:134
+#: src/foundations/errors.md:187
 msgid "\"line {line}: unknown `{text}`\""
 msgstr ""
 
-#: src/foundations/errors.md:146
+#: src/foundations/errors.md:199
 msgid "/// Count faces in a tiny subset of the OBJ format.\n"
 msgstr "/// 统计 OBJ 格式中一个极小子集的面数。\n"
 
-#: src/foundations/errors.md:153
+#: src/foundations/errors.md:206
 msgid "\"#\""
 msgstr ""
 
-#: src/foundations/errors.md:153
+#: src/foundations/errors.md:206
 msgid "\"v\""
 msgstr ""
 
-#: src/foundations/errors.md:153
+#: src/foundations/errors.md:206
 msgid "\"vn\""
 msgstr ""
 
-#: src/foundations/errors.md:154
+#: src/foundations/errors.md:207
 msgid "\"f\""
 msgstr ""
 
-#: src/foundations/errors.md:156
+#: src/foundations/errors.md:209
 msgid "\"\""
 msgstr ""
 
-#: src/foundations/errors.md:171
+#: src/foundations/errors.md:224
 msgid "\"v 0 0 0\\nv 1 0 0\\nv 0 1 0\\nf 1 2 3\\n\""
 msgstr ""
 
-#: src/foundations/errors.md:172
+#: src/foundations/errors.md:225
 msgid "\"v 0 0 0\\nf 1 x 3\\n\""
 msgstr ""
 
-#: src/foundations/errors.md:173
+#: src/foundations/errors.md:226
 msgid "\"{n} faces\""
 msgstr ""
 
-#: src/foundations/errors.md:176
+#: src/foundations/errors.md:229
 msgid "\"usemtl brick\\n\""
 msgstr ""
 
-#: src/foundations/errors.md:182
+#: src/foundations/errors.md:235
 msgid "That is a lot of boilerplate, and in practice two crates remove it:"
 msgstr "这些样板代码不少，实践中有两个 crate 可以省掉它们："
 
-#: src/foundations/errors.md:184
+#: src/foundations/errors.md:237
 msgid ""
 "**`thiserror`** for libraries: `#[derive(thiserror::Error)]` with "
 "`#[error(\"line {line}: {source}\")]` attributes generates the `Display`, "
@@ -5963,7 +6112,7 @@ msgstr ""
 "**`thiserror`** 用于库：`#[derive(thiserror::Error)]` 加上 `#[error(\"line {line}:"
 " {source}\")]` 属性，就会生成上面的 `Display`、`Error` 和 `From` 实现。"
 
-#: src/foundations/errors.md:187
+#: src/foundations/errors.md:240
 msgid ""
 "**`anyhow`** for applications: `anyhow::Result<T>` holds _any_ error, and "
 "`.context(\"loading level\")?` adds a human-readable layer, so the final "
@@ -5975,37 +6124,37 @@ msgstr ""
 "会添加一层人类可读的说明，于是最终的消息读起来像一串原因（“loading level: reading mesh.obj: file not "
 "found”）。"
 
-#: src/foundations/errors.md:192
+#: src/foundations/errors.md:245
 msgid ""
 "A good rule: libraries return precise error enums so callers can react to "
 "specific cases; applications collect errors with `anyhow` and report them."
 msgstr "一条好规则：库返回精确的错误枚举，让调用者能对具体情况作出反应；应用程序用 `anyhow` 汇总错误并报告。"
 
-#: src/foundations/errors.md:196
+#: src/foundations/errors.md:249
 msgid "// An application using anyhow (not runnable here: it needs the crate)\n"
 msgstr "// 一个使用 anyhow 的应用程序（这里不能运行：它需要这个 crate）\n"
 
-#: src/foundations/errors.md:200
+#: src/foundations/errors.md:253
 msgid "\"levels/{name}.ron\""
 msgstr ""
 
-#: src/foundations/errors.md:202
+#: src/foundations/errors.md:255
 msgid "\"reading {path}\""
 msgstr ""
 
-#: src/foundations/errors.md:203
+#: src/foundations/errors.md:256
 msgid "\"parsing level\""
 msgstr ""
 
-#: src/foundations/errors.md:208
+#: src/foundations/errors.md:261
 msgid "// main can return Result: errors are printed\n"
 msgstr "// main 可以返回 Result：错误会被打印出来\n"
 
-#: src/foundations/errors.md:213
+#: src/foundations/errors.md:266
 msgid "Panics"
 msgstr "Panic"
 
-#: src/foundations/errors.md:215
+#: src/foundations/errors.md:268
 msgid ""
 "A **panic** means \"this is a bug; stop\". `panic!(\"...\")`, "
 "`unreachable!()`, `assert!(cond)`, an out-of-bounds index, integer overflow "
@@ -6015,7 +6164,7 @@ msgstr ""
 "bug；停下”。`panic!(\"...\")`、`unreachable!()`、`assert!(cond)`、越界索引、调试构建中的整数溢出，以及对"
 " `None`/`Err` 调用 `unwrap()`，都会引发 panic。"
 
-#: src/foundations/errors.md:219
+#: src/foundations/errors.md:272
 msgid ""
 "By default a panic **unwinds** the stack of the current thread, running "
 "`Drop` for everything on the way, like an exception that nobody catches. If "
@@ -6029,7 +6178,7 @@ msgstr ""
 "的顶层，程序会带着错误信息退出。如果它发生在另一个线程上，那个线程会终止，`join()` 会返回一个错误。如果在构建配置中设置了 `panic = "
 "\"abort\"`，panic 会立即中止进程，这也是大多数游戏构建想要的：二进制文件更小，没有展开表，而且崩溃转储正好停在出错的位置。"
 
-#: src/foundations/errors.md:230
+#: src/foundations/errors.md:283
 msgid ""
 "A panic is not an exception to be caught and recovered from. Do not use it "
 "for expected failures, and do not structure code around catching it "
@@ -6040,15 +6189,15 @@ msgstr ""
 "不是一个可以被捕获并从中恢复的异常。不要把它用于可预期的失败，也不要围绕捕获它来组织代码（`std::panic::catch_unwind` 是为 "
 "FFI 边界和线程池准备的，不是用于控制流的）。可预期的失败用 `Result`；panic 就是 `assert`。"
 
-#: src/foundations/errors.md:237
+#: src/foundations/errors.md:290
 msgid "When is `unwrap()` acceptable?"
 msgstr "什么时候可以用 `unwrap()`？"
 
-#: src/foundations/errors.md:239
+#: src/foundations/errors.md:292
 msgid "In tests, examples and prototypes."
 msgstr "在测试、示例和原型中。"
 
-#: src/foundations/errors.md:240
+#: src/foundations/errors.md:293
 msgid ""
 "When the invariant is guaranteed by your own code just above, and an error "
 "would be a bug. Prefer `expect(\"why this cannot fail\")`, which documents "
@@ -6057,31 +6206,31 @@ msgstr ""
 "当不变量由你自己紧挨着的上方代码保证、出错就意味着 bug 时。优先使用 `expect(\"why this cannot "
 "fail\")`，它记录了原因，并会出现在 panic 信息中。"
 
-#: src/foundations/errors.md:243
+#: src/foundations/errors.md:296
 msgid ""
 "At startup, for resources the program truly cannot run without, although "
 "returning an error from `main` gives a nicer message."
 msgstr "在启动时，对于程序离开它就确实无法运行的资源；不过从 `main` 返回一个错误能给出更友好的信息。"
 
-#: src/foundations/errors.md:246
+#: src/foundations/errors.md:299
 msgid "Wrapping C error codes"
 msgstr "包装 C 错误码"
 
-#: src/foundations/errors.md:248
+#: src/foundations/errors.md:301
 msgid ""
 "C APIs report errors as integers. Convert them at the boundary, once, so the"
 " rest of the code works with `Result`:"
 msgstr "C API 用整数报告错误。在边界处一次性地转换它们，让其余代码都使用 `Result`："
 
-#: src/foundations/errors.md:252
+#: src/foundations/errors.md:305
 msgid "// Pretend these come from a C header via bindgen.\n"
 msgstr "// 假设这些通过 bindgen 来自某个 C 头文件。\n"
 
-#: src/foundations/errors.md:276
+#: src/foundations/errors.md:329
 msgid "// the \"C call\"\n"
 msgstr "// “C 调用”\n"
 
-#: src/foundations/errors.md:287
+#: src/foundations/errors.md:340
 msgid ""
 "The `ash` crate does this for all of Vulkan: every function returns "
 "`VkResult<T>`, a `Result<T, vk::Result>`. See the [Vulkan "
@@ -6090,65 +6239,65 @@ msgstr ""
 "`ash` crate 为整个 Vulkan 做了这件事：每个函数都返回 `VkResult<T>`，即 `Result<T, "
 "vk::Result>`。参见 [Vulkan 一章](../engine/vulkan.md)。"
 
-#: src/foundations/errors.md:295
+#: src/foundations/errors.md:348
 msgid "Exceptions for recoverable errors"
 msgstr "用异常处理可恢复的错误"
 
-#: src/foundations/errors.md:295 src/appendix/cheat-sheet.md:74
+#: src/foundations/errors.md:348 src/appendix/cheat-sheet.md:74
 msgid "`Result<T, E>` and `?`"
 msgstr "`Result<T, E>` 与 `?`"
 
-#: src/foundations/errors.md:296
+#: src/foundations/errors.md:349
 msgid "Error codes + out parameters"
 msgstr "错误码 + 输出参数"
 
-#: src/foundations/errors.md:297 src/appendix/cheat-sheet.md:76
+#: src/foundations/errors.md:350 src/appendix/cheat-sheet.md:76
 msgid "`[[nodiscard]]`"
 msgstr ""
 
-#: src/foundations/errors.md:297
+#: src/foundations/errors.md:350
 msgid "`#[must_use]` (on `Result` by default)"
 msgstr "`#[must_use]`（`Result` 默认带有）"
 
-#: src/foundations/errors.md:298
+#: src/foundations/errors.md:351
 msgid "`std::expected<T, E>` (C++23)"
 msgstr ""
 
-#: src/foundations/errors.md:299 src/appendix/cheat-sheet.md:77
+#: src/foundations/errors.md:352 src/appendix/cheat-sheet.md:77
 msgid "`assert`, `std::terminate`"
 msgstr ""
 
-#: src/foundations/errors.md:299
+#: src/foundations/errors.md:352
 msgid "`assert!`, `panic!`, `unwrap()`, `expect()`"
 msgstr ""
 
-#: src/foundations/errors.md:300 src/appendix/cheat-sheet.md:80
+#: src/foundations/errors.md:353 src/appendix/cheat-sheet.md:80
 msgid "`panic = \"abort\"`"
 msgstr ""
 
-#: src/foundations/errors.md:301
+#: src/foundations/errors.md:354
 msgid "Custom exception hierarchy"
 msgstr "自定义异常层次结构"
 
-#: src/foundations/errors.md:301
+#: src/foundations/errors.md:354
 msgid "Error enum + `std::error::Error` (`thiserror`)"
 msgstr "错误枚举 + `std::error::Error`（`thiserror`）"
 
-#: src/foundations/errors.md:302
+#: src/foundations/errors.md:355
 msgid "Catch-all error reporting"
 msgstr "兜底的错误报告"
 
-#: src/foundations/errors.md:302
+#: src/foundations/errors.md:355
 msgid "`anyhow::Error` with `.context()`"
 msgstr "带 `.context()` 的 `anyhow::Error`"
 
-#: src/foundations/errors.md:306
+#: src/foundations/errors.md:359
 msgid ""
 "Change `count_faces` to also accept `vt` lines, and to reject faces with "
 "fewer than three vertices with a new `ObjError` variant."
 msgstr "修改 `count_faces`，让它也接受 `vt` 行，并用一个新的 `ObjError` 变体拒绝顶点少于三个的面。"
 
-#: src/foundations/errors.md:308
+#: src/foundations/errors.md:361
 msgid ""
 "Write `fn parse_resolution(s: &str) -> Result<(u32, u32), String>` for input"
 " like `\"1920x1080\"`, using `?` and `map_err`."
@@ -6156,7 +6305,7 @@ msgstr ""
 "为 `\"1920x1080\"` 这样的输入编写 `fn parse_resolution(s: &str) -> Result<(u32, "
 "u32), String>`，使用 `?` 和 `map_err`。"
 
-#: src/foundations/errors.md:310
+#: src/foundations/errors.md:363
 msgid ""
 "Make `main` return `Result<(), Box<dyn std::error::Error>>` and use `?` on a"
 " file read. What gets printed when the file does not exist?"
