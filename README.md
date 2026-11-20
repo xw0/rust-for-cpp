@@ -9,11 +9,10 @@ diagrams, and runs its examples in the browser.
 
 ## Status
 
-Early draft. The full outline is in place; three sample chapters are written:
-
-- Ownership and moves
-- Borrowing and references
-- Handles and arenas instead of pointers
+Complete in English and Chinese: three parts (the language, systems
+programming, and engine and graphics work, including OpenGL, Vulkan, wgpu and
+OpenXR) plus a cheat sheet. Every runnable example is compiled and tested on
+each build. Feedback and corrections are welcome as issues or pull requests.
 
 ## Repository layout
 

@@ -51,14 +51,14 @@ Rust borrows an idea from modern C++, this book explains the idea from scratch.
 - **Part II: Systems programming**: concurrency, memory layout and
   performance, `unsafe`, FFI with C and C++, macros, testing and tooling.
 - **Part III: Graphics and engine programming**: handles and arenas, ECS,
-  math and SIMD, OpenGL, Vulkan, wgpu, the game loop, assets and build
+  math and SIMD, OpenGL, Vulkan, wgpu, OpenXR, the game loop, assets and build
   scripts, hot reloading, and a case study.
 
 ## Status
 
-All chapters are written in English, and every runnable example is compiled
-and tested on each build. The Chinese translation is in progress: chapter
-titles and the interface are translated, and the chapter text follows.
+The book is complete in English and Chinese. English is the source text, and
+the Chinese edition is translated from it; use the EN · 中 switch at the top of
+the page. Every runnable example is compiled and tested on each build.
 Corrections and suggestions are welcome; see
 [Contributing](appendix/contributing.md).
 
