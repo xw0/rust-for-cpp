@@ -41,6 +41,7 @@
 - [OpenGL from Rust](engine/opengl.md)
 - [Vulkan with ash](engine/vulkan.md)
 - [Portable graphics with wgpu](engine/wgpu.md)
+- [VR and AR with OpenXR](engine/openxr.md)
 - [Windows, input and the game loop](engine/game-loop.md)
 - [Assets, shaders and build scripts](engine/assets-and-build.md)
 - [Hot reloading and plugins](engine/hot-reload-and-plugins.md)

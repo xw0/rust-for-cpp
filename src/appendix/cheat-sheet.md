@@ -146,6 +146,7 @@ chapter is worth reading before you rely on the table.
 | `vulkan.h` / volk | ash | [Vulkan](../engine/vulkan.md) |
 | VMA | gpu-allocator, vk-mem | [Vulkan](../engine/vulkan.md) |
 | Dawn, bgfx, sokol_gfx | wgpu | [wgpu](../engine/wgpu.md) |
+| `openxr.h`, OpenXR-Hpp | `openxr-sys`, `openxr` | [OpenXR](../engine/openxr.md) |
 | glslc / dxc | naga, shaderc, from `build.rs` | [wgpu](../engine/wgpu.md) |
 | EnTT, flecs | hecs, bevy_ecs | [ECS](../engine/ecs.md) |
 | Singletons | Context passed as a parameter; ECS resources | [Game loop](../engine/game-loop.md) |
