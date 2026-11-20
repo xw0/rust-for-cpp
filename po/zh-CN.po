@@ -1339,7 +1339,8 @@ msgid ""
 "\"this library was built with a different `_ITERATOR_DEBUG_LEVEL`\", no "
 "runtime library conflicts, no missing `.lib` for your compiler version."
 msgstr ""
-"Cargo 用*你的*编译器和*你的*编译选项从源码下载、构建并链接依赖。不存在不匹配的预编译二进制：不会有“这个库是用不同的 "
+"Cargo "
+"用<em>你的</em>编译器和<em>你的</em>编译选项从源码下载、构建并链接依赖。不存在不匹配的预编译二进制：不会有“这个库是用不同的 "
 "`_ITERATOR_DEBUG_LEVEL` 构建的”，不会有运行时库冲突，也不会缺少对应你编译器版本的 `.lib`。"
 
 #: src/foundations/cargo.md:145
@@ -1352,7 +1353,7 @@ msgid ""
 "linker may or may not catch."
 msgstr ""
 "如果你的两个依赖需要某个 crate 的不兼容版本（比如 `rand` 0.8 和 `rand` 0.9），Cargo "
-"会把*两个版本*都构建并链接进来。符号名经过修饰，带有 crate "
+"会把<em>两个版本</em>都构建并链接进来。符号名经过修饰，带有 crate "
 "身份的哈希值，所以不会冲突。两个版本中的类型是不同的类型，你不会意外地把一个传给另一个。在 C++ 中，同样的情况就是违反 "
 "ODR，链接器可能发现也可能发现不了。"
 
@@ -1421,8 +1422,8 @@ msgid ""
 "compiles that dependency once with the union of both."
 msgstr ""
 "`cargo build --features hot-reload` 启用一个 feature，`--no-default-features` "
-"关闭默认 feature。feature 应当是*可叠加的*：启用一个 feature 不能破坏不使用它的代码，因为如果构建中的两个 crate "
-"启用了某个共同依赖的不同 feature，Cargo 只会用两者的并集把这个依赖编译一次。"
+"关闭默认 feature。feature 应当是<em>可叠加的</em>：启用一个 feature 不能破坏不使用它的代码，因为如果构建中的两个 "
+"crate 启用了某个共同依赖的不同 feature，Cargo 只会用两者的并集把这个依赖编译一次。"
 
 #: src/foundations/cargo.md:202
 msgid "Build profiles"
@@ -1626,8 +1627,8 @@ msgid ""
 "translation unit that uses them. Non-generic functions are compiled once, in"
 " their own crate, unless marked `#[inline]`."
 msgstr ""
-"泛型函数会被编译进*使用*它的 crate，并填入具体类型，这和模板在每个使用它的翻译单元中实例化完全一样。非泛型函数只在它所在的 crate "
-"中编译一次，除非标记了 `#[inline]`。"
+"泛型函数会被编译进<em>使用</em>它的 crate，并填入具体类型，这和模板在每个使用它的翻译单元中实例化完全一样。非泛型函数只在它所在的 "
+"crate 中编译一次，除非标记了 `#[inline]`。"
 
 #: src/foundations/cargo.md:266
 msgid "build.rs: the custom command"
@@ -3139,8 +3140,8 @@ msgid ""
 "many materials, a parent and child that point at each other. Rust has three "
 "answers, and you will meet all of them:"
 msgstr ""
-"所有权是一棵树：每个值只有一个所有者。而引擎中到处都是*不*是树的东西：被许多实体使用的网格、被许多材质引用的纹理、互相指向的父节点和子节点。Rust "
-"有三种应对方式，你都会遇到："
+"所有权是一棵树：每个值只有一个所有者。而引擎中到处都是<em>不</em>是树的东西：被许多实体使用的网格、被许多材质引用的纹理、互相指向的父节点和子节点。Rust"
+" 有三种应对方式，你都会遇到："
 
 #: src/foundations/ownership.md:314
 msgid "**Borrowing** for short-lived access ([next chapter](borrowing.md))."
@@ -3215,7 +3216,7 @@ msgid ""
 msgstr ""
 "`mem::take`（适用于实现了 `Default` 的类型）、`mem::replace` 和 `mem::swap` "
 "是“已被移出”状态的显式版本。对于可选字段，`Option::take()` 做的是同样的事，并留下 `None`。与 C++ "
-"的区别在于，留下的值是*你*选的，并且写在源码里。"
+"的区别在于，留下的值是<em>你</em>选的，并且写在源码里。"
 
 #: src/foundations/ownership.md:363
 msgid "RAII is a convention"
@@ -3350,7 +3351,7 @@ msgstr "`&T` 是**共享引用**：只读访问，类似 `const T&`。同一时�
 msgid ""
 "`&mut T` is a **mutable reference**: read-write access, like `T&`. While it "
 "exists, it is the _only_ way to reach the value."
-msgstr "`&mut T` 是**可变引用**：读写访问，类似 `T&`。在它存在期间，它是访问该值的*唯一*途径。"
+msgstr "`&mut T` 是**可变引用**：读写访问，类似 `T&`。在它存在期间，它是访问该值的<em>唯一</em>途径。"
 
 #: src/foundations/borrowing.md:64
 msgid ""
@@ -3388,7 +3389,7 @@ msgid ""
 "mutable borrow is in use, the owner cannot even be _read_ except through it."
 msgstr ""
 "当共享借用正在使用时，所有者本身也被冻结，不能写入：在 `a` 和 `b` 用完之前，`scores` "
-"本身不能被修改。当可变借用正在使用时，除了通过它，所有者甚至连*读*都不行。"
+"本身不能被修改。当可变借用正在使用时，除了通过它，所有者甚至连<em>读</em>都不行。"
 
 #: src/foundations/borrowing.md:84
 msgid ""
@@ -3414,7 +3415,7 @@ msgid ""
 "involved: where the borrow starts, where the conflicting mutation is, and "
 "where the borrow is used later."
 msgstr ""
-"C++ 程序是未定义行为，而且通常*看起来*能正常工作。Rust "
+"C++ 程序是未定义行为，而且通常<em>看起来</em>能正常工作。Rust "
 "程序无法编译，错误信息会指出涉及的全部三行：借用从哪里开始、冲突的修改在哪里，以及借用在哪里被再次使用。"
 
 #: src/foundations/borrowing.md:98
@@ -3662,7 +3663,7 @@ msgid ""
 "[`Rc`/`Arc`](smart-pointers.md)."
 msgstr ""
 "在 `Missile` 中存一个 `&Enemy` "
-"来记住它的目标，在几行代码里能行，之后就会失败，因为这个借用会在导弹存在的整个期间冻结整个敌人列表。引用是用于*临时*访问的。对象之间长期存在的关系，请使用[指向"
+"来记住它的目标，在几行代码里能行，之后就会失败，因为这个借用会在导弹存在的整个期间冻结整个敌人列表。引用是用于<em>临时</em>访问的。对象之间长期存在的关系，请使用[指向"
 " arena 的句柄](../engine/handles-and-arenas.md)，或使用 [`Rc`/`Arc`](smart-"
 "pointers.md) 共享所有权。"
 
@@ -3794,7 +3795,7 @@ msgid ""
 "all of these out at compile time, and **lifetimes** are the notation for how"
 " it does so across function boundaries."
 msgstr ""
-"上一章介绍了编译器如何追踪每次借用被使用多久。本章讲的是证明的另一半：确保*所有者*至少活得那么久。在 C++ "
+"上一章介绍了编译器如何追踪每次借用被使用多久。本章讲的是证明的另一半：确保<em>所有者</em>至少活得那么久。在 C++ "
 "中，这就是悬垂指针问题：返回指向局部变量的指针、持有指向临时对象的 `string_view`、保存一个对象的引用而该对象随后被销毁。Rust "
 "在编译期排除了所有这些情况，而**生命周期**就是它跨越函数边界做到这一点所用的记法。"
 
@@ -3872,7 +3873,7 @@ msgid ""
 "The caller needs to know: the returned reference points into _which_ "
 "argument? It decides how long the caller must keep each argument alive. You "
 "answer with a **lifetime parameter**:"
-msgstr "调用者需要知道：返回的引用指向*哪个*参数？这决定了调用者必须让每个参数存活多久。你用一个**生命周期参数**来回答："
+msgstr "调用者需要知道：返回的引用指向<em>哪个</em>参数？这决定了调用者必须让每个参数存活多久。你用一个**生命周期参数**来回答："
 
 #: src/foundations/lifetimes.md:60
 msgid "\"Vulkan\""
@@ -4120,7 +4121,7 @@ msgid ""
 "borrow."
 msgstr ""
 "去掉 `move`，你会得到一个错误，解释说这个闭包可能比借用 `level_name` "
-"的函数活得更久。[并发一章](../systems/concurrency.md)介绍了作用域线程，它们*可以*借用。"
+"的函数活得更久。[并发一章](../systems/concurrency.md)介绍了作用域线程，它们<em>可以</em>借用。"
 
 #: src/foundations/lifetimes.md:226
 msgid ""
@@ -4132,7 +4133,7 @@ msgid ""
 "removes a lifetime from every caller."
 msgstr ""
 "当编译器说一个值“活得不够久”时，C++ "
-"的条件反射是让它活得更久：把它分配到堆上、把它变成静态的。通常更好的修复是让*借用*更短（更早地使用引用、复制你需要的那个小值，或者返回 "
+"的条件反射是让它活得更久：把它分配到堆上、把它变成静态的。通常更好的修复是让<em>借用</em>更短（更早地使用引用、复制你需要的那个小值，或者返回 "
 "`String` 这样拥有所有权的数据而不是 `&str`）。返回拥有所有权的数据要付出一次分配的代价，换来的是每个调用者都少了一个生命周期。"
 
 #: src/foundations/lifetimes.md:235
@@ -5083,9 +5084,10 @@ msgid ""
 "message reads like a stack of reasons (\"loading level: reading mesh.obj: "
 "file not found\")."
 msgstr ""
-"**`anyhow`** 用于应用程序：`anyhow::Result<T>` 可以容纳*任何*错误，`.context(\"loading "
-"level\")?` 会添加一层人类可读的说明，于是最终的消息读起来像一串原因（“loading level: reading mesh.obj: "
-"file not found”）。"
+"**`anyhow`** 用于应用程序：`anyhow::Result<T>` "
+"可以容纳<em>任何</em>错误，`.context(\"loading level\")?` "
+"会添加一层人类可读的说明，于是最终的消息读起来像一串原因（“loading level: reading mesh.obj: file not "
+"found”）。"
 
 #: src/foundations/errors.md:192
 msgid ""
@@ -5461,7 +5463,7 @@ msgid ""
 "Rust that is a **trait object**, `dyn Shape`, always used behind a pointer: "
 "`&dyn Shape`, `Box<dyn Shape>`, `Arc<dyn Shape>`."
 msgstr ""
-"要在一个集合中保存*不同的*形状，你需要动态分派。在 Rust 中这就是 **trait 对象** `dyn "
+"要在一个集合中保存<em>不同的</em>形状，你需要动态分派。在 Rust 中这就是 **trait 对象** `dyn "
 "Shape`，它总是放在指针后面使用：`&dyn Shape`、`Box<dyn Shape>`、`Arc<dyn Shape>`。"
 
 #: src/foundations/traits-and-generics.md:200
@@ -5717,7 +5719,7 @@ msgid ""
 " data."
 msgstr ""
 "不要试图用 trait 和 `Deref` 模拟类层次结构。如果你发现自己在设计 `trait Entity`、`trait Actor: "
-"Entity`、`trait Pawn: Actor`，请退一步。问问自己需要抽象的是哪些*行为*（更新、渲染、序列化），把它们做成小的 "
+"Entity`、`trait Pawn: Actor`，请退一步。问问自己需要抽象的是哪些<em>行为</em>（更新、渲染、序列化），把它们做成小的 "
 "trait，然后让具体类型去组合数据。"
 
 #: src/foundations/traits-and-generics.md:348
@@ -5982,7 +5984,7 @@ msgid ""
 "The copy-constructor bugs (slicing, accidental deep copies in a range-for, "
 "copying a `std::vector` into a lambda) do not have a Rust counterpart."
 msgstr ""
-"所以 Rust 的 `Copy` 类型就是 C++ 所说的*可平凡复制*类型，你无法写出像 `std::string` "
+"所以 Rust 的 `Copy` 类型就是 C++ 所说的<em>可平凡复制</em>类型，你无法写出像 `std::string` "
 "那样带有昂贵隐式拷贝的类型。拷贝构造函数带来的 bug（对象切片、range-for 中意外的深拷贝、把 `std::vector` 拷贝进 "
 "lambda）在 Rust 中都没有对应物。"
 
@@ -6259,7 +6261,8 @@ msgstr "// 切片的方法\n"
 msgid ""
 "Note what is _not_ implemented: `DerefMut`. Users can read the slice but "
 "cannot get a `&mut [i32]` and break the sorted invariant."
-msgstr "注意*没有*实现的东西：`DerefMut`。使用者可以读取切片，但拿不到 `&mut [i32]`，也就无法破坏有序这个不变量。"
+msgstr ""
+"注意<em>没有</em>实现的东西：`DerefMut`。使用者可以读取切片，但拿不到 `&mut [i32]`，也就无法破坏有序这个不变量。"
 
 #: src/foundations/operators-and-conversions.md:280
 msgid ""
@@ -7466,7 +7469,7 @@ msgid ""
 "`zip`, `chunks_exact`) is faster."
 msgstr ""
 "两者生成的是同样的向量化循环。在索引版本中，编译器根据循环边界证明了 `i < "
-"xs.len()`，并去掉了边界检查；在迭代器版本中，根本就没有需要去掉的检查。当编译器*无法*证明索引在范围内时（比如 `xs[i + "
+"xs.len()`，并去掉了边界检查；在迭代器版本中，根本就没有需要去掉的检查。当编译器<em>无法</em>证明索引在范围内时（比如 `xs[i + "
 "offset]`），索引版本会保留检查，而迭代器版本（`xs.iter().skip(offset)`、`zip`、`chunks_exact`）会更快。"
 
 #: src/foundations/closures-and-iterators.md:248
@@ -7806,8 +7809,9 @@ msgid ""
 "list above. C++ has `mutable` for the first case and nothing in particular "
 "for the rest."
 msgstr ""
-"借用规则说：多个 `&T` *或* 一个 `&mut T`。有时你需要修改某个只能通过共享引用访问到的东西：一个本来不可变的对象内部的缓存、`Rc` "
-"中的一个计数器、上面的子节点列表。C++ 对第一种情况有 `mutable`，对其余情况则没有特别的办法。"
+"借用规则说：多个 `&T` <em>或</em> 一个 `&mut "
+"T`。有时你需要修改某个只能通过共享引用访问到的东西：一个本来不可变的对象内部的缓存、`Rc` 中的一个计数器、上面的子节点列表。C++ 对第一种情况有"
+" `mutable`，对其余情况则没有特别的办法。"
 
 #: src/foundations/smart-pointers.md:168
 msgid ""
@@ -8324,7 +8328,7 @@ msgstr "**ODR**：每个条目只有一个定义，位于一个模块中。"
 
 #: src/foundations/modules.md:140
 msgid "**Header/source pairs**: a module's public items _are_ its interface."
-msgstr "**头文件/源文件对**：模块的公开条目*就是*它的接口。"
+msgstr "**头文件/源文件对**：模块的公开条目<em>就是</em>它的接口。"
 
 #: src/foundations/modules.md:141
 msgid ""
@@ -8419,7 +8423,7 @@ msgid ""
 "build. Where possible, have generic functions do minimal work and call a "
 "non-generic inner function."
 msgstr ""
-"泛型代码在*使用*它的 crate 中编译，就像模板一样。底层 crate 中大量的泛型代码会让每个依赖它的 crate "
+"泛型代码在<em>使用</em>它的 crate 中编译，就像模板一样。底层 crate 中大量的泛型代码会让每个依赖它的 crate "
 "构建得更慢。在可能的情况下，让泛型函数只做最少的工作，再调用一个非泛型的内部函数。"
 
 #: src/foundations/modules.md:196
@@ -8723,7 +8727,7 @@ msgid ""
 "In C++, a mutex sits _next to_ the data it protects, and a comment says "
 "which fields it guards. Nothing stops code from touching the data without "
 "the lock."
-msgstr "在 C++ 中，互斥锁放在它所保护的数据*旁边*，用一条注释说明它保护哪些字段。没有什么能阻止代码不加锁就访问数据。"
+msgstr "在 C++ 中，互斥锁放在它所保护的数据<em>旁边</em>，用一条注释说明它保护哪些字段。没有什么能阻止代码不加锁就访问数据。"
 
 #: src/systems/concurrency.md:130
 msgid "// protects frames, dropped\n"
@@ -9759,8 +9763,9 @@ msgid ""
 "Rust has no type-based aliasing rule at all (you may freely cast a `*mut "
 "f32` to `*mut u32`), but it has a much stronger rule about references:"
 msgstr ""
-"最后一条是最大的区别。在 C++ 中，主要的别名规则是*严格别名*（strict aliasing）：指向不同类型的指针被假定不会重叠。Rust "
-"完全没有基于类型的别名规则（你可以随意把 `*mut f32` 转换成 `*mut u32`），但它对引用有一条强得多的规则："
+"最后一条是最大的区别。在 C++ 中，主要的别名规则是<em>严格别名</em>（strict "
+"aliasing）：指向不同类型的指针被假定不会重叠。Rust 完全没有基于类型的别名规则（你可以随意把 `*mut f32` 转换成 `*mut "
+"u32`），但它对引用有一条强得多的规则："
 
 #: src/systems/unsafe.md:94
 msgid ""
@@ -10012,8 +10017,8 @@ msgid ""
 " read first and the element's `Drop` panicked later? (Hint: think about what"
 " `Drop for StackVec` would then do.)"
 msgstr ""
-"`StackVec::pop` 在读取*之前*递减 `len`。如果它先读取，而元素的 `Drop` 之后发生了 panic，会出什么问题？（提示：想想"
-" `Drop for StackVec` 那时会做什么。）"
+"`StackVec::pop` 在读取<em>之前</em>递减 `len`。如果它先读取，而元素的 `Drop` 之后发生了 "
+"panic，会出什么问题？（提示：想想 `Drop for StackVec` 那时会做什么。）"
 
 #: src/systems/ffi.md:3
 msgid ""
@@ -11528,7 +11533,7 @@ msgid ""
 "because the memory is not freed: it was reused, legitimately. A generation "
 "check turns that into an `Option` you are forced to handle."
 msgstr ""
-"用普通指针或索引时，通过过期引用读取会得到*一个*看起来有效的对象，只不过是错的那个。没有任何 sanitizer "
+"用普通指针或索引时，通过过期引用读取会得到<em>一个</em>看起来有效的对象，只不过是错的那个。没有任何 sanitizer "
 "能发现它，因为这块内存并没有被释放：它被合法地重用了。分代检查则把它变成了一个你必须处理的 `Option`。"
 
 #: src/engine/handles-and-arenas.md:44
@@ -11660,7 +11665,7 @@ msgid ""
 "reallocate the `Vec`. The borrow checker still protects you from the C++ "
 "invalidation bug, at the moment of access."
 msgstr ""
-"`get_mut` 返回一个短期的 `&mut Enemy`。*这个*引用照常受到检查：你不能在调用 `enemies.insert` "
+"`get_mut` 返回一个短期的 `&mut Enemy`。<em>这个</em>引用照常受到检查：你不能在调用 `enemies.insert` "
 "期间一直持有它，因为那可能会重新分配 `Vec`。在访问的那一刻，借用检查器依然保护你免受 C++ 失效 bug 的困扰。"
 
 #: src/engine/handles-and-arenas.md:213
@@ -13892,7 +13897,7 @@ msgid ""
 "so the resource's `Drop` runs at the right time automatically. wgpu does "
 "exactly this internally."
 msgstr ""
-"这里的简化在于，缓冲区记录的是它被*创建*的帧；真正的渲染器记录的是它最后被*使用*的帧，通常在命令缓冲区引用它时递增一个计数器。有些引擎改用引用计数：命令缓冲区对它使用的每个资源持有一个"
+"这里的简化在于，缓冲区记录的是它被<em>创建</em>的帧；真正的渲染器记录的是它最后被<em>使用</em>的帧，通常在命令缓冲区引用它时递增一个计数器。有些引擎改用引用计数：命令缓冲区对它使用的每个资源持有一个"
 " `Arc`，并在其 fence 发出信号时丢弃这些引用，这样资源的 `Drop` 就会自动在正确的时间运行。wgpu 内部正是这样做的。"
 
 #: src/engine/vulkan.md:348
@@ -14487,8 +14492,8 @@ msgid ""
 " **safe wgpu code cannot cause UB on the GPU**, even with wrong arguments."
 msgstr ""
 "wgpu "
-"在编译时*没有*捕获的问题（错误的缓冲区用途标志、与管线布局不匹配的绑定组、越界绘制），会在运行时通过验证捕获，表现为你可以处理的错误或带有可读信息的 "
-"panic，绝不会是未定义行为。这就是它的保证：**安全的 wgpu 代码不会在 GPU 上引发未定义行为**，即使参数错误也一样。"
+"在编译时<em>没有</em>捕获的问题（错误的缓冲区用途标志、与管线布局不匹配的绑定组、越界绘制），会在运行时通过验证捕获，表现为你可以处理的错误或带有可读信息的"
+" panic，绝不会是未定义行为。这就是它的保证：**安全的 wgpu 代码不会在 GPU 上引发未定义行为**，即使参数错误也一样。"
 
 #: src/engine/wgpu.md:226
 msgid "Uniforms and bind groups"
@@ -14753,8 +14758,8 @@ msgid ""
 msgstr ""
 "OpenXR 是 Khronos 制定的虚拟现实与增强现实标准 API：涵盖头显（Meta Quest、Valve "
 "Index、Pico、Varjo）、它们的控制器、手部追踪，以及把你渲染的图像显示在头显中的合成器。和 Vulkan "
-"一样，它是一个带有加载器、扩展和显式句柄的 C API，并且通常与 Vulkan（或 D3D11/12、OpenGL）*一起*使用：OpenXR "
-"提供姿态、时序和交换链图像；你的渲染器负责往里绘制。"
+"一样，它是一个带有加载器、扩展和显式句柄的 C API，并且通常与 Vulkan（或 "
+"D3D11/12、OpenGL）<em>一起</em>使用：OpenXR 提供姿态、时序和交换链图像；你的渲染器负责往里绘制。"
 
 #: src/engine/openxr.md:10
 msgid ""
@@ -15255,7 +15260,7 @@ msgid ""
 " pose action as a float:"
 msgstr ""
 "OpenXR "
-"的输入是抽象的：你定义*动作*（\"抓取\"、\"传送\"、\"手部姿态\"），并为每种控制器类型（\"交互配置文件\"）*建议*到物理输入的绑定。运行时可能会重新映射它们。在"
+"的输入是抽象的：你定义<em>动作</em>（\"抓取\"、\"传送\"、\"手部姿态\"），并为每种控制器类型（\"交互配置文件\"）<em>建议</em>到物理输入的绑定。运行时可能会重新映射它们。在"
 " crate 中，动作的值类型是一个类型参数，所以你不能把姿态动作当作浮点数读取："
 
 #: src/engine/openxr.md:304
@@ -17138,7 +17143,8 @@ msgid ""
 "development."
 msgstr ""
 "**由旧库分配的堆数据。** 使用 Rust 的默认全局分配器时，每个 `cdylib` 都使用系统分配器，所以在库中分配、在宿主中释放的 `Vec` "
-"在实践中可以工作。但 `Vec` 的*布局*并不保证在不同构建之间一致；最好把拥有堆内存的类型放在宿主中，或者两边使用同一个编译器，这在开发中是常态；"
+"在实践中可以工作。但 `Vec` "
+"的<em>布局</em>并不保证在不同构建之间一致；最好把拥有堆内存的类型放在宿主中，或者两边使用同一个编译器，这在开发中是常态；"
 
 #: src/engine/hot-reload-and-plugins.md:187
 msgid ""
