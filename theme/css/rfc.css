@@ -86,9 +86,9 @@
   outline: none;
 }
 .rfc-memviz:focus-visible, .rfc-widget:focus-visible { box-shadow: 0 0 0 2px var(--rfc-own); }
-.mv-title, .rw-title { font-weight: 700; margin-bottom: 8px; }
+.rw-title { font-weight: 700; margin-bottom: 8px; }
 .mv-tabs { display: flex; gap: 4px; margin-bottom: 8px; }
-.mv-tab, .mv-controls button, .rw-btn {
+.mv-tab, .rw-btn {
   font: inherit;
   font-size: 0.85em;
   padding: 4px 12px;
@@ -99,8 +99,7 @@
   cursor: pointer;
 }
 .mv-tab-active { background: var(--rfc-panel-strong); font-weight: 700; border-color: var(--fg); }
-.mv-controls button:disabled { opacity: 0.4; cursor: default; }
-.mv-tab:hover, .mv-controls button:hover:not(:disabled), .rw-btn:hover:not(:disabled) { border-color: var(--fg); }
+.mv-tab:hover, .rw-btn:hover:not(:disabled) { border-color: var(--fg); }
 
 .mv-body {
   display: grid;
@@ -173,10 +172,80 @@
   font-size: 0.8em;
   white-space: pre-wrap;
 }
-.mv-note { margin-top: 10px; min-height: 3em; line-height: 1.5; }
-.mv-controls { display: flex; align-items: center; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
-.mv-controls input[type=range] { flex: 1; min-width: 100px; }
-.mv-counter { font-size: 0.85em; opacity: 0.75; min-width: 6em; text-align: right; }
+.mv-note { margin: 0 0 10px; min-height: 3em; line-height: 1.5; }
+.mv-error { margin: 0 0 10px; }
+
+/* Header: title left, stepper right. Sticky so the controls stay in reach. */
+.mv-head {
+  position: sticky;
+  top: var(--mv-sticky-top, 0px);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: -12px -12px 10px;
+  padding: 10px 12px;
+  background: var(--rfc-panel);
+  border-radius: 10px 10px 0 0;
+}
+.mv-title { font-weight: 700; flex: 1 1 14em; min-width: 0; }
+.mv-stepper {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--rfc-border);
+  border-radius: 999px;
+  background: var(--bg);
+  margin-left: auto;
+}
+.mv-step-btn {
+  font: inherit;
+  font-size: 0.85em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--fg);
+  cursor: pointer;
+}
+.mv-step-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.mv-step-btn:hover:not(:disabled) { background: var(--rfc-panel-strong); }
+.mv-step-btn:disabled { opacity: 0.35; cursor: default; }
+.mv-step-next { padding: 0 8px 0 14px; background: var(--rfc-own); color: var(--bg); font-weight: 600; }
+.mv-step-next:hover:not(:disabled) { filter: brightness(1.1); background: var(--rfc-own); }
+.mv-step-btn:focus-visible, .mv-dot:focus-visible { outline: 2px solid var(--rfc-own); outline-offset: 2px; }
+.mv-dots { display: inline-flex; align-items: center; gap: 0; padding: 0 2px; }
+.mv-dots[hidden] { display: none; }
+.mv-dot {
+  width: 20px; height: 32px;
+  padding: 0; border: 0; background: transparent; cursor: pointer;
+  position: relative;
+}
+.mv-dot::before {
+  content: ""; position: absolute; left: 50%; top: 50%;
+  width: 7px; height: 7px; margin: -3.5px 0 0 -3.5px;
+  border-radius: 50%; background: var(--rfc-border);
+  transition: transform 0.15s, background 0.15s;
+}
+.mv-dot:hover::before { background: var(--fg); }
+.mv-dot[aria-current]::before { background: var(--rfc-own); transform: scale(1.45); }
+.mv-counter { font-size: 0.8em; font-variant-numeric: tabular-nums; opacity: 0.75; padding: 0 8px 0 4px; white-space: nowrap; }
+.mv-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+@media (max-width: 560px) {
+  .mv-step-label { display: none; }
+  .mv-step-next { padding: 0 8px; }
+  .mv-dot { width: 14px; }
+}
+@media (prefers-reduced-motion: reduce) { .mv-dot::before { transition: none; } }
 .mv-legend { margin-top: 8px; font-size: 0.75em; opacity: 0.85; display: flex; flex-wrap: wrap; gap: 4px 6px; align-items: center; }
 .mv-key { display: inline-block; width: 22px; height: 0; border-top-width: 2px; margin: 0 4px 0 10px; vertical-align: middle; }
 .mv-key:first-child { margin-left: 0; }
@@ -240,3 +309,8 @@
 #rfc-lang-toggle { font-size: 0.8em; font-weight: 700; width: auto; padding: 0 6px; }
 #rfc-lang-list { right: 0; left: auto; }
 .rfc-asm-link { font-size: 0.75em; opacity: 0.75; }
+
+/* mdBook makes .content a scroll container (overflow: auto) even though the
+ * window is what scrolls, which disables position: sticky inside it. "clip"
+ * still contains wide content but is not a scroll container. */
+.content { overflow-x: clip; overflow-y: visible; }

@@ -193,7 +193,16 @@
     var maxH = 0;
     v.steps.forEach(function (s) { maxH = Math.max(maxH, stepHeight(s)); });
     ui.svg.setAttribute("viewBox", "0 0 " + W + " " + maxH);
-    ui.slider.max = v.steps.length - 1;
+    ui.dots.innerHTML = "";
+    v.steps.forEach(function (_, n) {
+      var d = document.createElement("button");
+      d.type = "button";
+      d.className = "mv-dot";
+      d.setAttribute("aria-label", RFC.t("Step") + " " + (n + 1) + " / " + v.steps.length);
+      d.addEventListener("click", function () { ui.go(n); });
+      ui.dots.appendChild(d);
+    });
+    ui.dots.hidden = v.steps.length > 12;
 
     function go(i) {
       i = Math.max(0, Math.min(v.steps.length - 1, i));
@@ -209,8 +218,12 @@
       ui.note.innerHTML = step.note ? RFC.richText(RFC.t(step.note)) : "";
       ui.err.style.display = step.error ? "" : "none";
       ui.err.textContent = step.error || "";
-      ui.counter.textContent = RFC.t("Step") + " " + (i + 1) + " / " + v.steps.length;
-      ui.slider.value = i;
+      ui.counter.textContent = (i + 1) + " / " + v.steps.length;
+      ui.live.textContent = RFC.t("Step") + " " + (i + 1) + " / " + v.steps.length;
+      ui.dots.querySelectorAll(".mv-dot").forEach(function (d, n) {
+        if (n === i) d.setAttribute("aria-current", "step");
+        else d.removeAttribute("aria-current");
+      });
       ui.prev.disabled = i === 0;
       ui.next.disabled = i === v.steps.length - 1;
     }
@@ -229,14 +242,51 @@
     container.innerHTML = "";
     container.setAttribute("tabindex", "0");
 
-    if (def.title) {
-      var title = document.createElement("div");
-      title.className = "mv-title";
-      title.textContent = RFC.t(def.title);
-      container.appendChild(title);
-    }
-
     var ui = {};
+
+    // Header: title on the left, step controls on the right. The header is
+    // sticky, so the controls stay in reach while reading a tall diagram.
+    var head = document.createElement("div");
+    head.className = "mv-head";
+    var title = document.createElement("div");
+    title.className = "mv-title";
+    title.textContent = def.title ? RFC.t(def.title) : "";
+    head.appendChild(title);
+
+    var stepper = document.createElement("div");
+    stepper.className = "mv-stepper";
+    stepper.setAttribute("role", "group");
+    stepper.setAttribute("aria-label", RFC.t("Step through the example"));
+    ui.prev = document.createElement("button");
+    ui.prev.type = "button";
+    ui.prev.className = "mv-step-btn";
+    ui.prev.setAttribute("aria-label", RFC.t("Previous step"));
+    ui.prev.title = RFC.t("Previous step") + " (←)";
+    ui.prev.innerHTML = '<svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg>';
+    ui.dots = document.createElement("div");
+    ui.dots.className = "mv-dots";
+    ui.counter = document.createElement("span");
+    ui.counter.className = "mv-counter";
+    ui.counter.setAttribute("aria-hidden", "true");
+    ui.next = document.createElement("button");
+    ui.next.type = "button";
+    ui.next.className = "mv-step-btn mv-step-next";
+    ui.next.setAttribute("aria-label", RFC.t("Next step"));
+    ui.next.title = RFC.t("Next step") + " (→)";
+    ui.next.innerHTML = '<span class="mv-step-label">' + RFC.t("Next") + '</span><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg>';
+    stepper.appendChild(ui.prev);
+    stepper.appendChild(ui.dots);
+    stepper.appendChild(ui.counter);
+    stepper.appendChild(ui.next);
+    head.appendChild(stepper);
+    container.appendChild(head);
+
+    // Screen readers hear the step number and the note when the step changes.
+    ui.live = document.createElement("div");
+    ui.live.className = "mv-sr-only";
+    ui.live.setAttribute("aria-live", "polite");
+    container.appendChild(ui.live);
+
     if (variants.length > 1) {
       var tabs = document.createElement("div");
       tabs.className = "mv-tabs";
@@ -259,6 +309,15 @@
       container.appendChild(tabs);
     }
 
+    // The explanation sits right under the controls, next to where you click.
+    ui.note = document.createElement("div");
+    ui.note.className = "mv-note";
+    ui.note.setAttribute("aria-live", "polite");
+    container.appendChild(ui.note);
+    ui.err = document.createElement("div");
+    ui.err.className = "mv-error";
+    container.appendChild(ui.err);
+
     var body = document.createElement("div");
     body.className = "mv-body";
     ui.code = document.createElement("pre");
@@ -271,34 +330,6 @@
     body.appendChild(svgWrap);
     container.appendChild(body);
 
-    ui.err = document.createElement("div");
-    ui.err.className = "mv-error";
-    container.appendChild(ui.err);
-    ui.note = document.createElement("div");
-    ui.note.className = "mv-note";
-    ui.note.setAttribute("aria-live", "polite");
-    container.appendChild(ui.note);
-
-    var controls = document.createElement("div");
-    controls.className = "mv-controls";
-    ui.prev = document.createElement("button");
-    ui.prev.type = "button";
-    ui.prev.textContent = "◀ " + RFC.t("Back");
-    ui.next = document.createElement("button");
-    ui.next.type = "button";
-    ui.next.textContent = RFC.t("Next") + " ▶";
-    ui.slider = document.createElement("input");
-    ui.slider.type = "range";
-    ui.slider.min = 0;
-    ui.slider.setAttribute("aria-label", RFC.t("Step"));
-    ui.counter = document.createElement("span");
-    ui.counter.className = "mv-counter";
-    controls.appendChild(ui.prev);
-    controls.appendChild(ui.slider);
-    controls.appendChild(ui.next);
-    controls.appendChild(ui.counter);
-    container.appendChild(controls);
-
     var legend = document.createElement("div");
     legend.className = "mv-legend";
     legend.innerHTML =
@@ -308,13 +339,15 @@
       '<span class="mv-key mv-key-dangling"></span>' + RFC.t("dangling");
     container.appendChild(legend);
 
+    container.setAttribute("aria-keyshortcuts", "ArrowLeft ArrowRight Home End");
     ui.prev.addEventListener("click", function () { ui.go(ui.index - 1); });
     ui.next.addEventListener("click", function () { ui.go(ui.index + 1); });
-    ui.slider.addEventListener("input", function () { ui.go(+ui.slider.value); });
     container.addEventListener("keydown", function (e) {
-      if (e.target.tagName === "INPUT") return;
-      if (e.key === "ArrowRight") { ui.go(ui.index + 1); e.preventDefault(); }
-      if (e.key === "ArrowLeft") { ui.go(ui.index - 1); e.preventDefault(); }
+      if (e.target.getAttribute && e.target.getAttribute("role") === "tab") return;
+      var to = { ArrowRight: ui.index + 1, ArrowLeft: ui.index - 1, Home: 0, End: 1e9 }[e.key];
+      if (to === undefined) return;
+      ui.go(to);
+      e.preventDefault();
     });
 
     var first = variants[0];
@@ -329,5 +362,26 @@
     }
   };
 
-  document.addEventListener("DOMContentLoaded", function () { RFC.memviz.mountAll(); });
+  // Keep sticky headers just below mdBook's menu bar, which hides while
+  // scrolling down and comes back while scrolling up.
+  function trackMenuBar() {
+    var bar = document.getElementById("menu-bar");
+    if (!bar) return;
+    var queued = false;
+    function update() {
+      queued = false;
+      var bottom = Math.max(0, bar.getBoundingClientRect().bottom);
+      document.documentElement.style.setProperty("--mv-sticky-top", bottom + "px");
+    }
+    window.addEventListener("scroll", function () {
+      if (!queued) { queued = true; requestAnimationFrame(update); }
+    }, { passive: true });
+    window.addEventListener("resize", update);
+    update();
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    RFC.memviz.mountAll();
+    if (document.querySelector(".rfc-memviz")) trackMenuBar();
+  });
 })();

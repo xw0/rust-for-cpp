@@ -134,7 +134,7 @@ html:root .rfc-memviz, html:root .rfc-widget {
 html:root .mv-title, html:root .rw-title { font-family: var(--d-heading-font); font-size: 1.05em; letter-spacing: var(--d-heading-tracking, 0); }
 html:root .mv-code, html:root .bt-code, html:root .rw-log { background: var(--d-code-bg); color: var(--d-code-fg); border: 1px solid var(--d-code-border, transparent); }
 html:root .mv-lineno { color: var(--d-code-muted); opacity: 0.8; }
-html:root .mv-tab, html:root .mv-controls button, html:root .rw-btn {
+html:root .mv-tab, html:root .rw-btn {
   border-radius: 999px;
   border-color: var(--d-rule-strong);
   background: transparent;
@@ -142,7 +142,12 @@ html:root .mv-tab, html:root .mv-controls button, html:root .rw-btn {
   font-family: var(--d-body-font);
 }
 html:root .mv-tab-active { background: var(--d-accent); color: var(--d-on-accent); border-color: var(--d-accent); }
-html:root .mv-controls input[type=range] { accent-color: var(--d-accent); }
+html:root .mv-head { margin: -18px -18px 12px; padding: 12px 18px; background: var(--d-card); border-radius: calc(var(--d-radius, 10px) + 4px) calc(var(--d-radius, 10px) + 4px) 0 0; }
+html:root .mv-stepper { border-color: var(--d-rule-strong); background: transparent; }
+html:root .mv-step-next, html:root .mv-step-next:hover:not(:disabled) { background: var(--d-accent); color: var(--d-on-accent); }
+html:root .mv-dot[aria-current]::before { background: var(--d-accent); }
+html:root .mv-step-btn:focus-visible, html:root .mv-dot:focus-visible { outline-color: var(--d-accent); }
+html:root .mv-step-btn, html:root .mv-counter { font-family: var(--d-body-font); }
 html:root .rfc-callout { background: var(--d-panel); border-left-width: 3px; border-radius: 0 10px 10px 0; padding: 0.8em 1.2em; }
 html:root .rfc-callout .rfc-callout-title { font-family: var(--d-label-font, inherit); font-size: 0.72em; letter-spacing: 0.1em; color: var(--d-muted); }
 html:root .rfc-planned { background: var(--d-panel); border-color: var(--d-rule-strong); border-radius: 12px; }
