@@ -25,7 +25,7 @@ msgstr ""
 #: src/systems/memory-and-performance.md:249 src/systems/unsafe.md:231
 #: src/systems/ffi.md:317 src/systems/macros.md:185
 #: src/systems/testing-and-tooling.md:217 src/engine/ecs.md:473
-#: src/engine/math-and-simd.md:339 src/engine/opengl.md:280
+#: src/engine/math-and-simd.md:339 src/engine/opengl.md:429
 #: src/engine/vulkan.md:394 src/engine/wgpu.md:320 src/engine/openxr.md:519
 #: src/engine/game-loop.md:331 src/engine/assets-and-build.md:398
 #: src/engine/hot-reload-and-plugins.md:248
@@ -451,7 +451,7 @@ msgstr "并排的代码会把你会写的 C++ 和对应的 Rust 放在一起："
 #: src/systems/memory-and-performance.md:251 src/systems/unsafe.md:233
 #: src/systems/testing-and-tooling.md:219 src/engine/handles-and-arenas.md:235
 #: src/engine/ecs.md:475 src/engine/math-and-simd.md:341
-#: src/engine/opengl.md:282 src/engine/vulkan.md:396
+#: src/engine/opengl.md:431 src/engine/vulkan.md:396
 #: src/engine/game-loop.md:333 src/engine/assets-and-build.md:400
 #: src/engine/hot-reload-and-plugins.md:250 src/appendix/cheat-sheet.md:11
 #: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:52
@@ -481,7 +481,7 @@ msgstr ""
 #: src/systems/ffi.md:69 src/systems/ffi.md:319 src/systems/macros.md:187
 #: src/systems/testing-and-tooling.md:219 src/engine/handles-and-arenas.md:235
 #: src/engine/ecs.md:475 src/engine/math-and-simd.md:341
-#: src/engine/opengl.md:20 src/engine/opengl.md:282 src/engine/vulkan.md:396
+#: src/engine/opengl.md:20 src/engine/opengl.md:431 src/engine/vulkan.md:396
 #: src/engine/openxr.md:521 src/engine/game-loop.md:333
 #: src/engine/assets-and-build.md:400 src/engine/hot-reload-and-plugins.md:250
 #: src/appendix/cheat-sheet.md:11 src/appendix/cheat-sheet.md:31
@@ -1094,7 +1094,7 @@ msgstr ""
 #: src/systems/ffi.md:330 src/systems/macros.md:198
 #: src/systems/testing-and-tooling.md:230 src/engine/handles-and-arenas.md:304
 #: src/engine/ecs.md:484 src/engine/math-and-simd.md:354
-#: src/engine/opengl.md:293 src/engine/vulkan.md:408 src/engine/wgpu.md:333
+#: src/engine/opengl.md:442 src/engine/vulkan.md:408 src/engine/wgpu.md:333
 #: src/engine/openxr.md:533 src/engine/game-loop.md:343
 #: src/engine/assets-and-build.md:412 src/engine/hot-reload-and-plugins.md:261
 #: src/engine/case-study.md:331
@@ -14533,12 +14533,55 @@ msgstr "先绑定再编辑的状态机"
 msgid ""
 "GL's global bindings are the part Rust can do least about. `glBindBuffer` "
 "changes hidden state that later calls depend on, and nothing in the types "
-"records it. Options, from least to most structure:"
+"records it. The classic bug is a helper that binds something else between "
+"your bind and your edit:"
 msgstr ""
-"GL 的全局绑定是 Rust 最无能为力的部分。`glBindBuffer` "
-"改变了后续调用所依赖的隐藏状态，而类型中没有任何东西记录它。可选方案，从结构最少到最多："
+"GL 的全局绑定是 Rust 最帮不上忙的部分。`glBindBuffer` 会修改隐藏的状态，之后的调用都依赖它，而类型里没有任何记录。典型的 bug"
+" 是在你绑定和编辑之间，某个辅助函数绑定了别的东西："
 
-#: src/engine/opengl.md:258
+#: src/engine/opengl.md:261
+msgid "// A fake GL that keeps the hidden binding, as a real driver does.\n"
+msgstr "// 一个模拟的 GL，像真实驱动一样保存隐藏的绑定。\n"
+
+#: src/engine/opengl.md:268
+msgid "\"glBindBuffer(GL_ARRAY_BUFFER, {id})\""
+msgstr ""
+
+#: src/engine/opengl.md:271
+msgid "\"glBufferData: {bytes} bytes go to buffer {}\""
+msgstr ""
+
+#: src/engine/opengl.md:274
+msgid "\"glNamedBufferData({id}): {bytes} bytes go to buffer {id}\""
+msgstr ""
+
+#: src/engine/opengl.md:279
+msgid "// binds its own buffer and leaves it bound\n"
+msgstr "// 绑定自己的缓冲区，并且没有恢复\n"
+
+#: src/engine/opengl.md:286
+msgid "// Bind-to-edit: correct only if nothing binds in between.\n"
+msgstr "// 先绑定再编辑：只有中间没有其他绑定时才正确。\n"
+
+#: src/engine/opengl.md:289
+msgid "// goes to buffer 2, not the mesh\n"
+msgstr "// 数据写进了缓冲区 2，而不是网格的缓冲区\n"
+
+#: src/engine/opengl.md:291
+msgid ""
+"// DSA: the object is an argument, so there is no hidden state to clobber.\n"
+msgstr "// DSA：对象作为参数传入，没有可以被改乱的隐藏状态。\n"
+
+#: src/engine/opengl.md:296
+msgid ""
+"This compiles in Rust exactly as it does in C++: `&Gl` is a shared reference"
+" and the binding lives behind a `Cell`, just as it lives inside the driver. "
+"Options, from least to most structure:"
+msgstr ""
+"这段代码在 Rust 里和在 C++ 里一样能编译通过：`&Gl` 是共享引用，绑定状态藏在 `Cell` "
+"后面，就像它藏在驱动内部一样。可选的做法，按结构化程度从低到高："
+
+#: src/engine/opengl.md:300
 msgid ""
 "**Use DSA (direct state access, GL 4.5).** `glNamedBufferData(id, ...)` "
 "takes the object directly, and most of the hidden state disappears. glow "
@@ -14549,13 +14592,13 @@ msgstr ""
 "直接接收对象，大部分隐藏状态随之消失。glow 将它们暴露为 `named_buffer_data_u8_slice` 等函数。如果你可以要求 GL "
 "4.5，就这样做。"
 
-#: src/engine/opengl.md:262
+#: src/engine/opengl.md:304
 msgid ""
 "**Re-bind before every use.** Simple, and the driver ignores redundant binds"
 " cheaply on most implementations."
 msgstr "**每次使用前重新绑定。** 简单，而且在大多数实现中驱动会低成本地忽略冗余绑定。"
 
-#: src/engine/opengl.md:264
+#: src/engine/opengl.md:306
 msgid ""
 "**Guards.** A method `buffer.bind(&mut gl_state) -> BoundBuffer<'_>` that "
 "borrows a state object mutably. Only one buffer can be bound at a time "
@@ -14567,17 +14610,130 @@ msgstr ""
 "BoundBuffer<'_>`，它可变地借用一个状态对象。因为状态对象同时只能存在一个 `&mut` "
 "借用，所以同一时间只能绑定一个缓冲区。这用生命周期编码了状态机，但对 GL 来说通常得不偿失。"
 
-#: src/engine/opengl.md:270
+#: src/engine/opengl.md:312
+msgid "Re-binding with a state cache"
+msgstr "带状态缓存的重新绑定"
+
+#: src/engine/opengl.md:314
+msgid ""
+"Option 2 makes every operation self-contained: each method binds what it "
+"needs, so it does not matter what ran before. Engines usually put a small "
+"cache in front of the bind calls to skip the redundant ones:"
+msgstr ""
+"做法 2 让每个操作都自成一体：每个方法自己绑定需要的东西，所以之前执行过什么都无所谓。引擎通常会在绑定调用前加一个小缓存，跳过多余的绑定："
+
+#: src/engine/opengl.md:324
+msgid "\"  glBindBuffer({id})\""
+msgstr ""
+
+#: src/engine/opengl.md:325
+msgid "\"  glBufferData({bytes} bytes)\""
+msgstr ""
+
+#: src/engine/opengl.md:327
+msgid "/// Owns the context and remembers what is bound.\n"
+msgstr "/// 持有上下文，并记住当前绑定了什么。\n"
+
+#: src/engine/opengl.md:332
+msgid "// skip the call if it is already bound\n"
+msgstr "// 如果已经绑定，就跳过这次调用\n"
+
+#: src/engine/opengl.md:342
+msgid "// never assume the current binding\n"
+msgstr "// 永远不要假设当前的绑定\n"
+
+#: src/engine/opengl.md:350 src/engine/opengl.md:351
+msgid "\"upload a\""
+msgstr ""
+
+#: src/engine/opengl.md:351
+msgid "// no bind: already bound\n"
+msgstr "// 不需要绑定：已经绑定了\n"
+
+#: src/engine/opengl.md:352
+msgid "\"upload b\""
+msgstr ""
+
+#: src/engine/opengl.md:353
+msgid "\"{} bind calls\""
+msgstr ""
+
+#: src/engine/opengl.md:357
+msgid ""
+"The cache is only correct if every GL call goes through `GlState`. "
+"Middleware that calls GL directly (an ImGui backend, a video decoder) "
+"changes the real binding behind the cache's back, so reset the cache after "
+"calling into it."
+msgstr ""
+"只有当所有 GL 调用都经过 `GlState` 时，这个缓存才是正确的。直接调用 GL 的中间件（ImGui "
+"后端、视频解码器）会绕过缓存修改真实的绑定，所以调用它们之后要重置缓存。"
+
+#: src/engine/opengl.md:361
+msgid "Guards that borrow the state"
+msgstr "借用状态的守卫"
+
+#: src/engine/opengl.md:363
+msgid ""
+"Option 3 moves the edit functions onto a guard type. You can only get a "
+"`BoundBuffer` by binding, and the guard holds the only `&mut GlState`, so a "
+"second bind while the first guard is alive is a borrow error:"
+msgstr ""
+"做法 3 把编辑函数放到一个守卫类型上。只有绑定才能得到 `BoundBuffer`，而守卫持有唯一的 `&mut "
+"GlState`，所以在第一个守卫还活着的时候再次绑定，就是借用错误："
+
+#: src/engine/opengl.md:373
+msgid "\"glBindBuffer({id})\""
+msgstr ""
+
+#: src/engine/opengl.md:374
+msgid "\"glBufferData -> buffer {}, {bytes} bytes\""
+msgstr ""
+
+#: src/engine/opengl.md:379
+msgid ""
+"/// Proof that `id` is the bound GL_ARRAY_BUFFER. Edits are only available "
+"here.\n"
+msgstr "/// 证明 `id` 是当前绑定的 GL_ARRAY_BUFFER。只有这里能编辑。\n"
+
+#: src/engine/opengl.md:403
+msgid ""
+"// let mut l = lines.bind(&mut st); // error[E0499]: cannot borrow `st` as\n"
+"    // m.data(16);                      // mutable more than once at a time\n"
+msgstr ""
+"// let mut l = lines.bind(&mut st); // error[E0499]：不能同时多次\n"
+"    // m.data(16);                      // 可变借用 `st`\n"
+
+#: src/engine/opengl.md:406
+msgid "// fine: `m` is no longer used\n"
+msgstr "// 可以：`m` 之后不再使用\n"
+
+#: src/engine/opengl.md:411
+msgid ""
+"The bug from the first example cannot be written: `draw_debug_lines` would "
+"need `&mut GlState` to bind, and it cannot get one while `m` is alive. The "
+"cost shows up quickly in real code. GL has a binding point per target, per "
+"texture unit and per vertex array, the element buffer binding is stored "
+"inside the bound VAO, and a draw needs several things bound at once, so the "
+"guards multiply and their lifetimes appear in every helper's signature."
+msgstr ""
+"第一个例子里的 bug 在这里写不出来：`draw_debug_lines` 要绑定就需要 `&mut GlState`，而 `m` "
+"还活着时它拿不到。但在真实代码里，代价很快就显现出来。GL 的每个目标、每个纹理单元、每个顶点数组都有各自的绑定点，元素缓冲区的绑定保存在当前绑定的 "
+"VAO 里，一次绘制又需要同时绑定好几样东西，于是守卫越来越多，它们的生命周期也会出现在每个辅助函数的签名里。"
+
+#: src/engine/opengl.md:418
 msgid ""
 "In practice, wrap object lifetime (which `Drop` handles completely) and keep"
-" the binding calls explicit. Lifetime bugs are the expensive ones."
-msgstr "实践中，封装对象的生命周期（`Drop` 可以完全处理），并保持绑定调用显式。生命周期 bug 才是代价高昂的那种。"
+" the binding calls explicit, with DSA where you can require GL 4.5 and a "
+"state cache otherwise. Lifetime bugs are the expensive ones."
+msgstr ""
+"实际做法是：封装对象的生命周期（`Drop` 能完全处理），绑定调用保持显式；能要求 GL 4.5 时用 DSA，否则用状态缓存。生命周期 bug "
+"才是代价高的那一类。"
 
-#: src/engine/opengl.md:273
+#: src/engine/opengl.md:422
 msgid "Debugging"
 msgstr "调试"
 
-#: src/engine/opengl.md:275
+#: src/engine/opengl.md:424
 msgid ""
 "Your tools still work: RenderDoc, Nsight and apitrace capture GL calls from "
 "a Rust program the same way. Enable `KHR_debug` output with "
@@ -14588,71 +14744,71 @@ msgstr ""
 "`gl.debug_message_callback(...)` 启用 `KHR_debug` "
 "输出，并把消息转发到你的日志器（`log`/`tracing`），就像使用 `glDebugMessageCallback` 一样。"
 
-#: src/engine/opengl.md:284
+#: src/engine/opengl.md:433
 msgid "GLFW / SDL window"
 msgstr "GLFW / SDL 窗口"
 
-#: src/engine/opengl.md:284
+#: src/engine/opengl.md:433
 msgid "winit"
 msgstr "winit"
 
-#: src/engine/opengl.md:285
+#: src/engine/opengl.md:434
 msgid "GLFW / WGL / GLX / EGL context"
 msgstr "GLFW / WGL / GLX / EGL 上下文"
 
-#: src/engine/opengl.md:285
+#: src/engine/opengl.md:434
 msgid "glutin"
 msgstr "glutin"
 
-#: src/engine/opengl.md:286 src/appendix/cheat-sheet.md:147
+#: src/engine/opengl.md:435 src/appendix/cheat-sheet.md:147
 msgid "glad / GLEW"
 msgstr "glad / GLEW"
 
-#: src/engine/opengl.md:286
+#: src/engine/opengl.md:435
 msgid "`gl` (C names) or `glow` (typed, also WebGL)"
 msgstr "`gl`（C 名称）或 `glow`（有类型，也支持 WebGL）"
 
-#: src/engine/opengl.md:287
+#: src/engine/opengl.md:436
 msgid "`GLuint` names"
 msgstr "`GLuint` 对象名"
 
-#: src/engine/opengl.md:287
+#: src/engine/opengl.md:436
 msgid "`glow::NativeBuffer`, `NativeTexture`, ..."
 msgstr ""
 
-#: src/engine/opengl.md:288
+#: src/engine/opengl.md:437
 msgid "`sizeof(v), v.data()`"
 msgstr ""
 
-#: src/engine/opengl.md:288
+#: src/engine/opengl.md:437
 msgid "`bytemuck::cast_slice(&v)`"
 msgstr ""
 
-#: src/engine/opengl.md:289
+#: src/engine/opengl.md:438
 msgid "`offsetof`"
 msgstr ""
 
-#: src/engine/opengl.md:289
+#: src/engine/opengl.md:438
 msgid "`std::mem::offset_of!`"
 msgstr ""
 
-#: src/engine/opengl.md:290
+#: src/engine/opengl.md:439
 msgid "RAII wrapper with deleted copy and hand-written move"
 msgstr "删除拷贝并手写移动的 RAII 封装"
 
-#: src/engine/opengl.md:290
+#: src/engine/opengl.md:439
 msgid "Struct + `Drop`; no `Clone` means no copies"
 msgstr "结构体 + `Drop`；没有 `Clone` 就意味着不能复制"
 
-#: src/engine/opengl.md:291
+#: src/engine/opengl.md:440
 msgid "\"Only call from the GL thread\" comment"
 msgstr "\"只能在 GL 线程调用\"的注释"
 
-#: src/engine/opengl.md:291
+#: src/engine/opengl.md:440
 msgid "`Rc` inside: `!Send`, enforced by the compiler"
 msgstr "内部的 `Rc`：`!Send`，由编译器强制执行"
 
-#: src/engine/opengl.md:295
+#: src/engine/opengl.md:444
 msgid ""
 "Add a `Texture` wrapper to the fake-`Gl` example, and a `Material` that owns"
 " a `Texture` and a `Buffer<f32>`. Predict the deletion order when a "
@@ -14661,14 +14817,14 @@ msgstr ""
 "为假 `Gl` 示例添加一个 `Texture` 封装，以及一个拥有 `Texture` 和 `Buffer<f32>` 的 "
 "`Material`。预测丢弃 `Material` 时的删除顺序，然后运行验证。"
 
-#: src/engine/opengl.md:298
+#: src/engine/opengl.md:447
 msgid ""
 "Try to send a `Buffer` to another thread with `std::thread::spawn`. Read the"
 " error and find where it mentions `Rc`."
 msgstr ""
 "尝试用 `std::thread::spawn` 把一个 `Buffer` 发送到另一个线程。阅读错误信息，找到其中提到 `Rc` 的地方。"
 
-#: src/engine/opengl.md:300
+#: src/engine/opengl.md:449
 msgid ""
 "Change `Drop for Buffer` to push the name into a `RefCell<Vec<u32>>` "
 "deletion queue in `Gl`, and add a `Gl::collect_garbage` that deletes them. "

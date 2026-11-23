@@ -253,7 +253,49 @@ start.
 
 GL's global bindings are the part Rust can do least about. `glBindBuffer`
 changes hidden state that later calls depend on, and nothing in the types
-records it. Options, from least to most structure:
+records it. The classic bug is a helper that binds something else between your
+bind and your edit:
+
+```rust
+use std::cell::Cell;
+
+// A fake GL that keeps the hidden binding, as a real driver does.
+#[derive(Default)]
+struct Gl { array_buffer: Cell<u32> }
+impl Gl {
+    fn bind_buffer(&self, id: u32) {
+        self.array_buffer.set(id);
+        println!("glBindBuffer(GL_ARRAY_BUFFER, {id})");
+    }
+    fn buffer_data(&self, bytes: usize) {
+        println!("glBufferData: {bytes} bytes go to buffer {}", self.array_buffer.get());
+    }
+    fn named_buffer_data(&self, id: u32, bytes: usize) {
+        println!("glNamedBufferData({id}): {bytes} bytes go to buffer {id}");
+    }
+}
+
+fn draw_debug_lines(gl: &Gl) {
+    gl.bind_buffer(2);                 // binds its own buffer and leaves it bound
+}
+
+fn main() {
+    let gl = Gl::default();
+    let mesh_vbo = 1;
+
+    // Bind-to-edit: correct only if nothing binds in between.
+    gl.bind_buffer(mesh_vbo);
+    draw_debug_lines(&gl);
+    gl.buffer_data(64);                // goes to buffer 2, not the mesh
+
+    // DSA: the object is an argument, so there is no hidden state to clobber.
+    gl.named_buffer_data(mesh_vbo, 64);
+}
+```
+
+This compiles in Rust exactly as it does in C++: `&Gl` is a shared reference
+and the binding lives behind a `Cell`, just as it lives inside the driver.
+Options, from least to most structure:
 
 1. **Use DSA (direct state access, GL 4.5).** `glNamedBufferData(id, ...)`
    takes the object directly, and most of the hidden state disappears. glow
@@ -267,8 +309,115 @@ records it. Options, from least to most structure:
    state machine in lifetimes, but it is usually more ceremony than it is
    worth for GL.
 
+### Re-binding with a state cache
+
+Option 2 makes every operation self-contained: each method binds what it
+needs, so it does not matter what ran before. Engines usually put a small cache
+in front of the bind calls to skip the redundant ones:
+
+```rust
+use std::cell::Cell;
+
+#[derive(Default)]
+struct Gl { calls: Cell<u32> }
+impl Gl {
+    fn bind_buffer(&self, id: u32) { self.calls.set(self.calls.get() + 1); println!("  glBindBuffer({id})"); }
+    fn buffer_data(&self, bytes: usize) { println!("  glBufferData({bytes} bytes)"); }
+}
+
+/// Owns the context and remembers what is bound.
+struct GlState { gl: Gl, array_buffer: u32 }
+impl GlState {
+    fn bind_array_buffer(&mut self, id: u32) {
+        if self.array_buffer != id {   // skip the call if it is already bound
+            self.gl.bind_buffer(id);
+            self.array_buffer = id;
+        }
+    }
+}
+
+struct Buffer { id: u32 }
+impl Buffer {
+    fn upload(&self, st: &mut GlState, data: &[f32]) {
+        st.bind_array_buffer(self.id); // never assume the current binding
+        st.gl.buffer_data(std::mem::size_of_val(data));
+    }
+}
+
+fn main() {
+    let mut st = GlState { gl: Gl::default(), array_buffer: 0 };
+    let (a, b) = (Buffer { id: 1 }, Buffer { id: 2 });
+    println!("upload a"); a.upload(&mut st, &[0.0; 16]);
+    println!("upload a"); a.upload(&mut st, &[0.0; 16]); // no bind: already bound
+    println!("upload b"); b.upload(&mut st, &[0.0; 4]);
+    println!("{} bind calls", st.gl.calls.get());
+}
+```
+
+The cache is only correct if every GL call goes through `GlState`. Middleware
+that calls GL directly (an ImGui backend, a video decoder) changes the real
+binding behind the cache's back, so reset the cache after calling into it.
+
+### Guards that borrow the state
+
+Option 3 moves the edit functions onto a guard type. You can only get a
+`BoundBuffer` by binding, and the guard holds the only `&mut GlState`, so a
+second bind while the first guard is alive is a borrow error:
+
+```rust
+use std::cell::Cell;
+
+#[derive(Default)]
+struct Gl { array_buffer: Cell<u32> }
+impl Gl {
+    fn bind_buffer(&self, id: u32) { self.array_buffer.set(id); println!("glBindBuffer({id})"); }
+    fn buffer_data(&self, bytes: usize) { println!("glBufferData -> buffer {}, {bytes} bytes", self.array_buffer.get()); }
+}
+
+pub struct GlState { gl: Gl }
+pub struct Buffer { id: u32 }
+
+/// Proof that `id` is the bound GL_ARRAY_BUFFER. Edits are only available here.
+pub struct BoundBuffer<'a> { st: &'a mut GlState, id: u32 }
+
+impl Buffer {
+    pub fn bind<'a>(&self, st: &'a mut GlState) -> BoundBuffer<'a> {
+        st.gl.bind_buffer(self.id);
+        BoundBuffer { st, id: self.id }
+    }
+}
+
+impl BoundBuffer<'_> {
+    pub fn data(&mut self, bytes: usize) {
+        debug_assert_eq!(self.st.gl.array_buffer.get(), self.id);
+        self.st.gl.buffer_data(bytes);
+    }
+}
+
+fn main() {
+    let mut st = GlState { gl: Gl::default() };
+    let (mesh, lines) = (Buffer { id: 1 }, Buffer { id: 2 });
+
+    let mut m = mesh.bind(&mut st);
+    m.data(64);
+    // let mut l = lines.bind(&mut st); // error[E0499]: cannot borrow `st` as
+    // m.data(16);                      // mutable more than once at a time
+
+    let mut l = lines.bind(&mut st);    // fine: `m` is no longer used
+    l.data(16);
+}
+```
+
+The bug from the first example cannot be written: `draw_debug_lines` would
+need `&mut GlState` to bind, and it cannot get one while `m` is alive. The
+cost shows up quickly in real code. GL has a binding point per target, per
+texture unit and per vertex array, the element buffer binding is stored inside
+the bound VAO, and a draw needs several things bound at once, so the guards
+multiply and their lifetimes appear in every helper's signature.
+
 In practice, wrap object lifetime (which `Drop` handles completely) and keep
-the binding calls explicit. Lifetime bugs are the expensive ones.
+the binding calls explicit, with DSA where you can require GL 4.5 and a state
+cache otherwise. Lifetime bugs are the expensive ones.
 
 ## Debugging
 
