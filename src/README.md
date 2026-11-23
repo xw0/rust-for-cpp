@@ -75,7 +75,7 @@ missing for your corner of engine or graphics work:
 
 ## About the author
 
-Written by Xiang. More of Xiang's work is on the
+Written by Xiang Wei. More projects are on the
 [portfolio](https://xw0.github.io/portfolio.html).
 
 ## License

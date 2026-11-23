@@ -72,7 +72,7 @@ Pull requests are welcome too, for both English and translations.
 
 ## Author
 
-Written by Xiang. More projects: [portfolio](https://xw0.github.io/portfolio.html).
+Written by Xiang Wei. More projects: [portfolio](https://xw0.github.io/portfolio.html).
 
 ## License
 

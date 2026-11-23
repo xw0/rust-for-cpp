@@ -388,9 +388,9 @@ msgstr "关于作者"
 
 #: src/index.md:78
 msgid ""
-"Written by Xiang. More of Xiang's work is on the "
+"Written by Xiang Wei. More projects are on the "
 "[portfolio](https://xw0.github.io/portfolio.html)."
-msgstr "作者：Xiang。更多作品请见 Xiang 的[个人作品集](https://xw0.github.io/portfolio.html)。"
+msgstr "作者：Xiang Wei。更多作品请见[个人作品集](https://xw0.github.io/portfolio.html)。"
 
 #: src/index.md:81 src/appendix/contributing.md:17
 msgid "License"
