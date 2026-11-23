@@ -93,6 +93,9 @@ syntax](../intro/syntax.md).
 | `<algorithm>`, ranges | Iterator adapters: `map`, `filter`, `zip`, `fold`, `collect` | [Closures and iterators](../foundations/closures-and-iterators.md) |
 | `std::thread` | `std::thread::spawn`, `std::thread::scope` | [Concurrency](../systems/concurrency.md) |
 | `std::mutex` next to the data | `Mutex<T>` containing the data | [Concurrency](../systems/concurrency.md) |
+| BSD sockets, Winsock | `std::net::TcpStream`, `UdpSocket` | [Networking](../systems/networking.md) |
+| Asio, C++20 coroutines | tokio, `async`/`.await` | [Networking](../systems/networking.md) |
+| gRPC C++ | tonic | [Networking](../systems/networking.md) |
 | `std::atomic<T>` | `AtomicU32` etc. with `Ordering` | [Concurrency](../systems/concurrency.md) |
 | Thread pool / TBB `parallel_for` | `rayon`: `par_iter()` | [Concurrency](../systems/concurrency.md) |
 | `std::chrono::steady_clock` | `std::time::Instant`, `Duration` | [Game loop](../engine/game-loop.md) |

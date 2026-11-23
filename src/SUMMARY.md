@@ -29,6 +29,7 @@
 # Part II: Systems programming
 
 - [Threads, locks and Send/Sync](systems/concurrency.md)
+- [Networking, async and RPC](systems/networking.md)
 - [Memory layout and performance](systems/memory-and-performance.md)
 - [Unsafe Rust](systems/unsafe.md)
 - [FFI with C and C++](systems/ffi.md)
