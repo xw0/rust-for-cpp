@@ -18,3 +18,10 @@ for po in po/*.po; do
   MDBOOK_BOOK__TITLE="${TITLES[$lang]:-Rust for C++ Programmers}" \
     mdbook build -d "book/$lang"
 done
+
+# The sidebar lives in toc.js / toc.html, whose names never change, so browsers
+# can keep showing an old table of contents after a deploy. Add a version query.
+ver=$(git rev-parse --short HEAD 2>/dev/null || date +%s)
+find book -name '*.html' -print0 | xargs -0 sed -i -E \
+  -e "s#(<script src=\"[^\"]*toc\\.js)\">#\\1?v=$ver\">#" \
+  -e "s#(<iframe class=\"sidebar-iframe-outer\" src=\"[^\"]*toc\\.html)\">#\\1?v=$ver\">#"
