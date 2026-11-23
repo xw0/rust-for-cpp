@@ -21,7 +21,7 @@ msgstr ""
 #: src/foundations/collections.md:278
 #: src/foundations/closures-and-iterators.md:301
 #: src/foundations/smart-pointers.md:243
-#: src/foundations/project-organization.md:130 src/systems/concurrency.md:339
+#: src/foundations/project-organization.md:130 src/systems/concurrency.md:341
 #: src/systems/memory-and-performance.md:249 src/systems/unsafe.md:231
 #: src/systems/ffi.md:317 src/systems/macros.md:185
 #: src/systems/testing-and-tooling.md:217 src/engine/ecs.md:473
@@ -446,8 +446,8 @@ msgstr "并排的代码会把你会写的 C++ 和对应的 Rust 放在一起："
 #: src/foundations/closures-and-iterators.md:18
 #: src/foundations/closures-and-iterators.md:303
 #: src/foundations/smart-pointers.md:245
-#: src/foundations/project-organization.md:132 src/systems/concurrency.md:126
-#: src/systems/concurrency.md:218 src/systems/concurrency.md:341
+#: src/foundations/project-organization.md:132 src/systems/concurrency.md:128
+#: src/systems/concurrency.md:220 src/systems/concurrency.md:343
 #: src/systems/memory-and-performance.md:251 src/systems/unsafe.md:233
 #: src/systems/testing-and-tooling.md:219 src/engine/handles-and-arenas.md:235
 #: src/engine/ecs.md:475 src/engine/math-and-simd.md:341
@@ -475,8 +475,8 @@ msgstr ""
 #: src/foundations/closures-and-iterators.md:30
 #: src/foundations/closures-and-iterators.md:303
 #: src/foundations/smart-pointers.md:245
-#: src/foundations/project-organization.md:132 src/systems/concurrency.md:146
-#: src/systems/concurrency.md:218 src/systems/concurrency.md:341
+#: src/foundations/project-organization.md:132 src/systems/concurrency.md:148
+#: src/systems/concurrency.md:220 src/systems/concurrency.md:343
 #: src/systems/memory-and-performance.md:251 src/systems/unsafe.md:233
 #: src/systems/ffi.md:69 src/systems/ffi.md:319 src/systems/macros.md:187
 #: src/systems/testing-and-tooling.md:219 src/engine/handles-and-arenas.md:235
@@ -1089,7 +1089,7 @@ msgstr ""
 #: src/foundations/collections.md:292
 #: src/foundations/closures-and-iterators.md:313
 #: src/foundations/smart-pointers.md:255
-#: src/foundations/project-organization.md:139 src/systems/concurrency.md:352
+#: src/foundations/project-organization.md:139 src/systems/concurrency.md:354
 #: src/systems/memory-and-performance.md:262 src/systems/unsafe.md:243
 #: src/systems/ffi.md:330 src/systems/macros.md:198
 #: src/systems/testing-and-tooling.md:230 src/engine/handles-and-arenas.md:304
@@ -1887,7 +1887,7 @@ msgstr "字面量"
 
 #: src/intro/syntax.md:141 src/foundations/collections.md:240
 #: src/foundations/smart-pointers.md:171 src/foundations/smart-pointers.md:222
-#: src/systems/concurrency.md:91
+#: src/systems/concurrency.md:93
 msgid "Type"
 msgstr "类型"
 
@@ -3261,7 +3261,7 @@ msgstr "// 现在是整数\n"
 #: src/foundations/closures-and-iterators.md:96
 #: src/foundations/closures-and-iterators.md:234
 #: src/foundations/smart-pointers.md:42 src/foundations/smart-pointers.md:45
-#: src/foundations/project-organization.md:69 src/systems/concurrency.md:170
+#: src/foundations/project-organization.md:69 src/systems/concurrency.md:172
 #: src/systems/ffi.md:228 src/systems/macros.md:73 src/systems/macros.md:74
 #: src/engine/math-and-simd.md:335 src/engine/assets-and-build.md:124
 #: src/engine/case-study.md:178
@@ -3285,7 +3285,7 @@ msgid "C/C++"
 msgstr ""
 
 #: src/foundations/values-and-types.md:48 src/foundations/collections.md:19
-#: src/systems/concurrency.md:218 src/engine/math-and-simd.md:19
+#: src/systems/concurrency.md:220 src/engine/math-and-simd.md:19
 #: src/engine/openxr.md:42 src/engine/hot-reload-and-plugins.md:211
 msgid "Notes"
 msgstr "说明"
@@ -8153,7 +8153,7 @@ msgstr ""
 msgid "// Ordered map: iteration is sorted by key.\n"
 msgstr "// 有序映射：按键的顺序迭代。\n"
 
-#: src/foundations/collections.md:107 src/systems/concurrency.md:279
+#: src/foundations/collections.md:107 src/systems/concurrency.md:281
 msgid "\"tree\""
 msgstr ""
 
@@ -8162,7 +8162,7 @@ msgid "\"sky\""
 msgstr ""
 
 #: src/foundations/collections.md:109 src/foundations/smart-pointers.md:81
-#: src/systems/concurrency.md:279
+#: src/systems/concurrency.md:281
 msgid "\"rock\""
 msgstr ""
 
@@ -9319,7 +9319,7 @@ msgstr "硬件原子操作；线程安全"
 msgid "Atomic ops"
 msgstr "原子操作"
 
-#: src/foundations/smart-pointers.md:176 src/systems/concurrency.md:349
+#: src/foundations/smart-pointers.md:176 src/systems/concurrency.md:351
 #: src/appendix/cheat-sheet.md:96
 msgid "`std::atomic<T>`"
 msgstr ""
@@ -9375,7 +9375,7 @@ msgstr ""
 msgid "Single owner, heap"
 msgstr "单一所有者，在堆上"
 
-#: src/foundations/smart-pointers.md:225 src/systems/concurrency.md:93
+#: src/foundations/smart-pointers.md:225 src/systems/concurrency.md:95
 msgid "`Rc<T>`"
 msgstr ""
 
@@ -9391,8 +9391,8 @@ msgstr ""
 msgid "Shared ownership, mutable, one thread, run-time borrow checks"
 msgstr "共享所有权，可变，单线程，运行时借用检查"
 
-#: src/foundations/smart-pointers.md:227 src/systems/concurrency.md:94
-#: src/systems/concurrency.md:348
+#: src/foundations/smart-pointers.md:227 src/systems/concurrency.md:96
+#: src/systems/concurrency.md:350
 msgid "`Arc<T>`"
 msgstr ""
 
@@ -9802,20 +9802,23 @@ msgstr "// 线程的返回值\n"
 msgid ""
 "`thread::spawn` takes a closure and returns a `JoinHandle`, like "
 "`std::thread` returning a future-like handle. The closure must be `'static` "
-"(it may outlive the caller), so it must own what it uses: hence `move`. A "
-"`JoinHandle` that is dropped without `join` **detaches** the thread rather "
+"(it may outlive the caller), so it must own what it uses: hence `move`. (`||"
+" { ... }` is a closure with no parameters, and `move` makes it capture by "
+"value; see [Closures](../foundations/closures-and-iterators.md#closures).) A"
+" `JoinHandle` that is dropped without `join` **detaches** the thread rather "
 "than calling `std::terminate` like an unjoined `std::thread`."
 msgstr ""
 "`thread::spawn` 接收一个闭包并返回 `JoinHandle`，类似 `std::thread` 返回一个类似 future "
-"的句柄。闭包必须是 `'static` 的（它可能比调用者活得更久），所以它必须拥有它使用的东西：因此要写 `move`。一个没有 `join` "
-"就被丢弃的 `JoinHandle` 会**分离**（detach）线程，而不是像未 join 的 `std::thread` 那样调用 "
-"`std::terminate`。"
+"的句柄。闭包必须是 `'static` 的（它可能比调用者活得更久），所以它必须拥有它使用的东西：因此要写 `move`。（`|| { ... }` "
+"是一个没有参数的闭包，`move` 让它按值捕获；参见[闭包](../foundations/closures-and-"
+"iterators.md#闭包)。）一个没有 `join` 就被丢弃的 `JoinHandle` 会**分离**（detach）线程，而不是像未 "
+"join 的 `std::thread` 那样调用 `std::terminate`。"
 
-#: src/systems/concurrency.md:45
+#: src/systems/concurrency.md:47
 msgid "Scoped threads"
 msgstr "作用域线程"
 
-#: src/systems/concurrency.md:47
+#: src/systems/concurrency.md:49
 msgid ""
 "Often you want threads that work on data owned by the caller and finish "
 "before the caller returns, the fork-join pattern. `thread::scope` guarantees"
@@ -9825,19 +9828,19 @@ msgstr ""
 "你常常需要这样的线程：处理调用者拥有的数据，并在调用者返回之前结束，也就是 fork-join 模式。`thread::scope` 保证在作用域结束时"
 " join 其中创建的所有线程，所以这些线程可以**借用**局部数据："
 
-#: src/systems/concurrency.md:60
+#: src/systems/concurrency.md:62
 msgid "// Split the image into 8 horizontal bands, one thread each.\n"
 msgstr "// 把图像分成 8 条水平带，每条一个线程。\n"
 
-#: src/systems/concurrency.md:68
+#: src/systems/concurrency.md:70
 msgid "// all threads joined here\n"
 msgstr "// 所有线程在这里 join\n"
 
-#: src/systems/concurrency.md:70
+#: src/systems/concurrency.md:72
 msgid "\"{:#x} {:#x}\""
 msgstr ""
 
-#: src/systems/concurrency.md:74
+#: src/systems/concurrency.md:76
 msgid ""
 "Each thread gets a `&mut` to a disjoint band from `chunks_mut`, so the "
 "borrow checker can see there is no overlap. Try giving two threads the same "
@@ -9846,28 +9849,28 @@ msgstr ""
 "每个线程都从 `chunks_mut` 拿到指向一条互不相交的带的 "
 "`&mut`，所以借用检查器能看出它们没有重叠。试着让两个线程处理同一条带，程序就无法编译。"
 
-#: src/systems/concurrency.md:78
+#: src/systems/concurrency.md:80
 msgid "`Send` and `Sync`"
 msgstr "`Send` 与 `Sync`"
 
-#: src/systems/concurrency.md:80
+#: src/systems/concurrency.md:82
 msgid ""
 "Two marker traits, implemented automatically by the compiler, describe what "
 "may cross thread boundaries:"
 msgstr "两个由编译器自动实现的标记 trait 描述了什么可以跨越线程边界："
 
-#: src/systems/concurrency.md:83
+#: src/systems/concurrency.md:85
 msgid "**`Send`**: a value of this type can be **moved** to another thread."
 msgstr "**`Send`**：这个类型的值可以被**移动**到另一个线程。"
 
-#: src/systems/concurrency.md:84
+#: src/systems/concurrency.md:86
 msgid ""
 "**`Sync`**: a value of this type can be **shared** between threads by "
 "reference (`T` is `Sync` if `&T` is `Send`)."
 msgstr ""
 "**`Sync`**：这个类型的值可以通过引用在线程之间**共享**（如果 `&T` 是 `Send`，那么 `T` 就是 `Sync`）。"
 
-#: src/systems/concurrency.md:87
+#: src/systems/concurrency.md:89
 msgid ""
 "Almost everything is both: integers, `String`, `Vec<T>` (if `T` is), your "
 "own structs made of such fields. The exceptions are the types whose "
@@ -9876,64 +9879,64 @@ msgstr ""
 "几乎所有东西两者都是：整数、`String`、`Vec<T>`（如果 `T` "
 "是的话）、由这些字段组成的你自己的结构体。例外是那些正确性依赖于不被共享的类型："
 
-#: src/systems/concurrency.md:91
+#: src/systems/concurrency.md:93
 msgid "`Send`"
 msgstr ""
 
-#: src/systems/concurrency.md:91
+#: src/systems/concurrency.md:93
 msgid "`Sync`"
 msgstr ""
 
-#: src/systems/concurrency.md:91
+#: src/systems/concurrency.md:93
 msgid "Why"
 msgstr "原因"
 
-#: src/systems/concurrency.md:93 src/systems/concurrency.md:95
-#: src/systems/concurrency.md:97
+#: src/systems/concurrency.md:95 src/systems/concurrency.md:97
+#: src/systems/concurrency.md:99
 msgid "no"
 msgstr "否"
 
-#: src/systems/concurrency.md:93
+#: src/systems/concurrency.md:95
 msgid "Non-atomic reference count"
 msgstr "非原子的引用计数"
 
-#: src/systems/concurrency.md:94 src/systems/concurrency.md:96
+#: src/systems/concurrency.md:96 src/systems/concurrency.md:98
 msgid "yes\\*"
 msgstr "是\\*"
 
-#: src/systems/concurrency.md:94
+#: src/systems/concurrency.md:96
 msgid "Atomic count (\\*if `T` is `Send + Sync`)"
 msgstr "原子计数（\\*当 `T` 是 `Send + Sync` 时）"
 
-#: src/systems/concurrency.md:95 src/appendix/cheat-sheet.md:47
+#: src/systems/concurrency.md:97 src/appendix/cheat-sheet.md:47
 msgid "`Cell<T>`, `RefCell<T>`"
 msgstr ""
 
-#: src/systems/concurrency.md:95
+#: src/systems/concurrency.md:97
 msgid "yes"
 msgstr "是"
 
-#: src/systems/concurrency.md:95
+#: src/systems/concurrency.md:97
 msgid "Unsynchronized interior mutability"
 msgstr "没有同步的内部可变性"
 
-#: src/systems/concurrency.md:96
+#: src/systems/concurrency.md:98
 msgid "`Mutex<T>`"
 msgstr ""
 
-#: src/systems/concurrency.md:96
+#: src/systems/concurrency.md:98
 msgid "Locking makes shared access safe (\\*if `T: Send`)"
 msgstr "加锁让共享访问变得安全（\\*当 `T: Send` 时）"
 
-#: src/systems/concurrency.md:97
+#: src/systems/concurrency.md:99
 msgid "Raw pointers `*const T`, `*mut T`"
 msgstr "裸指针 `*const T`、`*mut T`"
 
-#: src/systems/concurrency.md:97
+#: src/systems/concurrency.md:99
 msgid "The compiler cannot know; you assert it with `unsafe impl`"
 msgstr "编译器无从得知；由你用 `unsafe impl` 来断言"
 
-#: src/systems/concurrency.md:99
+#: src/systems/concurrency.md:101
 msgid ""
 "`thread::spawn` requires its closure to be `Send`. So this fails to compile,"
 " where the C++ equivalent with `shared_ptr` and a non-atomic member races at"
@@ -9942,50 +9945,50 @@ msgstr ""
 "`thread::spawn` 要求它的闭包是 `Send`。所以下面的代码无法编译，而对应的 C++ 版本（使用 `shared_ptr` "
 "和一个非原子成员）会在运行时发生竞争："
 
-#: src/systems/concurrency.md:108
+#: src/systems/concurrency.md:110
 msgid "\"high\""
 msgstr ""
 
-#: src/systems/concurrency.md:111
+#: src/systems/concurrency.md:113
 msgid "\"{c}\""
 msgstr ""
 
-#: src/systems/concurrency.md:111
+#: src/systems/concurrency.md:113
 msgid "// error[E0277]: `Rc<String>` cannot be sent between threads safely\n"
 msgstr "// error[E0277]：`Rc<String>` 无法安全地在线程之间发送\n"
 
-#: src/systems/concurrency.md:116
+#: src/systems/concurrency.md:118
 msgid "Replace `Rc` with `Arc` and it compiles."
 msgstr "把 `Rc` 换成 `Arc`，它就能编译了。"
 
-#: src/systems/concurrency.md:118
+#: src/systems/concurrency.md:120
 msgid "`Mutex<T>`: the lock owns the data"
 msgstr "`Mutex<T>`：锁拥有数据"
 
-#: src/systems/concurrency.md:120
+#: src/systems/concurrency.md:122
 msgid ""
 "In C++, a mutex sits _next to_ the data it protects, and a comment says "
 "which fields it guards. Nothing stops code from touching the data without "
 "the lock."
 msgstr "在 C++ 中，互斥锁放在它所保护的数据<em>旁边</em>，用一条注释说明它保护哪些字段。没有什么能阻止代码不加锁就访问数据。"
 
-#: src/systems/concurrency.md:130
+#: src/systems/concurrency.md:132
 msgid "// protects frames, dropped\n"
 msgstr "// 保护 frames、dropped\n"
 
-#: src/systems/concurrency.md:139
+#: src/systems/concurrency.md:141
 msgid "// Elsewhere: s.frames++;  // compiles, races\n"
 msgstr "// 在别处：s.frames++;  // 能编译，但有竞争\n"
 
-#: src/systems/concurrency.md:157
+#: src/systems/concurrency.md:159
 msgid "// the only way in is lock()\n"
 msgstr "// 唯一的入口是 lock()\n"
 
-#: src/systems/concurrency.md:166
+#: src/systems/concurrency.md:168
 msgid "// guard dropped: unlocked\n"
 msgstr "// guard 被丢弃：解锁\n"
 
-#: src/systems/concurrency.md:177
+#: src/systems/concurrency.md:179
 msgid ""
 "`Mutex<T>` **contains** the `T`. The only way to reach it is `lock()`, which"
 " returns a guard that dereferences to `&mut T` and unlocks when dropped, "
@@ -9997,7 +10000,7 @@ msgstr ""
 "T`，并在被丢弃时解锁，就像把 `std::lock_guard` 和数据融合在了一起。guard "
 "借用着互斥锁，所以你无法在解锁之后继续持有指向数据的引用：那将是一个比所有者活得更久的借用，无法通过编译。"
 
-#: src/systems/concurrency.md:183
+#: src/systems/concurrency.md:185
 msgid ""
 "`lock()` returns a `Result` because of **poisoning**: if a thread panicked "
 "while holding the lock, the data may be half-updated, and later lockers get "
@@ -10007,132 +10010,132 @@ msgstr ""
 "`lock()` 返回 `Result` 是因为**中毒**（poisoning）：如果某个线程在持有锁时 panic "
 "了，数据可能只更新了一半，之后加锁的线程会得到一个可以检查的错误。通常的处理方式是 `unwrap()`（把 panic 传播出去）。"
 
-#: src/systems/concurrency.md:187
+#: src/systems/concurrency.md:189
 msgid "Sharing a mutex among threads uses `Arc`:"
 msgstr "在线程之间共享互斥锁要用 `Arc`："
 
-#: src/systems/concurrency.md:200
+#: src/systems/concurrency.md:202
 msgid "\"worker {id} job {job}\""
 msgstr ""
 
-#: src/systems/concurrency.md:208
+#: src/systems/concurrency.md:210
 msgid "\"{} entries\""
 msgstr ""
 
-#: src/systems/concurrency.md:212
+#: src/systems/concurrency.md:214
 msgid ""
 "The borrow checker prevents data races. It does **not** prevent deadlocks or"
 " logic races (check-then-act across two separate locks). Lock ordering is "
 "still your job."
 msgstr "借用检查器能防止数据竞争。它**不能**防止死锁或逻辑上的竞态（跨越两把独立的锁进行“先检查再行动”）。锁的顺序仍然要由你负责。"
 
-#: src/systems/concurrency.md:216
+#: src/systems/concurrency.md:218
 msgid "Other primitives"
 msgstr "其他原语"
 
-#: src/systems/concurrency.md:220
+#: src/systems/concurrency.md:222
 msgid "`std::shared_mutex`"
 msgstr ""
 
-#: src/systems/concurrency.md:220
+#: src/systems/concurrency.md:222
 msgid "`RwLock<T>`"
 msgstr ""
 
-#: src/systems/concurrency.md:220
+#: src/systems/concurrency.md:222
 msgid "`read()` and `write()` guards"
 msgstr "`read()` 和 `write()` guard"
 
-#: src/systems/concurrency.md:221
+#: src/systems/concurrency.md:223
 msgid "`std::condition_variable`"
 msgstr ""
 
-#: src/systems/concurrency.md:221
+#: src/systems/concurrency.md:223
 msgid "`Condvar`"
 msgstr ""
 
-#: src/systems/concurrency.md:221
+#: src/systems/concurrency.md:223
 msgid "Used with a `MutexGuard`"
 msgstr "与 `MutexGuard` 一起使用"
 
-#: src/systems/concurrency.md:222
+#: src/systems/concurrency.md:224
 msgid "`std::call_once`, function-local static"
 msgstr "`std::call_once`、函数内的局部静态变量"
 
-#: src/systems/concurrency.md:222
+#: src/systems/concurrency.md:224
 msgid "`OnceLock<T>`, `LazyLock<T>`"
 msgstr ""
 
-#: src/systems/concurrency.md:222
+#: src/systems/concurrency.md:224
 msgid "Thread-safe lazy initialization"
 msgstr "线程安全的惰性初始化"
 
-#: src/systems/concurrency.md:223
+#: src/systems/concurrency.md:225
 msgid "`std::atomic<int>` etc."
 msgstr "`std::atomic<int>` 等"
 
-#: src/systems/concurrency.md:223
+#: src/systems/concurrency.md:225
 msgid "`AtomicI32`, `AtomicU64`, `AtomicBool`, `AtomicPtr<T>`"
 msgstr ""
 
-#: src/systems/concurrency.md:223
+#: src/systems/concurrency.md:225
 msgid "Methods take an `Ordering`"
 msgstr "方法接收一个 `Ordering`"
 
-#: src/systems/concurrency.md:224
+#: src/systems/concurrency.md:226
 msgid "`std::memory_order_relaxed` … `seq_cst`"
 msgstr ""
 
-#: src/systems/concurrency.md:224
+#: src/systems/concurrency.md:226
 msgid "`Ordering::Relaxed`, `Acquire`, `Release`, `AcqRel`, `SeqCst`"
 msgstr ""
 
-#: src/systems/concurrency.md:224
+#: src/systems/concurrency.md:226
 msgid "The same C++11 model (minus `consume`)"
 msgstr "同样的 C++11 模型（去掉了 `consume`）"
 
-#: src/systems/concurrency.md:225
+#: src/systems/concurrency.md:227
 msgid "`std::barrier`, `std::latch`"
 msgstr ""
 
-#: src/systems/concurrency.md:225
+#: src/systems/concurrency.md:227
 msgid "`Barrier`"
 msgstr ""
 
-#: src/systems/concurrency.md:232
+#: src/systems/concurrency.md:234
 msgid "// no Mutex needed\n"
 msgstr "// 不需要 Mutex\n"
 
-#: src/systems/concurrency.md:233
+#: src/systems/concurrency.md:235
 msgid "\"assets/shaders\""
 msgstr ""
 
-#: src/systems/concurrency.md:236
+#: src/systems/concurrency.md:238
 msgid "// unique IDs: relaxed is enough\n"
 msgstr "// 唯一 ID：relaxed 就够了\n"
 
-#: src/systems/concurrency.md:240
+#: src/systems/concurrency.md:242
 msgid ""
 "// Publish a result from one thread to another: release/acquire, as in "
 "C++.\n"
 msgstr "// 把一个线程的结果发布给另一个线程：release/acquire，和 C++ 中一样。\n"
 
-#: src/systems/concurrency.md:246
+#: src/systems/concurrency.md:248
 msgid "// everything before is visible...\n"
 msgstr "// 之前的一切都可见……\n"
 
-#: src/systems/concurrency.md:248
+#: src/systems/concurrency.md:250
 msgid "// ...to whoever sees `true` here\n"
 msgstr "// ……对在这里看到 `true` 的线程\n"
 
-#: src/systems/concurrency.md:251
+#: src/systems/concurrency.md:253
 msgid "\"result {}\""
 msgstr ""
 
-#: src/systems/concurrency.md:255
+#: src/systems/concurrency.md:257
 msgid "\"{ids:?} {}\""
 msgstr ""
 
-#: src/systems/concurrency.md:259
+#: src/systems/concurrency.md:261
 msgid ""
 "Atomics and their orderings behave exactly as in C++. If you know the C++ "
 "memory model, you know Rust's. Mara Bos's _Rust Atomics and Locks_ is the "
@@ -10141,37 +10144,37 @@ msgstr ""
 "原子类型及其内存序的行为与 C++ 完全一致。懂 C++ 内存模型，你就懂 Rust 的内存模型。Mara Bos 的 _Rust Atomics "
 "and Locks_ 是深入的参考资料。"
 
-#: src/systems/concurrency.md:263
+#: src/systems/concurrency.md:265
 msgid "Channels"
 msgstr "通道"
 
-#: src/systems/concurrency.md:265
+#: src/systems/concurrency.md:267
 msgid ""
 "Message passing is often simpler than shared state. `std::sync::mpsc` is a "
 "multi-producer, single-consumer queue:"
 msgstr "消息传递往往比共享状态更简单。`std::sync::mpsc` 是一个多生产者、单消费者的队列："
 
-#: src/systems/concurrency.md:279 src/systems/concurrency.md:282
+#: src/systems/concurrency.md:281 src/systems/concurrency.md:284
 msgid "\"missing\""
 msgstr ""
 
-#: src/systems/concurrency.md:287
+#: src/systems/concurrency.md:289
 msgid "// ownership of msg moves to the receiver\n"
 msgstr "// msg 的所有权转移给接收者\n"
 
-#: src/systems/concurrency.md:290
+#: src/systems/concurrency.md:292
 msgid "// close our copy so the loop below ends when all senders are done\n"
 msgstr "// 关闭我们自己这份发送端，这样所有发送者结束后下面的循环就会结束\n"
 
-#: src/systems/concurrency.md:294
+#: src/systems/concurrency.md:296
 msgid "\"loaded {name}: {triangles} tris\""
 msgstr ""
 
-#: src/systems/concurrency.md:295
+#: src/systems/concurrency.md:297
 msgid "\"failed: {name}\""
 msgstr ""
 
-#: src/systems/concurrency.md:301
+#: src/systems/concurrency.md:303
 msgid ""
 "Sending moves the value: the sender can no longer touch it, so no locking is"
 " needed for the payload. For multi-consumer queues, select, and better "
@@ -10180,11 +10183,11 @@ msgstr ""
 "发送会移动值：发送者再也不能访问它，所以负载数据不需要加锁。如果需要多消费者队列、select 和更好的性能，常用的选择是 `crossbeam-"
 "channel` crate。"
 
-#: src/systems/concurrency.md:305
+#: src/systems/concurrency.md:307
 msgid "Data parallelism with rayon"
 msgstr "用 rayon 实现数据并行"
 
-#: src/systems/concurrency.md:307
+#: src/systems/concurrency.md:309
 msgid ""
 "Most engine parallelism is \"do this for every element, in parallel\": cull "
 "objects, skin meshes, update particles. The `rayon` crate turns an iterator "
@@ -10194,19 +10197,19 @@ msgstr ""
 "引擎中的大部分并行都是“对每个元素并行地做这件事”：剔除对象、蒙皮网格、更新粒子。`rayon` crate 只要把 `iter()` 改成 "
 "`par_iter()`，就能把迭代器链变成并行的，并在一个工作窃取线程池上运行："
 
-#: src/systems/concurrency.md:316
+#: src/systems/concurrency.md:318
 msgid "// split across all cores\n"
 msgstr "// 分配到所有核心上\n"
 
-#: src/systems/concurrency.md:327
+#: src/systems/concurrency.md:329
 msgid "// order is preserved\n"
 msgstr "// 保持顺序\n"
 
-#: src/systems/concurrency.md:329
+#: src/systems/concurrency.md:331
 msgid "// Fork-join: run two independent jobs in parallel.\n"
 msgstr "// fork-join：并行运行两个独立的任务。\n"
 
-#: src/systems/concurrency.md:334
+#: src/systems/concurrency.md:336
 msgid ""
 "The borrow rules make this safe: `par_iter_mut` hands each worker a disjoint"
 " `&mut` element, and a closure that tried to write to shared state without "
@@ -10216,63 +10219,63 @@ msgstr ""
 "借用规则保证了这一切是安全的：`par_iter_mut` 交给每个工作线程一个互不相交的 `&mut` "
 "元素，而试图在没有同步的情况下写入共享状态的闭包根本无法编译。这正是 C++ 引擎要花几个月构建和调试的任务系统，现在是一个库。"
 
-#: src/systems/concurrency.md:343 src/appendix/cheat-sheet.md:94
+#: src/systems/concurrency.md:345 src/appendix/cheat-sheet.md:94
 msgid "`std::thread`"
 msgstr ""
 
-#: src/systems/concurrency.md:343
+#: src/systems/concurrency.md:345
 msgid "`std::thread::spawn` (requires `'static` + `Send`)"
 msgstr "`std::thread::spawn`（要求 `'static` + `Send`）"
 
-#: src/systems/concurrency.md:344
+#: src/systems/concurrency.md:346
 msgid "Fork-join over local data"
 msgstr "对局部数据进行 fork-join"
 
-#: src/systems/concurrency.md:344
+#: src/systems/concurrency.md:346
 msgid "`std::thread::scope`"
 msgstr ""
 
-#: src/systems/concurrency.md:345
+#: src/systems/concurrency.md:347
 msgid "Data race (UB, found by TSan)"
 msgstr "数据竞争（UB，靠 TSan 发现）"
 
-#: src/systems/concurrency.md:345 src/appendix/cheat-sheet.md:41
+#: src/systems/concurrency.md:347 src/appendix/cheat-sheet.md:41
 msgid "Compile error"
 msgstr "编译错误"
 
-#: src/systems/concurrency.md:346
+#: src/systems/concurrency.md:348
 msgid "`std::mutex` beside the data"
 msgstr "放在数据旁边的 `std::mutex`"
 
-#: src/systems/concurrency.md:346 src/appendix/cheat-sheet.md:95
+#: src/systems/concurrency.md:348 src/appendix/cheat-sheet.md:95
 msgid "`Mutex<T>` containing the data"
 msgstr "包含数据的 `Mutex<T>`"
 
-#: src/systems/concurrency.md:347
+#: src/systems/concurrency.md:349
 msgid "`std::lock_guard`"
 msgstr ""
 
-#: src/systems/concurrency.md:347
+#: src/systems/concurrency.md:349
 msgid "`MutexGuard`, returned by `lock()`"
 msgstr "由 `lock()` 返回的 `MutexGuard`"
 
-#: src/systems/concurrency.md:348
+#: src/systems/concurrency.md:350
 msgid "`shared_ptr<T>` across threads"
 msgstr "跨线程使用的 `shared_ptr<T>`"
 
-#: src/systems/concurrency.md:349
+#: src/systems/concurrency.md:351
 msgid "`AtomicXxx` with explicit `Ordering`"
 msgstr "带显式 `Ordering` 的 `AtomicXxx`"
 
-#: src/systems/concurrency.md:350
+#: src/systems/concurrency.md:352
 msgid "Hand-written job system / TBB"
 msgstr "手写的任务系统 / TBB"
 
-#: src/systems/concurrency.md:350
+#: src/systems/concurrency.md:352
 msgid "`rayon`"
 msgstr ""
 
-#: src/systems/concurrency.md:354
+#: src/systems/concurrency.md:356
 msgid ""
 "Write a scoped-thread version of a parallel sum over a `Vec<f32>`, splitting"
 " it into one chunk per available core "
@@ -10281,13 +10284,13 @@ msgstr ""
 "编写一个用作用域线程对 `Vec<f32>` "
 "并行求和的版本，按可用核心数（`std::thread::available_parallelism`）把它分成若干块，每个核心一块。"
 
-#: src/systems/concurrency.md:356
+#: src/systems/concurrency.md:358
 msgid ""
 "Make the `Stats` example count per-thread with `AtomicU64`s instead of a "
 "mutex. Which `Ordering` is enough, and why?"
 msgstr "把 `Stats` 示例改成用 `AtomicU64` 按线程计数，而不是用互斥锁。哪种 `Ordering` 就足够了？为什么？"
 
-#: src/systems/concurrency.md:358
+#: src/systems/concurrency.md:360
 msgid ""
 "Build a tiny job queue: a `Mutex<VecDeque<Box<dyn FnOnce() + Send>>>` with a"
 " `Condvar`, and four worker threads that run jobs until a shutdown flag is "

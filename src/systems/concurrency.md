@@ -38,7 +38,9 @@ fn main() {
 
 `thread::spawn` takes a closure and returns a `JoinHandle`, like `std::thread`
 returning a future-like handle. The closure must be `'static` (it may outlive
-the caller), so it must own what it uses: hence `move`. A `JoinHandle` that is
+the caller), so it must own what it uses: hence `move`. (`|| { ... }` is a
+closure with no parameters, and `move` makes it capture by value; see
+[Closures](../foundations/closures-and-iterators.md#closures).) A `JoinHandle` that is
 dropped without `join` **detaches** the thread rather than calling
 `std::terminate` like an unjoined `std::thread`.
 
