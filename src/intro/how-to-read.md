@@ -2,8 +2,9 @@
 
 Read Part I in order. Ownership, borrowing and lifetimes build on each other,
 and most of Rust's surprises for a C++ programmer are in those three chapters.
-After that, Part II and Part III can be read in any order; each chapter links
-back to what it relies on.
+Read Part II before you start a real project: it covers tests, tooling and
+dependencies. After that, Part III and Part IV can be read in any order; each
+chapter links back to what it relies on.
 
 ## Conventions
 

@@ -26,7 +26,12 @@
 - [Smart pointers and interior mutability](foundations/smart-pointers.md)
 - [Project organization](foundations/project-organization.md)
 
-# Part II: Systems programming
+# Part II: Tools and the ecosystem
+
+- [Testing, benchmarks and tooling](systems/testing-and-tooling.md)
+- [crates.io and the ecosystem](systems/crates-io.md)
+
+# Part III: Systems programming
 
 - [Threads, locks and Send/Sync](systems/concurrency.md)
 - [Networking, async and RPC](systems/networking.md)
@@ -34,10 +39,8 @@
 - [Unsafe Rust](systems/unsafe.md)
 - [FFI with C and C++](systems/ffi.md)
 - [Macros](systems/macros.md)
-- [Testing, benchmarks and tooling](systems/testing-and-tooling.md)
-- [crates.io and the ecosystem](systems/crates-io.md)
 
-# Part III: Graphics and engine programming
+# Part IV: Graphics and engine programming
 
 - [Handles and arenas instead of pointers](engine/handles-and-arenas.md)
 - [ECS and the borrow checker](engine/ecs.md)

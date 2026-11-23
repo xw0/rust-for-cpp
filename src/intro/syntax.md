@@ -190,10 +190,203 @@ struct Settings {
 struct EntityId(u32);
 ```
 
-To see what a macro generated, install `cargo-expand` and run `cargo expand`:
-it prints your code after macro expansion, the way `-E` shows preprocessor
-output. Writing your own derive and attribute macros is covered in
-[Macros](../systems/macros.md#procedural-macros).
+#### Declaring your own attributes
+
+In C++ you can write `[[my_engine::hot]]` anywhere, and a compiler that does
+not recognize it ignores it. Rust has no syntax for declaring an attribute and
+does not ignore unknown ones: `#[hot]` with no definition in scope is a
+compile error. A custom attribute is always a **procedural macro**, a function
+that receives the code the attribute is attached to and returns the code that
+replaces it. There are two ways to declare one:
+
+| You want | Declare it with | It receives |
+|---|---|---|
+| `#[timed]` on a function, module or type | `#[proc_macro_attribute] pub fn timed(...)` | The attribute's arguments and the item; it returns a replacement item |
+| `#[derive(Inspect)]` plus a helper `#[inspect(skip)]` on fields | `#[proc_macro_derive(Inspect, attributes(inspect))]` | The type definition; it returns extra items, such as an `impl`. The `attributes(...)` list declares the helper attributes |
+
+Procedural macros must live in their own crate, marked as a `proc-macro`
+crate, because the compiler builds and runs them before it compiles the code
+that uses them. A minimal setup is a workspace with two crates:
+
+```text
+game/
+├── Cargo.toml               [workspace] members = ["game", "game-macros"]
+├── game-macros/
+│   ├── Cargo.toml
+│   └── src/lib.rs           the macros
+└── game/
+    ├── Cargo.toml           [dependencies] game-macros = { path = "../game-macros" }
+    └── src/main.rs          uses them
+```
+
+```toml
+# game-macros/Cargo.toml
+[package]
+name = "game-macros"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2", features = ["full"] }   # parses Rust code into a syntax tree
+quote = "1"                                     # turns Rust-like templates back into code
+```
+
+The macros crate defines one attribute macro and one derive with a helper
+attribute:
+
+```rust,ignore
+// game-macros/src/lib.rs
+use proc_macro::TokenStream;
+use quote::quote;
+use syn::{parse_macro_input, Data, DeriveInput, Fields, ItemFn, LitStr};
+
+/// `#[timed]` or `#[timed("label")]`: prints how long the function took.
+#[proc_macro_attribute]
+pub fn timed(args: TokenStream, item: TokenStream) -> TokenStream {
+    let func = parse_macro_input!(item as ItemFn);    // the function it is attached to
+    let label = if args.is_empty() {
+        func.sig.ident.to_string()
+    } else {
+        parse_macro_input!(args as LitStr).value()     // "label" in #[timed("label")]
+    };
+    let ItemFn { attrs, vis, sig, block } = func;
+    quote! {
+        #(#attrs)* #vis #sig {
+            let start = ::std::time::Instant::now();
+            let result = (|| #block)();
+            eprintln!("{} took {:?}", #label, start.elapsed());
+            result
+        }
+    }
+    .into()
+}
+
+/// `#[derive(Inspect)]`: lists a struct's fields, for an editor panel.
+/// `attributes(inspect)` declares the helper attribute `#[inspect(...)]`.
+#[proc_macro_derive(Inspect, attributes(inspect))]
+pub fn derive_inspect(input: TokenStream) -> TokenStream {
+    let input = parse_macro_input!(input as DeriveInput);
+    let name = &input.ident;
+    let Data::Struct(data) = &input.data else {
+        return syn::Error::new_spanned(name, "Inspect only supports structs")
+            .to_compile_error()
+            .into();
+    };
+    let Fields::Named(fields) = &data.fields else {
+        return syn::Error::new_spanned(name, "Inspect needs named fields")
+            .to_compile_error()
+            .into();
+    };
+
+    let mut rows = Vec::new();
+    for field in &fields.named {
+        let mut skip = false;
+        for attr in field.attrs.iter().filter(|a| a.path().is_ident("inspect")) {
+            let parsed = attr.parse_nested_meta(|meta| {
+                if meta.path.is_ident("skip") {
+                    skip = true;
+                    Ok(())
+                } else {
+                    Err(meta.error("expected `skip`"))   // becomes a compile error
+                }
+            });
+            if let Err(e) = parsed {
+                return e.to_compile_error().into();
+            }
+        }
+        if !skip {
+            let ident = field.ident.as_ref().unwrap();
+            let label = ident.to_string();
+            rows.push(quote! { (#label, format!("{:?}", self.#ident)) });
+        }
+    }
+
+    let (impl_generics, ty_generics, where_clause) = input.generics.split_for_impl();
+    quote! {
+        impl #impl_generics #name #ty_generics #where_clause {
+            pub fn fields(&self) -> Vec<(&'static str, String)> {
+                vec![#(#rows),*]
+            }
+        }
+    }
+    .into()
+}
+```
+
+`quote!` is a template: `#name` inserts a value, and `#(#rows),*` repeats for
+each element, like a parameter pack expansion. Errors are returned as
+`compile_error!` tokens that point at the user's code, so a mistake reads like
+any other compiler error.
+
+The game uses them like any other attribute, after importing them:
+
+```rust,ignore
+// game/src/main.rs
+use game_macros::{timed, Inspect};    // custom attributes are imported like any item
+
+#[derive(Inspect)]
+struct Light {
+    color: [f32; 3],
+    intensity: f32,
+    #[inspect(skip)]                   // helper attribute declared by the derive
+    shadow_map: Option<u32>,
+}
+
+#[timed]
+fn bake_lightmap(size: usize) -> usize {
+    (0..size * size).filter(|i| i % 7 == 0).count()
+}
+
+#[timed("load level")]
+fn load_level() {}
+
+fn main() {
+    let light = Light { color: [1.0, 0.9, 0.8], intensity: 4.0, shadow_map: None };
+    for (name, value) in light.fields() {
+        println!("{name}: {value}");
+    }
+    assert!(light.shadow_map.is_none());
+    println!("{} texels", bake_lightmap(512));
+    load_level();
+}
+```
+
+```text
+color: [1.0, 0.9, 0.8]
+intensity: 4.0
+bake_lightmap took 6.47ms
+37450 texels
+load level took 84ns
+```
+
+Misspelling an attribute, or giving it an argument the macro does not accept,
+fails at compile time:
+
+```text
+error: expected `skip`
+ --> game/src/main.rs:7:15
+  |
+7 |     #[inspect(hidden)]
+  |               ^^^^^^
+
+error: cannot find attribute `inspekt` in this scope
+ --> game/src/main.rs:7:7
+  |
+7 |     #[inspekt(skip)]
+  |       ^^^^^^^
+```
+
+Unlike C++, an attribute macro can rewrite the item completely, so it can do
+what would need a code generator in a C++ engine: register a component,
+generate editor bindings, or wrap a system with profiling. To see what a macro
+generated, install `cargo-expand` and run `cargo expand`: it prints your code
+after macro expansion, the way `-E` shows preprocessor output. The
+[Macros chapter](../systems/macros.md#procedural-macros) covers the third kind
+of procedural macro (function-like, `name!(...)`) and when a macro is the
+right tool at all.
 
 ## Expressions and control flow
 

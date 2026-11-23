@@ -21,7 +21,7 @@ it misleads you.
 - **Code you can run in the page.** Every Rust example has a ▶ button that
   compiles and runs it on the official [Rust Playground](https://play.rust-lang.org),
   and a link that opens it there so you can inspect the assembly.
-- **Graphics and engine programming.** After the general chapters, Part III
+- **Graphics and engine programming.** After the general chapters, Part IV
   applies everything to the problems you actually have: handles and arenas,
   ECS and the borrow checker, SIMD, OpenGL and Vulkan FFI, wgpu, and a small
   renderer.
@@ -48,9 +48,11 @@ Rust borrows an idea from modern C++, this book explains the idea from scratch.
 - **Part I: The language, from C++**: Cargo, types, ownership, borrowing,
   lifetimes, enums, errors, traits, collections, closures, smart pointers and
   modules.
-- **Part II: Systems programming**: concurrency, networking and RPC, memory
-  layout and performance, `unsafe`, FFI with C and C++, macros, testing and tooling, and crates.io.
-- **Part III: Graphics and engine programming**: handles and arenas, ECS,
+- **Part II: Tools and the ecosystem**: testing, benchmarks and tooling, and
+  crates.io.
+- **Part III: Systems programming**: concurrency, networking and RPC, memory
+  layout and performance, `unsafe`, FFI with C and C++, macros.
+- **Part IV: Graphics and engine programming**: handles and arenas, ECS,
   math and SIMD, OpenGL, Vulkan, wgpu, OpenXR, the game loop, assets and build
   scripts, hot reloading, and a case study.
 

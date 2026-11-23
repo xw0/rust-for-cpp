@@ -166,9 +166,10 @@ compile time and generates the serialization code. No runtime type
 information, no registration step, no separate code generator in the build.
 
 Writing your own procedural macro uses the `syn` (parse Rust syntax) and
-`quote` (generate Rust code) crates. It is a moderately advanced topic and
-worth it for engine-wide patterns, such as deriving editor inspectors or
-component registration.
+`quote` (generate Rust code) crates. It is worth it for engine-wide patterns,
+such as deriving editor inspectors or component registration. A complete
+example, an attribute macro and a derive with its own helper attribute, is in
+[Declaring your own attributes](../intro/syntax.md#declaring-your-own-attributes).
 
 ## Macro, generic, or `const fn`?
 

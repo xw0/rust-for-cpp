@@ -21,14 +21,15 @@ msgstr ""
 #: src/foundations/collections.md:278
 #: src/foundations/closures-and-iterators.md:301
 #: src/foundations/smart-pointers.md:243
-#: src/foundations/project-organization.md:130 src/systems/concurrency.md:341
-#: src/systems/networking.md:706 src/systems/memory-and-performance.md:249
-#: src/systems/unsafe.md:231 src/systems/ffi.md:317 src/systems/macros.md:185
+#: src/foundations/project-organization.md:130
 #: src/systems/testing-and-tooling.md:217 src/systems/crates-io.md:504
-#: src/engine/ecs.md:473 src/engine/math-and-simd.md:339
-#: src/engine/opengl.md:429 src/engine/vulkan.md:394 src/engine/wgpu.md:320
-#: src/engine/openxr.md:519 src/engine/game-loop.md:331
-#: src/engine/assets-and-build.md:398 src/engine/hot-reload-and-plugins.md:248
+#: src/systems/concurrency.md:341 src/systems/networking.md:706
+#: src/systems/memory-and-performance.md:249 src/systems/unsafe.md:231
+#: src/systems/ffi.md:317 src/systems/macros.md:186 src/engine/ecs.md:473
+#: src/engine/math-and-simd.md:339 src/engine/opengl.md:429
+#: src/engine/vulkan.md:394 src/engine/wgpu.md:320 src/engine/openxr.md:519
+#: src/engine/game-loop.md:331 src/engine/assets-and-build.md:398
+#: src/engine/hot-reload-and-plugins.md:248
 msgid "Summary"
 msgstr "小结"
 
@@ -77,7 +78,7 @@ msgstr "所有权与移动"
 msgid "Borrowing and references"
 msgstr "借用与引用"
 
-#: src/SUMMARY.md:19 src/intro/syntax.md:222 src/foundations/lifetimes.md:1
+#: src/SUMMARY.md:19 src/intro/syntax.md:415 src/foundations/lifetimes.md:1
 msgid "Lifetimes"
 msgstr "生命周期"
 
@@ -114,102 +115,106 @@ msgid "Project organization"
 msgstr "项目组织"
 
 #: src/SUMMARY.md:29
-msgid "Part II: Systems programming"
-msgstr "第二部分：系统编程"
+msgid "Part II: Tools and the ecosystem"
+msgstr "第二部分：工具与生态"
 
-#: src/SUMMARY.md:31 src/systems/concurrency.md:1
-msgid "Threads, locks and Send/Sync"
-msgstr "线程、锁与 Send/Sync"
-
-#: src/SUMMARY.md:32 src/systems/networking.md:1
-msgid "Networking, async and RPC"
-msgstr "网络、异步与 RPC"
-
-#: src/SUMMARY.md:33 src/systems/memory-and-performance.md:1
-msgid "Memory layout and performance"
-msgstr "内存布局与性能"
-
-#: src/SUMMARY.md:34 src/systems/unsafe.md:1
-msgid "Unsafe Rust"
-msgstr "Unsafe Rust"
-
-#: src/SUMMARY.md:35 src/systems/ffi.md:1
-msgid "FFI with C and C++"
-msgstr "与 C 和 C++ 的 FFI"
-
-#: src/SUMMARY.md:36 src/systems/macros.md:1
-msgid "Macros"
-msgstr "宏"
-
-#: src/SUMMARY.md:37 src/systems/testing-and-tooling.md:1
+#: src/SUMMARY.md:31 src/systems/testing-and-tooling.md:1
 msgid "Testing, benchmarks and tooling"
 msgstr "测试、基准测试与工具"
 
-#: src/SUMMARY.md:38 src/systems/crates-io.md:1
+#: src/SUMMARY.md:32 src/systems/crates-io.md:1
 msgid "crates.io and the ecosystem"
 msgstr "crates.io 与生态"
 
-#: src/SUMMARY.md:40
-msgid "Part III: Graphics and engine programming"
-msgstr "第三部分：图形与引擎编程"
+#: src/SUMMARY.md:34
+msgid "Part III: Systems programming"
+msgstr "第三部分：系统编程"
 
-#: src/SUMMARY.md:42 src/engine/handles-and-arenas.md:1
+#: src/SUMMARY.md:36 src/systems/concurrency.md:1
+msgid "Threads, locks and Send/Sync"
+msgstr "线程、锁与 Send/Sync"
+
+#: src/SUMMARY.md:37 src/systems/networking.md:1
+msgid "Networking, async and RPC"
+msgstr "网络、异步与 RPC"
+
+#: src/SUMMARY.md:38 src/systems/memory-and-performance.md:1
+msgid "Memory layout and performance"
+msgstr "内存布局与性能"
+
+#: src/SUMMARY.md:39 src/systems/unsafe.md:1
+msgid "Unsafe Rust"
+msgstr "Unsafe Rust"
+
+#: src/SUMMARY.md:40 src/systems/ffi.md:1
+msgid "FFI with C and C++"
+msgstr "与 C 和 C++ 的 FFI"
+
+#: src/SUMMARY.md:41 src/systems/macros.md:1
+msgid "Macros"
+msgstr "宏"
+
+#: src/SUMMARY.md:43
+msgid "Part IV: Graphics and engine programming"
+msgstr "第四部分：图形与引擎编程"
+
+#: src/SUMMARY.md:45 src/engine/handles-and-arenas.md:1
 msgid "Handles and arenas instead of pointers"
 msgstr "用句柄和 Arena 代替指针"
 
-#: src/SUMMARY.md:43 src/engine/ecs.md:1
+#: src/SUMMARY.md:46 src/engine/ecs.md:1
 msgid "ECS and the borrow checker"
 msgstr "ECS 与借用检查器"
 
-#: src/SUMMARY.md:44
+#: src/SUMMARY.md:47
 msgid "Math and SIMD"
 msgstr "数学库与 SIMD"
 
-#: src/SUMMARY.md:45 src/engine/opengl.md:1
+#: src/SUMMARY.md:48 src/engine/opengl.md:1
 msgid "OpenGL from Rust"
 msgstr "在 Rust 中使用 OpenGL"
 
-#: src/SUMMARY.md:46 src/engine/vulkan.md:1
+#: src/SUMMARY.md:49 src/engine/vulkan.md:1
 msgid "Vulkan with ash"
 msgstr "使用 ash 调用 Vulkan"
 
-#: src/SUMMARY.md:47
+#: src/SUMMARY.md:50
 msgid "Portable graphics with wgpu"
 msgstr "使用 wgpu 实现跨平台图形"
 
-#: src/SUMMARY.md:48 src/engine/openxr.md:1
+#: src/SUMMARY.md:51 src/engine/openxr.md:1
 msgid "VR and AR with OpenXR"
 msgstr "使用 OpenXR 开发 VR 与 AR"
 
-#: src/SUMMARY.md:49
+#: src/SUMMARY.md:52
 msgid "Windows, input and the game loop"
 msgstr "窗口、输入与游戏循环"
 
-#: src/SUMMARY.md:50
+#: src/SUMMARY.md:53
 msgid "Assets, shaders and build scripts"
 msgstr "资源、着色器与构建脚本"
 
-#: src/SUMMARY.md:51 src/engine/hot-reload-and-plugins.md:1
+#: src/SUMMARY.md:54 src/engine/hot-reload-and-plugins.md:1
 msgid "Hot reloading and plugins"
 msgstr "热重载与插件"
 
-#: src/SUMMARY.md:52 src/engine/case-study.md:1
+#: src/SUMMARY.md:55 src/engine/case-study.md:1
 msgid "Case study: a small renderer"
 msgstr "案例：一个小型渲染器"
 
-#: src/SUMMARY.md:54
+#: src/SUMMARY.md:57
 msgid "Appendices"
 msgstr "附录"
 
-#: src/SUMMARY.md:56 src/appendix/cheat-sheet.md:1
+#: src/SUMMARY.md:59 src/appendix/cheat-sheet.md:1
 msgid "C++ to Rust cheat sheet"
 msgstr "C++ 到 Rust 速查表"
 
-#: src/SUMMARY.md:57 src/appendix/further-reading.md:1
+#: src/SUMMARY.md:60 src/appendix/further-reading.md:1
 msgid "Further reading"
 msgstr "延伸阅读"
 
-#: src/SUMMARY.md:58 src/appendix/contributing.md:1
+#: src/SUMMARY.md:61 src/appendix/contributing.md:1
 msgid "Contributing and translating"
 msgstr "参与贡献与翻译"
 
@@ -269,12 +274,12 @@ msgstr ""
 
 #: src/index.md:24
 msgid ""
-"**Graphics and engine programming.** After the general chapters, Part III "
+"**Graphics and engine programming.** After the general chapters, Part IV "
 "applies everything to the problems you actually have: handles and arenas, "
 "ECS and the borrow checker, SIMD, OpenGL and Vulkan FFI, wgpu, and a small "
 "renderer."
 msgstr ""
-"**图形与引擎编程。** 在通用章节之后，第三部分把所学内容应用到你真正会遇到的问题上：句柄与 arena、ECS 与借用检查器、SIMD、OpenGL"
+"**图形与引擎编程。** 在通用章节之后，第四部分把所学内容应用到你真正会遇到的问题上：句柄与 arena、ECS 与借用检查器、SIMD、OpenGL"
 " 与 Vulkan 的 FFI、wgpu，以及一个小型渲染器。"
 
 #: src/index.md:29
@@ -335,27 +340,30 @@ msgstr ""
 
 #: src/index.md:51
 msgid ""
-"**Part II: Systems programming**: concurrency, networking and RPC, memory "
-"layout and performance, `unsafe`, FFI with C and C++, macros, testing and "
-"tooling, and crates.io."
-msgstr ""
-"**第二部分：系统编程**：并发、网络与 RPC、内存布局与性能、`unsafe`、与 C 和 C++ 的 FFI、宏、测试与工具，以及 "
-"crates.io。"
+"**Part II: Tools and the ecosystem**: testing, benchmarks and tooling, and "
+"crates.io."
+msgstr "**第二部分：工具与生态**：测试、基准测试与工具，以及 crates.io。"
 
 #: src/index.md:53
 msgid ""
-"**Part III: Graphics and engine programming**: handles and arenas, ECS, math"
-" and SIMD, OpenGL, Vulkan, wgpu, OpenXR, the game loop, assets and build "
+"**Part III: Systems programming**: concurrency, networking and RPC, memory "
+"layout and performance, `unsafe`, FFI with C and C++, macros."
+msgstr "**第三部分：系统编程**：并发、网络与 RPC、内存布局与性能、`unsafe`、与 C 和 C++ 的 FFI、宏。"
+
+#: src/index.md:55
+msgid ""
+"**Part IV: Graphics and engine programming**: handles and arenas, ECS, math "
+"and SIMD, OpenGL, Vulkan, wgpu, OpenXR, the game loop, assets and build "
 "scripts, hot reloading, and a case study."
 msgstr ""
-"**第三部分：图形与引擎编程**：句柄与 arena、ECS、数学库与 "
+"**第四部分：图形与引擎编程**：句柄与 arena、ECS、数学库与 "
 "SIMD、OpenGL、Vulkan、wgpu、OpenXR、游戏循环、资源与构建脚本、热重载，以及一个综合案例。"
 
-#: src/index.md:57
+#: src/index.md:59
 msgid "Status"
 msgstr "状态"
 
-#: src/index.md:59
+#: src/index.md:61
 msgid ""
 "The book is complete in English and Chinese. English is the source text, and"
 " the Chinese edition is translated from it; use the EN · 中 switch at the top"
@@ -363,17 +371,17 @@ msgid ""
 msgstr ""
 "本书的英文版和中文版均已完成。英文是源文本，中文版由其翻译而来；可以用页面顶部的 EN · 中 切换语言。每个可运行的示例在每次构建时都会被编译和测试。"
 
-#: src/index.md:63
+#: src/index.md:65
 msgid "Feedback and contributions"
 msgstr "反馈与贡献"
 
-#: src/index.md:65
+#: src/index.md:67
 msgid ""
 "The book is meant to grow with its readers. If something is wrong, unclear, "
 "or missing for your corner of engine or graphics work:"
 msgstr "这本书希望和读者一起成长。如果某处有错误、讲得不清楚，或者缺少了你所在的引擎或图形领域需要的内容："
 
-#: src/index.md:68
+#: src/index.md:70
 msgid ""
 "[Report a problem](https://github.com/xw0/rust-for-"
 "cpp/issues/new?template=correction.yml) such as a mistake, a confusing "
@@ -382,7 +390,7 @@ msgstr ""
 "[报告问题](https://github.com/xw0/rust-for-"
 "cpp/issues/new?template=correction.yml)，例如错误、令人困惑的解释或无法运行的示例；"
 
-#: src/index.md:70
+#: src/index.md:72
 msgid ""
 "[request a topic](https://github.com/xw0/rust-for-"
 "cpp/issues/new?template=topic-request.yml) you would like covered,"
@@ -390,7 +398,7 @@ msgstr ""
 "[提出主题请求](https://github.com/xw0/rust-for-cpp/issues/new?template=topic-"
 "request.yml)，告诉我们你希望涵盖的内容；"
 
-#: src/index.md:72
+#: src/index.md:74
 msgid ""
 "or fix it yourself: the ✎ icon at the top of every page opens that page's "
 "source on GitHub. [Contributing](appendix/contributing.md) explains how the "
@@ -399,21 +407,21 @@ msgstr ""
 "或者自己动手修改：每页顶部的 ✎ 图标会在 GitHub "
 "上打开该页的源文件。[参与贡献](appendix/contributing.md)一章介绍了本书及其译文是如何构建的。"
 
-#: src/index.md:76
+#: src/index.md:78
 msgid "About the author"
 msgstr "关于作者"
 
-#: src/index.md:78
+#: src/index.md:80
 msgid ""
 "Written by Xiang Wei. More projects are on the "
 "[portfolio](https://xw0.github.io/portfolio.html)."
 msgstr "作者：Xiang Wei。更多作品请见[个人作品集](https://xw0.github.io/portfolio.html)。"
 
-#: src/index.md:81 src/appendix/contributing.md:17
+#: src/index.md:83 src/appendix/contributing.md:17
 msgid "License"
 msgstr "许可证"
 
-#: src/index.md:83
+#: src/index.md:85
 msgid ""
 "The text and diagrams are licensed under [CC BY "
 "4.0](https://creativecommons.org/licenses/by/4.0/): you may copy, translate,"
@@ -430,22 +438,23 @@ msgstr ""
 msgid ""
 "Read Part I in order. Ownership, borrowing and lifetimes build on each "
 "other, and most of Rust's surprises for a C++ programmer are in those three "
-"chapters. After that, Part II and Part III can be read in any order; each "
-"chapter links back to what it relies on."
+"chapters. Read Part II before you start a real project: it covers tests, "
+"tooling and dependencies. After that, Part III and Part IV can be read in "
+"any order; each chapter links back to what it relies on."
 msgstr ""
 "请按顺序阅读第一部分。所有权、借用和生命周期这三章层层递进，Rust 给 C++ "
-"程序员的大部分意外都集中在这里。之后，第二部分和第三部分可以按任意顺序阅读；每一章都会链接到它所依赖的内容。"
+"程序员的大部分意外都集中在这里。开始一个真正的项目之前，请先读第二部分：它讲的是测试、工具和依赖。之后，第三部分和第四部分可以按任意顺序阅读；每一章都会链接到它所依赖的内容。"
 
-#: src/intro/how-to-read.md:8
+#: src/intro/how-to-read.md:9
 msgid "Conventions"
 msgstr "约定"
 
-#: src/intro/how-to-read.md:10
+#: src/intro/how-to-read.md:11
 msgid ""
 "Side-by-side code shows the C++ you would write next to the Rust equivalent:"
 msgstr "并排的代码会把你会写的 C++ 和对应的 Rust 放在一起："
 
-#: src/intro/how-to-read.md:15 src/foundations/cargo.md:44
+#: src/intro/how-to-read.md:16 src/foundations/cargo.md:44
 #: src/foundations/cargo.md:366 src/foundations/modules.md:160
 #: src/foundations/values-and-types.md:381 src/foundations/ownership.md:40
 #: src/foundations/ownership.md:166 src/foundations/ownership.md:361
@@ -457,23 +466,24 @@ msgstr "并排的代码会把你会写的 C++ 和对应的 Rust 放在一起："
 #: src/foundations/closures-and-iterators.md:18
 #: src/foundations/closures-and-iterators.md:303
 #: src/foundations/smart-pointers.md:245
-#: src/foundations/project-organization.md:132 src/systems/concurrency.md:128
-#: src/systems/concurrency.md:220 src/systems/concurrency.md:343
-#: src/systems/networking.md:445 src/systems/networking.md:708
-#: src/systems/memory-and-performance.md:251 src/systems/unsafe.md:233
+#: src/foundations/project-organization.md:132
 #: src/systems/testing-and-tooling.md:219 src/systems/crates-io.md:506
-#: src/engine/handles-and-arenas.md:235 src/engine/ecs.md:475
-#: src/engine/math-and-simd.md:341 src/engine/opengl.md:431
-#: src/engine/vulkan.md:396 src/engine/game-loop.md:333
-#: src/engine/assets-and-build.md:400 src/engine/hot-reload-and-plugins.md:250
-#: src/appendix/cheat-sheet.md:11 src/appendix/cheat-sheet.md:31
-#: src/appendix/cheat-sheet.md:52 src/appendix/cheat-sheet.md:72
-#: src/appendix/cheat-sheet.md:84 src/appendix/cheat-sheet.md:106
-#: src/appendix/cheat-sheet.md:128 src/appendix/cheat-sheet.md:148
+#: src/systems/concurrency.md:128 src/systems/concurrency.md:220
+#: src/systems/concurrency.md:343 src/systems/networking.md:445
+#: src/systems/networking.md:708 src/systems/memory-and-performance.md:251
+#: src/systems/unsafe.md:233 src/engine/handles-and-arenas.md:235
+#: src/engine/ecs.md:475 src/engine/math-and-simd.md:341
+#: src/engine/opengl.md:431 src/engine/vulkan.md:396
+#: src/engine/game-loop.md:333 src/engine/assets-and-build.md:400
+#: src/engine/hot-reload-and-plugins.md:250 src/appendix/cheat-sheet.md:11
+#: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:52
+#: src/appendix/cheat-sheet.md:72 src/appendix/cheat-sheet.md:84
+#: src/appendix/cheat-sheet.md:106 src/appendix/cheat-sheet.md:128
+#: src/appendix/cheat-sheet.md:148
 msgid "C++"
 msgstr ""
 
-#: src/intro/how-to-read.md:24 src/foundations/cargo.md:44
+#: src/intro/how-to-read.md:25 src/foundations/cargo.md:44
 #: src/foundations/cargo.md:366 src/foundations/modules.md:160
 #: src/foundations/values-and-types.md:48
 #: src/foundations/values-and-types.md:381 src/foundations/ownership.md:40
@@ -487,25 +497,26 @@ msgstr ""
 #: src/foundations/closures-and-iterators.md:30
 #: src/foundations/closures-and-iterators.md:303
 #: src/foundations/smart-pointers.md:245
-#: src/foundations/project-organization.md:132 src/systems/concurrency.md:148
-#: src/systems/concurrency.md:220 src/systems/concurrency.md:343
-#: src/systems/networking.md:22 src/systems/networking.md:445
-#: src/systems/networking.md:708 src/systems/memory-and-performance.md:251
-#: src/systems/unsafe.md:233 src/systems/ffi.md:69 src/systems/ffi.md:319
-#: src/systems/macros.md:187 src/systems/testing-and-tooling.md:219
-#: src/systems/crates-io.md:506 src/engine/handles-and-arenas.md:235
-#: src/engine/ecs.md:475 src/engine/math-and-simd.md:341
-#: src/engine/opengl.md:20 src/engine/opengl.md:431 src/engine/vulkan.md:396
-#: src/engine/openxr.md:521 src/engine/game-loop.md:333
-#: src/engine/assets-and-build.md:400 src/engine/hot-reload-and-plugins.md:250
-#: src/appendix/cheat-sheet.md:11 src/appendix/cheat-sheet.md:31
-#: src/appendix/cheat-sheet.md:52 src/appendix/cheat-sheet.md:72
-#: src/appendix/cheat-sheet.md:84 src/appendix/cheat-sheet.md:106
-#: src/appendix/cheat-sheet.md:128 src/appendix/cheat-sheet.md:148
+#: src/foundations/project-organization.md:132
+#: src/systems/testing-and-tooling.md:219 src/systems/crates-io.md:506
+#: src/systems/concurrency.md:148 src/systems/concurrency.md:220
+#: src/systems/concurrency.md:343 src/systems/networking.md:22
+#: src/systems/networking.md:445 src/systems/networking.md:708
+#: src/systems/memory-and-performance.md:251 src/systems/unsafe.md:233
+#: src/systems/ffi.md:69 src/systems/ffi.md:319 src/systems/macros.md:188
+#: src/engine/handles-and-arenas.md:235 src/engine/ecs.md:475
+#: src/engine/math-and-simd.md:341 src/engine/opengl.md:20
+#: src/engine/opengl.md:431 src/engine/vulkan.md:396 src/engine/openxr.md:521
+#: src/engine/game-loop.md:333 src/engine/assets-and-build.md:400
+#: src/engine/hot-reload-and-plugins.md:250 src/appendix/cheat-sheet.md:11
+#: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:52
+#: src/appendix/cheat-sheet.md:72 src/appendix/cheat-sheet.md:84
+#: src/appendix/cheat-sheet.md:106 src/appendix/cheat-sheet.md:128
+#: src/appendix/cheat-sheet.md:148
 msgid "Rust"
 msgstr "Rust"
 
-#: src/intro/how-to-read.md:34
+#: src/intro/how-to-read.md:35
 msgid ""
 "Rust examples are live. Press ▶ to compile and run them on the Rust "
 "Playground; edit them first if you like. The link under each example opens "
@@ -516,7 +527,7 @@ msgstr ""
 "Rust 示例是可运行的。按 ▶ 即可在 Rust Playground 上编译并运行；也可以先修改再运行。每个示例下方的链接会在 Playground"
 " 中打开它，在那里，_Run_ 旁边的 **⋯** 菜单可以显示生成的汇编、LLVM IR 或 MIR。有些示例隐藏了准备代码，点击眼睛图标即可显示。"
 
-#: src/intro/how-to-read.md:40
+#: src/intro/how-to-read.md:41
 msgid ""
 "Interactive diagrams have **Back** and **Next** buttons, a slider, and "
 "respond to the ← and → keys when focused. Where a diagram has tabs, the C++ "
@@ -525,19 +536,19 @@ msgstr ""
 "交互式示意图有**上一步**和**下一步**按钮以及一个滑块，获得焦点时也可以用 ← 和 → 键操作。带标签页的示意图中，C++ 标签和 Rust "
 "标签用两种语言展示同一个程序。"
 
-#: src/intro/how-to-read.md:44
+#: src/intro/how-to-read.md:45
 msgid "Callouts mark three kinds of aside:"
 msgstr "提示框分为三种："
 
-#: src/intro/how-to-read.md:49
+#: src/intro/how-to-read.md:50
 msgid "Places where doing what you would do in C++ leads you astray."
 msgstr "照搬 C++ 的做法会把你带偏的地方。"
 
-#: src/intro/how-to-read.md:56
+#: src/intro/how-to-read.md:57
 msgid "What the compiler generates and what it costs."
 msgstr "编译器生成了什么，以及代价是多少。"
 
-#: src/intro/how-to-read.md:63
+#: src/intro/how-to-read.md:64
 msgid "How the topic plays out in graphics and engine code."
 msgstr "这个主题在图形和引擎代码中如何体现。"
 
@@ -592,7 +603,7 @@ msgstr "工具"
 msgid "What it is"
 msgstr "用途"
 
-#: src/intro/setup.md:26 src/intro/syntax.md:233
+#: src/intro/setup.md:26 src/intro/syntax.md:426
 #: src/engine/assets-and-build.md:93
 msgid "C++ equivalent"
 msgstr "C++ 中的对应物"
@@ -1095,7 +1106,7 @@ msgstr ""
 "做快速实验时根本不需要建项目。[Rust Playground](https://play.rust-lang.org) "
 "可以在浏览器中编译并运行代码，能显示汇编、LLVM IR 和 MIR，并且提供最流行的 100 个 crate。本书所有可运行的示例都使用它。"
 
-#: src/intro/setup.md:195 src/intro/syntax.md:269 src/foundations/cargo.md:376
+#: src/intro/setup.md:195 src/intro/syntax.md:462 src/foundations/cargo.md:376
 #: src/foundations/modules.md:171 src/foundations/values-and-types.md:395
 #: src/foundations/ownership.md:370 src/foundations/borrowing.md:344
 #: src/foundations/lifetimes.md:259 src/foundations/enums-and-match.md:345
@@ -1104,10 +1115,11 @@ msgstr ""
 #: src/foundations/collections.md:292
 #: src/foundations/closures-and-iterators.md:313
 #: src/foundations/smart-pointers.md:255
-#: src/foundations/project-organization.md:139 src/systems/concurrency.md:354
-#: src/systems/networking.md:721 src/systems/memory-and-performance.md:262
-#: src/systems/unsafe.md:243 src/systems/ffi.md:330 src/systems/macros.md:198
+#: src/foundations/project-organization.md:139
 #: src/systems/testing-and-tooling.md:230 src/systems/crates-io.md:517
+#: src/systems/concurrency.md:354 src/systems/networking.md:721
+#: src/systems/memory-and-performance.md:262 src/systems/unsafe.md:243
+#: src/systems/ffi.md:330 src/systems/macros.md:199
 #: src/engine/handles-and-arenas.md:304 src/engine/ecs.md:484
 #: src/engine/math-and-simd.md:354 src/engine/opengl.md:442
 #: src/engine/vulkan.md:408 src/engine/wgpu.md:333 src/engine/openxr.md:533
@@ -1155,11 +1167,11 @@ msgstr ""
 #: src/foundations/traits-and-generics.md:11
 #: src/foundations/operators-and-conversions.md:9
 #: src/foundations/collections.md:8 src/foundations/smart-pointers.md:9
+#: src/systems/testing-and-tooling.md:8 src/systems/crates-io.md:11
 #: src/systems/concurrency.md:10 src/systems/networking.md:11
 #: src/systems/memory-and-performance.md:9 src/systems/unsafe.md:11
-#: src/systems/ffi.md:10 src/systems/macros.md:11
-#: src/systems/testing-and-tooling.md:8 src/systems/crates-io.md:11
-#: src/engine/ecs.md:15 src/engine/math-and-simd.md:9 src/engine/opengl.md:10
+#: src/systems/ffi.md:10 src/systems/macros.md:11 src/engine/ecs.md:15
+#: src/engine/math-and-simd.md:9 src/engine/opengl.md:10
 #: src/engine/vulkan.md:10 src/engine/wgpu.md:11 src/engine/openxr.md:22
 #: src/engine/game-loop.md:11 src/engine/assets-and-build.md:9
 #: src/engine/hot-reload-and-plugins.md:11 src/engine/case-study.md:11
@@ -1314,22 +1326,22 @@ msgid "References and pointers"
 msgstr "引用与指针"
 
 #: src/intro/syntax.md:71 src/intro/syntax.md:83 src/intro/syntax.md:97
-#: src/intro/syntax.md:200 src/intro/syntax.md:214 src/intro/syntax.md:224
+#: src/intro/syntax.md:393 src/intro/syntax.md:407 src/intro/syntax.md:417
 msgid "Symbol"
 msgstr "符号"
 
 #: src/intro/syntax.md:71 src/intro/syntax.md:83 src/intro/syntax.md:97
-#: src/intro/syntax.md:200
+#: src/intro/syntax.md:393
 msgid "C++ meaning"
 msgstr "C++ 中的含义"
 
 #: src/intro/syntax.md:71 src/intro/syntax.md:83 src/intro/syntax.md:97
-#: src/intro/syntax.md:200
+#: src/intro/syntax.md:393
 msgid "Rust meaning"
 msgstr "Rust 中的含义"
 
 #: src/intro/syntax.md:71 src/intro/syntax.md:83 src/intro/syntax.md:97
-#: src/intro/syntax.md:200 src/intro/syntax.md:214 src/intro/syntax.md:224
+#: src/intro/syntax.md:393 src/intro/syntax.md:407 src/intro/syntax.md:417
 #: src/engine/case-study.md:184 src/appendix/cheat-sheet.md:11
 #: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:52
 #: src/appendix/cheat-sheet.md:72 src/appendix/cheat-sheet.md:84
@@ -1365,8 +1377,8 @@ msgid "`&mut x`"
 msgstr ""
 
 #: src/intro/syntax.md:74 src/intro/syntax.md:78 src/intro/syntax.md:90
-#: src/intro/syntax.md:102 src/intro/syntax.md:103 src/intro/syntax.md:204
-#: src/intro/syntax.md:205 src/foundations/operators-and-conversions.md:147
+#: src/intro/syntax.md:102 src/intro/syntax.md:103 src/intro/syntax.md:397
+#: src/intro/syntax.md:398 src/foundations/operators-and-conversions.md:147
 #: src/foundations/operators-and-conversions.md:149
 #: src/foundations/operators-and-conversions.md:150
 msgid "(none)"
@@ -1438,9 +1450,9 @@ msgstr ""
 msgid "In a pattern: bind by reference instead of moving"
 msgstr "在模式中：按引用绑定而不是移动"
 
-#: src/intro/syntax.md:78 src/intro/syntax.md:205 src/intro/syntax.md:216
-#: src/intro/syntax.md:217 src/intro/syntax.md:218 src/intro/syntax.md:219
-#: src/intro/syntax.md:220 src/engine/case-study.md:194
+#: src/intro/syntax.md:78 src/intro/syntax.md:398 src/intro/syntax.md:409
+#: src/intro/syntax.md:410 src/intro/syntax.md:411 src/intro/syntax.md:412
+#: src/intro/syntax.md:413 src/engine/case-study.md:194
 #: src/appendix/cheat-sheet.md:23 src/appendix/cheat-sheet.md:24
 #: src/appendix/cheat-sheet.md:25 src/appendix/cheat-sheet.md:26
 #: src/appendix/cheat-sheet.md:27
@@ -1588,7 +1600,7 @@ msgstr "通过指针访问成员；尾置返回类型"
 msgid "Only the return type: `fn f() -> i32`"
 msgstr "只表示返回类型：`fn f() -> i32`"
 
-#: src/intro/syntax.md:93 src/intro/syntax.md:104 src/intro/syntax.md:207
+#: src/intro/syntax.md:93 src/intro/syntax.md:104 src/intro/syntax.md:400
 #: src/appendix/cheat-sheet.md:13 src/appendix/cheat-sheet.md:14
 #: src/appendix/cheat-sheet.md:15 src/appendix/cheat-sheet.md:16
 #: src/appendix/cheat-sheet.md:17 src/appendix/cheat-sheet.md:18
@@ -1635,7 +1647,7 @@ msgstr "逻辑非"
 msgid "Logical not for `bool`, bitwise not for integers (C++'s `~`)"
 msgstr "对 `bool` 是逻辑非，对整数是按位取反（C++ 的 `~`）"
 
-#: src/intro/syntax.md:100 src/intro/syntax.md:206
+#: src/intro/syntax.md:100 src/intro/syntax.md:399
 #: src/appendix/cheat-sheet.md:60 src/appendix/cheat-sheet.md:61
 #: src/appendix/cheat-sheet.md:62 src/appendix/cheat-sheet.md:63
 #: src/appendix/cheat-sheet.md:64 src/appendix/cheat-sheet.md:65
@@ -1859,7 +1871,8 @@ msgstr ""
 msgid "// Debug, PartialEq\n"
 msgstr "// Debug、PartialEq\n"
 
-#: src/intro/syntax.md:169 src/foundations/values-and-types.md:136
+#: src/intro/syntax.md:169 src/intro/syntax.md:303
+#: src/foundations/values-and-types.md:136
 #: src/foundations/values-and-types.md:137 src/foundations/borrowing.md:289
 #: src/foundations/enums-and-match.md:316 src/foundations/errors.md:224
 #: src/foundations/errors.md:335 src/foundations/errors.md:336
@@ -1913,28 +1926,234 @@ msgid "// apply an attribute only if a feature is on\n"
 msgstr "// 只在启用某个 feature 时才应用这个属性\n"
 
 #: src/intro/syntax.md:193
-msgid ""
-"To see what a macro generated, install `cargo-expand` and run `cargo "
-"expand`: it prints your code after macro expansion, the way `-E` shows "
-"preprocessor output. Writing your own derive and attribute macros is covered"
-" in [Macros](../systems/macros.md#procedural-macros)."
-msgstr ""
-"想看宏生成了什么，可以安装 `cargo-expand` 并运行 `cargo expand`：它会打印宏展开之后的代码，就像 `-E` "
-"显示预处理器的输出一样。如何编写自己的 derive 宏和属性宏，见[宏](../systems/macros.md#过程宏)一章。"
+msgid "Declaring your own attributes"
+msgstr "声明自己的属性"
 
-#: src/intro/syntax.md:198
+#: src/intro/syntax.md:195
+msgid ""
+"In C++ you can write `[[my_engine::hot]]` anywhere, and a compiler that does"
+" not recognize it ignores it. Rust has no syntax for declaring an attribute "
+"and does not ignore unknown ones: `#[hot]` with no definition in scope is a "
+"compile error. A custom attribute is always a **procedural macro**, a "
+"function that receives the code the attribute is attached to and returns the"
+" code that replaces it. There are two ways to declare one:"
+msgstr ""
+"在 C++ 里，你可以在任何地方写 `[[my_engine::hot]]`，不认识它的编译器会直接忽略。Rust "
+"没有声明属性的专门语法，也不会忽略未知的属性：作用域里没有定义的 `#[hot]` "
+"是编译错误。自定义属性永远是一个**过程宏**：一个函数，接收属性所附着的代码，并返回用来替换它的代码。声明的方式有两种："
+
+#: src/intro/syntax.md:202
+msgid "You want"
+msgstr "你想要的"
+
+#: src/intro/syntax.md:202
+msgid "Declare it with"
+msgstr "用什么声明"
+
+#: src/intro/syntax.md:202
+msgid "It receives"
+msgstr "它接收什么"
+
+#: src/intro/syntax.md:204
+msgid "`#[timed]` on a function, module or type"
+msgstr "用在函数、模块或类型上的 `#[timed]`"
+
+#: src/intro/syntax.md:204
+msgid "`#[proc_macro_attribute] pub fn timed(...)`"
+msgstr ""
+
+#: src/intro/syntax.md:204
+msgid "The attribute's arguments and the item; it returns a replacement item"
+msgstr "属性的参数和条目；返回一个替换后的条目"
+
+#: src/intro/syntax.md:205
+msgid "`#[derive(Inspect)]` plus a helper `#[inspect(skip)]` on fields"
+msgstr "`#[derive(Inspect)]`，加上用在字段上的辅助属性 `#[inspect(skip)]`"
+
+#: src/intro/syntax.md:205
+msgid "`#[proc_macro_derive(Inspect, attributes(inspect))]`"
+msgstr ""
+
+#: src/intro/syntax.md:205
+msgid ""
+"The type definition; it returns extra items, such as an `impl`. The "
+"`attributes(...)` list declares the helper attributes"
+msgstr "类型定义；返回额外的条目，比如一个 `impl`。`attributes(...)` 列表声明了辅助属性"
+
+#: src/intro/syntax.md:207
+msgid ""
+"Procedural macros must live in their own crate, marked as a `proc-macro` "
+"crate, because the compiler builds and runs them before it compiles the code"
+" that uses them. A minimal setup is a workspace with two crates:"
+msgstr ""
+"过程宏必须放在单独的 crate 里，并标记为 `proc-macro` "
+"crate，因为编译器要先构建并运行它们，然后才编译使用它们的代码。最小的配置是一个包含两个 crate 的工作区："
+
+#: src/intro/syntax.md:211
+msgid ""
+"```text\n"
+"game/\n"
+"├── Cargo.toml               [workspace] members = [\"game\", \"game-macros\"]\n"
+"├── game-macros/\n"
+"│   ├── Cargo.toml\n"
+"│   └── src/lib.rs           the macros\n"
+"└── game/\n"
+"    ├── Cargo.toml           [dependencies] game-macros = { path = \"../game-macros\" }\n"
+"    └── src/main.rs          uses them\n"
+"```"
+msgstr ""
+
+#: src/intro/syntax.md:222
+msgid ""
+"```toml\n"
+"# game-macros/Cargo.toml\n"
+"[package]\n"
+"name = \"game-macros\"\n"
+"version = \"0.1.0\"\n"
+"edition = \"2024\"\n"
+"\n"
+"[lib]\n"
+"proc-macro = true\n"
+"\n"
+"[dependencies]\n"
+"syn = { version = \"2\", features = [\"full\"] }   # parses Rust code into a syntax tree\n"
+"quote = \"1\"                                     # turns Rust-like templates back into code\n"
+"```"
+msgstr ""
+
+#: src/intro/syntax.md:237
+msgid ""
+"The macros crate defines one attribute macro and one derive with a helper "
+"attribute:"
+msgstr "宏 crate 定义了一个属性宏，以及一个带辅助属性的 derive："
+
+#: src/intro/syntax.md:241
+msgid "// game-macros/src/lib.rs\n"
+msgstr "// game-macros/src/lib.rs\n"
+
+#: src/intro/syntax.md:245
+msgid ""
+"/// `#[timed]` or `#[timed(\"label\")]`: prints how long the function "
+"took.\n"
+msgstr "/// `#[timed]` 或 `#[timed(\"label\")]`：打印函数的运行时间。\n"
+
+#: src/intro/syntax.md:249
+msgid "// the function it is attached to\n"
+msgstr "// 属性所附着的函数\n"
+
+#: src/intro/syntax.md:253
+msgid "// \"label\" in #[timed(\"label\")]\n"
+msgstr "// #[timed(\"label\")] 中的 \"label\"\n"
+
+#: src/intro/syntax.md:260
+msgid "\"{} took {:?}\""
+msgstr ""
+
+#: src/intro/syntax.md:266
+msgid ""
+"/// `#[derive(Inspect)]`: lists a struct's fields, for an editor panel.\n"
+"/// `attributes(inspect)` declares the helper attribute `#[inspect(...)]`.\n"
+msgstr ""
+"/// `#[derive(Inspect)]`：列出结构体的字段，供编辑器面板使用。\n"
+"/// `attributes(inspect)` 声明了辅助属性 `#[inspect(...)]`。\n"
+
+#: src/intro/syntax.md:274
+msgid "\"Inspect only supports structs\""
+msgstr ""
+
+#: src/intro/syntax.md:279
+msgid "\"Inspect needs named fields\""
+msgstr ""
+
+#: src/intro/syntax.md:287
+msgid "\"inspect\""
+msgstr ""
+
+#: src/intro/syntax.md:289
+msgid "\"skip\""
+msgstr ""
+
+#: src/intro/syntax.md:293
+msgid "\"expected `skip`\""
+msgstr ""
+
+#: src/intro/syntax.md:293
+msgid "// becomes a compile error\n"
+msgstr "// 会变成一个编译错误\n"
+
+#: src/intro/syntax.md:319
+msgid ""
+"`quote!` is a template: `#name` inserts a value, and `#(#rows),*` repeats "
+"for each element, like a parameter pack expansion. Errors are returned as "
+"`compile_error!` tokens that point at the user's code, so a mistake reads "
+"like any other compiler error."
+msgstr ""
+"`quote!` 是一个模板：`#name` 插入一个值，`#(#rows),*` 对每个元素重复一次，类似参数包展开。错误以 "
+"`compile_error!` token 的形式返回，并指向用户的代码，所以错误信息读起来和其他编译错误一样。"
+
+#: src/intro/syntax.md:324
+msgid "The game uses them like any other attribute, after importing them:"
+msgstr "游戏代码导入它们之后，用法和其他属性一样："
+
+#: src/intro/syntax.md:327
+msgid "// game/src/main.rs\n"
+msgstr "// game/src/main.rs\n"
+
+#: src/intro/syntax.md:328
+msgid "// custom attributes are imported like any item\n"
+msgstr "// 自定义属性和其他条目一样需要导入\n"
+
+#: src/intro/syntax.md:334
+msgid "// helper attribute declared by the derive\n"
+msgstr "// 由 derive 声明的辅助属性\n"
+
+#: src/intro/syntax.md:343
+msgid "\"load level\""
+msgstr ""
+
+#: src/intro/syntax.md:349
+msgid "\"{name}: {value}\""
+msgstr ""
+
+#: src/intro/syntax.md:352
+msgid "\"{} texels\""
+msgstr ""
+
+#: src/intro/syntax.md:365
+msgid ""
+"Misspelling an attribute, or giving it an argument the macro does not "
+"accept, fails at compile time:"
+msgstr "拼错属性名，或者给了宏不接受的参数，都会在编译时报错："
+
+#: src/intro/syntax.md:382
+msgid ""
+"Unlike C++, an attribute macro can rewrite the item completely, so it can do"
+" what would need a code generator in a C++ engine: register a component, "
+"generate editor bindings, or wrap a system with profiling. To see what a "
+"macro generated, install `cargo-expand` and run `cargo expand`: it prints "
+"your code after macro expansion, the way `-E` shows preprocessor output. The"
+" [Macros chapter](../systems/macros.md#procedural-macros) covers the third "
+"kind of procedural macro (function-like, `name!(...)`) and when a macro is "
+"the right tool at all."
+msgstr ""
+"和 C++ 不同，属性宏可以完全重写它所附着的条目，所以它能做那些在 C++ "
+"引擎里需要代码生成器才能做的事：注册组件、生成编辑器绑定，或者给一个系统包上性能分析。想看宏生成了什么，可以安装 `cargo-expand` 并运行 "
+"`cargo expand`：它会打印宏展开之后的代码，就像 `-E` "
+"显示预处理器的输出一样。第三种过程宏（类函数宏，`name!(...)`），以及什么时候才真正需要宏，见[宏](../systems/macros.md#过程宏)一章。"
+
+#: src/intro/syntax.md:391
 msgid "Expressions and control flow"
 msgstr "表达式与控制流"
 
-#: src/intro/syntax.md:202
+#: src/intro/syntax.md:395
 msgid "`x?`"
 msgstr ""
 
-#: src/intro/syntax.md:202
+#: src/intro/syntax.md:395
 msgid "(half of `a ? b : c`)"
 msgstr "（`a ? b : c` 的一半）"
 
-#: src/intro/syntax.md:202
+#: src/intro/syntax.md:395
 msgid ""
 "Early return: unwrap an `Ok`/`Some`, or return the `Err`/`None` from the "
 "current function. Rust has no ternary; use `if a { b } else { c }`"
@@ -1942,42 +2161,42 @@ msgstr ""
 "提前返回：解开 `Ok`/`Some`，或者从当前函数返回 `Err`/`None`。Rust 没有三元运算符；请使用 `if a { b } else"
 " { c }`"
 
-#: src/intro/syntax.md:202 src/appendix/cheat-sheet.md:74
+#: src/intro/syntax.md:395 src/appendix/cheat-sheet.md:74
 #: src/appendix/cheat-sheet.md:75 src/appendix/cheat-sheet.md:76
 #: src/appendix/cheat-sheet.md:77 src/appendix/cheat-sheet.md:78
 #: src/appendix/cheat-sheet.md:79 src/appendix/cheat-sheet.md:80
 msgid "[Errors](../foundations/errors.md)"
 msgstr "[错误](../foundations/errors.md)"
 
-#: src/intro/syntax.md:203
+#: src/intro/syntax.md:396
 msgid "`\\|a, b\\| a + b`"
 msgstr ""
 
-#: src/intro/syntax.md:203
+#: src/intro/syntax.md:396
 msgid "`[](auto a, auto b) { return a + b; }`"
 msgstr ""
 
-#: src/intro/syntax.md:203
+#: src/intro/syntax.md:396
 msgid "A closure. `move \\|\\| ...` captures by value"
 msgstr "闭包。`move || ...` 按值捕获"
 
-#: src/intro/syntax.md:203 src/engine/case-study.md:192
+#: src/intro/syntax.md:396 src/engine/case-study.md:192
 #: src/appendix/cheat-sheet.md:66 src/appendix/cheat-sheet.md:67
 #: src/appendix/cheat-sheet.md:68 src/appendix/cheat-sheet.md:93
 msgid "[Closures and iterators](../foundations/closures-and-iterators.md)"
 msgstr "[闭包与迭代器](../foundations/closures-and-iterators.md)"
 
-#: src/intro/syntax.md:204
+#: src/intro/syntax.md:397
 msgid "`a..b`, `a..=b`"
 msgstr ""
 
-#: src/intro/syntax.md:204
+#: src/intro/syntax.md:397
 msgid ""
 "Ranges: half-open and inclusive. Used in `for`, slicing (`&v[1..3]`) and "
 "`match`"
 msgstr "范围：半开区间和闭区间。用于 `for`、切片（`&v[1..3]`）和 `match`"
 
-#: src/intro/syntax.md:204 src/appendix/cheat-sheet.md:86
+#: src/intro/syntax.md:397 src/appendix/cheat-sheet.md:86
 #: src/appendix/cheat-sheet.md:87 src/appendix/cheat-sheet.md:88
 #: src/appendix/cheat-sheet.md:89 src/appendix/cheat-sheet.md:90
 #: src/appendix/cheat-sheet.md:91 src/appendix/cheat-sheet.md:92
@@ -1985,249 +2204,249 @@ msgstr "范围：半开区间和闭区间。用于 `for`、切片（`&v[1..3]`�
 msgid "[Collections](../foundations/collections.md)"
 msgstr "[集合](../foundations/collections.md)"
 
-#: src/intro/syntax.md:205
+#: src/intro/syntax.md:398
 msgid "`=>`"
 msgstr ""
 
-#: src/intro/syntax.md:205
+#: src/intro/syntax.md:398
 msgid "Separates a `match` pattern from its result"
 msgstr "分隔 `match` 的模式和结果"
 
-#: src/intro/syntax.md:206
+#: src/intro/syntax.md:399
 msgid "`as`"
 msgstr ""
 
-#: src/intro/syntax.md:206
+#: src/intro/syntax.md:399
 msgid "`static_cast`"
 msgstr ""
 
-#: src/intro/syntax.md:206
+#: src/intro/syntax.md:399
 msgid "Primitive casts only, never fails, may truncate"
 msgstr "只用于基本类型转换，永不失败，可能截断"
 
-#: src/intro/syntax.md:207
+#: src/intro/syntax.md:400
 msgid "`;`"
 msgstr ""
 
-#: src/intro/syntax.md:207
+#: src/intro/syntax.md:400
 msgid "Ends a statement"
 msgstr "结束一条语句"
 
-#: src/intro/syntax.md:207
+#: src/intro/syntax.md:400
 msgid ""
 "Also turns an expression into a statement. A block's last expression without"
 " `;` is its value, which is how functions usually return"
 msgstr "还会把表达式变成语句。块中最后一个不带 `;` 的表达式就是块的值，函数通常就是这样返回的"
 
-#: src/intro/syntax.md:208
+#: src/intro/syntax.md:401
 msgid "`'label: loop`"
 msgstr ""
 
-#: src/intro/syntax.md:208
+#: src/intro/syntax.md:401
 msgid "`goto` label"
 msgstr "`goto` 标签"
 
-#: src/intro/syntax.md:208
+#: src/intro/syntax.md:401
 msgid "A loop label for `break 'label` / `continue 'label`"
 msgstr "用于 `break 'label` / `continue 'label` 的循环标签"
 
-#: src/intro/syntax.md:210
+#: src/intro/syntax.md:403
 msgid "Patterns"
 msgstr "模式"
 
-#: src/intro/syntax.md:212
+#: src/intro/syntax.md:405
 msgid ""
 "Patterns appear in `let`, `match`, `if let`, function parameters and `for`."
 msgstr "模式出现在 `let`、`match`、`if let`、函数参数和 `for` 中。"
 
-#: src/intro/syntax.md:214 src/intro/syntax.md:224
+#: src/intro/syntax.md:407 src/intro/syntax.md:417
 #: src/foundations/modules.md:114 src/foundations/lifetimes.md:237
 #: src/foundations/operators-and-conversions.md:144
 #: src/foundations/smart-pointers.md:222
 msgid "Meaning"
 msgstr "含义"
 
-#: src/intro/syntax.md:216 src/foundations/enums-and-match.md:125
+#: src/intro/syntax.md:409 src/foundations/enums-and-match.md:125
 msgid "`_`"
 msgstr ""
 
-#: src/intro/syntax.md:216
+#: src/intro/syntax.md:409
 msgid ""
 "Match anything, bind nothing. `_name` binds but silences the unused warning"
 msgstr "匹配任何东西，不绑定任何东西。`_name` 会绑定，但不会产生未使用警告"
 
-#: src/intro/syntax.md:217
+#: src/intro/syntax.md:410
 msgid "`..`"
 msgstr ""
 
-#: src/intro/syntax.md:217
+#: src/intro/syntax.md:410
 msgid ""
 "Ignore the remaining fields or elements: `Point { x, .. }`, `[first, ..]`"
 msgstr "忽略其余的字段或元素：`Point { x, .. }`、`[first, ..]`"
 
-#: src/intro/syntax.md:218
+#: src/intro/syntax.md:411
 msgid "`a \\| b`"
 msgstr ""
 
-#: src/intro/syntax.md:218 src/foundations/enums-and-match.md:123
+#: src/intro/syntax.md:411 src/foundations/enums-and-match.md:123
 msgid "Either pattern"
 msgstr "两个模式之一"
 
-#: src/intro/syntax.md:219 src/foundations/enums-and-match.md:124
+#: src/intro/syntax.md:412 src/foundations/enums-and-match.md:124
 msgid "`x @ 1..=9`"
 msgstr ""
 
-#: src/intro/syntax.md:219
+#: src/intro/syntax.md:412
 msgid "Bind `x` and also test it against a pattern"
 msgstr "绑定 `x`，同时用一个模式检验它"
 
-#: src/intro/syntax.md:220
+#: src/intro/syntax.md:413
 msgid "`if cond` after a pattern"
 msgstr "模式后面的 `if cond`"
 
-#: src/intro/syntax.md:220
+#: src/intro/syntax.md:413
 msgid "A match guard"
 msgstr "match 守卫"
 
-#: src/intro/syntax.md:226
+#: src/intro/syntax.md:419
 msgid "`'a`"
 msgstr ""
 
-#: src/intro/syntax.md:226
+#: src/intro/syntax.md:419
 msgid ""
 "A lifetime parameter: a name for \"how long this borrow is valid\". Not a "
 "character literal (those are `'x'`, with a closing quote)"
 msgstr "生命周期参数：给\"这个借用在多长时间内有效\"起的名字。它不是字符字面量（字符字面量是 `'x'`，带有闭合的引号）"
 
-#: src/intro/syntax.md:226 src/intro/syntax.md:227 src/intro/syntax.md:228
-#: src/intro/syntax.md:229 src/appendix/cheat-sheet.md:42
+#: src/intro/syntax.md:419 src/intro/syntax.md:420 src/intro/syntax.md:421
+#: src/intro/syntax.md:422 src/appendix/cheat-sheet.md:42
 #: src/appendix/cheat-sheet.md:43 src/appendix/cheat-sheet.md:174
 msgid "[Lifetimes](../foundations/lifetimes.md)"
 msgstr "[生命周期](../foundations/lifetimes.md)"
 
-#: src/intro/syntax.md:227
+#: src/intro/syntax.md:420
 msgid "`&'a T`"
 msgstr ""
 
-#: src/intro/syntax.md:227
+#: src/intro/syntax.md:420
 msgid "A reference valid for `'a`"
 msgstr "在 `'a` 期间有效的引用"
 
-#: src/intro/syntax.md:228 src/foundations/lifetimes.md:190
+#: src/intro/syntax.md:421 src/foundations/lifetimes.md:190
 msgid "`'static`"
 msgstr ""
 
-#: src/intro/syntax.md:228
+#: src/intro/syntax.md:421
 msgid ""
 "Valid for the whole program: string literals, or owned data with no borrows "
 "inside"
 msgstr "在整个程序运行期间有效：字符串字面量，或者内部不含借用的拥有型数据"
 
-#: src/intro/syntax.md:229
+#: src/intro/syntax.md:422
 msgid "`'_`"
 msgstr ""
 
-#: src/intro/syntax.md:229
+#: src/intro/syntax.md:422
 msgid "\"Some lifetime, inferred\": `Foo<'_>`"
 msgstr "\"某个由编译器推断的生命周期\"：`Foo<'_>`"
 
-#: src/intro/syntax.md:231
+#: src/intro/syntax.md:424
 msgid "Literals"
 msgstr "字面量"
 
-#: src/intro/syntax.md:233
+#: src/intro/syntax.md:426
 msgid "Literal"
 msgstr "字面量"
 
-#: src/intro/syntax.md:233 src/foundations/collections.md:240
+#: src/intro/syntax.md:426 src/foundations/collections.md:240
 #: src/foundations/smart-pointers.md:171 src/foundations/smart-pointers.md:222
 #: src/systems/concurrency.md:93
 msgid "Type"
 msgstr "类型"
 
-#: src/intro/syntax.md:235
+#: src/intro/syntax.md:428
 msgid "`\"text\"`"
 msgstr ""
 
-#: src/intro/syntax.md:235
+#: src/intro/syntax.md:428
 msgid "`&'static str` (UTF-8)"
 msgstr "`&'static str`（UTF-8）"
 
-#: src/intro/syntax.md:235
+#: src/intro/syntax.md:428
 msgid "`u8\"text\"` as a `std::string_view`"
 msgstr "作为 `std::string_view` 的 `u8\"text\"`"
 
-#: src/intro/syntax.md:236
+#: src/intro/syntax.md:429
 msgid "`'c'`"
 msgstr ""
 
-#: src/intro/syntax.md:236
+#: src/intro/syntax.md:429
 msgid "`char`, a 4-byte Unicode scalar"
 msgstr "`char`，4 字节的 Unicode 标量值"
 
-#: src/intro/syntax.md:236 src/foundations/values-and-types.md:55
+#: src/intro/syntax.md:429 src/foundations/values-and-types.md:55
 msgid "`char32_t`"
 msgstr ""
 
-#: src/intro/syntax.md:237
+#: src/intro/syntax.md:430
 msgid "`b\"bytes\"`, `b'a'`"
 msgstr ""
 
-#: src/intro/syntax.md:237
+#: src/intro/syntax.md:430
 msgid "`&[u8; N]`, `u8`"
 msgstr ""
 
-#: src/intro/syntax.md:237
+#: src/intro/syntax.md:430
 msgid "`\"bytes\"` as raw bytes"
 msgstr "作为原始字节的 `\"bytes\"`"
 
-#: src/intro/syntax.md:238
+#: src/intro/syntax.md:431
 msgid "`c\"text\"`"
 msgstr ""
 
-#: src/intro/syntax.md:238
+#: src/intro/syntax.md:431
 msgid "`&CStr`, null-terminated"
 msgstr "`&CStr`，以 null 结尾"
 
-#: src/intro/syntax.md:238
+#: src/intro/syntax.md:431
 msgid "`\"text\"` passed to a C API"
 msgstr "传给 C API 的 `\"text\"`"
 
-#: src/intro/syntax.md:239
+#: src/intro/syntax.md:432
 msgid "`r\"C:\\path\"`, `r#\"say \"hi\"\"#`"
 msgstr ""
 
-#: src/intro/syntax.md:239
+#: src/intro/syntax.md:432
 msgid "Raw string, no escapes"
 msgstr "原始字符串，不处理转义"
 
-#: src/intro/syntax.md:239
+#: src/intro/syntax.md:432
 msgid "`R\"(...)\"`"
 msgstr ""
 
-#: src/intro/syntax.md:240
+#: src/intro/syntax.md:433
 msgid "`1_000_000`, `0xFF_u8`, `2.5f32`"
 msgstr ""
 
-#: src/intro/syntax.md:240
+#: src/intro/syntax.md:433
 msgid "Underscores for readability; type suffixes"
 msgstr "用下划线提高可读性；类型后缀"
 
-#: src/intro/syntax.md:240
+#: src/intro/syntax.md:433
 msgid "`1'000'000`, `uint8_t(0xFF)`, `2.5f`"
 msgstr ""
 
-#: src/intro/syntax.md:242
+#: src/intro/syntax.md:435
 msgid "False friends"
 msgstr "假朋友"
 
-#: src/intro/syntax.md:244
+#: src/intro/syntax.md:437
 msgid ""
 "The symbols most likely to trip a C++ programmer, because they look "
 "familiar:"
 msgstr "最容易绊倒 C++ 程序员的符号，正因为它们看起来眼熟："
 
-#: src/intro/syntax.md:246
+#: src/intro/syntax.md:439
 msgid ""
 "**`&` is visible at the call site.** C++ hides pass-by-reference in the "
 "callee's signature. In Rust, `update(&mut player)` tells the reader at the "
@@ -2236,13 +2455,13 @@ msgstr ""
 "**`&` 在调用处可见。** C++ 把按引用传参藏在被调用函数的签名里。在 Rust 中，`update(&mut player)` "
 "在调用处就告诉读者 `player` 可能会被修改；"
 
-#: src/intro/syntax.md:249
+#: src/intro/syntax.md:442
 msgid ""
 "**There is no `->`** for member access. `.` works on values, references and "
 "smart pointers alike."
 msgstr "**没有用于成员访问的 `->`。** `.` 对值、引用和智能指针都一样适用；"
 
-#: src/intro/syntax.md:251
+#: src/intro/syntax.md:444
 msgid ""
 "**`!` after a name is a macro**, not negation. Macros can take any syntax "
 "inside their brackets, which is how `vec![0; 100]` and `println!(\"{x}\")` "
@@ -2251,27 +2470,27 @@ msgstr ""
 "**名字后面的 `!` 表示宏**，而不是取反。宏的括号内可以接受任意语法，`vec![0; 100]` 和 `println!(\"{x}\")` "
 "就是这样工作的；"
 
-#: src/intro/syntax.md:253
+#: src/intro/syntax.md:446
 msgid "**`?` is error propagation**, not a conditional."
 msgstr "**`?` 是错误传播**，而不是条件运算；"
 
-#: src/intro/syntax.md:254
+#: src/intro/syntax.md:447
 msgid "**`'` starts a lifetime** unless it closes again one character later."
 msgstr "**`'` 开始一个生命周期**，除非它在一个字符之后再次闭合；"
 
-#: src/intro/syntax.md:255
+#: src/intro/syntax.md:448
 msgid ""
 "**`|` starts a closure** at the beginning of an expression, and means \"or\""
 " in patterns and between two values."
 msgstr "**`|` 在表达式开头时开始一个闭包**，在模式中以及两个值之间表示\"或\"；"
 
-#: src/intro/syntax.md:257
+#: src/intro/syntax.md:450
 msgid ""
 "**`::<>` is only needed in expressions.** In a type position you write "
 "`Vec<u32>`, as in C++."
 msgstr "**`::<>` 只在表达式中需要。** 在类型位置上，你像 C++ 一样写 `Vec<u32>`。"
 
-#: src/intro/syntax.md:263
+#: src/intro/syntax.md:456
 msgid ""
 "Your editor can fill in a lot of this for you. rust-analyzer shows inferred "
 "types, parameter names and the lifetimes the compiler elided as inline "
@@ -2281,20 +2500,20 @@ msgstr ""
 "你的编辑器可以替你补上很多信息。rust-analyzer "
 "会以内联提示的形式显示推断出的类型、参数名以及编译器省略的生命周期，把鼠标悬停在宏上还能看到它的展开结果。学习期间，请打开这些提示。"
 
-#: src/intro/syntax.md:271
+#: src/intro/syntax.md:464
 msgid ""
 "In the program at the top, remove the `?` from `parse_level` and read the "
 "compiler error. What type does `parse` return?"
 msgstr "在开头的程序中，去掉 `parse_level` 里的 `?`，阅读编译器错误。`parse` 返回的是什么类型？"
 
-#: src/intro/syntax.md:273
+#: src/intro/syntax.md:466
 msgid ""
 "Change `0..scores.len()` to `0..=scores.len()`. What happens when you run "
 "it, and why does Rust stop instead of reading past the end?"
 msgstr ""
 "把 `0..scores.len()` 改为 `0..=scores.len()`。运行时会发生什么？为什么 Rust 会停下来，而不是读到末尾之外？"
 
-#: src/intro/syntax.md:275
+#: src/intro/syntax.md:468
 msgid ""
 "Write `let n = \"42\".parse().unwrap();` without a type anywhere. Fix the "
 "error twice: once with a type on `n`, once with the turbofish."
@@ -6360,7 +6579,7 @@ msgstr ""
 "vector 保持紧凑，这和 `std::variant` 的取舍是一样的。"
 
 #: src/foundations/enums-and-match.md:336 src/systems/ffi.md:319
-#: src/systems/macros.md:187 src/engine/openxr.md:521
+#: src/systems/macros.md:188 src/engine/openxr.md:521
 msgid "C / C++"
 msgstr ""
 
@@ -10003,6 +10222,1778 @@ msgid ""
 "critical path. Could it be split?"
 msgstr "在一个工作区上运行 `cargo build --timings`，找出关键路径上的 crate。它能拆分吗？"
 
+#: src/systems/testing-and-tooling.md:3
+msgid ""
+"In C++ you choose a test framework (GoogleTest, Catch2, doctest), a "
+"benchmark library, a formatter, a linter and a documentation generator, then"
+" wire them into CMake. Rust ships with all of them, and every Rust project "
+"uses the same ones, so `cargo test` works in any repository you clone."
+msgstr ""
+"在 C++ "
+"中，你要自己选择测试框架（GoogleTest、Catch2、doctest）、基准测试库、格式化工具、静态检查工具和文档生成器，再把它们接进 "
+"CMake。Rust 自带了所有这些工具，而且每个 Rust 项目用的都是同一套，所以在你克隆的任何仓库里 `cargo test` 都能直接运行。"
+
+#: src/systems/testing-and-tooling.md:10
+msgid "unit tests, integration tests and documentation tests,"
+msgstr "单元测试、集成测试和文档测试；"
+
+#: src/systems/testing-and-tooling.md:11
+msgid "testing things that should panic, and tests that return `Result`,"
+msgstr "测试应当 panic 的情况，以及返回 `Result` 的测试；"
+
+#: src/systems/testing-and-tooling.md:12
+msgid "benchmarks with criterion,"
+msgstr "用 criterion 做基准测试；"
+
+#: src/systems/testing-and-tooling.md:13
+msgid "property-based testing and fuzzing,"
+msgstr "基于属性的测试与模糊测试；"
+
+#: src/systems/testing-and-tooling.md:14
+msgid "rustfmt, Clippy and rustdoc,"
+msgstr "rustfmt、Clippy 和 rustdoc；"
+
+#: src/systems/testing-and-tooling.md:15
+msgid "a CI setup."
+msgstr "一套 CI 配置。"
+
+#: src/systems/testing-and-tooling.md:17
+msgid "Unit tests"
+msgstr "单元测试"
+
+#: src/systems/testing-and-tooling.md:19
+msgid ""
+"Unit tests live in the same file as the code, in a module compiled only for "
+"tests:"
+msgstr "单元测试和代码放在同一个文件中，位于一个只在测试时编译的模块里："
+
+#: src/systems/testing-and-tooling.md:27
+msgid "// private functions are testable too\n"
+msgstr "// 私有函数也可以测试\n"
+
+#: src/systems/testing-and-tooling.md:33
+msgid "// everything from the parent module, private items included\n"
+msgstr "// 父模块中的一切，包括私有条目\n"
+
+#: src/systems/testing-and-tooling.md:49
+msgid "\"values above 1 must clamp\""
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:53
+msgid "\"index out of bounds\""
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:62
+msgid "// tests may return Result and use ?\n"
+msgstr "// 测试可以返回 Result 并使用 ?\n"
+
+#: src/systems/testing-and-tooling.md:68
+msgid "\"slow: run with cargo test -- --ignored\""
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:74
+msgid ""
+"`cargo test` builds the crate in test mode, runs every `#[test]` function on"
+" a thread pool in parallel, and reports results. Useful variations:"
+msgstr "`cargo test` 以测试模式构建 crate，在线程池上并行运行每个 `#[test]` 函数，并报告结果。一些有用的变体："
+
+#: src/systems/testing-and-tooling.md:78
+msgid "# everything\n"
+msgstr "# 全部\n"
+
+#: src/systems/testing-and-tooling.md:79
+msgid "# only tests whose name contains \"overlap\"\n"
+msgstr "# 只运行名字中包含 \"overlap\" 的测试\n"
+
+#: src/systems/testing-and-tooling.md:80
+msgid "# show println! output from passing tests\n"
+msgstr "# 显示通过的测试中 println! 的输出\n"
+
+#: src/systems/testing-and-tooling.md:81
+msgid "# run serially (tests sharing a GPU, say)\n"
+msgstr "# 串行运行（比如共用一块 GPU 的测试）\n"
+
+#: src/systems/testing-and-tooling.md:82
+msgid "# optimized build\n"
+msgstr "# 优化构建\n"
+
+#: src/systems/testing-and-tooling.md:85
+msgid ""
+"Because unit tests are inside the module, they can test private functions "
+"without the `#define private public` tricks or friend declarations C++ tests"
+" sometimes resort to."
+msgstr ""
+"由于单元测试位于模块内部，它们可以测试私有函数，不需要 C++ 测试有时会用到的 `#define private public` 技巧或友元声明。"
+
+#: src/systems/testing-and-tooling.md:89
+msgid "Integration tests"
+msgstr "集成测试"
+
+#: src/systems/testing-and-tooling.md:91
+msgid ""
+"Files in a top-level `tests/` directory are compiled as separate crates that"
+" use your library through its public API only, like an external user:"
+msgstr "顶层 `tests/` 目录中的文件会被编译成单独的 crate，它们只能通过公开 API 使用你的库，就像外部用户一样："
+
+#: src/systems/testing-and-tooling.md:103
+msgid "// tests/load_scene.rs\n"
+msgstr "// tests/load_scene.rs\n"
+
+#: src/systems/testing-and-tooling.md:108
+msgid "\"tests/data/sample.ron\""
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:113
+msgid "Documentation tests"
+msgstr "文档测试"
+
+#: src/systems/testing-and-tooling.md:115
+msgid ""
+"Code examples in documentation comments are compiled and run by `cargo "
+"test`, so documentation cannot rot:"
+msgstr "文档注释中的代码示例会被 `cargo test` 编译并运行，所以文档不会过时："
+
+#: src/systems/testing-and-tooling.md:119
+msgid ""
+"/// Linearly interpolates between `a` and `b`.\n"
+"///\n"
+"/// ```\n"
+"/// # use mylib::lerp;   // hidden line: not shown in the docs\n"
+"/// assert_eq!(lerp(0.0, 10.0, 0.25), 2.5);\n"
+"/// ```\n"
+msgstr ""
+"/// 在 `a` 和 `b` 之间做线性插值。\n"
+"///\n"
+"/// ```\n"
+"/// # use mylib::lerp;   // hidden line: not shown in the docs\n"
+"/// assert_eq!(lerp(0.0, 10.0, 0.25), 2.5);\n"
+"/// ```\n"
+
+#: src/systems/testing-and-tooling.md:131
+msgid ""
+"Every example in this book is tested the same way: the build runs `mdbook "
+"test`, which compiles and runs each one as a doc test."
+msgstr "本书的每个示例都以同样的方式测试：构建时会运行 `mdbook test`，把每个示例作为文档测试编译并运行。"
+
+#: src/systems/testing-and-tooling.md:134
+msgid "Benchmarks"
+msgstr "基准测试"
+
+#: src/systems/testing-and-tooling.md:136
+msgid ""
+"The standard benchmark harness is still unstable, so the community standard "
+"is **criterion**, which runs each benchmark enough times for statistically "
+"sound results and reports changes against the previous run:"
+msgstr ""
+"标准的基准测试框架仍未稳定，所以社区的标准做法是 "
+"**criterion**：它会把每个基准运行足够多次，以得到统计上可靠的结果，并报告与上一次运行相比的变化："
+
+#: src/systems/testing-and-tooling.md:141
+msgid ""
+"// benches/culling.rs   (with [[bench]] name = \"culling\", harness = false "
+"in Cargo.toml)\n"
+msgstr ""
+"// benches/culling.rs   （需要在 Cargo.toml 中写 [[bench]] name = \"culling\", "
+"harness = false）\n"
+
+#: src/systems/testing-and-tooling.md:148
+msgid "\"cull 10k aabbs\""
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:157
+msgid ""
+"`cargo bench` runs them. `std::hint::black_box` stops the optimizer from "
+"deleting the work, like `benchmark::DoNotOptimize`."
+msgstr ""
+"用 `cargo bench` 运行它们。`std::hint::black_box` 阻止优化器删掉要测的工作，类似 "
+"`benchmark::DoNotOptimize`。"
+
+#: src/systems/testing-and-tooling.md:160
+msgid "Property tests and fuzzing"
+msgstr "属性测试与模糊测试"
+
+#: src/systems/testing-and-tooling.md:162
+msgid ""
+"**proptest** and **quickcheck** generate random inputs and shrink failures "
+"to a minimal case: \"for all vectors `v`, `normalize(v).length()` is 1 or "
+"`v` is zero\"."
+msgstr ""
+"**proptest** 和 **quickcheck** 会生成随机输入，并把失败的用例缩减到最小：“对所有向量 "
+"`v`，`normalize(v).length()` 等于 1，或者 `v` 为零”。"
+
+#: src/systems/testing-and-tooling.md:165
+msgid ""
+"**cargo-fuzz** runs libFuzzer against a function that takes `&[u8]`. Point "
+"it at every parser of untrusted data: asset formats, network packets, save "
+"files. Fuzzing safe Rust finds panics and logic bugs; fuzzing unsafe Rust, "
+"combined with sanitizers, finds memory bugs."
+msgstr ""
+"**cargo-fuzz** 用 libFuzzer 测试一个接收 `&[u8]` "
+"的函数。把它对准每一个处理不可信数据的解析器：资源格式、网络数据包、存档文件。对安全 Rust 做模糊测试能找出 panic 和逻辑 bug；对 "
+"unsafe Rust 做模糊测试并结合 sanitizer，能找出内存 bug。"
+
+#: src/systems/testing-and-tooling.md:170
+msgid "Formatting, linting and docs"
+msgstr "格式化、静态检查与文档"
+
+#: src/systems/testing-and-tooling.md:174
+msgid "rustfmt"
+msgstr "rustfmt"
+
+#: src/systems/testing-and-tooling.md:174
+msgid "`cargo fmt` (`--check` in CI)"
+msgstr "`cargo fmt`（CI 中用 `--check`）"
+
+#: src/systems/testing-and-tooling.md:175
+msgid "Clippy"
+msgstr "Clippy"
+
+#: src/systems/testing-and-tooling.md:175
+msgid "`cargo clippy` (`-- -D warnings` in CI)"
+msgstr "`cargo clippy`（CI 中用 `-- -D warnings`）"
+
+#: src/systems/testing-and-tooling.md:176
+msgid "rustdoc"
+msgstr "rustdoc"
+
+#: src/systems/testing-and-tooling.md:177
+msgid "cargo-deny / cargo-audit"
+msgstr "cargo-deny / cargo-audit"
+
+#: src/systems/testing-and-tooling.md:177
+msgid "`cargo deny check`"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:177
+msgid "License and vulnerability scanners"
+msgstr "许可证和漏洞扫描工具"
+
+#: src/systems/testing-and-tooling.md:179
+msgid ""
+"**rustfmt** has one standard style with few options, and almost every Rust "
+"project uses it, so all Rust code looks alike. Format on save and stop "
+"discussing style."
+msgstr ""
+"**rustfmt** 只有一种标准风格、选项很少，几乎每个 Rust 项目都在用它，所以所有 Rust "
+"代码看起来都差不多。保存时自动格式化，从此不再争论代码风格。"
+
+#: src/systems/testing-and-tooling.md:183
+msgid ""
+"**Clippy** has hundreds of lints, from correctness (`clippy::eq_op`: `x == "
+"x`) to performance (`clippy::large_enum_variant`) and style. It is quite "
+"good at teaching idiomatic Rust: when it suggests a rewrite, read why. "
+"Configure lints in `Cargo.toml`:"
+msgstr ""
+"**Clippy** 有数百条 lint，涵盖正确性（`clippy::eq_op`：`x == "
+"x`）、性能（`clippy::large_enum_variant`）和风格。它很擅长教你写地道的 Rust：当它建议改写时，读一读原因。在 "
+"`Cargo.toml` 中配置 lint："
+
+#: src/systems/testing-and-tooling.md:188
+msgid ""
+"```toml\n"
+"[lints.clippy]\n"
+"undocumented_unsafe_blocks = \"warn\"\n"
+"too_many_arguments = \"allow\"\n"
+"```"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:194
+msgid ""
+"**rustdoc** builds HTML documentation from `///` comments, including your "
+"dependencies' documentation, all cross-linked. Every crate on crates.io has "
+"its documentation on [docs.rs](https://docs.rs)."
+msgstr ""
+"**rustdoc** 根据 `///` 注释生成 HTML 文档，也包括你的依赖的文档，全部相互链接。crates.io 上的每个 crate 都在 "
+"[docs.rs](https://docs.rs) 上有文档。"
+
+#: src/systems/testing-and-tooling.md:198
+msgid "A CI setup"
+msgstr "一套 CI 配置"
+
+#: src/systems/testing-and-tooling.md:200
+msgid "A typical GitHub Actions job for a Rust project:"
+msgstr "一个 Rust 项目典型的 GitHub Actions 任务："
+
+#: src/systems/testing-and-tooling.md:203 src/systems/crates-io.md:449
+msgid "jobs"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:204
+msgid "check"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:205 src/systems/crates-io.md:452
+msgid "runs-on"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:205 src/systems/crates-io.md:452
+msgid "ubuntu-latest"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:206
+msgid "steps"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:207
+#: src/systems/testing-and-tooling.md:208
+#: src/systems/testing-and-tooling.md:211 src/systems/crates-io.md:457
+#: src/systems/crates-io.md:458
+msgid "uses"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:207 src/systems/crates-io.md:457
+msgid "actions/checkout@v4"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:208
+msgid "dtolnay/rust-toolchain@stable"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:209
+msgid "with"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:210
+msgid "components"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:210
+msgid "rustfmt, clippy"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:211
+msgid "Swatinem/rust-cache@v2"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:212
+#: src/systems/testing-and-tooling.md:213
+#: src/systems/testing-and-tooling.md:214 src/systems/crates-io.md:460
+msgid "run"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:212
+msgid "cargo fmt --check"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:213
+msgid "cargo clippy --all-targets -- -D warnings"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:214
+msgid "cargo test --all-targets"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:221 src/appendix/cheat-sheet.md:121
+msgid "GoogleTest / Catch2"
+msgstr "GoogleTest / Catch2"
+
+#: src/systems/testing-and-tooling.md:221
+msgid "Built-in `#[test]`, `cargo test`"
+msgstr "内置的 `#[test]`、`cargo test`"
+
+#: src/systems/testing-and-tooling.md:222
+msgid "`EXPECT_EQ`, `ASSERT_TRUE`"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:222
+msgid "`assert_eq!`, `assert!` (with optional messages)"
+msgstr "`assert_eq!`、`assert!`（可带自定义消息）"
+
+#: src/systems/testing-and-tooling.md:223
+msgid "`EXPECT_DEATH`"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:223
+msgid "`#[should_panic]`"
+msgstr ""
+
+#: src/systems/testing-and-tooling.md:224
+msgid "Test executables registered in CMake"
+msgstr "在 CMake 中注册的测试可执行文件"
+
+#: src/systems/testing-and-tooling.md:224
+msgid "`tests/` directory, discovered automatically"
+msgstr "`tests/` 目录，自动发现"
+
+#: src/systems/testing-and-tooling.md:225 src/appendix/cheat-sheet.md:122
+msgid "Google Benchmark"
+msgstr "Google Benchmark"
+
+#: src/systems/testing-and-tooling.md:225 src/appendix/cheat-sheet.md:122
+msgid "criterion"
+msgstr "criterion"
+
+#: src/systems/testing-and-tooling.md:226
+msgid "libFuzzer"
+msgstr "libFuzzer"
+
+#: src/systems/testing-and-tooling.md:226
+msgid "cargo-fuzz"
+msgstr "cargo-fuzz"
+
+#: src/systems/testing-and-tooling.md:227 src/appendix/cheat-sheet.md:123
+msgid "clang-format / clang-tidy"
+msgstr "clang-format / clang-tidy"
+
+#: src/systems/testing-and-tooling.md:227
+msgid "rustfmt / Clippy"
+msgstr "rustfmt / Clippy"
+
+#: src/systems/testing-and-tooling.md:228
+msgid "rustdoc; examples are tested"
+msgstr "rustdoc；示例会被测试"
+
+#: src/systems/testing-and-tooling.md:232
+msgid ""
+"Add tests for `aabb_overlap` covering boxes that contain each other and "
+"boxes with zero area. Do your tests pass? Should they?"
+msgstr "为 `aabb_overlap` 添加测试，覆盖互相包含的盒子和面积为零的盒子。你的测试通过了吗？它们应该通过吗？"
+
+#: src/systems/testing-and-tooling.md:234
+msgid ""
+"Write a doc test for a `fn smoothstep(e0: f32, e1: f32, x: f32) -> f32` "
+"showing three example values, and run it with `cargo test --doc`."
+msgstr ""
+"为 `fn smoothstep(e0: f32, e1: f32, x: f32) -> f32` 编写一个展示三个示例值的文档测试，并用 "
+"`cargo test --doc` 运行它。"
+
+#: src/systems/testing-and-tooling.md:236
+msgid ""
+"Run `cargo clippy` on a project from an earlier chapter and fix every "
+"warning. Which lint taught you something?"
+msgstr "在前面某一章的项目上运行 `cargo clippy`，修复每个警告。哪条 lint 让你学到了东西？"
+
+#: src/systems/crates-io.md:3
+msgid ""
+"In C++, reusing someone else's library is a project of its own: find it, "
+"pick vcpkg, Conan or a git submodule, make its build system cooperate with "
+"yours, and match compiler flags. In Rust, one line in `Cargo.toml` does all "
+"of that ([Cargo, crates and the build](../foundations/cargo.md)), and the "
+"line points to [crates.io](https://crates.io) by default. That makes adding "
+"a dependency so cheap that the hard questions move elsewhere: which crate to"
+" choose, and whether to trust it."
+msgstr ""
+"在 C++ 里，复用别人的库本身就是一个项目：先找到它，再在 vcpkg、Conan 和 git "
+"子模块之间做选择，让它的构建系统和你的配合起来，还要对齐编译选项。在 Rust 里，`Cargo.toml` "
+"里的一行就能完成这一切（[Cargo、crate 与构建](../foundations/cargo.md)），而这一行默认指向 "
+"[crates.io](https://crates.io)。添加依赖变得如此便宜，难题也就转移到了别处：该选哪个 crate，以及能不能信任它。"
+
+#: src/systems/crates-io.md:13
+msgid "how crates.io is organized, and where to find good crates,"
+msgstr "crates.io 是怎样组织的，以及去哪里找好的 crate；"
+
+#: src/systems/crates-io.md:14
+msgid "judging whether a crate is trustworthy, and the tools that help,"
+msgstr "如何判断一个 crate 是否可信，以及有哪些工具可以帮忙；"
+
+#: src/systems/crates-io.md:15
+msgid "using crates well: features, the lock file, forks and vendoring,"
+msgstr "用好 crate：feature、lock 文件、fork 和 vendor；"
+
+#: src/systems/crates-io.md:16
+msgid "contributing to other people's crates,"
+msgstr "为别人的 crate 做贡献；"
+
+#: src/systems/crates-io.md:17
+msgid "publishing your own crate on crates.io, or only on GitHub."
+msgstr "在 crates.io 上发布自己的 crate，或者只发布在 GitHub 上。"
+
+#: src/systems/crates-io.md:19
+msgid "How crates.io is organized"
+msgstr "crates.io 是怎样组织的"
+
+#: src/systems/crates-io.md:21
+msgid ""
+"crates.io is the Rust community's package registry, run by the crates.io "
+"team under the Rust project. A few rules shape everything else:"
+msgstr "crates.io 是 Rust 社区的包注册中心，由 Rust 项目下的 crates.io 团队运营。几条规则决定了其他的一切："
+
+#: src/systems/crates-io.md:24
+msgid ""
+"**Packages are source code.** A published version is a `.crate` file, a "
+"gzipped tarball of the source and its `Cargo.toml`. There are no binaries: "
+"Cargo builds every dependency on your machine with your compiler and flags."
+msgstr ""
+"**包就是源代码。** 发布的每个版本是一个 `.crate` 文件，也就是源代码加上 `Cargo.toml` 的 gzip "
+"压缩包。这里没有二进制文件：Cargo 会在你的机器上，用你的编译器和编译选项构建每一个依赖。"
+
+#: src/systems/crates-io.md:27
+msgid ""
+"**The namespace is flat.** Names are first come, first served, and there are"
+" no organization prefixes like `@company/name`. Related crates use naming "
+"conventions instead: `foo`, `foo-sys` (raw FFI bindings to a C library), "
+"`foo-derive` or `foo-macros` (procedural macros), `foo-core`."
+msgstr ""
+"**命名空间是扁平的。** 名字先到先得，没有 `@company/name` 这样的组织前缀。相关的 crate "
+"靠命名约定来组织：`foo`、`foo-sys`（C 库的原始 FFI 绑定）、`foo-derive` 或 `foo-"
+"macros`（过程宏）、`foo-core`。"
+
+#: src/systems/crates-io.md:31
+msgid ""
+"**Versions are immutable.** You cannot change or replace a published "
+"version. You can **yank** it: new projects will not select it, but projects "
+"whose `Cargo.lock` already uses it keep building. Deleting a crate entirely "
+"is only possible under narrow conditions (shortly after publishing, or with "
+"few downloads and no dependents), so a build that works today keeps working."
+msgstr ""
+"**版本不可修改。** 已经发布的版本不能修改，也不能替换。你可以 **yank**（撤回）它：新项目不会再选中这个版本，但 `Cargo.lock` "
+"里已经用到它的项目照常构建。只有在很窄的条件下（刚发布不久，或者下载量很少且没有被依赖）才能彻底删除一个 "
+"crate，所以今天能构建的项目，以后也能构建。"
+
+#: src/systems/crates-io.md:36
+msgid ""
+"**Every crate has owners.** Owners are users or GitHub teams, and only they "
+"can publish new versions. Accounts are GitHub logins."
+msgstr "**每个 crate 都有所有者。** 所有者可以是用户或 GitHub 团队，只有他们能发布新版本。账号就是 GitHub 登录。"
+
+#: src/systems/crates-io.md:38
+msgid ""
+"**Metadata comes from `Cargo.toml`.** Description, license, repository, "
+"keywords and categories are shown on the crate page, along with the README, "
+"every version, download counts and the list of crates that depend on it."
+msgstr ""
+"**元数据来自 `Cargo.toml`。** 描述、许可证、代码仓库、关键词和分类都会显示在 crate 页面上，同时显示的还有 "
+"README、所有版本、下载量，以及依赖它的 crate 列表。"
+
+#: src/systems/crates-io.md:42
+msgid ""
+"Two services sit next to crates.io and work for every crate automatically:"
+msgstr "crates.io 旁边还有两项服务，对每个 crate 自动生效："
+
+#: src/systems/crates-io.md:44
+msgid ""
+"[docs.rs](https://docs.rs) builds the API documentation of every published "
+"version. A link like `docs.rs/glam/0.30` is the reference for that version, "
+"so you never read docs for the wrong release."
+msgstr ""
+"[docs.rs](https://docs.rs) 会为每个发布的版本构建 API 文档。像 `docs.rs/glam/0.30` "
+"这样的链接就是那个版本的参考文档，所以你永远不会读错版本的文档。"
+
+#: src/systems/crates-io.md:47
+msgid ""
+"The **index** is the metadata Cargo downloads to resolve versions. Cargo "
+"fetches only the entries it needs (the \"sparse\" protocol), which is why "
+"resolving is fast even though the registry has hundreds of thousands of "
+"crates."
+msgstr ""
+"**索引**是 Cargo 解析版本时下载的元数据。Cargo 只获取它需要的条目（即 \"sparse\" 协议），所以即使注册中心有几十万个 "
+"crate，解析依然很快。"
+
+#: src/systems/crates-io.md:52
+msgid "Finding crates"
+msgstr "寻找 crate"
+
+#: src/systems/crates-io.md:54
+msgid "Where"
+msgstr "在哪里"
+
+#: src/systems/crates-io.md:56
+msgid "[crates.io](https://crates.io) search, categories and keywords"
+msgstr "[crates.io](https://crates.io) 的搜索、分类和关键词"
+
+#: src/systems/crates-io.md:56
+msgid "The registry itself. Sort by recent downloads, not all-time downloads"
+msgstr "注册中心本身。按近期下载量排序，而不是按总下载量"
+
+#: src/systems/crates-io.md:57
+msgid "[lib.rs](https://lib.rs)"
+msgstr "[lib.rs](https://lib.rs)"
+
+#: src/systems/crates-io.md:57
+msgid ""
+"An independent index of the same crates, with better ranking and categories"
+msgstr "同样这些 crate 的独立索引，排名和分类做得更好"
+
+#: src/systems/crates-io.md:58
+msgid "[blessed.rs](https://blessed.rs)"
+msgstr "[blessed.rs](https://blessed.rs)"
+
+#: src/systems/crates-io.md:58
+msgid "A short curated list of the de facto standard crate for each job"
+msgstr "一份简短的精选清单，列出每类工作事实上的标准 crate"
+
+#: src/systems/crates-io.md:59
+msgid "[Are we game yet?](https://arewegameyet.rs)"
+msgstr "[Are we game yet?](https://arewegameyet.rs)"
+
+#: src/systems/crates-io.md:59
+msgid "Game development crates: engines, graphics, audio, physics, networking"
+msgstr "游戏开发相关的 crate：引擎、图形、音频、物理、网络"
+
+#: src/systems/crates-io.md:60
+msgid "A crate page's \"Dependents\" tab"
+msgstr "crate 页面上的 \"Dependents\" 标签页"
+
+#: src/systems/crates-io.md:60
+msgid "Who already relies on it, and how much"
+msgstr "已经有谁依赖它，依赖程度如何"
+
+#: src/systems/crates-io.md:62
+msgid ""
+"For common jobs there is usually one crate the community has settled on: "
+"serde for serialization, tokio for async I/O, rayon for data parallelism, "
+"anyhow and thiserror for errors, clap for command-line parsing, tracing for "
+"logging. Start there before you compare alternatives."
+msgstr ""
+"常见的工作通常都有一个社区公认的 crate：序列化用 serde，异步 I/O 用 tokio，数据并行用 rayon，错误处理用 anyhow 和 "
+"thiserror，命令行解析用 clap，日志用 tracing。先从它们开始，再去比较其他选择。"
+
+#: src/systems/crates-io.md:67
+msgid "What Cargo does with a dependency"
+msgstr "Cargo 如何处理一个依赖"
+
+#: src/systems/crates-io.md:69
+msgid ""
+"Package management is one of C++'s weak points: there is no standard package"
+" format, no standard build description, and no stable ABI, so every library "
+"has to be adapted to every build system, compiler and configuration. Rust "
+"avoids most of that with a single design: **one tool, one package format, "
+"and everything built from source by the same compiler.** This section "
+"follows one line of `Cargo.toml` through the whole process."
+msgstr ""
+"包管理是 C++ 的弱项之一：没有标准的包格式，没有标准的构建描述，也没有稳定的 ABI，所以每个库都要针对每种构建系统、编译器和配置做适配。Rust "
+"用一个设计避开了其中的大部分问题：**一个工具，一种包格式，所有代码都由同一个编译器从源代码构建。** 本节跟踪 `Cargo.toml` "
+"里的一行，看它经历的完整过程。"
+
+#: src/systems/crates-io.md:76
+msgid "Resolving versions"
+msgstr "解析版本"
+
+#: src/systems/crates-io.md:78
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"glam = { version = \"0.30\", features = [\"serde\"] }\n"
+"serde_json = \"1\"\n"
+"```"
+msgstr ""
+
+#: src/systems/crates-io.md:84
+msgid ""
+"On the first build, Cargo downloads the index entries for these crates and "
+"their dependencies, and picks one exact version for each:"
+msgstr "第一次构建时，Cargo 会下载这些 crate 及其依赖的索引条目，并为每个 crate 选出一个确切的版本："
+
+#: src/systems/crates-io.md:87
+msgid ""
+"A requirement like `\"1\"` or `\"0.30\"` is a caret range: `\"1\"` means "
+"`>=1.0.0, <2.0.0`, and `\"0.30\"` means `>=0.30.0, <0.31.0`. Use "
+"`\"=1.2.3\"` to pin, or `\">=1.2, <1.5\"` for a custom range, but rarely."
+msgstr ""
+"`\"1\"` 或 `\"0.30\"` 这样的版本要求是插入符（caret）范围：`\"1\"` 表示 `>=1.0.0, "
+"<2.0.0`，`\"0.30\"` 表示 `>=0.30.0, <0.31.0`。用 `\"=1.2.3\"` 可以锁定版本，`\">=1.2, "
+"<1.5\"` 可以自定义范围，但很少需要。"
+
+#: src/systems/crates-io.md:90
+msgid ""
+"For each crate, Cargo picks the **newest version that satisfies every "
+"requirement** on it anywhere in the graph. In edition 2024 it also prefers "
+"versions whose declared `rust-version` your compiler supports."
+msgstr ""
+"对每个 crate，Cargo 会选出**满足依赖图中所有要求的最新版本**。在 edition 2024 中，它还会优先选择声明的 `rust-"
+"version` 被你的编译器支持的版本。"
+
+#: src/systems/crates-io.md:93
+msgid ""
+"It writes the result to `Cargo.lock`. Later builds use the lock file and do "
+"not resolve again until you run `cargo update` or change `Cargo.toml`."
+msgstr ""
+"结果写入 `Cargo.lock`。之后的构建直接使用 lock 文件，不会重新解析，除非你运行 `cargo update` 或修改 "
+"`Cargo.toml`。"
+
+#: src/systems/crates-io.md:102
+msgid ""
+"The last line is Cargo telling you that a newer, semver-incompatible glam "
+"exists, which you would have to opt into by changing `\"0.30\"`."
+msgstr "最后一行是 Cargo 在告诉你：glam 有一个更新的、semver 不兼容的版本，要用它就得自己去改 `\"0.30\"`。"
+
+#: src/systems/crates-io.md:105
+msgid "One version or two"
+msgstr "一个版本还是两个版本"
+
+#: src/systems/crates-io.md:107
+msgid ""
+"If `render` asks for `log = \"0.4.17\"` and `audio` asks for `log = "
+"\"0.4.20\"`, both requirements are in the same semver range, so Cargo "
+"**unifies** them: one copy of `log`, at a version that satisfies both "
+"(0.4.20 or newer). This is the diamond dependency, solved automatically."
+msgstr ""
+"如果 `render` 要求 `log = \"0.4.17\"`，`audio` 要求 `log = \"0.4.20\"`，两个要求在同一个 "
+"semver 范围内，Cargo 就会把它们**统一**起来：只有一份 `log`，版本同时满足两者（0.4.20 "
+"或更新）。这就是菱形依赖，被自动解决了。"
+
+#: src/systems/crates-io.md:112
+msgid ""
+"If the requirements are incompatible (`rand = \"0.8\"` and `rand = "
+"\"0.9\"`), Cargo builds **both versions** and links both into the binary. "
+"Their symbols are mangled with a hash of the crate's identity, so they do "
+"not collide, and their types are different types, so passing a `rand 0.8` "
+"value to code that expects `rand 0.9` is a compile error rather than an ODR "
+"violation. The cost is build time and binary size, which is why `cargo tree "
+"-d` and `cargo deny`'s `multiple-versions` check are worth running."
+msgstr ""
+"如果要求互不兼容（`rand = \"0.8\"` 和 `rand = \"0.9\"`），Cargo "
+"会**同时构建两个版本**，并都链接进二进制文件。它们的符号在改编（mangle）时带有 crate "
+"身份的哈希，所以不会冲突；它们的类型也是不同的类型，所以把 `rand 0.8` 的值传给需要 `rand 0.9` 的代码是编译错误，而不是 ODR "
+"违规。代价是构建时间和二进制体积，所以值得运行 `cargo tree -d` 和 `cargo deny` 的 `multiple-versions`"
+" 检查。"
+
+#: src/systems/crates-io.md:120
+msgid ""
+"The exception is native code. A crate that links a C library declares it "
+"with `links = \"z\"` in its `Cargo.toml`, and Cargo refuses to put two "
+"crates that link the same native library into one graph, because C symbols "
+"have no hash to keep them apart. You get an error at resolve time, not a "
+"crash at run time."
+msgstr ""
+"例外是原生代码。链接 C 库的 crate 要在 `Cargo.toml` 里用 `links = \"z\"` 声明，Cargo 不允许依赖图中有两个"
+" crate 链接同一个原生库，因为 C 符号没有哈希来区分。你会在解析时得到错误，而不是在运行时崩溃。"
+
+#: src/systems/crates-io.md:125
+msgid "Features are unified"
+msgstr "feature 是统一的"
+
+#: src/systems/crates-io.md:127
+msgid ""
+"Features ([Cargo chapter](../foundations/cargo.md#features-conditional-"
+"compilation)) are resolved across the whole graph: if any crate enables a "
+"feature of a dependency, every user of that dependency gets it. `cargo tree "
+"-e features` shows why a feature is on:"
+msgstr ""
+"feature（[Cargo 一章](../foundations/cargo.md#feature条件编译)）在整个依赖图上统一解析：只要有一个 "
+"crate 启用了某个依赖的 feature，这个依赖的所有使用者都会得到它。`cargo tree -e features` 能显示某个 "
+"feature 为什么被打开："
+
+#: src/systems/crates-io.md:132
+msgid ""
+"```text\n"
+"$ cargo tree -e features -i serde_core\n"
+"serde_core v1.0.229\n"
+"├── glam v0.30.10\n"
+"│   ├── glam feature \"serde\"\n"
+"│   │   └── dep v0.1.0\n"
+"...\n"
+"└── serde_core feature \"std\"\n"
+"    └── serde_json feature \"std\"\n"
+"```"
+msgstr ""
+
+#: src/systems/crates-io.md:143
+msgid ""
+"Here `glam` asked only for `serde_core`, but `serde_json` enabled its `std` "
+"feature, so `glam`'s copy has `std` too: there is only one `serde_core`. "
+"This works because features are **additive** by convention: enabling a "
+"feature may add API, never remove or change it. When you write a crate, "
+"never make a feature that breaks code which does not use it, and never use "
+"two features as mutually exclusive switches."
+msgstr ""
+"这里 `glam` 只要求了 `serde_core`，但 `serde_json` 启用了它的 `std` feature，所以 `glam` "
+"用到的那份也带有 `std`：`serde_core` 只有一份。这之所以可行，是因为按照约定 feature 是**可叠加的**：启用一个 "
+"feature 可以增加 API，但绝不删除或改变 API。自己写 crate 时，不要让某个 feature 破坏没用到它的代码，也不要把两个 "
+"feature 当成互斥的开关。"
+
+#: src/systems/crates-io.md:150
+msgid ""
+"Unification has limits that avoid the obvious problems. Dependencies of "
+"build scripts and procedural macros (which run on the host) are resolved "
+"separately from the code you ship, dev-dependencies only affect test builds,"
+" and target-specific dependencies only affect their target."
+msgstr ""
+"统一也有边界，避免了明显的问题。构建脚本和过程宏（它们运行在宿主机上）的依赖，与你发布的代码分开解析；dev-dependencies "
+"只影响测试构建；特定目标平台的依赖只影响对应的目标。"
+
+#: src/systems/crates-io.md:155
+msgid "Where things live"
+msgstr "东西放在哪里"
+
+#: src/systems/crates-io.md:157
+msgid "Location"
+msgstr "位置"
+
+#: src/systems/crates-io.md:157
+msgid "Contents"
+msgstr "内容"
+
+#: src/systems/crates-io.md:159
+msgid "`~/.cargo/registry/index/`"
+msgstr ""
+
+#: src/systems/crates-io.md:159
+msgid "Cached index entries"
+msgstr "缓存的索引条目"
+
+#: src/systems/crates-io.md:160
+msgid "`~/.cargo/registry/cache/`"
+msgstr ""
+
+#: src/systems/crates-io.md:160
+msgid "Downloaded `.crate` files, shared by all your projects"
+msgstr "下载的 `.crate` 文件，所有项目共享"
+
+#: src/systems/crates-io.md:161
+msgid "`~/.cargo/registry/src/`"
+msgstr ""
+
+#: src/systems/crates-io.md:161
+msgid "Unpacked sources; open them to read a dependency's code"
+msgstr "解压后的源代码；想读依赖的代码就打开这里"
+
+#: src/systems/crates-io.md:162
+msgid "`~/.cargo/git/`"
+msgstr ""
+
+#: src/systems/crates-io.md:162
+msgid "Git dependencies"
+msgstr "Git 依赖"
+
+#: src/systems/crates-io.md:163
+msgid "`target/` in each project"
+msgstr "每个项目里的 `target/`"
+
+#: src/systems/crates-io.md:163
+msgid "Compiled artifacts for that project"
+msgstr "这个项目的编译产物"
+
+#: src/systems/crates-io.md:165
+msgid ""
+"Each dependency is compiled once per combination of version, features, "
+"profile and target, and the artifact's file name includes a hash of that "
+"combination. Changing a feature or a flag rebuilds only what it affects, and"
+" debug and release builds never mix. To share compiled dependencies between "
+"projects, set one `CARGO_TARGET_DIR` for all of them or use `sccache`."
+msgstr ""
+"每个依赖会按\"版本、feature、profile、目标平台\"的每种组合各编译一次，产物的文件名里带有这个组合的哈希。改动一个 feature "
+"或编译选项只会重新构建受影响的部分，调试构建和发布构建也不会混在一起。要在多个项目之间共享编译好的依赖，可以给它们设置同一个 "
+"`CARGO_TARGET_DIR`，或者使用 `sccache`。"
+
+#: src/systems/crates-io.md:171
+msgid "Native libraries and `-sys` crates"
+msgstr "原生库与 `-sys` crate"
+
+#: src/systems/crates-io.md:173
+msgid ""
+"A crate that wraps a C library is usually split in two: `foo-sys` declares "
+"the raw `extern \"C\"` functions and finds or builds the library, and `foo` "
+"builds a safe API on top ([FFI with C and C++](ffi.md)). The `-sys` crate's "
+"`build.rs` does what `find_package` and `ExternalProject_Add` do in CMake, "
+"typically choosing between two strategies with a feature:"
+msgstr ""
+"封装 C 库的 crate 通常分成两个：`foo-sys` 声明原始的 `extern \"C\"` 函数，并负责找到或构建这个库；`foo` "
+"在它之上构建安全的 API（[与 C 和 C++ 的 FFI](ffi.md)）。`-sys` crate 的 `build.rs` 做的事情相当于 "
+"CMake 中的 `find_package` 和 `ExternalProject_Add`，通常通过一个 feature 在两种策略之间选择："
+
+#: src/systems/crates-io.md:179
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"# Either use the system's SQLite, found with pkg-config (or vcpkg on Windows):\n"
+"rusqlite = \"0.43\"\n"
+"# or compile SQLite's C source into your binary with the `cc` crate:\n"
+"# rusqlite = { version = \"0.43\", features = [\"bundled\"] }\n"
+"```"
+msgstr ""
+"```toml\n"
+"[dependencies]\n"
+"# 要么使用系统里的 SQLite，通过 pkg-config（Windows 上是 vcpkg）找到：\n"
+"rusqlite = \"0.43\"\n"
+"# 要么用 `cc` crate 把 SQLite 的 C 源码编译进你的二进制文件：\n"
+"# rusqlite = { version = \"0.43\", features = [\"bundled\"] }\n"
+"```"
+
+#: src/systems/crates-io.md:187
+msgid ""
+"The `bundled` style is common for game dependencies (SDL, Lua, zstd, "
+"mimalloc, PhysX bindings): the C source ships inside the crate, is built "
+"with the `cc` or `cmake` crate, and is statically linked, so users need only"
+" a C compiler."
+msgstr ""
+"`bundled` 方式在游戏依赖中很常见（SDL、Lua、zstd、mimalloc、PhysX 绑定）：C 源码随 crate 一起发布，用 "
+"`cc` 或 `cmake` crate 构建并静态链接，用户只需要一个 C 编译器。"
+
+#: src/systems/crates-io.md:191
+msgid "What this fixes, compared with C++"
+msgstr "和 C++ 相比，它解决了什么"
+
+#: src/systems/crates-io.md:193
+msgid "C++ problem"
+msgstr "C++ 的问题"
+
+#: src/systems/crates-io.md:193
+msgid "What Cargo does"
+msgstr "Cargo 的做法"
+
+#: src/systems/crates-io.md:195
+msgid "Each library has its own build system to integrate"
+msgstr "每个库都有自己的构建系统需要集成"
+
+#: src/systems/crates-io.md:195
+msgid "Every crate has the same `Cargo.toml` and builds the same way"
+msgstr "每个 crate 都有同样的 `Cargo.toml`，构建方式完全一样"
+
+#: src/systems/crates-io.md:196
+msgid ""
+"Prebuilt binaries must match compiler, standard library, "
+"`_ITERATOR_DEBUG_LEVEL`, runtime and flags"
+msgstr "预编译的二进制必须匹配编译器、标准库、`_ITERATOR_DEBUG_LEVEL`、运行时库和编译选项"
+
+#: src/systems/crates-io.md:196
+msgid "Everything is built from source with your compiler and your profile"
+msgstr "一切都用你的编译器和你的 profile 从源代码构建"
+
+#: src/systems/crates-io.md:197
+msgid "Transitive dependencies are found and built by hand"
+msgstr "传递依赖要手动查找和构建"
+
+#: src/systems/crates-io.md:197
+msgid "The whole graph is resolved and built from one line"
+msgstr "一行就能解析并构建整个依赖图"
+
+#: src/systems/crates-io.md:198
+msgid "Diamond dependencies with conflicting versions break the ODR"
+msgstr "版本冲突的菱形依赖会违反 ODR"
+
+#: src/systems/crates-io.md:198
+msgid ""
+"Compatible versions are unified; incompatible ones coexist as distinct types"
+msgstr "兼容的版本被统一；不兼容的版本作为不同的类型共存"
+
+#: src/systems/crates-io.md:199
+msgid "\"Works on my machine\" because a dependency changed"
+msgstr "因为某个依赖变了而出现\"在我机器上能跑\""
+
+#: src/systems/crates-io.md:199
+msgid "`Cargo.lock` pins every version"
+msgstr "`Cargo.lock` 锁定每一个版本"
+
+#: src/systems/crates-io.md:200
+msgid "Header-only versus compiled libraries"
+msgstr "仅头文件的库和需要编译的库"
+
+#: src/systems/crates-io.md:200
+msgid "No headers; every crate is compiled the same way"
+msgstr "没有头文件；每个 crate 都以同样的方式编译"
+
+#: src/systems/crates-io.md:201
+msgid "Optional parts of a library through CMake options"
+msgstr "通过 CMake 选项启用库的可选部分"
+
+#: src/systems/crates-io.md:201
+msgid "Features, declared in `Cargo.toml` and visible in `cargo tree`"
+msgstr "feature，声明在 `Cargo.toml` 里，用 `cargo tree` 可以看到"
+
+#: src/systems/crates-io.md:202
+msgid "Cross-compiling dependencies"
+msgstr "交叉编译依赖"
+
+#: src/systems/crates-io.md:202
+msgid "`rustup target add` and `cargo build --target`, for pure-Rust crates"
+msgstr "对纯 Rust 的 crate，`rustup target add` 加上 `cargo build --target` 即可"
+
+#: src/systems/crates-io.md:204
+msgid "What it does not fix"
+msgstr "它没有解决什么"
+
+#: src/systems/crates-io.md:206
+msgid ""
+"**Native dependencies are still native.** A `-sys` crate needs a C "
+"toolchain, and cross-compiling one needs a cross C toolchain. This is the "
+"same problem you have in C++, contained in one crate."
+msgstr ""
+"**原生依赖仍然是原生的。** `-sys` crate 需要 C 工具链，交叉编译它就需要交叉编译的 C 工具链。这和 C++ "
+"里的问题一样，只是被限制在一个 crate 里。"
+
+#: src/systems/crates-io.md:209
+msgid ""
+"**No binary distribution.** Building from source means the first build of a "
+"large graph takes minutes. `cargo check`, incremental builds, sccache and "
+"keeping heavy generic code out of low-level crates ([Project "
+"organization](../foundations/project-organization.md#compile-times-and-"
+"crate-boundaries)) are the mitigations."
+msgstr ""
+"**没有二进制分发。** 从源代码构建意味着，大型依赖图的第一次构建需要好几分钟。缓解办法有 `cargo "
+"check`、增量构建、sccache，以及不要把繁重的泛型代码放在底层 crate 里（[项目组织](../foundations/project-"
+"organization.md#编译时间与-crate-边界)）。"
+
+#: src/systems/crates-io.md:214
+msgid ""
+"**No stable ABI between Rust crates.** You cannot ship a closed-source Rust "
+"library as a `.rlib` for others to link. Closed-source code is shipped as a "
+"C ABI library, a binary, or source in a private registry."
+msgstr ""
+"**Rust crate 之间没有稳定的 ABI。** 你不能把一个闭源的 Rust 库作为 `.rlib` 发给别人链接。闭源代码要以 C ABI "
+"库、可执行文件或私有注册中心中的源代码形式发布。"
+
+#: src/systems/crates-io.md:217
+msgid ""
+"**Mixing with an existing C++ build.** Cargo does not build your C++ code. "
+"In a CMake project, Corrosion lets CMake drive Cargo ([FFI with C and "
+"C++](ffi.md#rust-inside-a-cmake-project))."
+msgstr ""
+"**与现有的 C++ 构建混用。** Cargo 不会构建你的 C++ 代码。在 CMake 项目中，可以用 Corrosion 让 CMake 来驱动"
+" Cargo（[与 C 和 C++ 的 FFI](ffi.md#在-cmake-项目中使用-rust)）。"
+
+#: src/systems/crates-io.md:221
+msgid "Can I trust this crate?"
+msgstr "这个 crate 可信吗？"
+
+#: src/systems/crates-io.md:223
+msgid ""
+"crates.io does not review code. Anyone can publish anything, and each "
+"dependency brings its own dependencies along. This is the same risk as "
+"vendoring a library from GitHub in C++, except that it is so easy to add a "
+"crate that you can end up with hundreds of them without noticing. Two facts "
+"make it more serious than it first looks:"
+msgstr ""
+"crates.io 不审查代码。任何人都可以发布任何东西，而每个依赖又会带来它自己的依赖。这和在 C++ 里从 GitHub vendor "
+"一个库的风险相同，只是添加 crate 太容易了，你可能在不知不觉中就有了几百个依赖。有两个事实让这件事比初看起来更严重："
+
+#: src/systems/crates-io.md:229
+msgid ""
+"**Building runs code.** A dependency's `build.rs` and its procedural macros "
+"run on your machine during `cargo build`, with your user's permissions, the "
+"way a CMake script does. Malicious crates have used this to steal "
+"credentials from developer machines."
+msgstr ""
+"**构建会运行代码。** 依赖的 `build.rs` 和过程宏会在 `cargo build` 时以你的用户权限在你的机器上运行，就像 CMake "
+"脚本一样。恶意 crate 曾经利用这一点从开发者的机器上窃取凭据。"
+
+#: src/systems/crates-io.md:233
+msgid ""
+"**Published source may differ from the repository.** crates.io stores what "
+"the owner uploaded. The GitHub link on the crate page is a claim, not a "
+"guarantee. A package published from a git checkout includes a "
+"`.cargo_vcs_info.json` file with the commit it was built from, which lets "
+"you, or a tool, compare the two."
+msgstr ""
+"**发布的源代码可能和代码仓库不一致。** crates.io 存储的是所有者上传的内容。crate 页面上的 GitHub "
+"链接只是一个声明，而不是保证。从 git 工作区发布的包会包含一个 `.cargo_vcs_info.json` "
+"文件，记录了构建它的提交，你或工具可以据此比较两者。"
+
+#: src/systems/crates-io.md:239
+msgid "Signals to check before adding a dependency"
+msgstr "添加依赖前要检查的信号"
+
+#: src/systems/crates-io.md:241
+msgid "Question"
+msgstr "问题"
+
+#: src/systems/crates-io.md:241
+msgid "Where to look"
+msgstr "去哪里看"
+
+#: src/systems/crates-io.md:243
+msgid "Is it widely used?"
+msgstr "用的人多吗？"
+
+#: src/systems/crates-io.md:243
+msgid "Recent downloads and the Dependents tab"
+msgstr "近期下载量和 Dependents 标签页"
+
+#: src/systems/crates-io.md:244
+msgid "Is it maintained?"
+msgstr "还在维护吗？"
+
+#: src/systems/crates-io.md:244
+msgid "Date of the last release, open issues and pull requests, a changelog"
+msgstr "最近一次发布的日期、未关闭的 issue 和 pull request、changelog"
+
+#: src/systems/crates-io.md:245
+msgid "Who maintains it?"
+msgstr "谁在维护？"
+
+#: src/systems/crates-io.md:245
+msgid "Owners on the crate page; one maintainer or a team or organization"
+msgstr "crate 页面上的所有者；是一个人，还是一个团队或组织"
+
+#: src/systems/crates-io.md:246
+msgid "How much does it pull in?"
+msgstr "它会引入多少东西？"
+
+#: src/systems/crates-io.md:246
+msgid ""
+"`cargo tree -p <crate>` after adding it, or the dependency list on the crate"
+" page"
+msgstr "添加之后运行 `cargo tree -p <crate>`，或者看 crate 页面上的依赖列表"
+
+#: src/systems/crates-io.md:247
+msgid "How much `unsafe` does it use?"
+msgstr "它用了多少 `unsafe`？"
+
+#: src/systems/crates-io.md:247
+msgid "Search the source; `cargo geiger` counts it per dependency"
+msgstr "搜索源代码；`cargo geiger` 会按依赖统计"
+
+#: src/systems/crates-io.md:248
+msgid "Does it run code at build time?"
+msgstr "它会在构建时运行代码吗？"
+
+#: src/systems/crates-io.md:248
+msgid "A `build.rs` file, or a dependency on `proc-macro2` and `syn`"
+msgstr "有 `build.rs` 文件，或者依赖了 `proc-macro2` 和 `syn`"
+
+#: src/systems/crates-io.md:249
+msgid "Is the name right?"
+msgstr "名字对吗？"
+
+#: src/systems/crates-io.md:249
+msgid ""
+"Typosquats such as `serde-json` for `serde_json` exist. Copy names from the "
+"docs"
+msgstr "存在仿冒名字的 crate，比如用 `serde-json` 冒充 `serde_json`。从文档里复制名字"
+
+#: src/systems/crates-io.md:250
+msgid "Is the license compatible?"
+msgstr "许可证兼容吗？"
+
+#: src/systems/crates-io.md:250
+msgid "The `license` field; most crates are `MIT OR Apache-2.0`"
+msgstr "看 `license` 字段；大多数 crate 是 `MIT OR Apache-2.0`"
+
+#: src/systems/crates-io.md:252
+msgid ""
+"A crate at version `0.x` is not necessarily immature. Many foundational "
+"crates stayed at `0.x` for years. What matters is how it is maintained and "
+"who depends on it."
+msgstr ""
+"版本号是 `0.x` 的 crate 并不一定不成熟。许多基础 crate 在 `0.x` 停留了很多年。重要的是它的维护情况，以及有谁依赖它。"
+
+#: src/systems/crates-io.md:256
+msgid "Tools that check for you"
+msgstr "帮你检查的工具"
+
+#: src/systems/crates-io.md:261
+msgid "# known vulnerabilities, from the RustSec advisory database\n"
+msgstr "# 已知漏洞，来自 RustSec 公告数据库\n"
+
+#: src/systems/crates-io.md:262
+msgid ""
+"# vulnerabilities, licenses, banned crates, duplicate versions, sources\n"
+msgstr "# 漏洞、许可证、禁用的 crate、重复版本、来源\n"
+
+#: src/systems/crates-io.md:263
+msgid "# crates that appear in more than one version\n"
+msgstr "# 出现了不止一个版本的 crate\n"
+
+#: src/systems/crates-io.md:264
+msgid "# who depends on `syn`, and why\n"
+msgstr "# 谁依赖了 `syn`，以及为什么\n"
+
+#: src/systems/crates-io.md:267
+msgid ""
+"The [RustSec advisory database](https://rustsec.org) records "
+"vulnerabilities, unmaintained crates and yanked versions, and `cargo audit` "
+"checks your `Cargo.lock` against it. Run it in CI ([Testing "
+"chapter](testing-and-tooling.md#a-ci-setup))."
+msgstr ""
+"[RustSec 公告数据库](https://rustsec.org)记录了漏洞、无人维护的 crate 和被撤回的版本，`cargo audit` "
+"会用它检查你的 `Cargo.lock`。在 CI 中运行它（[测试一章](testing-and-tooling.md#一套-ci-配置)）。"
+
+#: src/systems/crates-io.md:271
+msgid ""
+"`cargo deny` is driven by a `deny.toml` in your repository. A small one for "
+"a game project:"
+msgstr "`cargo deny` 由仓库里的 `deny.toml` 驱动。一个游戏项目的简单配置："
+
+#: src/systems/crates-io.md:274
+msgid ""
+"```toml\n"
+"[licenses]\n"
+"allow = [\"MIT\", \"Apache-2.0\", \"BSD-3-Clause\", \"Zlib\", \"Unicode-3.0\"]\n"
+"\n"
+"[bans]\n"
+"multiple-versions = \"warn\"          # duplicate versions cost build time and binary size\n"
+"\n"
+"[sources]\n"
+"unknown-registry = \"deny\"           # only crates.io unless you list others\n"
+"unknown-git = \"deny\"                # no surprise git dependencies\n"
+"```"
+msgstr ""
+
+#: src/systems/crates-io.md:286
+msgid ""
+"For a stricter policy, [cargo-vet](https://mozilla.github.io/cargo-vet/) "
+"records which crate versions someone on your team (or an organization you "
+"trust, such as Mozilla or Google) has actually reviewed, and fails the build"
+" when a new, unreviewed version comes in. [diff.rs](https://diff.rs) shows "
+"what changed between two published versions of a crate, which is the code "
+"you would be trusting when you run `cargo update`."
+msgstr ""
+"如果需要更严格的策略，[cargo-vet](https://mozilla.github.io/cargo-vet/) 会记录哪些 crate "
+"版本已经被你的团队成员（或者你信任的组织，比如 Mozilla 或 "
+"Google）真正审查过，并在引入未经审查的新版本时让构建失败。[diff.rs](https://diff.rs) 可以显示一个 crate "
+"两个已发布版本之间的变化，也就是你运行 `cargo update` 时将要信任的代码。"
+
+#: src/systems/crates-io.md:293
+msgid "Using crates well"
+msgstr "用好 crate"
+
+#: src/systems/crates-io.md:295
+msgid ""
+"**Turn off what you do not use.** Many crates enable optional features by "
+"default. Disabling them reduces build time and the amount of code you trust:"
+msgstr "**关掉用不到的部分。** 许多 crate 默认启用可选的 feature。关掉它们可以减少构建时间，也减少你需要信任的代码："
+
+#: src/systems/crates-io.md:298
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"image = { version = \"0.25\", default-features = false, features = [\"png\"] }\n"
+"```"
+msgstr ""
+
+#: src/systems/crates-io.md:303
+msgid ""
+"**Commit `Cargo.lock` and update on purpose.** The lock file pins every "
+"transitive version, so an update is a diff you can review:"
+msgstr "**提交 `Cargo.lock`，有意识地更新。** lock 文件锁定了所有传递依赖的版本，所以每次更新都是一个可以审查的 diff："
+
+#: src/systems/crates-io.md:307
+msgid "# what would change\n"
+msgstr "# 会发生哪些变化\n"
+
+#: src/systems/crates-io.md:308
+msgid "# update one crate (and what it needs)\n"
+msgstr "# 只更新一个 crate（以及它需要的依赖）\n"
+
+#: src/systems/crates-io.md:312
+msgid ""
+"**Declare the oldest compiler you support** with `rust-version` in "
+"`Cargo.toml`. Cargo's resolver then prefers dependency versions that still "
+"build with that compiler, and anyone with an older toolchain gets a clear "
+"error instead of a confusing one."
+msgstr ""
+"**声明你支持的最低编译器版本**，即 `Cargo.toml` 里的 `rust-version`。这样 Cargo "
+"的解析器会优先选择仍能用这个编译器构建的依赖版本，使用更旧工具链的人也会得到清楚的错误信息，而不是令人困惑的错误。"
+
+#: src/systems/crates-io.md:317
+msgid ""
+"**Use a fork while waiting for a fix.** When a dependency has a bug, fix it "
+"in a fork and point the whole dependency graph at your fork with `[patch]`, "
+"even where the crate is a dependency of a dependency:"
+msgstr ""
+"**等待修复时使用 fork。** 当某个依赖有 bug 时，在 fork 里修好它，再用 `[patch]` 让整个依赖图都指向你的 "
+"fork，即使这个 crate 是依赖的依赖："
+
+#: src/systems/crates-io.md:321
+msgid ""
+"```toml\n"
+"[patch.crates-io]\n"
+"winit = { git = \"https://github.com/you/winit\", branch = \"fix-ime-crash\" }\n"
+"```"
+msgstr ""
+
+#: src/systems/crates-io.md:326
+msgid ""
+"When the fix is released upstream, delete the patch. This is the clean "
+"version of the \"we carry a local patch to third_party/\" workflow in C++ "
+"engines."
+msgstr "修复在上游发布后，删掉这个 patch。这是 C++ 引擎里\"我们在 third_party/ 里维护一份本地补丁\"这种做法的干净版本。"
+
+#: src/systems/crates-io.md:329
+msgid ""
+"**Vendor for offline or audited builds.** `cargo vendor` copies the source "
+"of every dependency into a directory and prints the configuration that makes"
+" Cargo build from it, with no network. Console and studio build farms often "
+"need this."
+msgstr ""
+"**为离线或经过审计的构建做 vendor。** `cargo vendor` 会把每个依赖的源代码复制到一个目录中，并打印出让 Cargo "
+"从这个目录构建、无需联网的配置。主机平台和工作室的构建农场常常需要这样做。"
+
+#: src/systems/crates-io.md:334
+msgid ""
+"**Private registries** are supported for code that cannot be public: list "
+"them under `[registries]` in `.cargo/config.toml` and add `registry = "
+"\"studio\"` to a dependency. Several commercial and self-hosted registry "
+"servers exist."
+msgstr ""
+"不能公开的代码可以使用**私有注册中心**：在 `.cargo/config.toml` 的 `[registries]` 下列出它，然后给依赖加上 "
+"`registry = \"studio\"`。有好几种商业的和自托管的注册中心服务器可选。"
+
+#: src/systems/crates-io.md:339
+msgid "Contributing to other people's crates"
+msgstr "为别人的 crate 做贡献"
+
+#: src/systems/crates-io.md:341
+msgid ""
+"Most crates live on GitHub, and the workflow is the usual open-source one:"
+msgstr "大多数 crate 托管在 GitHub 上，流程就是常见的开源流程："
+
+#: src/systems/crates-io.md:343
+msgid ""
+"Read `CONTRIBUTING.md` if it exists, and look for an existing issue. For "
+"anything larger than a small fix, open an issue first and agree on the "
+"approach."
+msgstr ""
+"如果有 `CONTRIBUTING.md`，先读一读，并查找是否已有相关 issue。对于比小修复更大的改动，先开一个 issue，就做法达成一致。"
+
+#: src/systems/crates-io.md:346
+msgid ""
+"Fork and clone the repository, and check that the tests pass before you "
+"change anything: `cargo test`, often `cargo test --all-features` too."
+msgstr ""
+"fork 并克隆仓库，在修改任何东西之前先确认测试能通过：`cargo test`，通常还有 `cargo test --all-features`。"
+
+#: src/systems/crates-io.md:348
+msgid ""
+"Test your change in your own project with `[patch.crates-io]` pointing at "
+"your local clone (`path = \"../winit\"`). This is the quickest way to prove "
+"that the fix works."
+msgstr ""
+"在你自己的项目里用 `[patch.crates-io]` 指向本地克隆（`path = "
+"\"../winit\"`）来测试你的改动。这是证明修复有效的最快方式。"
+
+#: src/systems/crates-io.md:351
+msgid ""
+"Before opening the pull request, run `cargo fmt` and `cargo clippy`. Most "
+"projects check both in CI, and Rust reviewers expect formatted code."
+msgstr ""
+"提交 pull request 之前，运行 `cargo fmt` 和 `cargo clippy`。大多数项目在 CI 中检查这两项，Rust "
+"的代码审查者也默认代码是格式化过的。"
+
+#: src/systems/crates-io.md:353
+msgid ""
+"Add a test that fails without your fix, and an entry in `CHANGELOG.md` if "
+"the project keeps one."
+msgstr "添加一个没有你的修复就会失败的测试；如果项目维护 `CHANGELOG.md`，也加上一条记录。"
+
+#: src/systems/crates-io.md:356
+msgid ""
+"Contributions that are always welcome and often easier than code: a minimal "
+"reproduction for an open bug, a documentation fix, an example, or "
+"confirmation that a fix works on your platform. Console and XR platforms in "
+"particular are rarely tested by maintainers."
+msgstr ""
+"有些贡献总是受欢迎，而且往往比写代码更容易：为一个未解决的 bug 提供最小复现、修正文档、添加示例，或者确认某个修复在你的平台上有效。尤其是主机和 "
+"XR 平台，维护者很少能测试到。"
+
+#: src/systems/crates-io.md:361
+msgid ""
+"crates.io itself is open source too, at [rust-"
+"lang/crates.io](https://github.com/rust-lang/crates.io). Its issue tracker "
+"is the place to report a problem with the registry, and malware or abuse "
+"should go to the security contact on the [crates.io policies "
+"page](https://crates.io/policies) rather than to a public issue."
+msgstr ""
+"crates.io 本身也是开源的，地址是 [rust-lang/crates.io](https://github.com/rust-"
+"lang/crates.io)。注册中心的问题可以在它的 issue tracker 上报告；恶意软件或滥用行为则应该发给 [crates.io "
+"政策页面](https://crates.io/policies)上的安全联系人，而不是公开提 issue。"
+
+#: src/systems/crates-io.md:367
+msgid "Publishing your own crate"
+msgstr "发布自己的 crate"
+
+#: src/systems/crates-io.md:369
+msgid "Prepare the package"
+msgstr "准备包"
+
+#: src/systems/crates-io.md:371
+msgid ""
+"crates.io requires a license and a description. Add the rest so people can "
+"find the crate and trust it:"
+msgstr "crates.io 要求提供许可证和描述。把其余字段也填上，方便别人找到并信任这个 crate："
+
+#: src/systems/crates-io.md:374
+msgid ""
+"```toml\n"
+"[package]\n"
+"name = \"frame-pacer\"\n"
+"version = \"0.1.0\"\n"
+"edition = \"2024\"\n"
+"rust-version = \"1.85\"\n"
+"description = \"Frame pacing and fixed-timestep helpers for game loops\"\n"
+"license = \"MIT OR Apache-2.0\"\n"
+"repository = \"https://github.com/you/frame-pacer\"\n"
+"readme = \"README.md\"\n"
+"keywords = [\"gamedev\", \"game-loop\", \"timestep\"]   # up to five\n"
+"categories = [\"game-development\"]                  # from crates.io's fixed list\n"
+"exclude = [\"assets/\", \".github/\"]                  # keep the package small\n"
+"```"
+msgstr ""
+
+#: src/systems/crates-io.md:389
+msgid ""
+"`MIT OR Apache-2.0` is the Rust convention: users may pick either license, "
+"and the combination is compatible with almost every project. Add both "
+"license files to the repository."
+msgstr ""
+"`MIT OR Apache-2.0` 是 Rust 的惯例：用户可以任选一种许可证，这个组合几乎与所有项目兼容。把两个许可证文件都放进仓库。"
+
+#: src/systems/crates-io.md:393
+msgid ""
+"Document the public API with `///` comments, because docs.rs will publish "
+"them the moment the crate is released, and doc examples run as tests "
+"([Testing chapter](testing-and-tooling.md#documentation-tests)). Two crate "
+"attributes are a good default for a library:"
+msgstr ""
+"用 `///` 注释为公开 API 写文档，因为 crate 一发布，docs.rs "
+"就会公开这些文档，而文档中的示例也会作为测试运行（[测试一章](testing-and-tooling.md#文档测试)）。对一个库来说，下面两个 "
+"crate 属性是不错的默认设置："
+
+#: src/systems/crates-io.md:399
+msgid "// src/lib.rs\n"
+msgstr "// src/lib.rs\n"
+
+#: src/systems/crates-io.md:400
+msgid "// a promise users can check; drop it if you need unsafe\n"
+msgstr "// 一个用户可以验证的承诺；如果需要 unsafe 就去掉它\n"
+
+#: src/systems/crates-io.md:401
+msgid "// every public item gets documentation\n"
+msgstr "// 每个公开条目都要有文档\n"
+
+#: src/systems/crates-io.md:404
+msgid "Publish"
+msgstr "发布"
+
+#: src/systems/crates-io.md:407
+msgid "# exactly which files will be uploaded\n"
+msgstr "# 确切会上传哪些文件\n"
+
+#: src/systems/crates-io.md:408
+msgid "# builds the package as a user would, without uploading\n"
+msgstr "# 像用户那样构建这个包，但不上传\n"
+
+#: src/systems/crates-io.md:409
+msgid "# once: paste an API token from crates.io settings\n"
+msgstr "# 只需一次：粘贴从 crates.io 设置中获得的 API token\n"
+
+#: src/systems/crates-io.md:413
+msgid ""
+"`cargo publish` builds the packaged tarball in isolation, so a file that is "
+"missing from the package or a dependency given only by `path` fails here "
+"rather than for your users. Path and git dependencies must also have a "
+"`version` to be published; crates.io never depends on code outside the "
+"registry. In a workspace, `cargo publish --workspace` publishes every member"
+" in dependency order."
+msgstr ""
+"`cargo publish` 会单独构建打包好的压缩包，所以包里缺了文件，或者某个依赖只给了 "
+"`path`，都会在这一步失败，而不是在用户那里失败。path 依赖和 git 依赖要能发布，还必须写上 `version`：crates.io 上的 "
+"crate 从不依赖注册中心之外的代码。在工作区中，`cargo publish --workspace` 会按依赖顺序发布所有成员。"
+
+#: src/systems/crates-io.md:420
+msgid "Versioning"
+msgstr "版本管理"
+
+#: src/systems/crates-io.md:422
+msgid ""
+"Your version number is a promise ([semver](https://semver.org)). Before 1.0,"
+" Cargo treats the first non-zero component as the major version, so `0.3.x` "
+"to `0.4.0` is a breaking change and `0.3.1` to `0.3.2` is not. Breaking "
+"changes in Rust include more than in C++: making a public field private, "
+"adding a variant to a public enum (unless it is `#[non_exhaustive]`), adding"
+" a required method to a public trait, or removing a trait implementation. "
+"[cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) "
+"compares your API with the last published version and reports changes that "
+"need a major bump. Run it before each release."
+msgstr ""
+"版本号是一个承诺（[semver](https://semver.org)）。1.0 之前，Cargo 把第一个非零的部分当作主版本号，所以从 "
+"`0.3.x` 到 `0.4.0` 是破坏性变更，从 `0.3.1` 到 `0.3.2` 则不是。Rust 中的破坏性变更比 C++ "
+"里更多：把公开字段改为私有、给公开枚举增加变体（除非它标记了 `#[non_exhaustive]`）、给公开 trait "
+"增加必须实现的方法，或者移除某个 trait 实现。[cargo-semver-"
+"checks](https://github.com/obi1kenobi/cargo-semver-checks) 会把你的 API "
+"和上一个已发布的版本进行比较，报告需要升级主版本号的改动。每次发布前运行一下。"
+
+#: src/systems/crates-io.md:432
+msgid ""
+"If you publish a broken version, publish a fixed one and yank the broken one"
+" with `cargo yank --version 0.1.1`."
+msgstr "如果发布了一个有问题的版本，就发布一个修复后的版本，再用 `cargo yank --version 0.1.1` 撤回有问题的那个。"
+
+#: src/systems/crates-io.md:435
+msgid "Release from CI"
+msgstr "从 CI 发布"
+
+#: src/systems/crates-io.md:437
+msgid ""
+"For a crate other people depend on, publish from CI rather than from your "
+"laptop. With **trusted publishing**, crates.io accepts a short-lived token "
+"from a specific GitHub Actions workflow, so there is no long-lived API token"
+" to leak. Publish the first version by hand, enable trusted publishing for "
+"the repository and workflow in the crate's settings on crates.io, and then:"
+msgstr ""
+"对于别人依赖的 crate，应该从 CI 发布，而不是从你的笔记本发布。使用**可信发布**（trusted "
+"publishing）时，crates.io 只接受来自指定 GitHub Actions 工作流的短期 token，所以没有可能泄露的长期 API "
+"token。先手动发布第一个版本，在 crates.io 上该 crate 的设置中为这个仓库和工作流启用可信发布，然后："
+
+#: src/systems/crates-io.md:444
+msgid ""
+"# .github/workflows/release.yml\n"
+"name"
+msgstr ""
+
+#: src/systems/crates-io.md:445
+msgid "Release"
+msgstr ""
+
+#: src/systems/crates-io.md:447
+msgid "push"
+msgstr ""
+
+#: src/systems/crates-io.md:448
+msgid "tags"
+msgstr ""
+
+#: src/systems/crates-io.md:448
+msgid "\"v*\""
+msgstr ""
+
+#: src/systems/crates-io.md:451
+msgid "publish"
+msgstr ""
+
+#: src/systems/crates-io.md:453
+msgid "environment"
+msgstr ""
+
+#: src/systems/crates-io.md:453
+msgid "release"
+msgstr ""
+
+#: src/systems/crates-io.md:454
+msgid "permissions"
+msgstr ""
+
+#: src/systems/crates-io.md:455
+msgid "id-token"
+msgstr ""
+
+#: src/systems/crates-io.md:455
+msgid ""
+"write           # lets the job request the short-lived token\n"
+"    steps"
+msgstr ""
+
+#: src/systems/crates-io.md:458
+msgid "rust-lang/crates-io-auth-action@v1"
+msgstr ""
+
+#: src/systems/crates-io.md:459
+msgid "id"
+msgstr ""
+
+#: src/systems/crates-io.md:459
+msgid "auth"
+msgstr ""
+
+#: src/systems/crates-io.md:460
+msgid "cargo publish"
+msgstr ""
+
+#: src/systems/crates-io.md:461
+msgid "env"
+msgstr ""
+
+#: src/systems/crates-io.md:462
+msgid "CARGO_REGISTRY_TOKEN"
+msgstr ""
+
+#: src/systems/crates-io.md:462
+msgid "${{ steps.auth.outputs.token }}"
+msgstr ""
+
+#: src/systems/crates-io.md:465
+msgid ""
+"Tools such as `cargo-release` and `release-plz` automate the rest: bumping "
+"versions, updating the changelog, tagging and publishing."
+msgstr ""
+"`cargo-release` 和 `release-plz` 等工具可以自动完成其余的工作：升级版本号、更新 changelog、打标签和发布。"
+
+#: src/systems/crates-io.md:468
+msgid "Publishing only on GitHub"
+msgstr "只在 GitHub 上发布"
+
+#: src/systems/crates-io.md:470
+msgid ""
+"You do not have to use crates.io. Code on GitHub (or any git host) is "
+"already usable as a dependency:"
+msgstr "你不一定要用 crates.io。GitHub（或任何 git 托管服务）上的代码本身就可以作为依赖使用："
+
+#: src/systems/crates-io.md:473
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"frame-pacer = { git = \"https://github.com/you/frame-pacer\", tag = \"v0.1.0\" }\n"
+"```"
+msgstr ""
+
+#: src/systems/crates-io.md:478
+msgid "crates.io"
+msgstr "crates.io"
+
+#: src/systems/crates-io.md:478
+msgid "Git only"
+msgstr "只用 Git"
+
+#: src/systems/crates-io.md:480
+msgid "Version resolution"
+msgstr "版本解析"
+
+#: src/systems/crates-io.md:480
+msgid "Semver ranges; duplicates unified"
+msgstr "semver 范围；重复版本会被统一"
+
+#: src/systems/crates-io.md:480
+msgid "One pinned commit per dependency"
+msgstr "每个依赖锁定一个提交"
+
+#: src/systems/crates-io.md:481
+msgid "Documentation"
+msgstr "文档"
+
+#: src/systems/crates-io.md:481
+msgid "Built on docs.rs automatically"
+msgstr "自动在 docs.rs 上构建"
+
+#: src/systems/crates-io.md:481
+msgid "`cargo doc`, hosted yourself (GitHub Pages)"
+msgstr "`cargo doc`，自己托管（GitHub Pages）"
+
+#: src/systems/crates-io.md:482
+msgid "Usable by crates on crates.io"
+msgstr "能被 crates.io 上的 crate 使用"
+
+#: src/systems/crates-io.md:482
+msgid "No: published crates cannot depend on git"
+msgstr "不能：已发布的 crate 不能依赖 git"
+
+#: src/systems/crates-io.md:483
+msgid "Discoverable"
+msgstr "可发现性"
+
+#: src/systems/crates-io.md:483
+msgid "Search, categories, lib.rs"
+msgstr "搜索、分类、lib.rs"
+
+#: src/systems/crates-io.md:483
+msgid "Only through your own links"
+msgstr "只能通过你自己的链接"
+
+#: src/systems/crates-io.md:484
+msgid "Takes back a release"
+msgstr "撤回一个发布"
+
+#: src/systems/crates-io.md:484
+msgid "Yank only"
+msgstr "只能 yank"
+
+#: src/systems/crates-io.md:484
+msgid "You control the repository"
+msgstr "仓库由你控制"
+
+#: src/systems/crates-io.md:486
+msgid ""
+"Git-only fits internal tools, experiments and crates that are not ready for "
+"a stable name. For anything you want other people to build on, publish to "
+"crates.io, and keep the GitHub repository as the home for issues and pull "
+"requests. Command-line tools can be installed either way: `cargo install "
+"frame-pacer-cli` from crates.io, or `cargo install --git <url>`."
+msgstr ""
+"只用 Git 适合内部工具、实验性项目，以及还没确定稳定名字的 crate。凡是希望别人在其上构建的东西，都应该发布到 crates.io，同时把 "
+"GitHub 仓库作为 issue 和 pull request 的大本营。命令行工具两种方式都能安装：从 crates.io 用 `cargo "
+"install frame-pacer-cli`，或者用 `cargo install --git <url>`。"
+
+#: src/systems/crates-io.md:495
+msgid ""
+"Studios usually combine all of the above: a vetted allowlist of public "
+"crates enforced with `cargo deny`, `cargo vendor` or a registry mirror for "
+"build farms without internet access, a private registry for internal crates "
+"shared between teams, and `[patch]` for the few public crates the studio has"
+" forked. Console SDK bindings are under NDA and cannot be published at all, "
+"so they live in the private registry or as path dependencies."
+msgstr ""
+"工作室通常会把以上方法组合起来：用 `cargo deny` 强制执行经过审查的公共 crate 白名单，为无法联网的构建农场准备 `cargo "
+"vendor` 或注册中心镜像，用私有注册中心在团队之间共享内部 crate，再用 `[patch]` 处理工作室 fork 过的少数公共 "
+"crate。主机 SDK 的绑定受保密协议约束，根本不能公开发布，所以它们放在私有注册中心里，或者作为 path 依赖。"
+
+#: src/systems/crates-io.md:509
+msgid "Prebuilt binaries per compiler and configuration"
+msgstr "针对每种编译器和配置的预编译二进制"
+
+#: src/systems/crates-io.md:509
+msgid "Source packages built with your flags"
+msgstr "用你的编译选项构建的源代码包"
+
+#: src/systems/crates-io.md:510 src/appendix/cheat-sheet.md:109
+msgid "`third_party/` with local patches"
+msgstr "带本地补丁的 `third_party/`"
+
+#: src/systems/crates-io.md:510 src/appendix/cheat-sheet.md:109
+msgid "`[patch.crates-io]` pointing at a fork"
+msgstr "用 `[patch.crates-io]` 指向一个 fork"
+
+#: src/systems/crates-io.md:511 src/appendix/cheat-sheet.md:110
+msgid "Checked-in third-party sources"
+msgstr "签入仓库的第三方源代码"
+
+#: src/systems/crates-io.md:511 src/appendix/cheat-sheet.md:110
+msgid "`cargo vendor`"
+msgstr ""
+
+#: src/systems/crates-io.md:512
+msgid "Manual CVE tracking"
+msgstr "手动跟踪 CVE"
+
+#: src/systems/crates-io.md:512
+msgid "`cargo audit` with the RustSec database"
+msgstr "`cargo audit` 配合 RustSec 数据库"
+
+#: src/systems/crates-io.md:513
+msgid "License review spreadsheet"
+msgstr "许可证审查表格"
+
+#: src/systems/crates-io.md:513
+msgid "`cargo deny check licenses`"
+msgstr ""
+
+#: src/systems/crates-io.md:514
+msgid "Doxygen output hosted by each project"
+msgstr "每个项目各自托管的 Doxygen 输出"
+
+#: src/systems/crates-io.md:514
+msgid "docs.rs for every published version"
+msgstr "docs.rs 上每个发布版本的文档"
+
+#: src/systems/crates-io.md:515
+msgid "Internal package server"
+msgstr "内部包服务器"
+
+#: src/systems/crates-io.md:515
+msgid "A private registry"
+msgstr "私有注册中心"
+
+#: src/systems/crates-io.md:519
+msgid ""
+"Pick a crate you might use in an engine (for example `image` or `gltf`). Add"
+" it to a new project, run `cargo tree`, and count the crates it brings in. "
+"Then disable its default features and count again."
+msgstr ""
+"选一个你可能在引擎里用到的 crate（例如 `image` 或 `gltf`）。把它加到一个新项目里，运行 `cargo "
+"tree`，数一数它引入了多少个 crate。然后关掉它的默认 feature，再数一次。"
+
+#: src/systems/crates-io.md:522
+msgid ""
+"Run `cargo audit` and `cargo deny init && cargo deny check` on one of your "
+"projects. Which licenses appear?"
+msgstr ""
+"在你的一个项目上运行 `cargo audit` 和 `cargo deny init && cargo deny check`。出现了哪些许可证？"
+
+#: src/systems/crates-io.md:524
+msgid ""
+"Find a crate whose GitHub repository has a bug you have hit, fix it in a "
+"fork, and use `[patch.crates-io]` to build your project against the fix."
+msgstr ""
+"找一个你遇到过 bug 的 crate 的 GitHub 仓库，在 fork 里修好它，再用 `[patch.crates-io]` "
+"让你的项目基于这个修复构建。"
+
+#: src/systems/crates-io.md:526
+msgid ""
+"Create a small library crate with documented public items, run `cargo "
+"package --list` and `cargo publish --dry-run`, and fix every warning. "
+"Publish it if you have something worth sharing."
+msgstr ""
+"创建一个小的库 crate，为公开条目写好文档，运行 `cargo package --list` 和 `cargo publish --dry-"
+"run`，修掉所有警告。如果你有值得分享的东西，就发布它。"
+
 #: src/systems/concurrency.md:3
 msgid ""
 "Rust's threads are OS threads, its atomics follow the C++11 memory model, "
@@ -13525,30 +15516,33 @@ msgstr ""
 #: src/systems/macros.md:168
 msgid ""
 "Writing your own procedural macro uses the `syn` (parse Rust syntax) and "
-"`quote` (generate Rust code) crates. It is a moderately advanced topic and "
-"worth it for engine-wide patterns, such as deriving editor inspectors or "
-"component registration."
+"`quote` (generate Rust code) crates. It is worth it for engine-wide "
+"patterns, such as deriving editor inspectors or component registration. A "
+"complete example, an attribute macro and a derive with its own helper "
+"attribute, is in [Declaring your own "
+"attributes](../intro/syntax.md#declaring-your-own-attributes)."
 msgstr ""
-"编写你自己的过程宏要用到 `syn`（解析 Rust 语法）和 `quote`（生成 Rust 代码）这两个 "
-"crate。这是一个中等进阶的主题，对于贯穿整个引擎的模式（比如派生编辑器检视面板或组件注册）是值得的。"
+"编写自己的过程宏要用到 `syn`（解析 Rust 语法）和 `quote`（生成 Rust 代码）这两个 "
+"crate。对于引擎范围的通用模式，比如派生编辑器检视面板或组件注册，这样做是值得的。一个完整的例子（一个属性宏，以及一个带有自己辅助属性的 "
+"derive）见[声明自己的属性](../intro/syntax.md#声明自己的属性)。"
 
-#: src/systems/macros.md:173
+#: src/systems/macros.md:174
 msgid "Macro, generic, or `const fn`?"
 msgstr "宏、泛型，还是 `const fn`？"
 
-#: src/systems/macros.md:175
+#: src/systems/macros.md:176
 msgid ""
 "Use a **function** or **generic** when you can. They type-check, show up "
 "properly in documentation, and give better error messages."
 msgstr "能用**函数**或**泛型**时就用它们。它们会做类型检查，能在文档中正确显示，错误信息也更好。"
 
-#: src/systems/macros.md:177
+#: src/systems/macros.md:178
 msgid ""
 "Use **`const fn`** for compile-time computation (lookup tables, hashing "
 "string IDs at compile time)."
 msgstr "编译期计算（查找表、在编译期对字符串 ID 做哈希）用 **`const fn`**。"
 
-#: src/systems/macros.md:179
+#: src/systems/macros.md:180
 msgid ""
 "Use **`macro_rules!`** when you need something functions cannot do: a "
 "variable number of arguments, generating items (structs, impls), or taking "
@@ -13556,1865 +15550,93 @@ msgid ""
 msgstr ""
 "当你需要函数做不到的事情时用 **`macro_rules!`**：可变数量的参数、生成条目（结构体、impl），或者接收不是值的语法（字段名、类型）。"
 
-#: src/systems/macros.md:182
+#: src/systems/macros.md:183
 msgid ""
 "Use a **derive macro** to generate trait implementations from a type's "
 "structure: serialization, reflection, GPU layout checks."
 msgstr "要根据类型的结构生成 trait 实现时，用 **derive 宏**：序列化、反射、GPU 布局检查。"
 
-#: src/systems/macros.md:189
+#: src/systems/macros.md:190
 msgid "`#define` text substitution"
 msgstr "`#define` 文本替换"
 
-#: src/systems/macros.md:189
+#: src/systems/macros.md:190
 msgid "`macro_rules!` on syntax trees, hygienic"
 msgstr "作用于语法树的 `macro_rules!`，卫生的"
 
-#: src/systems/macros.md:190 src/engine/assets-and-build.md:97
+#: src/systems/macros.md:191 src/engine/assets-and-build.md:97
 msgid "`#include`"
 msgstr ""
 
-#: src/systems/macros.md:190
+#: src/systems/macros.md:191
 msgid "`mod` / `use` (no textual inclusion)"
 msgstr "`mod` / `use`（没有文本包含）"
 
-#: src/systems/macros.md:191 src/appendix/cheat-sheet.md:118
+#: src/systems/macros.md:192 src/appendix/cheat-sheet.md:118
 msgid "`#ifdef`"
 msgstr ""
 
-#: src/systems/macros.md:191
+#: src/systems/macros.md:192
 msgid "`#[cfg(...)]` attributes"
 msgstr "`#[cfg(...)]` 属性"
 
-#: src/systems/macros.md:192
+#: src/systems/macros.md:193
 msgid "Variadic macros, X-macros"
 msgstr "可变参数宏、X-macro"
 
-#: src/systems/macros.md:192
+#: src/systems/macros.md:193
 msgid "Repetitions `$( ... ),*`"
 msgstr "重复 `$( ... ),*`"
 
-#: src/systems/macros.md:193
+#: src/systems/macros.md:194
 msgid "Reflection macros / code generators"
 msgstr "反射宏 / 代码生成器"
 
-#: src/systems/macros.md:193
+#: src/systems/macros.md:194
 msgid "Derive macros (`serde`, `bytemuck`, custom)"
 msgstr "derive 宏（`serde`、`bytemuck`、自定义）"
 
-#: src/systems/macros.md:194
+#: src/systems/macros.md:195
 msgid "`cpp -E`"
 msgstr ""
 
-#: src/systems/macros.md:194
+#: src/systems/macros.md:195
 msgid "`cargo expand`"
 msgstr ""
 
-#: src/systems/macros.md:195
+#: src/systems/macros.md:196
 msgid "`__FILE__`, `__LINE__`"
 msgstr ""
 
-#: src/systems/macros.md:195
+#: src/systems/macros.md:196
 msgid "`file!()`, `line!()`, `module_path!()`"
 msgstr ""
 
-#: src/systems/macros.md:196
+#: src/systems/macros.md:197
 msgid "`static_assert`"
 msgstr ""
 
-#: src/systems/macros.md:196
+#: src/systems/macros.md:197
 msgid "`const _: () = assert!(...);`"
 msgstr ""
 
-#: src/systems/macros.md:200
+#: src/systems/macros.md:201
 msgid ""
 "Write `macro_rules! max!` that accepts one or more expressions and returns "
 "the largest, evaluating each argument exactly once."
 msgstr "编写 `macro_rules! max!`，接收一个或多个表达式并返回最大值，每个参数恰好求值一次。"
 
-#: src/systems/macros.md:202
+#: src/systems/macros.md:203
 msgid "Add a `length` method to `impl_vec_ops!` using `dot`."
 msgstr "用 `dot` 给 `impl_vec_ops!` 添加一个 `length` 方法。"
 
-#: src/systems/macros.md:203
+#: src/systems/macros.md:204
 msgid ""
 "Write a `const fn fnv1a(s: &str) -> u64` and use it to define `const "
 "PLAYER_TAG: u64 = fnv1a(\"player\");`. Compare with doing it in a macro."
 msgstr ""
 "编写一个 `const fn fnv1a(s: &str) -> u64`，并用它定义 `const PLAYER_TAG: u64 = "
 "fnv1a(\"player\");`。与用宏实现的方式做比较。"
-
-#: src/systems/testing-and-tooling.md:3
-msgid ""
-"In C++ you choose a test framework (GoogleTest, Catch2, doctest), a "
-"benchmark library, a formatter, a linter and a documentation generator, then"
-" wire them into CMake. Rust ships with all of them, and every Rust project "
-"uses the same ones, so `cargo test` works in any repository you clone."
-msgstr ""
-"在 C++ "
-"中，你要自己选择测试框架（GoogleTest、Catch2、doctest）、基准测试库、格式化工具、静态检查工具和文档生成器，再把它们接进 "
-"CMake。Rust 自带了所有这些工具，而且每个 Rust 项目用的都是同一套，所以在你克隆的任何仓库里 `cargo test` 都能直接运行。"
-
-#: src/systems/testing-and-tooling.md:10
-msgid "unit tests, integration tests and documentation tests,"
-msgstr "单元测试、集成测试和文档测试；"
-
-#: src/systems/testing-and-tooling.md:11
-msgid "testing things that should panic, and tests that return `Result`,"
-msgstr "测试应当 panic 的情况，以及返回 `Result` 的测试；"
-
-#: src/systems/testing-and-tooling.md:12
-msgid "benchmarks with criterion,"
-msgstr "用 criterion 做基准测试；"
-
-#: src/systems/testing-and-tooling.md:13
-msgid "property-based testing and fuzzing,"
-msgstr "基于属性的测试与模糊测试；"
-
-#: src/systems/testing-and-tooling.md:14
-msgid "rustfmt, Clippy and rustdoc,"
-msgstr "rustfmt、Clippy 和 rustdoc；"
-
-#: src/systems/testing-and-tooling.md:15
-msgid "a CI setup."
-msgstr "一套 CI 配置。"
-
-#: src/systems/testing-and-tooling.md:17
-msgid "Unit tests"
-msgstr "单元测试"
-
-#: src/systems/testing-and-tooling.md:19
-msgid ""
-"Unit tests live in the same file as the code, in a module compiled only for "
-"tests:"
-msgstr "单元测试和代码放在同一个文件中，位于一个只在测试时编译的模块里："
-
-#: src/systems/testing-and-tooling.md:27
-msgid "// private functions are testable too\n"
-msgstr "// 私有函数也可以测试\n"
-
-#: src/systems/testing-and-tooling.md:33
-msgid "// everything from the parent module, private items included\n"
-msgstr "// 父模块中的一切，包括私有条目\n"
-
-#: src/systems/testing-and-tooling.md:49
-msgid "\"values above 1 must clamp\""
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:53
-msgid "\"index out of bounds\""
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:62
-msgid "// tests may return Result and use ?\n"
-msgstr "// 测试可以返回 Result 并使用 ?\n"
-
-#: src/systems/testing-and-tooling.md:68
-msgid "\"slow: run with cargo test -- --ignored\""
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:74
-msgid ""
-"`cargo test` builds the crate in test mode, runs every `#[test]` function on"
-" a thread pool in parallel, and reports results. Useful variations:"
-msgstr "`cargo test` 以测试模式构建 crate，在线程池上并行运行每个 `#[test]` 函数，并报告结果。一些有用的变体："
-
-#: src/systems/testing-and-tooling.md:78
-msgid "# everything\n"
-msgstr "# 全部\n"
-
-#: src/systems/testing-and-tooling.md:79
-msgid "# only tests whose name contains \"overlap\"\n"
-msgstr "# 只运行名字中包含 \"overlap\" 的测试\n"
-
-#: src/systems/testing-and-tooling.md:80
-msgid "# show println! output from passing tests\n"
-msgstr "# 显示通过的测试中 println! 的输出\n"
-
-#: src/systems/testing-and-tooling.md:81
-msgid "# run serially (tests sharing a GPU, say)\n"
-msgstr "# 串行运行（比如共用一块 GPU 的测试）\n"
-
-#: src/systems/testing-and-tooling.md:82
-msgid "# optimized build\n"
-msgstr "# 优化构建\n"
-
-#: src/systems/testing-and-tooling.md:85
-msgid ""
-"Because unit tests are inside the module, they can test private functions "
-"without the `#define private public` tricks or friend declarations C++ tests"
-" sometimes resort to."
-msgstr ""
-"由于单元测试位于模块内部，它们可以测试私有函数，不需要 C++ 测试有时会用到的 `#define private public` 技巧或友元声明。"
-
-#: src/systems/testing-and-tooling.md:89
-msgid "Integration tests"
-msgstr "集成测试"
-
-#: src/systems/testing-and-tooling.md:91
-msgid ""
-"Files in a top-level `tests/` directory are compiled as separate crates that"
-" use your library through its public API only, like an external user:"
-msgstr "顶层 `tests/` 目录中的文件会被编译成单独的 crate，它们只能通过公开 API 使用你的库，就像外部用户一样："
-
-#: src/systems/testing-and-tooling.md:103
-msgid "// tests/load_scene.rs\n"
-msgstr "// tests/load_scene.rs\n"
-
-#: src/systems/testing-and-tooling.md:108
-msgid "\"tests/data/sample.ron\""
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:113
-msgid "Documentation tests"
-msgstr "文档测试"
-
-#: src/systems/testing-and-tooling.md:115
-msgid ""
-"Code examples in documentation comments are compiled and run by `cargo "
-"test`, so documentation cannot rot:"
-msgstr "文档注释中的代码示例会被 `cargo test` 编译并运行，所以文档不会过时："
-
-#: src/systems/testing-and-tooling.md:119
-msgid ""
-"/// Linearly interpolates between `a` and `b`.\n"
-"///\n"
-"/// ```\n"
-"/// # use mylib::lerp;   // hidden line: not shown in the docs\n"
-"/// assert_eq!(lerp(0.0, 10.0, 0.25), 2.5);\n"
-"/// ```\n"
-msgstr ""
-"/// 在 `a` 和 `b` 之间做线性插值。\n"
-"///\n"
-"/// ```\n"
-"/// # use mylib::lerp;   // hidden line: not shown in the docs\n"
-"/// assert_eq!(lerp(0.0, 10.0, 0.25), 2.5);\n"
-"/// ```\n"
-
-#: src/systems/testing-and-tooling.md:131
-msgid ""
-"Every example in this book is tested the same way: the build runs `mdbook "
-"test`, which compiles and runs each one as a doc test."
-msgstr "本书的每个示例都以同样的方式测试：构建时会运行 `mdbook test`，把每个示例作为文档测试编译并运行。"
-
-#: src/systems/testing-and-tooling.md:134
-msgid "Benchmarks"
-msgstr "基准测试"
-
-#: src/systems/testing-and-tooling.md:136
-msgid ""
-"The standard benchmark harness is still unstable, so the community standard "
-"is **criterion**, which runs each benchmark enough times for statistically "
-"sound results and reports changes against the previous run:"
-msgstr ""
-"标准的基准测试框架仍未稳定，所以社区的标准做法是 "
-"**criterion**：它会把每个基准运行足够多次，以得到统计上可靠的结果，并报告与上一次运行相比的变化："
-
-#: src/systems/testing-and-tooling.md:141
-msgid ""
-"// benches/culling.rs   (with [[bench]] name = \"culling\", harness = false "
-"in Cargo.toml)\n"
-msgstr ""
-"// benches/culling.rs   （需要在 Cargo.toml 中写 [[bench]] name = \"culling\", "
-"harness = false）\n"
-
-#: src/systems/testing-and-tooling.md:148
-msgid "\"cull 10k aabbs\""
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:157
-msgid ""
-"`cargo bench` runs them. `std::hint::black_box` stops the optimizer from "
-"deleting the work, like `benchmark::DoNotOptimize`."
-msgstr ""
-"用 `cargo bench` 运行它们。`std::hint::black_box` 阻止优化器删掉要测的工作，类似 "
-"`benchmark::DoNotOptimize`。"
-
-#: src/systems/testing-and-tooling.md:160
-msgid "Property tests and fuzzing"
-msgstr "属性测试与模糊测试"
-
-#: src/systems/testing-and-tooling.md:162
-msgid ""
-"**proptest** and **quickcheck** generate random inputs and shrink failures "
-"to a minimal case: \"for all vectors `v`, `normalize(v).length()` is 1 or "
-"`v` is zero\"."
-msgstr ""
-"**proptest** 和 **quickcheck** 会生成随机输入，并把失败的用例缩减到最小：“对所有向量 "
-"`v`，`normalize(v).length()` 等于 1，或者 `v` 为零”。"
-
-#: src/systems/testing-and-tooling.md:165
-msgid ""
-"**cargo-fuzz** runs libFuzzer against a function that takes `&[u8]`. Point "
-"it at every parser of untrusted data: asset formats, network packets, save "
-"files. Fuzzing safe Rust finds panics and logic bugs; fuzzing unsafe Rust, "
-"combined with sanitizers, finds memory bugs."
-msgstr ""
-"**cargo-fuzz** 用 libFuzzer 测试一个接收 `&[u8]` "
-"的函数。把它对准每一个处理不可信数据的解析器：资源格式、网络数据包、存档文件。对安全 Rust 做模糊测试能找出 panic 和逻辑 bug；对 "
-"unsafe Rust 做模糊测试并结合 sanitizer，能找出内存 bug。"
-
-#: src/systems/testing-and-tooling.md:170
-msgid "Formatting, linting and docs"
-msgstr "格式化、静态检查与文档"
-
-#: src/systems/testing-and-tooling.md:174
-msgid "rustfmt"
-msgstr "rustfmt"
-
-#: src/systems/testing-and-tooling.md:174
-msgid "`cargo fmt` (`--check` in CI)"
-msgstr "`cargo fmt`（CI 中用 `--check`）"
-
-#: src/systems/testing-and-tooling.md:175
-msgid "Clippy"
-msgstr "Clippy"
-
-#: src/systems/testing-and-tooling.md:175
-msgid "`cargo clippy` (`-- -D warnings` in CI)"
-msgstr "`cargo clippy`（CI 中用 `-- -D warnings`）"
-
-#: src/systems/testing-and-tooling.md:176
-msgid "rustdoc"
-msgstr "rustdoc"
-
-#: src/systems/testing-and-tooling.md:177
-msgid "cargo-deny / cargo-audit"
-msgstr "cargo-deny / cargo-audit"
-
-#: src/systems/testing-and-tooling.md:177
-msgid "`cargo deny check`"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:177
-msgid "License and vulnerability scanners"
-msgstr "许可证和漏洞扫描工具"
-
-#: src/systems/testing-and-tooling.md:179
-msgid ""
-"**rustfmt** has one standard style with few options, and almost every Rust "
-"project uses it, so all Rust code looks alike. Format on save and stop "
-"discussing style."
-msgstr ""
-"**rustfmt** 只有一种标准风格、选项很少，几乎每个 Rust 项目都在用它，所以所有 Rust "
-"代码看起来都差不多。保存时自动格式化，从此不再争论代码风格。"
-
-#: src/systems/testing-and-tooling.md:183
-msgid ""
-"**Clippy** has hundreds of lints, from correctness (`clippy::eq_op`: `x == "
-"x`) to performance (`clippy::large_enum_variant`) and style. It is quite "
-"good at teaching idiomatic Rust: when it suggests a rewrite, read why. "
-"Configure lints in `Cargo.toml`:"
-msgstr ""
-"**Clippy** 有数百条 lint，涵盖正确性（`clippy::eq_op`：`x == "
-"x`）、性能（`clippy::large_enum_variant`）和风格。它很擅长教你写地道的 Rust：当它建议改写时，读一读原因。在 "
-"`Cargo.toml` 中配置 lint："
-
-#: src/systems/testing-and-tooling.md:188
-msgid ""
-"```toml\n"
-"[lints.clippy]\n"
-"undocumented_unsafe_blocks = \"warn\"\n"
-"too_many_arguments = \"allow\"\n"
-"```"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:194
-msgid ""
-"**rustdoc** builds HTML documentation from `///` comments, including your "
-"dependencies' documentation, all cross-linked. Every crate on crates.io has "
-"its documentation on [docs.rs](https://docs.rs)."
-msgstr ""
-"**rustdoc** 根据 `///` 注释生成 HTML 文档，也包括你的依赖的文档，全部相互链接。crates.io 上的每个 crate 都在 "
-"[docs.rs](https://docs.rs) 上有文档。"
-
-#: src/systems/testing-and-tooling.md:198
-msgid "A CI setup"
-msgstr "一套 CI 配置"
-
-#: src/systems/testing-and-tooling.md:200
-msgid "A typical GitHub Actions job for a Rust project:"
-msgstr "一个 Rust 项目典型的 GitHub Actions 任务："
-
-#: src/systems/testing-and-tooling.md:203 src/systems/crates-io.md:449
-msgid "jobs"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:204
-msgid "check"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:205 src/systems/crates-io.md:452
-msgid "runs-on"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:205 src/systems/crates-io.md:452
-msgid "ubuntu-latest"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:206
-msgid "steps"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:207
-#: src/systems/testing-and-tooling.md:208
-#: src/systems/testing-and-tooling.md:211 src/systems/crates-io.md:457
-#: src/systems/crates-io.md:458
-msgid "uses"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:207 src/systems/crates-io.md:457
-msgid "actions/checkout@v4"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:208
-msgid "dtolnay/rust-toolchain@stable"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:209
-msgid "with"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:210
-msgid "components"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:210
-msgid "rustfmt, clippy"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:211
-msgid "Swatinem/rust-cache@v2"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:212
-#: src/systems/testing-and-tooling.md:213
-#: src/systems/testing-and-tooling.md:214 src/systems/crates-io.md:460
-msgid "run"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:212
-msgid "cargo fmt --check"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:213
-msgid "cargo clippy --all-targets -- -D warnings"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:214
-msgid "cargo test --all-targets"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:221 src/appendix/cheat-sheet.md:121
-msgid "GoogleTest / Catch2"
-msgstr "GoogleTest / Catch2"
-
-#: src/systems/testing-and-tooling.md:221
-msgid "Built-in `#[test]`, `cargo test`"
-msgstr "内置的 `#[test]`、`cargo test`"
-
-#: src/systems/testing-and-tooling.md:222
-msgid "`EXPECT_EQ`, `ASSERT_TRUE`"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:222
-msgid "`assert_eq!`, `assert!` (with optional messages)"
-msgstr "`assert_eq!`、`assert!`（可带自定义消息）"
-
-#: src/systems/testing-and-tooling.md:223
-msgid "`EXPECT_DEATH`"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:223
-msgid "`#[should_panic]`"
-msgstr ""
-
-#: src/systems/testing-and-tooling.md:224
-msgid "Test executables registered in CMake"
-msgstr "在 CMake 中注册的测试可执行文件"
-
-#: src/systems/testing-and-tooling.md:224
-msgid "`tests/` directory, discovered automatically"
-msgstr "`tests/` 目录，自动发现"
-
-#: src/systems/testing-and-tooling.md:225 src/appendix/cheat-sheet.md:122
-msgid "Google Benchmark"
-msgstr "Google Benchmark"
-
-#: src/systems/testing-and-tooling.md:225 src/appendix/cheat-sheet.md:122
-msgid "criterion"
-msgstr "criterion"
-
-#: src/systems/testing-and-tooling.md:226
-msgid "libFuzzer"
-msgstr "libFuzzer"
-
-#: src/systems/testing-and-tooling.md:226
-msgid "cargo-fuzz"
-msgstr "cargo-fuzz"
-
-#: src/systems/testing-and-tooling.md:227 src/appendix/cheat-sheet.md:123
-msgid "clang-format / clang-tidy"
-msgstr "clang-format / clang-tidy"
-
-#: src/systems/testing-and-tooling.md:227
-msgid "rustfmt / Clippy"
-msgstr "rustfmt / Clippy"
-
-#: src/systems/testing-and-tooling.md:228
-msgid "rustdoc; examples are tested"
-msgstr "rustdoc；示例会被测试"
-
-#: src/systems/testing-and-tooling.md:232
-msgid ""
-"Add tests for `aabb_overlap` covering boxes that contain each other and "
-"boxes with zero area. Do your tests pass? Should they?"
-msgstr "为 `aabb_overlap` 添加测试，覆盖互相包含的盒子和面积为零的盒子。你的测试通过了吗？它们应该通过吗？"
-
-#: src/systems/testing-and-tooling.md:234
-msgid ""
-"Write a doc test for a `fn smoothstep(e0: f32, e1: f32, x: f32) -> f32` "
-"showing three example values, and run it with `cargo test --doc`."
-msgstr ""
-"为 `fn smoothstep(e0: f32, e1: f32, x: f32) -> f32` 编写一个展示三个示例值的文档测试，并用 "
-"`cargo test --doc` 运行它。"
-
-#: src/systems/testing-and-tooling.md:236
-msgid ""
-"Run `cargo clippy` on a project from an earlier chapter and fix every "
-"warning. Which lint taught you something?"
-msgstr "在前面某一章的项目上运行 `cargo clippy`，修复每个警告。哪条 lint 让你学到了东西？"
-
-#: src/systems/crates-io.md:3
-msgid ""
-"In C++, reusing someone else's library is a project of its own: find it, "
-"pick vcpkg, Conan or a git submodule, make its build system cooperate with "
-"yours, and match compiler flags. In Rust, one line in `Cargo.toml` does all "
-"of that ([Cargo, crates and the build](../foundations/cargo.md)), and the "
-"line points to [crates.io](https://crates.io) by default. That makes adding "
-"a dependency so cheap that the hard questions move elsewhere: which crate to"
-" choose, and whether to trust it."
-msgstr ""
-"在 C++ 里，复用别人的库本身就是一个项目：先找到它，再在 vcpkg、Conan 和 git "
-"子模块之间做选择，让它的构建系统和你的配合起来，还要对齐编译选项。在 Rust 里，`Cargo.toml` "
-"里的一行就能完成这一切（[Cargo、crate 与构建](../foundations/cargo.md)），而这一行默认指向 "
-"[crates.io](https://crates.io)。添加依赖变得如此便宜，难题也就转移到了别处：该选哪个 crate，以及能不能信任它。"
-
-#: src/systems/crates-io.md:13
-msgid "how crates.io is organized, and where to find good crates,"
-msgstr "crates.io 是怎样组织的，以及去哪里找好的 crate；"
-
-#: src/systems/crates-io.md:14
-msgid "judging whether a crate is trustworthy, and the tools that help,"
-msgstr "如何判断一个 crate 是否可信，以及有哪些工具可以帮忙；"
-
-#: src/systems/crates-io.md:15
-msgid "using crates well: features, the lock file, forks and vendoring,"
-msgstr "用好 crate：feature、lock 文件、fork 和 vendor；"
-
-#: src/systems/crates-io.md:16
-msgid "contributing to other people's crates,"
-msgstr "为别人的 crate 做贡献；"
-
-#: src/systems/crates-io.md:17
-msgid "publishing your own crate on crates.io, or only on GitHub."
-msgstr "在 crates.io 上发布自己的 crate，或者只发布在 GitHub 上。"
-
-#: src/systems/crates-io.md:19
-msgid "How crates.io is organized"
-msgstr "crates.io 是怎样组织的"
-
-#: src/systems/crates-io.md:21
-msgid ""
-"crates.io is the Rust community's package registry, run by the crates.io "
-"team under the Rust project. A few rules shape everything else:"
-msgstr "crates.io 是 Rust 社区的包注册中心，由 Rust 项目下的 crates.io 团队运营。几条规则决定了其他的一切："
-
-#: src/systems/crates-io.md:24
-msgid ""
-"**Packages are source code.** A published version is a `.crate` file, a "
-"gzipped tarball of the source and its `Cargo.toml`. There are no binaries: "
-"Cargo builds every dependency on your machine with your compiler and flags."
-msgstr ""
-"**包就是源代码。** 发布的每个版本是一个 `.crate` 文件，也就是源代码加上 `Cargo.toml` 的 gzip "
-"压缩包。这里没有二进制文件：Cargo 会在你的机器上，用你的编译器和编译选项构建每一个依赖。"
-
-#: src/systems/crates-io.md:27
-msgid ""
-"**The namespace is flat.** Names are first come, first served, and there are"
-" no organization prefixes like `@company/name`. Related crates use naming "
-"conventions instead: `foo`, `foo-sys` (raw FFI bindings to a C library), "
-"`foo-derive` or `foo-macros` (procedural macros), `foo-core`."
-msgstr ""
-"**命名空间是扁平的。** 名字先到先得，没有 `@company/name` 这样的组织前缀。相关的 crate "
-"靠命名约定来组织：`foo`、`foo-sys`（C 库的原始 FFI 绑定）、`foo-derive` 或 `foo-"
-"macros`（过程宏）、`foo-core`。"
-
-#: src/systems/crates-io.md:31
-msgid ""
-"**Versions are immutable.** You cannot change or replace a published "
-"version. You can **yank** it: new projects will not select it, but projects "
-"whose `Cargo.lock` already uses it keep building. Deleting a crate entirely "
-"is only possible under narrow conditions (shortly after publishing, or with "
-"few downloads and no dependents), so a build that works today keeps working."
-msgstr ""
-"**版本不可修改。** 已经发布的版本不能修改，也不能替换。你可以 **yank**（撤回）它：新项目不会再选中这个版本，但 `Cargo.lock` "
-"里已经用到它的项目照常构建。只有在很窄的条件下（刚发布不久，或者下载量很少且没有被依赖）才能彻底删除一个 "
-"crate，所以今天能构建的项目，以后也能构建。"
-
-#: src/systems/crates-io.md:36
-msgid ""
-"**Every crate has owners.** Owners are users or GitHub teams, and only they "
-"can publish new versions. Accounts are GitHub logins."
-msgstr "**每个 crate 都有所有者。** 所有者可以是用户或 GitHub 团队，只有他们能发布新版本。账号就是 GitHub 登录。"
-
-#: src/systems/crates-io.md:38
-msgid ""
-"**Metadata comes from `Cargo.toml`.** Description, license, repository, "
-"keywords and categories are shown on the crate page, along with the README, "
-"every version, download counts and the list of crates that depend on it."
-msgstr ""
-"**元数据来自 `Cargo.toml`。** 描述、许可证、代码仓库、关键词和分类都会显示在 crate 页面上，同时显示的还有 "
-"README、所有版本、下载量，以及依赖它的 crate 列表。"
-
-#: src/systems/crates-io.md:42
-msgid ""
-"Two services sit next to crates.io and work for every crate automatically:"
-msgstr "crates.io 旁边还有两项服务，对每个 crate 自动生效："
-
-#: src/systems/crates-io.md:44
-msgid ""
-"[docs.rs](https://docs.rs) builds the API documentation of every published "
-"version. A link like `docs.rs/glam/0.30` is the reference for that version, "
-"so you never read docs for the wrong release."
-msgstr ""
-"[docs.rs](https://docs.rs) 会为每个发布的版本构建 API 文档。像 `docs.rs/glam/0.30` "
-"这样的链接就是那个版本的参考文档，所以你永远不会读错版本的文档。"
-
-#: src/systems/crates-io.md:47
-msgid ""
-"The **index** is the metadata Cargo downloads to resolve versions. Cargo "
-"fetches only the entries it needs (the \"sparse\" protocol), which is why "
-"resolving is fast even though the registry has hundreds of thousands of "
-"crates."
-msgstr ""
-"**索引**是 Cargo 解析版本时下载的元数据。Cargo 只获取它需要的条目（即 \"sparse\" 协议），所以即使注册中心有几十万个 "
-"crate，解析依然很快。"
-
-#: src/systems/crates-io.md:52
-msgid "Finding crates"
-msgstr "寻找 crate"
-
-#: src/systems/crates-io.md:54
-msgid "Where"
-msgstr "在哪里"
-
-#: src/systems/crates-io.md:56
-msgid "[crates.io](https://crates.io) search, categories and keywords"
-msgstr "[crates.io](https://crates.io) 的搜索、分类和关键词"
-
-#: src/systems/crates-io.md:56
-msgid "The registry itself. Sort by recent downloads, not all-time downloads"
-msgstr "注册中心本身。按近期下载量排序，而不是按总下载量"
-
-#: src/systems/crates-io.md:57
-msgid "[lib.rs](https://lib.rs)"
-msgstr "[lib.rs](https://lib.rs)"
-
-#: src/systems/crates-io.md:57
-msgid ""
-"An independent index of the same crates, with better ranking and categories"
-msgstr "同样这些 crate 的独立索引，排名和分类做得更好"
-
-#: src/systems/crates-io.md:58
-msgid "[blessed.rs](https://blessed.rs)"
-msgstr "[blessed.rs](https://blessed.rs)"
-
-#: src/systems/crates-io.md:58
-msgid "A short curated list of the de facto standard crate for each job"
-msgstr "一份简短的精选清单，列出每类工作事实上的标准 crate"
-
-#: src/systems/crates-io.md:59
-msgid "[Are we game yet?](https://arewegameyet.rs)"
-msgstr "[Are we game yet?](https://arewegameyet.rs)"
-
-#: src/systems/crates-io.md:59
-msgid "Game development crates: engines, graphics, audio, physics, networking"
-msgstr "游戏开发相关的 crate：引擎、图形、音频、物理、网络"
-
-#: src/systems/crates-io.md:60
-msgid "A crate page's \"Dependents\" tab"
-msgstr "crate 页面上的 \"Dependents\" 标签页"
-
-#: src/systems/crates-io.md:60
-msgid "Who already relies on it, and how much"
-msgstr "已经有谁依赖它，依赖程度如何"
-
-#: src/systems/crates-io.md:62
-msgid ""
-"For common jobs there is usually one crate the community has settled on: "
-"serde for serialization, tokio for async I/O, rayon for data parallelism, "
-"anyhow and thiserror for errors, clap for command-line parsing, tracing for "
-"logging. Start there before you compare alternatives."
-msgstr ""
-"常见的工作通常都有一个社区公认的 crate：序列化用 serde，异步 I/O 用 tokio，数据并行用 rayon，错误处理用 anyhow 和 "
-"thiserror，命令行解析用 clap，日志用 tracing。先从它们开始，再去比较其他选择。"
-
-#: src/systems/crates-io.md:67
-msgid "What Cargo does with a dependency"
-msgstr "Cargo 如何处理一个依赖"
-
-#: src/systems/crates-io.md:69
-msgid ""
-"Package management is one of C++'s weak points: there is no standard package"
-" format, no standard build description, and no stable ABI, so every library "
-"has to be adapted to every build system, compiler and configuration. Rust "
-"avoids most of that with a single design: **one tool, one package format, "
-"and everything built from source by the same compiler.** This section "
-"follows one line of `Cargo.toml` through the whole process."
-msgstr ""
-"包管理是 C++ 的弱项之一：没有标准的包格式，没有标准的构建描述，也没有稳定的 ABI，所以每个库都要针对每种构建系统、编译器和配置做适配。Rust "
-"用一个设计避开了其中的大部分问题：**一个工具，一种包格式，所有代码都由同一个编译器从源代码构建。** 本节跟踪 `Cargo.toml` "
-"里的一行，看它经历的完整过程。"
-
-#: src/systems/crates-io.md:76
-msgid "Resolving versions"
-msgstr "解析版本"
-
-#: src/systems/crates-io.md:78
-msgid ""
-"```toml\n"
-"[dependencies]\n"
-"glam = { version = \"0.30\", features = [\"serde\"] }\n"
-"serde_json = \"1\"\n"
-"```"
-msgstr ""
-
-#: src/systems/crates-io.md:84
-msgid ""
-"On the first build, Cargo downloads the index entries for these crates and "
-"their dependencies, and picks one exact version for each:"
-msgstr "第一次构建时，Cargo 会下载这些 crate 及其依赖的索引条目，并为每个 crate 选出一个确切的版本："
-
-#: src/systems/crates-io.md:87
-msgid ""
-"A requirement like `\"1\"` or `\"0.30\"` is a caret range: `\"1\"` means "
-"`>=1.0.0, <2.0.0`, and `\"0.30\"` means `>=0.30.0, <0.31.0`. Use "
-"`\"=1.2.3\"` to pin, or `\">=1.2, <1.5\"` for a custom range, but rarely."
-msgstr ""
-"`\"1\"` 或 `\"0.30\"` 这样的版本要求是插入符（caret）范围：`\"1\"` 表示 `>=1.0.0, "
-"<2.0.0`，`\"0.30\"` 表示 `>=0.30.0, <0.31.0`。用 `\"=1.2.3\"` 可以锁定版本，`\">=1.2, "
-"<1.5\"` 可以自定义范围，但很少需要。"
-
-#: src/systems/crates-io.md:90
-msgid ""
-"For each crate, Cargo picks the **newest version that satisfies every "
-"requirement** on it anywhere in the graph. In edition 2024 it also prefers "
-"versions whose declared `rust-version` your compiler supports."
-msgstr ""
-"对每个 crate，Cargo 会选出**满足依赖图中所有要求的最新版本**。在 edition 2024 中，它还会优先选择声明的 `rust-"
-"version` 被你的编译器支持的版本。"
-
-#: src/systems/crates-io.md:93
-msgid ""
-"It writes the result to `Cargo.lock`. Later builds use the lock file and do "
-"not resolve again until you run `cargo update` or change `Cargo.toml`."
-msgstr ""
-"结果写入 `Cargo.lock`。之后的构建直接使用 lock 文件，不会重新解析，除非你运行 `cargo update` 或修改 "
-"`Cargo.toml`。"
-
-#: src/systems/crates-io.md:102
-msgid ""
-"The last line is Cargo telling you that a newer, semver-incompatible glam "
-"exists, which you would have to opt into by changing `\"0.30\"`."
-msgstr "最后一行是 Cargo 在告诉你：glam 有一个更新的、semver 不兼容的版本，要用它就得自己去改 `\"0.30\"`。"
-
-#: src/systems/crates-io.md:105
-msgid "One version or two"
-msgstr "一个版本还是两个版本"
-
-#: src/systems/crates-io.md:107
-msgid ""
-"If `render` asks for `log = \"0.4.17\"` and `audio` asks for `log = "
-"\"0.4.20\"`, both requirements are in the same semver range, so Cargo "
-"**unifies** them: one copy of `log`, at a version that satisfies both "
-"(0.4.20 or newer). This is the diamond dependency, solved automatically."
-msgstr ""
-"如果 `render` 要求 `log = \"0.4.17\"`，`audio` 要求 `log = \"0.4.20\"`，两个要求在同一个 "
-"semver 范围内，Cargo 就会把它们**统一**起来：只有一份 `log`，版本同时满足两者（0.4.20 "
-"或更新）。这就是菱形依赖，被自动解决了。"
-
-#: src/systems/crates-io.md:112
-msgid ""
-"If the requirements are incompatible (`rand = \"0.8\"` and `rand = "
-"\"0.9\"`), Cargo builds **both versions** and links both into the binary. "
-"Their symbols are mangled with a hash of the crate's identity, so they do "
-"not collide, and their types are different types, so passing a `rand 0.8` "
-"value to code that expects `rand 0.9` is a compile error rather than an ODR "
-"violation. The cost is build time and binary size, which is why `cargo tree "
-"-d` and `cargo deny`'s `multiple-versions` check are worth running."
-msgstr ""
-"如果要求互不兼容（`rand = \"0.8\"` 和 `rand = \"0.9\"`），Cargo "
-"会**同时构建两个版本**，并都链接进二进制文件。它们的符号在改编（mangle）时带有 crate "
-"身份的哈希，所以不会冲突；它们的类型也是不同的类型，所以把 `rand 0.8` 的值传给需要 `rand 0.9` 的代码是编译错误，而不是 ODR "
-"违规。代价是构建时间和二进制体积，所以值得运行 `cargo tree -d` 和 `cargo deny` 的 `multiple-versions`"
-" 检查。"
-
-#: src/systems/crates-io.md:120
-msgid ""
-"The exception is native code. A crate that links a C library declares it "
-"with `links = \"z\"` in its `Cargo.toml`, and Cargo refuses to put two "
-"crates that link the same native library into one graph, because C symbols "
-"have no hash to keep them apart. You get an error at resolve time, not a "
-"crash at run time."
-msgstr ""
-"例外是原生代码。链接 C 库的 crate 要在 `Cargo.toml` 里用 `links = \"z\"` 声明，Cargo 不允许依赖图中有两个"
-" crate 链接同一个原生库，因为 C 符号没有哈希来区分。你会在解析时得到错误，而不是在运行时崩溃。"
-
-#: src/systems/crates-io.md:125
-msgid "Features are unified"
-msgstr "feature 是统一的"
-
-#: src/systems/crates-io.md:127
-msgid ""
-"Features ([Cargo chapter](../foundations/cargo.md#features-conditional-"
-"compilation)) are resolved across the whole graph: if any crate enables a "
-"feature of a dependency, every user of that dependency gets it. `cargo tree "
-"-e features` shows why a feature is on:"
-msgstr ""
-"feature（[Cargo 一章](../foundations/cargo.md#feature条件编译)）在整个依赖图上统一解析：只要有一个 "
-"crate 启用了某个依赖的 feature，这个依赖的所有使用者都会得到它。`cargo tree -e features` 能显示某个 "
-"feature 为什么被打开："
-
-#: src/systems/crates-io.md:132
-msgid ""
-"```text\n"
-"$ cargo tree -e features -i serde_core\n"
-"serde_core v1.0.229\n"
-"├── glam v0.30.10\n"
-"│   ├── glam feature \"serde\"\n"
-"│   │   └── dep v0.1.0\n"
-"...\n"
-"└── serde_core feature \"std\"\n"
-"    └── serde_json feature \"std\"\n"
-"```"
-msgstr ""
-
-#: src/systems/crates-io.md:143
-msgid ""
-"Here `glam` asked only for `serde_core`, but `serde_json` enabled its `std` "
-"feature, so `glam`'s copy has `std` too: there is only one `serde_core`. "
-"This works because features are **additive** by convention: enabling a "
-"feature may add API, never remove or change it. When you write a crate, "
-"never make a feature that breaks code which does not use it, and never use "
-"two features as mutually exclusive switches."
-msgstr ""
-"这里 `glam` 只要求了 `serde_core`，但 `serde_json` 启用了它的 `std` feature，所以 `glam` "
-"用到的那份也带有 `std`：`serde_core` 只有一份。这之所以可行，是因为按照约定 feature 是**可叠加的**：启用一个 "
-"feature 可以增加 API，但绝不删除或改变 API。自己写 crate 时，不要让某个 feature 破坏没用到它的代码，也不要把两个 "
-"feature 当成互斥的开关。"
-
-#: src/systems/crates-io.md:150
-msgid ""
-"Unification has limits that avoid the obvious problems. Dependencies of "
-"build scripts and procedural macros (which run on the host) are resolved "
-"separately from the code you ship, dev-dependencies only affect test builds,"
-" and target-specific dependencies only affect their target."
-msgstr ""
-"统一也有边界，避免了明显的问题。构建脚本和过程宏（它们运行在宿主机上）的依赖，与你发布的代码分开解析；dev-dependencies "
-"只影响测试构建；特定目标平台的依赖只影响对应的目标。"
-
-#: src/systems/crates-io.md:155
-msgid "Where things live"
-msgstr "东西放在哪里"
-
-#: src/systems/crates-io.md:157
-msgid "Location"
-msgstr "位置"
-
-#: src/systems/crates-io.md:157
-msgid "Contents"
-msgstr "内容"
-
-#: src/systems/crates-io.md:159
-msgid "`~/.cargo/registry/index/`"
-msgstr ""
-
-#: src/systems/crates-io.md:159
-msgid "Cached index entries"
-msgstr "缓存的索引条目"
-
-#: src/systems/crates-io.md:160
-msgid "`~/.cargo/registry/cache/`"
-msgstr ""
-
-#: src/systems/crates-io.md:160
-msgid "Downloaded `.crate` files, shared by all your projects"
-msgstr "下载的 `.crate` 文件，所有项目共享"
-
-#: src/systems/crates-io.md:161
-msgid "`~/.cargo/registry/src/`"
-msgstr ""
-
-#: src/systems/crates-io.md:161
-msgid "Unpacked sources; open them to read a dependency's code"
-msgstr "解压后的源代码；想读依赖的代码就打开这里"
-
-#: src/systems/crates-io.md:162
-msgid "`~/.cargo/git/`"
-msgstr ""
-
-#: src/systems/crates-io.md:162
-msgid "Git dependencies"
-msgstr "Git 依赖"
-
-#: src/systems/crates-io.md:163
-msgid "`target/` in each project"
-msgstr "每个项目里的 `target/`"
-
-#: src/systems/crates-io.md:163
-msgid "Compiled artifacts for that project"
-msgstr "这个项目的编译产物"
-
-#: src/systems/crates-io.md:165
-msgid ""
-"Each dependency is compiled once per combination of version, features, "
-"profile and target, and the artifact's file name includes a hash of that "
-"combination. Changing a feature or a flag rebuilds only what it affects, and"
-" debug and release builds never mix. To share compiled dependencies between "
-"projects, set one `CARGO_TARGET_DIR` for all of them or use `sccache`."
-msgstr ""
-"每个依赖会按\"版本、feature、profile、目标平台\"的每种组合各编译一次，产物的文件名里带有这个组合的哈希。改动一个 feature "
-"或编译选项只会重新构建受影响的部分，调试构建和发布构建也不会混在一起。要在多个项目之间共享编译好的依赖，可以给它们设置同一个 "
-"`CARGO_TARGET_DIR`，或者使用 `sccache`。"
-
-#: src/systems/crates-io.md:171
-msgid "Native libraries and `-sys` crates"
-msgstr "原生库与 `-sys` crate"
-
-#: src/systems/crates-io.md:173
-msgid ""
-"A crate that wraps a C library is usually split in two: `foo-sys` declares "
-"the raw `extern \"C\"` functions and finds or builds the library, and `foo` "
-"builds a safe API on top ([FFI with C and C++](ffi.md)). The `-sys` crate's "
-"`build.rs` does what `find_package` and `ExternalProject_Add` do in CMake, "
-"typically choosing between two strategies with a feature:"
-msgstr ""
-"封装 C 库的 crate 通常分成两个：`foo-sys` 声明原始的 `extern \"C\"` 函数，并负责找到或构建这个库；`foo` "
-"在它之上构建安全的 API（[与 C 和 C++ 的 FFI](ffi.md)）。`-sys` crate 的 `build.rs` 做的事情相当于 "
-"CMake 中的 `find_package` 和 `ExternalProject_Add`，通常通过一个 feature 在两种策略之间选择："
-
-#: src/systems/crates-io.md:179
-msgid ""
-"```toml\n"
-"[dependencies]\n"
-"# Either use the system's SQLite, found with pkg-config (or vcpkg on Windows):\n"
-"rusqlite = \"0.43\"\n"
-"# or compile SQLite's C source into your binary with the `cc` crate:\n"
-"# rusqlite = { version = \"0.43\", features = [\"bundled\"] }\n"
-"```"
-msgstr ""
-"```toml\n"
-"[dependencies]\n"
-"# 要么使用系统里的 SQLite，通过 pkg-config（Windows 上是 vcpkg）找到：\n"
-"rusqlite = \"0.43\"\n"
-"# 要么用 `cc` crate 把 SQLite 的 C 源码编译进你的二进制文件：\n"
-"# rusqlite = { version = \"0.43\", features = [\"bundled\"] }\n"
-"```"
-
-#: src/systems/crates-io.md:187
-msgid ""
-"The `bundled` style is common for game dependencies (SDL, Lua, zstd, "
-"mimalloc, PhysX bindings): the C source ships inside the crate, is built "
-"with the `cc` or `cmake` crate, and is statically linked, so users need only"
-" a C compiler."
-msgstr ""
-"`bundled` 方式在游戏依赖中很常见（SDL、Lua、zstd、mimalloc、PhysX 绑定）：C 源码随 crate 一起发布，用 "
-"`cc` 或 `cmake` crate 构建并静态链接，用户只需要一个 C 编译器。"
-
-#: src/systems/crates-io.md:191
-msgid "What this fixes, compared with C++"
-msgstr "和 C++ 相比，它解决了什么"
-
-#: src/systems/crates-io.md:193
-msgid "C++ problem"
-msgstr "C++ 的问题"
-
-#: src/systems/crates-io.md:193
-msgid "What Cargo does"
-msgstr "Cargo 的做法"
-
-#: src/systems/crates-io.md:195
-msgid "Each library has its own build system to integrate"
-msgstr "每个库都有自己的构建系统需要集成"
-
-#: src/systems/crates-io.md:195
-msgid "Every crate has the same `Cargo.toml` and builds the same way"
-msgstr "每个 crate 都有同样的 `Cargo.toml`，构建方式完全一样"
-
-#: src/systems/crates-io.md:196
-msgid ""
-"Prebuilt binaries must match compiler, standard library, "
-"`_ITERATOR_DEBUG_LEVEL`, runtime and flags"
-msgstr "预编译的二进制必须匹配编译器、标准库、`_ITERATOR_DEBUG_LEVEL`、运行时库和编译选项"
-
-#: src/systems/crates-io.md:196
-msgid "Everything is built from source with your compiler and your profile"
-msgstr "一切都用你的编译器和你的 profile 从源代码构建"
-
-#: src/systems/crates-io.md:197
-msgid "Transitive dependencies are found and built by hand"
-msgstr "传递依赖要手动查找和构建"
-
-#: src/systems/crates-io.md:197
-msgid "The whole graph is resolved and built from one line"
-msgstr "一行就能解析并构建整个依赖图"
-
-#: src/systems/crates-io.md:198
-msgid "Diamond dependencies with conflicting versions break the ODR"
-msgstr "版本冲突的菱形依赖会违反 ODR"
-
-#: src/systems/crates-io.md:198
-msgid ""
-"Compatible versions are unified; incompatible ones coexist as distinct types"
-msgstr "兼容的版本被统一；不兼容的版本作为不同的类型共存"
-
-#: src/systems/crates-io.md:199
-msgid "\"Works on my machine\" because a dependency changed"
-msgstr "因为某个依赖变了而出现\"在我机器上能跑\""
-
-#: src/systems/crates-io.md:199
-msgid "`Cargo.lock` pins every version"
-msgstr "`Cargo.lock` 锁定每一个版本"
-
-#: src/systems/crates-io.md:200
-msgid "Header-only versus compiled libraries"
-msgstr "仅头文件的库和需要编译的库"
-
-#: src/systems/crates-io.md:200
-msgid "No headers; every crate is compiled the same way"
-msgstr "没有头文件；每个 crate 都以同样的方式编译"
-
-#: src/systems/crates-io.md:201
-msgid "Optional parts of a library through CMake options"
-msgstr "通过 CMake 选项启用库的可选部分"
-
-#: src/systems/crates-io.md:201
-msgid "Features, declared in `Cargo.toml` and visible in `cargo tree`"
-msgstr "feature，声明在 `Cargo.toml` 里，用 `cargo tree` 可以看到"
-
-#: src/systems/crates-io.md:202
-msgid "Cross-compiling dependencies"
-msgstr "交叉编译依赖"
-
-#: src/systems/crates-io.md:202
-msgid "`rustup target add` and `cargo build --target`, for pure-Rust crates"
-msgstr "对纯 Rust 的 crate，`rustup target add` 加上 `cargo build --target` 即可"
-
-#: src/systems/crates-io.md:204
-msgid "What it does not fix"
-msgstr "它没有解决什么"
-
-#: src/systems/crates-io.md:206
-msgid ""
-"**Native dependencies are still native.** A `-sys` crate needs a C "
-"toolchain, and cross-compiling one needs a cross C toolchain. This is the "
-"same problem you have in C++, contained in one crate."
-msgstr ""
-"**原生依赖仍然是原生的。** `-sys` crate 需要 C 工具链，交叉编译它就需要交叉编译的 C 工具链。这和 C++ "
-"里的问题一样，只是被限制在一个 crate 里。"
-
-#: src/systems/crates-io.md:209
-msgid ""
-"**No binary distribution.** Building from source means the first build of a "
-"large graph takes minutes. `cargo check`, incremental builds, sccache and "
-"keeping heavy generic code out of low-level crates ([Project "
-"organization](../foundations/project-organization.md#compile-times-and-"
-"crate-boundaries)) are the mitigations."
-msgstr ""
-"**没有二进制分发。** 从源代码构建意味着，大型依赖图的第一次构建需要好几分钟。缓解办法有 `cargo "
-"check`、增量构建、sccache，以及不要把繁重的泛型代码放在底层 crate 里（[项目组织](../foundations/project-"
-"organization.md#编译时间与-crate-边界)）。"
-
-#: src/systems/crates-io.md:214
-msgid ""
-"**No stable ABI between Rust crates.** You cannot ship a closed-source Rust "
-"library as a `.rlib` for others to link. Closed-source code is shipped as a "
-"C ABI library, a binary, or source in a private registry."
-msgstr ""
-"**Rust crate 之间没有稳定的 ABI。** 你不能把一个闭源的 Rust 库作为 `.rlib` 发给别人链接。闭源代码要以 C ABI "
-"库、可执行文件或私有注册中心中的源代码形式发布。"
-
-#: src/systems/crates-io.md:217
-msgid ""
-"**Mixing with an existing C++ build.** Cargo does not build your C++ code. "
-"In a CMake project, Corrosion lets CMake drive Cargo ([FFI with C and "
-"C++](ffi.md#rust-inside-a-cmake-project))."
-msgstr ""
-"**与现有的 C++ 构建混用。** Cargo 不会构建你的 C++ 代码。在 CMake 项目中，可以用 Corrosion 让 CMake 来驱动"
-" Cargo（[与 C 和 C++ 的 FFI](ffi.md#在-cmake-项目中使用-rust)）。"
-
-#: src/systems/crates-io.md:221
-msgid "Can I trust this crate?"
-msgstr "这个 crate 可信吗？"
-
-#: src/systems/crates-io.md:223
-msgid ""
-"crates.io does not review code. Anyone can publish anything, and each "
-"dependency brings its own dependencies along. This is the same risk as "
-"vendoring a library from GitHub in C++, except that it is so easy to add a "
-"crate that you can end up with hundreds of them without noticing. Two facts "
-"make it more serious than it first looks:"
-msgstr ""
-"crates.io 不审查代码。任何人都可以发布任何东西，而每个依赖又会带来它自己的依赖。这和在 C++ 里从 GitHub vendor "
-"一个库的风险相同，只是添加 crate 太容易了，你可能在不知不觉中就有了几百个依赖。有两个事实让这件事比初看起来更严重："
-
-#: src/systems/crates-io.md:229
-msgid ""
-"**Building runs code.** A dependency's `build.rs` and its procedural macros "
-"run on your machine during `cargo build`, with your user's permissions, the "
-"way a CMake script does. Malicious crates have used this to steal "
-"credentials from developer machines."
-msgstr ""
-"**构建会运行代码。** 依赖的 `build.rs` 和过程宏会在 `cargo build` 时以你的用户权限在你的机器上运行，就像 CMake "
-"脚本一样。恶意 crate 曾经利用这一点从开发者的机器上窃取凭据。"
-
-#: src/systems/crates-io.md:233
-msgid ""
-"**Published source may differ from the repository.** crates.io stores what "
-"the owner uploaded. The GitHub link on the crate page is a claim, not a "
-"guarantee. A package published from a git checkout includes a "
-"`.cargo_vcs_info.json` file with the commit it was built from, which lets "
-"you, or a tool, compare the two."
-msgstr ""
-"**发布的源代码可能和代码仓库不一致。** crates.io 存储的是所有者上传的内容。crate 页面上的 GitHub "
-"链接只是一个声明，而不是保证。从 git 工作区发布的包会包含一个 `.cargo_vcs_info.json` "
-"文件，记录了构建它的提交，你或工具可以据此比较两者。"
-
-#: src/systems/crates-io.md:239
-msgid "Signals to check before adding a dependency"
-msgstr "添加依赖前要检查的信号"
-
-#: src/systems/crates-io.md:241
-msgid "Question"
-msgstr "问题"
-
-#: src/systems/crates-io.md:241
-msgid "Where to look"
-msgstr "去哪里看"
-
-#: src/systems/crates-io.md:243
-msgid "Is it widely used?"
-msgstr "用的人多吗？"
-
-#: src/systems/crates-io.md:243
-msgid "Recent downloads and the Dependents tab"
-msgstr "近期下载量和 Dependents 标签页"
-
-#: src/systems/crates-io.md:244
-msgid "Is it maintained?"
-msgstr "还在维护吗？"
-
-#: src/systems/crates-io.md:244
-msgid "Date of the last release, open issues and pull requests, a changelog"
-msgstr "最近一次发布的日期、未关闭的 issue 和 pull request、changelog"
-
-#: src/systems/crates-io.md:245
-msgid "Who maintains it?"
-msgstr "谁在维护？"
-
-#: src/systems/crates-io.md:245
-msgid "Owners on the crate page; one maintainer or a team or organization"
-msgstr "crate 页面上的所有者；是一个人，还是一个团队或组织"
-
-#: src/systems/crates-io.md:246
-msgid "How much does it pull in?"
-msgstr "它会引入多少东西？"
-
-#: src/systems/crates-io.md:246
-msgid ""
-"`cargo tree -p <crate>` after adding it, or the dependency list on the crate"
-" page"
-msgstr "添加之后运行 `cargo tree -p <crate>`，或者看 crate 页面上的依赖列表"
-
-#: src/systems/crates-io.md:247
-msgid "How much `unsafe` does it use?"
-msgstr "它用了多少 `unsafe`？"
-
-#: src/systems/crates-io.md:247
-msgid "Search the source; `cargo geiger` counts it per dependency"
-msgstr "搜索源代码；`cargo geiger` 会按依赖统计"
-
-#: src/systems/crates-io.md:248
-msgid "Does it run code at build time?"
-msgstr "它会在构建时运行代码吗？"
-
-#: src/systems/crates-io.md:248
-msgid "A `build.rs` file, or a dependency on `proc-macro2` and `syn`"
-msgstr "有 `build.rs` 文件，或者依赖了 `proc-macro2` 和 `syn`"
-
-#: src/systems/crates-io.md:249
-msgid "Is the name right?"
-msgstr "名字对吗？"
-
-#: src/systems/crates-io.md:249
-msgid ""
-"Typosquats such as `serde-json` for `serde_json` exist. Copy names from the "
-"docs"
-msgstr "存在仿冒名字的 crate，比如用 `serde-json` 冒充 `serde_json`。从文档里复制名字"
-
-#: src/systems/crates-io.md:250
-msgid "Is the license compatible?"
-msgstr "许可证兼容吗？"
-
-#: src/systems/crates-io.md:250
-msgid "The `license` field; most crates are `MIT OR Apache-2.0`"
-msgstr "看 `license` 字段；大多数 crate 是 `MIT OR Apache-2.0`"
-
-#: src/systems/crates-io.md:252
-msgid ""
-"A crate at version `0.x` is not necessarily immature. Many foundational "
-"crates stayed at `0.x` for years. What matters is how it is maintained and "
-"who depends on it."
-msgstr ""
-"版本号是 `0.x` 的 crate 并不一定不成熟。许多基础 crate 在 `0.x` 停留了很多年。重要的是它的维护情况，以及有谁依赖它。"
-
-#: src/systems/crates-io.md:256
-msgid "Tools that check for you"
-msgstr "帮你检查的工具"
-
-#: src/systems/crates-io.md:261
-msgid "# known vulnerabilities, from the RustSec advisory database\n"
-msgstr "# 已知漏洞，来自 RustSec 公告数据库\n"
-
-#: src/systems/crates-io.md:262
-msgid ""
-"# vulnerabilities, licenses, banned crates, duplicate versions, sources\n"
-msgstr "# 漏洞、许可证、禁用的 crate、重复版本、来源\n"
-
-#: src/systems/crates-io.md:263
-msgid "# crates that appear in more than one version\n"
-msgstr "# 出现了不止一个版本的 crate\n"
-
-#: src/systems/crates-io.md:264
-msgid "# who depends on `syn`, and why\n"
-msgstr "# 谁依赖了 `syn`，以及为什么\n"
-
-#: src/systems/crates-io.md:267
-msgid ""
-"The [RustSec advisory database](https://rustsec.org) records "
-"vulnerabilities, unmaintained crates and yanked versions, and `cargo audit` "
-"checks your `Cargo.lock` against it. Run it in CI ([Testing "
-"chapter](testing-and-tooling.md#a-ci-setup))."
-msgstr ""
-"[RustSec 公告数据库](https://rustsec.org)记录了漏洞、无人维护的 crate 和被撤回的版本，`cargo audit` "
-"会用它检查你的 `Cargo.lock`。在 CI 中运行它（[测试一章](testing-and-tooling.md#一套-ci-配置)）。"
-
-#: src/systems/crates-io.md:271
-msgid ""
-"`cargo deny` is driven by a `deny.toml` in your repository. A small one for "
-"a game project:"
-msgstr "`cargo deny` 由仓库里的 `deny.toml` 驱动。一个游戏项目的简单配置："
-
-#: src/systems/crates-io.md:274
-msgid ""
-"```toml\n"
-"[licenses]\n"
-"allow = [\"MIT\", \"Apache-2.0\", \"BSD-3-Clause\", \"Zlib\", \"Unicode-3.0\"]\n"
-"\n"
-"[bans]\n"
-"multiple-versions = \"warn\"          # duplicate versions cost build time and binary size\n"
-"\n"
-"[sources]\n"
-"unknown-registry = \"deny\"           # only crates.io unless you list others\n"
-"unknown-git = \"deny\"                # no surprise git dependencies\n"
-"```"
-msgstr ""
-
-#: src/systems/crates-io.md:286
-msgid ""
-"For a stricter policy, [cargo-vet](https://mozilla.github.io/cargo-vet/) "
-"records which crate versions someone on your team (or an organization you "
-"trust, such as Mozilla or Google) has actually reviewed, and fails the build"
-" when a new, unreviewed version comes in. [diff.rs](https://diff.rs) shows "
-"what changed between two published versions of a crate, which is the code "
-"you would be trusting when you run `cargo update`."
-msgstr ""
-"如果需要更严格的策略，[cargo-vet](https://mozilla.github.io/cargo-vet/) 会记录哪些 crate "
-"版本已经被你的团队成员（或者你信任的组织，比如 Mozilla 或 "
-"Google）真正审查过，并在引入未经审查的新版本时让构建失败。[diff.rs](https://diff.rs) 可以显示一个 crate "
-"两个已发布版本之间的变化，也就是你运行 `cargo update` 时将要信任的代码。"
-
-#: src/systems/crates-io.md:293
-msgid "Using crates well"
-msgstr "用好 crate"
-
-#: src/systems/crates-io.md:295
-msgid ""
-"**Turn off what you do not use.** Many crates enable optional features by "
-"default. Disabling them reduces build time and the amount of code you trust:"
-msgstr "**关掉用不到的部分。** 许多 crate 默认启用可选的 feature。关掉它们可以减少构建时间，也减少你需要信任的代码："
-
-#: src/systems/crates-io.md:298
-msgid ""
-"```toml\n"
-"[dependencies]\n"
-"image = { version = \"0.25\", default-features = false, features = [\"png\"] }\n"
-"```"
-msgstr ""
-
-#: src/systems/crates-io.md:303
-msgid ""
-"**Commit `Cargo.lock` and update on purpose.** The lock file pins every "
-"transitive version, so an update is a diff you can review:"
-msgstr "**提交 `Cargo.lock`，有意识地更新。** lock 文件锁定了所有传递依赖的版本，所以每次更新都是一个可以审查的 diff："
-
-#: src/systems/crates-io.md:307
-msgid "# what would change\n"
-msgstr "# 会发生哪些变化\n"
-
-#: src/systems/crates-io.md:308
-msgid "# update one crate (and what it needs)\n"
-msgstr "# 只更新一个 crate（以及它需要的依赖）\n"
-
-#: src/systems/crates-io.md:312
-msgid ""
-"**Declare the oldest compiler you support** with `rust-version` in "
-"`Cargo.toml`. Cargo's resolver then prefers dependency versions that still "
-"build with that compiler, and anyone with an older toolchain gets a clear "
-"error instead of a confusing one."
-msgstr ""
-"**声明你支持的最低编译器版本**，即 `Cargo.toml` 里的 `rust-version`。这样 Cargo "
-"的解析器会优先选择仍能用这个编译器构建的依赖版本，使用更旧工具链的人也会得到清楚的错误信息，而不是令人困惑的错误。"
-
-#: src/systems/crates-io.md:317
-msgid ""
-"**Use a fork while waiting for a fix.** When a dependency has a bug, fix it "
-"in a fork and point the whole dependency graph at your fork with `[patch]`, "
-"even where the crate is a dependency of a dependency:"
-msgstr ""
-"**等待修复时使用 fork。** 当某个依赖有 bug 时，在 fork 里修好它，再用 `[patch]` 让整个依赖图都指向你的 "
-"fork，即使这个 crate 是依赖的依赖："
-
-#: src/systems/crates-io.md:321
-msgid ""
-"```toml\n"
-"[patch.crates-io]\n"
-"winit = { git = \"https://github.com/you/winit\", branch = \"fix-ime-crash\" }\n"
-"```"
-msgstr ""
-
-#: src/systems/crates-io.md:326
-msgid ""
-"When the fix is released upstream, delete the patch. This is the clean "
-"version of the \"we carry a local patch to third_party/\" workflow in C++ "
-"engines."
-msgstr "修复在上游发布后，删掉这个 patch。这是 C++ 引擎里\"我们在 third_party/ 里维护一份本地补丁\"这种做法的干净版本。"
-
-#: src/systems/crates-io.md:329
-msgid ""
-"**Vendor for offline or audited builds.** `cargo vendor` copies the source "
-"of every dependency into a directory and prints the configuration that makes"
-" Cargo build from it, with no network. Console and studio build farms often "
-"need this."
-msgstr ""
-"**为离线或经过审计的构建做 vendor。** `cargo vendor` 会把每个依赖的源代码复制到一个目录中，并打印出让 Cargo "
-"从这个目录构建、无需联网的配置。主机平台和工作室的构建农场常常需要这样做。"
-
-#: src/systems/crates-io.md:334
-msgid ""
-"**Private registries** are supported for code that cannot be public: list "
-"them under `[registries]` in `.cargo/config.toml` and add `registry = "
-"\"studio\"` to a dependency. Several commercial and self-hosted registry "
-"servers exist."
-msgstr ""
-"不能公开的代码可以使用**私有注册中心**：在 `.cargo/config.toml` 的 `[registries]` 下列出它，然后给依赖加上 "
-"`registry = \"studio\"`。有好几种商业的和自托管的注册中心服务器可选。"
-
-#: src/systems/crates-io.md:339
-msgid "Contributing to other people's crates"
-msgstr "为别人的 crate 做贡献"
-
-#: src/systems/crates-io.md:341
-msgid ""
-"Most crates live on GitHub, and the workflow is the usual open-source one:"
-msgstr "大多数 crate 托管在 GitHub 上，流程就是常见的开源流程："
-
-#: src/systems/crates-io.md:343
-msgid ""
-"Read `CONTRIBUTING.md` if it exists, and look for an existing issue. For "
-"anything larger than a small fix, open an issue first and agree on the "
-"approach."
-msgstr ""
-"如果有 `CONTRIBUTING.md`，先读一读，并查找是否已有相关 issue。对于比小修复更大的改动，先开一个 issue，就做法达成一致。"
-
-#: src/systems/crates-io.md:346
-msgid ""
-"Fork and clone the repository, and check that the tests pass before you "
-"change anything: `cargo test`, often `cargo test --all-features` too."
-msgstr ""
-"fork 并克隆仓库，在修改任何东西之前先确认测试能通过：`cargo test`，通常还有 `cargo test --all-features`。"
-
-#: src/systems/crates-io.md:348
-msgid ""
-"Test your change in your own project with `[patch.crates-io]` pointing at "
-"your local clone (`path = \"../winit\"`). This is the quickest way to prove "
-"that the fix works."
-msgstr ""
-"在你自己的项目里用 `[patch.crates-io]` 指向本地克隆（`path = "
-"\"../winit\"`）来测试你的改动。这是证明修复有效的最快方式。"
-
-#: src/systems/crates-io.md:351
-msgid ""
-"Before opening the pull request, run `cargo fmt` and `cargo clippy`. Most "
-"projects check both in CI, and Rust reviewers expect formatted code."
-msgstr ""
-"提交 pull request 之前，运行 `cargo fmt` 和 `cargo clippy`。大多数项目在 CI 中检查这两项，Rust "
-"的代码审查者也默认代码是格式化过的。"
-
-#: src/systems/crates-io.md:353
-msgid ""
-"Add a test that fails without your fix, and an entry in `CHANGELOG.md` if "
-"the project keeps one."
-msgstr "添加一个没有你的修复就会失败的测试；如果项目维护 `CHANGELOG.md`，也加上一条记录。"
-
-#: src/systems/crates-io.md:356
-msgid ""
-"Contributions that are always welcome and often easier than code: a minimal "
-"reproduction for an open bug, a documentation fix, an example, or "
-"confirmation that a fix works on your platform. Console and XR platforms in "
-"particular are rarely tested by maintainers."
-msgstr ""
-"有些贡献总是受欢迎，而且往往比写代码更容易：为一个未解决的 bug 提供最小复现、修正文档、添加示例，或者确认某个修复在你的平台上有效。尤其是主机和 "
-"XR 平台，维护者很少能测试到。"
-
-#: src/systems/crates-io.md:361
-msgid ""
-"crates.io itself is open source too, at [rust-"
-"lang/crates.io](https://github.com/rust-lang/crates.io). Its issue tracker "
-"is the place to report a problem with the registry, and malware or abuse "
-"should go to the security contact on the [crates.io policies "
-"page](https://crates.io/policies) rather than to a public issue."
-msgstr ""
-"crates.io 本身也是开源的，地址是 [rust-lang/crates.io](https://github.com/rust-"
-"lang/crates.io)。注册中心的问题可以在它的 issue tracker 上报告；恶意软件或滥用行为则应该发给 [crates.io "
-"政策页面](https://crates.io/policies)上的安全联系人，而不是公开提 issue。"
-
-#: src/systems/crates-io.md:367
-msgid "Publishing your own crate"
-msgstr "发布自己的 crate"
-
-#: src/systems/crates-io.md:369
-msgid "Prepare the package"
-msgstr "准备包"
-
-#: src/systems/crates-io.md:371
-msgid ""
-"crates.io requires a license and a description. Add the rest so people can "
-"find the crate and trust it:"
-msgstr "crates.io 要求提供许可证和描述。把其余字段也填上，方便别人找到并信任这个 crate："
-
-#: src/systems/crates-io.md:374
-msgid ""
-"```toml\n"
-"[package]\n"
-"name = \"frame-pacer\"\n"
-"version = \"0.1.0\"\n"
-"edition = \"2024\"\n"
-"rust-version = \"1.85\"\n"
-"description = \"Frame pacing and fixed-timestep helpers for game loops\"\n"
-"license = \"MIT OR Apache-2.0\"\n"
-"repository = \"https://github.com/you/frame-pacer\"\n"
-"readme = \"README.md\"\n"
-"keywords = [\"gamedev\", \"game-loop\", \"timestep\"]   # up to five\n"
-"categories = [\"game-development\"]                  # from crates.io's fixed list\n"
-"exclude = [\"assets/\", \".github/\"]                  # keep the package small\n"
-"```"
-msgstr ""
-
-#: src/systems/crates-io.md:389
-msgid ""
-"`MIT OR Apache-2.0` is the Rust convention: users may pick either license, "
-"and the combination is compatible with almost every project. Add both "
-"license files to the repository."
-msgstr ""
-"`MIT OR Apache-2.0` 是 Rust 的惯例：用户可以任选一种许可证，这个组合几乎与所有项目兼容。把两个许可证文件都放进仓库。"
-
-#: src/systems/crates-io.md:393
-msgid ""
-"Document the public API with `///` comments, because docs.rs will publish "
-"them the moment the crate is released, and doc examples run as tests "
-"([Testing chapter](testing-and-tooling.md#documentation-tests)). Two crate "
-"attributes are a good default for a library:"
-msgstr ""
-"用 `///` 注释为公开 API 写文档，因为 crate 一发布，docs.rs "
-"就会公开这些文档，而文档中的示例也会作为测试运行（[测试一章](testing-and-tooling.md#文档测试)）。对一个库来说，下面两个 "
-"crate 属性是不错的默认设置："
-
-#: src/systems/crates-io.md:399
-msgid "// src/lib.rs\n"
-msgstr "// src/lib.rs\n"
-
-#: src/systems/crates-io.md:400
-msgid "// a promise users can check; drop it if you need unsafe\n"
-msgstr "// 一个用户可以验证的承诺；如果需要 unsafe 就去掉它\n"
-
-#: src/systems/crates-io.md:401
-msgid "// every public item gets documentation\n"
-msgstr "// 每个公开条目都要有文档\n"
-
-#: src/systems/crates-io.md:404
-msgid "Publish"
-msgstr "发布"
-
-#: src/systems/crates-io.md:407
-msgid "# exactly which files will be uploaded\n"
-msgstr "# 确切会上传哪些文件\n"
-
-#: src/systems/crates-io.md:408
-msgid "# builds the package as a user would, without uploading\n"
-msgstr "# 像用户那样构建这个包，但不上传\n"
-
-#: src/systems/crates-io.md:409
-msgid "# once: paste an API token from crates.io settings\n"
-msgstr "# 只需一次：粘贴从 crates.io 设置中获得的 API token\n"
-
-#: src/systems/crates-io.md:413
-msgid ""
-"`cargo publish` builds the packaged tarball in isolation, so a file that is "
-"missing from the package or a dependency given only by `path` fails here "
-"rather than for your users. Path and git dependencies must also have a "
-"`version` to be published; crates.io never depends on code outside the "
-"registry. In a workspace, `cargo publish --workspace` publishes every member"
-" in dependency order."
-msgstr ""
-"`cargo publish` 会单独构建打包好的压缩包，所以包里缺了文件，或者某个依赖只给了 "
-"`path`，都会在这一步失败，而不是在用户那里失败。path 依赖和 git 依赖要能发布，还必须写上 `version`：crates.io 上的 "
-"crate 从不依赖注册中心之外的代码。在工作区中，`cargo publish --workspace` 会按依赖顺序发布所有成员。"
-
-#: src/systems/crates-io.md:420
-msgid "Versioning"
-msgstr "版本管理"
-
-#: src/systems/crates-io.md:422
-msgid ""
-"Your version number is a promise ([semver](https://semver.org)). Before 1.0,"
-" Cargo treats the first non-zero component as the major version, so `0.3.x` "
-"to `0.4.0` is a breaking change and `0.3.1` to `0.3.2` is not. Breaking "
-"changes in Rust include more than in C++: making a public field private, "
-"adding a variant to a public enum (unless it is `#[non_exhaustive]`), adding"
-" a required method to a public trait, or removing a trait implementation. "
-"[cargo-semver-checks](https://github.com/obi1kenobi/cargo-semver-checks) "
-"compares your API with the last published version and reports changes that "
-"need a major bump. Run it before each release."
-msgstr ""
-"版本号是一个承诺（[semver](https://semver.org)）。1.0 之前，Cargo 把第一个非零的部分当作主版本号，所以从 "
-"`0.3.x` 到 `0.4.0` 是破坏性变更，从 `0.3.1` 到 `0.3.2` 则不是。Rust 中的破坏性变更比 C++ "
-"里更多：把公开字段改为私有、给公开枚举增加变体（除非它标记了 `#[non_exhaustive]`）、给公开 trait "
-"增加必须实现的方法，或者移除某个 trait 实现。[cargo-semver-"
-"checks](https://github.com/obi1kenobi/cargo-semver-checks) 会把你的 API "
-"和上一个已发布的版本进行比较，报告需要升级主版本号的改动。每次发布前运行一下。"
-
-#: src/systems/crates-io.md:432
-msgid ""
-"If you publish a broken version, publish a fixed one and yank the broken one"
-" with `cargo yank --version 0.1.1`."
-msgstr "如果发布了一个有问题的版本，就发布一个修复后的版本，再用 `cargo yank --version 0.1.1` 撤回有问题的那个。"
-
-#: src/systems/crates-io.md:435
-msgid "Release from CI"
-msgstr "从 CI 发布"
-
-#: src/systems/crates-io.md:437
-msgid ""
-"For a crate other people depend on, publish from CI rather than from your "
-"laptop. With **trusted publishing**, crates.io accepts a short-lived token "
-"from a specific GitHub Actions workflow, so there is no long-lived API token"
-" to leak. Publish the first version by hand, enable trusted publishing for "
-"the repository and workflow in the crate's settings on crates.io, and then:"
-msgstr ""
-"对于别人依赖的 crate，应该从 CI 发布，而不是从你的笔记本发布。使用**可信发布**（trusted "
-"publishing）时，crates.io 只接受来自指定 GitHub Actions 工作流的短期 token，所以没有可能泄露的长期 API "
-"token。先手动发布第一个版本，在 crates.io 上该 crate 的设置中为这个仓库和工作流启用可信发布，然后："
-
-#: src/systems/crates-io.md:444
-msgid ""
-"# .github/workflows/release.yml\n"
-"name"
-msgstr ""
-
-#: src/systems/crates-io.md:445
-msgid "Release"
-msgstr ""
-
-#: src/systems/crates-io.md:447
-msgid "push"
-msgstr ""
-
-#: src/systems/crates-io.md:448
-msgid "tags"
-msgstr ""
-
-#: src/systems/crates-io.md:448
-msgid "\"v*\""
-msgstr ""
-
-#: src/systems/crates-io.md:451
-msgid "publish"
-msgstr ""
-
-#: src/systems/crates-io.md:453
-msgid "environment"
-msgstr ""
-
-#: src/systems/crates-io.md:453
-msgid "release"
-msgstr ""
-
-#: src/systems/crates-io.md:454
-msgid "permissions"
-msgstr ""
-
-#: src/systems/crates-io.md:455
-msgid "id-token"
-msgstr ""
-
-#: src/systems/crates-io.md:455
-msgid ""
-"write           # lets the job request the short-lived token\n"
-"    steps"
-msgstr ""
-
-#: src/systems/crates-io.md:458
-msgid "rust-lang/crates-io-auth-action@v1"
-msgstr ""
-
-#: src/systems/crates-io.md:459
-msgid "id"
-msgstr ""
-
-#: src/systems/crates-io.md:459
-msgid "auth"
-msgstr ""
-
-#: src/systems/crates-io.md:460
-msgid "cargo publish"
-msgstr ""
-
-#: src/systems/crates-io.md:461
-msgid "env"
-msgstr ""
-
-#: src/systems/crates-io.md:462
-msgid "CARGO_REGISTRY_TOKEN"
-msgstr ""
-
-#: src/systems/crates-io.md:462
-msgid "${{ steps.auth.outputs.token }}"
-msgstr ""
-
-#: src/systems/crates-io.md:465
-msgid ""
-"Tools such as `cargo-release` and `release-plz` automate the rest: bumping "
-"versions, updating the changelog, tagging and publishing."
-msgstr ""
-"`cargo-release` 和 `release-plz` 等工具可以自动完成其余的工作：升级版本号、更新 changelog、打标签和发布。"
-
-#: src/systems/crates-io.md:468
-msgid "Publishing only on GitHub"
-msgstr "只在 GitHub 上发布"
-
-#: src/systems/crates-io.md:470
-msgid ""
-"You do not have to use crates.io. Code on GitHub (or any git host) is "
-"already usable as a dependency:"
-msgstr "你不一定要用 crates.io。GitHub（或任何 git 托管服务）上的代码本身就可以作为依赖使用："
-
-#: src/systems/crates-io.md:473
-msgid ""
-"```toml\n"
-"[dependencies]\n"
-"frame-pacer = { git = \"https://github.com/you/frame-pacer\", tag = \"v0.1.0\" }\n"
-"```"
-msgstr ""
-
-#: src/systems/crates-io.md:478
-msgid "crates.io"
-msgstr "crates.io"
-
-#: src/systems/crates-io.md:478
-msgid "Git only"
-msgstr "只用 Git"
-
-#: src/systems/crates-io.md:480
-msgid "Version resolution"
-msgstr "版本解析"
-
-#: src/systems/crates-io.md:480
-msgid "Semver ranges; duplicates unified"
-msgstr "semver 范围；重复版本会被统一"
-
-#: src/systems/crates-io.md:480
-msgid "One pinned commit per dependency"
-msgstr "每个依赖锁定一个提交"
-
-#: src/systems/crates-io.md:481
-msgid "Documentation"
-msgstr "文档"
-
-#: src/systems/crates-io.md:481
-msgid "Built on docs.rs automatically"
-msgstr "自动在 docs.rs 上构建"
-
-#: src/systems/crates-io.md:481
-msgid "`cargo doc`, hosted yourself (GitHub Pages)"
-msgstr "`cargo doc`，自己托管（GitHub Pages）"
-
-#: src/systems/crates-io.md:482
-msgid "Usable by crates on crates.io"
-msgstr "能被 crates.io 上的 crate 使用"
-
-#: src/systems/crates-io.md:482
-msgid "No: published crates cannot depend on git"
-msgstr "不能：已发布的 crate 不能依赖 git"
-
-#: src/systems/crates-io.md:483
-msgid "Discoverable"
-msgstr "可发现性"
-
-#: src/systems/crates-io.md:483
-msgid "Search, categories, lib.rs"
-msgstr "搜索、分类、lib.rs"
-
-#: src/systems/crates-io.md:483
-msgid "Only through your own links"
-msgstr "只能通过你自己的链接"
-
-#: src/systems/crates-io.md:484
-msgid "Takes back a release"
-msgstr "撤回一个发布"
-
-#: src/systems/crates-io.md:484
-msgid "Yank only"
-msgstr "只能 yank"
-
-#: src/systems/crates-io.md:484
-msgid "You control the repository"
-msgstr "仓库由你控制"
-
-#: src/systems/crates-io.md:486
-msgid ""
-"Git-only fits internal tools, experiments and crates that are not ready for "
-"a stable name. For anything you want other people to build on, publish to "
-"crates.io, and keep the GitHub repository as the home for issues and pull "
-"requests. Command-line tools can be installed either way: `cargo install "
-"frame-pacer-cli` from crates.io, or `cargo install --git <url>`."
-msgstr ""
-"只用 Git 适合内部工具、实验性项目，以及还没确定稳定名字的 crate。凡是希望别人在其上构建的东西，都应该发布到 crates.io，同时把 "
-"GitHub 仓库作为 issue 和 pull request 的大本营。命令行工具两种方式都能安装：从 crates.io 用 `cargo "
-"install frame-pacer-cli`，或者用 `cargo install --git <url>`。"
-
-#: src/systems/crates-io.md:495
-msgid ""
-"Studios usually combine all of the above: a vetted allowlist of public "
-"crates enforced with `cargo deny`, `cargo vendor` or a registry mirror for "
-"build farms without internet access, a private registry for internal crates "
-"shared between teams, and `[patch]` for the few public crates the studio has"
-" forked. Console SDK bindings are under NDA and cannot be published at all, "
-"so they live in the private registry or as path dependencies."
-msgstr ""
-"工作室通常会把以上方法组合起来：用 `cargo deny` 强制执行经过审查的公共 crate 白名单，为无法联网的构建农场准备 `cargo "
-"vendor` 或注册中心镜像，用私有注册中心在团队之间共享内部 crate，再用 `[patch]` 处理工作室 fork 过的少数公共 "
-"crate。主机 SDK 的绑定受保密协议约束，根本不能公开发布，所以它们放在私有注册中心里，或者作为 path 依赖。"
-
-#: src/systems/crates-io.md:509
-msgid "Prebuilt binaries per compiler and configuration"
-msgstr "针对每种编译器和配置的预编译二进制"
-
-#: src/systems/crates-io.md:509
-msgid "Source packages built with your flags"
-msgstr "用你的编译选项构建的源代码包"
-
-#: src/systems/crates-io.md:510 src/appendix/cheat-sheet.md:109
-msgid "`third_party/` with local patches"
-msgstr "带本地补丁的 `third_party/`"
-
-#: src/systems/crates-io.md:510 src/appendix/cheat-sheet.md:109
-msgid "`[patch.crates-io]` pointing at a fork"
-msgstr "用 `[patch.crates-io]` 指向一个 fork"
-
-#: src/systems/crates-io.md:511 src/appendix/cheat-sheet.md:110
-msgid "Checked-in third-party sources"
-msgstr "签入仓库的第三方源代码"
-
-#: src/systems/crates-io.md:511 src/appendix/cheat-sheet.md:110
-msgid "`cargo vendor`"
-msgstr ""
-
-#: src/systems/crates-io.md:512
-msgid "Manual CVE tracking"
-msgstr "手动跟踪 CVE"
-
-#: src/systems/crates-io.md:512
-msgid "`cargo audit` with the RustSec database"
-msgstr "`cargo audit` 配合 RustSec 数据库"
-
-#: src/systems/crates-io.md:513
-msgid "License review spreadsheet"
-msgstr "许可证审查表格"
-
-#: src/systems/crates-io.md:513
-msgid "`cargo deny check licenses`"
-msgstr ""
-
-#: src/systems/crates-io.md:514
-msgid "Doxygen output hosted by each project"
-msgstr "每个项目各自托管的 Doxygen 输出"
-
-#: src/systems/crates-io.md:514
-msgid "docs.rs for every published version"
-msgstr "docs.rs 上每个发布版本的文档"
-
-#: src/systems/crates-io.md:515
-msgid "Internal package server"
-msgstr "内部包服务器"
-
-#: src/systems/crates-io.md:515
-msgid "A private registry"
-msgstr "私有注册中心"
-
-#: src/systems/crates-io.md:519
-msgid ""
-"Pick a crate you might use in an engine (for example `image` or `gltf`). Add"
-" it to a new project, run `cargo tree`, and count the crates it brings in. "
-"Then disable its default features and count again."
-msgstr ""
-"选一个你可能在引擎里用到的 crate（例如 `image` 或 `gltf`）。把它加到一个新项目里，运行 `cargo "
-"tree`，数一数它引入了多少个 crate。然后关掉它的默认 feature，再数一次。"
-
-#: src/systems/crates-io.md:522
-msgid ""
-"Run `cargo audit` and `cargo deny init && cargo deny check` on one of your "
-"projects. Which licenses appear?"
-msgstr ""
-"在你的一个项目上运行 `cargo audit` 和 `cargo deny init && cargo deny check`。出现了哪些许可证？"
-
-#: src/systems/crates-io.md:524
-msgid ""
-"Find a crate whose GitHub repository has a bug you have hit, fix it in a "
-"fork, and use `[patch.crates-io]` to build your project against the fix."
-msgstr ""
-"找一个你遇到过 bug 的 crate 的 GitHub 仓库，在 fork 里修好它，再用 `[patch.crates-io]` "
-"让你的项目基于这个修复构建。"
-
-#: src/systems/crates-io.md:526
-msgid ""
-"Create a small library crate with documented public items, run `cargo "
-"package --list` and `cargo publish --dry-run`, and fix every warning. "
-"Publish it if you have something worth sharing."
-msgstr ""
-"创建一个小的库 crate，为公开条目写好文档，运行 `cargo package --list` 和 `cargo publish --dry-"
-"run`，修掉所有警告。如果你有值得分享的东西，就发布它。"
 
 #: src/engine/handles-and-arenas.md:3
 msgid ""

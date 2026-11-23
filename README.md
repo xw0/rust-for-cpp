@@ -21,8 +21,8 @@ book.toml               mdBook configuration
 src/                    English Markdown: the single source of truth
   SUMMARY.md            table of contents
   foundations/          Part I: the language, from C++
-  systems/              Part II: systems programming
-  engine/               Part III: graphics and engine programming
+  systems/              Parts II and III: tools, the ecosystem and systems programming
+  engine/               Part IV: graphics and engine programming
 po/<lang>.po            translations (gettext), e.g. po/zh-CN.po
 theme/css/rfc.css       styles for callouts, comparisons and widgets
 theme/js/memviz.js      step-through stack/heap diagram engine
