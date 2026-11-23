@@ -106,6 +106,9 @@ syntax](../intro/syntax.md).
 | C++ | Rust | Chapter |
 |---|---|---|
 | CMake + vcpkg/Conan | Cargo + crates.io | [Cargo](../foundations/cargo.md) |
+| `third_party/` with local patches | `[patch.crates-io]` pointing at a fork | [crates.io](../systems/crates-io.md) |
+| Checked-in third-party sources | `cargo vendor` | [crates.io](../systems/crates-io.md) |
+| Manual CVE and license review | `cargo audit`, `cargo deny check` | [crates.io](../systems/crates-io.md) |
 | Debug / Release | `cargo build` / `cargo build --release` (profiles) | [Cargo](../foundations/cargo.md) |
 | `add_subdirectory` | Workspace members | [Assets and build](../engine/assets-and-build.md) |
 | `add_custom_command` | `build.rs` | [Assets and build](../engine/assets-and-build.md) |

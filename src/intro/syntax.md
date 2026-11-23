@@ -103,6 +103,98 @@ fn main() {
 | `$x` | (none) | A variable inside a `macro_rules!` definition | [Macros](../systems/macros.md) |
 | `{x}`, `{:?}` in strings | `std::format` placeholders | The same idea, checked at compile time. `{:?}` uses `Debug` formatting | [Values and types](../foundations/values-and-types.md) |
 
+### Where attributes come from
+
+`#[...]` looks like C++'s `[[...]]`, and some attributes do the same job:
+`#[must_use]` is `[[nodiscard]]`, and `#[deprecated]` is `[[deprecated]]`.
+But Rust attributes come from three places, and only the first is built into
+the language:
+
+| Kind | Examples | Defined by | Imported? |
+|---|---|---|---|
+| Built-in | `#[repr(C)]`, `#[inline]`, `#[cfg(...)]`, `#[test]`, `#[derive(...)]`, `#[allow(...)]`, `#[must_use]`, `#[deprecated]`, `#[non_exhaustive]` | The compiler. The [Rust Reference](https://doc.rust-lang.org/reference/attributes.html) lists them all | Never |
+| Macro | Derives such as `Debug` or `Serialize`; attribute macros such as `#[tokio::main]` | Ordinary Rust code in a crate: the standard library, or a procedural macro crate | Like any other item: std's derives are in the prelude, others come in with `use` or a path |
+| Tool | `#[rustfmt::skip]`, `#[allow(clippy::too_many_arguments)]` | rustfmt and Clippy | Never; the compiler only checks the tool name |
+
+**`derive` is a built-in attribute whose arguments are macros.** Each name in
+`#[derive(...)]` is a derive macro that generates an `impl` of the trait with
+the same name. `#[derive(Clone)]` on `struct Vec2 { x: f32, y: f32 }` writes
+roughly `impl Clone for Vec2 { fn clone(&self) -> Self { Vec2 { x: self.x.clone(), y: self.y.clone() } } }`.
+The standard derives (`Debug`, `Clone`, `Copy`, `PartialEq`, `Eq`,
+`PartialOrd`, `Ord`, `Hash`, `Default`) are in the prelude, so they need no
+import. A crate's derive usually has the same name as its trait, and one
+`use serde::Serialize;` imports both.
+
+**`repr` is built in** and controls memory layout: `#[repr(C)]` for C-compatible
+structs, `#[repr(u8)]` for an enum's tag, `#[repr(align(64))]` for alignment
+([Memory layout and performance](../systems/memory-and-performance.md)).
+
+**Placement.** `#[attr]` applies to the item, field, statement or expression
+that follows it. `#![attr]` applies to the item it is written inside, and must
+come first there: at the top of `lib.rs` or `main.rs` it applies to the whole
+crate.
+
+```rust
+#![allow(dead_code)]                // inner attribute: applies to the whole crate
+
+#[repr(C)]                          // built in: C layout
+#[derive(Debug, Clone, Copy, PartialEq, Default)] // derive macros from std's prelude
+struct Vec2 { x: f32, y: f32 }
+
+#[must_use]                         // like [[nodiscard]]
+#[inline]                           // a hint, like `inline` in C++
+fn length(v: Vec2) -> f32 { (v.x * v.x + v.y * v.y).sqrt() }
+
+#[deprecated(note = "use `length`")] // like [[deprecated]]
+fn len(v: Vec2) -> f32 { length(v) }
+
+#[rustfmt::skip]                    // tool attribute: rustfmt keeps this layout
+const IDENTITY: [f32; 4] = [
+    1.0, 0.0,
+    0.0, 1.0,
+];
+
+#[cfg(test)]                        // compiled only by `cargo test`
+mod tests {
+    #[test]
+    fn unit_length() {
+        assert_eq!(super::length(super::Vec2 { x: 1.0, y: 0.0 }), 1.0);
+    }
+}
+
+fn main() {
+    let a = Vec2 { x: 3.0, y: 4.0 };
+    let b = a;                      // Copy: `a` is still usable
+    println!("{:?} {} {}", a, a == b, length(b)); // Debug, PartialEq
+    println!("{:?}", Vec2::default());            // Default
+    #[allow(deprecated)]            // lint attributes work on single statements
+    let _ = len(a);
+}
+```
+
+Attributes from other crates work the same way, and a derive can define
+**helper attributes** that are only valid on the item it is deriving:
+
+```rust,ignore
+use serde::{Deserialize, Serialize};   // the traits and the derive macros of the same name
+
+#[derive(Serialize, Deserialize)]
+#[serde(rename_all = "camelCase")]     // helper attribute, read by serde's derive
+struct Settings {
+    window_width: u32,
+    #[serde(default)]                  // helper attribute on a field
+    vsync: bool,
+}
+
+#[cfg_attr(feature = "serde", derive(Serialize))] // apply an attribute only if a feature is on
+struct EntityId(u32);
+```
+
+To see what a macro generated, install `cargo-expand` and run `cargo expand`:
+it prints your code after macro expansion, the way `-E` shows preprocessor
+output. Writing your own derive and attribute macros is covered in
+[Macros](../systems/macros.md#procedural-macros).
+
 ## Expressions and control flow
 
 | Symbol | C++ meaning | Rust meaning | Chapter |

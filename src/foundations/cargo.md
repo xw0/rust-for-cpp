@@ -134,6 +134,10 @@ first build resolves exact versions and records them in `Cargo.lock`. Commit
 `Cargo.lock` for applications so every build uses identical dependencies;
 `cargo update` moves to newer compatible versions deliberately.
 
+How Cargo resolves versions and features, how to choose and vet crates, and
+how to publish your own are covered in
+[crates.io and the ecosystem](../systems/crates-io.md).
+
 Cargo downloads, builds and links dependencies from source with *your* compiler
 and *your* flags. There are no prebuilt binaries to mismatch: no "this library
 was built with a different `_ITERATOR_DEBUG_LEVEL`", no runtime library

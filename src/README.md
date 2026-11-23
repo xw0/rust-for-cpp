@@ -49,7 +49,7 @@ Rust borrows an idea from modern C++, this book explains the idea from scratch.
   lifetimes, enums, errors, traits, collections, closures, smart pointers and
   modules.
 - **Part II: Systems programming**: concurrency, networking and RPC, memory
-  layout and performance, `unsafe`, FFI with C and C++, macros, testing and tooling.
+  layout and performance, `unsafe`, FFI with C and C++, macros, testing and tooling, and crates.io.
 - **Part III: Graphics and engine programming**: handles and arenas, ECS,
   math and SIMD, OpenGL, Vulkan, wgpu, OpenXR, the game loop, assets and build
   scripts, hot reloading, and a case study.

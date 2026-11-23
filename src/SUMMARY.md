@@ -35,6 +35,7 @@
 - [FFI with C and C++](systems/ffi.md)
 - [Macros](systems/macros.md)
 - [Testing, benchmarks and tooling](systems/testing-and-tooling.md)
+- [crates.io and the ecosystem](systems/crates-io.md)
 
 # Part III: Graphics and engine programming
 
