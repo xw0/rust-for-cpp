@@ -1,4 +1,4 @@
-# Modules and project organization
+# Modules and files
 
 C++ organizes code with three unrelated mechanisms: files and `#include` for
 compilation, namespaces for names, and access specifiers for visibility
@@ -11,9 +11,11 @@ This chapter covers:
 
 - declaring modules and mapping them to files,
 - `pub` and the visibility levels,
-- `use` paths and re-exports,
-- laying out a larger project,
-- how crate boundaries affect compile times.
+- `use` paths and re-exports.
+
+Where methods can be defined, how to lay out a larger project and how crates
+affect compile times need `impl` blocks and traits, so they come later, in
+[Project organization](project-organization.md).
 
 ## Modules are namespaces with visibility
 
@@ -144,123 +146,14 @@ module that re-exports the most common items, so users can write
 
 </div>
 
-## Where methods live
+<a id="where-methods-live"></a><a id="方法写在哪里"></a>
 
-In C++, a member function is visible where its declaration has been
-`#include`d. Rust has no textual inclusion, so the question becomes: if one
-file defines a type and another file adds methods to it, what do callers have
-to import?
+## Later: methods and larger projects
 
-**For your own types: nothing extra.** An `impl` block can sit in any module of
-the crate that defines the type. Its methods belong to the type, not to the
-file they were written in, so anyone who can reach a value of the type can call
-them (subject to `pub`). There is nothing to import for the second file:
-
-```rust
-mod mesh {
-    pub struct Mesh { pub verts: Vec<f32> }
-}
-
-mod mesh_ops {                         // could be src/mesh_ops.rs
-    use crate::mesh::Mesh;
-    impl Mesh {
-        pub fn vertex_count(&self) -> usize { self.verts.len() / 3 }
-    }
-}
-
-mod game {
-    use crate::mesh::Mesh;             // only the type; no `use crate::mesh_ops`
-    pub fn run() {
-        let m = Mesh { verts: vec![0.0; 9] };
-        println!("{} vertices", m.vertex_count());
-    }
-}
-
-fn main() { game::run(); }
-```
-
-`use` only creates a short name. You need `use crate::mesh::Mesh` to *write*
-`Mesh` (to construct one or name it in a signature), not to call methods on a
-value you already have.
-
-**For other crates' types: an extension trait, which you do import.** You
-cannot write `impl Vec<f32> { ... }` outside the standard library. Instead you
-define a trait and implement it for the foreign type. Trait methods are only
-callable where the trait is in scope, so callers must `use` the trait:
-
-```rust
-mod ext {
-    pub trait Describe {
-        fn describe(&self) -> String;
-    }
-    impl Describe for Vec<f32> {
-        fn describe(&self) -> String { format!("{} floats", self.len()) }
-    }
-}
-
-fn main() {
-    use crate::ext::Describe;          // remove this line: "no method named `describe`"
-    let v = vec![1.0_f32, 2.0, 3.0];
-    println!("{}", v.describe());
-}
-```
-
-This is the one place where Rust resembles "include it to see it", and it is
-deliberate: two crates can add a method with the same name to the same type,
-and only the traits you import take part in method lookup. The compiler's
-error message names the trait to import when you forget.
-
-## Organizing a larger project
-
-A pattern that scales well:
-
-```text
-my-engine/                  (a workspace, see the Cargo chapter)
-├── Cargo.toml
-├── crates/
-│   ├── engine-core/        math, handles, logging. Depends on almost nothing.
-│   ├── engine-ecs/         entities, components, scheduling
-│   ├── engine-render/      GPU abstraction; depends on core
-│   ├── engine-assets/      loading, caching, hot reload
-│   └── engine/             the public facade: re-exports the others
-└── games/
-    └── demo/               a binary crate using `engine`
-```
-
-Inside each crate:
-
-- `lib.rs` declares modules and re-exports the public API. Keep it short.
-- One module per concept (`texture.rs`, `pipeline.rs`), not per type. Rust
-  files are routinely several hundred lines.
-- Put unit tests at the bottom of each file in a `#[cfg(test)] mod tests`
-  ([Testing chapter](../systems/testing-and-tooling.md)).
-- Keep `pub` surfaces small and use `pub(crate)` for helpers shared inside the
-  crate.
-
-## Compile times and crate boundaries
-
-The crate is the unit of compilation:
-
-- **Within a crate**, the compiler splits work into "codegen units" for
-  parallel LLVM optimization, but type checking and borrow checking run over
-  the whole crate. A change anywhere in a crate recompiles that crate
-  (incrementally, reusing what it can).
-- **Across crates**, a change to crate A rebuilds every crate that depends on
-  A. Crates that do not depend on each other build in parallel.
-
-So the guidance mirrors what you would do with C++ libraries, with the
-emphasis shifted:
-
-1. Split along stable interfaces. A math crate that rarely changes can be
-   depended on by everything at no cost.
-2. Keep the dependency graph wide, not deep: `render`, `audio` and `physics`
-   depending only on `core` build in parallel.
-3. Generic code is compiled in the crate that *uses* it, like templates.
-   Heavy generic code in a low-level crate makes every dependent crate slower
-   to build. Where possible, have generic functions do minimal work and call
-   a non-generic inner function.
-4. Measure with `cargo build --timings`, which produces an HTML report of
-   which crates took how long and what ran in parallel.
+Modules also decide where a type's methods can be defined and which traits a
+caller has to import. That depends on `impl` blocks and traits, so it is
+covered in [Project organization](project-organization.md#where-methods-live),
+together with workspace layout and compile times.
 
 ## Summary
 
@@ -279,7 +172,6 @@ emphasis shifted:
 
 1. Turn the inline `math` module above into a file `src/math.rs` with a
    submodule `src/math/consts.rs`. Which `mod` lines do you need, and where?
-2. Make `Vec2`'s fields private and add `Vec2::new` and getters. What can code
-   outside `math` no longer do?
+2. Make `Vec2`'s fields private. What can code outside `math` no longer do?
 3. In a workspace with two crates, mark a function `pub(crate)` and try to call
    it from the other crate. Read the error.

@@ -12,6 +12,7 @@
 # Part I: The language, from C++
 
 - [Cargo, crates and the build](foundations/cargo.md)
+- [Modules and files](foundations/modules.md)
 - [Values, types and layout](foundations/values-and-types.md)
 - [Ownership and moves](foundations/ownership.md)
 - [Borrowing and references](foundations/borrowing.md)
@@ -23,7 +24,7 @@
 - [Collections and strings](foundations/collections.md)
 - [Closures and iterators](foundations/closures-and-iterators.md)
 - [Smart pointers and interior mutability](foundations/smart-pointers.md)
-- [Modules and project organization](foundations/modules.md)
+- [Project organization](foundations/project-organization.md)
 
 # Part II: Systems programming
 

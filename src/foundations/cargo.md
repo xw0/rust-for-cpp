@@ -336,8 +336,9 @@ engine-math = { path = "../engine-math" }
 Splitting a project into crates matters more than splitting C++ into
 libraries, because **the crate is the unit of parallel and incremental
 compilation**. A single huge crate compiles serially at the front end; a
-graph of mid-sized crates builds in parallel. The [modules
-chapter](modules.md) discusses how to draw those boundaries.
+graph of mid-sized crates builds in parallel. The [project
+organization chapter](project-organization.md) discusses how to draw those
+boundaries.
 
 <div class="rfc-callout rfc-engine">
 <span class="rfc-callout-title">Engine note: build times</span>
