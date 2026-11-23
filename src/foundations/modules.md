@@ -144,6 +144,72 @@ module that re-exports the most common items, so users can write
 
 </div>
 
+## Where methods live
+
+In C++, a member function is visible where its declaration has been
+`#include`d. Rust has no textual inclusion, so the question becomes: if one
+file defines a type and another file adds methods to it, what do callers have
+to import?
+
+**For your own types: nothing extra.** An `impl` block can sit in any module of
+the crate that defines the type. Its methods belong to the type, not to the
+file they were written in, so anyone who can reach a value of the type can call
+them (subject to `pub`). There is nothing to import for the second file:
+
+```rust
+mod mesh {
+    pub struct Mesh { pub verts: Vec<f32> }
+}
+
+mod mesh_ops {                         // could be src/mesh_ops.rs
+    use crate::mesh::Mesh;
+    impl Mesh {
+        pub fn vertex_count(&self) -> usize { self.verts.len() / 3 }
+    }
+}
+
+mod game {
+    use crate::mesh::Mesh;             // only the type; no `use crate::mesh_ops`
+    pub fn run() {
+        let m = Mesh { verts: vec![0.0; 9] };
+        println!("{} vertices", m.vertex_count());
+    }
+}
+
+fn main() { game::run(); }
+```
+
+`use` only creates a short name. You need `use crate::mesh::Mesh` to *write*
+`Mesh` (to construct one or name it in a signature), not to call methods on a
+value you already have.
+
+**For other crates' types: an extension trait, which you do import.** You
+cannot write `impl Vec<f32> { ... }` outside the standard library. Instead you
+define a trait and implement it for the foreign type. Trait methods are only
+callable where the trait is in scope, so callers must `use` the trait:
+
+```rust
+mod ext {
+    pub trait Describe {
+        fn describe(&self) -> String;
+    }
+    impl Describe for Vec<f32> {
+        fn describe(&self) -> String { format!("{} floats", self.len()) }
+    }
+}
+
+fn main() {
+    use crate::ext::Describe;          // remove this line: "no method named `describe`"
+    let v = vec![1.0_f32, 2.0, 3.0];
+    println!("{}", v.describe());
+}
+```
+
+This is the one place where Rust resembles "include it to see it", and it is
+deliberate: two crates can add a method with the same name to the same type,
+and only the traits you import take part in method lookup. The compiler's
+error message names the trait to import when you forget.
+
 ## Organizing a larger project
 
 A pattern that scales well:

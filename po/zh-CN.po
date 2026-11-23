@@ -20,7 +20,7 @@ msgstr ""
 #: src/foundations/operators-and-conversions.md:322
 #: src/foundations/collections.md:278
 #: src/foundations/closures-and-iterators.md:301
-#: src/foundations/smart-pointers.md:243 src/foundations/modules.md:199
+#: src/foundations/smart-pointers.md:243 src/foundations/modules.md:265
 #: src/systems/concurrency.md:339 src/systems/memory-and-performance.md:249
 #: src/systems/unsafe.md:231 src/systems/ffi.md:317 src/systems/macros.md:185
 #: src/systems/testing-and-tooling.md:217 src/engine/ecs.md:473
@@ -439,7 +439,7 @@ msgstr "并排的代码会把你会写的 C++ 和对应的 Rust 放在一起："
 #: src/foundations/collections.md:280
 #: src/foundations/closures-and-iterators.md:18
 #: src/foundations/closures-and-iterators.md:303
-#: src/foundations/smart-pointers.md:245 src/foundations/modules.md:201
+#: src/foundations/smart-pointers.md:245 src/foundations/modules.md:267
 #: src/systems/concurrency.md:126 src/systems/concurrency.md:218
 #: src/systems/concurrency.md:341 src/systems/memory-and-performance.md:251
 #: src/systems/unsafe.md:233 src/systems/testing-and-tooling.md:219
@@ -466,7 +466,7 @@ msgstr ""
 #: src/foundations/collections.md:19 src/foundations/collections.md:280
 #: src/foundations/closures-and-iterators.md:30
 #: src/foundations/closures-and-iterators.md:303
-#: src/foundations/smart-pointers.md:245 src/foundations/modules.md:201
+#: src/foundations/smart-pointers.md:245 src/foundations/modules.md:267
 #: src/systems/concurrency.md:146 src/systems/concurrency.md:218
 #: src/systems/concurrency.md:341 src/systems/memory-and-performance.md:251
 #: src/systems/unsafe.md:233 src/systems/ffi.md:69 src/systems/ffi.md:319
@@ -1080,7 +1080,7 @@ msgstr ""
 #: src/foundations/operators-and-conversions.md:337
 #: src/foundations/collections.md:292
 #: src/foundations/closures-and-iterators.md:313
-#: src/foundations/smart-pointers.md:255 src/foundations/modules.md:212
+#: src/foundations/smart-pointers.md:255 src/foundations/modules.md:278
 #: src/systems/concurrency.md:352 src/systems/memory-and-performance.md:262
 #: src/systems/unsafe.md:243 src/systems/ffi.md:330 src/systems/macros.md:198
 #: src/systems/testing-and-tooling.md:230 src/engine/handles-and-arenas.md:304
@@ -2885,8 +2885,8 @@ msgstr "// 现在是整数\n"
 #: src/foundations/closures-and-iterators.md:96
 #: src/foundations/closures-and-iterators.md:234
 #: src/foundations/smart-pointers.md:42 src/foundations/smart-pointers.md:45
-#: src/systems/concurrency.md:170 src/systems/ffi.md:228
-#: src/systems/macros.md:73 src/systems/macros.md:74
+#: src/foundations/modules.md:204 src/systems/concurrency.md:170
+#: src/systems/ffi.md:228 src/systems/macros.md:73 src/systems/macros.md:74
 #: src/engine/math-and-simd.md:335 src/engine/assets-and-build.md:124
 #: src/engine/case-study.md:178
 msgid "\"{}\""
@@ -9226,7 +9226,7 @@ msgstr ""
 msgid "The parent module"
 msgstr "父模块"
 
-#: src/foundations/modules.md:60 src/foundations/modules.md:208
+#: src/foundations/modules.md:60 src/foundations/modules.md:274
 msgid "`pub(crate)`"
 msgstr ""
 
@@ -9405,29 +9405,105 @@ msgid ""
 msgstr "**用于编译防火墙的 Pimpl**：结构体的私有字段本来就对其他 crate 的代码隐藏。（修改它们仍然会触发依赖者重新编译；见下文。）"
 
 #: src/foundations/modules.md:147
+msgid "Where methods live"
+msgstr "方法写在哪里"
+
+#: src/foundations/modules.md:149
+msgid ""
+"In C++, a member function is visible where its declaration has been "
+"`#include`d. Rust has no textual inclusion, so the question becomes: if one "
+"file defines a type and another file adds methods to it, what do callers "
+"have to import?"
+msgstr ""
+"在 C++ 中，成员函数在其声明被 `#include` 的地方可见。Rust "
+"没有文本包含，所以问题变成了：如果一个文件定义了某个类型，另一个文件给它添加了方法，调用者需要导入什么？"
+
+#: src/foundations/modules.md:154
+msgid ""
+"**For your own types: nothing extra.** An `impl` block can sit in any module"
+" of the crate that defines the type. Its methods belong to the type, not to "
+"the file they were written in, so anyone who can reach a value of the type "
+"can call them (subject to `pub`). There is nothing to import for the second "
+"file:"
+msgstr ""
+"**对于你自己的类型：什么都不用额外导入。** `impl` 块可以写在定义该类型的 crate "
+"中的任何模块里。方法属于类型本身，而不属于编写它的那个文件，所以任何能拿到该类型值的代码都能调用它们（受 `pub` "
+"约束）。不需要为第二个文件导入任何东西："
+
+#: src/foundations/modules.md:164
+msgid "// could be src/mesh_ops.rs\n"
+msgstr "// 也可以是 src/mesh_ops.rs\n"
+
+#: src/foundations/modules.md:172
+msgid "// only the type; no `use crate::mesh_ops`\n"
+msgstr "// 只导入了类型；不需要 `use crate::mesh_ops`\n"
+
+#: src/foundations/modules.md:175
+msgid "\"{} vertices\""
+msgstr ""
+
+#: src/foundations/modules.md:182
+msgid ""
+"`use` only creates a short name. You need `use crate::mesh::Mesh` to _write_"
+" `Mesh` (to construct one or name it in a signature), not to call methods on"
+" a value you already have."
+msgstr ""
+"`use` 只是创建一个短名字。你需要 `use crate::mesh::Mesh` 是为了<em>写出</em> `Mesh` "
+"这个名字（构造它，或者在签名中提到它），而不是为了在已有的值上调用方法。"
+
+#: src/foundations/modules.md:186
+msgid ""
+"**For other crates' types: an extension trait, which you do import.** You "
+"cannot write `impl Vec<f32> { ... }` outside the standard library. Instead "
+"you define a trait and implement it for the foreign type. Trait methods are "
+"only callable where the trait is in scope, so callers must `use` the trait:"
+msgstr ""
+"**对于其他 crate 的类型：使用扩展 trait，这时需要导入。** 在标准库之外，你不能写 `impl Vec<f32> { ... "
+"}`。取而代之的是定义一个 trait，并为这个外部类型实现它。只有在 trait 处于作用域内时才能调用 trait 方法，所以调用者必须 `use`"
+" 这个 trait："
+
+#: src/foundations/modules.md:197
+msgid "\"{} floats\""
+msgstr ""
+
+#: src/foundations/modules.md:202
+msgid "// remove this line: \"no method named `describe`\"\n"
+msgstr "// 删掉这一行会报错：\"no method named `describe`\"\n"
+
+#: src/foundations/modules.md:208
+msgid ""
+"This is the one place where Rust resembles \"include it to see it\", and it "
+"is deliberate: two crates can add a method with the same name to the same "
+"type, and only the traits you import take part in method lookup. The "
+"compiler's error message names the trait to import when you forget."
+msgstr ""
+"这是 Rust 中唯一类似\"包含了才能看见\"的地方，而且是有意为之：两个 crate 可能给同一个类型添加同名方法，只有你导入的 trait "
+"才会参与方法查找。如果忘了导入，编译器的错误信息会告诉你该导入哪个 trait。"
+
+#: src/foundations/modules.md:213
 msgid "Organizing a larger project"
 msgstr "组织较大的项目"
 
-#: src/foundations/modules.md:149
+#: src/foundations/modules.md:215
 msgid "A pattern that scales well:"
 msgstr "一种可以良好扩展的模式："
 
-#: src/foundations/modules.md:164
+#: src/foundations/modules.md:230
 msgid "Inside each crate:"
 msgstr "在每个 crate 内部："
 
-#: src/foundations/modules.md:166
+#: src/foundations/modules.md:232
 msgid ""
 "`lib.rs` declares modules and re-exports the public API. Keep it short."
 msgstr "`lib.rs` 声明模块并重新导出公开 API。保持它简短。"
 
-#: src/foundations/modules.md:167
+#: src/foundations/modules.md:233
 msgid ""
 "One module per concept (`texture.rs`, `pipeline.rs`), not per type. Rust "
 "files are routinely several hundred lines."
 msgstr "每个概念一个模块（`texture.rs`、`pipeline.rs`），而不是每个类型一个。Rust 文件动辄几百行是很正常的。"
 
-#: src/foundations/modules.md:169
+#: src/foundations/modules.md:235
 msgid ""
 "Put unit tests at the bottom of each file in a `#[cfg(test)] mod tests` "
 "([Testing chapter](../systems/testing-and-tooling.md))."
@@ -9435,21 +9511,21 @@ msgstr ""
 "把单元测试放在每个文件末尾的 `#[cfg(test)] mod tests` 中（[测试一章](../systems/testing-and-"
 "tooling.md)）。"
 
-#: src/foundations/modules.md:171
+#: src/foundations/modules.md:237
 msgid ""
 "Keep `pub` surfaces small and use `pub(crate)` for helpers shared inside the"
 " crate."
 msgstr "让 `pub` 的接口保持精简，crate 内部共享的辅助函数用 `pub(crate)`。"
 
-#: src/foundations/modules.md:174
+#: src/foundations/modules.md:240
 msgid "Compile times and crate boundaries"
 msgstr "编译时间与 crate 边界"
 
-#: src/foundations/modules.md:176
+#: src/foundations/modules.md:242
 msgid "The crate is the unit of compilation:"
 msgstr "crate 是编译的单位："
 
-#: src/foundations/modules.md:178
+#: src/foundations/modules.md:244
 msgid ""
 "**Within a crate**, the compiler splits work into \"codegen units\" for "
 "parallel LLVM optimization, but type checking and borrow checking run over "
@@ -9459,31 +9535,31 @@ msgstr ""
 "**在一个 crate 内部**，编译器会把工作拆分成多个“代码生成单元”（codegen unit），以便并行进行 LLVM "
 "优化，但类型检查和借用检查是在整个 crate 上进行的。crate 中任何地方的修改都会重新编译这个 crate（增量地，尽可能复用已有结果）。"
 
-#: src/foundations/modules.md:182
+#: src/foundations/modules.md:248
 msgid ""
 "**Across crates**, a change to crate A rebuilds every crate that depends on "
 "A. Crates that do not depend on each other build in parallel."
 msgstr "**在 crate 之间**，对 crate A 的修改会重新构建所有依赖 A 的 crate。互不依赖的 crate 可以并行构建。"
 
-#: src/foundations/modules.md:185
+#: src/foundations/modules.md:251
 msgid ""
 "So the guidance mirrors what you would do with C++ libraries, with the "
 "emphasis shifted:"
 msgstr "所以指导原则与你对 C++ 库的做法类似，只是侧重点有所不同："
 
-#: src/foundations/modules.md:188
+#: src/foundations/modules.md:254
 msgid ""
 "Split along stable interfaces. A math crate that rarely changes can be "
 "depended on by everything at no cost."
 msgstr "沿着稳定的接口拆分。一个很少变化的数学 crate 可以被所有东西依赖而不产生代价。"
 
-#: src/foundations/modules.md:190
+#: src/foundations/modules.md:256
 msgid ""
 "Keep the dependency graph wide, not deep: `render`, `audio` and `physics` "
 "depending only on `core` build in parallel."
 msgstr "让依赖图宽而不深：只依赖 `core` 的 `render`、`audio` 和 `physics` 可以并行构建。"
 
-#: src/foundations/modules.md:192
+#: src/foundations/modules.md:258
 msgid ""
 "Generic code is compiled in the crate that _uses_ it, like templates. Heavy "
 "generic code in a low-level crate makes every dependent crate slower to "
@@ -9493,74 +9569,74 @@ msgstr ""
 "泛型代码在<em>使用</em>它的 crate 中编译，就像模板一样。底层 crate 中大量的泛型代码会让每个依赖它的 crate "
 "构建得更慢。在可能的情况下，让泛型函数只做最少的工作，再调用一个非泛型的内部函数。"
 
-#: src/foundations/modules.md:196
+#: src/foundations/modules.md:262
 msgid ""
 "Measure with `cargo build --timings`, which produces an HTML report of which"
 " crates took how long and what ran in parallel."
 msgstr ""
 "用 `cargo build --timings` 来测量，它会生成一份 HTML 报告，显示每个 crate 花了多长时间、哪些是并行运行的。"
 
-#: src/foundations/modules.md:203 src/appendix/cheat-sheet.md:109
+#: src/foundations/modules.md:269 src/appendix/cheat-sheet.md:109
 msgid "`namespace`"
 msgstr ""
 
-#: src/foundations/modules.md:203 src/appendix/cheat-sheet.md:109
+#: src/foundations/modules.md:269 src/appendix/cheat-sheet.md:109
 msgid "`mod`"
 msgstr ""
 
-#: src/foundations/modules.md:204
+#: src/foundations/modules.md:270
 msgid "`#include` + header file"
 msgstr "`#include` + 头文件"
 
-#: src/foundations/modules.md:204
+#: src/foundations/modules.md:270
 msgid "`mod name;` declares a file as a module; `use` imports names"
 msgstr "`mod name;` 把一个文件声明为模块；`use` 导入名字"
 
-#: src/foundations/modules.md:205
+#: src/foundations/modules.md:271
 msgid "`using std::vector;`"
 msgstr ""
 
-#: src/foundations/modules.md:205
+#: src/foundations/modules.md:271
 msgid "`use std::vec::Vec;`"
 msgstr ""
 
-#: src/foundations/modules.md:206
+#: src/foundations/modules.md:272
 msgid "`public` / `private` (classes)"
 msgstr "`public` / `private`（类）"
 
-#: src/foundations/modules.md:206
+#: src/foundations/modules.md:272
 msgid "`pub` / private by default (modules and fields)"
 msgstr "`pub` / 默认私有（模块和字段）"
 
-#: src/foundations/modules.md:207
+#: src/foundations/modules.md:273
 msgid "Anonymous namespace, `static` functions"
 msgstr "匿名命名空间、`static` 函数"
 
-#: src/foundations/modules.md:207
+#: src/foundations/modules.md:273
 msgid "Private items"
 msgstr "私有条目"
 
-#: src/foundations/modules.md:208
+#: src/foundations/modules.md:274
 msgid "`detail` namespace, internal headers"
 msgstr "`detail` 命名空间、内部头文件"
 
-#: src/foundations/modules.md:209
+#: src/foundations/modules.md:275
 msgid "Static library"
 msgstr "静态库"
 
-#: src/foundations/modules.md:209
+#: src/foundations/modules.md:275
 msgid "Library crate"
 msgstr "库 crate"
 
-#: src/foundations/modules.md:210
+#: src/foundations/modules.md:276
 msgid "Umbrella header"
 msgstr "总括头文件"
 
-#: src/foundations/modules.md:210
+#: src/foundations/modules.md:276
 msgid "`pub use` re-exports, `prelude` module"
 msgstr "`pub use` 重新导出、`prelude` 模块"
 
-#: src/foundations/modules.md:214
+#: src/foundations/modules.md:280
 msgid ""
 "Turn the inline `math` module above into a file `src/math.rs` with a "
 "submodule `src/math/consts.rs`. Which `mod` lines do you need, and where?"
@@ -9568,13 +9644,13 @@ msgstr ""
 "把上面内联的 `math` 模块改成文件 `src/math.rs`，并带有子模块 `src/math/consts.rs`。你需要哪些 `mod` "
 "行，分别写在哪里？"
 
-#: src/foundations/modules.md:216
+#: src/foundations/modules.md:282
 msgid ""
 "Make `Vec2`'s fields private and add `Vec2::new` and getters. What can code "
 "outside `math` no longer do?"
 msgstr "把 `Vec2` 的字段改为私有，并添加 `Vec2::new` 和 getter。`math` 之外的代码再也不能做什么了？"
 
-#: src/foundations/modules.md:218
+#: src/foundations/modules.md:284
 msgid ""
 "In a workspace with two crates, mark a function `pub(crate)` and try to call"
 " it from the other crate. Read the error."
