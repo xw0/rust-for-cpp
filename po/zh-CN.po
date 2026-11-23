@@ -28,7 +28,7 @@ msgstr ""
 #: src/systems/unsafe.md:231 src/systems/ffi.md:317 src/systems/macros.md:186
 #: src/engine/ecs.md:473 src/engine/math-and-simd.md:339
 #: src/engine/opengl.md:429 src/engine/vulkan.md:394 src/engine/wgpu.md:320
-#: src/engine/openxr.md:519 src/engine/game-loop.md:506 src/engine/ui.md:380
+#: src/engine/openxr.md:519 src/engine/game-loop.md:506 src/engine/ui.md:631
 #: src/engine/assets-and-build.md:398 src/engine/hot-reload-and-plugins.md:248
 msgid "Summary"
 msgstr "小结"
@@ -815,7 +815,7 @@ msgstr "并排的代码会把你会写的 C++ 和对应的 Rust 放在一起："
 #: src/systems/memory-and-performance.md:251 src/systems/unsafe.md:233
 #: src/engine/handles-and-arenas.md:235 src/engine/ecs.md:475
 #: src/engine/math-and-simd.md:341 src/engine/opengl.md:431
-#: src/engine/vulkan.md:396 src/engine/game-loop.md:508 src/engine/ui.md:382
+#: src/engine/vulkan.md:396 src/engine/game-loop.md:508 src/engine/ui.md:633
 #: src/engine/assets-and-build.md:400 src/engine/hot-reload-and-plugins.md:250
 #: src/appendix/cheat-sheet.md:11 src/appendix/cheat-sheet.md:31
 #: src/appendix/cheat-sheet.md:52 src/appendix/cheat-sheet.md:72
@@ -849,7 +849,7 @@ msgstr ""
 #: src/engine/handles-and-arenas.md:235 src/engine/ecs.md:475
 #: src/engine/math-and-simd.md:341 src/engine/opengl.md:20
 #: src/engine/opengl.md:431 src/engine/vulkan.md:396 src/engine/openxr.md:521
-#: src/engine/game-loop.md:508 src/engine/ui.md:382
+#: src/engine/game-loop.md:508 src/engine/ui.md:633
 #: src/engine/assets-and-build.md:400 src/engine/hot-reload-and-plugins.md:250
 #: src/appendix/cheat-sheet.md:11 src/appendix/cheat-sheet.md:31
 #: src/appendix/cheat-sheet.md:52 src/appendix/cheat-sheet.md:72
@@ -1465,7 +1465,7 @@ msgstr ""
 #: src/engine/handles-and-arenas.md:304 src/engine/ecs.md:484
 #: src/engine/math-and-simd.md:354 src/engine/opengl.md:442
 #: src/engine/vulkan.md:408 src/engine/wgpu.md:333 src/engine/openxr.md:533
-#: src/engine/game-loop.md:520 src/engine/ui.md:391
+#: src/engine/game-loop.md:520 src/engine/ui.md:644
 #: src/engine/assets-and-build.md:412 src/engine/hot-reload-and-plugins.md:261
 #: src/engine/case-study.md:331
 msgid "Exercises"
@@ -1690,7 +1690,7 @@ msgstr "Rust 中的含义"
 #: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:52
 #: src/appendix/cheat-sheet.md:72 src/appendix/cheat-sheet.md:84
 #: src/appendix/cheat-sheet.md:106 src/appendix/cheat-sheet.md:130
-#: src/appendix/cheat-sheet.md:150 src/appendix/cheat-sheet.md:170
+#: src/appendix/cheat-sheet.md:150 src/appendix/cheat-sheet.md:171
 msgid "Chapter"
 msgstr "章节"
 
@@ -1712,7 +1712,7 @@ msgstr "对 `x` 的共享借用：非空、只读的引用。写在调用处，`
 #: src/appendix/cheat-sheet.md:37 src/appendix/cheat-sheet.md:38
 #: src/appendix/cheat-sheet.md:39 src/appendix/cheat-sheet.md:40
 #: src/appendix/cheat-sheet.md:41 src/appendix/cheat-sheet.md:54
-#: src/appendix/cheat-sheet.md:172 src/appendix/cheat-sheet.md:173
+#: src/appendix/cheat-sheet.md:173 src/appendix/cheat-sheet.md:174
 msgid "[Borrowing](../foundations/borrowing.md)"
 msgstr "[借用](../foundations/borrowing.md)"
 
@@ -2544,7 +2544,7 @@ msgstr "范围：半开区间和闭区间。用于 `for`、切片（`&v[1..3]`�
 #: src/appendix/cheat-sheet.md:87 src/appendix/cheat-sheet.md:88
 #: src/appendix/cheat-sheet.md:89 src/appendix/cheat-sheet.md:90
 #: src/appendix/cheat-sheet.md:91 src/appendix/cheat-sheet.md:92
-#: src/appendix/cheat-sheet.md:175
+#: src/appendix/cheat-sheet.md:176
 msgid "[Collections](../foundations/collections.md)"
 msgstr "[集合](../foundations/collections.md)"
 
@@ -2664,7 +2664,7 @@ msgstr "生命周期参数：给\"这个借用在多长时间内有效\"起的�
 
 #: src/intro/syntax.md:419 src/intro/syntax.md:420 src/intro/syntax.md:421
 #: src/intro/syntax.md:422 src/appendix/cheat-sheet.md:42
-#: src/appendix/cheat-sheet.md:43 src/appendix/cheat-sheet.md:178
+#: src/appendix/cheat-sheet.md:43 src/appendix/cheat-sheet.md:179
 msgid "[Lifetimes](../foundations/lifetimes.md)"
 msgstr "[生命周期](../foundations/lifetimes.md)"
 
@@ -4112,7 +4112,7 @@ msgstr ""
 
 #: src/foundations/values-and-types.md:48 src/foundations/collections.md:19
 #: src/systems/concurrency.md:220 src/engine/math-and-simd.md:19
-#: src/engine/openxr.md:42 src/engine/game-loop.md:185
+#: src/engine/openxr.md:42 src/engine/game-loop.md:185 src/engine/ui.md:240
 #: src/engine/hot-reload-and-plugins.md:211
 msgid "Notes"
 msgstr "说明"
@@ -6273,7 +6273,7 @@ msgstr "解读常见错误"
 msgid "Error"
 msgstr "错误"
 
-#: src/foundations/lifetimes.md:237 src/appendix/cheat-sheet.md:170
+#: src/foundations/lifetimes.md:237 src/appendix/cheat-sheet.md:171
 msgid "Usual fix"
 msgstr "常见修复"
 
@@ -13772,7 +13772,8 @@ msgstr ""
 
 #: src/systems/networking.md:219 src/engine/math-and-simd.md:19
 #: src/engine/vulkan.md:385 src/engine/openxr.md:13
-#: src/engine/game-loop.md:248 src/engine/hot-reload-and-plugins.md:211
+#: src/engine/game-loop.md:248 src/engine/ui.md:240
+#: src/engine/hot-reload-and-plugins.md:211
 msgid "Crate"
 msgstr "crate"
 
@@ -17483,7 +17484,7 @@ msgstr "`std::shared_ptr` + `weak_ptr` 场景图"
 msgid "`Parent(Entity)` component and a propagation system"
 msgstr "`Parent(Entity)` 组件加一个传播系统"
 
-#: src/engine/ecs.md:479 src/appendix/cheat-sheet.md:163
+#: src/engine/ecs.md:479 src/appendix/cheat-sheet.md:164
 msgid "EnTT, flecs"
 msgstr "EnTT、flecs"
 
@@ -18644,7 +18645,7 @@ msgstr "GLFW / WGL / GLX / EGL 上下文"
 msgid "glutin"
 msgstr "glutin"
 
-#: src/engine/opengl.md:435 src/appendix/cheat-sheet.md:157
+#: src/engine/opengl.md:435 src/appendix/cheat-sheet.md:158
 msgid "glad / GLEW"
 msgstr "glad / GLEW"
 
@@ -18761,7 +18762,7 @@ msgid ""
 msgstr "ash 由 `vk.xml` 生成，也就是生成 `vulkan.h` 的同一份注册表。每个函数和结构体都在其中，名字可以预测："
 
 #: src/engine/vulkan.md:23 src/engine/vulkan.md:387
-#: src/appendix/cheat-sheet.md:158
+#: src/appendix/cheat-sheet.md:159
 msgid "ash"
 msgstr "ash"
 
@@ -19292,7 +19293,7 @@ msgid "You want Vulkan concepts but checked, and can accept some overhead"
 msgstr "你想要 Vulkan 的概念但需要检查，并且能接受一些开销"
 
 #: src/engine/vulkan.md:389 src/engine/wgpu.md:29 src/engine/wgpu.md:322
-#: src/appendix/cheat-sheet.md:160
+#: src/appendix/cheat-sheet.md:161
 msgid "wgpu"
 msgstr "wgpu"
 
@@ -19367,11 +19368,11 @@ msgstr "删除队列"
 msgid "Same pattern; `Drop` enqueues"
 msgstr "相同模式；`Drop` 负责入队"
 
-#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:159
+#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:160
 msgid "VMA"
 msgstr "VMA"
 
-#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:159
+#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:160
 msgid "gpu-allocator, vk-mem"
 msgstr "gpu-allocator、vk-mem"
 
@@ -21764,7 +21765,7 @@ msgstr ""
 msgid "Singleton `Get()`"
 msgstr "单例 `Get()`"
 
-#: src/engine/game-loop.md:515 src/appendix/cheat-sheet.md:164
+#: src/engine/game-loop.md:515 src/appendix/cheat-sheet.md:165
 msgid "Context passed as a parameter; ECS resources"
 msgstr "以参数传递的上下文；ECS 资源"
 
@@ -21839,28 +21840,32 @@ msgid ""
 msgstr "使用 egui 的即时模式，既作为独立工具，也作为你自己渲染器中的覆盖层，"
 
 #: src/engine/ui.md:15
+msgid "Dear ImGui itself, through Rust bindings,"
+msgstr "通过 Rust 绑定直接使用 Dear ImGui，"
+
+#: src/engine/ui.md:16
 msgid "message-based UI with iced, and declarative UI with Slint,"
 msgstr "基于消息的 iced 和声明式的 Slint，"
 
-#: src/engine/ui.md:16
+#: src/engine/ui.md:17
 msgid "in-game UI, and how to choose."
 msgstr "游戏内 UI，以及如何选择。"
 
-#: src/engine/ui.md:18
+#: src/engine/ui.md:19
 msgid "Why UI is different in Rust"
 msgstr "为什么 Rust 中的 UI 不一样"
 
-#: src/engine/ui.md:20
+#: src/engine/ui.md:21
 msgid ""
 "The classic retained-mode design stores callbacks in widgets, and the "
 "callbacks capture a pointer to the state they change:"
 msgstr "经典的保留模式设计把回调存放在控件中，而回调捕获一个指向它所修改状态的指针："
 
-#: src/engine/ui.md:24
+#: src/engine/ui.md:25
 msgid "// Qt-style C++\n"
 msgstr "// Qt 风格的 C++\n"
 
-#: src/engine/ui.md:28
+#: src/engine/ui.md:29
 msgid ""
 "The lambda holds `this` for as long as the button exists, and mutates "
 "`light` whenever a click arrives. Nothing stops two callbacks from changing "
@@ -21872,11 +21877,11 @@ msgstr ""
 "`light`。没有任何机制阻止两个回调修改同一份状态，也没有任何机制阻止回调在 `this` 被销毁之后运行。直接翻译成 Rust "
 "是无法编译的，因为存放在 `editor` 内部的闭包不能同时持有 `editor` 的可变借用："
 
-#: src/engine/ui.md:41
+#: src/engine/ui.md:42
 msgid "// error[E0506], error[E0597]\n"
 msgstr "// error[E0506], error[E0597]\n"
 
-#: src/engine/ui.md:48
+#: src/engine/ui.md:49
 msgid ""
 "You can make it work with shared ownership, `Rc<RefCell<State>>` captured by"
 " every callback ([Smart pointers](../foundations/smart-pointers.md)), and "
@@ -21890,65 +21895,65 @@ msgstr ""
 "C++ 工具包（GTK、Qt）的绑定正是这样做的。但这会把借用检查推迟到运行时，并让 `borrow_mut()` 散布在整个 UI 中。Rust 的 "
 "UI 库则从三种设计中选择一种，以避免长期存活的回调持有可变状态："
 
-#: src/engine/ui.md:55
+#: src/engine/ui.md:56
 msgid "Design"
 msgstr "设计"
 
-#: src/engine/ui.md:55 src/engine/case-study.md:184
+#: src/engine/ui.md:56 src/engine/case-study.md:184
 msgid "Idea"
 msgstr "思想"
 
-#: src/engine/ui.md:55
+#: src/engine/ui.md:56
 msgid "Libraries"
 msgstr "库"
 
-#: src/engine/ui.md:57
+#: src/engine/ui.md:58
 msgid "Immediate mode"
 msgstr "即时模式"
 
-#: src/engine/ui.md:57
+#: src/engine/ui.md:58
 msgid ""
 "No stored callbacks. UI code runs every frame with `&mut` access to your "
 "state and reacts to clicks on the spot"
 msgstr "不存储回调。UI 代码每帧运行，以 `&mut` 访问你的状态，并当场响应点击"
 
-#: src/engine/ui.md:57
+#: src/engine/ui.md:58
 msgid "egui, Dear ImGui bindings"
 msgstr "egui、Dear ImGui 绑定"
 
-#: src/engine/ui.md:58
+#: src/engine/ui.md:59
 msgid "Messages (the Elm architecture)"
 msgstr "消息（Elm 架构）"
 
-#: src/engine/ui.md:58
+#: src/engine/ui.md:59
 msgid ""
 "Widgets produce messages. One `update` function owns all mutation; a `view` "
 "function builds the UI from the state"
 msgstr "控件产生消息。唯一的 `update` 函数负责所有修改；`view` 函数根据状态构建 UI"
 
-#: src/engine/ui.md:58
+#: src/engine/ui.md:59
 msgid "iced, Relm4"
 msgstr "iced、Relm4"
 
-#: src/engine/ui.md:59
+#: src/engine/ui.md:60
 msgid "Declarative with properties"
 msgstr "带属性的声明式"
 
-#: src/engine/ui.md:59
+#: src/engine/ui.md:60
 msgid ""
 "The UI lives in its own language with reactive properties; Rust code "
 "connects callbacks through weak handles"
 msgstr "UI 用它自己的语言编写，带有响应式属性；Rust 代码通过弱句柄连接回调"
 
-#: src/engine/ui.md:59 src/engine/ui.md:376
+#: src/engine/ui.md:60 src/engine/ui.md:627
 msgid "Slint"
 msgstr "Slint"
 
-#: src/engine/ui.md:61
+#: src/engine/ui.md:62
 msgid "egui: immediate mode"
 msgstr "egui：即时模式"
 
-#: src/engine/ui.md:63
+#: src/engine/ui.md:64
 msgid ""
 "[egui](https://docs.rs/egui) is the Rust equivalent of Dear ImGui, written "
 "in pure Rust. Your code describes the whole UI every frame, and each widget "
@@ -21958,7 +21963,7 @@ msgstr ""
 "[egui](https://docs.rs/egui) 是 Dear ImGui 在 Rust 中的对应物，完全用 Rust "
 "编写。你的代码每帧描述整个 UI，每个控件都会返回它是否被交互过。`eframe` 为 egui 包装了窗口和渲染器，用于编写独立工具："
 
-#: src/engine/ui.md:68
+#: src/engine/ui.md:69
 msgid ""
 "```toml\n"
 "[dependencies]\n"
@@ -21966,42 +21971,42 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/engine/ui.md:85
+#: src/engine/ui.md:86
 msgid "\"properties\""
 msgstr ""
 
-#: src/engine/ui.md:86
+#: src/engine/ui.md:87
 msgid "\"Light\""
 msgstr ""
 
-#: src/engine/ui.md:87
+#: src/engine/ui.md:88
 msgid "\"intensity\""
 msgstr ""
 
-#: src/engine/ui.md:89
+#: src/engine/ui.md:90
 msgid "\"cast shadows\""
 msgstr ""
 
-#: src/engine/ui.md:90 src/engine/ui.md:277 src/engine/ui.md:323
+#: src/engine/ui.md:91 src/engine/ui.md:528 src/engine/ui.md:574
 msgid "\"Bake\""
 msgstr ""
 
-#: src/engine/ui.md:91
+#: src/engine/ui.md:92
 msgid "\"baked at intensity {:.1}\""
 msgstr ""
 
-#: src/engine/ui.md:109
+#: src/engine/ui.md:110
 msgid "\"Light tool\""
 msgstr ""
 
-#: src/engine/ui.md:116
+#: src/engine/ui.md:117
 msgid ""
 "![The egui light tool: a side panel with an intensity slider, a color "
 "button, a \"cast shadows\" checkbox and a Bake button](img/ui-egui.png)"
 msgstr ""
 "![egui 灯光工具：侧边栏中有一个强度滑块、一个颜色按钮、一个“投射阴影”复选框和一个 Bake 按钮](img/ui-egui.png)"
 
-#: src/engine/ui.md:118
+#: src/engine/ui.md:119
 msgid ""
 "`Slider::new(&mut self.intensity, ...)` borrows the field only for that "
 "call, exactly like `ImGui::SliderFloat(\"intensity\", &intensity, 0, 10)`. "
@@ -22016,11 +22021,11 @@ msgstr ""
 "完全一样。点击在绘制按钮的地方处理，可以完整地访问 `&mut self`，所以没有需要存储的回调，也没有需要共享的东西。代价也与 Dear ImGui"
 " 相同：布局每帧只计算一遍，所以有些布局需要变通处理，而且 UI 代码每帧都会运行（eframe 默认只在有输入时重绘，所以空闲的工具不占用 CPU）。"
 
-#: src/engine/ui.md:126
+#: src/engine/ui.md:127
 msgid "egui inside your engine"
 msgstr "在你的引擎中使用 egui"
 
-#: src/engine/ui.md:128
+#: src/engine/ui.md:129
 msgid ""
 "For a debug overlay, you want egui drawn by your own renderer on top of the "
 "game, with input shared between them. `egui-winit` translates winit events "
@@ -22030,7 +22035,7 @@ msgstr ""
 "对于调试覆盖层，你希望由自己的渲染器把 egui 画在游戏画面之上，并让两者共享输入。`egui-winit` 把 winit 事件转换成 egui "
 "输入，`egui-wgpu` 用 wgpu 绘制 egui 的三角形（也有 glow 后端、社区 crate 提供的 Vulkan 后端等）："
 
-#: src/engine/ui.md:133
+#: src/engine/ui.md:134
 msgid ""
 "```toml\n"
 "[dependencies]\n"
@@ -22040,19 +22045,19 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/engine/ui.md:143
+#: src/engine/ui.md:144
 msgid "/// An egui debug overlay drawn by your own renderer.\n"
 msgstr "/// 由你自己的渲染器绘制的 egui 调试覆盖层。\n"
 
-#: src/engine/ui.md:147
+#: src/engine/ui.md:148
 msgid "// translates winit events into egui input\n"
 msgstr "// 把 winit 事件转换成 egui 输入\n"
 
-#: src/engine/ui.md:148
+#: src/engine/ui.md:149
 msgid "// draws egui's triangles with wgpu\n"
 msgstr "// 用 wgpu 绘制 egui 的三角形\n"
 
-#: src/engine/ui.md:162
+#: src/engine/ui.md:163
 msgid ""
 "/// Call from `window_event`. Returns true if egui used the event\n"
 "    /// (a click on a panel, typing in a text box): don't pass it to the game.\n"
@@ -22060,51 +22065,51 @@ msgstr ""
 "/// 在 `window_event` 中调用。如果 egui 使用了这个事件（点击了面板、\n"
 "    /// 在文本框中输入），返回 true：不要再把它传给游戏。\n"
 
-#: src/engine/ui.md:168
+#: src/engine/ui.md:169
 msgid "/// Call once per frame, after the game has rendered into `view`.\n"
 msgstr "/// 每帧调用一次，在游戏渲染到 `view` 之后。\n"
 
-#: src/engine/ui.md:179
+#: src/engine/ui.md:180
 msgid "// your UI code runs here\n"
 msgstr "// 你的 UI 代码在这里运行\n"
 
-#: src/engine/ui.md:180
+#: src/engine/ui.md:181
 msgid "// cursor, clipboard\n"
 msgstr "// 光标、剪贴板\n"
 
-#: src/engine/ui.md:190
+#: src/engine/ui.md:191
 msgid "// font atlas, images\n"
 msgstr "// 字体图集、图像\n"
 
-#: src/engine/ui.md:196
+#: src/engine/ui.md:197
 msgid "\"egui\""
 msgstr ""
 
-#: src/engine/ui.md:201
+#: src/engine/ui.md:202
 msgid "// keep the game image\n"
 msgstr "// 保留游戏画面\n"
 
-#: src/engine/ui.md:214
+#: src/engine/ui.md:215
 msgid "// In the game's frame:\n"
 msgstr "// 在游戏的一帧中：\n"
 
-#: src/engine/ui.md:216
+#: src/engine/ui.md:217 src/engine/ui.md:269 src/engine/ui.md:315
 msgid "\"Debug\""
 msgstr ""
 
-#: src/engine/ui.md:217
+#: src/engine/ui.md:218
 msgid "\"{frame_ms:.1} ms\""
 msgstr ""
 
-#: src/engine/ui.md:218
+#: src/engine/ui.md:219
 msgid "\"time scale\""
 msgstr ""
 
-#: src/engine/ui.md:219
+#: src/engine/ui.md:220 src/engine/ui.md:273 src/engine/ui.md:321
 msgid "\"wireframe\""
 msgstr ""
 
-#: src/engine/ui.md:224
+#: src/engine/ui.md:225
 msgid ""
 "`on_event` reports whether egui consumed an event, so the game ignores "
 "clicks and key presses that land on a debug window, which is the same check "
@@ -22116,28 +22121,338 @@ msgstr ""
 "`io.WantCaptureMouse` 相同。传给 `draw` 的闭包在调用期间可变地借用 `world` 和 "
 "`renderer`，所以从覆盖层调整引擎参数不需要任何全局变量。"
 
-#: src/engine/ui.md:230
-msgid "Dear ImGui itself"
-msgstr "直接使用 Dear ImGui"
+#: src/engine/ui.md:231 src/engine/ui.md:635 src/appendix/cheat-sheet.md:155
+msgid "Dear ImGui"
+msgstr "Dear ImGui"
 
-#: src/engine/ui.md:232
+#: src/engine/ui.md:233
 msgid ""
-"If your C++ tools already use Dear ImGui, or you want its docking and its "
-"widget ecosystem, there are bindings: [imgui](https://docs.rs/imgui) (imgui-"
-"rs) and the more recent [dear-imgui-rs](https://docs.rs/dear-imgui-rs), with"
-" winit, wgpu and OpenGL backends. They add a C++ build step to your project;"
-" egui does not."
+"egui is a Rust redesign of the same idea, not a port. If your C++ tools are "
+"already built on Dear ImGui, you can keep the library itself: your team "
+"keeps the API it knows, and you keep docking, multi-viewport and the "
+"extensions around it (ImPlot, ImGuizmo, node editors)."
 msgstr ""
-"如果你的 C++ 工具已经在用 Dear "
-"ImGui，或者你想要它的停靠功能和控件生态，可以使用绑定：[imgui](https://docs.rs/imgui)（imgui-rs）以及较新的 "
-"[dear-imgui-rs](https://docs.rs/dear-imgui-rs)，它们都有 winit、wgpu 和 OpenGL "
-"后端。它们会给项目增加一个 C++ 构建步骤；egui 则不会。"
+"egui 是用 Rust 对同一思路的重新设计，而不是移植。如果你的 C++ 工具已经基于 Dear ImGui "
+"构建，你可以继续使用这个库本身：团队保留熟悉的 API，你也保留停靠、多视口以及它周边的扩展（ImPlot、ImGuizmo、节点编辑器）。"
 
 #: src/engine/ui.md:238
+msgid "Choosing a binding"
+msgstr "选择绑定"
+
+#: src/engine/ui.md:242
+msgid "[dear-imgui-rs](https://docs.rs/dear-imgui-rs)"
+msgstr "[dear-imgui-rs](https://docs.rs/dear-imgui-rs)"
+
+#: src/engine/ui.md:242
+msgid ""
+"Actively maintained, tracks recent Dear ImGui releases on the docking "
+"branch. Platform backends for winit and SDL3, renderers for wgpu, OpenGL "
+"(glow) and Vulkan (ash), plus `dear-implot`, `dear-imguizmo`, `dear-imnodes`"
+" and more"
+msgstr ""
+"积极维护，跟进 docking 分支上较新的 Dear ImGui 版本。平台后端支持 winit 和 SDL3，渲染器支持 "
+"wgpu、OpenGL（glow）和 Vulkan（ash），另有 `dear-implot`、`dear-imguizmo`、`dear-"
+"imnodes` 等扩展"
+
+#: src/engine/ui.md:243
+msgid "[imgui](https://docs.rs/imgui) (imgui-rs)"
+msgstr "[imgui](https://docs.rs/imgui)（imgui-rs）"
+
+#: src/engine/ui.md:243
+msgid ""
+"The long-standing binding, with the most users and examples. Its last "
+"release was in 2024, so it lags behind Dear ImGui. Backends: `imgui-winit-"
+"support`, `imgui-wgpu`, `imgui-glow-renderer`"
+msgstr ""
+"历史最久的绑定，用户和示例最多。它的最后一个版本发布于 2024 年，因此落后于 Dear ImGui。后端：`imgui-winit-"
+"support`、`imgui-wgpu`、`imgui-glow-renderer`"
+
+#: src/engine/ui.md:245
+msgid ""
+"Both have the same API shape, because dear-imgui-rs follows imgui-rs. The "
+"examples here use dear-imgui-rs 0.23 with winit 0.30 and wgpu 30:"
+msgstr ""
+"两者的 API 形态相同，因为 dear-imgui-rs 沿用了 imgui-rs 的设计。这里的示例使用 dear-imgui-rs "
+"0.23、winit 0.30 和 wgpu 30："
+
+#: src/engine/ui.md:248
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"dear-imgui-rs = \"0.23\"\n"
+"dear-imgui-winit = \"0.23\"   # platform: input, cursor, DPI\n"
+"dear-imgui-wgpu = \"0.23\"    # renderer\n"
+"winit = \"0.30\"\n"
+"wgpu = \"30\"\n"
+"```"
+msgstr ""
+
+#: src/engine/ui.md:257
+msgid ""
+"Unless a prebuilt library is available for your target, the bindings compile"
+" Dear ImGui's C++ sources with the `cc` crate on the first build ([Assets, "
+"build scripts and serialization](assets-and-build.md)), so you need a C++ "
+"compiler installed. egui has no such step."
+msgstr ""
+"除非你的目标平台有预编译库可用，这些绑定会在第一次构建时用 `cc` crate 编译 Dear ImGui 的 C++ "
+"源码（[资源、构建脚本与序列化](assets-and-build.md)），所以你需要安装 C++ 编译器。egui 没有这一步。"
+
+#: src/engine/ui.md:262
+msgid "The same window in C++ and Rust"
+msgstr "同一个窗口：C++ 与 Rust"
+
+#: src/engine/ui.md:264
+msgid "A debug window in C++:"
+msgstr "C++ 中的一个调试窗口："
+
+#: src/engine/ui.md:270
+msgid "\"%.1f fps\""
+msgstr ""
+
+#: src/engine/ui.md:271 src/engine/ui.md:319
+msgid "\"exposure\""
+msgstr ""
+
+#: src/engine/ui.md:272 src/engine/ui.md:320
+msgid "\"clear\""
+msgstr ""
+
+#: src/engine/ui.md:274 src/engine/ui.md:322
+msgid "\"Spawn grunt\""
+msgstr ""
+
+#: src/engine/ui.md:275 src/engine/ui.md:323
+msgid "\"grunt\""
+msgstr ""
+
+#: src/engine/ui.md:276 src/engine/ui.md:325
+msgid "\"enemies\""
+msgstr ""
+
+#: src/engine/ui.md:287 src/engine/ui.md:335
+msgid "\"##hp\""
+msgstr ""
+
+#: src/engine/ui.md:297
+msgid "And in Rust:"
+msgstr "用 Rust 写："
+
+#: src/engine/ui.md:318
+msgid "\"{:.1} fps\""
+msgstr ""
+
+#: src/engine/ui.md:327
+msgid "// PushID(i) ... PopID() at the end of the loop body\n"
+msgstr "// PushID(i) …… 在循环体末尾 PopID()\n"
+
+#: src/engine/ui.md:333
+msgid "// PopStyleColor(), only if it was pushed\n"
+msgstr "// PopStyleColor()，仅在确实压入时执行\n"
+
+#: src/engine/ui.md:337
+msgid "// EndTable()\n"
+msgstr "// EndTable()\n"
+
+#: src/engine/ui.md:342
+msgid ""
+"![The Dear ImGui debug window drawn over the game's clear color: fps, an "
+"exposure slider, a clear color editor, a wireframe checkbox, a Spawn grunt "
+"button and a table of enemies with HP sliders](img/ui-imgui.png)"
+msgstr ""
+"![绘制在游戏清屏颜色之上的 Dear ImGui 调试窗口：帧率、曝光滑块、清屏颜色编辑器、线框复选框、Spawn grunt 按钮，以及带 HP "
+"滑块的敌人表格](img/ui-imgui.png)"
+
+#: src/engine/ui.md:344
+msgid ""
+"The widgets map one to one, and the differences are about who calls `End`:"
+msgstr "控件是一一对应的，区别在于由谁调用 `End`："
+
+#: src/engine/ui.md:346
+msgid ""
+"**Begin/End pairs become scopes.** `ui.window(...).build(|| ...)` calls "
+"`Begin`, runs the closure only if the window is visible, then calls `End`. "
+"The closure borrows `game` mutably, so the widgets inside can change it."
+msgstr ""
+"**Begin/End 配对变成作用域。** `ui.window(...).build(|| ...)` 会调用 "
+"`Begin`，仅在窗口可见时运行闭包，然后调用 `End`。闭包可变地借用 `game`，所以其中的控件可以修改它。"
+
+#: src/engine/ui.md:349
+msgid ""
+"**Push/Pop pairs become tokens.** `push_id`, `push_style_color`, "
+"`begin_table`, `tree_node` and the other paired calls return a token that "
+"calls the matching `Pop` or `End` when it is dropped, like a C++ RAII guard."
+" A missing `PopID()` or an early `return` between `Begin` and `End`, which "
+"trip Dear ImGui's assertions in C++, cannot happen. `begin_table` returns "
+"`Option<TableToken>` because `BeginTable` can return false, and `if let` "
+"enters the block only when there is a table to fill."
+msgstr ""
+"**Push/Pop 配对变成 token。** "
+"`push_id`、`push_style_color`、`begin_table`、`tree_node` 以及其他成对的调用都会返回一个 "
+"token，它在被 drop 时调用对应的 `Pop` 或 `End`，就像 C++ 中的 RAII guard。在 C++ 中会触发 Dear "
+"ImGui 断言的错误，比如漏掉 `PopID()`，或者在 `Begin` 和 `End` 之间提前 "
+"`return`，在这里都不会发生。`begin_table` 返回 `Option<TableToken>`，因为 `BeginTable` 可能返回"
+" false，而 `if let` 只在确实有表格需要填充时才进入代码块。"
+
+#: src/engine/ui.md:356
+msgid ""
+"**Name the token.** `let _id = ui.push_id(i);` keeps the ID pushed until the"
+" end of the block. `let _ = ui.push_id(i);` drops the token immediately and "
+"pops the ID on the same line, which is a silent bug. The underscore prefix "
+"is what you want: unused, but alive."
+msgstr ""
+"**给 token 起个名字。** `let _id = ui.push_id(i);` 会让 ID 一直保持压入状态，直到代码块结束。`let _ ="
+" ui.push_id(i);` 则会立即 drop 这个 token，在同一行就把 ID 弹出，这是一个不会报错的 "
+"bug。你需要的是下划线前缀：不使用，但保持存活。"
+
+#: src/engine/ui.md:360
+msgid ""
+"**Strings are `&str`.** Labels and `ui.text` take Rust strings, and "
+"`ui.input_text(\"name\", &mut name).build()` edits a `String` directly "
+"instead of a fixed `char[256]` buffer. Use `format!` where C++ uses printf-"
+"style formatting."
+msgstr ""
+"**字符串是 `&str`。** 标签和 `ui.text` 接受 Rust 字符串，`ui.input_text(\"name\", &mut "
+"name).build()` 直接编辑一个 `String`，而不是固定大小的 `char[256]` 缓冲区。C++ 中用 printf "
+"风格格式化的地方，在 Rust 中用 `format!`。"
+
+#: src/engine/ui.md:365
+msgid "The frame in your engine"
+msgstr "在你的引擎中运行一帧"
+
+#: src/engine/ui.md:367
+msgid ""
+"The integration has the same three hooks as in C++: forward events, start a "
+"frame, and render the draw data into your pass. With winit and wgpu (surface"
+" and device setup as in [Portable graphics with wgpu](wgpu.md)):"
+msgstr ""
+"集成方式与 C++ 中一样有三个挂钩点：转发事件、开始一帧、把绘制数据渲染到你的渲染通道中。使用 winit 和 wgpu 时（surface "
+"和设备的设置见[使用 wgpu 实现跨平台图形](wgpu.md)）："
+
+#: src/engine/ui.md:375
+msgid "// In `resumed`, after creating the window, device and surface:\n"
+msgstr "// 在 `resumed` 中，创建窗口、设备和 surface 之后：\n"
+
+#: src/engine/ui.md:377
+msgid "// colors picked in the UI are sRGB\n"
+msgstr "// UI 中选取的颜色是 sRGB\n"
+
+#: src/engine/ui.md:397
+msgid "// 1. Every event goes to ImGui first.\n"
+msgstr "// 1. 每个事件都先交给 ImGui。\n"
+
+#: src/engine/ui.md:402
+msgid "// CloseRequested and Resized as in the game loop chapter\n"
+msgstr "// CloseRequested 和 Resized 的处理与游戏循环一章相同\n"
+
+#: src/engine/ui.md:404
+msgid "// the click is not on an ImGui window: pass it to the game\n"
+msgstr "// 点击没有落在 ImGui 窗口上：交给游戏处理\n"
+
+#: src/engine/ui.md:407
+msgid "// 2. Start the frame and build the UI.\n"
+msgstr "// 2. 开始一帧并构建 UI。\n"
+
+#: src/engine/ui.md:419
+msgid "// 3. Render the game, then ImGui into the same pass.\n"
+msgstr "// 3. 先渲染游戏，再把 ImGui 渲染到同一个通道中。\n"
+
+#: src/engine/ui.md:429
+msgid "// ... draw the game ...\n"
+msgstr "// ……绘制游戏……\n"
+
+#: src/engine/ui.md:448
+msgid "A few things the types enforce here:"
+msgstr "这里有几件事是由类型保证的："
+
+#: src/engine/ui.md:450
+msgid ""
+"**The `Ui` borrows the context.** `imgui.frame()` returns a `&mut Ui` tied "
+"to the `Context`, so calling `gpu.imgui.render(...)` ends the frame, and "
+"using `ui` after that is a compile error (E0499: `gpu.imgui` is borrowed "
+"mutably twice). In C++, calling a widget function after `ImGui::Render()` is"
+" an assertion at run time."
+msgstr ""
+"**`Ui` 借用了上下文。** `imgui.frame()` 返回一个与 `Context` 绑定的 `&mut Ui`，所以调用 "
+"`gpu.imgui.render(...)` 会结束这一帧，之后再使用 `ui` 就是编译错误（E0499：`gpu.imgui` "
+"被可变借用了两次）。在 C++ 中，在 `ImGui::Render()` 之后调用控件函数只会在运行时触发断言。"
+
+#: src/engine/ui.md:455
+msgid ""
+"**Disjoint borrows.** `debug_window(ui, &mut self.game)` borrows `self.game`"
+" while `gpu` borrows `self.gpu`. The compiler accepts this because they are "
+"different fields of `self`, so the UI can edit game state directly, with no "
+"globals and no `Rc<RefCell<...>>`."
+msgstr ""
+"**不相交的借用。** `debug_window(ui, &mut self.game)` 借用 `self.game`，同时 `gpu` 借用的是 "
+"`self.gpu`。编译器接受这种写法，因为它们是 `self` 的不同字段，所以 UI 可以直接修改游戏状态，不需要全局变量，也不需要 "
+"`Rc<RefCell<...>>`。"
+
+#: src/engine/ui.md:459
+msgid ""
+"**Input capture.** `io().want_capture_mouse()` and `want_capture_keyboard()`"
+" are the same flags as `io.WantCaptureMouse` and `io.WantCaptureKeyboard` in"
+" C++."
+msgstr ""
+"**输入捕获。** `io().want_capture_mouse()` 和 `want_capture_keyboard()` 就是 C++ 中的 "
+"`io.WantCaptureMouse` 和 `io.WantCaptureKeyboard`。"
+
+#: src/engine/ui.md:462
+msgid ""
+"**Color space.** Dear ImGui's colors are sRGB values. The example renders to"
+" a non-sRGB view of the swapchain so that the clear color and the color "
+"picker match. If you render to an sRGB target, the renderer converts the UI "
+"colors for you (`GammaMode::Auto`), and your own clear color must be linear."
+msgstr ""
+"**颜色空间。** Dear ImGui 的颜色是 sRGB 值。示例渲染到交换链的非 sRGB "
+"视图上，这样清屏颜色和颜色选择器显示的颜色一致。如果你渲染到 sRGB 目标上，渲染器会替你转换 UI "
+"颜色（`GammaMode::Auto`），而你自己的清屏颜色必须是线性值。"
+
+#: src/engine/ui.md:467
+msgid "Docking, viewports and extensions"
+msgstr "停靠、视口与扩展"
+
+#: src/engine/ui.md:469
+msgid ""
+"Docking is enabled with `ConfigFlags::DOCKING_ENABLE` before the first "
+"frame, as above. `ui.dockspace()` with `PASSTHRU_CENTRAL_NODE` turns the "
+"whole main window into a dock area whose empty center shows the game, which "
+"is the usual layout for an in-engine editor. Multi-viewport (dragging ImGui "
+"windows out of the main window into OS windows) is a cargo feature, `dear-"
+"imgui-wgpu/multi-viewport-winit`, because the backend then has to create "
+"winit windows and wgpu surfaces for you."
+msgstr ""
+"停靠功能需要在第一帧之前通过 `ConfigFlags::DOCKING_ENABLE` 启用，如上所示。带 "
+"`PASSTHRU_CENTRAL_NODE` 的 `ui.dockspace()` "
+"会把整个主窗口变成一个停靠区域，空出的中央区域显示游戏画面，这是引擎内编辑器的常见布局。多视口（把 ImGui "
+"窗口拖出主窗口，变成独立的操作系统窗口）是一个 cargo feature，即 `dear-imgui-wgpu/multi-viewport-"
+"winit`，因为这时后端需要替你创建 winit 窗口和 wgpu surface。"
+
+#: src/engine/ui.md:477
+msgid ""
+"The extensions are separate crates on the same release train, so keep their "
+"versions in step:"
+msgstr "扩展是同一发布系列中的独立 crate，所以要让它们的版本保持一致："
+
+#: src/engine/ui.md:480
+msgid ""
+"```toml\n"
+"dear-implot = \"0.23\"     # ImPlot: frame time graphs, profiler views\n"
+"dear-imguizmo = \"0.23\"   # ImGuizmo: translate/rotate/scale gizmos in the viewport\n"
+"dear-imnodes = \"0.23\"    # ImNodes: node graphs for materials or behavior trees\n"
+"```"
+msgstr ""
+
+#: src/engine/ui.md:486
+msgid ""
+"They follow the same rules as the core: begin/end pairs are closures or "
+"tokens, and values you edit are passed as `&mut`."
+msgstr "它们遵循与核心库相同的规则：begin/end 配对是闭包或 token，要编辑的值以 `&mut` 传入。"
+
+#: src/engine/ui.md:489
 msgid "iced: messages and an update function"
 msgstr "iced：消息与 update 函数"
 
-#: src/engine/ui.md:240
+#: src/engine/ui.md:491
 msgid ""
 "[iced](https://docs.rs/iced) follows the Elm architecture. The state is a "
 "plain struct. `view` builds widgets from a shared borrow of the state, and "
@@ -22147,7 +22462,7 @@ msgstr ""
 "[iced](https://docs.rs/iced) 遵循 Elm 架构。状态是一个普通的结构体。`view` "
 "通过状态的共享借用构建控件，而控件本身不修改任何东西：它们产生**消息**。随后运行时用一个可变借用调用 `update`，逐条应用这些消息："
 
-#: src/engine/ui.md:245
+#: src/engine/ui.md:496
 msgid ""
 "```toml\n"
 "[dependencies]\n"
@@ -22155,22 +22470,22 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/engine/ui.md:275
+#: src/engine/ui.md:526
 msgid "\"Intensity: {:.1}\""
 msgstr ""
 
-#: src/engine/ui.md:278
+#: src/engine/ui.md:529
 msgid "\"Baked {} times\""
 msgstr ""
 
-#: src/engine/ui.md:290
+#: src/engine/ui.md:541
 msgid ""
 "![The iced light panel: an intensity label, a slider, a Bake button and a "
 "\"Baked 0 times\" label](img/ui-iced.png)"
 msgstr ""
 "![iced 灯光面板：一个强度标签、一个滑块、一个 Bake 按钮和一个“Baked 0 times”标签](img/ui-iced.png)"
 
-#: src/engine/ui.md:292
+#: src/engine/ui.md:543
 msgid ""
 "All mutation happens in one function, one message at a time, so there is "
 "never more than one mutable borrow of the state and the borrow checker has "
@@ -22183,11 +22498,11 @@ msgstr ""
 "是一个普通的枚举，所以新增一种交互后，在 `update` 处理它之前都会编译报错。这种方式能很好地扩展到有许多面板的编辑器，也让 UI "
 "行为易于测试：用消息调用 `update`，然后检查状态。"
 
-#: src/engine/ui.md:299
+#: src/engine/ui.md:550
 msgid "Slint: a declarative language"
 msgstr "Slint：声明式语言"
 
-#: src/engine/ui.md:301
+#: src/engine/ui.md:552
 msgid ""
 "[Slint](https://slint.dev) describes the UI in its own language, close to "
 "QML, with properties, bindings and callbacks. The `slint!` macro compiles it"
@@ -22196,7 +22511,7 @@ msgstr ""
 "[Slint](https://slint.dev) 用它自己的语言描述 UI，这种语言接近 QML，有属性、绑定和回调。`slint!` "
 "宏在构建时编译它（它也可以放在 `.slint` 文件中）："
 
-#: src/engine/ui.md:305
+#: src/engine/ui.md:556
 msgid ""
 "```toml\n"
 "[dependencies]\n"
@@ -22204,33 +22519,33 @@ msgid ""
 "```"
 msgstr ""
 
-#: src/engine/ui.md:312
+#: src/engine/ui.md:563
 msgid "\"1.19\""
 msgstr ""
 
-#: src/engine/ui.md:313
+#: src/engine/ui.md:564
 msgid "\"std-widgets.slint\""
 msgstr ""
 
-#: src/engine/ui.md:321
+#: src/engine/ui.md:572
 msgid "\"Intensity: \""
 msgstr ""
 
-#: src/engine/ui.md:330
+#: src/engine/ui.md:581
 msgid "// a weak handle: the closure must not keep the UI alive\n"
 msgstr "// 弱句柄：闭包不能让 UI 一直存活\n"
 
-#: src/engine/ui.md:333
+#: src/engine/ui.md:584
 msgid "\"bake at intensity {:.1}\""
 msgstr ""
 
-#: src/engine/ui.md:339
+#: src/engine/ui.md:590
 msgid ""
 "![The Slint light panel: \"Intensity: 4\", a slider and a Bake "
 "button](img/ui-slint.png)"
 msgstr "![Slint 灯光面板：“Intensity: 4”、一个滑块和一个 Bake 按钮](img/ui-slint.png)"
 
-#: src/engine/ui.md:341
+#: src/engine/ui.md:592
 msgid ""
 "The `<=>` binding keeps the slider and the property in sync without any Rust"
 " code. The callback captures a **weak** handle, so it does not keep the UI "
@@ -22245,11 +22560,11 @@ msgstr ""
 "也支持嵌入式设备，并且有可视化设计器，因此很适合由非程序员设计的编辑器和启动器 UI。它采用多重许可（GPLv3、适用于桌面、移动和 Web "
 "应用的免版税许可，或付费许可），请根据你的产品核对条款。"
 
-#: src/engine/ui.md:349
+#: src/engine/ui.md:600
 msgid "In-game UI"
 msgstr "游戏内 UI"
 
-#: src/engine/ui.md:351
+#: src/engine/ui.md:602
 msgid ""
 "HUDs, menus and inventory screens are drawn by the game's renderer, styled "
 "by artists and driven by gameplay state, which is why C++ engines use "
@@ -22257,19 +22572,19 @@ msgid ""
 msgstr ""
 "HUD、菜单和物品栏界面由游戏的渲染器绘制，由美术设定样式，由游戏状态驱动，这就是 C++ 引擎为它们使用单独系统的原因。Rust 中的选择："
 
-#: src/engine/ui.md:355
+#: src/engine/ui.md:606
 msgid ""
 "**The engine's own UI.** Bevy has `bevy_ui`, built on its ECS; other engines"
 " have their own."
 msgstr "**引擎自带的 UI。** Bevy 有基于其 ECS 的 `bevy_ui`；其他引擎也有各自的 UI。"
 
-#: src/engine/ui.md:357
+#: src/engine/ui.md:608
 msgid ""
 "**egui** works for prototypes and debug menus, but its look is that of a "
 "tool, and restyling it heavily is more work than it is worth."
 msgstr "**egui** 适合原型和调试菜单，但它的外观是工具风格的，大幅改造样式得不偿失。"
 
-#: src/engine/ui.md:359
+#: src/engine/ui.md:610
 msgid ""
 "**Your own UI on top of text and vector crates**, as many C++ engines do: "
 "[cosmic-text](https://docs.rs/cosmic-text) for shaping and layout of text in"
@@ -22281,14 +22596,14 @@ msgstr ""
 "负责任意文字的整形与排版，[glyphon](https://docs.rs/glyphon) 用 wgpu "
 "绘制这些文字，[lyon](https://docs.rs/lyon) 负责矢量图形的三角化。"
 
-#: src/engine/ui.md:363
+#: src/engine/ui.md:614
 msgid ""
 "**C++ middleware** through its C API, like any other C++ library ([FFI with "
 "C and C++](../systems/ffi.md))."
 msgstr ""
 "通过 C API 使用 **C++ 中间件**，与任何其他 C++ 库一样（[与 C 和 C++ 的 FFI](../systems/ffi.md)）。"
 
-#: src/engine/ui.md:366
+#: src/engine/ui.md:617
 msgid ""
 "Accessibility is handled by [AccessKit](https://accesskit.dev), which egui "
 "and Slint use to expose widgets to screen readers on Windows, macOS and "
@@ -22297,123 +22612,141 @@ msgstr ""
 "无障碍功能由 [AccessKit](https://accesskit.dev) 处理，egui 和 Slint 都用它在 Windows、macOS"
 " 和 Linux 上把控件提供给屏幕阅读器。"
 
-#: src/engine/ui.md:369
+#: src/engine/ui.md:620
 msgid "Choosing"
 msgstr "如何选择"
 
-#: src/engine/ui.md:371
+#: src/engine/ui.md:622
 msgid "You are building"
 msgstr "你要构建的是"
 
-#: src/engine/ui.md:371
+#: src/engine/ui.md:622
 msgid "Start with"
 msgstr "从这里开始"
 
-#: src/engine/ui.md:373
+#: src/engine/ui.md:624
 msgid "A debug overlay or in-engine tweak panel"
 msgstr "调试覆盖层或引擎内的参数调节面板"
 
-#: src/engine/ui.md:373
+#: src/engine/ui.md:624
 msgid "egui with egui-winit and egui-wgpu"
 msgstr "egui 搭配 egui-winit 和 egui-wgpu"
 
-#: src/engine/ui.md:374
+#: src/engine/ui.md:625
 msgid "A standalone tool (asset viewer, profiler UI, level tool)"
 msgstr "独立工具（资源查看器、性能分析 UI、关卡工具）"
 
-#: src/engine/ui.md:374
+#: src/engine/ui.md:625
 msgid "egui with eframe"
 msgstr "egui 搭配 eframe"
 
-#: src/engine/ui.md:375
+#: src/engine/ui.md:626
 msgid "A large editor with many panels and complex state"
 msgstr "有许多面板和复杂状态的大型编辑器"
 
-#: src/engine/ui.md:375
+#: src/engine/ui.md:626
 msgid "iced, or egui if the team prefers immediate mode"
 msgstr "iced；如果团队偏好即时模式，也可以用 egui"
 
-#: src/engine/ui.md:376
+#: src/engine/ui.md:627
 msgid "A designer-made UI, a launcher, or embedded hardware"
 msgstr "由设计师制作的 UI、启动器或嵌入式硬件"
 
-#: src/engine/ui.md:377
-msgid "Tools that must share code and look with existing Dear ImGui C++ tools"
-msgstr "必须与现有 Dear ImGui C++ 工具共享代码和外观的工具"
+#: src/engine/ui.md:628
+msgid ""
+"Tools that must share code and look with existing Dear ImGui C++ tools, or "
+"need docking, ImPlot or ImGuizmo"
+msgstr "必须与现有 Dear ImGui C++ 工具共享代码和外观，或者需要停靠、ImPlot 或 ImGuizmo 的工具"
 
-#: src/engine/ui.md:377
-msgid "imgui-rs or dear-imgui-rs"
-msgstr "imgui-rs 或 dear-imgui-rs"
+#: src/engine/ui.md:628
+msgid "dear-imgui-rs (or imgui-rs)"
+msgstr "dear-imgui-rs（或 imgui-rs）"
 
-#: src/engine/ui.md:378
+#: src/engine/ui.md:629
 msgid "A game HUD and menus"
 msgstr "游戏 HUD 和菜单"
 
-#: src/engine/ui.md:378
+#: src/engine/ui.md:629
 msgid "Your engine's UI, or your own on cosmic-text and glyphon"
 msgstr "引擎自带的 UI，或者基于 cosmic-text 和 glyphon 自己构建"
 
-#: src/engine/ui.md:384 src/appendix/cheat-sheet.md:155
-msgid "Dear ImGui"
-msgstr "Dear ImGui"
-
-#: src/engine/ui.md:384 src/appendix/cheat-sheet.md:155
+#: src/engine/ui.md:635 src/appendix/cheat-sheet.md:155
 msgid "egui (or imgui bindings)"
 msgstr "egui（或 imgui 绑定）"
 
-#: src/engine/ui.md:385
+#: src/engine/ui.md:636
 msgid "`io.WantCaptureMouse`"
 msgstr ""
 
-#: src/engine/ui.md:385
-msgid "`EventResponse::consumed` from egui-winit"
-msgstr "egui-winit 的 `EventResponse::consumed`"
+#: src/engine/ui.md:636
+msgid ""
+"`EventResponse::consumed` from egui-winit, or `io().want_capture_mouse()` "
+"with dear-imgui-rs"
+msgstr ""
+"egui-winit 的 `EventResponse::consumed`，或 dear-imgui-rs 的 "
+"`io().want_capture_mouse()`"
 
-#: src/engine/ui.md:386
+#: src/engine/ui.md:637
+msgid "`ImGui::Begin` / `ImGui::End`"
+msgstr ""
+
+#: src/engine/ui.md:637
+msgid "`ui.window(\"...\").build(\\|\\| ...)`"
+msgstr ""
+
+#: src/engine/ui.md:638
+msgid "`ImGui::PushID` / `ImGui::PopID`"
+msgstr ""
+
+#: src/engine/ui.md:638
+msgid "`let _id = ui.push_id(i);`, popped when the token is dropped"
+msgstr "`let _id = ui.push_id(i);`，token 被 drop 时弹出"
+
+#: src/engine/ui.md:639
 msgid "Qt widgets with `connect` and lambdas capturing `this`"
 msgstr "使用 `connect` 和捕获 `this` 的 lambda 的 Qt 控件"
 
-#: src/engine/ui.md:386
+#: src/engine/ui.md:639
 msgid "iced messages and `update`, or Slint callbacks with weak handles"
 msgstr "iced 的消息和 `update`，或使用弱句柄的 Slint 回调"
 
-#: src/engine/ui.md:387
+#: src/engine/ui.md:640
 msgid "QML"
 msgstr "QML"
 
-#: src/engine/ui.md:387
+#: src/engine/ui.md:640
 msgid "The Slint language"
 msgstr "Slint 语言"
 
-#: src/engine/ui.md:388
+#: src/engine/ui.md:641
 msgid "`QPointer` in a lambda capture"
 msgstr "lambda 捕获中的 `QPointer`"
 
-#: src/engine/ui.md:388
+#: src/engine/ui.md:641
 msgid "`ui.as_weak()`"
 msgstr ""
 
-#: src/engine/ui.md:389
+#: src/engine/ui.md:642
 msgid "FreeType + HarfBuzz"
 msgstr "FreeType + HarfBuzz"
 
-#: src/engine/ui.md:389
+#: src/engine/ui.md:642
 msgid "cosmic-text"
 msgstr "cosmic-text"
 
-#: src/engine/ui.md:393
+#: src/engine/ui.md:646
 msgid ""
 "Add a \"Reset\" button to the egui tool that sets `intensity` back to 4.0. "
 "Where does the code go, and what does it borrow?"
 msgstr "给 egui 工具添加一个“Reset”按钮，把 `intensity` 重置为 4.0。代码应该写在哪里？它借用了什么？"
 
-#: src/engine/ui.md:395
+#: src/engine/ui.md:648
 msgid ""
 "In the iced example, add a `Message::Reset` variant. Which function fails to"
 " compile until you handle it?"
 msgstr "在 iced 示例中添加一个 `Message::Reset` 变体。在你处理它之前，哪个函数会编译失败？"
 
-#: src/engine/ui.md:397
+#: src/engine/ui.md:650
 msgid ""
 "Rewrite the `compile_fail` example with `Rc<RefCell<Editor>>` so that it "
 "compiles. Then click the button from inside another `borrow_mut()` of the "
@@ -22422,7 +22755,15 @@ msgstr ""
 "用 `Rc<RefCell<Editor>>` 重写那个 `compile_fail` 示例，让它能够编译。然后在编辑器的另一个 "
 "`borrow_mut()` 内部触发按钮点击，读一读 panic 信息。"
 
-#: src/engine/ui.md:400
+#: src/engine/ui.md:653
+msgid ""
+"In the Dear ImGui example, change `let _id = ui.push_id(i);` to `let _ = "
+"ui.push_id(i);` and drag one of the HP sliders. What happens, and why?"
+msgstr ""
+"在 Dear ImGui 示例中，把 `let _id = ui.push_id(i);` 改成 `let _ = "
+"ui.push_id(i);`，然后拖动其中一个 HP 滑块。会发生什么？为什么？"
+
+#: src/engine/ui.md:656
 msgid ""
 "Add the egui overlay to the [wgpu chapter](wgpu.md)'s triangle, with a "
 "slider that changes the clear color."
@@ -23612,7 +23953,7 @@ msgstr "subsecond"
 msgid "sol2 / LuaBridge"
 msgstr "sol2 / LuaBridge"
 
-#: src/engine/hot-reload-and-plugins.md:258 src/appendix/cheat-sheet.md:166
+#: src/engine/hot-reload-and-plugins.md:258 src/appendix/cheat-sheet.md:167
 msgid "mlua"
 msgstr "mlua"
 
@@ -24236,7 +24577,7 @@ msgid "Arena + generational `Handle<T>`"
 msgstr "arena + 带代数的 `Handle<T>`"
 
 #: src/appendix/cheat-sheet.md:48 src/appendix/cheat-sheet.md:136
-#: src/appendix/cheat-sheet.md:176
+#: src/appendix/cheat-sheet.md:177
 msgid "[Handles and arenas](../engine/handles-and-arenas.md)"
 msgstr "[句柄与 arena](../engine/handles-and-arenas.md)"
 
@@ -24414,7 +24755,7 @@ msgstr ""
 
 #: src/appendix/cheat-sheet.md:94 src/appendix/cheat-sheet.md:95
 #: src/appendix/cheat-sheet.md:99 src/appendix/cheat-sheet.md:100
-#: src/appendix/cheat-sheet.md:179 src/appendix/cheat-sheet.md:180
+#: src/appendix/cheat-sheet.md:180 src/appendix/cheat-sheet.md:181
 msgid "[Concurrency](../systems/concurrency.md)"
 msgstr "[并发](../systems/concurrency.md)"
 
@@ -24448,8 +24789,8 @@ msgid "`rayon`: `par_iter()`"
 msgstr ""
 
 #: src/appendix/cheat-sheet.md:101 src/appendix/cheat-sheet.md:102
-#: src/appendix/cheat-sheet.md:154 src/appendix/cheat-sheet.md:164
-#: src/appendix/cheat-sheet.md:181
+#: src/appendix/cheat-sheet.md:154 src/appendix/cheat-sheet.md:165
+#: src/appendix/cheat-sheet.md:182
 msgid "[Game loop](../engine/game-loop.md)"
 msgstr "[游戏循环](../engine/game-loop.md)"
 
@@ -24511,7 +24852,7 @@ msgid "Workspace members"
 msgstr "工作空间成员"
 
 #: src/appendix/cheat-sheet.md:115 src/appendix/cheat-sheet.md:116
-#: src/appendix/cheat-sheet.md:165
+#: src/appendix/cheat-sheet.md:166
 msgid "[Assets and build](../engine/assets-and-build.md)"
 msgstr "[资源与构建](../engine/assets-and-build.md)"
 
@@ -24650,7 +24991,7 @@ msgstr "[数学与 SIMD](../engine/math-and-simd.md)"
 msgid "`libloading`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:146 src/appendix/cheat-sheet.md:166
+#: src/appendix/cheat-sheet.md:146 src/appendix/cheat-sheet.md:167
 msgid "[Hot reloading](../engine/hot-reload-and-plugins.md)"
 msgstr "[热重载](../engine/hot-reload-and-plugins.md)"
 
@@ -24674,174 +25015,186 @@ msgstr "GLFW / SDL"
 msgid "winit (`ApplicationHandler`)"
 msgstr "winit（`ApplicationHandler`）"
 
-#: src/appendix/cheat-sheet.md:155 src/appendix/cheat-sheet.md:156
+#: src/appendix/cheat-sheet.md:155 src/appendix/cheat-sheet.md:157
 msgid "[User interfaces](../engine/ui.md)"
 msgstr "[用户界面](../engine/ui.md)"
 
 #: src/appendix/cheat-sheet.md:156
+msgid "`ImGui::PushID` / `PopID`"
+msgstr ""
+
+#: src/appendix/cheat-sheet.md:156
+msgid "A token from `ui.push_id`, popped on drop"
+msgstr "`ui.push_id` 返回的 token，在 drop 时弹出"
+
+#: src/appendix/cheat-sheet.md:156
+msgid "[User interfaces](../engine/ui.md#dear-imgui)"
+msgstr "[用户界面](../engine/ui.md#dear-imgui)"
+
+#: src/appendix/cheat-sheet.md:157
 msgid "Qt, QML"
 msgstr "Qt、QML"
 
-#: src/appendix/cheat-sheet.md:156
+#: src/appendix/cheat-sheet.md:157
 msgid "iced, Slint"
 msgstr "iced、Slint"
 
-#: src/appendix/cheat-sheet.md:157
+#: src/appendix/cheat-sheet.md:158
 msgid "`gl`, `glow`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:157
+#: src/appendix/cheat-sheet.md:158
 msgid "[OpenGL](../engine/opengl.md)"
 msgstr "[OpenGL](../engine/opengl.md)"
 
-#: src/appendix/cheat-sheet.md:158
+#: src/appendix/cheat-sheet.md:159
 msgid "`vulkan.h` / volk"
 msgstr "`vulkan.h` / volk"
 
-#: src/appendix/cheat-sheet.md:158 src/appendix/cheat-sheet.md:159
+#: src/appendix/cheat-sheet.md:159 src/appendix/cheat-sheet.md:160
 msgid "[Vulkan](../engine/vulkan.md)"
 msgstr "[Vulkan](../engine/vulkan.md)"
 
-#: src/appendix/cheat-sheet.md:160
+#: src/appendix/cheat-sheet.md:161
 msgid "Dawn, bgfx, sokol_gfx"
 msgstr "Dawn、bgfx、sokol_gfx"
 
-#: src/appendix/cheat-sheet.md:160 src/appendix/cheat-sheet.md:162
+#: src/appendix/cheat-sheet.md:161 src/appendix/cheat-sheet.md:163
 msgid "[wgpu](../engine/wgpu.md)"
 msgstr "[wgpu](../engine/wgpu.md)"
 
-#: src/appendix/cheat-sheet.md:161
+#: src/appendix/cheat-sheet.md:162
 msgid "`openxr.h`, OpenXR-Hpp"
 msgstr "`openxr.h`、OpenXR-Hpp"
 
-#: src/appendix/cheat-sheet.md:161
+#: src/appendix/cheat-sheet.md:162
 msgid "`openxr-sys`, `openxr`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:161
+#: src/appendix/cheat-sheet.md:162
 msgid "[OpenXR](../engine/openxr.md)"
 msgstr "[OpenXR](../engine/openxr.md)"
 
-#: src/appendix/cheat-sheet.md:162
+#: src/appendix/cheat-sheet.md:163
 msgid "glslc / dxc"
 msgstr "glslc / dxc"
 
-#: src/appendix/cheat-sheet.md:162
+#: src/appendix/cheat-sheet.md:163
 msgid "naga, shaderc, from `build.rs`"
 msgstr "naga、shaderc，在 `build.rs` 中调用"
 
-#: src/appendix/cheat-sheet.md:163
+#: src/appendix/cheat-sheet.md:164
 msgid "hecs, bevy_ecs"
 msgstr "hecs、bevy_ecs"
 
-#: src/appendix/cheat-sheet.md:163 src/appendix/cheat-sheet.md:174
-#: src/appendix/cheat-sheet.md:177
+#: src/appendix/cheat-sheet.md:164 src/appendix/cheat-sheet.md:175
+#: src/appendix/cheat-sheet.md:178
 msgid "[ECS](../engine/ecs.md)"
 msgstr "[ECS](../engine/ecs.md)"
 
-#: src/appendix/cheat-sheet.md:164
+#: src/appendix/cheat-sheet.md:165
 msgid "Singletons"
 msgstr "单例"
 
-#: src/appendix/cheat-sheet.md:165
+#: src/appendix/cheat-sheet.md:166
 msgid "Custom serialization / reflection"
 msgstr "自定义序列化 / 反射"
 
-#: src/appendix/cheat-sheet.md:165
+#: src/appendix/cheat-sheet.md:166
 msgid "serde"
 msgstr "serde"
 
-#: src/appendix/cheat-sheet.md:166
+#: src/appendix/cheat-sheet.md:167
 msgid "sol2 (Lua)"
 msgstr "sol2（Lua）"
 
-#: src/appendix/cheat-sheet.md:168
+#: src/appendix/cheat-sheet.md:169
 msgid "When the borrow checker says no"
 msgstr "当借用检查器说不行时"
 
-#: src/appendix/cheat-sheet.md:170
+#: src/appendix/cheat-sheet.md:171
 msgid "Symptom"
 msgstr "症状"
 
-#: src/appendix/cheat-sheet.md:172
+#: src/appendix/cheat-sheet.md:173
 msgid "\"cannot borrow as mutable because it is also borrowed as immutable\""
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:172
+#: src/appendix/cheat-sheet.md:173
 msgid "Shorten the first borrow: copy the value out, or finish using it first"
 msgstr "缩短第一个借用：把值复制出来，或者先用完它"
 
-#: src/appendix/cheat-sheet.md:173
+#: src/appendix/cheat-sheet.md:174
 msgid "Pushing to a `Vec` while holding a reference into it"
 msgstr "持有 `Vec` 内部引用的同时向它 push"
 
-#: src/appendix/cheat-sheet.md:173
+#: src/appendix/cheat-sheet.md:174
 msgid "Hold an index instead of a reference"
 msgstr "持有索引而不是引用"
 
-#: src/appendix/cheat-sheet.md:174
+#: src/appendix/cheat-sheet.md:175
 msgid "Two `&mut` into the same struct"
 msgstr "对同一个结构体取两个 `&mut`"
 
-#: src/appendix/cheat-sheet.md:174
+#: src/appendix/cheat-sheet.md:175
 msgid ""
 "Borrow separate fields (split borrows); destructure `let S { a, b } = &mut "
 "s;`"
 msgstr "借用不同的字段（拆分借用）；解构 `let S { a, b } = &mut s;`"
 
-#: src/appendix/cheat-sheet.md:175
+#: src/appendix/cheat-sheet.md:176
 msgid "Two `&mut` into the same slice"
 msgstr "对同一个切片取两个 `&mut`"
 
-#: src/appendix/cheat-sheet.md:175
+#: src/appendix/cheat-sheet.md:176
 msgid "`split_at_mut`, `chunks_mut`, `iter_mut`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:176
+#: src/appendix/cheat-sheet.md:177
 msgid "A struct wants to store a reference to another object"
 msgstr "结构体想存储对另一个对象的引用"
 
-#: src/appendix/cheat-sheet.md:176
+#: src/appendix/cheat-sheet.md:177
 msgid "Store a handle or index; or own the data"
 msgstr "存储句柄或索引；或者拥有数据"
 
-#: src/appendix/cheat-sheet.md:177
+#: src/appendix/cheat-sheet.md:178
 msgid "Objects pointing at each other (graph, parent links)"
 msgstr "互相指向的对象（图、父链接）"
 
-#: src/appendix/cheat-sheet.md:177
+#: src/appendix/cheat-sheet.md:178
 msgid "Arena + handles; `Rc` + `Weak` only if ownership is truly shared"
 msgstr "arena + 句柄；只有在所有权确实共享时才用 `Rc` + `Weak`"
 
-#: src/appendix/cheat-sheet.md:178
+#: src/appendix/cheat-sheet.md:179
 msgid "\"borrowed value does not live long enough\""
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:178
+#: src/appendix/cheat-sheet.md:179
 msgid "Move the owner to an outer scope, or return an owned value"
 msgstr "把所有者移到外层作用域，或者返回一个拥有所有权的值"
 
-#: src/appendix/cheat-sheet.md:179
+#: src/appendix/cheat-sheet.md:180
 msgid "\"`Rc<...>` cannot be sent between threads safely\""
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:179
+#: src/appendix/cheat-sheet.md:180
 msgid "`Arc` (and `Mutex` for mutation)"
 msgstr "`Arc`（需要修改时加 `Mutex`）"
 
-#: src/appendix/cheat-sheet.md:180
+#: src/appendix/cheat-sheet.md:181
 msgid "A closure passed to `thread::spawn` borrows a local"
 msgstr "传给 `thread::spawn` 的闭包借用了局部变量"
 
-#: src/appendix/cheat-sheet.md:180
+#: src/appendix/cheat-sheet.md:181
 msgid "`move` the data in, or use `thread::scope`"
 msgstr "用 `move` 把数据移进去，或者使用 `thread::scope`"
 
-#: src/appendix/cheat-sheet.md:181
+#: src/appendix/cheat-sheet.md:182
 msgid "Global mutable state"
 msgstr "可变全局状态"
 
-#: src/appendix/cheat-sheet.md:181
+#: src/appendix/cheat-sheet.md:182
 msgid "Pass a context; or `Mutex`, atomics, `OnceLock`"
 msgstr "传递上下文；或者使用 `Mutex`、原子类型、`OnceLock`"
 

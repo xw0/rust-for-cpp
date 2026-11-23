@@ -153,6 +153,7 @@ syntax](../intro/syntax.md).
 | `memcpy` a struct into a GPU buffer | `bytemuck::cast_slice` on `#[derive(Pod)]` types | [Math and SIMD](../engine/math-and-simd.md) |
 | GLFW / SDL | winit (`ApplicationHandler`) | [Game loop](../engine/game-loop.md) |
 | Dear ImGui | egui (or imgui bindings) | [User interfaces](../engine/ui.md) |
+| `ImGui::PushID` / `PopID` | A token from `ui.push_id`, popped on drop | [User interfaces](../engine/ui.md#dear-imgui) |
 | Qt, QML | iced, Slint | [User interfaces](../engine/ui.md) |
 | glad / GLEW | `gl`, `glow` | [OpenGL](../engine/opengl.md) |
 | `vulkan.h` / volk | ash | [Vulkan](../engine/vulkan.md) |
