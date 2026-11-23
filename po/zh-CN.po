@@ -22,14 +22,14 @@ msgstr ""
 #: src/foundations/closures-and-iterators.md:301
 #: src/foundations/smart-pointers.md:243
 #: src/foundations/project-organization.md:130
-#: src/systems/testing-and-tooling.md:217 src/systems/crates-io.md:504
-#: src/systems/concurrency.md:341 src/systems/networking.md:706
-#: src/systems/memory-and-performance.md:249 src/systems/unsafe.md:231
-#: src/systems/ffi.md:317 src/systems/macros.md:186 src/engine/ecs.md:473
-#: src/engine/math-and-simd.md:339 src/engine/opengl.md:429
-#: src/engine/vulkan.md:394 src/engine/wgpu.md:320 src/engine/openxr.md:519
-#: src/engine/game-loop.md:331 src/engine/assets-and-build.md:398
-#: src/engine/hot-reload-and-plugins.md:248
+#: src/systems/testing-and-tooling.md:217 src/systems/logging.md:378
+#: src/systems/crates-io.md:504 src/systems/concurrency.md:341
+#: src/systems/networking.md:706 src/systems/memory-and-performance.md:249
+#: src/systems/unsafe.md:231 src/systems/ffi.md:317 src/systems/macros.md:186
+#: src/engine/ecs.md:473 src/engine/math-and-simd.md:339
+#: src/engine/opengl.md:429 src/engine/vulkan.md:394 src/engine/wgpu.md:320
+#: src/engine/openxr.md:519 src/engine/game-loop.md:332
+#: src/engine/assets-and-build.md:398 src/engine/hot-reload-and-plugins.md:248
 msgid "Summary"
 msgstr "小结"
 
@@ -126,99 +126,103 @@ msgstr "第二部分：工具与生态"
 msgid "Testing, benchmarks and tooling"
 msgstr "测试、基准测试与工具"
 
-#: src/SUMMARY.md:33 src/systems/crates-io.md:1
+#: src/SUMMARY.md:33 src/systems/logging.md:1
+msgid "Logging and diagnostics"
+msgstr "日志与诊断"
+
+#: src/SUMMARY.md:34 src/systems/crates-io.md:1
 msgid "crates.io and the ecosystem"
 msgstr "crates.io 与生态"
 
-#: src/SUMMARY.md:35
+#: src/SUMMARY.md:36
 msgid "Part III: Systems programming"
 msgstr "第三部分：系统编程"
 
-#: src/SUMMARY.md:37 src/systems/concurrency.md:1
+#: src/SUMMARY.md:38 src/systems/concurrency.md:1
 msgid "Threads, locks and Send/Sync"
 msgstr "线程、锁与 Send/Sync"
 
-#: src/SUMMARY.md:38 src/systems/networking.md:1
+#: src/SUMMARY.md:39 src/systems/networking.md:1
 msgid "Networking, async and RPC"
 msgstr "网络、异步与 RPC"
 
-#: src/SUMMARY.md:39 src/systems/memory-and-performance.md:1
+#: src/SUMMARY.md:40 src/systems/memory-and-performance.md:1
 msgid "Memory layout and performance"
 msgstr "内存布局与性能"
 
-#: src/SUMMARY.md:40 src/systems/unsafe.md:1
+#: src/SUMMARY.md:41 src/systems/unsafe.md:1
 msgid "Unsafe Rust"
 msgstr "Unsafe Rust"
 
-#: src/SUMMARY.md:41 src/systems/ffi.md:1
+#: src/SUMMARY.md:42 src/systems/ffi.md:1
 msgid "FFI with C and C++"
 msgstr "与 C 和 C++ 的 FFI"
 
-#: src/SUMMARY.md:42 src/systems/macros.md:1
+#: src/SUMMARY.md:43 src/systems/macros.md:1
 msgid "Macros"
 msgstr "宏"
 
-#: src/SUMMARY.md:44
+#: src/SUMMARY.md:45
 msgid "Part IV: Graphics and engine programming"
 msgstr "第四部分：图形与引擎编程"
 
-#: src/SUMMARY.md:46 src/engine/handles-and-arenas.md:1
+#: src/SUMMARY.md:47 src/engine/handles-and-arenas.md:1
 msgid "Handles and arenas instead of pointers"
 msgstr "用句柄和 Arena 代替指针"
 
-#: src/SUMMARY.md:47 src/engine/ecs.md:1
+#: src/SUMMARY.md:48 src/engine/ecs.md:1
 msgid "ECS and the borrow checker"
 msgstr "ECS 与借用检查器"
 
-#: src/SUMMARY.md:48
+#: src/SUMMARY.md:49
 msgid "Math and SIMD"
 msgstr "数学库与 SIMD"
 
-#: src/SUMMARY.md:49 src/engine/opengl.md:1
+#: src/SUMMARY.md:50 src/engine/opengl.md:1
 msgid "OpenGL from Rust"
 msgstr "在 Rust 中使用 OpenGL"
 
-#: src/SUMMARY.md:50 src/engine/vulkan.md:1
+#: src/SUMMARY.md:51 src/engine/vulkan.md:1
 msgid "Vulkan with ash"
 msgstr "使用 ash 调用 Vulkan"
 
-#: src/SUMMARY.md:51
+#: src/SUMMARY.md:52
 msgid "Portable graphics with wgpu"
 msgstr "使用 wgpu 实现跨平台图形"
 
-#: src/SUMMARY.md:52 src/engine/openxr.md:1
+#: src/SUMMARY.md:53 src/engine/openxr.md:1
 msgid "VR and AR with OpenXR"
 msgstr "使用 OpenXR 开发 VR 与 AR"
 
-#: src/SUMMARY.md:53
+#: src/SUMMARY.md:54
 msgid "Windows, input and the game loop"
 msgstr "窗口、输入与游戏循环"
 
-#: src/SUMMARY.md:54
+#: src/SUMMARY.md:55
 msgid "Assets, shaders and build scripts"
 msgstr "资源、着色器与构建脚本"
 
-#: src/SUMMARY.md:55 src/engine/hot-reload-and-plugins.md:1
+#: src/SUMMARY.md:56 src/engine/hot-reload-and-plugins.md:1
 msgid "Hot reloading and plugins"
 msgstr "热重载与插件"
 
-#: src/SUMMARY.md:56 src/engine/case-study.md:1
+#: src/SUMMARY.md:57 src/engine/case-study.md:1
 msgid "Case study: a small renderer"
 msgstr "案例：一个小型渲染器"
 
-#: src/SUMMARY.md:58
+#: src/SUMMARY.md:59
 msgid "Appendices"
 msgstr "附录"
 
-#: src/SUMMARY.md:60 src/appendix/cheat-sheet.md:1
+#: src/SUMMARY.md:61 src/appendix/cheat-sheet.md:1
 msgid "C++ to Rust cheat sheet"
 msgstr "C++ 到 Rust 速查表"
 
-#: src/SUMMARY.md:61 src/appendix/further-reading.md:1
+#: src/SUMMARY.md:62 src/appendix/further-reading.md:1
 msgid "Further reading"
 msgstr "延伸阅读"
 
-#: src/SUMMARY.md:62 src/appendix/contributing.md:1
+#: src/SUMMARY.md:63 src/appendix/contributing.md:1
 msgid "Contributing and translating"
 msgstr "参与贡献与翻译"
 
@@ -344,9 +348,9 @@ msgstr ""
 
 #: src/index.md:51
 msgid ""
-"**Part II: Tools and the ecosystem**: testing, benchmarks and tooling, and "
-"crates.io."
-msgstr "**第二部分：工具与生态**：测试、基准测试与工具，以及 crates.io。"
+"**Part II: Tools and the ecosystem**: testing, benchmarks and tooling, "
+"logging and diagnostics, and crates.io."
+msgstr "**第二部分：工具与生态**：测试、基准测试与工具，日志与诊断，以及 crates.io。"
 
 #: src/index.md:53
 msgid ""
@@ -772,11 +776,11 @@ msgid ""
 "Read Part I in order. Ownership, borrowing and lifetimes build on each "
 "other, and most of Rust's surprises for a C++ programmer are in those three "
 "chapters. Read Part II before you start a real project: it covers tests, "
-"tooling and dependencies. After that, Part III and Part IV can be read in "
-"any order; each chapter links back to what it relies on."
+"tooling, logging and dependencies. After that, Part III and Part IV can be "
+"read in any order; each chapter links back to what it relies on."
 msgstr ""
 "请按顺序阅读第一部分。所有权、借用和生命周期这三章层层递进，Rust 给 C++ "
-"程序员的大部分意外都集中在这里。开始一个真正的项目之前，请先读第二部分：它讲的是测试、工具和依赖。之后，第三部分和第四部分可以按任意顺序阅读；每一章都会链接到它所依赖的内容。"
+"程序员的大部分意外都集中在这里。开始一个真正的项目之前，请先读第二部分：它讲的是测试、工具、日志和依赖。之后，第三部分和第四部分可以按任意顺序阅读；每一章都会链接到它所依赖的内容。"
 
 #: src/intro/how-to-read.md:9
 msgid "Conventions"
@@ -800,19 +804,19 @@ msgstr "并排的代码会把你会写的 C++ 和对应的 Rust 放在一起："
 #: src/foundations/closures-and-iterators.md:303
 #: src/foundations/smart-pointers.md:245
 #: src/foundations/project-organization.md:132
-#: src/systems/testing-and-tooling.md:219 src/systems/crates-io.md:506
-#: src/systems/concurrency.md:128 src/systems/concurrency.md:220
-#: src/systems/concurrency.md:343 src/systems/networking.md:445
-#: src/systems/networking.md:708 src/systems/memory-and-performance.md:251
-#: src/systems/unsafe.md:233 src/engine/handles-and-arenas.md:235
-#: src/engine/ecs.md:475 src/engine/math-and-simd.md:341
-#: src/engine/opengl.md:431 src/engine/vulkan.md:396
-#: src/engine/game-loop.md:333 src/engine/assets-and-build.md:400
-#: src/engine/hot-reload-and-plugins.md:250 src/appendix/cheat-sheet.md:11
-#: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:52
-#: src/appendix/cheat-sheet.md:72 src/appendix/cheat-sheet.md:84
-#: src/appendix/cheat-sheet.md:106 src/appendix/cheat-sheet.md:128
-#: src/appendix/cheat-sheet.md:148
+#: src/systems/testing-and-tooling.md:219 src/systems/logging.md:380
+#: src/systems/crates-io.md:506 src/systems/concurrency.md:128
+#: src/systems/concurrency.md:220 src/systems/concurrency.md:343
+#: src/systems/networking.md:445 src/systems/networking.md:708
+#: src/systems/memory-and-performance.md:251 src/systems/unsafe.md:233
+#: src/engine/handles-and-arenas.md:235 src/engine/ecs.md:475
+#: src/engine/math-and-simd.md:341 src/engine/opengl.md:431
+#: src/engine/vulkan.md:396 src/engine/game-loop.md:334
+#: src/engine/assets-and-build.md:400 src/engine/hot-reload-and-plugins.md:250
+#: src/appendix/cheat-sheet.md:11 src/appendix/cheat-sheet.md:31
+#: src/appendix/cheat-sheet.md:52 src/appendix/cheat-sheet.md:72
+#: src/appendix/cheat-sheet.md:84 src/appendix/cheat-sheet.md:106
+#: src/appendix/cheat-sheet.md:130 src/appendix/cheat-sheet.md:150
 msgid "C++"
 msgstr ""
 
@@ -831,7 +835,8 @@ msgstr ""
 #: src/foundations/closures-and-iterators.md:303
 #: src/foundations/smart-pointers.md:245
 #: src/foundations/project-organization.md:132
-#: src/systems/testing-and-tooling.md:219 src/systems/crates-io.md:506
+#: src/systems/testing-and-tooling.md:219 src/systems/logging.md:354
+#: src/systems/logging.md:380 src/systems/crates-io.md:506
 #: src/systems/concurrency.md:148 src/systems/concurrency.md:220
 #: src/systems/concurrency.md:343 src/systems/networking.md:22
 #: src/systems/networking.md:445 src/systems/networking.md:708
@@ -840,12 +845,12 @@ msgstr ""
 #: src/engine/handles-and-arenas.md:235 src/engine/ecs.md:475
 #: src/engine/math-and-simd.md:341 src/engine/opengl.md:20
 #: src/engine/opengl.md:431 src/engine/vulkan.md:396 src/engine/openxr.md:521
-#: src/engine/game-loop.md:333 src/engine/assets-and-build.md:400
+#: src/engine/game-loop.md:334 src/engine/assets-and-build.md:400
 #: src/engine/hot-reload-and-plugins.md:250 src/appendix/cheat-sheet.md:11
 #: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:52
 #: src/appendix/cheat-sheet.md:72 src/appendix/cheat-sheet.md:84
-#: src/appendix/cheat-sheet.md:106 src/appendix/cheat-sheet.md:128
-#: src/appendix/cheat-sheet.md:148
+#: src/appendix/cheat-sheet.md:106 src/appendix/cheat-sheet.md:130
+#: src/appendix/cheat-sheet.md:150
 msgid "Rust"
 msgstr "Rust"
 
@@ -1010,7 +1015,7 @@ msgid "Documentation generator"
 msgstr "文档生成器"
 
 #: src/intro/setup.md:33 src/systems/testing-and-tooling.md:176
-#: src/systems/testing-and-tooling.md:228 src/appendix/cheat-sheet.md:124
+#: src/systems/testing-and-tooling.md:228 src/appendix/cheat-sheet.md:126
 msgid "Doxygen"
 msgstr "Doxygen"
 
@@ -1449,14 +1454,14 @@ msgstr ""
 #: src/foundations/closures-and-iterators.md:313
 #: src/foundations/smart-pointers.md:255
 #: src/foundations/project-organization.md:139
-#: src/systems/testing-and-tooling.md:230 src/systems/crates-io.md:517
-#: src/systems/concurrency.md:354 src/systems/networking.md:721
-#: src/systems/memory-and-performance.md:262 src/systems/unsafe.md:243
-#: src/systems/ffi.md:330 src/systems/macros.md:199
+#: src/systems/testing-and-tooling.md:230 src/systems/logging.md:390
+#: src/systems/crates-io.md:517 src/systems/concurrency.md:354
+#: src/systems/networking.md:721 src/systems/memory-and-performance.md:262
+#: src/systems/unsafe.md:243 src/systems/ffi.md:330 src/systems/macros.md:199
 #: src/engine/handles-and-arenas.md:304 src/engine/ecs.md:484
 #: src/engine/math-and-simd.md:354 src/engine/opengl.md:442
 #: src/engine/vulkan.md:408 src/engine/wgpu.md:333 src/engine/openxr.md:533
-#: src/engine/game-loop.md:343 src/engine/assets-and-build.md:412
+#: src/engine/game-loop.md:344 src/engine/assets-and-build.md:412
 #: src/engine/hot-reload-and-plugins.md:261 src/engine/case-study.md:331
 msgid "Exercises"
 msgstr "练习"
@@ -1500,11 +1505,11 @@ msgstr ""
 #: src/foundations/traits-and-generics.md:11
 #: src/foundations/operators-and-conversions.md:9
 #: src/foundations/collections.md:8 src/foundations/smart-pointers.md:9
-#: src/systems/testing-and-tooling.md:8 src/systems/crates-io.md:11
-#: src/systems/concurrency.md:10 src/systems/networking.md:11
-#: src/systems/memory-and-performance.md:9 src/systems/unsafe.md:11
-#: src/systems/ffi.md:10 src/systems/macros.md:11 src/engine/ecs.md:15
-#: src/engine/math-and-simd.md:9 src/engine/opengl.md:10
+#: src/systems/testing-and-tooling.md:8 src/systems/logging.md:9
+#: src/systems/crates-io.md:11 src/systems/concurrency.md:10
+#: src/systems/networking.md:11 src/systems/memory-and-performance.md:9
+#: src/systems/unsafe.md:11 src/systems/ffi.md:10 src/systems/macros.md:11
+#: src/engine/ecs.md:15 src/engine/math-and-simd.md:9 src/engine/opengl.md:10
 #: src/engine/vulkan.md:10 src/engine/wgpu.md:11 src/engine/openxr.md:22
 #: src/engine/game-loop.md:11 src/engine/assets-and-build.md:9
 #: src/engine/hot-reload-and-plugins.md:11 src/engine/case-study.md:11
@@ -1678,8 +1683,8 @@ msgstr "Rust 中的含义"
 #: src/engine/case-study.md:184 src/appendix/cheat-sheet.md:11
 #: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:52
 #: src/appendix/cheat-sheet.md:72 src/appendix/cheat-sheet.md:84
-#: src/appendix/cheat-sheet.md:106 src/appendix/cheat-sheet.md:128
-#: src/appendix/cheat-sheet.md:148 src/appendix/cheat-sheet.md:166
+#: src/appendix/cheat-sheet.md:106 src/appendix/cheat-sheet.md:130
+#: src/appendix/cheat-sheet.md:150 src/appendix/cheat-sheet.md:168
 msgid "Chapter"
 msgstr "章节"
 
@@ -1701,7 +1706,7 @@ msgstr "对 `x` 的共享借用：非空、只读的引用。写在调用处，`
 #: src/appendix/cheat-sheet.md:37 src/appendix/cheat-sheet.md:38
 #: src/appendix/cheat-sheet.md:39 src/appendix/cheat-sheet.md:40
 #: src/appendix/cheat-sheet.md:41 src/appendix/cheat-sheet.md:54
-#: src/appendix/cheat-sheet.md:168 src/appendix/cheat-sheet.md:169
+#: src/appendix/cheat-sheet.md:170 src/appendix/cheat-sheet.md:171
 msgid "[Borrowing](../foundations/borrowing.md)"
 msgstr "[借用](../foundations/borrowing.md)"
 
@@ -1769,9 +1774,9 @@ msgstr ""
 msgid "Raw pointers, only dereferenced in `unsafe`"
 msgstr "裸指针，只能在 `unsafe` 中解引用"
 
-#: src/intro/syntax.md:77 src/appendix/cheat-sheet.md:135
-#: src/appendix/cheat-sheet.md:136 src/appendix/cheat-sheet.md:137
-#: src/appendix/cheat-sheet.md:138
+#: src/intro/syntax.md:77 src/appendix/cheat-sheet.md:137
+#: src/appendix/cheat-sheet.md:138 src/appendix/cheat-sheet.md:139
+#: src/appendix/cheat-sheet.md:140
 msgid "[Unsafe](../systems/unsafe.md)"
 msgstr "[Unsafe](../systems/unsafe.md)"
 
@@ -1823,8 +1828,8 @@ msgid ""
 msgstr "相同，用于模块、类型和关联函数：`Vec::new()`、`std::mem::swap`"
 
 #: src/intro/syntax.md:85 src/intro/syntax.md:102
-#: src/appendix/cheat-sheet.md:115 src/appendix/cheat-sheet.md:116
-#: src/appendix/cheat-sheet.md:117
+#: src/appendix/cheat-sheet.md:117 src/appendix/cheat-sheet.md:118
+#: src/appendix/cheat-sheet.md:119
 msgid "[Modules](../foundations/modules.md)"
 msgstr "[模块](../foundations/modules.md)"
 
@@ -1963,8 +1968,8 @@ msgstr ""
 "是调用语法的一部分，所以宏永远不会被误认为函数。`vec![...]`、`println!(...)`、`assert_eq!(...)`"
 
 #: src/intro/syntax.md:99 src/intro/syntax.md:101 src/intro/syntax.md:103
-#: src/appendix/cheat-sheet.md:21 src/appendix/cheat-sheet.md:118
-#: src/appendix/cheat-sheet.md:119 src/appendix/cheat-sheet.md:120
+#: src/appendix/cheat-sheet.md:21 src/appendix/cheat-sheet.md:120
+#: src/appendix/cheat-sheet.md:121 src/appendix/cheat-sheet.md:122
 msgid "[Macros](../systems/macros.md)"
 msgstr "[宏](../systems/macros.md)"
 
@@ -2533,7 +2538,7 @@ msgstr "范围：半开区间和闭区间。用于 `for`、切片（`&v[1..3]`�
 #: src/appendix/cheat-sheet.md:87 src/appendix/cheat-sheet.md:88
 #: src/appendix/cheat-sheet.md:89 src/appendix/cheat-sheet.md:90
 #: src/appendix/cheat-sheet.md:91 src/appendix/cheat-sheet.md:92
-#: src/appendix/cheat-sheet.md:171
+#: src/appendix/cheat-sheet.md:173
 msgid "[Collections](../foundations/collections.md)"
 msgstr "[集合](../foundations/collections.md)"
 
@@ -2653,7 +2658,7 @@ msgstr "生命周期参数：给\"这个借用在多长时间内有效\"起的�
 
 #: src/intro/syntax.md:419 src/intro/syntax.md:420 src/intro/syntax.md:421
 #: src/intro/syntax.md:422 src/appendix/cheat-sheet.md:42
-#: src/appendix/cheat-sheet.md:43 src/appendix/cheat-sheet.md:174
+#: src/appendix/cheat-sheet.md:43 src/appendix/cheat-sheet.md:176
 msgid "[Lifetimes](../foundations/lifetimes.md)"
 msgstr "[生命周期](../foundations/lifetimes.md)"
 
@@ -3606,11 +3611,11 @@ msgstr "构建配置，可针对单个依赖调整"
 msgid "Custom commands"
 msgstr "自定义命令"
 
-#: src/foundations/cargo.md:373 src/appendix/cheat-sheet.md:114
+#: src/foundations/cargo.md:373 src/appendix/cheat-sheet.md:116
 msgid "`build.rs`"
 msgstr ""
 
-#: src/foundations/cargo.md:374 src/appendix/cheat-sheet.md:113
+#: src/foundations/cargo.md:374 src/appendix/cheat-sheet.md:115
 msgid "`add_subdirectory`"
 msgstr ""
 
@@ -3924,11 +3929,11 @@ msgstr ""
 "模块还决定了一个类型的方法可以定义在哪里，以及调用方需要导入哪些 trait。这依赖 `impl` 块和 "
 "trait，所以放在[项目组织](project-organization.md#方法写在哪里)一章，和工作区布局、编译时间一起讲。"
 
-#: src/foundations/modules.md:162 src/appendix/cheat-sheet.md:115
+#: src/foundations/modules.md:162 src/appendix/cheat-sheet.md:117
 msgid "`namespace`"
 msgstr ""
 
-#: src/foundations/modules.md:162 src/appendix/cheat-sheet.md:115
+#: src/foundations/modules.md:162 src/appendix/cheat-sheet.md:117
 msgid "`mod`"
 msgstr ""
 
@@ -4740,11 +4745,11 @@ msgstr "默认 C 布局"
 msgid "Compiler-chosen layout; `#[repr(C)]` for C layout"
 msgstr "由编译器选择布局；需要 C 布局时用 `#[repr(C)]`"
 
-#: src/foundations/values-and-types.md:391 src/appendix/cheat-sheet.md:132
+#: src/foundations/values-and-types.md:391 src/appendix/cheat-sheet.md:134
 msgid "`alignas(64)`"
 msgstr ""
 
-#: src/foundations/values-and-types.md:391 src/appendix/cheat-sheet.md:132
+#: src/foundations/values-and-types.md:391 src/appendix/cheat-sheet.md:134
 msgid "`#[repr(align(64))]`"
 msgstr ""
 
@@ -6261,7 +6266,7 @@ msgstr "解读常见错误"
 msgid "Error"
 msgstr "错误"
 
-#: src/foundations/lifetimes.md:237 src/appendix/cheat-sheet.md:166
+#: src/foundations/lifetimes.md:237 src/appendix/cheat-sheet.md:168
 msgid "Usual fix"
 msgstr "常见修复"
 
@@ -10916,7 +10921,7 @@ msgstr ""
 msgid "cargo test --all-targets"
 msgstr ""
 
-#: src/systems/testing-and-tooling.md:221 src/appendix/cheat-sheet.md:121
+#: src/systems/testing-and-tooling.md:221 src/appendix/cheat-sheet.md:123
 msgid "GoogleTest / Catch2"
 msgstr "GoogleTest / Catch2"
 
@@ -10948,11 +10953,11 @@ msgstr "在 CMake 中注册的测试可执行文件"
 msgid "`tests/` directory, discovered automatically"
 msgstr "`tests/` 目录，自动发现"
 
-#: src/systems/testing-and-tooling.md:225 src/appendix/cheat-sheet.md:122
+#: src/systems/testing-and-tooling.md:225 src/appendix/cheat-sheet.md:124
 msgid "Google Benchmark"
 msgstr "Google Benchmark"
 
-#: src/systems/testing-and-tooling.md:225 src/appendix/cheat-sheet.md:122
+#: src/systems/testing-and-tooling.md:225 src/appendix/cheat-sheet.md:124
 msgid "criterion"
 msgstr "criterion"
 
@@ -10964,7 +10969,7 @@ msgstr "libFuzzer"
 msgid "cargo-fuzz"
 msgstr "cargo-fuzz"
 
-#: src/systems/testing-and-tooling.md:227 src/appendix/cheat-sheet.md:123
+#: src/systems/testing-and-tooling.md:227 src/appendix/cheat-sheet.md:125
 msgid "clang-format / clang-tidy"
 msgstr "clang-format / clang-tidy"
 
@@ -10995,6 +11000,619 @@ msgid ""
 "Run `cargo clippy` on a project from an earlier chapter and fix every "
 "warning. Which lint taught you something?"
 msgstr "在前面某一章的项目上运行 `cargo clippy`，修复每个警告。哪条 lint 让你学到了东西？"
+
+#: src/systems/logging.md:3
+msgid ""
+"Every C++ engine has its own logging: `UE_LOG`, a wrapper around spdlog or "
+"glog, or a home-grown macro that writes to a file and the in-game console. "
+"Third-party libraries each bring their own logging too, and wiring them all "
+"into one output is a chore. Rust settled this early. Libraries log through a"
+" shared **facade**, and the application chooses, once, where the messages "
+"go."
+msgstr ""
+"每个 C++ 引擎都有自己的日志系统：`UE_LOG`、对 spdlog 或 glog "
+"的封装，或者一个自己写的、同时输出到文件和游戏内控制台的宏。第三方库也各自带着自己的日志方式，把它们统一到一个输出里是件苦差事。Rust "
+"很早就解决了这个问题：库通过一个共享的**门面**（facade）记录日志，由应用程序决定一次，消息最终去哪里。"
+
+#: src/systems/logging.md:11
+msgid "the facade and backend split, and why libraries never pick a backend,"
+msgstr "门面与后端的分离，以及为什么库从不选择后端；"
+
+#: src/systems/logging.md:12
+msgid "`log` with `env_logger`, and filtering with `RUST_LOG`,"
+msgstr "`log` 配合 `env_logger`，以及用 `RUST_LOG` 过滤；"
+
+#: src/systems/logging.md:13
+msgid "`tracing`: structured fields and spans, which also feed the profiler,"
+msgstr "`tracing`：结构化字段和 span，它们同时也能喂给性能分析器；"
+
+#: src/systems/logging.md:14
+msgid ""
+"engine needs: log files that do not stall a frame, an in-game console, logs "
+"in tests, compile-time filtering,"
+msgstr "引擎的需求：不会卡住帧的日志文件、游戏内控制台、测试中的日志、编译期过滤；"
+
+#: src/systems/logging.md:16
+msgid "panics: hooks, backtraces and crash reports."
+msgstr "panic：钩子、回溯和崩溃报告。"
+
+#: src/systems/logging.md:18
+msgid "Facades and backends"
+msgstr "门面与后端"
+
+#: src/systems/logging.md:20
+msgid ""
+"The [`log`](https://docs.rs/log) crate defines macros (`error!`, `warn!`, "
+"`info!`, `debug!`, `trace!`), a `Log` trait and one global slot for a "
+"logger. It does not print anything. A **backend** crate implements the trait"
+" and is installed by `main`. Until a backend is installed, log calls do "
+"nothing beyond one check."
+msgstr ""
+"[`log`](https://docs.rs/log) crate "
+"定义了一组宏（`error!`、`warn!`、`info!`、`debug!`、`trace!`）、一个 `Log` "
+"trait，以及一个存放日志器的全局槽位。它本身什么都不打印。**后端** crate 实现这个 trait，由 `main` "
+"安装。在安装后端之前，日志调用除了一次检查之外什么都不做。"
+
+#: src/systems/logging.md:26
+msgid ""
+"The whole mechanism fits in a page. This is a simplified `log`, written with"
+" the standard library only:"
+msgstr "整个机制一页就能写完。下面是一个只用标准库写成的简化版 `log`："
+
+#: src/systems/logging.md:35
+msgid "/// The facade: one trait and one global slot.\n"
+msgstr "/// 门面：一个 trait 和一个全局槽位。\n"
+
+#: src/systems/logging.md:45
+msgid "// no backend yet: one check, nothing else\n"
+msgstr "// 还没有后端：只做一次检查，别的什么都不做\n"
+
+#: src/systems/logging.md:47
+msgid "// arguments are formatted only here\n"
+msgstr "// 参数只在这里才被格式化\n"
+
+#: src/systems/logging.md:58
+msgid "// A \"library\" module: it only uses the macros.\n"
+msgstr "// 一个\"库\"模块：它只使用这些宏。\n"
+
+#: src/systems/logging.md:62 src/systems/logging.md:105
+msgid "\"drawing {meshes} meshes\""
+msgstr ""
+
+#: src/systems/logging.md:63
+msgid "\"frame done\""
+msgstr ""
+
+#: src/systems/logging.md:66
+msgid "// The application chooses the backend, once.\n"
+msgstr "// 应用程序选择后端，只选一次。\n"
+
+#: src/systems/logging.md:72
+msgid "\"[{level:?} {target}] {args}\""
+msgstr ""
+
+#: src/systems/logging.md:77
+msgid "// before init: nothing happens\n"
+msgstr "// 初始化之前：什么都不会发生\n"
+
+#: src/systems/logging.md:79
+msgid "// info is printed, debug is filtered out\n"
+msgstr "// info 被打印，debug 被过滤掉\n"
+
+#: src/systems/logging.md:83
+msgid ""
+"`format_args!` captures the arguments without formatting them, so a filtered"
+" message costs a comparison, not a string allocation. `module_path!()` gives"
+" every message a **target** such as `my_game::render`, which is what filters"
+" match on."
+msgstr ""
+"`format_args!` 只捕获参数而不格式化它们，所以一条被过滤掉的消息只花费一次比较，而不是一次字符串分配。`module_path!()` "
+"给每条消息一个 **target**，比如 `my_game::render`，过滤规则就是根据它来匹配的。"
+
+#: src/systems/logging.md:88
+msgid ""
+"The rule that follows from this design: **libraries depend only on the "
+"facade, and only binaries choose a backend.** A renderer crate calls "
+"`log::debug!`; the game, the editor and the test harness each decide where "
+"those messages go. In C++ terms, every library logs through the same "
+"interface, and the application supplies the sink."
+msgstr ""
+"由这个设计得出的规则是：**库只依赖门面，只有可执行程序才选择后端。** 渲染器 crate 调用 "
+"`log::debug!`；游戏、编辑器和测试框架各自决定这些消息去哪里。用 C++ 的话说，每个库都通过同一个接口记录日志，由应用程序提供输出端。"
+
+#: src/systems/logging.md:94
+msgid "`log` and `env_logger`"
+msgstr "`log` 与 `env_logger`"
+
+#: src/systems/logging.md:96
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"log = \"0.4\"\n"
+"env_logger = \"0.11\"\n"
+"```"
+msgstr ""
+
+#: src/systems/logging.md:107
+msgid "\"{meshes} draw calls this frame\""
+msgstr ""
+
+#: src/systems/logging.md:113
+msgid "// reads RUST_LOG\n"
+msgstr "// 读取 RUST_LOG\n"
+
+#: src/systems/logging.md:114
+msgid "\"starting\""
+msgstr ""
+
+#: src/systems/logging.md:129
+msgid ""
+"`RUST_LOG` is a list of `target=level` rules, plus an optional default "
+"level. Because targets are module paths, you can turn on `debug` for one "
+"subsystem, or silence a chatty dependency (`wgpu_core=warn`), without "
+"recompiling. Most crates that log, including wgpu, winit and many others, "
+"use `log`, so their messages appear in the same output."
+msgstr ""
+"`RUST_LOG` 是一组 `target=level` 规则，外加一个可选的默认级别。因为 target "
+"就是模块路径，所以无需重新编译，你就可以只为某个子系统打开 "
+"`debug`，或者让一个话多的依赖安静下来（`wgpu_core=warn`）。大多数会记录日志的 crate，包括 wgpu、winit 等，都使用"
+" `log`，所以它们的消息也会出现在同一个输出里。"
+
+#: src/systems/logging.md:135
+msgid "`tracing`: structured fields and spans"
+msgstr "`tracing`：结构化字段与 span"
+
+#: src/systems/logging.md:137
+msgid ""
+"[`tracing`](https://docs.rs/tracing) is the other common facade, and the "
+"better fit for a game. It has the same level macros, plus two things `log` "
+"lacks:"
+msgstr ""
+"[`tracing`](https://docs.rs/tracing) 是另一个常用的门面，也更适合游戏。它有同样的级别宏，外加两样 `log` "
+"没有的东西："
+
+#: src/systems/logging.md:141
+msgid ""
+"**Structured fields.** `info!(entity = id, hp, \"took damage\")` records "
+"`entity` and `hp` as typed key-value pairs, not just text. A backend can "
+"print them, filter on them or send them to a log database."
+msgstr ""
+"**结构化字段。** `info!(entity = id, hp, \"took damage\")` 会把 `entity` 和 `hp` "
+"记录为带类型的键值对，而不只是文本。后端可以打印它们、按它们过滤，或者把它们发送到日志数据库。"
+
+#: src/systems/logging.md:144
+msgid ""
+"**Spans.** A span is a named period of time with fields, such as one frame, "
+"one system or one asset load. Every event inside a span is reported with the"
+" span's context, and a profiler backend can show spans on a timeline."
+msgstr ""
+"**span。** span 是一段带有字段的命名时间段，比如一帧、一个系统的执行或一次资源加载。span 内的每个事件在报告时都带着 span "
+"的上下文，性能分析后端还能把 span 显示在时间线上。"
+
+#: src/systems/logging.md:148
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"tracing = \"0.1\"\n"
+"tracing-subscriber = { version = \"0.3\", features = [\"env-filter\"] }\n"
+"```"
+msgstr ""
+
+#: src/systems/logging.md:159
+msgid "// a span per call, with fields\n"
+msgstr "// 每次调用一个 span，并带上字段\n"
+
+#: src/systems/logging.md:164
+msgid "\"enemy died\""
+msgstr ""
+
+#: src/systems/logging.md:166
+msgid "\"took damage\""
+msgstr ""
+
+#: src/systems/logging.md:173
+msgid "// RUST_LOG\n"
+msgstr "// RUST_LOG\n"
+
+#: src/systems/logging.md:178
+msgid "\"frame\""
+msgstr ""
+
+#: src/systems/logging.md:178
+msgid "// ends when `_frame` is dropped\n"
+msgstr "// `_frame` 被丢弃时结束\n"
+
+#: src/systems/logging.md:181
+msgid "\"level not cleared\""
+msgstr ""
+
+#: src/systems/logging.md:193
+msgid ""
+"The output above omits timestamps. Each event carries the chain of spans it "
+"happened in, so \"took damage\" is known to belong to frame 1 and to "
+"`update_ai`, without passing a context object around. `#[instrument]` is an "
+"attribute macro ([Declaring your own "
+"attributes](../intro/syntax.md#declaring-your-own-attributes)) that wraps "
+"the function in a span named after it."
+msgstr ""
+"上面的输出省略了时间戳。每个事件都带着它所在的 span 链，所以无需四处传递上下文对象，就能知道 \"took damage\" 属于第 1 帧和 "
+"`update_ai`。`#[instrument]` "
+"是一个属性宏（[声明自己的属性](../intro/syntax.md#声明自己的属性)），它把函数包进一个以函数名命名的 span 里。"
+
+#: src/systems/logging.md:199
+msgid ""
+"The backend is called a **subscriber**, and it is built from **layers**: one"
+" layer formats to the terminal, another writes a file, another sends spans "
+"to a profiler. `tracing-subscriber` also captures messages from crates that "
+"use `log`, so `wgpu` and `winit` output appears in the same stream."
+msgstr ""
+"后端称为 **subscriber**，由多个 **layer** 组成：一个 layer 格式化输出到终端，另一个写文件，还有一个把 span "
+"发送给性能分析器。`tracing-subscriber` 还会接收使用 `log` 的 crate 发出的消息，所以 `wgpu` 和 `winit`"
+" 的输出也会出现在同一个流里。"
+
+#: src/systems/logging.md:204
+msgid ""
+"The same spans feed the profiler. Add the `tracing-tracy` layer and every "
+"span becomes a zone in [Tracy](https://github.com/wolfpld/tracy), the frame "
+"profiler many C++ engines already use ([Memory layout and "
+"performance](memory-and-performance.md)). The `frame` span above needs no "
+"extra code to appear on the timeline."
+msgstr ""
+"同样的 span 也能喂给性能分析器。加上 `tracing-tracy` layer，每个 span 就会成为 "
+"[Tracy](https://github.com/wolfpld/tracy) 中的一个 zone，而 Tracy 正是许多 C++ "
+"引擎已经在用的帧性能分析器（[内存布局与性能](memory-and-performance.md)）。上面的 `frame` span "
+"不需要额外代码就能出现在时间线上。"
+
+#: src/systems/logging.md:210
+msgid "Engine needs"
+msgstr "引擎的需求"
+
+#: src/systems/logging.md:212
+msgid "Log files that do not stall a frame"
+msgstr "不会卡住帧的日志文件"
+
+#: src/systems/logging.md:214
+msgid ""
+"Writing to a file from the game thread can block on disk I/O. `tracing-"
+"appender` moves the writing to a background thread and rotates the file "
+"daily or hourly:"
+msgstr "在游戏线程上写文件可能会阻塞在磁盘 I/O 上。`tracing-appender` 把写入移到后台线程，并按天或按小时轮换文件："
+
+#: src/systems/logging.md:218
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"tracing-appender = \"0.2\"\n"
+"```"
+msgstr ""
+
+#: src/systems/logging.md:227
+msgid "\"logs\""
+msgstr ""
+
+#: src/systems/logging.md:227
+msgid "\"game.log\""
+msgstr ""
+
+#: src/systems/logging.md:229
+msgid "// Keep `_guard` alive until exit: dropping it flushes the queue.\n"
+msgstr "// 让 `_guard` 一直存活到退出：丢弃它时会刷新队列。\n"
+
+#: src/systems/logging.md:232
+msgid "\"info\""
+msgstr ""
+
+#: src/systems/logging.md:233
+msgid "// terminal\n"
+msgstr "// 终端\n"
+
+#: src/systems/logging.md:234
+msgid "// file, no colors\n"
+msgstr "// 文件，不带颜色\n"
+
+#: src/systems/logging.md:237
+msgid "\"logging to the terminal and logs/game.log.<date>\""
+msgstr ""
+
+#: src/systems/logging.md:241
+msgid ""
+"The `_guard` is RAII used deliberately: when `main` returns, the guard's "
+"`Drop` flushes everything still in the queue. If you drop it early, by "
+"writing `let _ = ...` instead of `let _guard = ...`, messages are lost. This"
+" is the same mistake as discarding a C++ scope guard."
+msgstr ""
+"`_guard` 是有意使用的 RAII：`main` 返回时，guard 的 `Drop` 会把队列里剩下的内容全部刷新。如果过早丢弃它，比如写成 "
+"`let _ = ...` 而不是 `let _guard = ...`，消息就会丢失。这和在 C++ 里丢掉一个 scope guard "
+"是同样的错误。"
+
+#: src/systems/logging.md:246
+msgid "An in-game console"
+msgstr "游戏内控制台"
+
+#: src/systems/logging.md:248
+msgid ""
+"A custom layer can forward events anywhere, for example into a buffer the "
+"debug console draws each frame:"
+msgstr "自定义的 layer 可以把事件转发到任何地方，比如转发到调试控制台每帧绘制的缓冲区里："
+
+#: src/systems/logging.md:264
+msgid "\"{:>5} \""
+msgstr ""
+
+#: src/systems/logging.md:265
+msgid "// collect the message and fields\n"
+msgstr "// 收集消息和字段\n"
+
+#: src/systems/logging.md:273
+msgid "\"message\""
+msgstr ""
+
+#: src/systems/logging.md:274
+msgid "\"{value:?} \""
+msgstr ""
+
+#: src/systems/logging.md:276
+msgid "\"{}={value:?} \""
+msgstr ""
+
+#: src/systems/logging.md:285
+msgid "\"rock.png\""
+msgstr ""
+
+#: src/systems/logging.md:285
+msgid "\"missing mip levels\""
+msgstr ""
+
+#: src/systems/logging.md:287
+msgid "\"console: {line}\""
+msgstr ""
+
+#: src/systems/logging.md:287
+msgid "// the UI would draw these\n"
+msgstr "// UI 会绘制这些行\n"
+
+#: src/systems/logging.md:292
+msgid ""
+"A real console would keep a bounded ring buffer and filter by level, but the"
+" structure is the same: the game code logs as usual, and the console is one "
+"more layer."
+msgstr "真正的控制台会用一个有界的环形缓冲区，并按级别过滤，但结构是一样的：游戏代码照常记录日志，控制台只是多了一个 layer。"
+
+#: src/systems/logging.md:296
+msgid "Logs in tests"
+msgstr "测试中的日志"
+
+#: src/systems/logging.md:298
+msgid ""
+"Test output is captured per test and shown only when a test fails. To see "
+"log messages there, install a subscriber that writes to the test harness:"
+msgstr "测试的输出按测试分别捕获，只在测试失败时显示。要在那里看到日志消息，需要安装一个写入测试框架的 subscriber："
+
+#: src/systems/logging.md:304
+msgid ""
+"// `try_`: tests share one process\n"
+"    // ...\n"
+msgstr ""
+"// `try_`：所有测试共享同一个进程\n"
+"    // ...\n"
+
+#: src/systems/logging.md:309
+msgid "Removing log calls from release builds"
+msgstr "从发布构建中移除日志调用"
+
+#: src/systems/logging.md:311
+msgid ""
+"Both facades can drop verbose levels at compile time, so `trace!` in a hot "
+"loop costs nothing in a shipped build:"
+msgstr "两个门面都可以在编译期去掉较详细的级别，所以热循环里的 `trace!` 在发布的版本中没有任何开销："
+
+#: src/systems/logging.md:314
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"log = { version = \"0.4\", features = [\"release_max_level_info\"] }\n"
+"tracing = { version = \"0.1\", features = [\"release_max_level_info\"] }\n"
+"```"
+msgstr ""
+
+#: src/systems/logging.md:320
+msgid ""
+"With these features, `debug!` and `trace!` compile to nothing in release "
+"builds, like a `UE_LOG` with a compiled-out verbosity. The arguments are not"
+" evaluated either, so do not put side effects in log arguments."
+msgstr ""
+"启用这些 feature 后，`debug!` 和 `trace!` 在发布构建中会被编译成空，就像编译期关闭了某个详细级别的 "
+"`UE_LOG`。参数也不会被求值，所以不要在日志参数里写有副作用的代码。"
+
+#: src/systems/logging.md:324
+msgid "Panics and crash reports"
+msgstr "panic 与崩溃报告"
+
+#: src/systems/logging.md:326
+msgid ""
+"A panic in Rust unwinds the thread by default, running destructors, and "
+"prints a message to stderr. In a game you want that message, a backtrace and"
+" the last log lines in one place. `std::panic::set_hook` replaces the "
+"default printer:"
+msgstr ""
+"Rust 中的 panic 默认会展开（unwind）线程、运行析构函数，并向 stderr "
+"打印一条消息。在游戏里，你希望这条消息、回溯和最后几行日志出现在同一个地方。`std::panic::set_hook` 可以替换默认的输出方式："
+
+#: src/systems/logging.md:337
+msgid "\"{}:{}\""
+msgstr ""
+
+#: src/systems/logging.md:338
+msgid "\"(no message)\""
+msgstr ""
+
+#: src/systems/logging.md:339
+msgid ""
+"// In a game: tracing::error!(...), flush the log file, write a crash "
+"report.\n"
+msgstr "// 在游戏中：tracing::error!(...)，刷新日志文件，写入崩溃报告。\n"
+
+#: src/systems/logging.md:340
+msgid "\"CRASH at {}: {message}\""
+msgstr ""
+
+#: src/systems/logging.md:342
+msgid "\"{} backtrace lines\""
+msgstr ""
+
+#: src/systems/logging.md:345
+msgid ""
+"// catch_unwind only so that this example keeps running after the panic.\n"
+msgstr "// 使用 catch_unwind 只是为了让这个例子在 panic 之后继续运行。\n"
+
+#: src/systems/logging.md:348
+msgid "// index out of bounds: panics\n"
+msgstr "// 索引越界：panic\n"
+
+#: src/systems/logging.md:350
+msgid "\"recovered: {}\""
+msgstr ""
+
+#: src/systems/logging.md:354 src/systems/networking.md:445
+#: src/engine/handles-and-arenas.md:235
+msgid "Need"
+msgstr "需求"
+
+#: src/systems/logging.md:356
+msgid "Backtrace on panic"
+msgstr "panic 时的回溯"
+
+#: src/systems/logging.md:356
+msgid "`RUST_BACKTRACE=1`, or `Backtrace::force_capture()` in the hook"
+msgstr "`RUST_BACKTRACE=1`，或者在钩子中调用 `Backtrace::force_capture()`"
+
+#: src/systems/logging.md:357
+msgid "Crash in a log file"
+msgstr "把崩溃写进日志文件"
+
+#: src/systems/logging.md:357
+msgid "A panic hook that calls `tracing::error!` and flushes the writer"
+msgstr "一个调用 `tracing::error!` 并刷新写入器的 panic 钩子"
+
+#: src/systems/logging.md:358
+msgid "Abort instead of unwinding (smaller binary, like `-fno-exceptions`)"
+msgstr "中止而不是展开（二进制更小，类似 `-fno-exceptions`）"
+
+#: src/systems/logging.md:358
+msgid "`panic = \"abort\"` in a `[profile]`"
+msgstr "在 `[profile]` 中设置 `panic = \"abort\"`"
+
+#: src/systems/logging.md:359
+msgid "Minidumps and crash reporting for native crashes"
+msgstr "原生崩溃的 minidump 和崩溃报告"
+
+#: src/systems/logging.md:359
+msgid "Crates such as `sentry`, or a minidump writer, as in C++"
+msgstr "`sentry` 等 crate，或者 minidump 写入器，和 C++ 一样"
+
+#: src/systems/logging.md:361
+msgid ""
+"A panic hook runs for panics only. A segmentation fault in `unsafe` code or "
+"a C library is a native crash, and it needs the same crash-handler setup as "
+"a C++ program."
+msgstr "panic 钩子只对 panic 生效。`unsafe` 代码或 C 库中的段错误属于原生崩溃，需要和 C++ 程序一样的崩溃处理配置。"
+
+#: src/systems/logging.md:368
+msgid ""
+"A setup that works well for games: `tracing` throughout the engine, with "
+"spans for the frame, each system and each asset load; a subscriber in the "
+"game binary with a terminal layer in development, a non-blocking file layer "
+"always, a console layer for the in-game console, and the Tracy layer behind "
+"a Cargo feature; `release_max_level_info` in shipped builds; and a panic "
+"hook that logs the panic and flushes the file before the process exits. "
+"Library crates in the workspace depend on `tracing` only."
+msgstr ""
+"一套适合游戏的配置：整个引擎使用 `tracing`，为每帧、每个系统和每次资源加载建立 span；游戏可执行程序中的 subscriber "
+"在开发时带一个终端 layer，始终带一个非阻塞的文件 layer，为游戏内控制台准备一个控制台 layer，再把 Tracy layer 放在一个 "
+"Cargo feature 后面；发布版本使用 `release_max_level_info`；再加一个在进程退出前记录 panic 并刷新文件的 "
+"panic 钩子。工作区中的库 crate 只依赖 `tracing`。"
+
+#: src/systems/logging.md:382
+msgid "`UE_LOG`, spdlog, glog, custom macros"
+msgstr "`UE_LOG`、spdlog、glog、自定义宏"
+
+#: src/systems/logging.md:382
+msgid "`log` or `tracing` macros"
+msgstr "`log` 或 `tracing` 的宏"
+
+#: src/systems/logging.md:383
+msgid "Each library's own logging callback"
+msgstr "每个库各自的日志回调"
+
+#: src/systems/logging.md:383
+msgid "One facade; the application installs the backend"
+msgstr "一个门面；由应用程序安装后端"
+
+#: src/systems/logging.md:384
+msgid "Log categories"
+msgstr "日志分类"
+
+#: src/systems/logging.md:384
+msgid "Targets (module paths), filtered with `RUST_LOG`"
+msgstr "target（模块路径），用 `RUST_LOG` 过滤"
+
+#: src/systems/logging.md:385 src/appendix/cheat-sheet.md:113
+msgid "Scoped profiler markers"
+msgstr "作用域性能分析标记"
+
+#: src/systems/logging.md:385
+msgid "`tracing` spans, shown in Tracy with `tracing-tracy`"
+msgstr "`tracing` 的 span，通过 `tracing-tracy` 显示在 Tracy 中"
+
+#: src/systems/logging.md:386
+msgid "Async log sink"
+msgstr "异步日志输出端"
+
+#: src/systems/logging.md:386
+msgid "`tracing-appender::non_blocking`"
+msgstr ""
+
+#: src/systems/logging.md:387
+msgid "Compiled-out verbosity"
+msgstr "编译期关闭的详细级别"
+
+#: src/systems/logging.md:387
+msgid "`release_max_level_*` features"
+msgstr "`release_max_level_*` feature"
+
+#: src/systems/logging.md:388
+msgid "`std::set_terminate`, signal handlers"
+msgstr "`std::set_terminate`、信号处理函数"
+
+#: src/systems/logging.md:388
+msgid "`std::panic::set_hook` for panics; a crash handler for native crashes"
+msgstr "panic 用 `std::panic::set_hook`；原生崩溃用崩溃处理器"
+
+#: src/systems/logging.md:392
+msgid ""
+"In the facade example, add a `warn!` macro and a backend that only prints "
+"messages whose target ends with `::render`."
+msgstr "在门面的例子里添加一个 `warn!` 宏，以及一个只打印 target 以 `::render` 结尾的消息的后端。"
+
+#: src/systems/logging.md:394
+msgid ""
+"Add `tracing` to a small program, put a span around each frame of a loop, "
+"and run it with `RUST_LOG=trace` and then `RUST_LOG=warn`."
+msgstr ""
+"给一个小程序加上 `tracing`，在循环的每一帧外面加一个 span，分别用 `RUST_LOG=trace` 和 `RUST_LOG=warn` "
+"运行它。"
+
+#: src/systems/logging.md:396
+msgid ""
+"Write logs to both the terminal and a daily file. Remove the `_guard` "
+"binding and check what is lost at exit."
+msgstr "同时把日志写到终端和按天轮换的文件里。去掉 `_guard` 绑定，看看退出时丢失了什么。"
+
+#: src/systems/logging.md:398
+msgid ""
+"Install a panic hook that writes the panic message and backtrace to a file, "
+"then trigger a panic from a worker thread. Does the hook run?"
+msgstr "安装一个把 panic 消息和回溯写进文件的 panic 钩子，然后在一个工作线程里触发 panic。钩子会运行吗？"
 
 #: src/systems/crates-io.md:3
 msgid ""
@@ -13545,10 +14163,6 @@ msgstr ""
 msgid "You rarely need to write the reliability layer yourself:"
 msgstr "可靠性层很少需要自己写："
 
-#: src/systems/networking.md:445 src/engine/handles-and-arenas.md:235
-msgid "Need"
-msgstr "需求"
-
 #: src/systems/networking.md:447
 msgid "Client/server game transport, reliable and unreliable channels"
 msgstr "客户端/服务器游戏传输，可靠和不可靠通道"
@@ -14083,7 +14697,7 @@ msgstr "（默认）"
 msgid "Compiler may reorder fields to reduce padding; layout unspecified"
 msgstr "编译器可以重排字段以减少填充；布局未指定"
 
-#: src/systems/memory-and-performance.md:28 src/appendix/cheat-sheet.md:131
+#: src/systems/memory-and-performance.md:28 src/appendix/cheat-sheet.md:133
 msgid "`#[repr(C)]`"
 msgstr ""
 
@@ -14473,7 +15087,7 @@ msgid ""
 "([Testing](testing-and-tooling.md))."
 msgstr "**基准测试**：用 `criterion` 做统计上可靠的微基准测试（[测试](testing-and-tooling.md)）。"
 
-#: src/systems/memory-and-performance.md:253 src/appendix/cheat-sheet.md:130
+#: src/systems/memory-and-performance.md:253 src/appendix/cheat-sheet.md:132
 msgid "`sizeof`, `alignof`, `offsetof`"
 msgstr ""
 
@@ -14481,7 +15095,7 @@ msgstr ""
 msgid "`size_of`, `align_of`, `offset_of!`"
 msgstr ""
 
-#: src/systems/memory-and-performance.md:254 src/appendix/cheat-sheet.md:131
+#: src/systems/memory-and-performance.md:254 src/appendix/cheat-sheet.md:133
 msgid "Declaration-order layout"
 msgstr "按声明顺序布局"
 
@@ -14501,11 +15115,11 @@ msgstr ""
 msgid "Implied by `&mut`"
 msgstr "由 `&mut` 隐含"
 
-#: src/systems/memory-and-performance.md:257 src/appendix/cheat-sheet.md:133
+#: src/systems/memory-and-performance.md:257 src/appendix/cheat-sheet.md:135
 msgid "Replace `operator new`"
 msgstr "替换 `operator new`"
 
-#: src/systems/memory-and-performance.md:257 src/appendix/cheat-sheet.md:133
+#: src/systems/memory-and-performance.md:257 src/appendix/cheat-sheet.md:135
 msgid "`#[global_allocator]`"
 msgstr ""
 
@@ -14906,7 +15520,7 @@ msgstr "每一行都可能有 UB"
 msgid "UB only possible inside `unsafe` (and the code it relies on)"
 msgstr "UB 只可能出现在 `unsafe` 内部（以及它所依赖的代码中）"
 
-#: src/systems/unsafe.md:236 src/appendix/cheat-sheet.md:135
+#: src/systems/unsafe.md:236 src/appendix/cheat-sheet.md:137
 msgid "`T*`"
 msgstr ""
 
@@ -14926,11 +15540,11 @@ msgstr "没有基于类型的规则；`&mut` 是独占的，`&` 是只读的"
 msgid "`std::launder`, placement new, uninitialized storage"
 msgstr "`std::launder`、placement new、未初始化存储"
 
-#: src/systems/unsafe.md:238 src/appendix/cheat-sheet.md:136
+#: src/systems/unsafe.md:238 src/appendix/cheat-sheet.md:138
 msgid "`MaybeUninit<T>`"
 msgstr ""
 
-#: src/systems/unsafe.md:239 src/appendix/cheat-sheet.md:137
+#: src/systems/unsafe.md:239 src/appendix/cheat-sheet.md:139
 msgid "`reinterpret_cast`"
 msgstr ""
 
@@ -15547,7 +16161,7 @@ msgstr ""
 msgid "`extern \"C\"` + `__declspec(dllexport)`"
 msgstr ""
 
-#: src/systems/ffi.md:323 src/appendix/cheat-sheet.md:140
+#: src/systems/ffi.md:323 src/appendix/cheat-sheet.md:142
 msgid "`#[unsafe(no_mangle)] pub extern \"C\" fn`"
 msgstr ""
 
@@ -15567,7 +16181,7 @@ msgstr "C++ 类的互操作"
 msgid "cxx, autocxx"
 msgstr "cxx、autocxx"
 
-#: src/systems/ffi.md:326 src/appendix/cheat-sheet.md:141
+#: src/systems/ffi.md:326 src/appendix/cheat-sheet.md:143
 msgid "`char*` strings"
 msgstr "`char*` 字符串"
 
@@ -15648,7 +16262,7 @@ msgstr "derive 宏、属性宏和函数式过程宏；"
 msgid "when to write a macro, and when a generic or `const fn` is better."
 msgstr "什么时候该写宏，什么时候用泛型或 `const fn` 更好。"
 
-#: src/systems/macros.md:18 src/appendix/cheat-sheet.md:119
+#: src/systems/macros.md:18 src/appendix/cheat-sheet.md:121
 msgid "`macro_rules!`"
 msgstr ""
 
@@ -15905,7 +16519,7 @@ msgstr ""
 msgid "`mod` / `use` (no textual inclusion)"
 msgstr "`mod` / `use`（没有文本包含）"
 
-#: src/systems/macros.md:192 src/appendix/cheat-sheet.md:118
+#: src/systems/macros.md:192 src/appendix/cheat-sheet.md:120
 msgid "`#ifdef`"
 msgstr ""
 
@@ -16862,7 +17476,7 @@ msgstr "`std::shared_ptr` + `weak_ptr` 场景图"
 msgid "`Parent(Entity)` component and a propagation system"
 msgstr "`Parent(Entity)` 组件加一个传播系统"
 
-#: src/engine/ecs.md:479 src/appendix/cheat-sheet.md:159
+#: src/engine/ecs.md:479 src/appendix/cheat-sheet.md:161
 msgid "EnTT, flecs"
 msgstr "EnTT、flecs"
 
@@ -17368,7 +17982,7 @@ msgstr ""
 "用 `as` 把浮点数转换为整数会**饱和**：`300.7f32 as u8 == 255`，`f32::NAN as i32 == 0`。在 C++"
 " 中，超出范围的转换是未定义行为。"
 
-#: src/engine/math-and-simd.md:343 src/appendix/cheat-sheet.md:150
+#: src/engine/math-and-simd.md:343 src/appendix/cheat-sheet.md:152
 msgid "glam"
 msgstr "glam"
 
@@ -17380,7 +17994,7 @@ msgstr "nalgebra"
 msgid "`memcpy` struct into a buffer"
 msgstr "把结构体 `memcpy` 到缓冲区"
 
-#: src/engine/math-and-simd.md:345 src/appendix/cheat-sheet.md:151
+#: src/engine/math-and-simd.md:345 src/appendix/cheat-sheet.md:153
 msgid "`bytemuck::cast_slice` on `#[derive(Pod)]` types"
 msgstr "对 `#[derive(Pod)]` 类型使用 `bytemuck::cast_slice`"
 
@@ -18023,7 +18637,7 @@ msgstr "GLFW / WGL / GLX / EGL 上下文"
 msgid "glutin"
 msgstr "glutin"
 
-#: src/engine/opengl.md:435 src/appendix/cheat-sheet.md:153
+#: src/engine/opengl.md:435 src/appendix/cheat-sheet.md:155
 msgid "glad / GLEW"
 msgstr "glad / GLEW"
 
@@ -18140,7 +18754,7 @@ msgid ""
 msgstr "ash 由 `vk.xml` 生成，也就是生成 `vulkan.h` 的同一份注册表。每个函数和结构体都在其中，名字可以预测："
 
 #: src/engine/vulkan.md:23 src/engine/vulkan.md:387
-#: src/appendix/cheat-sheet.md:154
+#: src/appendix/cheat-sheet.md:156
 msgid "ash"
 msgstr "ash"
 
@@ -18671,7 +19285,7 @@ msgid "You want Vulkan concepts but checked, and can accept some overhead"
 msgstr "你想要 Vulkan 的概念但需要检查，并且能接受一些开销"
 
 #: src/engine/vulkan.md:389 src/engine/wgpu.md:29 src/engine/wgpu.md:322
-#: src/appendix/cheat-sheet.md:156
+#: src/appendix/cheat-sheet.md:158
 msgid "wgpu"
 msgstr "wgpu"
 
@@ -18746,11 +19360,11 @@ msgstr "删除队列"
 msgid "Same pattern; `Drop` enqueues"
 msgstr "相同模式；`Drop` 负责入队"
 
-#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:155
+#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:157
 msgid "VMA"
 msgstr "VMA"
 
-#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:155
+#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:157
 msgid "gpu-allocator, vk-mem"
 msgstr "gpu-allocator、vk-mem"
 
@@ -20697,11 +21311,13 @@ msgstr ""
 #: src/engine/game-loop.md:267
 msgid ""
 "The `log` and `tracing` crates are built this way: a global logger set once "
-"at startup, called from anywhere with `log::info!(...)`."
+"at startup, called from anywhere with `log::info!(...)` ([Logging and "
+"diagnostics](../systems/logging.md))."
 msgstr ""
-"`log` 和 `tracing` crate 就是这样构建的：在启动时设置一次全局日志器，然后在任何地方用 `log::info!(...)` 调用。"
+"`log` 和 `tracing` crate 就是这样构建的：在启动时设置一次全局日志器，然后在任何地方用 `log::info!(...)` "
+"调用（[日志与诊断](../systems/logging.md)）。"
 
-#: src/engine/game-loop.md:273
+#: src/engine/game-loop.md:274
 msgid ""
 "Do not reach for `static mut` to port a singleton. If a piece of state is "
 "mutated from many places, the Rust answer is to make those places receive it"
@@ -20712,33 +21328,33 @@ msgstr ""
 "不要为了移植单例而去用 `static mut`。如果一份状态在很多地方被修改，Rust 的答案是让这些地方以参数形式接收它。在 C++ "
 "代码库中这往往是一次大规模重构，但在新的 Rust 代码库中这是默认做法，不需要任何代价，而且它让数据流变得可见，这正是你以后做并行化时所需要的。"
 
-#: src/engine/game-loop.md:281
+#: src/engine/game-loop.md:282
 msgid "Input handling"
 msgstr "输入处理"
 
-#: src/engine/game-loop.md:283
+#: src/engine/game-loop.md:284
 msgid ""
 "winit delivers input as events. Games usually convert them into a per-frame "
 "state snapshot that update code reads:"
 msgstr "winit 以事件的形式传递输入。游戏通常把它们转换为一份每帧的状态快照，供更新代码读取："
 
-#: src/engine/game-loop.md:301
+#: src/engine/game-loop.md:302
 msgid "// insert returns false if already held\n"
 msgstr "// 如果按键已被按住，insert 返回 false\n"
 
-#: src/engine/game-loop.md:318
+#: src/engine/game-loop.md:319
 msgid "// OS key repeat: not a new press\n"
 msgstr "// 操作系统的按键重复：不算新的按下\n"
 
-#: src/engine/game-loop.md:319
+#: src/engine/game-loop.md:320
 msgid "\"x = {}, jump = {}\""
 msgstr ""
 
-#: src/engine/game-loop.md:321
+#: src/engine/game-loop.md:322
 msgid "\"next frame jump = {}\""
 msgstr ""
 
-#: src/engine/game-loop.md:326
+#: src/engine/game-loop.md:327
 msgid ""
 "In winit, keys arrive as `KeyEvent { physical_key, logical_key, state, "
 "repeat, .. }`. Use `physical_key` (a `KeyCode` like `KeyCode::KeyW`, by "
@@ -20751,69 +21367,69 @@ msgstr ""
 "AZERTY 键盘上也能正常工作；文本和快捷键使用 `logical_key`。手柄请使用 [gilrs](https://docs.rs/gilrs)"
 " crate。"
 
-#: src/engine/game-loop.md:335
+#: src/engine/game-loop.md:336
 msgid "SDL / GLFW window and loop"
 msgstr "SDL / GLFW 窗口与循环"
 
-#: src/engine/game-loop.md:335
+#: src/engine/game-loop.md:336
 msgid "winit `EventLoop` + `ApplicationHandler` (or `sdl2`/`glfw` crates)"
 msgstr "winit `EventLoop` + `ApplicationHandler`（或 `sdl2`/`glfw` crate）"
 
-#: src/engine/game-loop.md:336
+#: src/engine/game-loop.md:337
 msgid "`while (!quit) { ... }`"
 msgstr ""
 
-#: src/engine/game-loop.md:336
+#: src/engine/game-loop.md:337
 msgid "`RedrawRequested` + `request_redraw()`, `ControlFlow::Poll`"
 msgstr ""
 
-#: src/engine/game-loop.md:337 src/appendix/cheat-sheet.md:101
+#: src/engine/game-loop.md:338 src/appendix/cheat-sheet.md:101
 msgid "`std::chrono::steady_clock`"
 msgstr ""
 
-#: src/engine/game-loop.md:337 src/appendix/cheat-sheet.md:101
+#: src/engine/game-loop.md:338 src/appendix/cheat-sheet.md:101
 msgid "`std::time::Instant`, `Duration`"
 msgstr ""
 
-#: src/engine/game-loop.md:338
+#: src/engine/game-loop.md:339
 msgid "Singleton `Get()`"
 msgstr "单例 `Get()`"
 
-#: src/engine/game-loop.md:338 src/appendix/cheat-sheet.md:160
+#: src/engine/game-loop.md:339 src/appendix/cheat-sheet.md:162
 msgid "Context passed as a parameter; ECS resources"
 msgstr "以参数传递的上下文；ECS 资源"
 
-#: src/engine/game-loop.md:339 src/appendix/cheat-sheet.md:102
+#: src/engine/game-loop.md:340 src/appendix/cheat-sheet.md:102
 msgid "Function-local `static`"
 msgstr "函数内的 `static`"
 
-#: src/engine/game-loop.md:339 src/appendix/cheat-sheet.md:102
+#: src/engine/game-loop.md:340 src/appendix/cheat-sheet.md:102
 msgid "`OnceLock`, `LazyLock`"
 msgstr ""
 
-#: src/engine/game-loop.md:340
+#: src/engine/game-loop.md:341
 msgid "Global mutable variable"
 msgstr "可变全局变量"
 
-#: src/engine/game-loop.md:340
+#: src/engine/game-loop.md:341
 msgid "Atomic, `Mutex`, or `thread_local!`; `static mut` only with `unsafe`"
 msgstr "原子类型、`Mutex` 或 `thread_local!`；`static mut` 只能配合 `unsafe` 使用"
 
-#: src/engine/game-loop.md:341
+#: src/engine/game-loop.md:342
 msgid "`glfwSwapInterval(1)`"
 msgstr ""
 
-#: src/engine/game-loop.md:341
+#: src/engine/game-loop.md:342
 msgid "`PresentMode::Fifo` (wgpu), swap interval (glutin)"
 msgstr "`PresentMode::Fifo`（wgpu）、交换间隔（glutin）"
 
-#: src/engine/game-loop.md:345
+#: src/engine/game-loop.md:346
 msgid ""
 "Change the simulated frame times in the fixed-timestep example to a 30 Hz "
 "display (`33.3` ms). How many steps run per frame? What happens to `alpha`?"
 msgstr "把固定时间步长示例中的模拟帧时间改为 30 Hz 显示器（`33.3` 毫秒）。每帧运行多少步？`alpha` 会怎样？"
 
-#: src/engine/game-loop.md:347
+#: src/engine/game-loop.md:348
 msgid ""
 "Add a `ctx.time.frame`\\-based cooldown to `Player::update` so the player "
 "can only jump every 30 frames. Which struct holds the \"last jump frame\"?"
@@ -20821,7 +21437,7 @@ msgstr ""
 "给 `Player::update` 添加一个基于 `ctx.time.frame` 的冷却，使玩家每 30 "
 "帧只能跳一次。\"上次跳跃的帧\"应该放在哪个结构体中？"
 
-#: src/engine/game-loop.md:349
+#: src/engine/game-loop.md:350
 msgid ""
 "Write a global frame counter with `AtomicU64`, increment it from two threads"
 " with `std::thread::scope`, and print the total. Then try the same with "
@@ -21978,7 +22594,7 @@ msgstr ""
 msgid "`#[unsafe(no_mangle)] pub extern \"C\" fn` in a `cdylib`"
 msgstr "`cdylib` 中的 `#[unsafe(no_mangle)] pub extern \"C\" fn`"
 
-#: src/engine/hot-reload-and-plugins.md:254 src/appendix/cheat-sheet.md:144
+#: src/engine/hot-reload-and-plugins.md:254 src/appendix/cheat-sheet.md:146
 msgid "`LoadLibrary` / `dlopen`"
 msgstr ""
 
@@ -22014,7 +22630,7 @@ msgstr "subsecond"
 msgid "sol2 / LuaBridge"
 msgstr "sol2 / LuaBridge"
 
-#: src/engine/hot-reload-and-plugins.md:258 src/appendix/cheat-sheet.md:162
+#: src/engine/hot-reload-and-plugins.md:258 src/appendix/cheat-sheet.md:164
 msgid "mlua"
 msgstr "mlua"
 
@@ -22268,9 +22884,9 @@ msgstr "索引前先限制包围盒"
 msgid "Safe indexing that cannot panic"
 msgstr "不会 panic 的安全索引"
 
-#: src/engine/case-study.md:193 src/appendix/cheat-sheet.md:130
-#: src/appendix/cheat-sheet.md:131 src/appendix/cheat-sheet.md:132
-#: src/appendix/cheat-sheet.md:133
+#: src/engine/case-study.md:193 src/appendix/cheat-sheet.md:132
+#: src/appendix/cheat-sheet.md:133 src/appendix/cheat-sheet.md:134
+#: src/appendix/cheat-sheet.md:135
 msgid "[Memory and performance](../systems/memory-and-performance.md)"
 msgstr "[内存与性能](../systems/memory-and-performance.md)"
 
@@ -22641,8 +23257,8 @@ msgstr "对象池 + 裸指针"
 msgid "Arena + generational `Handle<T>`"
 msgstr "arena + 带代数的 `Handle<T>`"
 
-#: src/appendix/cheat-sheet.md:48 src/appendix/cheat-sheet.md:134
-#: src/appendix/cheat-sheet.md:172
+#: src/appendix/cheat-sheet.md:48 src/appendix/cheat-sheet.md:136
+#: src/appendix/cheat-sheet.md:174
 msgid "[Handles and arenas](../engine/handles-and-arenas.md)"
 msgstr "[句柄与 arena](../engine/handles-and-arenas.md)"
 
@@ -22820,7 +23436,7 @@ msgstr ""
 
 #: src/appendix/cheat-sheet.md:94 src/appendix/cheat-sheet.md:95
 #: src/appendix/cheat-sheet.md:99 src/appendix/cheat-sheet.md:100
-#: src/appendix/cheat-sheet.md:175 src/appendix/cheat-sheet.md:176
+#: src/appendix/cheat-sheet.md:177 src/appendix/cheat-sheet.md:178
 msgid "[Concurrency](../systems/concurrency.md)"
 msgstr "[并发](../systems/concurrency.md)"
 
@@ -22854,8 +23470,8 @@ msgid "`rayon`: `par_iter()`"
 msgstr ""
 
 #: src/appendix/cheat-sheet.md:101 src/appendix/cheat-sheet.md:102
-#: src/appendix/cheat-sheet.md:152 src/appendix/cheat-sheet.md:160
-#: src/appendix/cheat-sheet.md:177
+#: src/appendix/cheat-sheet.md:154 src/appendix/cheat-sheet.md:162
+#: src/appendix/cheat-sheet.md:179
 msgid "[Game loop](../engine/game-loop.md)"
 msgstr "[游戏循环](../engine/game-loop.md)"
 
@@ -22871,7 +23487,7 @@ msgstr "CMake + vcpkg/Conan"
 msgid "Cargo + crates.io"
 msgstr "Cargo + crates.io"
 
-#: src/appendix/cheat-sheet.md:108 src/appendix/cheat-sheet.md:112
+#: src/appendix/cheat-sheet.md:108 src/appendix/cheat-sheet.md:114
 msgid "[Cargo](../foundations/cargo.md)"
 msgstr "[Cargo](../foundations/cargo.md)"
 
@@ -22889,337 +23505,353 @@ msgid "`cargo audit`, `cargo deny check`"
 msgstr ""
 
 #: src/appendix/cheat-sheet.md:112
+msgid "spdlog, glog, `UE_LOG`"
+msgstr "spdlog、glog、`UE_LOG`"
+
+#: src/appendix/cheat-sheet.md:112
+msgid "`log` or `tracing`, with a backend chosen in `main`"
+msgstr "`log` 或 `tracing`，在 `main` 中选择后端"
+
+#: src/appendix/cheat-sheet.md:112 src/appendix/cheat-sheet.md:113
+msgid "[Logging](../systems/logging.md)"
+msgstr "[日志](../systems/logging.md)"
+
+#: src/appendix/cheat-sheet.md:113
+msgid "`tracing` spans, Tracy via `tracing-tracy`"
+msgstr "`tracing` 的 span，通过 `tracing-tracy` 接入 Tracy"
+
+#: src/appendix/cheat-sheet.md:114
 msgid "Debug / Release"
 msgstr "Debug / Release"
 
-#: src/appendix/cheat-sheet.md:112
+#: src/appendix/cheat-sheet.md:114
 msgid "`cargo build` / `cargo build --release` (profiles)"
 msgstr "`cargo build` / `cargo build --release`（profile）"
 
-#: src/appendix/cheat-sheet.md:113
+#: src/appendix/cheat-sheet.md:115
 msgid "Workspace members"
 msgstr "工作空间成员"
 
-#: src/appendix/cheat-sheet.md:113 src/appendix/cheat-sheet.md:114
-#: src/appendix/cheat-sheet.md:161
+#: src/appendix/cheat-sheet.md:115 src/appendix/cheat-sheet.md:116
+#: src/appendix/cheat-sheet.md:163
 msgid "[Assets and build](../engine/assets-and-build.md)"
 msgstr "[资源与构建](../engine/assets-and-build.md)"
 
-#: src/appendix/cheat-sheet.md:114
+#: src/appendix/cheat-sheet.md:116
 msgid "`add_custom_command`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:116
+#: src/appendix/cheat-sheet.md:118
 msgid "`#include \"x.h\"`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:116
+#: src/appendix/cheat-sheet.md:118
 msgid "`mod x;` + `use`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:117
+#: src/appendix/cheat-sheet.md:119
 msgid "`public` / `private`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:117
+#: src/appendix/cheat-sheet.md:119
 msgid "`pub` / private by default"
 msgstr "`pub` / 默认私有"
 
-#: src/appendix/cheat-sheet.md:118
+#: src/appendix/cheat-sheet.md:120
 msgid "`#[cfg(...)]`, Cargo features"
 msgstr "`#[cfg(...)]`、Cargo 特性"
 
-#: src/appendix/cheat-sheet.md:119
+#: src/appendix/cheat-sheet.md:121
 msgid "`#define` macros"
 msgstr "`#define` 宏"
 
-#: src/appendix/cheat-sheet.md:120
+#: src/appendix/cheat-sheet.md:122
 msgid "Reflection macros, code generators"
 msgstr "反射宏、代码生成器"
 
-#: src/appendix/cheat-sheet.md:120
+#: src/appendix/cheat-sheet.md:122
 msgid "`#[derive(...)]`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:121
+#: src/appendix/cheat-sheet.md:123
 msgid "`#[test]`, `cargo test`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:121 src/appendix/cheat-sheet.md:122
 #: src/appendix/cheat-sheet.md:123 src/appendix/cheat-sheet.md:124
+#: src/appendix/cheat-sheet.md:125 src/appendix/cheat-sheet.md:126
 msgid "[Testing](../systems/testing-and-tooling.md)"
 msgstr "[测试](../systems/testing-and-tooling.md)"
 
-#: src/appendix/cheat-sheet.md:123
+#: src/appendix/cheat-sheet.md:125
 msgid "`cargo fmt` / `cargo clippy`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:124
+#: src/appendix/cheat-sheet.md:126
 msgid "`cargo doc` (examples are tested)"
 msgstr "`cargo doc`（示例会被测试）"
 
-#: src/appendix/cheat-sheet.md:126
+#: src/appendix/cheat-sheet.md:128
 msgid "Low level"
 msgstr "底层"
 
-#: src/appendix/cheat-sheet.md:130
+#: src/appendix/cheat-sheet.md:132
 msgid "`size_of::<T>()`, `align_of::<T>()`, `offset_of!`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:134
+#: src/appendix/cheat-sheet.md:136
 msgid "Arena / linear allocator"
 msgstr "arena / 线性分配器"
 
-#: src/appendix/cheat-sheet.md:134
+#: src/appendix/cheat-sheet.md:136
 msgid "`bumpalo`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:135
+#: src/appendix/cheat-sheet.md:137
 msgid "`*const T`, `*mut T` (deref in `unsafe`)"
 msgstr "`*const T`、`*mut T`（在 `unsafe` 中解引用）"
 
-#: src/appendix/cheat-sheet.md:136
+#: src/appendix/cheat-sheet.md:138
 msgid "Uninitialized storage"
 msgstr "未初始化的存储"
 
-#: src/appendix/cheat-sheet.md:137
+#: src/appendix/cheat-sheet.md:139
 msgid "Pointer `as` casts; `bytemuck` for safe byte views"
 msgstr "指针 `as` 转换；用 `bytemuck` 获得安全的字节视图"
 
-#: src/appendix/cheat-sheet.md:138
+#: src/appendix/cheat-sheet.md:140
 msgid "ASan / UBSan"
 msgstr "ASan / UBSan"
 
-#: src/appendix/cheat-sheet.md:138
+#: src/appendix/cheat-sheet.md:140
 msgid "Miri"
 msgstr "Miri"
 
-#: src/appendix/cheat-sheet.md:139
+#: src/appendix/cheat-sheet.md:141
 msgid "`extern \"C\"` declarations"
 msgstr "`extern \"C\"` 声明"
 
-#: src/appendix/cheat-sheet.md:139
+#: src/appendix/cheat-sheet.md:141
 msgid "`unsafe extern \"C\" { ... }`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:139 src/appendix/cheat-sheet.md:140
 #: src/appendix/cheat-sheet.md:141 src/appendix/cheat-sheet.md:142
+#: src/appendix/cheat-sheet.md:143 src/appendix/cheat-sheet.md:144
 msgid "[FFI](../systems/ffi.md)"
 msgstr "[FFI](../systems/ffi.md)"
 
-#: src/appendix/cheat-sheet.md:140
+#: src/appendix/cheat-sheet.md:142
 msgid "Exporting a C API"
 msgstr "导出 C API"
 
-#: src/appendix/cheat-sheet.md:141
+#: src/appendix/cheat-sheet.md:143
 msgid "`CStr`, `CString`, `c\"...\"`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:142
+#: src/appendix/cheat-sheet.md:144
 msgid "Headers → bindings"
 msgstr "头文件 → 绑定"
 
-#: src/appendix/cheat-sheet.md:142
+#: src/appendix/cheat-sheet.md:144
 msgid "bindgen; cbindgen for the reverse"
 msgstr "bindgen；反方向用 cbindgen"
 
-#: src/appendix/cheat-sheet.md:143
+#: src/appendix/cheat-sheet.md:145
 msgid "`<immintrin.h>`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:143
+#: src/appendix/cheat-sheet.md:145
 msgid "`std::arch` + `#[target_feature]`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:143 src/appendix/cheat-sheet.md:150
-#: src/appendix/cheat-sheet.md:151
+#: src/appendix/cheat-sheet.md:145 src/appendix/cheat-sheet.md:152
+#: src/appendix/cheat-sheet.md:153
 msgid "[Math and SIMD](../engine/math-and-simd.md)"
 msgstr "[数学与 SIMD](../engine/math-and-simd.md)"
 
-#: src/appendix/cheat-sheet.md:144
+#: src/appendix/cheat-sheet.md:146
 msgid "`libloading`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:144 src/appendix/cheat-sheet.md:162
+#: src/appendix/cheat-sheet.md:146 src/appendix/cheat-sheet.md:164
 msgid "[Hot reloading](../engine/hot-reload-and-plugins.md)"
 msgstr "[热重载](../engine/hot-reload-and-plugins.md)"
 
-#: src/appendix/cheat-sheet.md:146
+#: src/appendix/cheat-sheet.md:148
 msgid "Graphics and engine"
 msgstr "图形与引擎"
 
-#: src/appendix/cheat-sheet.md:150
+#: src/appendix/cheat-sheet.md:152
 msgid "GLM / DirectXMath"
 msgstr "GLM / DirectXMath"
 
-#: src/appendix/cheat-sheet.md:151
+#: src/appendix/cheat-sheet.md:153
 msgid "`memcpy` a struct into a GPU buffer"
 msgstr "用 `memcpy` 把结构体复制到 GPU 缓冲区"
 
-#: src/appendix/cheat-sheet.md:152
+#: src/appendix/cheat-sheet.md:154
 msgid "GLFW / SDL"
 msgstr "GLFW / SDL"
 
-#: src/appendix/cheat-sheet.md:152
+#: src/appendix/cheat-sheet.md:154
 msgid "winit (`ApplicationHandler`)"
 msgstr "winit（`ApplicationHandler`）"
 
-#: src/appendix/cheat-sheet.md:153
+#: src/appendix/cheat-sheet.md:155
 msgid "`gl`, `glow`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:153
+#: src/appendix/cheat-sheet.md:155
 msgid "[OpenGL](../engine/opengl.md)"
 msgstr "[OpenGL](../engine/opengl.md)"
 
-#: src/appendix/cheat-sheet.md:154
+#: src/appendix/cheat-sheet.md:156
 msgid "`vulkan.h` / volk"
 msgstr "`vulkan.h` / volk"
 
-#: src/appendix/cheat-sheet.md:154 src/appendix/cheat-sheet.md:155
+#: src/appendix/cheat-sheet.md:156 src/appendix/cheat-sheet.md:157
 msgid "[Vulkan](../engine/vulkan.md)"
 msgstr "[Vulkan](../engine/vulkan.md)"
 
-#: src/appendix/cheat-sheet.md:156
+#: src/appendix/cheat-sheet.md:158
 msgid "Dawn, bgfx, sokol_gfx"
 msgstr "Dawn、bgfx、sokol_gfx"
 
-#: src/appendix/cheat-sheet.md:156 src/appendix/cheat-sheet.md:158
+#: src/appendix/cheat-sheet.md:158 src/appendix/cheat-sheet.md:160
 msgid "[wgpu](../engine/wgpu.md)"
 msgstr "[wgpu](../engine/wgpu.md)"
 
-#: src/appendix/cheat-sheet.md:157
+#: src/appendix/cheat-sheet.md:159
 msgid "`openxr.h`, OpenXR-Hpp"
 msgstr "`openxr.h`、OpenXR-Hpp"
 
-#: src/appendix/cheat-sheet.md:157
+#: src/appendix/cheat-sheet.md:159
 msgid "`openxr-sys`, `openxr`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:157
+#: src/appendix/cheat-sheet.md:159
 msgid "[OpenXR](../engine/openxr.md)"
 msgstr "[OpenXR](../engine/openxr.md)"
 
-#: src/appendix/cheat-sheet.md:158
+#: src/appendix/cheat-sheet.md:160
 msgid "glslc / dxc"
 msgstr "glslc / dxc"
 
-#: src/appendix/cheat-sheet.md:158
+#: src/appendix/cheat-sheet.md:160
 msgid "naga, shaderc, from `build.rs`"
 msgstr "naga、shaderc，在 `build.rs` 中调用"
 
-#: src/appendix/cheat-sheet.md:159
+#: src/appendix/cheat-sheet.md:161
 msgid "hecs, bevy_ecs"
 msgstr "hecs、bevy_ecs"
 
-#: src/appendix/cheat-sheet.md:159 src/appendix/cheat-sheet.md:170
-#: src/appendix/cheat-sheet.md:173
+#: src/appendix/cheat-sheet.md:161 src/appendix/cheat-sheet.md:172
+#: src/appendix/cheat-sheet.md:175
 msgid "[ECS](../engine/ecs.md)"
 msgstr "[ECS](../engine/ecs.md)"
 
-#: src/appendix/cheat-sheet.md:160
+#: src/appendix/cheat-sheet.md:162
 msgid "Singletons"
 msgstr "单例"
 
-#: src/appendix/cheat-sheet.md:161
+#: src/appendix/cheat-sheet.md:163
 msgid "Custom serialization / reflection"
 msgstr "自定义序列化 / 反射"
 
-#: src/appendix/cheat-sheet.md:161
+#: src/appendix/cheat-sheet.md:163
 msgid "serde"
 msgstr "serde"
 
-#: src/appendix/cheat-sheet.md:162
+#: src/appendix/cheat-sheet.md:164
 msgid "sol2 (Lua)"
 msgstr "sol2（Lua）"
 
-#: src/appendix/cheat-sheet.md:164
+#: src/appendix/cheat-sheet.md:166
 msgid "When the borrow checker says no"
 msgstr "当借用检查器说不行时"
 
-#: src/appendix/cheat-sheet.md:166
+#: src/appendix/cheat-sheet.md:168
 msgid "Symptom"
 msgstr "症状"
 
-#: src/appendix/cheat-sheet.md:168
+#: src/appendix/cheat-sheet.md:170
 msgid "\"cannot borrow as mutable because it is also borrowed as immutable\""
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:168
+#: src/appendix/cheat-sheet.md:170
 msgid "Shorten the first borrow: copy the value out, or finish using it first"
 msgstr "缩短第一个借用：把值复制出来，或者先用完它"
 
-#: src/appendix/cheat-sheet.md:169
+#: src/appendix/cheat-sheet.md:171
 msgid "Pushing to a `Vec` while holding a reference into it"
 msgstr "持有 `Vec` 内部引用的同时向它 push"
 
-#: src/appendix/cheat-sheet.md:169
+#: src/appendix/cheat-sheet.md:171
 msgid "Hold an index instead of a reference"
 msgstr "持有索引而不是引用"
 
-#: src/appendix/cheat-sheet.md:170
+#: src/appendix/cheat-sheet.md:172
 msgid "Two `&mut` into the same struct"
 msgstr "对同一个结构体取两个 `&mut`"
 
-#: src/appendix/cheat-sheet.md:170
+#: src/appendix/cheat-sheet.md:172
 msgid ""
 "Borrow separate fields (split borrows); destructure `let S { a, b } = &mut "
 "s;`"
 msgstr "借用不同的字段（拆分借用）；解构 `let S { a, b } = &mut s;`"
 
-#: src/appendix/cheat-sheet.md:171
+#: src/appendix/cheat-sheet.md:173
 msgid "Two `&mut` into the same slice"
 msgstr "对同一个切片取两个 `&mut`"
 
-#: src/appendix/cheat-sheet.md:171
+#: src/appendix/cheat-sheet.md:173
 msgid "`split_at_mut`, `chunks_mut`, `iter_mut`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:172
+#: src/appendix/cheat-sheet.md:174
 msgid "A struct wants to store a reference to another object"
 msgstr "结构体想存储对另一个对象的引用"
 
-#: src/appendix/cheat-sheet.md:172
+#: src/appendix/cheat-sheet.md:174
 msgid "Store a handle or index; or own the data"
 msgstr "存储句柄或索引；或者拥有数据"
 
-#: src/appendix/cheat-sheet.md:173
+#: src/appendix/cheat-sheet.md:175
 msgid "Objects pointing at each other (graph, parent links)"
 msgstr "互相指向的对象（图、父链接）"
 
-#: src/appendix/cheat-sheet.md:173
+#: src/appendix/cheat-sheet.md:175
 msgid "Arena + handles; `Rc` + `Weak` only if ownership is truly shared"
 msgstr "arena + 句柄；只有在所有权确实共享时才用 `Rc` + `Weak`"
 
-#: src/appendix/cheat-sheet.md:174
+#: src/appendix/cheat-sheet.md:176
 msgid "\"borrowed value does not live long enough\""
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:174
+#: src/appendix/cheat-sheet.md:176
 msgid "Move the owner to an outer scope, or return an owned value"
 msgstr "把所有者移到外层作用域，或者返回一个拥有所有权的值"
 
-#: src/appendix/cheat-sheet.md:175
+#: src/appendix/cheat-sheet.md:177
 msgid "\"`Rc<...>` cannot be sent between threads safely\""
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:175
+#: src/appendix/cheat-sheet.md:177
 msgid "`Arc` (and `Mutex` for mutation)"
 msgstr "`Arc`（需要修改时加 `Mutex`）"
 
-#: src/appendix/cheat-sheet.md:176
+#: src/appendix/cheat-sheet.md:178
 msgid "A closure passed to `thread::spawn` borrows a local"
 msgstr "传给 `thread::spawn` 的闭包借用了局部变量"
 
-#: src/appendix/cheat-sheet.md:176
+#: src/appendix/cheat-sheet.md:178
 msgid "`move` the data in, or use `thread::scope`"
 msgstr "用 `move` 把数据移进去，或者使用 `thread::scope`"
 
-#: src/appendix/cheat-sheet.md:177
+#: src/appendix/cheat-sheet.md:179
 msgid "Global mutable state"
 msgstr "可变全局状态"
 
-#: src/appendix/cheat-sheet.md:177
+#: src/appendix/cheat-sheet.md:179
 msgid "Pass a context; or `Mutex`, atomics, `OnceLock`"
 msgstr "传递上下文；或者使用 `Mutex`、原子类型、`OnceLock`"
 

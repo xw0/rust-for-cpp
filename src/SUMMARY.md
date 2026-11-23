@@ -30,6 +30,7 @@
 # Part II: Tools and the ecosystem
 
 - [Testing, benchmarks and tooling](systems/testing-and-tooling.md)
+- [Logging and diagnostics](systems/logging.md)
 - [crates.io and the ecosystem](systems/crates-io.md)
 
 # Part III: Systems programming

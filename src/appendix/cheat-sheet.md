@@ -109,6 +109,8 @@ syntax](../intro/syntax.md).
 | `third_party/` with local patches | `[patch.crates-io]` pointing at a fork | [crates.io](../systems/crates-io.md) |
 | Checked-in third-party sources | `cargo vendor` | [crates.io](../systems/crates-io.md) |
 | Manual CVE and license review | `cargo audit`, `cargo deny check` | [crates.io](../systems/crates-io.md) |
+| spdlog, glog, `UE_LOG` | `log` or `tracing`, with a backend chosen in `main` | [Logging](../systems/logging.md) |
+| Scoped profiler markers | `tracing` spans, Tracy via `tracing-tracy` | [Logging](../systems/logging.md) |
 | Debug / Release | `cargo build` / `cargo build --release` (profiles) | [Cargo](../foundations/cargo.md) |
 | `add_subdirectory` | Workspace members | [Assets and build](../engine/assets-and-build.md) |
 | `add_custom_command` | `build.rs` | [Assets and build](../engine/assets-and-build.md) |

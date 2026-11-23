@@ -265,7 +265,8 @@ profiler, an allocation counter), wrap them in a synchronization type:
   allocator: `thread_local! { static SCRATCH: RefCell<Vec<u8>> = RefCell::new(Vec::new()); }`
 
 The `log` and `tracing` crates are built this way: a global logger set once at
-startup, called from anywhere with `log::info!(...)`.
+startup, called from anywhere with `log::info!(...)`
+([Logging and diagnostics](../systems/logging.md)).
 
 <div class="rfc-callout rfc-trap">
 <span class="rfc-callout-title">C++ habit to unlearn</span>

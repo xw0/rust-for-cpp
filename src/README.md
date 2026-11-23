@@ -48,8 +48,8 @@ Rust borrows an idea from modern C++, this book explains the idea from scratch.
 - **Part I: The language, from C++**: Cargo, types, ownership, borrowing,
   lifetimes, enums, errors, traits, collections, closures, smart pointers and
   modules.
-- **Part II: Tools and the ecosystem**: testing, benchmarks and tooling, and
-  crates.io.
+- **Part II: Tools and the ecosystem**: testing, benchmarks and tooling,
+  logging and diagnostics, and crates.io.
 - **Part III: Systems programming**: concurrency, networking and RPC, memory
   layout and performance, `unsafe`, FFI with C and C++, macros.
 - **Part IV: Graphics and engine programming**: handles and arenas, ECS,
