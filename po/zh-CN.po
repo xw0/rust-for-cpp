@@ -41,180 +41,184 @@ msgstr "简介"
 msgid "Getting started"
 msgstr "入门"
 
-#: src/SUMMARY.md:8 src/intro/how-to-read.md:1
+#: src/SUMMARY.md:8 src/intro/why-rust.md:1
+msgid "Why Rust, and when not to"
+msgstr "为什么选择 Rust，以及什么时候不选"
+
+#: src/SUMMARY.md:9 src/intro/how-to-read.md:1
 msgid "How to read this book"
 msgstr "如何阅读本书"
 
-#: src/SUMMARY.md:9 src/intro/setup.md:1
+#: src/SUMMARY.md:10 src/intro/setup.md:1
 msgid "Toolchain setup"
 msgstr "工具链安装"
 
-#: src/SUMMARY.md:10 src/intro/syntax.md:1
+#: src/SUMMARY.md:11 src/intro/syntax.md:1
 msgid "Reading Rust syntax"
 msgstr "读懂 Rust 语法"
 
-#: src/SUMMARY.md:12
+#: src/SUMMARY.md:13
 msgid "Part I: The language, from C++"
 msgstr "第一部分：从 C++ 出发学习语言"
 
-#: src/SUMMARY.md:14 src/foundations/cargo.md:1
+#: src/SUMMARY.md:15 src/foundations/cargo.md:1
 msgid "Cargo, crates and the build"
 msgstr "Cargo、crate 与构建"
 
-#: src/SUMMARY.md:15 src/foundations/modules.md:1
+#: src/SUMMARY.md:16 src/foundations/modules.md:1
 #: src/foundations/modules.md:68
 msgid "Modules and files"
 msgstr "模块与文件"
 
-#: src/SUMMARY.md:16 src/foundations/values-and-types.md:1
+#: src/SUMMARY.md:17 src/foundations/values-and-types.md:1
 msgid "Values, types and layout"
 msgstr "值、类型与内存布局"
 
-#: src/SUMMARY.md:17 src/foundations/ownership.md:1
+#: src/SUMMARY.md:18 src/foundations/ownership.md:1
 msgid "Ownership and moves"
 msgstr "所有权与移动"
 
-#: src/SUMMARY.md:18 src/foundations/borrowing.md:1
+#: src/SUMMARY.md:19 src/foundations/borrowing.md:1
 msgid "Borrowing and references"
 msgstr "借用与引用"
 
-#: src/SUMMARY.md:19 src/intro/syntax.md:415 src/foundations/lifetimes.md:1
+#: src/SUMMARY.md:20 src/intro/syntax.md:415 src/foundations/lifetimes.md:1
 msgid "Lifetimes"
 msgstr "生命周期"
 
-#: src/SUMMARY.md:20 src/foundations/enums-and-match.md:1
+#: src/SUMMARY.md:21 src/foundations/enums-and-match.md:1
 msgid "Enums and pattern matching"
 msgstr "枚举与模式匹配"
 
-#: src/SUMMARY.md:21 src/foundations/errors.md:1
+#: src/SUMMARY.md:22 src/foundations/errors.md:1
 msgid "Error handling"
 msgstr "错误处理"
 
-#: src/SUMMARY.md:22 src/foundations/traits-and-generics.md:1
+#: src/SUMMARY.md:23 src/foundations/traits-and-generics.md:1
 msgid "Traits and generics"
 msgstr "Trait 与泛型"
 
-#: src/SUMMARY.md:23 src/foundations/operators-and-conversions.md:1
+#: src/SUMMARY.md:24 src/foundations/operators-and-conversions.md:1
 msgid "Operator overloading and conversions"
 msgstr "运算符重载与类型转换"
 
-#: src/SUMMARY.md:24 src/foundations/collections.md:1
+#: src/SUMMARY.md:25 src/foundations/collections.md:1
 msgid "Collections and strings"
 msgstr "集合与字符串"
 
-#: src/SUMMARY.md:25 src/foundations/closures-and-iterators.md:1
+#: src/SUMMARY.md:26 src/foundations/closures-and-iterators.md:1
 msgid "Closures and iterators"
 msgstr "闭包与迭代器"
 
-#: src/SUMMARY.md:26 src/foundations/smart-pointers.md:1
+#: src/SUMMARY.md:27 src/foundations/smart-pointers.md:1
 msgid "Smart pointers and interior mutability"
 msgstr "智能指针与内部可变性"
 
-#: src/SUMMARY.md:27 src/foundations/project-organization.md:1
+#: src/SUMMARY.md:28 src/foundations/project-organization.md:1
 msgid "Project organization"
 msgstr "项目组织"
 
-#: src/SUMMARY.md:29
+#: src/SUMMARY.md:30
 msgid "Part II: Tools and the ecosystem"
 msgstr "第二部分：工具与生态"
 
-#: src/SUMMARY.md:31 src/systems/testing-and-tooling.md:1
+#: src/SUMMARY.md:32 src/systems/testing-and-tooling.md:1
 msgid "Testing, benchmarks and tooling"
 msgstr "测试、基准测试与工具"
 
-#: src/SUMMARY.md:32 src/systems/crates-io.md:1
+#: src/SUMMARY.md:33 src/systems/crates-io.md:1
 msgid "crates.io and the ecosystem"
 msgstr "crates.io 与生态"
 
-#: src/SUMMARY.md:34
+#: src/SUMMARY.md:35
 msgid "Part III: Systems programming"
 msgstr "第三部分：系统编程"
 
-#: src/SUMMARY.md:36 src/systems/concurrency.md:1
+#: src/SUMMARY.md:37 src/systems/concurrency.md:1
 msgid "Threads, locks and Send/Sync"
 msgstr "线程、锁与 Send/Sync"
 
-#: src/SUMMARY.md:37 src/systems/networking.md:1
+#: src/SUMMARY.md:38 src/systems/networking.md:1
 msgid "Networking, async and RPC"
 msgstr "网络、异步与 RPC"
 
-#: src/SUMMARY.md:38 src/systems/memory-and-performance.md:1
+#: src/SUMMARY.md:39 src/systems/memory-and-performance.md:1
 msgid "Memory layout and performance"
 msgstr "内存布局与性能"
 
-#: src/SUMMARY.md:39 src/systems/unsafe.md:1
+#: src/SUMMARY.md:40 src/systems/unsafe.md:1
 msgid "Unsafe Rust"
 msgstr "Unsafe Rust"
 
-#: src/SUMMARY.md:40 src/systems/ffi.md:1
+#: src/SUMMARY.md:41 src/systems/ffi.md:1
 msgid "FFI with C and C++"
 msgstr "与 C 和 C++ 的 FFI"
 
-#: src/SUMMARY.md:41 src/systems/macros.md:1
+#: src/SUMMARY.md:42 src/systems/macros.md:1
 msgid "Macros"
 msgstr "宏"
 
-#: src/SUMMARY.md:43
+#: src/SUMMARY.md:44
 msgid "Part IV: Graphics and engine programming"
 msgstr "第四部分：图形与引擎编程"
 
-#: src/SUMMARY.md:45 src/engine/handles-and-arenas.md:1
+#: src/SUMMARY.md:46 src/engine/handles-and-arenas.md:1
 msgid "Handles and arenas instead of pointers"
 msgstr "用句柄和 Arena 代替指针"
 
-#: src/SUMMARY.md:46 src/engine/ecs.md:1
+#: src/SUMMARY.md:47 src/engine/ecs.md:1
 msgid "ECS and the borrow checker"
 msgstr "ECS 与借用检查器"
 
-#: src/SUMMARY.md:47
+#: src/SUMMARY.md:48
 msgid "Math and SIMD"
 msgstr "数学库与 SIMD"
 
-#: src/SUMMARY.md:48 src/engine/opengl.md:1
+#: src/SUMMARY.md:49 src/engine/opengl.md:1
 msgid "OpenGL from Rust"
 msgstr "在 Rust 中使用 OpenGL"
 
-#: src/SUMMARY.md:49 src/engine/vulkan.md:1
+#: src/SUMMARY.md:50 src/engine/vulkan.md:1
 msgid "Vulkan with ash"
 msgstr "使用 ash 调用 Vulkan"
 
-#: src/SUMMARY.md:50
+#: src/SUMMARY.md:51
 msgid "Portable graphics with wgpu"
 msgstr "使用 wgpu 实现跨平台图形"
 
-#: src/SUMMARY.md:51 src/engine/openxr.md:1
+#: src/SUMMARY.md:52 src/engine/openxr.md:1
 msgid "VR and AR with OpenXR"
 msgstr "使用 OpenXR 开发 VR 与 AR"
 
-#: src/SUMMARY.md:52
+#: src/SUMMARY.md:53
 msgid "Windows, input and the game loop"
 msgstr "窗口、输入与游戏循环"
 
-#: src/SUMMARY.md:53
+#: src/SUMMARY.md:54
 msgid "Assets, shaders and build scripts"
 msgstr "资源、着色器与构建脚本"
 
-#: src/SUMMARY.md:54 src/engine/hot-reload-and-plugins.md:1
+#: src/SUMMARY.md:55 src/engine/hot-reload-and-plugins.md:1
 msgid "Hot reloading and plugins"
 msgstr "热重载与插件"
 
-#: src/SUMMARY.md:55 src/engine/case-study.md:1
+#: src/SUMMARY.md:56 src/engine/case-study.md:1
 msgid "Case study: a small renderer"
 msgstr "案例：一个小型渲染器"
 
-#: src/SUMMARY.md:57
+#: src/SUMMARY.md:58
 msgid "Appendices"
 msgstr "附录"
 
-#: src/SUMMARY.md:59 src/appendix/cheat-sheet.md:1
+#: src/SUMMARY.md:60 src/appendix/cheat-sheet.md:1
 msgid "C++ to Rust cheat sheet"
 msgstr "C++ 到 Rust 速查表"
 
-#: src/SUMMARY.md:60 src/appendix/further-reading.md:1
+#: src/SUMMARY.md:61 src/appendix/further-reading.md:1
 msgid "Further reading"
 msgstr "延伸阅读"
 
-#: src/SUMMARY.md:61 src/appendix/contributing.md:1
+#: src/SUMMARY.md:62 src/appendix/contributing.md:1
 msgid "Contributing and translating"
 msgstr "参与贡献与翻译"
 
@@ -433,6 +437,335 @@ msgstr ""
 "正文和示意图采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) "
 "许可：你可以复制、翻译、改编和再发布（包括商业用途），只要注明出自本书并附上链接。代码（示例和网站脚本）采用 [MIT "
 "许可证](https://opensource.org/license/mit)。参见[参与贡献与翻译](appendix/contributing.md)。"
+
+#: src/intro/why-rust.md:3
+msgid ""
+"Rust is not a better C++ in every respect, and this book does not pretend it"
+" is. It makes one trade very clearly: you accept more rules at compile time,"
+" and in exchange a whole class of bugs that C++ leaves to code review, "
+"sanitizers and luck becomes impossible in safe code. Whether the trade is "
+"worth it depends on what you are building. This chapter sets out the "
+"benefits, the costs and the situations where each wins."
+msgstr ""
+"Rust 并不是在所有方面都比 C++ 更好，本书也不假装如此。它做了一个非常明确的取舍：你在编译期接受更多规则，换来的是，一整类在 C++ "
+"里只能靠代码审查、sanitizer 和运气来防范的 bug，在安全的 Rust "
+"代码中根本不可能出现。这个取舍值不值得，取决于你在做什么。本章列出它的好处、代价，以及各自占上风的场景。"
+
+#: src/intro/why-rust.md:10
+msgid "What you gain over C++"
+msgstr "相比 C++，你得到什么"
+
+#: src/intro/why-rust.md:12
+msgid ""
+"**Memory safety without a garbage collector.** Use-after-free, dangling "
+"references, iterator invalidation, double frees and buffer overruns are "
+"compile errors or checked panics in safe Rust, not undefined behavior "
+"([Ownership](../foundations/ownership.md), "
+"[Borrowing](../foundations/borrowing.md)). There is no GC and no runtime to "
+"speak of, so the performance model is the one you know from C++: values on "
+"the stack, explicit heap allocation, zero-cost abstractions, and no pauses."
+msgstr ""
+"**不需要垃圾回收的内存安全。** 在安全的 Rust 中，释放后使用、悬垂引用、迭代器失效、重复释放和缓冲区越界，要么是编译错误，要么是受检查的 "
+"panic，而不是未定义行为（[所有权](../foundations/ownership.md)、[借用](../foundations/borrowing.md)）。没有"
+" GC，也几乎没有运行时，所以性能模型和你在 C++ 中熟悉的一样：值放在栈上，堆分配是显式的，抽象是零成本的，也没有停顿。"
+
+#: src/intro/why-rust.md:19
+msgid ""
+"**Thread safety checked by the compiler.** Sharing data between threads "
+"without synchronization does not compile. `Send` and `Sync` make \"this type"
+" must stay on the render thread\" a rule the compiler enforces rather than a"
+" comment ([Threads, locks and Send/Sync](../systems/concurrency.md))."
+msgstr ""
+"**由编译器检查的线程安全。** 不加同步就在线程之间共享数据，代码无法编译。`Send` 和 `Sync` "
+"让\"这个类型只能留在渲染线程上\"成为编译器强制执行的规则，而不只是一句注释（[线程、锁与 "
+"Send/Sync](../systems/concurrency.md)）。"
+
+#: src/intro/why-rust.md:23
+msgid ""
+"**`unsafe` is explicit and local.** When you need raw pointers, FFI or hand-"
+"written SIMD, you still have them, inside `unsafe` blocks that mark exactly "
+"which lines need careful review ([Unsafe Rust](../systems/unsafe.md))."
+msgstr ""
+"**`unsafe` 是显式的、局部的。** 需要裸指针、FFI 或手写 SIMD 时，这些能力仍然都在，只是放在 `unsafe` "
+"块里，明确标出哪几行需要仔细审查（[Unsafe Rust](../systems/unsafe.md)）。"
+
+#: src/intro/why-rust.md:26
+msgid ""
+"**One toolchain.** Building, dependencies, tests, benchmarks, formatting, "
+"linting and documentation are standard and the same in every project ([Tools"
+" and the ecosystem](../systems/testing-and-tooling.md)). There is no CMake "
+"dialect to learn per project."
+msgstr ""
+"**一套工具链。** "
+"构建、依赖、测试、基准测试、格式化、静态检查和文档都是标准化的，每个项目都一样（[工具与生态](../systems/testing-and-"
+"tooling.md)）。不需要为每个项目学一种 CMake 方言。"
+
+#: src/intro/why-rust.md:30
+msgid ""
+"**Package management that works.** Adding a library is one line, built from "
+"source with your compiler and flags, with versions pinned in a lock file "
+"([crates.io and the ecosystem](../systems/crates-io.md))."
+msgstr ""
+"**真正好用的包管理。** 添加一个库只需要一行，它会用你的编译器和编译选项从源代码构建，版本锁定在 lock 文件里（[crates.io "
+"与生态](../systems/crates-io.md)）。"
+
+#: src/intro/why-rust.md:33
+msgid ""
+"**Errors and absence in the type system.** `Result` and `Option` replace "
+"error codes, exceptions and null pointers, and the compiler makes you handle"
+" them ([Error handling](../foundations/errors.md))."
+msgstr ""
+"**错误和\"值不存在\"都在类型系统里。** `Result` 和 `Option` "
+"取代了错误码、异常和空指针，而且编译器要求你处理它们（[错误处理](../foundations/errors.md)）。"
+
+#: src/intro/why-rust.md:37
+msgid "What it costs"
+msgstr "代价是什么"
+
+#: src/intro/why-rust.md:39
+msgid ""
+"**The learning curve is real.** The borrow checker rejects some designs that"
+" are correct, and some C++ habits, such as object graphs of mutual pointers "
+"and long-lived mutable references into containers, have to be replaced with "
+"other patterns (indices, handles, arenas). Expect a few weeks of friction "
+"before it feels natural. Most of this book exists to shorten that period."
+msgstr ""
+"**学习曲线是真实存在的。** 借用检查器会拒绝一些其实正确的设计。有些 C++ "
+"习惯，比如对象之间互相持有指针的对象图，以及长期持有指向容器内部的可变引用，需要换成其他模式（索引、句柄、arena）。在它变得自然之前，预计会有几周的磨合期。本书的大部分内容就是为了缩短这段时间。"
+
+#: src/intro/why-rust.md:45
+msgid ""
+"**Compile times.** A clean build of a large Rust project is comparable to a "
+"large C++ project with heavy templates. Incremental builds and `cargo check`"
+" help; the [Project organization](../foundations/project-organization.md) "
+"chapter covers how to structure crates so builds stay fast."
+msgstr ""
+"**编译时间。** 大型 Rust 项目的完整构建时间，和大量使用模板的大型 C++ 项目相当。增量构建和 `cargo check` "
+"会有帮助；[项目组织](../foundations/project-organization.md)一章讲了如何组织 crate，让构建保持快速。"
+
+#: src/intro/why-rust.md:49
+msgid ""
+"**A younger game and graphics ecosystem.** There is no Unreal or Unity. Rust"
+" engines such as Bevy and Fyrox are capable but young, console SDKs and "
+"platform middleware are C and C++ first, and most GPU compute (CUDA kernels,"
+" vendor libraries) is still written in C++. You can call all of it through "
+"FFI, but someone has to write and maintain the bindings."
+msgstr ""
+"**游戏和图形生态更年轻。** 没有 Unreal，也没有 Unity。Bevy 和 Fyrox 等 Rust 引擎能力不错，但还年轻；主机 SDK "
+"和平台中间件优先支持 C 和 C++；大多数 GPU 计算（CUDA kernel、厂商的库）仍然用 C++ 编写。这些都可以通过 FFI "
+"调用，但总得有人编写和维护绑定。"
+
+#: src/intro/why-rust.md:54
+msgid ""
+"**Interop with existing C++ has a cost.** Rust talks to C easily and to C++ "
+"through a C layer or generated bindings. Templates, exceptions and C++ "
+"classes do not cross the boundary directly ([FFI with C and "
+"C++](../systems/ffi.md))."
+msgstr ""
+"**和现有 C++ 代码互操作是有成本的。** Rust 调用 C 很容易，调用 C++ 则要通过一层 C 接口或生成的绑定。模板、异常和 C++ "
+"类都不能直接跨越这个边界（[与 C 和 C++ 的 FFI](../systems/ffi.md)）。"
+
+#: src/intro/why-rust.md:58
+msgid ""
+"**No stable ABI between Rust crates.** You cannot ship a closed-source Rust "
+"library for other Rust code to link; you ship source, or a C ABI."
+msgstr ""
+"**Rust crate 之间没有稳定的 ABI。** 你不能发布一个闭源的 Rust 库给其他 Rust 代码链接；只能发布源代码，或者提供 C "
+"ABI。"
+
+#: src/intro/why-rust.md:60
+msgid ""
+"**Smaller hiring pool.** Fewer engineers have shipped Rust in production "
+"than C++, especially in games."
+msgstr "**招聘范围更小。** 在生产环境中交付过 Rust 的工程师比 C++ 少，在游戏行业尤其如此。"
+
+#: src/intro/why-rust.md:63
+msgid "Rust and AI-assisted development"
+msgstr "Rust 与 AI 辅助开发"
+
+#: src/intro/why-rust.md:65
+msgid ""
+"More and more code is written with an AI assistant or by an agent, and "
+"reviewed by a person. Rust's strictness, which feels like a cost when you "
+"write every line yourself, becomes useful when you are reviewing code you "
+"did not write:"
+msgstr ""
+"越来越多的代码由 AI 助手协助编写，或由 agent 生成，再由人来审查。Rust "
+"的严格，在每一行都自己写的时候像是一种代价；但当你审查不是自己写的代码时，它就变得很有用："
+
+#: src/intro/why-rust.md:70
+msgid ""
+"**The compiler checks what you would otherwise have to review.** Code "
+"generated in C++ can compile cleanly and still contain a lifetime bug that "
+"shows up weeks later as a crash. The same mistake in Rust is a compile "
+"error, before anyone reads the code:"
+msgstr ""
+"**编译器替你检查本来需要人工审查的东西。** 用 C++ 生成的代码可能干净地通过编译，却仍然藏着一个生命周期 "
+"bug，几周后才以崩溃的形式出现。同样的错误在 Rust 里是编译错误，在任何人读代码之前就被拦下了："
+
+#: src/intro/why-rust.md:78
+msgid "\"boss\""
+msgstr ""
+
+#: src/intro/why-rust.md:78
+msgid "// may reallocate: `first` would dangle\n"
+msgstr "// 可能重新分配内存：`first` 会变成悬垂引用\n"
+
+#: src/intro/why-rust.md:79
+msgid "// error[E0502]: cannot borrow `*enemies` as mutable\n"
+msgstr "// error[E0502]：不能以可变方式借用 `*enemies`\n"
+
+#: src/intro/why-rust.md:83
+msgid ""
+"**Error messages an agent can act on.** Rust's compiler errors name the "
+"problem, point at the exact span and usually suggest a fix. An agent that "
+"builds, reads the error and edits in a loop converges much faster than one "
+"that has to interpret a page of template instantiation errors, or a crash at"
+" run time."
+msgstr ""
+"**agent 能据此行动的错误信息。** Rust "
+"的编译错误会指出问题是什么，标出确切的代码位置，通常还会给出修复建议。一个\"构建、读错误、修改\"循环工作的 "
+"agent，比起要解读一整页模板实例化错误或运行时崩溃的 agent，收敛得快得多。"
+
+#: src/intro/why-rust.md:88
+msgid ""
+"**One way to build, test and lint.** `cargo build`, `cargo test`, `cargo "
+"clippy` and `cargo fmt` work the same in every repository, so an agent does "
+"not need project-specific instructions to verify its own work."
+msgstr ""
+"**统一的构建、测试和检查方式。** `cargo build`、`cargo test`、`cargo clippy` 和 `cargo fmt` "
+"在每个仓库里都一样，所以 agent 不需要针对具体项目的说明，就能验证自己的工作。"
+
+#: src/intro/why-rust.md:91
+msgid ""
+"**Explicit contracts are easier to review.** Function signatures say who "
+"owns what, which errors can occur and what may be absent. An exhaustive "
+"`match` means a new enum variant cannot be silently ignored. A reviewer can "
+"check intent from the signature instead of tracing the whole body."
+msgstr ""
+"**明确的契约更容易审查。** 函数签名说明了谁拥有什么、可能出现哪些错误、什么可能不存在。穷尽的 `match` "
+"意味着新增的枚举变体不会被悄悄忽略。审查者可以从签名判断意图，而不必追踪整个函数体。"
+
+#: src/intro/why-rust.md:95
+msgid ""
+"**Rust is part of the AI stack itself.** Hugging Face's `tokenizers`, "
+"inference frameworks such as `candle`, and many fast Python extensions "
+"(built with PyO3, like Polars) are written in Rust. Systems work around "
+"models, such as inference servers, data pipelines and tools that run next to"
+" Python, is a common place for Rust today."
+msgstr ""
+"**Rust 本身就是 AI 技术栈的一部分。** Hugging Face 的 `tokenizers`、`candle` "
+"等推理框架，以及许多高性能的 Python 扩展（用 PyO3 构建，比如 Polars）都是用 Rust "
+"编写的。围绕模型的系统工作，比如推理服务、数据管线，以及和 Python 配合运行的工具，是如今 Rust 的常见用武之地。"
+
+#: src/intro/why-rust.md:101
+msgid ""
+"The honest caveat: models still produce Rust that does not compile, "
+"especially around lifetimes and async code, and there is less Rust than C++ "
+"or Python in their training data. The benefit is not that generated Rust is "
+"correct the first time. It is that many of its mistakes are caught by the "
+"compiler instead of by your users."
+msgstr ""
+"需要坦白的是：模型仍然会写出无法编译的 Rust，尤其是在生命周期和异步代码上；而且它们训练数据中的 Rust 也比 C++ 和 Python "
+"少。好处并不在于生成的 Rust 一次就正确，而在于它的许多错误会被编译器发现，而不是被你的用户发现。"
+
+#: src/intro/why-rust.md:107
+msgid "When to choose it"
+msgstr "什么时候选择它"
+
+#: src/intro/why-rust.md:109
+msgid "Situation"
+msgstr "场景"
+
+#: src/intro/why-rust.md:109
+msgid "Choice"
+msgstr "选择"
+
+#: src/intro/why-rust.md:111
+msgid ""
+"A new tool, service or pipeline: asset processing, build tools, servers, "
+"editors"
+msgstr "新的工具、服务或管线：资源处理、构建工具、服务器、编辑器"
+
+#: src/intro/why-rust.md:111
+msgid ""
+"**Rust.** Safety and tooling pay off immediately, and there is no legacy "
+"code to bind to"
+msgstr "**Rust。** 安全性和工具链立刻见效，也没有需要绑定的遗留代码"
+
+#: src/intro/why-rust.md:112
+msgid ""
+"Code that parses untrusted input: network protocols, file formats, mods, "
+"save files"
+msgstr "解析不可信输入的代码：网络协议、文件格式、mod、存档"
+
+#: src/intro/why-rust.md:112
+msgid "**Rust.** The classic source of security bugs in C++"
+msgstr "**Rust。** 这是 C++ 安全漏洞的典型来源"
+
+#: src/intro/why-rust.md:113
+msgid "Heavily multithreaded systems: job systems, streaming, networking"
+msgstr "重度多线程的系统：任务系统、流式加载、网络"
+
+#: src/intro/why-rust.md:113
+msgid "**Rust.** Data races are compile errors"
+msgstr "**Rust。** 数据竞争是编译错误"
+
+#: src/intro/why-rust.md:114
+msgid "A new subsystem inside an existing C++ engine"
+msgstr "现有 C++ 引擎中的新子系统"
+
+#: src/intro/why-rust.md:114
+msgid ""
+"**Rust behind a C API** can work well for self-contained parts (a physics "
+"step, an audio mixer, a parser). Budget for the FFI layer"
+msgstr "对于相对独立的部分（物理步进、音频混音器、解析器），**用 C API 包装的 Rust** 可以很好地工作。要为 FFI 层留出预算"
+
+#: src/intro/why-rust.md:115
+msgid "A large existing C++ engine and codebase"
+msgstr "大型的现有 C++ 引擎和代码库"
+
+#: src/intro/why-rust.md:115
+msgid ""
+"**C++.** Rewriting is rarely worth it. Add Rust at the edges, if at all"
+msgstr "**C++。** 重写很少值得。如果要用 Rust，就从边缘开始"
+
+#: src/intro/why-rust.md:116
+msgid "A console-first title, or one built on Unreal or Unity"
+msgstr "以主机平台为主的项目，或基于 Unreal 或 Unity 的项目"
+
+#: src/intro/why-rust.md:116
+msgid "**C++ (or C#).** The platform tools and middleware assume them"
+msgstr "**C++（或 C#）。** 平台工具和中间件都以它们为前提"
+
+#: src/intro/why-rust.md:117
+msgid "CUDA kernels and GPU compute libraries"
+msgstr "CUDA kernel 和 GPU 计算库"
+
+#: src/intro/why-rust.md:117
+msgid ""
+"**C++** for the kernels. Rust can drive them through FFI or use wgpu compute"
+" for portable cases"
+msgstr "kernel 用 **C++**。Rust 可以通过 FFI 驱动它们，可移植的场景也可以用 wgpu 计算"
+
+#: src/intro/why-rust.md:118
+msgid "A tight deadline with a team that knows only C++"
+msgstr "工期紧张，而团队只熟悉 C++"
+
+#: src/intro/why-rust.md:118
+msgid "**C++.** Learn Rust on a tool or side project first"
+msgstr "**C++。** 先在工具或业余项目上学习 Rust"
+
+#: src/intro/why-rust.md:120
+msgid ""
+"A common path for engine teams is to start with tools and services, where "
+"Rust's disadvantages matter least, and move closer to the runtime as "
+"experience and bindings accumulate. The rest of this book follows the same "
+"order: the language first, then tools and systems programming, then graphics"
+" and engine code."
+msgstr ""
+"引擎团队常见的路径是：先从工具和服务开始，那里 Rust "
+"的劣势影响最小，再随着经验和绑定的积累，逐步靠近运行时。本书的其余部分也按同样的顺序展开：先是语言本身，然后是工具和系统编程，最后是图形和引擎代码。"
 
 #: src/intro/how-to-read.md:3
 msgid ""

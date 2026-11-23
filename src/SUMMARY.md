@@ -5,6 +5,7 @@
 
 # Getting started
 
+- [Why Rust, and when not to](intro/why-rust.md)
 - [How to read this book](intro/how-to-read.md)
 - [Toolchain setup](intro/setup.md)
 - [Reading Rust syntax](intro/syntax.md)
