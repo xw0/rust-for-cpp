@@ -152,6 +152,8 @@ syntax](../intro/syntax.md).
 | GLM / DirectXMath | glam | [Math and SIMD](../engine/math-and-simd.md) |
 | `memcpy` a struct into a GPU buffer | `bytemuck::cast_slice` on `#[derive(Pod)]` types | [Math and SIMD](../engine/math-and-simd.md) |
 | GLFW / SDL | winit (`ApplicationHandler`) | [Game loop](../engine/game-loop.md) |
+| Dear ImGui | egui (or imgui bindings) | [User interfaces](../engine/ui.md) |
+| Qt, QML | iced, Slint | [User interfaces](../engine/ui.md) |
 | glad / GLEW | `gl`, `glow` | [OpenGL](../engine/opengl.md) |
 | `vulkan.h` / volk | ash | [Vulkan](../engine/vulkan.md) |
 | VMA | gpu-allocator, vk-mem | [Vulkan](../engine/vulkan.md) |

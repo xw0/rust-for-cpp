@@ -28,7 +28,7 @@ msgstr ""
 #: src/systems/unsafe.md:231 src/systems/ffi.md:317 src/systems/macros.md:186
 #: src/engine/ecs.md:473 src/engine/math-and-simd.md:339
 #: src/engine/opengl.md:429 src/engine/vulkan.md:394 src/engine/wgpu.md:320
-#: src/engine/openxr.md:519 src/engine/game-loop.md:332
+#: src/engine/openxr.md:519 src/engine/game-loop.md:506 src/engine/ui.md:380
 #: src/engine/assets-and-build.md:398 src/engine/hot-reload-and-plugins.md:248
 msgid "Summary"
 msgstr "小结"
@@ -195,34 +195,38 @@ msgid "VR and AR with OpenXR"
 msgstr "使用 OpenXR 开发 VR 与 AR"
 
 #: src/SUMMARY.md:54
-msgid "Windows, input and the game loop"
+msgid "Windowing, input and the game loop"
 msgstr "窗口、输入与游戏循环"
 
-#: src/SUMMARY.md:55
+#: src/SUMMARY.md:55 src/engine/ui.md:1
+msgid "User interfaces: tools, editors and game UI"
+msgstr "用户界面：工具、编辑器与游戏 UI"
+
+#: src/SUMMARY.md:56
 msgid "Assets, shaders and build scripts"
 msgstr "资源、着色器与构建脚本"
 
-#: src/SUMMARY.md:56 src/engine/hot-reload-and-plugins.md:1
+#: src/SUMMARY.md:57 src/engine/hot-reload-and-plugins.md:1
 msgid "Hot reloading and plugins"
 msgstr "热重载与插件"
 
-#: src/SUMMARY.md:57 src/engine/case-study.md:1
+#: src/SUMMARY.md:58 src/engine/case-study.md:1
 msgid "Case study: a small renderer"
 msgstr "案例：一个小型渲染器"
 
-#: src/SUMMARY.md:59
+#: src/SUMMARY.md:60
 msgid "Appendices"
 msgstr "附录"
 
-#: src/SUMMARY.md:61 src/appendix/cheat-sheet.md:1
+#: src/SUMMARY.md:62 src/appendix/cheat-sheet.md:1
 msgid "C++ to Rust cheat sheet"
 msgstr "C++ 到 Rust 速查表"
 
-#: src/SUMMARY.md:62 src/appendix/further-reading.md:1
+#: src/SUMMARY.md:63 src/appendix/further-reading.md:1
 msgid "Further reading"
 msgstr "延伸阅读"
 
-#: src/SUMMARY.md:63 src/appendix/contributing.md:1
+#: src/SUMMARY.md:64 src/appendix/contributing.md:1
 msgid "Contributing and translating"
 msgstr "参与贡献与翻译"
 
@@ -361,11 +365,11 @@ msgstr "**第三部分：系统编程**：并发、网络与 RPC、内存布局�
 #: src/index.md:55
 msgid ""
 "**Part IV: Graphics and engine programming**: handles and arenas, ECS, math "
-"and SIMD, OpenGL, Vulkan, wgpu, OpenXR, the game loop, assets and build "
-"scripts, hot reloading, and a case study."
+"and SIMD, OpenGL, Vulkan, wgpu, OpenXR, windowing and the game loop, user "
+"interfaces, assets and build scripts, hot reloading, and a case study."
 msgstr ""
-"**第四部分：图形与引擎编程**：句柄与 arena、ECS、数学库与 "
-"SIMD、OpenGL、Vulkan、wgpu、OpenXR、游戏循环、资源与构建脚本、热重载，以及一个综合案例。"
+"**第四部分：图形与引擎编程**：句柄与 Arena、ECS、数学与 "
+"SIMD、OpenGL、Vulkan、wgpu、OpenXR、窗口与游戏循环、用户界面、资源与构建脚本、热重载，以及一个案例研究。"
 
 #: src/index.md:59
 msgid "Status"
@@ -811,7 +815,7 @@ msgstr "并排的代码会把你会写的 C++ 和对应的 Rust 放在一起："
 #: src/systems/memory-and-performance.md:251 src/systems/unsafe.md:233
 #: src/engine/handles-and-arenas.md:235 src/engine/ecs.md:475
 #: src/engine/math-and-simd.md:341 src/engine/opengl.md:431
-#: src/engine/vulkan.md:396 src/engine/game-loop.md:334
+#: src/engine/vulkan.md:396 src/engine/game-loop.md:508 src/engine/ui.md:382
 #: src/engine/assets-and-build.md:400 src/engine/hot-reload-and-plugins.md:250
 #: src/appendix/cheat-sheet.md:11 src/appendix/cheat-sheet.md:31
 #: src/appendix/cheat-sheet.md:52 src/appendix/cheat-sheet.md:72
@@ -845,12 +849,12 @@ msgstr ""
 #: src/engine/handles-and-arenas.md:235 src/engine/ecs.md:475
 #: src/engine/math-and-simd.md:341 src/engine/opengl.md:20
 #: src/engine/opengl.md:431 src/engine/vulkan.md:396 src/engine/openxr.md:521
-#: src/engine/game-loop.md:334 src/engine/assets-and-build.md:400
-#: src/engine/hot-reload-and-plugins.md:250 src/appendix/cheat-sheet.md:11
-#: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:52
-#: src/appendix/cheat-sheet.md:72 src/appendix/cheat-sheet.md:84
-#: src/appendix/cheat-sheet.md:106 src/appendix/cheat-sheet.md:130
-#: src/appendix/cheat-sheet.md:150
+#: src/engine/game-loop.md:508 src/engine/ui.md:382
+#: src/engine/assets-and-build.md:400 src/engine/hot-reload-and-plugins.md:250
+#: src/appendix/cheat-sheet.md:11 src/appendix/cheat-sheet.md:31
+#: src/appendix/cheat-sheet.md:52 src/appendix/cheat-sheet.md:72
+#: src/appendix/cheat-sheet.md:84 src/appendix/cheat-sheet.md:106
+#: src/appendix/cheat-sheet.md:130 src/appendix/cheat-sheet.md:150
 msgid "Rust"
 msgstr "Rust"
 
@@ -1461,8 +1465,9 @@ msgstr ""
 #: src/engine/handles-and-arenas.md:304 src/engine/ecs.md:484
 #: src/engine/math-and-simd.md:354 src/engine/opengl.md:442
 #: src/engine/vulkan.md:408 src/engine/wgpu.md:333 src/engine/openxr.md:533
-#: src/engine/game-loop.md:344 src/engine/assets-and-build.md:412
-#: src/engine/hot-reload-and-plugins.md:261 src/engine/case-study.md:331
+#: src/engine/game-loop.md:520 src/engine/ui.md:391
+#: src/engine/assets-and-build.md:412 src/engine/hot-reload-and-plugins.md:261
+#: src/engine/case-study.md:331
 msgid "Exercises"
 msgstr "练习"
 
@@ -1511,8 +1516,9 @@ msgstr ""
 #: src/systems/unsafe.md:11 src/systems/ffi.md:10 src/systems/macros.md:11
 #: src/engine/ecs.md:15 src/engine/math-and-simd.md:9 src/engine/opengl.md:10
 #: src/engine/vulkan.md:10 src/engine/wgpu.md:11 src/engine/openxr.md:22
-#: src/engine/game-loop.md:11 src/engine/assets-and-build.md:9
-#: src/engine/hot-reload-and-plugins.md:11 src/engine/case-study.md:11
+#: src/engine/game-loop.md:11 src/engine/ui.md:10
+#: src/engine/assets-and-build.md:9 src/engine/hot-reload-and-plugins.md:11
+#: src/engine/case-study.md:11
 msgid "This chapter covers:"
 msgstr "本章内容："
 
@@ -1684,7 +1690,7 @@ msgstr "Rust 中的含义"
 #: src/appendix/cheat-sheet.md:31 src/appendix/cheat-sheet.md:52
 #: src/appendix/cheat-sheet.md:72 src/appendix/cheat-sheet.md:84
 #: src/appendix/cheat-sheet.md:106 src/appendix/cheat-sheet.md:130
-#: src/appendix/cheat-sheet.md:150 src/appendix/cheat-sheet.md:168
+#: src/appendix/cheat-sheet.md:150 src/appendix/cheat-sheet.md:170
 msgid "Chapter"
 msgstr "章节"
 
@@ -1706,7 +1712,7 @@ msgstr "对 `x` 的共享借用：非空、只读的引用。写在调用处，`
 #: src/appendix/cheat-sheet.md:37 src/appendix/cheat-sheet.md:38
 #: src/appendix/cheat-sheet.md:39 src/appendix/cheat-sheet.md:40
 #: src/appendix/cheat-sheet.md:41 src/appendix/cheat-sheet.md:54
-#: src/appendix/cheat-sheet.md:170 src/appendix/cheat-sheet.md:171
+#: src/appendix/cheat-sheet.md:172 src/appendix/cheat-sheet.md:173
 msgid "[Borrowing](../foundations/borrowing.md)"
 msgstr "[借用](../foundations/borrowing.md)"
 
@@ -2221,7 +2227,7 @@ msgstr "// Debug、PartialEq\n"
 #: src/systems/memory-and-performance.md:115 src/systems/unsafe.md:182
 #: src/systems/unsafe.md:183 src/systems/ffi.md:196
 #: src/engine/math-and-simd.md:264 src/engine/wgpu.md:199
-#: src/engine/game-loop.md:248
+#: src/engine/game-loop.md:422
 msgid "\"{:?}\""
 msgstr ""
 
@@ -2538,7 +2544,7 @@ msgstr "范围：半开区间和闭区间。用于 `for`、切片（`&v[1..3]`�
 #: src/appendix/cheat-sheet.md:87 src/appendix/cheat-sheet.md:88
 #: src/appendix/cheat-sheet.md:89 src/appendix/cheat-sheet.md:90
 #: src/appendix/cheat-sheet.md:91 src/appendix/cheat-sheet.md:92
-#: src/appendix/cheat-sheet.md:173
+#: src/appendix/cheat-sheet.md:175
 msgid "[Collections](../foundations/collections.md)"
 msgstr "[集合](../foundations/collections.md)"
 
@@ -2658,7 +2664,7 @@ msgstr "生命周期参数：给\"这个借用在多长时间内有效\"起的�
 
 #: src/intro/syntax.md:419 src/intro/syntax.md:420 src/intro/syntax.md:421
 #: src/intro/syntax.md:422 src/appendix/cheat-sheet.md:42
-#: src/appendix/cheat-sheet.md:43 src/appendix/cheat-sheet.md:176
+#: src/appendix/cheat-sheet.md:43 src/appendix/cheat-sheet.md:178
 msgid "[Lifetimes](../foundations/lifetimes.md)"
 msgstr "[生命周期](../foundations/lifetimes.md)"
 
@@ -3185,7 +3191,7 @@ msgid "\"watching shader directory\""
 msgstr ""
 
 #: src/foundations/cargo.md:187 src/foundations/cargo.md:188
-#: src/foundations/cargo.md:189
+#: src/foundations/cargo.md:189 src/engine/game-loop.md:201
 msgid "\"windows\""
 msgstr ""
 
@@ -3687,7 +3693,7 @@ msgstr "// 私有：只在 `math` 及其子模块中可见。\n"
 #: src/foundations/modules.md:47 src/foundations/values-and-types.md:188
 #: src/foundations/traits-and-generics.md:58
 #: src/foundations/traits-and-generics.md:59 src/engine/math-and-simd.md:193
-#: src/engine/game-loop.md:247
+#: src/engine/game-loop.md:421
 msgid "\"{} {}\""
 msgstr ""
 
@@ -4106,7 +4112,8 @@ msgstr ""
 
 #: src/foundations/values-and-types.md:48 src/foundations/collections.md:19
 #: src/systems/concurrency.md:220 src/engine/math-and-simd.md:19
-#: src/engine/openxr.md:42 src/engine/hot-reload-and-plugins.md:211
+#: src/engine/openxr.md:42 src/engine/game-loop.md:185
+#: src/engine/hot-reload-and-plugins.md:211
 msgid "Notes"
 msgstr "说明"
 
@@ -6266,7 +6273,7 @@ msgstr "解读常见错误"
 msgid "Error"
 msgstr "错误"
 
-#: src/foundations/lifetimes.md:237 src/appendix/cheat-sheet.md:168
+#: src/foundations/lifetimes.md:237 src/appendix/cheat-sheet.md:170
 msgid "Usual fix"
 msgstr "常见修复"
 
@@ -13765,7 +13772,7 @@ msgstr ""
 
 #: src/systems/networking.md:219 src/engine/math-and-simd.md:19
 #: src/engine/vulkan.md:385 src/engine/openxr.md:13
-#: src/engine/hot-reload-and-plugins.md:211
+#: src/engine/game-loop.md:248 src/engine/hot-reload-and-plugins.md:211
 msgid "Crate"
 msgstr "crate"
 
@@ -17476,7 +17483,7 @@ msgstr "`std::shared_ptr` + `weak_ptr` 场景图"
 msgid "`Parent(Entity)` component and a propagation system"
 msgstr "`Parent(Entity)` 组件加一个传播系统"
 
-#: src/engine/ecs.md:479 src/appendix/cheat-sheet.md:161
+#: src/engine/ecs.md:479 src/appendix/cheat-sheet.md:163
 msgid "EnTT, flecs"
 msgstr "EnTT、flecs"
 
@@ -18637,7 +18644,7 @@ msgstr "GLFW / WGL / GLX / EGL 上下文"
 msgid "glutin"
 msgstr "glutin"
 
-#: src/engine/opengl.md:435 src/appendix/cheat-sheet.md:155
+#: src/engine/opengl.md:435 src/appendix/cheat-sheet.md:157
 msgid "glad / GLEW"
 msgstr "glad / GLEW"
 
@@ -18754,7 +18761,7 @@ msgid ""
 msgstr "ash 由 `vk.xml` 生成，也就是生成 `vulkan.h` 的同一份注册表。每个函数和结构体都在其中，名字可以预测："
 
 #: src/engine/vulkan.md:23 src/engine/vulkan.md:387
-#: src/appendix/cheat-sheet.md:156
+#: src/appendix/cheat-sheet.md:158
 msgid "ash"
 msgstr "ash"
 
@@ -19260,7 +19267,7 @@ msgstr "更高层的选择"
 msgid "Level"
 msgstr "层级"
 
-#: src/engine/vulkan.md:385
+#: src/engine/vulkan.md:385 src/engine/game-loop.md:248
 msgid "Use it when"
 msgstr "适用场景"
 
@@ -19285,7 +19292,7 @@ msgid "You want Vulkan concepts but checked, and can accept some overhead"
 msgstr "你想要 Vulkan 的概念但需要检查，并且能接受一些开销"
 
 #: src/engine/vulkan.md:389 src/engine/wgpu.md:29 src/engine/wgpu.md:322
-#: src/appendix/cheat-sheet.md:158
+#: src/appendix/cheat-sheet.md:160
 msgid "wgpu"
 msgstr "wgpu"
 
@@ -19360,11 +19367,11 @@ msgstr "删除队列"
 msgid "Same pattern; `Drop` enqueues"
 msgstr "相同模式；`Drop` 负责入队"
 
-#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:157
+#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:159
 msgid "VMA"
 msgstr "VMA"
 
-#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:157
+#: src/engine/vulkan.md:405 src/appendix/cheat-sheet.md:159
 msgid "gpu-allocator, vk-mem"
 msgstr "gpu-allocator、vk-mem"
 
@@ -21004,7 +21011,7 @@ msgstr ""
 "crate，就用你自己的替身类型），仅当位置和朝向都有效时才返回姿态。在游戏中你会在哪里调用它？"
 
 #: src/engine/game-loop.md:1
-msgid "The game loop, windows and global state"
+msgid "The game loop, windowing and global state"
 msgstr "游戏循环、窗口与全局状态"
 
 #: src/engine/game-loop.md:3
@@ -21026,22 +21033,31 @@ msgid "winit's event loop and the `ApplicationHandler` trait,"
 msgstr "winit 的事件循环与 `ApplicationHandler` trait；"
 
 #: src/engine/game-loop.md:14
+msgid "creating windows: attributes, DPI, fullscreen and multiple windows,"
+msgstr "创建窗口：属性、DPI、全屏与多窗口，"
+
+#: src/engine/game-loop.md:15
+msgid ""
+"how winit handles each platform, and how a window reaches the graphics API,"
+msgstr "winit 如何处理各个平台，以及窗口如何接入图形 API，"
+
+#: src/engine/game-loop.md:16
 msgid "a fixed timestep with interpolation,"
 msgstr "带插值的固定时间步长；"
 
-#: src/engine/game-loop.md:15
+#: src/engine/game-loop.md:17
 msgid "frame pacing and vsync,"
 msgstr "帧节奏与垂直同步；"
 
-#: src/engine/game-loop.md:16
+#: src/engine/game-loop.md:18
 msgid "where global state goes when there are no singletons."
 msgstr "没有单例时，全局状态该放在哪里。"
 
-#: src/engine/game-loop.md:18
+#: src/engine/game-loop.md:20
 msgid "winit: the loop calls you"
 msgstr "winit：循环调用你"
 
-#: src/engine/game-loop.md:20
+#: src/engine/game-loop.md:22
 msgid ""
 "winit is the Rust equivalent of the windowing half of GLFW or SDL: windows, "
 "input, DPI, and the platform event loop, on Windows, macOS, Linux (X11 and "
@@ -21052,29 +21068,29 @@ msgstr ""
 "Windows、macOS、Linux（X11 和 Wayland）、Android、iOS 和 Web。从 0.30 版本开始，你实现一个 trait"
 " 并把它交给事件循环："
 
-#: src/engine/game-loop.md:35
+#: src/engine/game-loop.md:37
 msgid "// renderer + world, created once we have a window\n"
 msgstr "// 渲染器 + 世界，在拿到窗口后创建\n"
 
-#: src/engine/game-loop.md:39
+#: src/engine/game-loop.md:41
 msgid ""
 "// Called when the app may create windows (at startup; again after suspend "
 "on mobile).\n"
 msgstr "// 在应用可以创建窗口时调用（启动时；在移动端从挂起恢复后会再次调用）。\n"
 
-#: src/engine/game-loop.md:53
+#: src/engine/game-loop.md:55
 msgid "// update + render\n"
 msgstr "// 更新 + 渲染\n"
 
-#: src/engine/game-loop.md:54
+#: src/engine/game-loop.md:56
 msgid "// ask for the next one\n"
 msgstr "// 请求下一帧\n"
 
-#: src/engine/game-loop.md:63
+#: src/engine/game-loop.md:65
 msgid "// run continuously, like a game\n"
 msgstr "// 像游戏一样持续运行\n"
 
-#: src/engine/game-loop.md:68
+#: src/engine/game-loop.md:70
 msgid ""
 "Why the inversion? Some platforms (macOS, iOS, the web) do not let a program"
 " own the main loop: the OS calls the application. winit adopts that model "
@@ -21086,7 +21102,7 @@ msgstr ""
 "在所有平台上都采用这种模型，所以同一份代码可以在所有平台上运行。实践中这改变不大：`RedrawRequested` "
 "就是你的\"帧\"回调，在每帧结束时调用 `request_redraw()` 就能让它持续运行。"
 
-#: src/engine/game-loop.md:74
+#: src/engine/game-loop.md:76
 msgid ""
 "All state lives in the `App` struct. There are no globals; the event loop "
 "owns `App`, and each callback gets `&mut self`. That is the start of the "
@@ -21096,51 +21112,386 @@ msgstr ""
 "所有状态都存放在 `App` 结构体中。没有全局变量；事件循环拥有 `App`，每个回调拿到的是 `&mut "
 "self`。这正是\"全局状态该放在哪里\"这个问题答案的开端，本章后面会再回到这一点。"
 
-#: src/engine/game-loop.md:78
+#: src/engine/game-loop.md:80
 msgid ""
-"If you prefer the C++ shape, the `sdl2` and `glfw` crates are bindings to "
+"If you prefer the C++ shape, the `sdl3` and `glfw` crates are bindings to "
 "the libraries you know, with a classic `poll_events()` loop."
 msgstr ""
-"如果你更喜欢 C++ 的写法，`sdl2` 和 `glfw` crate 是你熟悉的那些库的绑定，提供经典的 `poll_events()` 循环。"
+"如果你更喜欢 C++ 的写法，`sdl3` 和 `glfw` 这两个 crate 是对你熟悉的库的绑定，提供经典的 `poll_events()` "
+"循环。"
 
-#: src/engine/game-loop.md:81 src/engine/case-study.md:195
+#: src/engine/game-loop.md:83
+msgid "Creating windows"
+msgstr "创建窗口"
+
+#: src/engine/game-loop.md:85
+msgid ""
+"`ActiveEventLoop::create_window` is the only way to create a window in "
+"winit, and an `ActiveEventLoop` exists only inside a callback. That is "
+"deliberate: on Android, iOS and the web, a window cannot exist until the "
+"platform has started the application, so winit makes it impossible to create"
+" one too early. Create your windows in `resumed`, which every platform calls"
+" once the app is ready."
+msgstr ""
+"在 winit 中，`ActiveEventLoop::create_window` 是创建窗口的唯一方式，而 `ActiveEventLoop` "
+"只存在于回调内部。这是有意为之：在 Android、iOS 和 Web 上，平台启动应用之前窗口根本不能存在，所以 winit "
+"让你无法过早地创建窗口。请在 `resumed` 中创建窗口，每个平台都会在应用准备就绪后调用它。"
+
+#: src/engine/game-loop.md:91
+msgid ""
+"`Window::default_attributes()` returns a builder with the same options you "
+"would pass to `SDL_CreateWindow` or set with GLFW window hints. An editor "
+"with two windows, DPI handling and a fullscreen toggle:"
+msgstr ""
+"`Window::default_attributes()` 返回一个构建器，其中的选项与你传给 `SDL_CreateWindow` 或通过 GLFW"
+" window hints 设置的选项相同。下面是一个带两个窗口、DPI 处理和全屏切换的编辑器："
+
+#: src/engine/game-loop.md:107
+msgid "// one entry per OS window\n"
+msgstr "// 每个操作系统窗口一项\n"
+
+#: src/engine/game-loop.md:113
+msgid "// `resumed` runs again after a suspend on mobile\n"
+msgstr "// 在移动平台上，挂起之后会再次调用 `resumed`\n"
+
+#: src/engine/game-loop.md:116
+msgid "\"Level editor\""
+msgstr ""
+
+#: src/engine/game-loop.md:117
+msgid "// logical units: scaled by DPI\n"
+msgstr "// 逻辑单位：会按 DPI 缩放\n"
+
+#: src/engine/game-loop.md:120
+msgid "\"Inspector\""
+msgstr ""
+
+#: src/engine/game-loop.md:132
+msgid "// dropping the last Arc closes the window\n"
+msgstr "// 丢弃最后一个 Arc 就会关闭窗口\n"
+
+#: src/engine/game-loop.md:138
+msgid ""
+"// Resize this window's swapchain. Sizes in events are physical pixels.\n"
+msgstr "// 调整这个窗口的交换链大小。事件中的尺寸是物理像素。\n"
+
+#: src/engine/game-loop.md:139
+msgid "\"{id:?}: {width}x{height} px, scale {}\""
+msgstr ""
+
+#: src/engine/game-loop.md:142
+msgid "\"{id:?} moved to a monitor with scale {scale_factor}\""
+msgstr ""
+
+#: src/engine/game-loop.md:147
+msgid "// Toggle borderless fullscreen on the window's current monitor.\n"
+msgstr "// 在窗口当前所在的显示器上切换无边框全屏。\n"
+
+#: src/engine/game-loop.md:151
+msgid "/* render this window */"
+msgstr "/* 渲染这个窗口 */"
+
+#: src/engine/game-loop.md:163
+msgid "A few things in this example differ from what you may expect in C++:"
+msgstr "这个示例中有几处与你在 C++ 中的预期不同："
+
+#: src/engine/game-loop.md:165
+msgid ""
+"**Logical and physical sizes.** `LogicalSize` is in DPI-independent units, "
+"and winit multiplies it by the monitor's scale factor (1.0, 1.5, 2.0, ...). "
+"Sizes in events, such as `Resized`, are in **physical pixels**, which is "
+"what your swapchain needs. When a window moves to a monitor with a different"
+" scale, you get `ScaleFactorChanged` followed by a `Resized`. This is the "
+"same model as SDL3's pixel density, made explicit in the types."
+msgstr ""
+"**逻辑尺寸与物理尺寸。** `LogicalSize` 使用与 DPI 无关的单位，winit "
+"会把它乘以显示器的缩放系数（1.0、1.5、2.0……）。事件中的尺寸（例如 "
+"`Resized`）是**物理像素**，这正是交换链需要的。当窗口移到缩放系数不同的显示器上时，你会先收到 "
+"`ScaleFactorChanged`，接着收到 `Resized`。这与 SDL3 的像素密度模型相同，只是在类型中表达得更明确。"
+
+#: src/engine/game-loop.md:171
+msgid ""
+"**Every event names its window.** `window_event` receives a `WindowId`, so "
+"multiple windows are a `HashMap` away. A renderer usually keeps one surface "
+"(swapchain) per window in the same map."
+msgstr ""
+"**每个事件都标明了所属窗口。** `window_event` 会收到一个 `WindowId`，所以多窗口只需要一个 "
+"`HashMap`。渲染器通常在同一个映射中为每个窗口保存一个 surface（交换链）。"
+
+#: src/engine/game-loop.md:174
+msgid ""
+"**Closing is dropping.** There is no `DestroyWindow` call: a window closes "
+"when the last `Arc<Window>` is dropped, like any other RAII resource."
+msgstr ""
+"**关闭就是丢弃。** 没有 `DestroyWindow` 调用：当最后一个 `Arc<Window>` 被丢弃时，窗口就会关闭，与其他 RAII "
+"资源一样。"
+
+#: src/engine/game-loop.md:176
+msgid ""
+"**Fullscreen is a value.** `Fullscreen::Borderless(None)` uses the current "
+"monitor; `Fullscreen::Exclusive(video_mode)` switches the display mode, "
+"where the platform supports it. `event_loop.available_monitors()` lists the "
+"monitors and their video modes."
+msgstr ""
+"**全屏是一个值。** `Fullscreen::Borderless(None)` "
+"使用当前显示器；`Fullscreen::Exclusive(video_mode)` "
+"会在平台支持时切换显示模式。`event_loop.available_monitors()` 会列出所有显示器及其视频模式。"
+
+#: src/engine/game-loop.md:181
+msgid "How winit handles platforms"
+msgstr "winit 如何处理各个平台"
+
+#: src/engine/game-loop.md:183
+msgid ""
+"winit has one public API and a backend per platform, selected at compile "
+"time:"
+msgstr "winit 只有一套公共 API，每个平台各有一个后端，在编译时选择："
+
+#: src/engine/game-loop.md:185
+msgid "Platform"
+msgstr "平台"
+
+#: src/engine/game-loop.md:185
+msgid "winit talks to"
+msgstr "winit 对接的系统接口"
+
+#: src/engine/game-loop.md:187
+msgid "Windows"
+msgstr "Windows"
+
+#: src/engine/game-loop.md:187
+msgid "Win32 (`CreateWindowExW`, a message loop)"
+msgstr "Win32（`CreateWindowExW`，消息循环）"
+
+#: src/engine/game-loop.md:187
+msgid "The `Window` wraps an `HWND`"
+msgstr "`Window` 封装了一个 `HWND`"
+
+#: src/engine/game-loop.md:188
+msgid "macOS"
+msgstr "macOS"
+
+#: src/engine/game-loop.md:188
+msgid "AppKit (`NSApplication`, `NSWindow`)"
+msgstr "AppKit（`NSApplication`、`NSWindow`）"
+
+#: src/engine/game-loop.md:188
+msgid "Must run on the main thread; the OS owns the loop"
+msgstr "必须在主线程上运行；循环由操作系统掌控"
+
+#: src/engine/game-loop.md:189
+msgid "Linux"
+msgstr "Linux"
+
+#: src/engine/game-loop.md:189
+msgid "Wayland or X11, chosen at run time"
+msgstr "Wayland 或 X11，在运行时选择"
+
+#: src/engine/game-loop.md:189
+msgid "Both are loaded dynamically, so one binary supports both"
+msgstr "两者都是动态加载的，因此一个二进制文件可以同时支持"
+
+#: src/engine/game-loop.md:190
+msgid "Android"
+msgstr "Android"
+
+#: src/engine/game-loop.md:190
+msgid "`NativeActivity` or `GameActivity`"
+msgstr "`NativeActivity` 或 `GameActivity`"
+
+#: src/engine/game-loop.md:190
+msgid "The surface is destroyed on `suspended` and must be recreated"
+msgstr "surface 会在 `suspended` 时销毁，必须重新创建"
+
+#: src/engine/game-loop.md:191
+msgid "iOS"
+msgstr "iOS"
+
+#: src/engine/game-loop.md:191
+msgid "UIKit"
+msgstr "UIKit"
+
+#: src/engine/game-loop.md:191
+msgid "Like macOS, the OS owns the loop"
+msgstr "与 macOS 一样，循环由操作系统掌控"
+
+#: src/engine/game-loop.md:192
+msgid "Web"
+msgstr "Web"
+
+#: src/engine/game-loop.md:192
+msgid "A `<canvas>` element and browser events"
+msgstr "一个 `<canvas>` 元素和浏览器事件"
+
+#: src/engine/game-loop.md:192
+msgid "Built for `wasm32`; there is no blocking at all"
+msgstr "针对 `wasm32` 构建；完全不能阻塞"
+
+#: src/engine/game-loop.md:194
+msgid ""
+"When you need something only one platform has, winit provides **extension "
+"traits** in `winit::platform::<os>`, used behind `#[cfg]` so the code still "
+"compiles everywhere:"
+msgstr ""
+"当你需要某个平台独有的功能时，winit 在 `winit::platform::<os>` 中提供了**扩展 trait**，放在 `#[cfg]` "
+"后面使用，这样代码在所有平台上都能编译："
+
+#: src/engine/game-loop.md:199
+msgid "\"Game\""
+msgstr ""
+
+#: src/engine/game-loop.md:204
+msgid "// needed if a library uses multithreaded COM\n"
+msgstr "// 如果某个库使用多线程 COM，就需要这样设置\n"
+
+#: src/engine/game-loop.md:206
+msgid "\"macos\""
+msgstr ""
+
+#: src/engine/game-loop.md:211
+msgid "\"linux\""
+msgstr ""
+
+#: src/engine/game-loop.md:214
+msgid "\"my-game\""
+msgstr ""
+
+#: src/engine/game-loop.md:214
+msgid "// app id for icons and grouping\n"
+msgstr "// 用于图标和窗口分组的应用 id\n"
+
+#: src/engine/game-loop.md:218
+msgid "From a window to the graphics API"
+msgstr "从窗口到图形 API"
+
+#: src/engine/game-loop.md:220
+msgid ""
+"winit knows nothing about OpenGL, Vulkan or wgpu, and the graphics crates "
+"know nothing about winit. They meet through the small [`raw-window-"
+"handle`](https://docs.rs/raw-window-handle) crate, which defines an enum of "
+"native handles (`HWND`, `NSView`, Wayland and X11 surfaces, Android "
+"`ANativeWindow`, a web canvas). winit implements its `HasWindowHandle` and "
+"`HasDisplayHandle` traits, and graphics crates accept anything that does:"
+msgstr ""
+"winit 对 OpenGL、Vulkan 和 wgpu 一无所知，图形 crate 也对 winit 一无所知。它们通过小巧的 [`raw-"
+"window-handle`](https://docs.rs/raw-window-handle) crate 衔接，这个 crate "
+"定义了一个原生句柄的枚举（`HWND`、`NSView`、Wayland 与 X11 surface、Android 的 "
+"`ANativeWindow`、Web canvas）。winit 实现了它的 `HasWindowHandle` 和 "
+"`HasDisplayHandle` trait，而图形 crate 接受任何实现了这些 trait 的类型："
+
+#: src/engine/game-loop.md:231
+msgid "\"HWND {:?}\""
+msgstr ""
+
+#: src/engine/game-loop.md:232
+msgid "\"NSView {:?}\""
+msgstr ""
+
+#: src/engine/game-loop.md:233
+msgid "\"wl_surface {:?}\""
+msgstr ""
+
+#: src/engine/game-loop.md:234
+msgid "\"X11 window {}\""
+msgstr ""
+
+#: src/engine/game-loop.md:235
+msgid "\"{other:?}\""
+msgstr ""
+
+#: src/engine/game-loop.md:240
+msgid ""
+"That is why `wgpu::Instance::create_surface(window.clone())` takes the winit"
+" window directly, `ash-window` creates a Vulkan surface from the same "
+"handles, and glutin creates a GL context for it. The same bridge lets SDL3 "
+"or GLFW windows drive wgpu, so the choice of windowing crate does not lock "
+"you into a renderer ([Portable graphics with wgpu](wgpu.md), [Vulkan with "
+"ash](vulkan.md))."
+msgstr ""
+"这就是为什么 `wgpu::Instance::create_surface(window.clone())` 可以直接接受 winit "
+"窗口，`ash-window` 用同样的句柄创建 Vulkan surface，glutin 则为它创建 GL 上下文。借助同一座桥，SDL3 或 "
+"GLFW 的窗口也能驱动 wgpu，因此窗口 crate 的选择不会把你锁定在某个渲染器上（[使用 wgpu 实现跨平台图形](wgpu.md)、[使用"
+" ash 调用 Vulkan](vulkan.md)）。"
+
+#: src/engine/game-loop.md:246
+msgid "Choosing a windowing crate"
+msgstr "选择窗口 crate"
+
+#: src/engine/game-loop.md:250
+msgid "[winit](https://docs.rs/winit)"
+msgstr "[winit](https://docs.rs/winit)"
+
+#: src/engine/game-loop.md:250
+msgid ""
+"The default: pure Rust, used by wgpu, Bevy, egui and most of the ecosystem"
+msgstr "默认选择：纯 Rust 实现，wgpu、Bevy、egui 和生态中的大部分项目都在用"
+
+#: src/engine/game-loop.md:251
+msgid "[sdl3](https://docs.rs/sdl3)"
+msgstr "[sdl3](https://docs.rs/sdl3)"
+
+#: src/engine/game-loop.md:251
+msgid ""
+"You want SDL's whole package (windows, input, gamepads, audio, file dialogs)"
+" or already ship SDL in C++"
+msgstr "你需要 SDL 的全套功能（窗口、输入、手柄、音频、文件对话框），或者在 C++ 中已经在用 SDL"
+
+#: src/engine/game-loop.md:252
+msgid "[glfw](https://docs.rs/glfw)"
+msgstr "[glfw](https://docs.rs/glfw)"
+
+#: src/engine/game-loop.md:252
+msgid "You are porting a GLFW-based tool and want the same API"
+msgstr "你在移植一个基于 GLFW 的工具，想保持相同的 API"
+
+#: src/engine/game-loop.md:253
+msgid "[`windows`](https://docs.rs/windows), [`objc2`](https://docs.rs/objc2)"
+msgstr "[`windows`](https://docs.rs/windows)、[`objc2`](https://docs.rs/objc2)"
+
+#: src/engine/game-loop.md:253
+msgid ""
+"You need complete control of one platform's windowing, as with raw Win32 in "
+"C++"
+msgstr "你需要完全掌控某个平台的窗口系统，就像在 C++ 中直接使用 Win32 一样"
+
+#: src/engine/game-loop.md:255 src/engine/case-study.md:195
 msgid "Fixed timestep"
 msgstr "固定时间步长"
 
-#: src/engine/game-loop.md:83
+#: src/engine/game-loop.md:257
 msgid ""
 "Physics and gameplay usually update at a fixed rate, decoupled from the "
 "display. The accumulator pattern (\"Fix your timestep!\") translates "
 "directly:"
 msgstr "物理和游戏逻辑通常以固定频率更新，与显示解耦。累加器模式（\"Fix your timestep!\"）可以直接翻译过来："
 
-#: src/engine/game-loop.md:104
+#: src/engine/game-loop.md:278
 msgid "// clamp, so a long stall does not cause a spiral of death\n"
 msgstr "// 限制上限，避免一次长时间卡顿导致死亡螺旋\n"
 
-#: src/engine/game-loop.md:108
+#: src/engine/game-loop.md:282
 msgid ""
 "/// Returns how many fixed steps to run this frame, and the interpolation "
 "factor.\n"
 msgstr "/// 返回本帧要运行多少个固定步长，以及插值系数。\n"
 
-#: src/engine/game-loop.md:128
+#: src/engine/game-loop.md:302
 msgid "// Simulated frame times: a 144 Hz display with one 40 ms hitch.\n"
 msgstr "// 模拟的帧时间：144 Hz 显示器，其中有一次 40 毫秒的卡顿。\n"
 
-#: src/engine/game-loop.md:137
+#: src/engine/game-loop.md:311
 msgid "\"frame {ms:>4} ms: {steps} steps, alpha {alpha:.2}, render pos {:.4}\""
 msgstr ""
 
-#: src/engine/game-loop.md:142
+#: src/engine/game-loop.md:316
 msgid "In a real loop, `frame_time` comes from `std::time::Instant`:"
 msgstr "在真正的循环中，`frame_time` 来自 `std::time::Instant`："
 
-#: src/engine/game-loop.md:146
+#: src/engine/game-loop.md:320
 msgid "// Instant - Instant = Duration\n"
 msgstr "// Instant - Instant = Duration\n"
 
-#: src/engine/game-loop.md:150
+#: src/engine/game-loop.md:324
 msgid ""
 "`Instant` is monotonic (`QueryPerformanceCounter`, "
 "`clock_gettime(CLOCK_MONOTONIC)`) and `Duration` is an exact integer number "
@@ -21150,11 +21501,11 @@ msgstr ""
 "`Instant` 是单调的（`QueryPerformanceCounter`、`clock_gettime(CLOCK_MONOTONIC)`），而"
 " `Duration` 是精确的整数纳秒数，所以累加器中不会积累浮点漂移。只在使用时才转换为 `f32` 秒。"
 
-#: src/engine/game-loop.md:155
+#: src/engine/game-loop.md:329
 msgid "Frame pacing"
 msgstr "帧节奏"
 
-#: src/engine/game-loop.md:157
+#: src/engine/game-loop.md:331
 msgid ""
 "**Vsync** is a surface setting, not a loop setting: `PresentMode::Fifo` in "
 "wgpu, `VK_PRESENT_MODE_FIFO_KHR` in Vulkan, the swap interval in glutin. "
@@ -21163,7 +21514,7 @@ msgstr ""
 "**垂直同步**是表面（surface）的设置，而不是循环的设置：wgpu 中的 `PresentMode::Fifo`，Vulkan 中的 "
 "`VK_PRESENT_MODE_FIFO_KHR`，glutin 中的交换间隔。呈现操作会阻塞到有可用的垂直同步槽位，从而为循环定速；"
 
-#: src/engine/game-loop.md:160
+#: src/engine/game-loop.md:334
 msgid ""
 "**Without vsync**, `ControlFlow::WaitUntil(next_frame_instant)` tells winit "
 "to sleep until the next frame is due, rather than spinning at 100% CPU."
@@ -21171,7 +21522,7 @@ msgstr ""
 "**不开垂直同步时**，`ControlFlow::WaitUntil(next_frame_instant)` 告诉 winit "
 "睡眠到下一帧到期，而不是以 100% CPU 空转；"
 
-#: src/engine/game-loop.md:162
+#: src/engine/game-loop.md:336
 msgid ""
 "**For tools and editors** that only need to redraw on input, use "
 "`ControlFlow::Wait` and call `request_redraw()` only when something changes."
@@ -21180,7 +21531,7 @@ msgstr ""
 "**对于只需在输入时重绘的工具和编辑器**，使用 `ControlFlow::Wait`，只在有变化时调用 "
 "`request_redraw()`。此时事件循环会睡眠，就像普通的桌面应用。"
 
-#: src/engine/game-loop.md:165
+#: src/engine/game-loop.md:339
 msgid ""
 "`std::thread::sleep` has the usual OS granularity (about 1 ms on Linux and "
 "macOS; on Windows, Rust requests high-resolution timers where available). "
@@ -21189,11 +21540,11 @@ msgstr ""
 "`std::thread::sleep` 具有通常的操作系统粒度（Linux 和 macOS 上约 1 毫秒；在 Windows 上，Rust "
 "会在可用时请求高精度计时器）。要精确限制帧率，先睡眠到截止时间之前一点，然后自旋等待。"
 
-#: src/engine/game-loop.md:169
+#: src/engine/game-loop.md:343
 msgid "Where global state goes"
 msgstr "全局状态该放在哪里"
 
-#: src/engine/game-loop.md:171
+#: src/engine/game-loop.md:345
 msgid ""
 "C++ engines are full of singletons: `Renderer::Get()`, `g_Input`, "
 "`AssetManager::Instance()`. Rust makes mutable globals deliberately awkward:"
@@ -21206,25 +21557,25 @@ msgstr ""
 "故意让可变全局变量用起来别扭：`static mut` 只能在 `unsafe` 代码中访问，而且在 2024 edition "
 "中，获取它的引用默认会被拒绝，因为从不同调用点（或线程）对同一个全局变量取得两个 `&mut` 是未定义行为。惯用的做法，按优先顺序排列："
 
-#: src/engine/game-loop.md:178
+#: src/engine/game-loop.md:352
 msgid "1. Pass a context"
 msgstr "1. 传递上下文"
 
-#: src/engine/game-loop.md:180
+#: src/engine/game-loop.md:354
 msgid ""
 "Most \"global\" state is really per-game state that you can own in one "
 "struct and pass down:"
 msgstr "大多数\"全局\"状态其实是每个游戏一份的状态，你可以把它放在一个结构体中拥有，并向下传递："
 
-#: src/engine/game-loop.md:200
+#: src/engine/game-loop.md:374
 msgid "\"jump.wav\""
 msgstr ""
 
-#: src/engine/game-loop.md:215
+#: src/engine/game-loop.md:389
 msgid "\"frame {}: y = {:.3}, sounds = {:?}\""
 msgstr ""
 
-#: src/engine/game-loop.md:219
+#: src/engine/game-loop.md:393
 msgid ""
 "Every dependency is visible in the signature: `Player::update` reads input "
 "and time and writes audio. The compiler checks that nothing else holds `&mut"
@@ -21237,33 +21588,33 @@ msgstr ""
 "Audio`，测试也可以用假输入构造一个 `Ctx`。这与 ECS 资源（bevy_ecs 中的 "
 "`Res<Time>`、`ResMut<Audio>`；见 [ECS](ecs.md)）是同一个思路，后者就是由调度器管理的上下文结构体。"
 
-#: src/engine/game-loop.md:225
+#: src/engine/game-loop.md:399
 msgid "2. Immutable globals, initialized once"
 msgstr "2. 只初始化一次的不可变全局变量"
 
-#: src/engine/game-loop.md:227
+#: src/engine/game-loop.md:401
 msgid ""
 "Configuration, lookup tables and other values that never change after "
 "startup can be globals safely, because shared read-only access cannot race:"
 msgstr "配置、查找表以及其他启动后不再改变的值，可以安全地作为全局变量，因为共享只读访问不会产生竞争："
 
-#: src/engine/game-loop.md:238
+#: src/engine/game-loop.md:412
 msgid "\"loading config (once)\""
 msgstr ""
 
-#: src/engine/game-loop.md:239 src/engine/game-loop.md:247
+#: src/engine/game-loop.md:413 src/engine/game-loop.md:421
 msgid "\"gravity\""
 msgstr ""
 
-#: src/engine/game-loop.md:239 src/engine/game-loop.md:247
+#: src/engine/game-loop.md:413 src/engine/game-loop.md:421
 msgid "\"fov\""
 msgstr ""
 
-#: src/engine/game-loop.md:242
+#: src/engine/game-loop.md:416
 msgid "// Fully compile-time tables need no initialization at all:\n"
 msgstr "// 完全在编译期计算的表根本不需要初始化：\n"
 
-#: src/engine/game-loop.md:252
+#: src/engine/game-loop.md:426
 msgid ""
 "`OnceLock` is the thread-safe \"initialize on first use\" of a C++ function-"
 "local `static`, and `LazyLock` is the same with the initializer stored in "
@@ -21274,23 +21625,23 @@ msgstr ""
 "与之相同，只是把初始化函数存放在 static 本身中：`static TABLE: LazyLock<Vec<u32>> = "
 "LazyLock::new(build_table);`。"
 
-#: src/engine/game-loop.md:256
+#: src/engine/game-loop.md:430
 msgid "3. Mutable globals, synchronized"
 msgstr "3. 带同步的可变全局变量"
 
-#: src/engine/game-loop.md:258
+#: src/engine/game-loop.md:432
 msgid ""
 "For the few things that really are process-wide and mutable (a logger, a "
 "profiler, an allocation counter), wrap them in a synchronization type:"
 msgstr "对于少数确实是进程级且可变的东西（日志器、性能分析器、分配计数器），把它们包装在同步类型中："
 
-#: src/engine/game-loop.md:261
+#: src/engine/game-loop.md:435
 msgid ""
 "**Atomics** for counters and flags: `static FRAMES: AtomicU64 = "
 "AtomicU64::new(0);`"
 msgstr "**原子类型**用于计数器和标志：`static FRAMES: AtomicU64 = AtomicU64::new(0);`；"
 
-#: src/engine/game-loop.md:262
+#: src/engine/game-loop.md:436
 msgid ""
 "**`Mutex`/`RwLock`** for anything bigger: `static LOG: Mutex<Vec<String>> = "
 "Mutex::new(Vec::new());` (`Mutex::new` is `const`, so no lazy initialization"
@@ -21299,7 +21650,7 @@ msgstr ""
 "**`Mutex`/`RwLock`** 用于更大的东西：`static LOG: Mutex<Vec<String>> = "
 "Mutex::new(Vec::new());`（`Mutex::new` 是 `const` 的，因此不需要延迟初始化）；"
 
-#: src/engine/game-loop.md:264
+#: src/engine/game-loop.md:438
 msgid ""
 "**`thread_local!`** for per-thread state, such as a per-thread scratch "
 "allocator: `thread_local! { static SCRATCH: RefCell<Vec<u8>> = "
@@ -21308,7 +21659,7 @@ msgstr ""
 "**`thread_local!`** 用于每线程状态，例如每线程的临时分配器：`thread_local! { static SCRATCH: "
 "RefCell<Vec<u8>> = RefCell::new(Vec::new()); }`。"
 
-#: src/engine/game-loop.md:267
+#: src/engine/game-loop.md:441
 msgid ""
 "The `log` and `tracing` crates are built this way: a global logger set once "
 "at startup, called from anywhere with `log::info!(...)` ([Logging and "
@@ -21317,7 +21668,7 @@ msgstr ""
 "`log` 和 `tracing` crate 就是这样构建的：在启动时设置一次全局日志器，然后在任何地方用 `log::info!(...)` "
 "调用（[日志与诊断](../systems/logging.md)）。"
 
-#: src/engine/game-loop.md:274
+#: src/engine/game-loop.md:448
 msgid ""
 "Do not reach for `static mut` to port a singleton. If a piece of state is "
 "mutated from many places, the Rust answer is to make those places receive it"
@@ -21328,33 +21679,33 @@ msgstr ""
 "不要为了移植单例而去用 `static mut`。如果一份状态在很多地方被修改，Rust 的答案是让这些地方以参数形式接收它。在 C++ "
 "代码库中这往往是一次大规模重构，但在新的 Rust 代码库中这是默认做法，不需要任何代价，而且它让数据流变得可见，这正是你以后做并行化时所需要的。"
 
-#: src/engine/game-loop.md:282
+#: src/engine/game-loop.md:456
 msgid "Input handling"
 msgstr "输入处理"
 
-#: src/engine/game-loop.md:284
+#: src/engine/game-loop.md:458
 msgid ""
 "winit delivers input as events. Games usually convert them into a per-frame "
 "state snapshot that update code reads:"
 msgstr "winit 以事件的形式传递输入。游戏通常把它们转换为一份每帧的状态快照，供更新代码读取："
 
-#: src/engine/game-loop.md:302
+#: src/engine/game-loop.md:476
 msgid "// insert returns false if already held\n"
 msgstr "// 如果按键已被按住，insert 返回 false\n"
 
-#: src/engine/game-loop.md:319
+#: src/engine/game-loop.md:493
 msgid "// OS key repeat: not a new press\n"
 msgstr "// 操作系统的按键重复：不算新的按下\n"
 
-#: src/engine/game-loop.md:320
+#: src/engine/game-loop.md:494
 msgid "\"x = {}, jump = {}\""
 msgstr ""
 
-#: src/engine/game-loop.md:322
+#: src/engine/game-loop.md:496
 msgid "\"next frame jump = {}\""
 msgstr ""
 
-#: src/engine/game-loop.md:327
+#: src/engine/game-loop.md:501
 msgid ""
 "In winit, keys arrive as `KeyEvent { physical_key, logical_key, state, "
 "repeat, .. }`. Use `physical_key` (a `KeyCode` like `KeyCode::KeyW`, by "
@@ -21367,69 +21718,87 @@ msgstr ""
 "AZERTY 键盘上也能正常工作；文本和快捷键使用 `logical_key`。手柄请使用 [gilrs](https://docs.rs/gilrs)"
 " crate。"
 
-#: src/engine/game-loop.md:336
+#: src/engine/game-loop.md:510
 msgid "SDL / GLFW window and loop"
 msgstr "SDL / GLFW 窗口与循环"
 
-#: src/engine/game-loop.md:336
-msgid "winit `EventLoop` + `ApplicationHandler` (or `sdl2`/`glfw` crates)"
-msgstr "winit `EventLoop` + `ApplicationHandler`（或 `sdl2`/`glfw` crate）"
+#: src/engine/game-loop.md:510
+msgid "winit `EventLoop` + `ApplicationHandler` (or `sdl3`/`glfw` crates)"
+msgstr "winit `EventLoop` + `ApplicationHandler`（或 `sdl3`/`glfw` crate）"
 
-#: src/engine/game-loop.md:337
+#: src/engine/game-loop.md:511
+msgid "`SDL_CreateWindow`, GLFW window hints"
+msgstr "`SDL_CreateWindow`、GLFW window hints"
+
+#: src/engine/game-loop.md:511
+msgid ""
+"`event_loop.create_window(Window::default_attributes()...)` in `resumed`"
+msgstr ""
+"在 `resumed` 中调用 `event_loop.create_window(Window::default_attributes()...)`"
+
+#: src/engine/game-loop.md:512
+msgid "`HWND`, `NSView` passed to the renderer"
+msgstr "把 `HWND`、`NSView` 传给渲染器"
+
+#: src/engine/game-loop.md:512
+msgid "`raw-window-handle`, accepted by wgpu, ash-window and glutin"
+msgstr "`raw-window-handle`，wgpu、ash-window 和 glutin 都接受它"
+
+#: src/engine/game-loop.md:513
 msgid "`while (!quit) { ... }`"
 msgstr ""
 
-#: src/engine/game-loop.md:337
+#: src/engine/game-loop.md:513
 msgid "`RedrawRequested` + `request_redraw()`, `ControlFlow::Poll`"
 msgstr ""
 
-#: src/engine/game-loop.md:338 src/appendix/cheat-sheet.md:101
+#: src/engine/game-loop.md:514 src/appendix/cheat-sheet.md:101
 msgid "`std::chrono::steady_clock`"
 msgstr ""
 
-#: src/engine/game-loop.md:338 src/appendix/cheat-sheet.md:101
+#: src/engine/game-loop.md:514 src/appendix/cheat-sheet.md:101
 msgid "`std::time::Instant`, `Duration`"
 msgstr ""
 
-#: src/engine/game-loop.md:339
+#: src/engine/game-loop.md:515
 msgid "Singleton `Get()`"
 msgstr "单例 `Get()`"
 
-#: src/engine/game-loop.md:339 src/appendix/cheat-sheet.md:162
+#: src/engine/game-loop.md:515 src/appendix/cheat-sheet.md:164
 msgid "Context passed as a parameter; ECS resources"
 msgstr "以参数传递的上下文；ECS 资源"
 
-#: src/engine/game-loop.md:340 src/appendix/cheat-sheet.md:102
+#: src/engine/game-loop.md:516 src/appendix/cheat-sheet.md:102
 msgid "Function-local `static`"
 msgstr "函数内的 `static`"
 
-#: src/engine/game-loop.md:340 src/appendix/cheat-sheet.md:102
+#: src/engine/game-loop.md:516 src/appendix/cheat-sheet.md:102
 msgid "`OnceLock`, `LazyLock`"
 msgstr ""
 
-#: src/engine/game-loop.md:341
+#: src/engine/game-loop.md:517
 msgid "Global mutable variable"
 msgstr "可变全局变量"
 
-#: src/engine/game-loop.md:341
+#: src/engine/game-loop.md:517
 msgid "Atomic, `Mutex`, or `thread_local!`; `static mut` only with `unsafe`"
 msgstr "原子类型、`Mutex` 或 `thread_local!`；`static mut` 只能配合 `unsafe` 使用"
 
-#: src/engine/game-loop.md:342
+#: src/engine/game-loop.md:518
 msgid "`glfwSwapInterval(1)`"
 msgstr ""
 
-#: src/engine/game-loop.md:342
+#: src/engine/game-loop.md:518
 msgid "`PresentMode::Fifo` (wgpu), swap interval (glutin)"
 msgstr "`PresentMode::Fifo`（wgpu）、交换间隔（glutin）"
 
-#: src/engine/game-loop.md:346
+#: src/engine/game-loop.md:522
 msgid ""
 "Change the simulated frame times in the fixed-timestep example to a 30 Hz "
 "display (`33.3` ms). How many steps run per frame? What happens to `alpha`?"
 msgstr "把固定时间步长示例中的模拟帧时间改为 30 Hz 显示器（`33.3` 毫秒）。每帧运行多少步？`alpha` 会怎样？"
 
-#: src/engine/game-loop.md:348
+#: src/engine/game-loop.md:524
 msgid ""
 "Add a `ctx.time.frame`\\-based cooldown to `Player::update` so the player "
 "can only jump every 30 frames. Which struct holds the \"last jump frame\"?"
@@ -21437,7 +21806,7 @@ msgstr ""
 "给 `Player::update` 添加一个基于 `ctx.time.frame` 的冷却，使玩家每 30 "
 "帧只能跳一次。\"上次跳跃的帧\"应该放在哪个结构体中？"
 
-#: src/engine/game-loop.md:350
+#: src/engine/game-loop.md:526
 msgid ""
 "Write a global frame counter with `AtomicU64`, increment it from two threads"
 " with `std::thread::scope`, and print the total. Then try the same with "
@@ -21445,6 +21814,619 @@ msgid ""
 msgstr ""
 "用 `AtomicU64` 写一个全局帧计数器，用 `std::thread::scope` 在两个线程中递增它，并打印总数。然后用 `static "
 "mut COUNTER: u64` 尝试同样的事，阅读编译器的错误或警告。"
+
+#: src/engine/ui.md:3
+msgid ""
+"A C++ engine typically has three kinds of UI: Dear ImGui for debug overlays "
+"and quick tools, Qt or a custom framework for the editor, and a separate "
+"system (custom, or middleware such as RmlUi or Noesis) for the in-game HUD "
+"and menus. Rust has answers for all three, but the most common C++ design "
+"for retained UI does not carry over directly, and understanding why makes "
+"the Rust options easy to choose between."
+msgstr ""
+"C++ 引擎通常有三类 UI：用于调试覆盖层和快速工具的 Dear ImGui，用于编辑器的 Qt 或自研框架，以及用于游戏内 HUD "
+"和菜单的另一套系统（自研，或 RmlUi、Noesis 之类的中间件）。Rust 对这三类都有对应方案，但 C++ 中最常见的保留模式 UI "
+"设计无法直接照搬。理解其中的原因之后，在 Rust 的几种方案之间做选择就很容易了。"
+
+#: src/engine/ui.md:12
+msgid "why callback-based widget trees fight the borrow checker,"
+msgstr "为什么基于回调的控件树会和借用检查器冲突，"
+
+#: src/engine/ui.md:13
+msgid ""
+"immediate mode with egui, as a standalone tool and as an overlay in your own"
+" renderer,"
+msgstr "使用 egui 的即时模式，既作为独立工具，也作为你自己渲染器中的覆盖层，"
+
+#: src/engine/ui.md:15
+msgid "message-based UI with iced, and declarative UI with Slint,"
+msgstr "基于消息的 iced 和声明式的 Slint，"
+
+#: src/engine/ui.md:16
+msgid "in-game UI, and how to choose."
+msgstr "游戏内 UI，以及如何选择。"
+
+#: src/engine/ui.md:18
+msgid "Why UI is different in Rust"
+msgstr "为什么 Rust 中的 UI 不一样"
+
+#: src/engine/ui.md:20
+msgid ""
+"The classic retained-mode design stores callbacks in widgets, and the "
+"callbacks capture a pointer to the state they change:"
+msgstr "经典的保留模式设计把回调存放在控件中，而回调捕获一个指向它所修改状态的指针："
+
+#: src/engine/ui.md:24
+msgid "// Qt-style C++\n"
+msgstr "// Qt 风格的 C++\n"
+
+#: src/engine/ui.md:28
+msgid ""
+"The lambda holds `this` for as long as the button exists, and mutates "
+"`light` whenever a click arrives. Nothing stops two callbacks from changing "
+"the same state, or a callback from running after `this` is destroyed. The "
+"direct Rust translation does not compile, because a closure stored inside "
+"`editor` cannot also hold a mutable borrow of `editor`:"
+msgstr ""
+"只要按钮还存在，这个 lambda 就一直持有 `this`，并在每次点击时修改 "
+"`light`。没有任何机制阻止两个回调修改同一份状态，也没有任何机制阻止回调在 `this` 被销毁之后运行。直接翻译成 Rust "
+"是无法编译的，因为存放在 `editor` 内部的闭包不能同时持有 `editor` 的可变借用："
+
+#: src/engine/ui.md:41
+msgid "// error[E0506], error[E0597]\n"
+msgstr "// error[E0506], error[E0597]\n"
+
+#: src/engine/ui.md:48
+msgid ""
+"You can make it work with shared ownership, `Rc<RefCell<State>>` captured by"
+" every callback ([Smart pointers](../foundations/smart-pointers.md)), and "
+"bindings to C and C++ toolkits (GTK, Qt) do exactly that. But it moves the "
+"borrow checking to run time and spreads `borrow_mut()` across the UI. Rust "
+"UI libraries instead pick one of three designs that avoid long-lived "
+"callbacks holding mutable state:"
+msgstr ""
+"你可以用共享所有权让它工作：每个回调都捕获一个 "
+"`Rc<RefCell<State>>`（[智能指针与内部可变性](../foundations/smart-pointers.md)），而 C 和 "
+"C++ 工具包（GTK、Qt）的绑定正是这样做的。但这会把借用检查推迟到运行时，并让 `borrow_mut()` 散布在整个 UI 中。Rust 的 "
+"UI 库则从三种设计中选择一种，以避免长期存活的回调持有可变状态："
+
+#: src/engine/ui.md:55
+msgid "Design"
+msgstr "设计"
+
+#: src/engine/ui.md:55 src/engine/case-study.md:184
+msgid "Idea"
+msgstr "思想"
+
+#: src/engine/ui.md:55
+msgid "Libraries"
+msgstr "库"
+
+#: src/engine/ui.md:57
+msgid "Immediate mode"
+msgstr "即时模式"
+
+#: src/engine/ui.md:57
+msgid ""
+"No stored callbacks. UI code runs every frame with `&mut` access to your "
+"state and reacts to clicks on the spot"
+msgstr "不存储回调。UI 代码每帧运行，以 `&mut` 访问你的状态，并当场响应点击"
+
+#: src/engine/ui.md:57
+msgid "egui, Dear ImGui bindings"
+msgstr "egui、Dear ImGui 绑定"
+
+#: src/engine/ui.md:58
+msgid "Messages (the Elm architecture)"
+msgstr "消息（Elm 架构）"
+
+#: src/engine/ui.md:58
+msgid ""
+"Widgets produce messages. One `update` function owns all mutation; a `view` "
+"function builds the UI from the state"
+msgstr "控件产生消息。唯一的 `update` 函数负责所有修改；`view` 函数根据状态构建 UI"
+
+#: src/engine/ui.md:58
+msgid "iced, Relm4"
+msgstr "iced、Relm4"
+
+#: src/engine/ui.md:59
+msgid "Declarative with properties"
+msgstr "带属性的声明式"
+
+#: src/engine/ui.md:59
+msgid ""
+"The UI lives in its own language with reactive properties; Rust code "
+"connects callbacks through weak handles"
+msgstr "UI 用它自己的语言编写，带有响应式属性；Rust 代码通过弱句柄连接回调"
+
+#: src/engine/ui.md:59 src/engine/ui.md:376
+msgid "Slint"
+msgstr "Slint"
+
+#: src/engine/ui.md:61
+msgid "egui: immediate mode"
+msgstr "egui：即时模式"
+
+#: src/engine/ui.md:63
+msgid ""
+"[egui](https://docs.rs/egui) is the Rust equivalent of Dear ImGui, written "
+"in pure Rust. Your code describes the whole UI every frame, and each widget "
+"returns whether it was interacted with. `eframe` wraps egui with a window "
+"and a renderer for standalone tools:"
+msgstr ""
+"[egui](https://docs.rs/egui) 是 Dear ImGui 在 Rust 中的对应物，完全用 Rust "
+"编写。你的代码每帧描述整个 UI，每个控件都会返回它是否被交互过。`eframe` 为 egui 包装了窗口和渲染器，用于编写独立工具："
+
+#: src/engine/ui.md:68
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"eframe = \"0.37\"\n"
+"```"
+msgstr ""
+
+#: src/engine/ui.md:85
+msgid "\"properties\""
+msgstr ""
+
+#: src/engine/ui.md:86
+msgid "\"Light\""
+msgstr ""
+
+#: src/engine/ui.md:87
+msgid "\"intensity\""
+msgstr ""
+
+#: src/engine/ui.md:89
+msgid "\"cast shadows\""
+msgstr ""
+
+#: src/engine/ui.md:90 src/engine/ui.md:277 src/engine/ui.md:323
+msgid "\"Bake\""
+msgstr ""
+
+#: src/engine/ui.md:91
+msgid "\"baked at intensity {:.1}\""
+msgstr ""
+
+#: src/engine/ui.md:109
+msgid "\"Light tool\""
+msgstr ""
+
+#: src/engine/ui.md:116
+msgid ""
+"![The egui light tool: a side panel with an intensity slider, a color "
+"button, a \"cast shadows\" checkbox and a Bake button](img/ui-egui.png)"
+msgstr ""
+"![egui 灯光工具：侧边栏中有一个强度滑块、一个颜色按钮、一个“投射阴影”复选框和一个 Bake 按钮](img/ui-egui.png)"
+
+#: src/engine/ui.md:118
+msgid ""
+"`Slider::new(&mut self.intensity, ...)` borrows the field only for that "
+"call, exactly like `ImGui::SliderFloat(\"intensity\", &intensity, 0, 10)`. "
+"The click is handled where the button is drawn, with full `&mut self` "
+"access, so there is no callback to store and nothing to share. The costs are"
+" also the same as Dear ImGui: layout is computed in one pass each frame, so "
+"some layouts need workarounds, and the UI code runs every frame (eframe only"
+" repaints on input by default, so an idle tool uses no CPU)."
+msgstr ""
+"`Slider::new(&mut self.intensity, ...)` 只在这次调用期间借用这个字段，与 "
+"`ImGui::SliderFloat(\"intensity\", &intensity, 0, 10)` "
+"完全一样。点击在绘制按钮的地方处理，可以完整地访问 `&mut self`，所以没有需要存储的回调，也没有需要共享的东西。代价也与 Dear ImGui"
+" 相同：布局每帧只计算一遍，所以有些布局需要变通处理，而且 UI 代码每帧都会运行（eframe 默认只在有输入时重绘，所以空闲的工具不占用 CPU）。"
+
+#: src/engine/ui.md:126
+msgid "egui inside your engine"
+msgstr "在你的引擎中使用 egui"
+
+#: src/engine/ui.md:128
+msgid ""
+"For a debug overlay, you want egui drawn by your own renderer on top of the "
+"game, with input shared between them. `egui-winit` translates winit events "
+"into egui input, and `egui-wgpu` draws egui's triangles with wgpu (there are"
+" also backends for glow, Vulkan through community crates, and others):"
+msgstr ""
+"对于调试覆盖层，你希望由自己的渲染器把 egui 画在游戏画面之上，并让两者共享输入。`egui-winit` 把 winit 事件转换成 egui "
+"输入，`egui-wgpu` 用 wgpu 绘制 egui 的三角形（也有 glow 后端、社区 crate 提供的 Vulkan 后端等）："
+
+#: src/engine/ui.md:133
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"egui = \"0.37\"\n"
+"egui-winit = \"0.37\"\n"
+"egui-wgpu = \"0.37\"\n"
+"```"
+msgstr ""
+
+#: src/engine/ui.md:143
+msgid "/// An egui debug overlay drawn by your own renderer.\n"
+msgstr "/// 由你自己的渲染器绘制的 egui 调试覆盖层。\n"
+
+#: src/engine/ui.md:147
+msgid "// translates winit events into egui input\n"
+msgstr "// 把 winit 事件转换成 egui 输入\n"
+
+#: src/engine/ui.md:148
+msgid "// draws egui's triangles with wgpu\n"
+msgstr "// 用 wgpu 绘制 egui 的三角形\n"
+
+#: src/engine/ui.md:162
+msgid ""
+"/// Call from `window_event`. Returns true if egui used the event\n"
+"    /// (a click on a panel, typing in a text box): don't pass it to the game.\n"
+msgstr ""
+"/// 在 `window_event` 中调用。如果 egui 使用了这个事件（点击了面板、\n"
+"    /// 在文本框中输入），返回 true：不要再把它传给游戏。\n"
+
+#: src/engine/ui.md:168
+msgid "/// Call once per frame, after the game has rendered into `view`.\n"
+msgstr "/// 每帧调用一次，在游戏渲染到 `view` 之后。\n"
+
+#: src/engine/ui.md:179
+msgid "// your UI code runs here\n"
+msgstr "// 你的 UI 代码在这里运行\n"
+
+#: src/engine/ui.md:180
+msgid "// cursor, clipboard\n"
+msgstr "// 光标、剪贴板\n"
+
+#: src/engine/ui.md:190
+msgid "// font atlas, images\n"
+msgstr "// 字体图集、图像\n"
+
+#: src/engine/ui.md:196
+msgid "\"egui\""
+msgstr ""
+
+#: src/engine/ui.md:201
+msgid "// keep the game image\n"
+msgstr "// 保留游戏画面\n"
+
+#: src/engine/ui.md:214
+msgid "// In the game's frame:\n"
+msgstr "// 在游戏的一帧中：\n"
+
+#: src/engine/ui.md:216
+msgid "\"Debug\""
+msgstr ""
+
+#: src/engine/ui.md:217
+msgid "\"{frame_ms:.1} ms\""
+msgstr ""
+
+#: src/engine/ui.md:218
+msgid "\"time scale\""
+msgstr ""
+
+#: src/engine/ui.md:219
+msgid "\"wireframe\""
+msgstr ""
+
+#: src/engine/ui.md:224
+msgid ""
+"`on_event` reports whether egui consumed an event, so the game ignores "
+"clicks and key presses that land on a debug window, which is the same check "
+"as `io.WantCaptureMouse` in Dear ImGui. The closure passed to `draw` borrows"
+" `world` and `renderer` mutably for the duration of the call, so tweaking "
+"engine values from the overlay needs no globals."
+msgstr ""
+"`on_event` 报告 egui 是否消费了某个事件，这样游戏就会忽略落在调试窗口上的点击和按键，这与 Dear ImGui 中检查 "
+"`io.WantCaptureMouse` 相同。传给 `draw` 的闭包在调用期间可变地借用 `world` 和 "
+"`renderer`，所以从覆盖层调整引擎参数不需要任何全局变量。"
+
+#: src/engine/ui.md:230
+msgid "Dear ImGui itself"
+msgstr "直接使用 Dear ImGui"
+
+#: src/engine/ui.md:232
+msgid ""
+"If your C++ tools already use Dear ImGui, or you want its docking and its "
+"widget ecosystem, there are bindings: [imgui](https://docs.rs/imgui) (imgui-"
+"rs) and the more recent [dear-imgui-rs](https://docs.rs/dear-imgui-rs), with"
+" winit, wgpu and OpenGL backends. They add a C++ build step to your project;"
+" egui does not."
+msgstr ""
+"如果你的 C++ 工具已经在用 Dear "
+"ImGui，或者你想要它的停靠功能和控件生态，可以使用绑定：[imgui](https://docs.rs/imgui)（imgui-rs）以及较新的 "
+"[dear-imgui-rs](https://docs.rs/dear-imgui-rs)，它们都有 winit、wgpu 和 OpenGL "
+"后端。它们会给项目增加一个 C++ 构建步骤；egui 则不会。"
+
+#: src/engine/ui.md:238
+msgid "iced: messages and an update function"
+msgstr "iced：消息与 update 函数"
+
+#: src/engine/ui.md:240
+msgid ""
+"[iced](https://docs.rs/iced) follows the Elm architecture. The state is a "
+"plain struct. `view` builds widgets from a shared borrow of the state, and "
+"widgets do not change anything: they produce **messages**. The runtime then "
+"calls `update` with a mutable borrow to apply each message:"
+msgstr ""
+"[iced](https://docs.rs/iced) 遵循 Elm 架构。状态是一个普通的结构体。`view` "
+"通过状态的共享借用构建控件，而控件本身不修改任何东西：它们产生**消息**。随后运行时用一个可变借用调用 `update`，逐条应用这些消息："
+
+#: src/engine/ui.md:245
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"iced = \"0.14\"\n"
+"```"
+msgstr ""
+
+#: src/engine/ui.md:275
+msgid "\"Intensity: {:.1}\""
+msgstr ""
+
+#: src/engine/ui.md:278
+msgid "\"Baked {} times\""
+msgstr ""
+
+#: src/engine/ui.md:290
+msgid ""
+"![The iced light panel: an intensity label, a slider, a Bake button and a "
+"\"Baked 0 times\" label](img/ui-iced.png)"
+msgstr ""
+"![iced 灯光面板：一个强度标签、一个滑块、一个 Bake 按钮和一个“Baked 0 times”标签](img/ui-iced.png)"
+
+#: src/engine/ui.md:292
+msgid ""
+"All mutation happens in one function, one message at a time, so there is "
+"never more than one mutable borrow of the state and the borrow checker has "
+"nothing to object to. `Message` is an ordinary enum, so adding a new "
+"interaction is a compile error until `update` handles it. This scales well "
+"to editors with many panels, and it makes UI behavior easy to test: call "
+"`update` with messages and check the state."
+msgstr ""
+"所有修改都在一个函数中进行，一次处理一条消息，所以状态的可变借用永远不会超过一个，借用检查器也就无可挑剔。`Message` "
+"是一个普通的枚举，所以新增一种交互后，在 `update` 处理它之前都会编译报错。这种方式能很好地扩展到有许多面板的编辑器，也让 UI "
+"行为易于测试：用消息调用 `update`，然后检查状态。"
+
+#: src/engine/ui.md:299
+msgid "Slint: a declarative language"
+msgstr "Slint：声明式语言"
+
+#: src/engine/ui.md:301
+msgid ""
+"[Slint](https://slint.dev) describes the UI in its own language, close to "
+"QML, with properties, bindings and callbacks. The `slint!` macro compiles it"
+" at build time (it can also live in `.slint` files):"
+msgstr ""
+"[Slint](https://slint.dev) 用它自己的语言描述 UI，这种语言接近 QML，有属性、绑定和回调。`slint!` "
+"宏在构建时编译它（它也可以放在 `.slint` 文件中）："
+
+#: src/engine/ui.md:305
+msgid ""
+"```toml\n"
+"[dependencies]\n"
+"slint = \"1.19\"\n"
+"```"
+msgstr ""
+
+#: src/engine/ui.md:312
+msgid "\"1.19\""
+msgstr ""
+
+#: src/engine/ui.md:313
+msgid "\"std-widgets.slint\""
+msgstr ""
+
+#: src/engine/ui.md:321
+msgid "\"Intensity: \""
+msgstr ""
+
+#: src/engine/ui.md:330
+msgid "// a weak handle: the closure must not keep the UI alive\n"
+msgstr "// 弱句柄：闭包不能让 UI 一直存活\n"
+
+#: src/engine/ui.md:333
+msgid "\"bake at intensity {:.1}\""
+msgstr ""
+
+#: src/engine/ui.md:339
+msgid ""
+"![The Slint light panel: \"Intensity: 4\", a slider and a Bake "
+"button](img/ui-slint.png)"
+msgstr "![Slint 灯光面板：“Intensity: 4”、一个滑块和一个 Bake 按钮](img/ui-slint.png)"
+
+#: src/engine/ui.md:341
+msgid ""
+"The `<=>` binding keeps the slider and the property in sync without any Rust"
+" code. The callback captures a **weak** handle, so it does not keep the UI "
+"alive: this is the Rust version of the `[weak = QPointer(this)]` pattern in "
+"Qt. Slint also targets embedded devices and has a visual designer, which "
+"makes it a good fit for editor and launcher UIs designed by non-programmers."
+" It is dual-licensed (GPLv3, a royalty-free license for desktop, mobile and "
+"web applications, or a paid license), so check the terms for your product."
+msgstr ""
+"`<=>` 绑定让滑块和属性保持同步，不需要任何 Rust 代码。回调捕获的是一个**弱**句柄，所以不会让 UI 一直存活：这就是 Qt 中 "
+"`[weak = QPointer(this)]` 模式的 Rust 版本。Slint "
+"也支持嵌入式设备，并且有可视化设计器，因此很适合由非程序员设计的编辑器和启动器 UI。它采用多重许可（GPLv3、适用于桌面、移动和 Web "
+"应用的免版税许可，或付费许可），请根据你的产品核对条款。"
+
+#: src/engine/ui.md:349
+msgid "In-game UI"
+msgstr "游戏内 UI"
+
+#: src/engine/ui.md:351
+msgid ""
+"HUDs, menus and inventory screens are drawn by the game's renderer, styled "
+"by artists and driven by gameplay state, which is why C++ engines use "
+"separate systems for them. The Rust options:"
+msgstr ""
+"HUD、菜单和物品栏界面由游戏的渲染器绘制，由美术设定样式，由游戏状态驱动，这就是 C++ 引擎为它们使用单独系统的原因。Rust 中的选择："
+
+#: src/engine/ui.md:355
+msgid ""
+"**The engine's own UI.** Bevy has `bevy_ui`, built on its ECS; other engines"
+" have their own."
+msgstr "**引擎自带的 UI。** Bevy 有基于其 ECS 的 `bevy_ui`；其他引擎也有各自的 UI。"
+
+#: src/engine/ui.md:357
+msgid ""
+"**egui** works for prototypes and debug menus, but its look is that of a "
+"tool, and restyling it heavily is more work than it is worth."
+msgstr "**egui** 适合原型和调试菜单，但它的外观是工具风格的，大幅改造样式得不偿失。"
+
+#: src/engine/ui.md:359
+msgid ""
+"**Your own UI on top of text and vector crates**, as many C++ engines do: "
+"[cosmic-text](https://docs.rs/cosmic-text) for shaping and layout of text in"
+" any script, [glyphon](https://docs.rs/glyphon) for drawing that text with "
+"wgpu, and [lyon](https://docs.rs/lyon) for tessellating vector shapes."
+msgstr ""
+"**在文本和矢量 crate 之上自己构建 UI**，许多 C++ 引擎也是这样做的：[cosmic-"
+"text](https://docs.rs/cosmic-text) "
+"负责任意文字的整形与排版，[glyphon](https://docs.rs/glyphon) 用 wgpu "
+"绘制这些文字，[lyon](https://docs.rs/lyon) 负责矢量图形的三角化。"
+
+#: src/engine/ui.md:363
+msgid ""
+"**C++ middleware** through its C API, like any other C++ library ([FFI with "
+"C and C++](../systems/ffi.md))."
+msgstr ""
+"通过 C API 使用 **C++ 中间件**，与任何其他 C++ 库一样（[与 C 和 C++ 的 FFI](../systems/ffi.md)）。"
+
+#: src/engine/ui.md:366
+msgid ""
+"Accessibility is handled by [AccessKit](https://accesskit.dev), which egui "
+"and Slint use to expose widgets to screen readers on Windows, macOS and "
+"Linux."
+msgstr ""
+"无障碍功能由 [AccessKit](https://accesskit.dev) 处理，egui 和 Slint 都用它在 Windows、macOS"
+" 和 Linux 上把控件提供给屏幕阅读器。"
+
+#: src/engine/ui.md:369
+msgid "Choosing"
+msgstr "如何选择"
+
+#: src/engine/ui.md:371
+msgid "You are building"
+msgstr "你要构建的是"
+
+#: src/engine/ui.md:371
+msgid "Start with"
+msgstr "从这里开始"
+
+#: src/engine/ui.md:373
+msgid "A debug overlay or in-engine tweak panel"
+msgstr "调试覆盖层或引擎内的参数调节面板"
+
+#: src/engine/ui.md:373
+msgid "egui with egui-winit and egui-wgpu"
+msgstr "egui 搭配 egui-winit 和 egui-wgpu"
+
+#: src/engine/ui.md:374
+msgid "A standalone tool (asset viewer, profiler UI, level tool)"
+msgstr "独立工具（资源查看器、性能分析 UI、关卡工具）"
+
+#: src/engine/ui.md:374
+msgid "egui with eframe"
+msgstr "egui 搭配 eframe"
+
+#: src/engine/ui.md:375
+msgid "A large editor with many panels and complex state"
+msgstr "有许多面板和复杂状态的大型编辑器"
+
+#: src/engine/ui.md:375
+msgid "iced, or egui if the team prefers immediate mode"
+msgstr "iced；如果团队偏好即时模式，也可以用 egui"
+
+#: src/engine/ui.md:376
+msgid "A designer-made UI, a launcher, or embedded hardware"
+msgstr "由设计师制作的 UI、启动器或嵌入式硬件"
+
+#: src/engine/ui.md:377
+msgid "Tools that must share code and look with existing Dear ImGui C++ tools"
+msgstr "必须与现有 Dear ImGui C++ 工具共享代码和外观的工具"
+
+#: src/engine/ui.md:377
+msgid "imgui-rs or dear-imgui-rs"
+msgstr "imgui-rs 或 dear-imgui-rs"
+
+#: src/engine/ui.md:378
+msgid "A game HUD and menus"
+msgstr "游戏 HUD 和菜单"
+
+#: src/engine/ui.md:378
+msgid "Your engine's UI, or your own on cosmic-text and glyphon"
+msgstr "引擎自带的 UI，或者基于 cosmic-text 和 glyphon 自己构建"
+
+#: src/engine/ui.md:384 src/appendix/cheat-sheet.md:155
+msgid "Dear ImGui"
+msgstr "Dear ImGui"
+
+#: src/engine/ui.md:384 src/appendix/cheat-sheet.md:155
+msgid "egui (or imgui bindings)"
+msgstr "egui（或 imgui 绑定）"
+
+#: src/engine/ui.md:385
+msgid "`io.WantCaptureMouse`"
+msgstr ""
+
+#: src/engine/ui.md:385
+msgid "`EventResponse::consumed` from egui-winit"
+msgstr "egui-winit 的 `EventResponse::consumed`"
+
+#: src/engine/ui.md:386
+msgid "Qt widgets with `connect` and lambdas capturing `this`"
+msgstr "使用 `connect` 和捕获 `this` 的 lambda 的 Qt 控件"
+
+#: src/engine/ui.md:386
+msgid "iced messages and `update`, or Slint callbacks with weak handles"
+msgstr "iced 的消息和 `update`，或使用弱句柄的 Slint 回调"
+
+#: src/engine/ui.md:387
+msgid "QML"
+msgstr "QML"
+
+#: src/engine/ui.md:387
+msgid "The Slint language"
+msgstr "Slint 语言"
+
+#: src/engine/ui.md:388
+msgid "`QPointer` in a lambda capture"
+msgstr "lambda 捕获中的 `QPointer`"
+
+#: src/engine/ui.md:388
+msgid "`ui.as_weak()`"
+msgstr ""
+
+#: src/engine/ui.md:389
+msgid "FreeType + HarfBuzz"
+msgstr "FreeType + HarfBuzz"
+
+#: src/engine/ui.md:389
+msgid "cosmic-text"
+msgstr "cosmic-text"
+
+#: src/engine/ui.md:393
+msgid ""
+"Add a \"Reset\" button to the egui tool that sets `intensity` back to 4.0. "
+"Where does the code go, and what does it borrow?"
+msgstr "给 egui 工具添加一个“Reset”按钮，把 `intensity` 重置为 4.0。代码应该写在哪里？它借用了什么？"
+
+#: src/engine/ui.md:395
+msgid ""
+"In the iced example, add a `Message::Reset` variant. Which function fails to"
+" compile until you handle it?"
+msgstr "在 iced 示例中添加一个 `Message::Reset` 变体。在你处理它之前，哪个函数会编译失败？"
+
+#: src/engine/ui.md:397
+msgid ""
+"Rewrite the `compile_fail` example with `Rc<RefCell<Editor>>` so that it "
+"compiles. Then click the button from inside another `borrow_mut()` of the "
+"editor, and read the panic."
+msgstr ""
+"用 `Rc<RefCell<Editor>>` 重写那个 `compile_fail` 示例，让它能够编译。然后在编辑器的另一个 "
+"`borrow_mut()` 内部触发按钮点击，读一读 panic 信息。"
+
+#: src/engine/ui.md:400
+msgid ""
+"Add the egui overlay to the [wgpu chapter](wgpu.md)'s triangle, with a "
+"slider that changes the clear color."
+msgstr "在 [wgpu 一章](wgpu.md)的三角形上加入 egui 覆盖层，并添加一个改变清屏颜色的滑块。"
 
 #: src/engine/assets-and-build.md:1
 msgid "Assets, build scripts and serialization"
@@ -22630,7 +23612,7 @@ msgstr "subsecond"
 msgid "sol2 / LuaBridge"
 msgstr "sol2 / LuaBridge"
 
-#: src/engine/hot-reload-and-plugins.md:258 src/appendix/cheat-sheet.md:164
+#: src/engine/hot-reload-and-plugins.md:258 src/appendix/cheat-sheet.md:166
 msgid "mlua"
 msgstr "mlua"
 
@@ -22789,10 +23771,6 @@ msgstr "把它当作全书的地图来读"
 #: src/engine/case-study.md:184
 msgid "Part of the program"
 msgstr "程序中的部分"
-
-#: src/engine/case-study.md:184
-msgid "Idea"
-msgstr "思想"
 
 #: src/engine/case-study.md:186
 msgid "`Vec2` with `Add`, `Sub`, `Mul<f32>`"
@@ -23258,7 +24236,7 @@ msgid "Arena + generational `Handle<T>`"
 msgstr "arena + 带代数的 `Handle<T>`"
 
 #: src/appendix/cheat-sheet.md:48 src/appendix/cheat-sheet.md:136
-#: src/appendix/cheat-sheet.md:174
+#: src/appendix/cheat-sheet.md:176
 msgid "[Handles and arenas](../engine/handles-and-arenas.md)"
 msgstr "[句柄与 arena](../engine/handles-and-arenas.md)"
 
@@ -23436,7 +24414,7 @@ msgstr ""
 
 #: src/appendix/cheat-sheet.md:94 src/appendix/cheat-sheet.md:95
 #: src/appendix/cheat-sheet.md:99 src/appendix/cheat-sheet.md:100
-#: src/appendix/cheat-sheet.md:177 src/appendix/cheat-sheet.md:178
+#: src/appendix/cheat-sheet.md:179 src/appendix/cheat-sheet.md:180
 msgid "[Concurrency](../systems/concurrency.md)"
 msgstr "[并发](../systems/concurrency.md)"
 
@@ -23470,8 +24448,8 @@ msgid "`rayon`: `par_iter()`"
 msgstr ""
 
 #: src/appendix/cheat-sheet.md:101 src/appendix/cheat-sheet.md:102
-#: src/appendix/cheat-sheet.md:154 src/appendix/cheat-sheet.md:162
-#: src/appendix/cheat-sheet.md:179
+#: src/appendix/cheat-sheet.md:154 src/appendix/cheat-sheet.md:164
+#: src/appendix/cheat-sheet.md:181
 msgid "[Game loop](../engine/game-loop.md)"
 msgstr "[游戏循环](../engine/game-loop.md)"
 
@@ -23533,7 +24511,7 @@ msgid "Workspace members"
 msgstr "工作空间成员"
 
 #: src/appendix/cheat-sheet.md:115 src/appendix/cheat-sheet.md:116
-#: src/appendix/cheat-sheet.md:163
+#: src/appendix/cheat-sheet.md:165
 msgid "[Assets and build](../engine/assets-and-build.md)"
 msgstr "[资源与构建](../engine/assets-and-build.md)"
 
@@ -23672,7 +24650,7 @@ msgstr "[数学与 SIMD](../engine/math-and-simd.md)"
 msgid "`libloading`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:146 src/appendix/cheat-sheet.md:164
+#: src/appendix/cheat-sheet.md:146 src/appendix/cheat-sheet.md:166
 msgid "[Hot reloading](../engine/hot-reload-and-plugins.md)"
 msgstr "[热重载](../engine/hot-reload-and-plugins.md)"
 
@@ -23696,162 +24674,174 @@ msgstr "GLFW / SDL"
 msgid "winit (`ApplicationHandler`)"
 msgstr "winit（`ApplicationHandler`）"
 
-#: src/appendix/cheat-sheet.md:155
+#: src/appendix/cheat-sheet.md:155 src/appendix/cheat-sheet.md:156
+msgid "[User interfaces](../engine/ui.md)"
+msgstr "[用户界面](../engine/ui.md)"
+
+#: src/appendix/cheat-sheet.md:156
+msgid "Qt, QML"
+msgstr "Qt、QML"
+
+#: src/appendix/cheat-sheet.md:156
+msgid "iced, Slint"
+msgstr "iced、Slint"
+
+#: src/appendix/cheat-sheet.md:157
 msgid "`gl`, `glow`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:155
+#: src/appendix/cheat-sheet.md:157
 msgid "[OpenGL](../engine/opengl.md)"
 msgstr "[OpenGL](../engine/opengl.md)"
 
-#: src/appendix/cheat-sheet.md:156
+#: src/appendix/cheat-sheet.md:158
 msgid "`vulkan.h` / volk"
 msgstr "`vulkan.h` / volk"
 
-#: src/appendix/cheat-sheet.md:156 src/appendix/cheat-sheet.md:157
+#: src/appendix/cheat-sheet.md:158 src/appendix/cheat-sheet.md:159
 msgid "[Vulkan](../engine/vulkan.md)"
 msgstr "[Vulkan](../engine/vulkan.md)"
 
-#: src/appendix/cheat-sheet.md:158
+#: src/appendix/cheat-sheet.md:160
 msgid "Dawn, bgfx, sokol_gfx"
 msgstr "Dawn、bgfx、sokol_gfx"
 
-#: src/appendix/cheat-sheet.md:158 src/appendix/cheat-sheet.md:160
+#: src/appendix/cheat-sheet.md:160 src/appendix/cheat-sheet.md:162
 msgid "[wgpu](../engine/wgpu.md)"
 msgstr "[wgpu](../engine/wgpu.md)"
 
-#: src/appendix/cheat-sheet.md:159
+#: src/appendix/cheat-sheet.md:161
 msgid "`openxr.h`, OpenXR-Hpp"
 msgstr "`openxr.h`、OpenXR-Hpp"
 
-#: src/appendix/cheat-sheet.md:159
+#: src/appendix/cheat-sheet.md:161
 msgid "`openxr-sys`, `openxr`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:159
+#: src/appendix/cheat-sheet.md:161
 msgid "[OpenXR](../engine/openxr.md)"
 msgstr "[OpenXR](../engine/openxr.md)"
 
-#: src/appendix/cheat-sheet.md:160
+#: src/appendix/cheat-sheet.md:162
 msgid "glslc / dxc"
 msgstr "glslc / dxc"
 
-#: src/appendix/cheat-sheet.md:160
+#: src/appendix/cheat-sheet.md:162
 msgid "naga, shaderc, from `build.rs`"
 msgstr "naga、shaderc，在 `build.rs` 中调用"
 
-#: src/appendix/cheat-sheet.md:161
+#: src/appendix/cheat-sheet.md:163
 msgid "hecs, bevy_ecs"
 msgstr "hecs、bevy_ecs"
 
-#: src/appendix/cheat-sheet.md:161 src/appendix/cheat-sheet.md:172
-#: src/appendix/cheat-sheet.md:175
+#: src/appendix/cheat-sheet.md:163 src/appendix/cheat-sheet.md:174
+#: src/appendix/cheat-sheet.md:177
 msgid "[ECS](../engine/ecs.md)"
 msgstr "[ECS](../engine/ecs.md)"
 
-#: src/appendix/cheat-sheet.md:162
+#: src/appendix/cheat-sheet.md:164
 msgid "Singletons"
 msgstr "单例"
 
-#: src/appendix/cheat-sheet.md:163
+#: src/appendix/cheat-sheet.md:165
 msgid "Custom serialization / reflection"
 msgstr "自定义序列化 / 反射"
 
-#: src/appendix/cheat-sheet.md:163
+#: src/appendix/cheat-sheet.md:165
 msgid "serde"
 msgstr "serde"
 
-#: src/appendix/cheat-sheet.md:164
+#: src/appendix/cheat-sheet.md:166
 msgid "sol2 (Lua)"
 msgstr "sol2（Lua）"
 
-#: src/appendix/cheat-sheet.md:166
+#: src/appendix/cheat-sheet.md:168
 msgid "When the borrow checker says no"
 msgstr "当借用检查器说不行时"
 
-#: src/appendix/cheat-sheet.md:168
+#: src/appendix/cheat-sheet.md:170
 msgid "Symptom"
 msgstr "症状"
 
-#: src/appendix/cheat-sheet.md:170
+#: src/appendix/cheat-sheet.md:172
 msgid "\"cannot borrow as mutable because it is also borrowed as immutable\""
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:170
+#: src/appendix/cheat-sheet.md:172
 msgid "Shorten the first borrow: copy the value out, or finish using it first"
 msgstr "缩短第一个借用：把值复制出来，或者先用完它"
 
-#: src/appendix/cheat-sheet.md:171
+#: src/appendix/cheat-sheet.md:173
 msgid "Pushing to a `Vec` while holding a reference into it"
 msgstr "持有 `Vec` 内部引用的同时向它 push"
 
-#: src/appendix/cheat-sheet.md:171
+#: src/appendix/cheat-sheet.md:173
 msgid "Hold an index instead of a reference"
 msgstr "持有索引而不是引用"
 
-#: src/appendix/cheat-sheet.md:172
+#: src/appendix/cheat-sheet.md:174
 msgid "Two `&mut` into the same struct"
 msgstr "对同一个结构体取两个 `&mut`"
 
-#: src/appendix/cheat-sheet.md:172
+#: src/appendix/cheat-sheet.md:174
 msgid ""
 "Borrow separate fields (split borrows); destructure `let S { a, b } = &mut "
 "s;`"
 msgstr "借用不同的字段（拆分借用）；解构 `let S { a, b } = &mut s;`"
 
-#: src/appendix/cheat-sheet.md:173
+#: src/appendix/cheat-sheet.md:175
 msgid "Two `&mut` into the same slice"
 msgstr "对同一个切片取两个 `&mut`"
 
-#: src/appendix/cheat-sheet.md:173
+#: src/appendix/cheat-sheet.md:175
 msgid "`split_at_mut`, `chunks_mut`, `iter_mut`"
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:174
+#: src/appendix/cheat-sheet.md:176
 msgid "A struct wants to store a reference to another object"
 msgstr "结构体想存储对另一个对象的引用"
 
-#: src/appendix/cheat-sheet.md:174
+#: src/appendix/cheat-sheet.md:176
 msgid "Store a handle or index; or own the data"
 msgstr "存储句柄或索引；或者拥有数据"
 
-#: src/appendix/cheat-sheet.md:175
+#: src/appendix/cheat-sheet.md:177
 msgid "Objects pointing at each other (graph, parent links)"
 msgstr "互相指向的对象（图、父链接）"
 
-#: src/appendix/cheat-sheet.md:175
+#: src/appendix/cheat-sheet.md:177
 msgid "Arena + handles; `Rc` + `Weak` only if ownership is truly shared"
 msgstr "arena + 句柄；只有在所有权确实共享时才用 `Rc` + `Weak`"
 
-#: src/appendix/cheat-sheet.md:176
+#: src/appendix/cheat-sheet.md:178
 msgid "\"borrowed value does not live long enough\""
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:176
+#: src/appendix/cheat-sheet.md:178
 msgid "Move the owner to an outer scope, or return an owned value"
 msgstr "把所有者移到外层作用域，或者返回一个拥有所有权的值"
 
-#: src/appendix/cheat-sheet.md:177
+#: src/appendix/cheat-sheet.md:179
 msgid "\"`Rc<...>` cannot be sent between threads safely\""
 msgstr ""
 
-#: src/appendix/cheat-sheet.md:177
+#: src/appendix/cheat-sheet.md:179
 msgid "`Arc` (and `Mutex` for mutation)"
 msgstr "`Arc`（需要修改时加 `Mutex`）"
 
-#: src/appendix/cheat-sheet.md:178
+#: src/appendix/cheat-sheet.md:180
 msgid "A closure passed to `thread::spawn` borrows a local"
 msgstr "传给 `thread::spawn` 的闭包借用了局部变量"
 
-#: src/appendix/cheat-sheet.md:178
+#: src/appendix/cheat-sheet.md:180
 msgid "`move` the data in, or use `thread::scope`"
 msgstr "用 `move` 把数据移进去，或者使用 `thread::scope`"
 
-#: src/appendix/cheat-sheet.md:179
+#: src/appendix/cheat-sheet.md:181
 msgid "Global mutable state"
 msgstr "可变全局状态"
 
-#: src/appendix/cheat-sheet.md:179
+#: src/appendix/cheat-sheet.md:181
 msgid "Pass a context; or `Mutex`, atomics, `OnceLock`"
 msgstr "传递上下文；或者使用 `Mutex`、原子类型、`OnceLock`"
 

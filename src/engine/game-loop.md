@@ -1,4 +1,4 @@
-# The game loop, windows and global state
+# The game loop, windowing and global state
 
 A C++ game's `main` usually looks like this: create a window with SDL or GLFW,
 then `while (!quit) { poll events; update; render; }`, with the engine's
@@ -11,6 +11,8 @@ control.
 This chapter covers:
 
 - winit's event loop and the `ApplicationHandler` trait,
+- creating windows: attributes, DPI, fullscreen and multiple windows,
+- how winit handles each platform, and how a window reaches the graphics API,
 - a fixed timestep with interpolation,
 - frame pacing and vsync,
 - where global state goes when there are no singletons.
@@ -75,8 +77,180 @@ All state lives in the `App` struct. There are no globals; the event loop owns
 `App`, and each callback gets `&mut self`. That is the start of the answer to
 "where does global state go", which this chapter returns to below.
 
-If you prefer the C++ shape, the `sdl2` and `glfw` crates are bindings to the
+If you prefer the C++ shape, the `sdl3` and `glfw` crates are bindings to the
 libraries you know, with a classic `poll_events()` loop.
+
+## Creating windows
+
+`ActiveEventLoop::create_window` is the only way to create a window in winit,
+and an `ActiveEventLoop` exists only inside a callback. That is deliberate: on
+Android, iOS and the web, a window cannot exist until the platform has started
+the application, so winit makes it impossible to create one too early. Create
+your windows in `resumed`, which every platform calls once the app is ready.
+
+`Window::default_attributes()` returns a builder with the same options you
+would pass to `SDL_CreateWindow` or set with GLFW window hints. An editor with
+two windows, DPI handling and a fullscreen toggle:
+
+```rust,ignore
+use std::collections::HashMap;
+use std::sync::Arc;
+use winit::application::ApplicationHandler;
+use winit::dpi::{LogicalSize, PhysicalSize};
+use winit::event::WindowEvent;
+use winit::event_loop::{ActiveEventLoop, EventLoop};
+use winit::keyboard::{Key, NamedKey};
+use winit::window::{Fullscreen, Window, WindowId};
+
+#[derive(Default)]
+struct Editor {
+    windows: HashMap<WindowId, Arc<Window>>,   // one entry per OS window
+}
+
+impl ApplicationHandler for Editor {
+    fn resumed(&mut self, event_loop: &ActiveEventLoop) {
+        if !self.windows.is_empty() {
+            return;                                // `resumed` runs again after a suspend on mobile
+        }
+        let main = Window::default_attributes()
+            .with_title("Level editor")
+            .with_inner_size(LogicalSize::new(1280.0, 720.0))   // logical units: scaled by DPI
+            .with_min_inner_size(LogicalSize::new(640.0, 360.0));
+        let inspector = Window::default_attributes()
+            .with_title("Inspector")
+            .with_inner_size(LogicalSize::new(360.0, 720.0));
+        for attributes in [main, inspector] {
+            let window = Arc::new(event_loop.create_window(attributes).unwrap());
+            self.windows.insert(window.id(), window);
+        }
+    }
+
+    fn window_event(&mut self, event_loop: &ActiveEventLoop, id: WindowId, event: WindowEvent) {
+        let Some(window) = self.windows.get(&id) else { return };
+        match event {
+            WindowEvent::CloseRequested => {
+                self.windows.remove(&id);          // dropping the last Arc closes the window
+                if self.windows.is_empty() {
+                    event_loop.exit();
+                }
+            }
+            WindowEvent::Resized(PhysicalSize { width, height }) => {
+                // Resize this window's swapchain. Sizes in events are physical pixels.
+                println!("{id:?}: {width}x{height} px, scale {}", window.scale_factor());
+            }
+            WindowEvent::ScaleFactorChanged { scale_factor, .. } => {
+                println!("{id:?} moved to a monitor with scale {scale_factor}");
+            }
+            WindowEvent::KeyboardInput { event, .. }
+                if event.state.is_pressed() && event.logical_key == Key::Named(NamedKey::F11) =>
+            {
+                // Toggle borderless fullscreen on the window's current monitor.
+                let fullscreen = window.fullscreen().is_none().then_some(Fullscreen::Borderless(None));
+                window.set_fullscreen(fullscreen);
+            }
+            WindowEvent::RedrawRequested => { /* render this window */ }
+            _ => {}
+        }
+    }
+}
+
+fn main() -> Result<(), winit::error::EventLoopError> {
+    EventLoop::new()?.run_app(&mut Editor::default())
+}
+
+```
+
+A few things in this example differ from what you may expect in C++:
+
+- **Logical and physical sizes.** `LogicalSize` is in DPI-independent units,
+  and winit multiplies it by the monitor's scale factor (1.0, 1.5, 2.0, ...).
+  Sizes in events, such as `Resized`, are in **physical pixels**, which is
+  what your swapchain needs. When a window moves to a monitor with a different
+  scale, you get `ScaleFactorChanged` followed by a `Resized`. This is the
+  same model as SDL3's pixel density, made explicit in the types.
+- **Every event names its window.** `window_event` receives a `WindowId`, so
+  multiple windows are a `HashMap` away. A renderer usually keeps one surface
+  (swapchain) per window in the same map.
+- **Closing is dropping.** There is no `DestroyWindow` call: a window closes
+  when the last `Arc<Window>` is dropped, like any other RAII resource.
+- **Fullscreen is a value.** `Fullscreen::Borderless(None)` uses the current
+  monitor; `Fullscreen::Exclusive(video_mode)` switches the display mode,
+  where the platform supports it. `event_loop.available_monitors()` lists the
+  monitors and their video modes.
+
+## How winit handles platforms
+
+winit has one public API and a backend per platform, selected at compile time:
+
+| Platform | winit talks to | Notes |
+|---|---|---|
+| Windows | Win32 (`CreateWindowExW`, a message loop) | The `Window` wraps an `HWND` |
+| macOS | AppKit (`NSApplication`, `NSWindow`) | Must run on the main thread; the OS owns the loop |
+| Linux | Wayland or X11, chosen at run time | Both are loaded dynamically, so one binary supports both |
+| Android | `NativeActivity` or `GameActivity` | The surface is destroyed on `suspended` and must be recreated |
+| iOS | UIKit | Like macOS, the OS owns the loop |
+| Web | A `<canvas>` element and browser events | Built for `wasm32`; there is no blocking at all |
+
+When you need something only one platform has, winit provides **extension
+traits** in `winit::platform::<os>`, used behind `#[cfg]` so the code still
+compiles everywhere:
+
+```rust,ignore
+let mut attributes = Window::default_attributes().with_title("Game");
+
+#[cfg(target_os = "windows")]
+{
+    use winit::platform::windows::WindowAttributesExtWindows;
+    attributes = attributes.with_drag_and_drop(false); // needed if a library uses multithreaded COM
+}
+#[cfg(target_os = "macos")]
+{
+    use winit::platform::macos::WindowAttributesExtMacOS;
+    attributes = attributes.with_titlebar_transparent(true).with_fullsize_content_view(true);
+}
+#[cfg(target_os = "linux")]
+{
+    use winit::platform::wayland::WindowAttributesExtWayland;
+    attributes = attributes.with_name("my-game", "my-game"); // app id for icons and grouping
+}
+```
+
+### From a window to the graphics API
+
+winit knows nothing about OpenGL, Vulkan or wgpu, and the graphics crates know
+nothing about winit. They meet through the small
+[`raw-window-handle`](https://docs.rs/raw-window-handle) crate, which defines
+an enum of native handles (`HWND`, `NSView`, Wayland and X11 surfaces, Android
+`ANativeWindow`, a web canvas). winit implements its `HasWindowHandle` and
+`HasDisplayHandle` traits, and graphics crates accept anything that does:
+
+```rust,ignore
+fn print_handle(window: &Window) {
+    use winit::raw_window_handle::{HasWindowHandle, RawWindowHandle};
+    match window.window_handle().unwrap().as_raw() {
+        RawWindowHandle::Win32(h) => println!("HWND {:?}", h.hwnd),
+        RawWindowHandle::AppKit(h) => println!("NSView {:?}", h.ns_view),
+        RawWindowHandle::Wayland(h) => println!("wl_surface {:?}", h.surface),
+        RawWindowHandle::Xlib(h) => println!("X11 window {}", h.window),
+        other => println!("{other:?}"),
+    }
+}
+```
+
+That is why `wgpu::Instance::create_surface(window.clone())` takes the winit
+window directly, `ash-window` creates a Vulkan surface from the same handles,
+and glutin creates a GL context for it. The same bridge lets SDL3 or GLFW
+windows drive wgpu, so the choice of windowing crate does not lock you into a
+renderer ([Portable graphics with wgpu](wgpu.md), [Vulkan with ash](vulkan.md)).
+
+### Choosing a windowing crate
+
+| Crate | Use it when |
+|---|---|
+| [winit](https://docs.rs/winit) | The default: pure Rust, used by wgpu, Bevy, egui and most of the ecosystem |
+| [sdl3](https://docs.rs/sdl3) | You want SDL's whole package (windows, input, gamepads, audio, file dialogs) or already ship SDL in C++ |
+| [glfw](https://docs.rs/glfw) | You are porting a GLFW-based tool and want the same API |
+| [`windows`](https://docs.rs/windows), [`objc2`](https://docs.rs/objc2) | You need complete control of one platform's windowing, as with raw Win32 in C++ |
 
 ## Fixed timestep
 
@@ -333,7 +507,9 @@ shortcuts. For gamepads, use the [gilrs](https://docs.rs/gilrs) crate.
 
 | C++ | Rust |
 |---|---|
-| SDL / GLFW window and loop | winit `EventLoop` + `ApplicationHandler` (or `sdl2`/`glfw` crates) |
+| SDL / GLFW window and loop | winit `EventLoop` + `ApplicationHandler` (or `sdl3`/`glfw` crates) |
+| `SDL_CreateWindow`, GLFW window hints | `event_loop.create_window(Window::default_attributes()...)` in `resumed` |
+| `HWND`, `NSView` passed to the renderer | `raw-window-handle`, accepted by wgpu, ash-window and glutin |
 | `while (!quit) { ... }` | `RedrawRequested` + `request_redraw()`, `ControlFlow::Poll` |
 | `std::chrono::steady_clock` | `std::time::Instant`, `Duration` |
 | Singleton `Get()` | Context passed as a parameter; ECS resources |

@@ -53,8 +53,8 @@ Rust borrows an idea from modern C++, this book explains the idea from scratch.
 - **Part III: Systems programming**: concurrency, networking and RPC, memory
   layout and performance, `unsafe`, FFI with C and C++, macros.
 - **Part IV: Graphics and engine programming**: handles and arenas, ECS,
-  math and SIMD, OpenGL, Vulkan, wgpu, OpenXR, the game loop, assets and build
-  scripts, hot reloading, and a case study.
+  math and SIMD, OpenGL, Vulkan, wgpu, OpenXR, windowing and the game loop,
+  user interfaces, assets and build scripts, hot reloading, and a case study.
 
 ## Status
 
