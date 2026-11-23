@@ -4,6 +4,16 @@ The source of this book lives at
 [github.com/xw0/rust-for-cpp](https://github.com/xw0/rust-for-cpp). Fixes,
 new examples and translations are welcome as pull requests.
 
+You do not need to write code to help:
+
+- [Report a problem](https://github.com/xw0/rust-for-cpp/issues/new?template=correction.yml):
+  a mistake, a confusing explanation, a broken example or a translation issue.
+- [Request a topic](https://github.com/xw0/rust-for-cpp/issues/new?template=topic-request.yml):
+  a C++ pattern you want translated, an engine subsystem, a crate.
+
+For a small fix, the ✎ icon at the top of every page opens its source on
+GitHub, where you can edit it and open a pull request from the browser.
+
 ## License
 
 - Text and diagrams: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

@@ -62,6 +62,18 @@ number of languages from day one:
 
 See [Contributing and translating](src/appendix/contributing.md).
 
+## Feedback and contributions
+
+Found a mistake, an unclear explanation or a broken example?
+[Report a problem](https://github.com/xw0/rust-for-cpp/issues/new?template=correction.yml).
+Want a topic covered?
+[Request a topic](https://github.com/xw0/rust-for-cpp/issues/new?template=topic-request.yml).
+Pull requests are welcome too, for both English and translations.
+
+## Author
+
+Written by Xiang. More projects: [portfolio](https://xw0.github.io/portfolio.html).
+
 ## License
 
 Text and diagrams: [CC BY 4.0](LICENSE-CC-BY-4.0). Code: [MIT](LICENSE-MIT).

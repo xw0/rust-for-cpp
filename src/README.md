@@ -59,8 +59,24 @@ Rust borrows an idea from modern C++, this book explains the idea from scratch.
 The book is complete in English and Chinese. English is the source text, and
 the Chinese edition is translated from it; use the EN · 中 switch at the top of
 the page. Every runnable example is compiled and tested on each build.
-Corrections and suggestions are welcome; see
-[Contributing](appendix/contributing.md).
+
+## Feedback and contributions
+
+The book is meant to grow with its readers. If something is wrong, unclear, or
+missing for your corner of engine or graphics work:
+
+- [Report a problem](https://github.com/xw0/rust-for-cpp/issues/new?template=correction.yml)
+  such as a mistake, a confusing explanation or a broken example,
+- [request a topic](https://github.com/xw0/rust-for-cpp/issues/new?template=topic-request.yml)
+  you would like covered,
+- or fix it yourself: the ✎ icon at the top of every page opens that page's
+  source on GitHub. [Contributing](appendix/contributing.md) explains how the
+  book and its translations are built.
+
+## About the author
+
+Written by Xiang. More of Xiang's work is on the
+[portfolio](https://xw0.github.io/portfolio.html).
 
 ## License
 

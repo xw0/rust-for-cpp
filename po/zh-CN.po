@@ -342,18 +342,61 @@ msgstr "状态"
 msgid ""
 "The book is complete in English and Chinese. English is the source text, and"
 " the Chinese edition is translated from it; use the EN · 中 switch at the top"
-" of the page. Every runnable example is compiled and tested on each build. "
-"Corrections and suggestions are welcome; see "
-"[Contributing](appendix/contributing.md)."
+" of the page. Every runnable example is compiled and tested on each build."
 msgstr ""
-"本书已有完整的英文版和中文版。英文是原文，中文版由英文翻译而来；可以用页面顶部的 EN · 中 "
-"切换语言。每个可运行的示例都会在每次构建时编译并测试。欢迎指正和提出建议，参见[参与贡献](appendix/contributing.md)。"
+"本书的英文版和中文版均已完成。英文是源文本，中文版由其翻译而来；可以用页面顶部的 EN · 中 切换语言。每个可运行的示例在每次构建时都会被编译和测试。"
 
-#: src/index.md:65 src/appendix/contributing.md:7
+#: src/index.md:63
+msgid "Feedback and contributions"
+msgstr "反馈与贡献"
+
+#: src/index.md:65
+msgid ""
+"The book is meant to grow with its readers. If something is wrong, unclear, "
+"or missing for your corner of engine or graphics work:"
+msgstr "这本书希望和读者一起成长。如果某处有错误、讲得不清楚，或者缺少了你所在的引擎或图形领域需要的内容："
+
+#: src/index.md:68
+msgid ""
+"[Report a problem](https://github.com/xw0/rust-for-"
+"cpp/issues/new?template=correction.yml) such as a mistake, a confusing "
+"explanation or a broken example,"
+msgstr ""
+"[报告问题](https://github.com/xw0/rust-for-"
+"cpp/issues/new?template=correction.yml)，例如错误、令人困惑的解释或无法运行的示例；"
+
+#: src/index.md:70
+msgid ""
+"[request a topic](https://github.com/xw0/rust-for-"
+"cpp/issues/new?template=topic-request.yml) you would like covered,"
+msgstr ""
+"[提出主题请求](https://github.com/xw0/rust-for-cpp/issues/new?template=topic-"
+"request.yml)，告诉我们你希望涵盖的内容；"
+
+#: src/index.md:72
+msgid ""
+"or fix it yourself: the ✎ icon at the top of every page opens that page's "
+"source on GitHub. [Contributing](appendix/contributing.md) explains how the "
+"book and its translations are built."
+msgstr ""
+"或者自己动手修改：每页顶部的 ✎ 图标会在 GitHub "
+"上打开该页的源文件。[参与贡献](appendix/contributing.md)一章介绍了本书及其译文是如何构建的。"
+
+#: src/index.md:76
+msgid "About the author"
+msgstr "关于作者"
+
+#: src/index.md:78
+msgid ""
+"Written by Xiang. More of Xiang's work is on the "
+"[portfolio](https://xw0.github.io/portfolio.html)."
+msgstr "作者：Xiang。更多作品请见 Xiang 的[个人作品集](https://xw0.github.io/portfolio.html)。"
+
+#: src/index.md:81 src/appendix/contributing.md:17
 msgid "License"
 msgstr "许可证"
 
-#: src/index.md:67
+#: src/index.md:83
 msgid ""
 "The text and diagrams are licensed under [CC BY "
 "4.0](https://creativecommons.org/licenses/by/4.0/): you may copy, translate,"
@@ -19644,22 +19687,50 @@ msgstr ""
 "本书源码位于 [github.com/xw0/rust-for-cpp](https://github.com/xw0/rust-for-"
 "cpp)。欢迎以 pull request 的形式提交修正、新示例和翻译。"
 
+#: src/appendix/contributing.md:7
+msgid "You do not need to write code to help:"
+msgstr "不写代码也可以帮忙："
+
 #: src/appendix/contributing.md:9
+msgid ""
+"[Report a problem](https://github.com/xw0/rust-for-"
+"cpp/issues/new?template=correction.yml): a mistake, a confusing explanation,"
+" a broken example or a translation issue."
+msgstr ""
+"[报告问题](https://github.com/xw0/rust-for-"
+"cpp/issues/new?template=correction.yml)：错误、令人困惑的解释、无法运行的示例或翻译问题。"
+
+#: src/appendix/contributing.md:11
+msgid ""
+"[Request a topic](https://github.com/xw0/rust-for-"
+"cpp/issues/new?template=topic-request.yml): a C++ pattern you want "
+"translated, an engine subsystem, a crate."
+msgstr ""
+"[提出主题请求](https://github.com/xw0/rust-for-cpp/issues/new?template=topic-"
+"request.yml)：你希望翻译成 Rust 的 C++ 模式、某个引擎子系统、某个 crate。"
+
+#: src/appendix/contributing.md:14
+msgid ""
+"For a small fix, the ✎ icon at the top of every page opens its source on "
+"GitHub, where you can edit it and open a pull request from the browser."
+msgstr "对于小的修改，每页顶部的 ✎ 图标会在 GitHub 上打开该页的源文件，你可以直接在浏览器中编辑并发起 pull request。"
+
+#: src/appendix/contributing.md:19
 msgid ""
 "Text and diagrams: [CC BY "
 "4.0](https://creativecommons.org/licenses/by/4.0/)."
 msgstr "正文与图示：[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。"
 
-#: src/appendix/contributing.md:10
+#: src/appendix/contributing.md:20
 msgid ""
 "Code (examples, scripts, styles): [MIT](https://opensource.org/license/mit)."
 msgstr "代码（示例、脚本、样式）：[MIT](https://opensource.org/license/mit)。"
 
-#: src/appendix/contributing.md:12
+#: src/appendix/contributing.md:22
 msgid "If you reuse or adapt material, credit it as:"
 msgstr "如果你复用或改编本书内容，请按如下方式署名："
 
-#: src/appendix/contributing.md:14
+#: src/appendix/contributing.md:24
 msgid ""
 "_Rust for C++ Programmers_ (https://xw0.github.io/rust-for-cpp/), licensed "
 "under CC BY 4.0."
@@ -19667,15 +19738,15 @@ msgstr ""
 "_Rust for C++ Programmers_（https://xw0.github.io/rust-for-cpp/），采用 CC BY 4.0"
 " 许可。"
 
-#: src/appendix/contributing.md:17
+#: src/appendix/contributing.md:27
 msgid "and say whether you changed it."
 msgstr "并注明你是否做了修改。"
 
-#: src/appendix/contributing.md:19
+#: src/appendix/contributing.md:29
 msgid "How translations work"
 msgstr "翻译的工作方式"
 
-#: src/appendix/contributing.md:21
+#: src/appendix/contributing.md:31
 msgid ""
 "English Markdown under `src/` is the single source of truth. Each "
 "translation is a [gettext](https://www.gnu.org/software/gettext/) catalog, "
@@ -19690,7 +19761,7 @@ msgstr ""
 "`po/<lang>.po`，它把每个英文段落、标题、列表项和表格单元格映射到对应译文。构建时，[`mdbook-i18n-helpers`](https://github.com/google/mdbook-i18n-helpers)"
 " 预处理器会把译文替换进去。代码块是共享的，所以示例永远不会在不同语言之间产生差异。"
 
-#: src/appendix/contributing.md:29
+#: src/appendix/contributing.md:39
 msgid ""
 "When an English paragraph changes, the old translation is marked _fuzzy_ and"
 " the English text is shown until a translator updates it. A translation can "
@@ -19700,7 +19771,7 @@ msgstr ""
 "当某个英文段落改变时，旧译文会被标记为 "
 "_fuzzy_，在译者更新之前显示英文原文。因此译文可以落后于原文，但永远不会导致构建失败，也不会把过时的内容当作最新内容显示。"
 
-#: src/appendix/contributing.md:34
+#: src/appendix/contributing.md:44
 msgid ""
 "Interactive diagrams are written in English in `theme/js/diagrams.js`. Their"
 " strings are translated in `theme/js/i18n-<lang>.js`, a plain table from the"
@@ -19709,47 +19780,47 @@ msgstr ""
 "交互式图示用英文编写在 `theme/js/diagrams.js` 中。其中的字符串在 `theme/js/i18n-<lang>.js` "
 "中翻译，这是一张从英文字符串到译文的普通映射表；缺失的条目会回退到英文。"
 
-#: src/appendix/contributing.md:38
+#: src/appendix/contributing.md:48
 msgid "Translating a chapter"
 msgstr "翻译一章"
 
-#: src/appendix/contributing.md:41
+#: src/appendix/contributing.md:51
 msgid "# 1. Extract all English messages into po/messages.pot\n"
 msgstr "# 1. 把所有英文消息提取到 po/messages.pot\n"
 
-#: src/appendix/contributing.md:42
+#: src/appendix/contributing.md:52
 msgid "'{\"xgettext\": {\"pot-file\": \"messages.pot\"}}'"
 msgstr ""
 
-#: src/appendix/contributing.md:43
+#: src/appendix/contributing.md:53
 msgid "# 2. Create or update the catalog for your language\n"
 msgstr "# 2. 为你的语言创建或更新目录文件\n"
 
-#: src/appendix/contributing.md:45
+#: src/appendix/contributing.md:55
 msgid "# first time only\n"
 msgstr "# 仅第一次\n"
 
-#: src/appendix/contributing.md:46
+#: src/appendix/contributing.md:56
 msgid "# afterwards\n"
 msgstr "# 之后\n"
 
-#: src/appendix/contributing.md:47
+#: src/appendix/contributing.md:57
 msgid ""
 "# 3. Edit po/zh-CN.po (Poedit, Lokalize, or any text editor), then preview\n"
 msgstr "# 3. 编辑 po/zh-CN.po（Poedit、Lokalize 或任何文本编辑器），然后预览\n"
 
-#: src/appendix/contributing.md:52
+#: src/appendix/contributing.md:62
 msgid "Building locally"
 msgstr "本地构建"
 
-#: src/appendix/contributing.md:55
+#: src/appendix/contributing.md:65
 msgid "\"^0.4\""
 msgstr ""
 
-#: src/appendix/contributing.md:57
+#: src/appendix/contributing.md:67
 msgid "# English\n"
 msgstr "# 英文版\n"
 
-#: src/appendix/contributing.md:58
+#: src/appendix/contributing.md:68
 msgid "# compile and run every Rust example\n"
 msgstr "# 编译并运行每个 Rust 示例\n"

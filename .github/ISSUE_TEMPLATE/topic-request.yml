@@ -1,0 +1,21 @@
+name: Request a topic
+description: Something you would like the book to cover or explain better.
+title: "[Request] "
+labels: ["topic request"]
+body:
+  - type: textarea
+    id: topic
+    attributes:
+      label: What would you like covered?
+      description: A C++ pattern you want translated to Rust, an engine or graphics subsystem, a crate, a tool. English or Chinese is fine.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Why does it matter to you?
+      description: Your background or the problem you are trying to solve helps decide where it fits in the book.
+  - type: input
+    id: chapter
+    attributes:
+      label: Related chapter (optional)
